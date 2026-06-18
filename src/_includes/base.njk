@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="LearningHub — focused, calm ACCP study materials">
+  <title>{% if title %}{{ title }} — {% endif %}LearningHub</title>
+  <link rel="stylesheet" href="/assets/css/theme.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="site-title">LearningHub</h1>
+      <p class="lead">Inviting, calm study materials — refreshed UI inspired by AinaDara.</p>
+    </header>
+
+    <main>
+      {{ content | safe }}
+    </main>
+
+    <footer class="foot">&copy; {{ "now" | date("YYYY") }} LearningHub</footer>
+  </div>
+</body>
+</html>
