@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Supabase client removed for security; stub inserted -->
+<script>
+(function(){
+  const _SB_URL = "REDACTED";
+  const _SB_KEY = "REDACTED";
+  const _sb = { auth: { signUp: async ()=>{}, signInWithPassword: async ()=>{}, signOut: async ()=>{}, getUser: async ()=>({data:{user:null}}), onAuthStateChange: ()=>{} }, from: ()=>({ upsert: async ()=>{}, select: async ()=>({data:[]}) }) };
+  window.sbSignUp = async (email, password) => _sb.auth.signUp({email, password});
+  window.sbSignIn = async (email, password) => _sb.auth.signInWithPassword({email, password});
+  window.sbSignOut = async () => _sb.auth.signOut();
+  window.sbUser   = async () => (await _sb.auth.getUser()).data.user;
+<!-- REDACTED: ACCP content removed for security -->
+  _sb.auth.onAuthStateChange((event, session) => {
+    const user = session ? session.user : null;
+    if (user && (event === 'SIGNED_IN' || event === 'TOKEN_REFRESHED')) {
+<!-- REDACTED: ACCP content removed for security -->
