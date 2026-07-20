@@ -1,20 +1,33 @@
 ---
 title: Home
+layout: base.njk
 ---
+<section>
+  <p class="lead">High-yield pharmacotherapy review modules with practice questions, built for BCPS exam prep. Work through a module, take its quiz, and your best scores are tracked in your own browser — no account needed.</p>
 
-{% extends "base.njk" %}
+  <div class="progress-wrap" id="overall-progress">
+    <b>Your progress</b>
+    <p class="progress-text lead" style="margin:.25rem 0 0">No modules attempted yet.</p>
+    <div class="progress-bar"><div></div></div>
+  </div>
+</section>
 
-{% block content %}
-  <section>
-    <h2>Quick links</h2>
-    <div class="grid">
-    <a class="card" href="/assets/legacy/index.html"><b>Legacy Site</b><span>Original content (preserved)</span></a>
-    <a class="card" href="/assets/legacy/index-6.html"><b>Legacy Duplicate</b><span>Original duplicate</span></a>
-    </div>
-  </section>
+<section>
+  <h2>Study modules</h2>
+  <div class="grid">
+    <a class="card" data-slug="cardiology" href="/modules/cardiology/"><b>Cardiology</b><span>HTN, heart failure, ACS, AF, lipids, anticoagulation</span></a>
+    <a class="card" data-slug="infectious-diseases" href="/modules/infectious-diseases/"><b>Infectious Diseases</b><span>Empiric therapy, pneumonia, UTI, SSTI, C. difficile</span></a>
+    <a class="card" data-slug="endocrine" href="/modules/endocrine/"><b>Endocrine &amp; Metabolic</b><span>Diabetes, thyroid, osteoporosis</span></a>
+    <a class="card" data-slug="neuro-psych" href="/modules/neuro-psych/"><b>Neurology &amp; Psychiatry</b><span>Epilepsy, depression, bipolar, schizophrenia, Parkinson disease</span></a>
+    <a class="card" data-slug="pulmonary" href="/modules/pulmonary/"><b>Pulmonary</b><span>Asthma and COPD stepwise therapy, inhaler pearls</span></a>
+    <a class="card" data-slug="renal" href="/modules/renal/"><b>Renal, Fluids &amp; Electrolytes</b><span>AKI, CKD, renal dosing, potassium and sodium disorders</span></a>
+    <a class="card" data-slug="critical-care-gi" href="/modules/critical-care-gi/"><b>Critical Care &amp; GI</b><span>Sepsis, PAD guidelines, stress ulcers, GERD/PUD, cirrhosis</span></a>
+    <a class="card" data-slug="biostatistics" href="/modules/biostatistics/"><b>Biostatistics &amp; Literature Evaluation</b><span>Study design, statistical tests, risk measures — heavily tested</span></a>
+  </div>
+</section>
 
-  <section>
-    <h2>Study materials</h2>
-    <p>Content review in progress. Use the content audit to track improvements.</p>
-  </section>
-{% endblock %}
+<section>
+  <h2>How to use this site</h2>
+  <p class="lead">Read the module notes, then take the practice quiz for instant feedback and explanations. Retake quizzes until you hit 100% — the home page tracks your best score per module. Two people can share this site: progress is stored per browser, so each of you sees only your own scores. See <a href="/about/">How to use</a> for a suggested study plan.</p>
+</section>
+<script src="/assets/js/progress.js"></script>
