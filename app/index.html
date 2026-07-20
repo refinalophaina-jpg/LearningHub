@@ -1,0 +1,1823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Supabase sync -->
+
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BCPS Learning Hub — AinaDara</title>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+<button id="darkModeToggle" onclick="toggleDarkMode()" title="Toggle dark mode">🌙</button>
+<div class="header">
+  <div onclick="switchSection('home')" style="cursor:pointer;transition:transform 0.2s;display:flex;align-items:center;" title="Go home"><svg viewBox="185 68 310 300" xmlns="http://www.w3.org/2000/svg" style="width:36px;height:36px;flex-shrink:0;">
+  <circle cx="340" cy="222" r="146" fill="rgba(237,232,221,0.3)"/>
+  <circle cx="340" cy="222" r="148" fill="none" stroke="#2d3428" stroke-width="2.5"/>
+  <path d="M 212 222 A 56 56 0 1 1 212 222.1" fill="none" stroke="#b84a2e" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 224 222 A 44 44 0 1 1 224 222.1" fill="none" stroke="#b84a2e" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M 236 222 A 32 32 0 1 1 236 222.1" fill="none" stroke="#b84a2e" stroke-width="2.0" stroke-linecap="round"/>
+  <path d="M 248 222 A 20 20 0 1 1 248 222.1" fill="none" stroke="#b84a2e" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M 268 222 A 8 8 0 1 1 268.1 222 L 280 222 A 20 20 0 1 0 268 202" fill="none" stroke="#b84a2e" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="268" cy="222" r="3.5" fill="#b84a2e"/>
+  <line x1="340" y1="88" x2="340" y2="356" stroke="#2d3428" stroke-width="0.6" opacity="0.18"/>
+  <g transform="translate(412, 222)">
+    <circle cx="0" cy="0" r="3.5" fill="#4a3d7a"/>
+    <path d="M 0 -20 A 20 20 0 1 0 0 20" fill="none" stroke="#4a3d7a" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M 0 -32 A 32 32 0 1 0 0 32" fill="none" stroke="#4a3d7a" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M 0 -44 A 44 44 0 1 0 0 44" fill="none" stroke="#4a3d7a" stroke-width="2.0" stroke-linecap="round"/>
+    <path d="M 0 -56 A 56 56 0 1 0 0 56" fill="none" stroke="#4a3d7a" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M 0 -56 L 0 -68 A 12 12 0 0 0 -20 -56" fill="none" stroke="#4a3d7a" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+  <path d="M 222 302 Q 248 290 270 302 Q 292 314 314 302 Q 336 290 358 302 Q 380 314 402 302 Q 424 290 446 302" fill="none" stroke="#4a5c28" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M 230 319 Q 256 307 278 319 Q 300 331 322 319 Q 344 307 366 319 Q 388 331 410 319 Q 432 307 450 319" fill="none" stroke="#4a5c28" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
+  <path d="M 240 335 Q 264 325 284 335 Q 304 345 326 335 Q 348 325 370 335 Q 392 345 414 335 Q 434 325 442 335" fill="none" stroke="#4a5c28" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+</svg></div>
+  <div style="flex:1;min-width:0;cursor:pointer;" onclick="switchSection('home')" title="Go home">
+    <h1 style="display:flex;align-items:center;gap:4px;">BCPS Learning Hub <span style="font-size:10px;font-weight:500;color:var(--label3);opacity:0.7;vertical-align:middle;">by AinaDara</span></h1>
+    <div class="subtitle">449 Questions · 206 Flashcards · 22 Chapters</div>
+  </div>
+  <button class="search-btn" onclick="openSpotlight()" title="Search everything (⌘K)">🔍 Search</button>
+  <button class="search-btn" id="authHeaderBtn" onclick="toggleAuthModal()" title="Login to sync progress across devices" style="background:var(--card,#fff);border:1px solid var(--divider,#e5e7eb);color:var(--label1,#111);gap:6px;">👤 <span id="authBtnText">Login</span></button>
+  <div id="syncBadge" style="display:none;font-size:10px;color:var(--label3,#999);align-self:center;padding:0 2px;white-space:nowrap;"></div>
+</div>
+
+<!-- SPOTLIGHT SEARCH MODAL -->
+<div class="spotlight-overlay" id="spotlightOverlay" onclick="if(event.target===this)closeSpotlight()">
+  <div class="spotlight-box">
+    <div class="spotlight-input-wrap">
+      <span class="spotlight-icon">🔍</span>
+      <input id="spotlightInput" class="spotlight-input" placeholder="Search questions, drugs, flashcards, topics…" oninput="searchSpotlight(this.value)" onkeydown="spotlightKeyNav(event)" autocomplete="off" autocorrect="off" spellcheck="false">
+      <span class="spotlight-kbd">ESC</span>
+    </div>
+    <div id="spotlightResults" class="spotlight-results"></div>
+    <div class="spotlight-footer">
+      <span>↑↓ Navigate</span>
+      <span>↵ Go to result</span>
+      <span>ESC Close</span>
+      <span style="margin-left:auto">⌘K anywhere</span>
+    </div>
+  </div>
+</div>
+
+<nav class="tab-bar">
+  <button class="tab-btn active" onclick="switchSection('home')" id="tab-home">
+    <span class="tab-icon">🏠</span><span class="tab-label">Home</span>
+  </button>
+  <button class="tab-btn" onclick="switchSection('study')" id="tab-study">
+    <span class="tab-icon">📖</span><span class="tab-label">Study</span>
+  </button>
+  <button class="tab-btn" onclick="switchSection('quiz')" id="tab-quiz">
+    <span class="tab-icon">🧠</span><span class="tab-label">Quiz</span>
+  </button>
+  <button class="tab-btn" onclick="switchSection('flash')" id="tab-flash">
+    <span class="tab-icon">🃏</span><span class="tab-label">Cards</span>
+  </button>
+  <button class="tab-btn" onclick="switchSection('concepts')" id="tab-concepts">
+    <span class="tab-icon">💊</span><span class="tab-label">Drugs</span>
+  </button>
+  <button class="tab-btn" onclick="switchSection('visuals')" id="tab-visuals">
+    <span class="tab-icon">🔬</span><span class="tab-label">Visuals</span>
+  </button>
+  <button class="tab-btn" onclick="switchSection('exampsych')" id="tab-exampsych">
+    <span class="tab-icon">🎯</span><span class="tab-label">Exam</span>
+  </button>
+  <button class="tab-btn" onclick="switchSection('evidence')" id="tab-evidence">
+    <span class="tab-icon">🏛️</span><span class="tab-label">Evidence</span>
+  </button>
+  <button class="tab-btn" onclick="switchSection('glossary')" id="tab-glossary">
+    <span class="tab-icon">📚</span><span class="tab-label">Glossary</span>
+  </button>
+  <button class="tab-btn" onclick="switchSection('accp')" id="tab-accp">
+    <span class="tab-icon">📋</span><span class="tab-label">Mock Exam</span>
+  </button>
+</nav>
+
+<!-- VISUAL PHARMA SECTION -->
+<!-- ═══════════════════════════════════════════════════════════════════════════════
+                                    HOME / INTRO
+     ═══════════════════════════════════════════════════════════════════════════════ -->
+<div id="home" class="section active" style="padding:0;">
+  <!-- Reset Progress Modal -->
+  <div id="resetModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:9999;display:none;align-items:center;justify-content:center;">
+    <div style="background:var(--card,#fff);border-radius:16px;padding:28px 24px;max-width:360px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.25);">
+      <div style="font-size:2.5rem;margin-bottom:8px;">⚠️</div>
+      <h3 style="margin:0 0 8px;font-size:17px;font-weight:700;color:var(--label1,#111);">Reset All Progress?</h3>
+      <p style="margin:0 0 20px;font-size:13px;color:var(--label2,#555);line-height:1.5;">This will permanently erase your quiz history, flashcard intervals, streaks, and missed question list. <strong>This cannot be undone.</strong></p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px;">
+        <button onclick="resetSection('quiz')" style="padding:10px 6px;background:rgba(239,68,68,0.08);color:#dc2626;border:1px solid rgba(239,68,68,0.3);border-radius:10px;font-size:12px;font-weight:600;cursor:pointer;">🧠 Quiz Only</button>
+        <button onclick="resetSection('flash')" style="padding:10px 6px;background:rgba(239,68,68,0.08);color:#dc2626;border:1px solid rgba(239,68,68,0.3);border-radius:10px;font-size:12px;font-weight:600;cursor:pointer;">🃏 Flashcards Only</button>
+      </div>
+      <button onclick="resetSection('all')" style="width:100%;padding:12px;background:#ef4444;color:#fff;border:none;border-radius:10px;font-size:14px;font-weight:700;cursor:pointer;margin-bottom:10px;">💣 Reset Everything</button>
+      <button onclick="document.getElementById('resetModal').style.display='none'" style="width:100%;padding:10px;background:var(--fill,#f2f2f7);color:var(--label1,#111);border:none;border-radius:10px;font-size:13px;font-weight:600;cursor:pointer;">Cancel</button>
+    </div>
+  </div>
+
+  <!-- Import success banner (shown after progress code restore) -->
+  <div id="importSuccessBanner" style="display:none;background:linear-gradient(135deg,#22c55e,#16a34a);color:#fff;padding:12px 20px;text-align:center;font-size:14px;font-weight:600;border-radius:0;">
+    ✅ Progress restored! Your quiz history, flashcard progress, and streaks are back.
+  </div>
+  <!-- Hero banner -->
+  <div style="background:linear-gradient(135deg, #1e293b 0%, #2d3428 40%, #1e3a5f 100%); padding:48px 20px 52px; text-align:center; min-height:300px; display:flex; flex-direction:column; align-items:center; justify-content:center; position:relative; overflow:hidden;">
+    <!-- Subtle background pattern -->
+    <div style="position:absolute;inset:0;opacity:0.04;background-image:radial-gradient(circle at 25% 50%, #b84a2e 1px, transparent 1px), radial-gradient(circle at 75% 50%, #4a3d7a 1px, transparent 1px);background-size:60px 60px;"></div>
+    <!-- Logo -->
+    <div style="margin-bottom:16px;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.3));position:relative;"><svg viewBox="185 68 310 300" xmlns="http://www.w3.org/2000/svg" style="width:90px;height:90px;flex-shrink:0;">
+  <circle cx="340" cy="222" r="146" fill="rgba(237,232,221,0.3)"/>
+  <circle cx="340" cy="222" r="148" fill="none" stroke="#2d3428" stroke-width="2.5"/>
+  <path d="M 212 222 A 56 56 0 1 1 212 222.1" fill="none" stroke="#b84a2e" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 224 222 A 44 44 0 1 1 224 222.1" fill="none" stroke="#b84a2e" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M 236 222 A 32 32 0 1 1 236 222.1" fill="none" stroke="#b84a2e" stroke-width="2.0" stroke-linecap="round"/>
+  <path d="M 248 222 A 20 20 0 1 1 248 222.1" fill="none" stroke="#b84a2e" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M 268 222 A 8 8 0 1 1 268.1 222 L 280 222 A 20 20 0 1 0 268 202" fill="none" stroke="#b84a2e" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="268" cy="222" r="3.5" fill="#b84a2e"/>
+  <line x1="340" y1="88" x2="340" y2="356" stroke="#2d3428" stroke-width="0.6" opacity="0.18"/>
+  <g transform="translate(412, 222)">
+    <circle cx="0" cy="0" r="3.5" fill="#4a3d7a"/>
+    <path d="M 0 -20 A 20 20 0 1 0 0 20" fill="none" stroke="#4a3d7a" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M 0 -32 A 32 32 0 1 0 0 32" fill="none" stroke="#4a3d7a" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M 0 -44 A 44 44 0 1 0 0 44" fill="none" stroke="#4a3d7a" stroke-width="2.0" stroke-linecap="round"/>
+    <path d="M 0 -56 A 56 56 0 1 0 0 56" fill="none" stroke="#4a3d7a" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M 0 -56 L 0 -68 A 12 12 0 0 0 -20 -56" fill="none" stroke="#4a3d7a" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+  <path d="M 222 302 Q 248 290 270 302 Q 292 314 314 302 Q 336 290 358 302 Q 380 314 402 302 Q 424 290 446 302" fill="none" stroke="#4a5c28" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M 230 319 Q 256 307 278 319 Q 300 331 322 319 Q 344 307 366 319 Q 388 331 410 319 Q 432 307 450 319" fill="none" stroke="#4a5c28" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
+  <path d="M 240 335 Q 264 325 284 335 Q 304 345 326 335 Q 348 325 370 335 Q 392 345 414 335 Q 434 325 442 335" fill="none" stroke="#4a5c28" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+</svg></div>
+    <!-- Title -->
+    <h1 style="color:#fff; font-size:38px; font-weight:700; margin:0 0 4px; position:relative;">BCPS Learning Hub</h1>
+    <div style="color:rgba(255,255,255,0.5); font-size:13px; font-weight:500; letter-spacing:2px; text-transform:uppercase; margin-bottom:16px; position:relative;">by <span style="font-family:Georgia,serif;font-style:italic;letter-spacing:1px;">Aina</span><span style="font-family:Georgia,serif;font-weight:700;letter-spacing:1px;">Dara</span></div>
+    <p style="color:rgba(255,255,255,0.8); font-size:17px; margin:0; max-width:580px; line-height:1.6; position:relative;">Master board-certified pharmacotherapy with comprehensive study materials, interactive quizzes, spaced-repetition flashcards, and a 150-question ACCP mock exam to pass the BCPS.</p>
+  </div>
+
+  <!-- Content -->
+  <div style="padding:24px 20px;">
+
+    <!-- Quick intro -->
+    <div style="background:var(--card); border-radius:16px; padding:20px; margin-bottom:28px; border:1px solid var(--sep);">
+      <h2 style="font-size:20px; font-weight:600; margin:0 0 12px;">What You'll Find Here</h2>
+      <p style="margin:0; font-size:15px; color:var(--label2); line-height:1.6;">This hub brings together everything you need to prepare for the BCPS certification exam across all therapeutic areas.</p>
+    </div>
+
+    <!-- Feature cards -->
+    <h3 style="font-size:16px; font-weight:700; margin:0 0 16px; text-transform:uppercase; letter-spacing:0.5px; color:var(--label2);">Study Tools</h3>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(160px, 1fr)); gap:12px; margin-bottom:28px;">
+
+      <div onclick="switchSection('quiz')" style="background:var(--card); border-radius:12px; padding:16px; text-align:center; cursor:pointer; border:1px solid var(--sep); transition:all 0.15s; margin:0;">
+        <div style="font-size:32px; margin-bottom:8px;">❓</div>
+        <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Quiz</div>
+        <div style="font-size:12px; color:var(--label2);">449 Questions</div>
+      </div>
+
+      <div onclick="switchSection('flash')" style="background:var(--card); border-radius:12px; padding:16px; text-align:center; cursor:pointer; border:1px solid var(--sep); transition:all 0.15s; margin:0;">
+        <div style="font-size:32px; margin-bottom:8px;">🎴</div>
+        <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Flashcards</div>
+        <div style="font-size:12px; color:var(--label2);">206 Cards (SM-2)</div>
+      </div>
+
+      <div onclick="switchSection('concepts')" style="background:var(--card); border-radius:12px; padding:16px; text-align:center; cursor:pointer; border:1px solid var(--sep); transition:all 0.15s; margin:0;">
+        <div style="font-size:32px; margin-bottom:8px;">💊</div>
+        <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Drug Ref</div>
+        <div style="font-size:12px; color:var(--label2);">25+ Drugs</div>
+      </div>
+
+      <div onclick="switchSection('accp')" style="background:var(--card); border-radius:12px; padding:16px; text-align:center; cursor:pointer; border:1px solid var(--sep); transition:all 0.15s; margin:0;">
+        <div style="font-size:32px; margin-bottom:8px;">📋</div>
+        <div style="font-weight:600; font-size:14px; margin-bottom:4px;">ACCP Exam</div>
+        <div style="font-size:12px; color:var(--label2);">150 Questions</div>
+      </div>
+
+      <div onclick="switchSection('study')" style="background:var(--card); border-radius:12px; padding:16px; text-align:center; cursor:pointer; border:1px solid var(--sep); transition:all 0.15s; margin:0;">
+        <div style="font-size:32px; margin-bottom:8px;">📚</div>
+        <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Study Guide</div>
+        <div style="font-size:12px; color:var(--label2);">22 Chapters</div>
+      </div>
+
+      <div onclick="switchSection('glo')" style="background:var(--card); border-radius:12px; padding:16px; text-align:center; cursor:pointer; border:1px solid var(--sep); transition:all 0.15s; margin:0;">
+        <div style="font-size:32px; margin-bottom:8px;">📖</div>
+        <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Glossary</div>
+        <div style="font-size:12px; color:var(--label2);">397 Terms</div>
+      </div>
+
+    </div>
+
+    <!-- Key features -->
+    <h3 style="font-size:16px; font-weight:700; margin:0 0 16px; text-transform:uppercase; letter-spacing:0.5px; color:var(--label2);">Key Features</h3>
+    <div style="background:var(--primary-light); border-radius:12px; padding:16px; margin-bottom:28px; border-left:4px solid var(--primary);">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; font-size:14px;">
+        <div>
+          <strong style="color:var(--primary);">📊 Progress Sync</strong>
+          <div style="font-size:13px; color:var(--label2); margin-top:4px;">Sign in to sync flashcard progress, quiz history, and ACCP bookmarks across all your devices.</div>
+        </div>
+        <div>
+          <strong style="color:var(--primary);">🧠 SM-2 Algorithm</strong>
+          <div style="font-size:13px; color:var(--label2); margin-top:4px;">Spaced-repetition flashcards adapt to your learning pace—review harder cards more often.</div>
+        </div>
+        <div>
+          <strong style="color:var(--primary);">🎯 Domain Breakdown</strong>
+          <div style="font-size:13px; color:var(--label2); margin-top:4px;">Filter quiz questions by pharmacology, pathophysiology, and therapeutics domains.</div>
+        </div>
+        <div>
+          <strong style="color:var(--primary);">🔍 Instant Search</strong>
+          <div style="font-size:13px; color:var(--label2); margin-top:4px;">Press ⌘K to search across all sections—drugs, glossary, study chapters, and more.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Progress Hub (rendered by renderProgressStats / renderHomeStats) -->
+    <div id="homeProgressPanel" style="margin-bottom:20px;"></div>
+
+    <!-- Sign in prompt -->
+    <div id="homeSignInPrompt" style="background:rgba(59, 130, 246, 0.1); border:1px solid var(--primary-light); border-radius:12px; padding:20px; text-align:center; margin-bottom:20px;">
+      <h3 style="margin:0 0 8px; font-size:16px; font-weight:600;">Your Progress Hub</h3>
+      <p style="margin:0 0 16px; font-size:14px; color:var(--label2);">Sign in to track your progress. All data is saved automatically — even offline.</p>
+      <div style="display:flex; gap:8px; justify-content:center; flex-wrap:wrap;">
+        <button onclick="quickDemoLogin()" style="padding:10px 20px; background:var(--primary); color:#fff; border:none; border-radius:8px; font-weight:600; cursor:pointer; font-size:14px;">🔑 Sign In (Olaiya)</button>
+        <button onclick="toggleAuthModal()" style="padding:10px 20px; background:transparent; color:var(--primary); border:1.5px solid var(--primary); border-radius:8px; font-weight:600; cursor:pointer; font-size:14px;">Other Login</button>
+      </div>
+    </div>
+
+    <!-- Progress Code (cross-device sync) — enhanced -->
+    <h3 style="font-size:14px; font-weight:700; margin:0 0 12px; text-transform:uppercase; letter-spacing:0.5px; color:var(--label2);">💾 Cross-Device Backup</h3>
+    <div style="background:var(--card); border-radius:14px; padding:18px; border:1px solid var(--sep); margin-bottom:28px;">
+      <!-- Last backup row -->
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:6px;">
+        <span style="font-size:12px;color:var(--label2);">Your quiz history, flashcard intervals &amp; streaks in one portable code.</span>
+        <span id="backupTimestamp" style="font-size:11px;color:var(--label3,#aaa);font-style:italic;"></span>
+      </div>
+
+      <!-- Code preview textarea (always visible, auto-populated) -->
+      <div style="position:relative;margin-bottom:10px;">
+        <textarea id="liveCodePreview" readonly placeholder="Your backup code will appear here…" onclick="this.select()" style="width:100%;height:64px;border-radius:8px;border:1px solid var(--sep);padding:8px 10px 8px 10px;font-size:10.5px;font-family:monospace;resize:none;box-sizing:border-box;background:var(--fill);color:var(--label);cursor:pointer;" title="Click to select all"></textarea>
+        <span style="position:absolute;top:6px;right:8px;font-size:10px;color:var(--label3,#aaa);">click to select</span>
+      </div>
+
+      <!-- Action buttons -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px;">
+        <button onclick="copyProgressCode()" style="padding:9px 10px;background:var(--primary);color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer;font-size:13px;">📋 Copy Code</button>
+        <button onclick="emailProgressCode()" style="padding:9px 10px;background:transparent;color:var(--primary);border:1.5px solid var(--primary);border-radius:8px;font-weight:600;cursor:pointer;font-size:13px;">✉️ Email to Me</button>
+      </div>
+
+      <!-- Load code row -->
+      <details style="margin-top:4px;">
+        <summary style="font-size:13px;font-weight:600;color:var(--label2);cursor:pointer;user-select:none;padding:6px 0;">📥 Load a saved code</summary>
+        <div style="margin-top:8px;">
+          <textarea id="importCodeInput" placeholder="Paste your progress code here…" style="width:100%;height:64px;border-radius:8px;border:1px solid var(--sep);padding:8px 10px;font-size:11px;font-family:monospace;resize:vertical;box-sizing:border-box;background:var(--fill);color:var(--label);"></textarea>
+          <button onclick="importProgressCode()" style="width:100%;margin-top:8px;padding:10px;background:#34C759;color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer;font-size:13px;">✓ Apply Code &amp; Reload</button>
+          <div id="importCodeMsg" style="margin-top:6px;font-size:12px;min-height:14px;"></div>
+        </div>
+      </details>
+    </div>
+
+  </div>
+
+</div>
+
+<div id="visuals" class="section">
+  <div class="section-header">
+    <h2>🔬 Visual Pharmacology</h2>
+    <p>Mechanism of action pathways, drug cascade diagrams, and pharmacology mind map</p>
+  </div>
+
+  <div class="visual-section-grid">
+    <div class="visual-card">
+      <button class="viz-zoom-trigger" onclick="vizLbOpen('cascadeCanvas','Coagulation Cascade & Anticoagulant Targets')">⊕ Zoom</button>
+      <div class="visual-card-title">🩸 Coagulation Cascade & Anticoagulant Targets</div>
+      <div class="visual-card-desc">Where each anticoagulant acts in the clotting pathway</div>
+      <canvas id="cascadeCanvas" onclick="vizLbOpen('cascadeCanvas','Coagulation Cascade & Anticoagulant Targets')" title="Click to zoom" class="visual-canvas" height="320"></canvas>
+    </div>
+    <div class="visual-card">
+      <button class="viz-zoom-trigger" onclick="vizLbOpen('raasCanvas','RAAS Pathway & Drug Targets')">⊕ Zoom</button>
+      <div class="visual-card-title">❤️ RAAS Pathway & Drug Targets</div>
+      <div class="visual-card-desc">ACEi, ARB, ARNI, MRA, and direct renin inhibitor action sites</div>
+      <canvas id="raasCanvas" onclick="vizLbOpen('raasCanvas','RAAS Pathway & Drug Targets')" title="Click to zoom" class="visual-canvas" height="320"></canvas>
+    </div>
+    <div class="visual-card">
+      <button class="viz-zoom-trigger" onclick="vizLbOpen('adrenCanvas','Adrenergic Receptor Pharmacology')">⊕ Zoom</button>
+      <div class="visual-card-title">💉 Adrenergic Receptor Pharmacology</div>
+      <div class="visual-card-desc">α1, α2, β1, β2 receptor effects and drug selectivity map</div>
+      <canvas id="adrenCanvas" onclick="vizLbOpen('adrenCanvas','Adrenergic Receptor Pharmacology')" title="Click to zoom" class="visual-canvas" height="320"></canvas>
+    </div>
+    <div class="visual-card">
+      <button class="viz-zoom-trigger" onclick="vizLbOpen('betalactamCanvas','Beta-Lactam MOA: Cell Wall Synthesis')">⊕ Zoom</button>
+      <div class="visual-card-title">🔵 Beta-Lactam MOA: Cell Wall Synthesis</div>
+      <div class="visual-card-desc">PBP binding, transpeptidase inhibition, autolytic cascade</div>
+      <canvas id="betalactamCanvas" onclick="vizLbOpen('betalactamCanvas','Beta-Lactam MOA: Cell Wall Synthesis')" title="Click to zoom" class="visual-canvas" height="320"></canvas>
+    </div>
+    <div class="visual-card">
+      <button class="viz-zoom-trigger" onclick="vizLbOpen('spectrumCanvas','Antibiotic Spectrum Visual Matrix')">⊕ Zoom</button>
+      <div class="visual-card-title">📊 Antibiotic Spectrum Visual Matrix</div>
+      <div class="visual-card-desc">Coverage heatmap: Gram+, Gram−, Pseudo, MRSA, Anaerobes</div>
+      <canvas id="spectrumCanvas" onclick="vizLbOpen('spectrumCanvas','Antibiotic Spectrum Visual Matrix')" title="Click to zoom" class="visual-canvas" height="320"></canvas>
+    </div>
+    <div class="visual-card">
+      <button class="viz-zoom-trigger" onclick="vizLbOpen('cypCanvas','CYP450 Drug Interaction Web')">⊕ Zoom</button>
+      <div class="visual-card-title">🧬 CYP450 Drug Interaction Web</div>
+      <div class="visual-card-desc">Major enzyme substrates, inhibitors, and inducers — interactive web</div>
+      <canvas id="cypCanvas" onclick="vizLbOpen('cypCanvas','CYP450 Drug Interaction Web')" title="Click to zoom" class="visual-canvas" height="320"></canvas>
+    </div>
+    <div class="visual-card">
+      <button class="viz-zoom-trigger" onclick="vizLbOpen('glucoseCanvas','Glucose/Insulin Physiology')">⊕ Zoom</button>
+      <div class="visual-card-title">🍬 Glucose-Lowering Mechanisms</div>
+      <div class="visual-card-desc">Sites and mechanisms of all major antidiabetic drug classes</div>
+      <canvas id="glucoseCanvas" onclick="vizLbOpen('glucoseCanvas','Glucose/Insulin Physiology')" title="Click to zoom" class="visual-canvas" height="320"></canvas>
+    </div>
+    <div class="visual-card">
+      <button class="viz-zoom-trigger" onclick="vizLbOpen('renalCanvas','Renal Drug Elimination')">⊕ Zoom</button>
+      <div class="visual-card-title">💧 Renal Drug Handling</div>
+      <div class="visual-card-desc">Nephron segments and major drug transport mechanisms</div>
+      <canvas id="renalCanvas" onclick="vizLbOpen('renalCanvas','Renal Drug Elimination')" title="Click to zoom" class="visual-canvas" height="320"></canvas>
+    </div>
+    <div class="visual-card">
+      <div class="visual-card-title">🧪 Antibiotic Target Sites</div>
+      <div class="visual-card-desc">Cell wall, protein synthesis, DNA gyrase, and membrane targets</div>
+      <canvas id="abxTargetCanvas" class="visual-canvas" height="320"></canvas>
+    </div>
+    <div class="visual-card">
+      <div class="visual-card-title">💔 Heart Failure Neurohormonal Cascade</div>
+      <div class="visual-card-desc">RAAS, SNS, and natriuretic peptide pathways — and where drugs intervene</div>
+      <canvas id="hfCanvas" class="visual-canvas" height="360"></canvas>
+    </div>
+    <div class="visual-card">
+      <button class="viz-zoom-trigger" onclick="vizLbOpen('ssNmsCanvas','Serotonin Syndrome vs NMS')">⊕ Zoom</button>
+      <div class="visual-card-title">⚡ Serotonin Syndrome vs NMS</div>
+      <div class="visual-card-desc">Side-by-side comparison of clinical features and causative agents</div>
+      <canvas id="ssNmsCanvas" onclick="vizLbOpen('ssNmsCanvas','Serotonin Syndrome vs NMS')" title="Click to zoom" class="visual-canvas" height="320"></canvas>
+    </div>
+      <div class="visual-card">
+      <button class="viz-zoom-trigger" onclick="vizLbOpen('copdCanvas','COPD/Asthma Stepwise Therapy & Bronchodilator Targets')">⊕ Zoom</button>
+      <div class="visual-card-title">🫁 COPD/Asthma Stepwise Therapy</div>
+      <div class="visual-card-desc">GOLD COPD groups, stepwise bronchodilator targets, and key pharmacology</div>
+      <canvas id="copdCanvas" onclick="vizLbOpen('copdCanvas','COPD/Asthma Stepwise Therapy & Bronchodilator Targets')" title="Click to zoom" class="visual-canvas" height="340"></canvas>
+    </div>
+    <div class="visual-card">
+      <button class="viz-zoom-trigger" onclick="vizLbOpen('opioidCanvas','Opioid Receptor Pharmacology & Analgesic Ladder')">⊕ Zoom</button>
+      <div class="visual-card-title">💊 Opioid Receptor Pharmacology</div>
+      <div class="visual-card-desc">Mu/Kappa/Delta receptor effects, WHO analgesic ladder, reversal agents</div>
+      <canvas id="opioidCanvas" onclick="vizLbOpen('opioidCanvas','Opioid Receptor Pharmacology & Analgesic Ladder')" title="Click to zoom" class="visual-canvas" height="340"></canvas>
+    </div>
+    <div class="visual-card">
+      <button class="viz-zoom-trigger" onclick="vizLbOpen('pkpdCanvas','PK/PD Targets: Concentration vs Time Profiles')">⊕ Zoom</button>
+      <div class="visual-card-title">📈 PK/PD Antibiotic Targets</div>
+      <div class="visual-card-desc">AUC/MIC, Cmax/MIC, and %T>MIC — visual guide to antibiotic PK/PD optimization</div>
+      <canvas id="pkpdCanvas" onclick="vizLbOpen('pkpdCanvas','PK/PD Targets: Concentration vs Time Profiles')" title="Click to zoom" class="visual-canvas" height="340"></canvas>
+    </div>
+    <div class="visual-card">
+      <button class="viz-zoom-trigger" onclick="vizLbOpen('antidepCanvas','Antidepressant Mechanisms & Receptor Profiles')">⊕ Zoom</button>
+      <div class="visual-card-title">🧠 Antidepressant Mechanisms</div>
+      <div class="visual-card-desc">SSRI, SNRI, TCA, MAOI, and novel antidepressant receptor targets compared</div>
+      <canvas id="antidepCanvas" onclick="vizLbOpen('antidepCanvas','Antidepressant Mechanisms & Receptor Profiles')" title="Click to zoom" class="visual-canvas" height="340"></canvas>
+    </div>
+    <div class="visual-card">
+      <button class="viz-zoom-trigger" onclick="vizLbOpen('ibdCanvas','IBD Therapy: Ulcerative Colitis vs Crohn Stepwise')">⊕ Zoom</button>
+      <div class="visual-card-title">🔬 IBD Therapy Comparison</div>
+      <div class="visual-card-desc">UC vs Crohn therapy pyramid: 5-ASA, steroids, immunomodulators, biologics</div>
+      <canvas id="ibdCanvas" onclick="vizLbOpen('ibdCanvas','IBD Therapy: Ulcerative Colitis vs Crohn Stepwise')" title="Click to zoom" class="visual-canvas" height="340"></canvas>
+    </div>
+
+  </div>
+
+  <div style="margin-top:1.5rem">
+    <h3 style="margin-bottom:0.75rem;font-size:1rem;color:#0f172a">🗺️ Pharmacology Relationship Mind Map</h3>
+    <p style="font-size:0.8rem;color:#64748b;margin-bottom:0.75rem">Click a node to highlight connections. Drag to explore. Color = exam domain.</p>
+    <div class="mindmap-wrap">
+      <svg id="mindmapSvg" class="mindmap-svg"></svg>
+    </div>
+  </div>
+</div>
+
+<!-- EVIDENCE-BASED REFERENCES SECTION -->
+<div id="evidence" class="section">
+  <div class="section-header">
+    <h2>🏛️ Evidence-Based References</h2>
+    <p>120+ landmark trials &amp; guidelines · All 13 BCPS chapters · Cardiology · Anticoagulation · ID · Pulm · Nephrology · Psychiatry · GI · Oncology · Transplant · Geriatrics · Pain · PK/TDM · Biostatistics</p>
+  </div>
+  <div class="ev-filter-bar">
+    <input class="ev-search" id="evSearch" placeholder="🔍 Search trials, drugs, outcomes…" oninput="filterEvidence(this.value)">
+    <button class="ev-filter-btn active" onclick="setEvFilter('all',this)">All</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Cardiology',this)">❤️ Cardiology</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Anticoagulation',this)">🩸 Anticoag</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Infectious Disease',this)">🦠 ID</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Endocrinology',this)">🍬 Endocrine</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Nephrology',this)">💧 Nephrology</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Pulmonology',this)">🫁 Pulm</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Neurology',this)">🧠 Neurology</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Psychiatry',this)">🧬 Psychiatry</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('GI/Hepatology',this)">🫀 GI/Hep</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Oncology',this)">🔬 Oncology</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Transplant',this)">💊 Transplant</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Geriatrics',this)">👴 Geriatrics</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Pain',this)">🩹 Pain</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Pharmacokinetics',this)">⚗️ PK/TDM</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Biostatistics',this)">📊 Biostats</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Critical Care',this)">🏥 Critical Care</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('landmark',this)">🔴 Landmark</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('guideline',this)">📘 Guidelines</button>
+  </div>
+  <div id="evTimeline" style="display:none;padding:10px 0 14px"></div>
+  <div id="evContent"></div>
+</div>
+
+<!-- EXAM PSYCHOLOGY SECTION -->
+<div id="exampsych" class="section">
+  <div class="section-header">
+    <h2>🎯 Exam Psychology</h2>
+    <p>Mental strategies, pacing drills, and high-yield exam mindset training</p>
+  </div>
+  <h2 style="margin-bottom:0.25rem">🧠 Exam Skills & Strategy</h2>
+  <p style="color:#64748b;font-size:0.87rem;margin-bottom:1.25rem">Optimize your BCPS exam performance with cognitive strategies, stem dissection, timing mastery, and interactive drills</p>
+
+  <div class="exam-psych-grid">
+
+    <div class="ep-card">
+      <div class="ep-card-header">
+        <div class="ep-card-title">⏱️ Timing Mastery Calculator</div>
+        <div class="ep-card-subtitle">Plan your exam pacing strategy</div>
+      </div>
+      <div class="ep-card-body">
+        <div class="timing-calc">
+          <div class="timing-row"><span>Total exam questions</span><input id="tq" class="timing-input" type="number" value="185" oninput="calcTiming()"></div>
+          <div class="timing-row"><span>Total exam time (min)</span><input id="tt" class="timing-input" type="number" value="250" oninput="calcTiming()"></div>
+          <div class="timing-row"><span>Target skip buffer (%)</span><input id="tb" class="timing-input" type="number" value="10" oninput="calcTiming()"></div>
+          <div class="timing-row"><span id="tResult1">⏱️ Time per question</span><span id="tVal1" style="font-weight:700;color:#0284c7">1:21</span></div>
+          <div class="timing-row"><span id="tResult2">🔖 Check-in at Q50</span><span id="tVal2" style="font-weight:700;color:#0284c7">—</span></div>
+          <div class="timing-row"><span id="tResult3">🔖 Check-in at Q100</span><span id="tVal3" style="font-weight:700;color:#0284c7">—</span></div>
+          <div class="timing-row"><span>🎯 Reserve for review (min)</span><span id="tVal4" style="color:#0284c7">—</span></div>
+        </div>
+        <div style="margin-top:0.75rem;font-size:0.8rem;color:#475569;line-height:1.6">
+          <strong>Strategy:</strong> If behind pace at Q50 checkpoint, increase speed on straightforward questions. Never spend &gt;3 min on any single question — mark and return.
+        </div>
+      </div>
+    </div>
+
+    <div class="ep-card">
+      <div class="ep-card-header">
+        <div class="ep-card-title">🔬 Question Stem Anatomy</div>
+        <div class="ep-card-subtitle">How to dissect a BCPS question in 3 steps</div>
+      </div>
+      <div class="ep-card-body">
+        <div class="ep-tip"><span class="ep-tip-icon">1️⃣</span><span><strong>Read the LAST sentence first.</strong> The actual question is always there. This primes your brain to read the stem for the RIGHT information instead of everything.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon">2️⃣</span><span><strong>Extract the 3 key facts</strong> while reading: Patient profile (age/organ function), Current medications, The clinical problem. These 3 facts drive 90% of BCPS answer choices.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon">3️⃣</span><span><strong>Eliminate before selecting.</strong> Remove clearly wrong options first. If 2 choices remain and you are unsure, choose the more specific or guideline-supported option — BCPS tests guidelines, not instinct.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon">🚩</span><span><strong>Red flag words:</strong> "EXCEPT" / "NOT" / "MOST appropriate" / "LEAST likely" — circle these. One mismatch = wrong answer even if you know the content.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon">🎯</span><span><strong>Distractor patterns:</strong> BCPS loves plausible-sounding options with wrong doses, wrong indications, or missing contraindications. The "almost right" answer is always the hardest distractor.</span></div>
+      </div>
+    </div>
+
+    <div class="ep-card">
+      <div class="ep-card-header">
+        <div class="ep-card-title">🧩 Cognitive Bias Training</div>
+        <div class="ep-card-subtitle">Recognize the errors that cause exam failure</div>
+      </div>
+      <div class="ep-card-body">
+        <div class="ep-tip"><span class="ep-tip-icon">🎭</span><span><strong>Anchoring Bias:</strong> Your first impression anchors you to one diagnosis/drug. Always re-read the question after choosing — does your answer actually answer what was asked?</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon">🔁</span><span><strong>Availability Heuristic:</strong> Choosing the condition you just studied feels right but may not match the question. Rely on the specific patient facts, not recent study material.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon">✔️</span><span><strong>Premature Closure:</strong> Stop evaluating too early. Even if Option A sounds right, read ALL four options — Option D may be more specific or more complete.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon">📐</span><span><strong>Base Rate Neglect:</strong> For BCPS, prevalence matters. If a question involves a patient on multiple medications, the most common drug interaction is usually the right answer, not the rare one.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon">🔄</span><span><strong>Changing Answers:</strong> Research shows: change answers only when you have a CLEAR reason. A vague "feeling" is not a reason. First instincts are correct ~60% of the time.</span></div>
+      </div>
+    </div>
+
+    <div class="ep-card">
+      <div class="ep-card-header">
+        <div class="ep-card-title">🏋️ Rapid-Fire Drill: Stem Strategy</div>
+        <div class="ep-card-subtitle">Practice applying stem-dissection technique</div>
+      </div>
+      <div class="ep-card-body" id="drillBody">
+        <div class="ep-progress"><div class="ep-progress-bar" id="drillBar" style="width:0%"></div></div>
+        <div id="drillScore" style="font-size:0.78rem;color:#64748b;margin-bottom:0.5rem">Question 1 of 6 | Score: 0/0</div>
+        <div id="drillContent"></div>
+        <button class="btn btn-primary" id="drillNextBtn" style="margin-top:0.75rem;display:none" onclick="nextEpDrill()">Next Question →</button>
+      </div>
+    </div>
+
+    <div class="ep-card">
+      <div class="ep-card-header">
+        <div class="ep-card-title">🧘 Pre-Exam Mental Optimization</div>
+        <div class="ep-card-subtitle">Performance psychology for exam day</div>
+      </div>
+      <div class="ep-card-body">
+        <div class="ep-tip"><span class="ep-tip-icon">😴</span><span><strong>Sleep is non-negotiable.</strong> REM sleep consolidates pharmacology memory into retrieval pathways. Pulling an all-nighter costs 20–30% cognitive performance — not worth it for any amount of last-minute review.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon">🥗</span><span><strong>Glucose management:</strong> Complex carbs + protein before the exam sustains glucose more reliably than simple sugars. Avoid caffeine overdose — mild anxiety amplification is useful; panic is not.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon">🌬️</span><span><strong>4-7-8 Breathing:</strong> When stuck on a hard question — inhale 4 sec, hold 7, exhale 8. This activates parasympathetic response, lowers cortisol, restores prefrontal function within 60 seconds.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon">🎯</span><span><strong>Confidence calibration:</strong> Don't aim for certainty on every question. You need ~73% correct to pass. Some questions are experimental and uncounted. Release the need to be perfect on every stem.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon">🔋</span><span><strong>Energy scheduling:</strong> Peak cognitive function typically occurs 2-3 hours after waking. If possible, schedule review/practice at your exam time to train your circadian rhythm.</span></div>
+      </div>
+    </div>
+
+    <div class="ep-card">
+      <div class="ep-card-header">
+        <div class="ep-card-title">📋 BCPS Blueprint Strategy Map</div>
+        <div class="ep-card-subtitle">Maximize points per study hour</div>
+      </div>
+      <div class="ep-card-body">
+        <div class="ep-tip"><span class="ep-tip-icon">📊</span><span><strong>Area 1 (36%):</strong> Highest yield per hour. Focus on: acute care cardiology, ID, critical care PK. These topics overlap frequently — one drug (vancomycin) may appear in 3-4 different contexts.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon">📊</span><span><strong>Area 2 (36%):</strong> Biostatistics is high-yield per study hour — mastering 8 statistical concepts covers ~10-15 questions. Drug interactions and pharmacogenomics are high-frequency topics.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon">📊</span><span><strong>Area 3 (28%):</strong> Regulatory questions are rules-based — memorizable and reliable. DEA schedules, REMS programs, ISMP lists, and FDA approval pathways are excellent low-effort, high-return topics.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon">⚖️</span><span><strong>Time allocation model:</strong> If studying 200 total hours: ~72 hrs Area 1 (36%), ~72 hrs Area 2, ~56 hrs Area 3. Within each area, weight topics by: frequency in BCPS prep materials + personal weakness.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon">🔄</span><span><strong>Spaced repetition beats massed practice</strong> for pharmacology memory. 5 exposures over 5 weeks &gt; 5 exposures in 1 day. Use the flashcard SR system in this hub starting 6-8 weeks before the exam.</span></div>
+      </div>
+    </div>
+
+    <div class="ep-card" style="grid-column:1/-1">
+      <div class="ep-card-header">
+        <div class="ep-card-title">📝 Full Case Walkthrough: Apply Every Strategy</div>
+        <div class="ep-card-subtitle">Step-by-step stem dissection with think-aloud commentary</div>
+      </div>
+      <div class="ep-card-body">
+        <div style="background:#f0f9ff;border-radius:10px;padding:1rem;font-size:0.84rem;line-height:1.7;border:1px solid #bae6fd;margin-bottom:1rem">
+          <strong>QUESTION STEM:</strong><br>
+          A 67-year-old man (78 kg, CrCl 28 mL/min) with MRSA bacteremia is started on vancomycin. Target AUC/MIC is 400–600 mg·h/L. The isolate's vancomycin MIC is 1 mcg/mL. Steady-state AUC is estimated at 330 mg·h/L using a 2-point PK method after the 3rd dose of 1250 mg q12h. Which adjustment is most appropriate?<br><br>
+          A. Increase dose to 1500 mg q12h<br>B. Increase dose to 1750 mg q12h<br>C. Increase dose to 1500 mg q12h AND extend interval to q18h<br>D. Change to daptomycin 8 mg/kg q24h — vancomycin AUC subtherapeutic
+        </div>
+        <div style="font-size:0.84rem;line-height:1.8">
+          <div style="background:#f0fdf4;border-radius:8px;padding:0.75rem;margin-bottom:0.5rem;border:1px solid #bbf7d0">
+            <strong>Step 1 — Read last sentence first:</strong> "Which adjustment is most appropriate?" → I need to fix a subtherapeutic vancomycin AUC. The question is about dose optimization.
+          </div>
+          <div style="background:#fefce8;border-radius:8px;padding:0.75rem;margin-bottom:0.5rem;border:1px solid #fef08a">
+            <strong>Step 2 — Extract 3 key facts:</strong> Patient: 78 kg, CrCl 28 (reduced renal clearance → longer t½ → accumulation risk). Drug: vancomycin. Problem: AUC 330, target 400-600. The AUC is LOW but not catastrophically low — I need a proportional increase.
+          </div>
+          <div style="background:#faf5ff;border-radius:8px;padding:0.75rem;margin-bottom:0.5rem;border:1px solid #ede9fe">
+            <strong>Step 3 — Eliminate:</strong> Option D (switch to daptomycin) is premature — AUC is 330 and target is 400-600; a dose increase should be tried first before switching agents, per ASHP/SIDP/SCCM guidelines. Eliminate D. Between A, B, C: AUC is ~78% of target (330/430 midpoint). Need ~30% AUC increase. AUC is proportional to dose: 30% ↑dose = 30% ↑AUC. Current dose 1250 × 1.30 = 1625 mg ≈ 1750 mg. Option B. With CrCl 28, extending interval makes pharmacokinetic sense but the AUC is a total measure — interval affects trough/peak distribution but not total AUC meaningfully for a well-spaced regimen. Answer: <strong>B — 1750 mg q12h.</strong>
+          </div>
+          <div style="background:#fff7ed;border-radius:8px;padding:0.75rem;border:1px solid #fed7aa">
+            <strong>Cognitive bias check:</strong> Did I anchor on "low renal function = extend interval"? That anchoring bias could push toward C. Remember: AUC/MIC monitoring focuses on total drug exposure (AUC) — interval adjustment changes peak/trough but not AUC unless clearance changes. A proportional dose increase is the right move.
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- BPS METHODOLOGY DEEP DIVE -->
+  <div style="margin-top:20px">
+    <div class="section-header" style="margin-bottom:14px">
+      <h2 style="font-size:1.1rem">📐 BPS Exam Design Methodology</h2>
+      <p>How question writers think — and how to reverse-engineer it</p>
+    </div>
+
+    <div class="ep-card" style="border-left:4px solid var(--purple)">
+      <div class="ep-card-header"><div class="ep-card-title">🏗️ How BPS Constructs Board Questions</div>
+      <div class="ep-card-subtitle">The item-writing philosophy behind every BCPS question</div></div>
+      <div class="ep-card-body">
+        <div class="ep-tip"><span class="ep-tip-icon">📊</span><span><strong>Bloom's Taxonomy Applied:</strong> BPS deliberately tests at Level 3+ (Application) and Level 4 (Analysis), NOT recall. A question is never just "What is the dose of X?" — it is always "Given this patient with these constraints, which option is most appropriate?" Memorizing facts is necessary but not sufficient.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon">🔬</span><span><strong>Clinical Vignette Format:</strong> Every stem is a patient scenario for a reason — it tests your ability to integrate pharmacotherapy into real clinical decision-making. The patient's renal function, weight, allergies, and comorbidities are NEVER distractors — they are always clinically relevant to the correct answer.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon">🎯</span><span><strong>Best Answer vs. Correct Answer:</strong> BPS uses "most appropriate" because multiple options may be technically correct. The key discriminator is: which answer reflects current guideline recommendations, is safest for this specific patient, and is most evidence-based? This is why you must know WHY the guideline recommends what it does.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon">⚖️</span><span><strong>Distractor Construction:</strong> BPS item writers deliberately create plausible wrong answers that are: (1) correct for a different patient population, (2) outdated guideline recommendations, (3) correct drugs for the wrong indication, (4) correct indication but wrong dose/interval. Recognizing these distractor types is a skill.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon">📋</span><span><strong>Content Blueprint:</strong> Area 1 (Patient Care Specialty) = 36%, Area 2 (Therapeutics & Management) = 36%, Area 3 (Systems & Evidence) = 28%. Within those domains, questions are weighted by clinical prevalence and patient safety impact — high-alert medications, monitoring parameters, and drug interactions appear disproportionately often.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon">🔄</span><span><strong>Angoff Standard Setting:</strong> Pass scores are set by a panel of expert pharmacists estimating what percentage of minimally competent candidates would answer each question correctly. This means: some questions are DESIGNED to be answered by ~55% of candidates, others by 85%. Don't let a hard question demoralize you — it's likely designed to separate the top 15%.</span></div>
+      </div>
+    </div>
+
+    <div class="ep-card" style="border-left:4px solid var(--orange)">
+      <div class="ep-card-header"><div class="ep-card-title">🧩 The 4 Distractor Archetypes</div>
+      <div class="ep-card-subtitle">Pattern-recognize wrong answers before reading options</div></div>
+      <div class="ep-card-body">
+        <div style="display:grid;gap:10px">
+          <div style="background:var(--fill);border-radius:12px;padding:12px">
+            <div style="font-weight:700;color:var(--red);margin-bottom:4px">Type 1: Wrong Population</div>
+            <div style="font-size:0.83rem;line-height:1.55">Correct drug/dose but wrong patient. Example: metformin is the right first-line T2DM drug — but NOT if the patient has eGFR &lt;30. The distractor presents metformin; the correct answer is an alternative like SGLT2i or GLP-1. <em>Recognition signal: patient has an organ dysfunction, pregnancy, or contraindication clue in the stem.</em></div>
+          </div>
+          <div style="background:var(--fill);border-radius:12px;padding:12px">
+            <div style="font-weight:700;color:var(--orange);margin-bottom:4px">Type 2: Outdated Guidelines</div>
+            <div style="font-size:0.83rem;line-height:1.55">Former standard-of-care that guidelines have superseded. Example: carbamazepine/phenytoin for trigeminal neuralgia (still valid) vs. older antibiotics replaced by newer evidence. BPS tests current guidelines — if you learned something 5+ years ago without updating, this is your trap.</div>
+          </div>
+          <div style="background:var(--fill);border-radius:12px;padding:12px">
+            <div style="font-weight:700;color:var(--purple);margin-bottom:4px">Type 3: Right Drug, Wrong Parameter</div>
+            <div style="font-size:0.83rem;line-height:1.55">Correct drug choice, but the dose, interval, route, or monitoring threshold is wrong. Example: vancomycin AUC target 400-600 (correct), but the distractor says 200-300 or offers "trough-only monitoring" (outdated). Requires you to know not just WHAT but at exactly WHAT NUMBER.</div>
+          </div>
+          <div style="background:var(--fill);border-radius:12px;padding:12px">
+            <div style="font-weight:700;color:var(--teal);margin-bottom:4px">Type 4: Plausible Alternative That Requires Additional Step</div>
+            <div style="font-size:0.83rem;line-height:1.55">The option is a valid therapy but not the most appropriate FIRST step. Example: switching anticoagulants when the patient is subtherapeutic — the correct answer is checking adherence and dose-adjusting first, not switching agents. BPS tests "appropriate sequence" not just "valid options."</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ep-card" style="border-left:4px solid var(--green)">
+      <div class="ep-card-header"><div class="ep-card-title">📈 BPS Biostatistics: The Mental Model</div>
+      <div class="ep-card-subtitle">The specific framework BPS uses to test statistics and EBM</div></div>
+      <div class="ep-card-body">
+        <div class="ep-tip"><span class="ep-tip-icon">🔑</span><span><strong>The BPS Stats Question Template:</strong> "A trial reports [RR/OR/ARR/NNT] of [X] with 95% CI [Y-Z]. Which interpretation is correct?" — BPS tests 3 things simultaneously: (1) Can you interpret the statistic? (2) Does the CI cross the null? (3) Is this clinically meaningful? You must answer all three to select the right option.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon">🚩</span><span><strong>The CI Null-Crossing Rule:</strong> For ratios (RR, OR, HR), statistical significance = CI does NOT cross 1.0. For differences (ARR, MD), CI does NOT cross 0. This is testable without a p-value. BPS will give you a CI and test whether you know the null without saying "is p &lt; 0.05?"</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon">📉</span><span><strong>RRR vs. ARR Trap:</strong> BPS commonly presents RRR (always larger, more impressive-sounding) to test if you can identify the misleading framing. RRR = 40% sounds great; ARR = 0.5%, NNT = 200 sounds less impressive. The correct answer usually asks which measure best reflects clinical impact — always ARR or NNT.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon">🎓</span><span><strong>Study Design Hierarchy on BCPS:</strong> RCT &gt; Cohort &gt; Case-Control &gt; Cross-sectional &gt; Case series. BPS tests: (1) Which study design can prove causation? (Only RCT), (2) Which is best for rare diseases? (Case-control), (3) Which cannot calculate incidence? (Case-control — use OR not RR). These distinctions are high-yield.</span></div>
+        <div style="background:linear-gradient(135deg,#E8F3FF,#F5EEFF);border-radius:12px;padding:14px;margin-top:10px">
+          <div style="font-weight:700;margin-bottom:8px;font-size:0.88rem">⚡ The 60-Second Biostat Framework (memorize this)</div>
+          <div style="font-size:0.8rem;line-height:1.7">
+            1. <strong>What study design?</strong> → determines what statistic is valid<br>
+            2. <strong>What is the point estimate?</strong> → RR, OR, ARR, NNT, HR<br>
+            3. <strong>Does the CI cross the null?</strong> → crosses = not significant<br>
+            4. <strong>Is the effect clinically meaningful?</strong> → ARR and NNT, not RRR<br>
+            5. <strong>Is there a bias?</strong> → selection, information, confounding, or lead-time<br>
+            Answer the question through these 5 lenses. BPS questions that test statistics almost always require step 4 or 5 to eliminate the wrong answer.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ep-card" style="border-left:4px solid var(--primary)">
+      <div class="ep-card-header"><div class="ep-card-title">🔍 Advanced Stem Dissection: BPS-Specific Signals</div>
+      <div class="ep-card-subtitle">Keywords that change everything — and what they signal</div></div>
+      <div class="ep-card-body">
+        <div style="display:grid;gap:8px">
+          <div style="background:var(--fill);border-radius:10px;padding:10px;display:flex;gap:10px;align-items:flex-start">
+            <span style="font-size:1.1rem">🔴</span>
+            <div><div style="font-weight:700;font-size:0.85rem">Organ function clues</div><div style="font-size:0.8rem;color:var(--label2);margin-top:2px">"CrCl 25 mL/min" → renal adjustment needed · "Child-Pugh C" → hepatic dosing · "BMI 48" → obesity PK changes · "dialysis 3x/week" → drug removed by HD?</div></div>
+          </div>
+          <div style="background:var(--fill);border-radius:10px;padding:10px;display:flex;gap:10px;align-items:flex-start">
+            <span style="font-size:1.1rem">🟡</span>
+            <div><div style="font-weight:700;font-size:0.85rem">Superlative qualifiers</div><div style="font-size:0.8rem;color:var(--label2);margin-top:2px">"MOST appropriate" = best per guidelines, not just valid · "LEAST likely" = flips your answer logic · "INITIAL" = first-line only · "NEXT" = sequence matters, not end goal</div></div>
+          </div>
+          <div style="background:var(--fill);border-radius:10px;padding:10px;display:flex;gap:10px;align-items:flex-start">
+            <span style="font-size:1.1rem">🟢</span>
+            <div><div style="font-weight:700;font-size:0.85rem">Current therapy clues</div><div style="font-size:0.8rem;color:var(--label2);margin-top:2px">Drug list in stem = look for interaction, contraindication, or redundancy · DOAC + strong CYP3A4 inhibitor = dose adjustment or alternative needed · ACEi + ARB = avoid combination (dual RAAS blockade)</div></div>
+          </div>
+          <div style="background:var(--fill);border-radius:10px;padding:10px;display:flex;gap:10px;align-items:flex-start">
+            <span style="font-size:1.1rem">🔵</span>
+            <div><div style="font-weight:700;font-size:0.85rem">Lab result signals</div><div style="font-size:0.8rem;color:var(--label2);margin-top:2px">Elevated SCr = nephrotoxicity or dose reduction · Low platelet &lt;50k → anticoagulation caution · INR 1.8 on warfarin = subtherapeutic → adherence vs. interaction · K+ 5.8 on RAAS drug → hold or reduce</div></div>
+          </div>
+          <div style="background:var(--fill);border-radius:10px;padding:10px;display:flex;gap:10px;align-items:flex-start">
+            <span style="font-size:1.1rem">🟣</span>
+            <div><div style="font-weight:700;font-size:0.85roman">Demographic flags</div><div style="font-size:0.8rem;color:var(--label2);margin-top:2px">Age &gt;65 = Beers Criteria awareness · Pregnancy = teratogenicity and safety classes · Pediatric = weight-based dosing · Asian patient + carbamazepine = HLA-B*15:02 SJS risk</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ep-card" style="border-left:4px solid var(--red)">
+      <div class="ep-card-header"><div class="ep-card-title">⚡ High-Yield BPS Answer Selection Rules</div>
+      <div class="ep-card-subtitle">Decision rules that apply to 80% of BCPS questions</div></div>
+      <div class="ep-card-body">
+        <div style="display:grid;gap:8px">
+          <div style="background:#FFE9E8;border-radius:10px;padding:10px;font-size:0.83rem;line-height:1.55">
+            <strong>Rule 1 — Guideline Supremacy:</strong> If the stem gives you a published guideline context (ACC/AHA, ASHP, IDSA, CHEST, etc.), the answer is whatever the current guideline says, even if clinical judgment might differ. BPS tests adherence to evidence-based guidelines.
+          </div>
+          <div style="background:#FFF5E0;border-radius:10px;padding:10px;font-size:0.83rem;line-height:1.55">
+            <strong>Rule 2 — Sequence Before Switch:</strong> When a drug isn't working, optimize before switching. Max dose before adding adjunct. Check adherence before changing class. This is the "stepwise therapy" philosophy BPS consistently tests.
+          </div>
+          <div style="background:#E8FBED;border-radius:10px;padding:10px;font-size:0.83rem;line-height:1.55">
+            <strong>Rule 3 — Safety First in Ambiguity:</strong> When two options are both efficacious, the safer option (fewer side effects, established monitoring parameters, narrower therapeutic index awareness) is usually correct. BPS asks "most appropriate" — that incorporates safety.
+          </div>
+          <div style="background:#E8F3FF;border-radius:10px;padding:10px;font-size:0.83rem;line-height:1.55">
+            <strong>Rule 4 — The Specific Beats the General:</strong> "Recommend vancomycin for MRSA" is less specific than "Recommend vancomycin AUC/MIC-guided dosing targeting 400-600 for MRSA bacteremia." BPS expects specificity. The more specific, quantitatively accurate answer is typically correct.
+          </div>
+          <div style="background:#F5EEFF;border-radius:10px;padding:10px;font-size:0.83rem;line-height:1.55">
+            <strong>Rule 5 — Numbers are Testable, Concepts are Eliminators:</strong> Knowing the exact numerical thresholds (HbA1c &lt;7%, LDL goal &lt;70 mg/dL for very high risk, vancomycin AUC 400-600, anticoagulation INR 2-3) separates passing from failing. BPS uses exact numbers in distractors — close but wrong.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ep-card" style="background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff">
+      <div class="ep-card-header"><div class="ep-card-title" style="color:#fff">🧠 The Master Framework: How Elite Scorers Think</div>
+      <div class="ep-card-subtitle" style="color:rgba(255,255,255,0.65)">The mental model of candidates who score 85%+</div></div>
+      <div class="ep-card-body">
+        <div style="display:grid;gap:10px;font-size:0.84rem;line-height:1.65">
+          <div style="background:rgba(255,255,255,0.08);border-radius:12px;padding:12px">
+            <div style="color:#5AC8FA;font-weight:700;margin-bottom:5px">Phase 1: Stem Triage (10 seconds)</div>
+            Read last sentence → identify question type (dosing? monitoring? drug interaction? EBM?) → activate the right knowledge module before reading the full stem.
+          </div>
+          <div style="background:rgba(255,255,255,0.08);border-radius:12px;padding:12px">
+            <div style="color:#34C759;font-weight:700;margin-bottom:5px">Phase 2: Constraint Extraction (20 seconds)</div>
+            Read stem for constraints: organ function, age, allergies, current meds, labs. These constraints eliminate at least 1-2 options before you even read them. Build a mental "required characteristics" list.
+          </div>
+          <div style="background:rgba(255,255,255,0.08);border-radius:12px;padding:12px">
+            <div style="color:#FF9500;font-weight:700;margin-bottom:5px">Phase 3: Option Evaluation (30 seconds)</div>
+            Apply constraints to eliminate. Then apply the 5 Rules. For remaining options: which is more evidence-based? More specific? More current? More guideline-aligned? Select it.
+          </div>
+          <div style="background:rgba(255,255,255,0.08);border-radius:12px;padding:12px">
+            <div style="color:#AF52DE;font-weight:700;margin-bottom:5px">Phase 4: Verification (5 seconds)</div>
+            Re-read the question stem's last sentence. Does your answer actually answer WHAT WAS ASKED? This catches anchoring errors. If yes — commit, move on. Zero second-guessing without new information.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEW: Source-Synthesized Cards from High-Yield Med Reviews -->
+
+    <!-- PART 1: Question Types -->
+    <div class="ep-card" style="border-left-color:#007AFF">
+      <div class="ep-card-header">
+        <div class="ep-card-title">📋 The 7 BPS Question Types (Complete Field Guide)</div>
+        <div class="ep-card-subtitle">Know the type → apply the right strategy immediately</div>
+      </div>
+      <div class="ep-card-body">
+        <div style="font-size:0.82rem;color:var(--label2);margin-bottom:8px;font-style:italic">80% of BPS questions test tacit (application) knowledge — not memorized facts. 90% test patient care &amp; evidence translation.</div>
+        <div style="display:grid;gap:8px;font-size:0.82rem">
+          <div style="background:var(--fill);border-radius:10px;padding:10px">
+            <div style="font-weight:700;color:var(--primary);margin-bottom:4px">1️⃣ Background Questions</div>
+            <div><b>What:</b> Tests basic/explicit knowledge (facts, definitions).</div>
+            <div><b>Strategy:</b> Pure memorization. These are fast — don't overthink them.</div>
+          </div>
+          <div style="background:var(--fill);border-radius:10px;padding:10px">
+            <div style="font-weight:700;color:var(--primary);margin-bottom:4px">2️⃣ Foreground Questions</div>
+            <div><b>What:</b> Applies facts to a real clinical situation — requires tacit knowledge.</div>
+            <div><b>Strategy:</b> Go deeper than recall — ask "why does this matter for THIS patient?"</div>
+          </div>
+          <div style="background:var(--fill);border-radius:10px;padding:10px">
+            <div style="font-weight:700;color:var(--orange);margin-bottom:4px">3️⃣ Negative Questions <span style="font-weight:400;color:var(--label2)">(NOT / EXCEPT / NEVER)</span></div>
+            <div><b>Strategy:</b> Convert to True/False. Evaluate each option as a T/F statement. The FALSE statement = correct answer.</div>
+            <div style="margin-top:5px;padding:6px 8px;background:rgba(255,149,0,0.1);border-radius:7px;color:var(--label)"><b>Example:</b> "Which is NOT a risk factor for diabetes?" → Evaluate each option as "X IS a risk factor" — the FALSE one wins. NSAID use → False → correct answer.</div>
+          </div>
+          <div style="background:var(--fill);border-radius:10px;padding:10px">
+            <div style="font-weight:700;color:var(--purple);margin-bottom:4px">4️⃣ Conjunction Questions <span style="font-weight:400;color:var(--label2)">(and / but / for / nor / yet)</span></div>
+            <div><b>What:</b> Two equally important components connected by a conjunction.</div>
+            <div><b>Strategy:</b> Treat each part as its own question. If ANY part is wrong → the entire answer is wrong → eliminate it.</div>
+          </div>
+          <div style="background:var(--fill);border-radius:10px;padding:10px">
+            <div style="font-weight:700;color:var(--teal);margin-bottom:4px">5️⃣ Two-Step Questions</div>
+            <div><b>What:</b> 2-component question where Part 2 depends on Part 1 answer.</div>
+            <div><b>Strategy:</b> Solve Part 1 first, THEN solve Part 2 using that answer. Both components must be correct — one wrong = all wrong.</div>
+          </div>
+          <div style="background:var(--fill);border-radius:10px;padding:10px">
+            <div style="font-weight:700;color:var(--red);margin-bottom:4px">6️⃣ Bait &amp; Switch Questions</div>
+            <div><b>What:</b> Leads you in one direction, then pivots to ask something different.</div>
+            <div><b>Strategy:</b> Always identify the ACTUAL question — usually the last sentence. Don't answer what you THINK they're asking. Answer what they actually ask.</div>
+          </div>
+          <div style="background:linear-gradient(135deg,rgba(0,122,255,0.1),rgba(88,86,214,0.1));border-radius:10px;padding:10px;border:1px solid rgba(0,122,255,0.2)">
+            <div style="font-weight:700;color:var(--indigo);margin-bottom:4px">7️⃣ Case-Based Questions <span style="color:var(--red)">(Most Complex — See Next Card)</span></div>
+            <div><b>What:</b> Full clinical scenario with PMH, labs, meds, exam findings.</div>
+            <div><b>Strategy:</b> Read ENTIRE case in order. Build pattern of association. Do NOT jump to question first.</div>
+          </div>
+        </div>
+        <div style="background:rgba(0,122,255,0.07);border-radius:10px;padding:10px;font-size:0.8rem;margin-top:4px">
+          <b>Universal Tips:</b> Longer answers are often correct (writers add qualifying language). Eliminate answers with extreme wording (always/every/must/never/only) — medicine is rarely one-size-fits-all. If you must qualify your answer, it is likely wrong. Grammatical fit between question and answer can be a clue. Never assume more information than provided.
+        </div>
+      </div>
+    </div>
+
+    <!-- PART 2: Case-Based Strategy -->
+    <div class="ep-card" style="border-left-color:#34C759">
+      <div class="ep-card-header">
+        <div class="ep-card-title">🏥 Mastering Case-Based Questions: The 6-Step Method</div>
+        <div class="ep-card-subtitle">The most complex and highest-yield question type on BPS exams</div>
+      </div>
+      <div class="ep-card-body">
+        <div style="font-size:0.82rem;color:var(--label2);margin-bottom:8px;font-style:italic">Case-based questions test Bloom's Level 3-4: analysis and application. Multiple options may seem "correct" — only ONE is BEST for this specific patient.</div>
+        <div style="display:grid;gap:8px;font-size:0.82rem">
+          <div style="display:flex;gap:10px;align-items:flex-start">
+            <div style="min-width:26px;height:26px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0">1</div>
+            <div><b>Work in order.</b> Don't jump to the question. Clinical cases build chronologically — the pattern of association directs you to the answer. Jumping ahead breaks the narrative logic.</div>
+          </div>
+          <div style="display:flex;gap:10px;align-items:flex-start">
+            <div style="min-width:26px;height:26px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0">2</div>
+            <div><b>Look for the pattern.</b> Don't memorize all details — identify the association between them. What does this constellation of findings point to?</div>
+          </div>
+          <div style="display:flex;gap:10px;align-items:flex-start">
+            <div style="min-width:26px;height:26px;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0">3</div>
+            <div><b>Judge the information.</b> Don't just notice labs and meds — evaluate them. Ask: Does this patient have an indication for that drug? Are these labs expected from the PMH, or do they signal a new problem? Could the current treatment be causing the new symptoms?</div>
+          </div>
+          <div style="display:flex;gap:10px;align-items:flex-start">
+            <div style="min-width:26px;height:26px;border-radius:50%;background:var(--orange);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0">4</div>
+            <div><b>Don't presume.</b> Do not assume a cause unless stated. The question may be testing your ability to think outside the typical presentation. If you're thinking "I'd ask for more information" — you're off track. All needed details are in the stem.</div>
+          </div>
+          <div style="display:flex;gap:10px;align-items:flex-start">
+            <div style="min-width:26px;height:26px;border-radius:50%;background:var(--purple);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0">5</div>
+            <div><b>Consider the "how."</b> Go beyond guidelines — think about mechanism. How does this drug work? What secondary consequences (benefits or harms) does that create? This is what separates foreground from background mastery.</div>
+          </div>
+          <div style="display:flex;gap:10px;align-items:flex-start">
+            <div style="min-width:26px;height:26px;border-radius:50%;background:var(--indigo);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0">6</div>
+            <div><b>Formulate before reading options.</b> Mentally commit to an answer before seeing the choices. This prevents distractor anchoring — being seduced by a plausible-but-wrong option. Then: if options match your gut → you're probably right. Tiebreaker: mortality/QoL benefit wins.</div>
+          </div>
+        </div>
+        <div style="background:rgba(52,199,89,0.1);border-radius:10px;padding:10px;font-size:0.8rem;margin-top:4px;border-left:3px solid var(--green)">
+          <b>Panic Protocol:</b> Remember a core concept is being tested — not a trick. Trust your first instinct. Eliminate 1-2 options: 25% guess → 50-75% odds. Never leave blank. Take a breath, reset, attack it like a clinical consult.
+        </div>
+        <div style="background:rgba(255,149,0,0.1);border-radius:10px;padding:10px;font-size:0.8rem;margin-top:4px;border-left:3px solid var(--orange)">
+          <b>Lab Interpretation is Mandatory:</b> You WILL be tested on basic lab interpretation. Know: CMP, CBC, TSH, lipid panel, coagulation studies. Be comfortable identifying when a lab is unexpected given the PMH — that's often the pivot point of the question.
+        </div>
+      </div>
+    </div>
+
+    <!-- PART 3: Red Flags & Killer Foils -->
+    <div class="ep-card" style="border-left-color:#FF3B30">
+      <div class="ep-card-header">
+        <div class="ep-card-title">🚩 Red Flag Medications &amp; Killer Foils</div>
+        <div class="ep-card-subtitle">High-risk drugs with predictable question patterns + look-alike diagnoses that demand different treatment</div>
+      </div>
+      <div class="ep-card-body">
+        <div style="font-size:0.82rem;color:var(--label2);margin-bottom:8px;font-style:italic">When you see a Red Flag drug in a question stem — stop. There are only a few directions the question can go, and they always test the same classic teaching concept.</div>
+
+        <div style="font-size:0.85rem;font-weight:700;color:var(--red);margin-bottom:6px">🚨 Red Flag Medications (Spot These — Know The Issue)</div>
+        <div style="display:grid;gap:6px;font-size:0.8rem">
+          <div style="background:rgba(255,59,48,0.07);border-radius:9px;padding:9px">
+            <b>Amiodarone</b> — Extreme half-life (weeks–months). Interactions with Digoxin &amp; Warfarin (↑ levels — reduce doses). Classic toxicities: Pulmonary fibrosis, Hepatotoxicity, QT prolongation, Ocular (corneal microdeposits, vision changes), Hypo/Hyperthyroidism, Blue-gray skin discoloration. Questions often test rate/timing of administration or toxicity monitoring.
+          </div>
+          <div style="background:rgba(255,59,48,0.07);border-radius:9px;padding:9px">
+            <b>Warfarin</b> — Multiple drug &amp; food interactions (CYP2C9). Narrow therapeutic index. INR monitoring. Reversal agents (Vitamin K, FFP, 4-factor PCC). Hold before surgery.
+          </div>
+          <div style="background:rgba(255,59,48,0.07);border-radius:9px;padding:9px">
+            <b>Digoxin</b> — Narrow therapeutic index. Toxicity: bradycardia, AV block, visual changes (yellow-green halos), nausea. Levels affected by amiodarone, quinidine, verapamil. Hypokalemia worsens toxicity.
+          </div>
+          <div style="background:rgba(255,59,48,0.07);border-radius:9px;padding:9px">
+            <b>Lithium</b> — Narrow TI. Toxicity with dehydration, NSAIDs, ACE inhibitors, thiazides. Monitor renal function. Tremor → toxicity sign.
+          </div>
+          <div style="background:rgba(255,59,48,0.07);border-radius:9px;padding:9px">
+            <b>Aminoglycosides / Vancomycin</b> — Nephrotoxicity + ototoxicity. AUC-guided dosing for vancomycin. Peak/trough or AUC/MIC targets. Adjust for renal function.
+          </div>
+          <div style="background:rgba(255,59,48,0.07);border-radius:9px;padding:9px">
+            <b>Methotrexate</b> — Hepatotoxicity, myelosuppression, mucositis. Leucovorin rescue. Hold with renal impairment. Drug interaction with NSAIDs (↑ MTX levels).
+          </div>
+          <div style="background:rgba(255,59,48,0.07);border-radius:9px;padding:9px">
+            <b>Clozapine</b> — Agranulocytosis (mandatory ANC monitoring via REMS). Also: metabolic syndrome, myocarditis, seizures. Most effective antipsychotic for treatment-resistant schizophrenia.
+          </div>
+        </div>
+
+        <div style="font-size:0.85rem;font-weight:700;color:var(--indigo);margin:12px 0 6px">⚔️ Killer Foils (Similar Presentation → Different Treatment)</div>
+        <div style="font-size:0.8rem;color:var(--label2);margin-bottom:6px">A "killer foil" = two diagnoses that look identical in the stem, but require different treatments. Knowing the single distinguishing feature is the entire question.</div>
+        <div style="display:grid;gap:7px;font-size:0.8rem">
+          <div style="background:rgba(88,86,214,0.08);border-radius:9px;padding:9px">
+            <b>Mononucleosis (EBV) vs. Strep Pharyngitis (GABHS)</b><br>
+            Both: sore throat + fever + lymphadenopathy. Key differentiator: <b>Mono = posterior cervical lymphadenopathy + splenomegaly (LUQ pain)</b>. Strep = anterior chain. Treatment: Mono → supportive care ONLY (no antibiotics). Strep → antibiotic (penicillin/amoxicillin). Critical trap: Amoxicillin in mono causes a diffuse maculopapular rash — NOT an allergic reaction. No epinephrine/diphenhydramine needed.
+          </div>
+          <div style="background:rgba(88,86,214,0.08);border-radius:9px;padding:9px">
+            <b>Serotonin Syndrome vs. NMS (Neuroleptic Malignant Syndrome)</b><br>
+            Both: hyperthermia + altered mental status + muscle rigidity. Key differentiator: <b>SS = clonus/hyperreflexia + rapid onset (hours) + serotonergic drug</b>. NMS = lead-pipe rigidity + slow onset (days) + dopamine antagonist. Treatment: SS → cyproheptadine + benzodiazepines. NMS → bromocriptine/dantrolene + supportive care.
+          </div>
+          <div style="background:rgba(88,86,214,0.08);border-radius:9px;padding:9px">
+            <b>HOCM vs. Aortic Stenosis</b><br>
+            Both: systolic murmur + exertional syncope. Key differentiator: <b>HOCM = murmur INCREASES with Valsalva/standing (↓ preload worsens obstruction)</b>. AS = murmur decreases with Valsalva. Treatment: HOCM → beta-blockers/CCBs, avoid vasodilators. AS → surgical/TAVR.
+          </div>
+          <div style="background:rgba(88,86,214,0.08);border-radius:9px;padding:9px">
+            <b>HIT (Heparin-Induced Thrombocytopenia) vs. Non-Immune Thrombocytopenia</b><br>
+            Both: platelet drop on heparin. Key differentiator: <b>HIT = 50% platelet drop 5-10 days after heparin start + thrombosis risk</b>. 4Ts score ≥4 → high suspicion. Treatment: STOP heparin, start non-heparin anticoagulant (argatroban, bivalirudin, fondaparinux). Do NOT just stop heparin — anticoagulation is mandatory.
+          </div>
+          <div style="background:rgba(88,86,214,0.08);border-radius:9px;padding:9px">
+            <b>Type 1 vs. Type 2 MI</b><br>
+            Both: troponin elevation. Key differentiator: <b>Type 1 = plaque rupture/thrombosis</b>. Type 2 = supply/demand mismatch (sepsis, severe anemia, tachyarrhythmia). Treatment differs: Type 1 → ACS protocol (antiplatelet, anticoagulation, cath). Type 2 → treat the underlying cause. Giving dual antiplatelet for a Type 2 MI is wrong.
+          </div>
+        </div>
+        <div style="background:rgba(255,59,48,0.08);border-radius:10px;padding:10px;font-size:0.8rem;margin-top:6px;border-left:3px solid var(--red)">
+          <b>Killer Foil Mindset:</b> When a clinical scenario doesn't quite fit the expected disease, look for the one differentiating detail. The question is testing whether you know the single distinguishing feature. Train yourself to identify what DOESN'T fit — that's where the answer lives.
+        </div>
+      </div>
+    </div>
+
+    <!-- Biostatistics & EBM -->
+    <div class="ep-card" style="border-left-color:#5856D6">
+      <div class="ep-card-header">
+        <div class="ep-card-title">📊 Biostatistics &amp; EBM: Why It Can Make or Break Your Exam</div>
+        <div class="ep-card-subtitle">Without proper preparation here, you will not pass your BPS exam</div>
+      </div>
+      <div class="ep-card-body">
+        <div style="font-size:0.82rem;color:var(--label2);margin-bottom:10px;font-style:italic">Since 1992, EBM has been integrated into board exams. The BPS tests whether you can critically evaluate evidence — not just recall guidelines. This is the most commonly under-prepared domain.</div>
+
+        <div style="background:rgba(88,86,214,0.1);border-radius:12px;padding:12px;font-size:0.83rem;margin-bottom:10px">
+          <div style="font-weight:700;color:var(--indigo);margin-bottom:6px">The 3 Pillars of EBM (Equally Weighted)</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;text-align:center">
+            <div style="background:#fff;border-radius:8px;padding:8px">
+              <div style="font-size:1.2rem">📚</div>
+              <div style="font-weight:700;font-size:0.8rem;color:var(--indigo)">Best Available Evidence</div>
+              <div style="font-size:0.74rem;color:var(--label2)">RCTs, systematic reviews, meta-analyses</div>
+            </div>
+            <div style="background:#fff;border-radius:8px;padding:8px">
+              <div style="font-size:1.2rem">🩺</div>
+              <div style="font-weight:700;font-size:0.8rem;color:var(--indigo)">Clinical Expertise</div>
+              <div style="font-size:0.74rem;color:var(--label2)">Specialist knowledge, judgment, experience</div>
+            </div>
+            <div style="background:#fff;border-radius:8px;padding:8px">
+              <div style="font-size:1.2rem">👤</div>
+              <div style="font-weight:700;font-size:0.8rem;color:var(--indigo)">Patient-Specific Factors</div>
+              <div style="font-size:0.74rem;color:var(--label2)">Values, preferences, comorbidities</div>
+            </div>
+          </div>
+          <div style="font-size:0.78rem;color:var(--label2);margin-top:6px;text-align:center">No single pillar dominates. Questions test integration of all three.</div>
+        </div>
+
+        <div style="font-size:0.85rem;font-weight:700;color:var(--indigo);margin-bottom:6px">Core Biostat Concepts Tested</div>
+        <div style="display:grid;gap:6px;font-size:0.8rem">
+          <div style="background:var(--fill);border-radius:9px;padding:9px">
+            <b>Sensitivity vs. Specificity:</b> SnNout (Sensitive test, Negative rules OUT). SpPin (Specific test, Positive rules IN). Sensitivity = true positives/(TP+FN). Specificity = true negatives/(TN+FP).
+          </div>
+          <div style="background:var(--fill);border-radius:9px;padding:9px">
+            <b>NNT &amp; NNH:</b> NNT = 1/ARR. Always prefer ARR over RRR — RRR can make small effects look large. NNT of 20 means 20 patients must be treated to prevent 1 event.
+          </div>
+          <div style="background:var(--fill);border-radius:9px;padding:9px">
+            <b>Confidence Intervals:</b> If 95% CI crosses 1.0 (for RR/OR) or crosses 0 (for difference in means) → result is NOT statistically significant. CI crossing null = no demonstrated effect. This is the most common biostat trap on boards.
+          </div>
+          <div style="background:var(--fill);border-radius:9px;padding:9px">
+            <b>P-value:</b> p&lt;0.05 = statistically significant (5% probability this result occurred by chance). Does NOT mean clinically significant. A tiny difference can be statistically significant with a large enough sample size.
+          </div>
+          <div style="background:var(--fill);border-radius:9px;padding:9px">
+            <b>Study Design Hierarchy:</b> Systematic review/meta-analysis &gt; RCT &gt; Cohort &gt; Case-control &gt; Cross-sectional &gt; Case report. Only RCTs can establish causality. Observational studies show association, not causation.
+          </div>
+          <div style="background:var(--fill);border-radius:9px;padding:9px">
+            <b>Intention-to-Treat (ITT) vs. Per-Protocol:</b> ITT = analyzes all randomized patients regardless of adherence → preserves randomization → gold standard for efficacy claims. Per-protocol excludes non-adherent patients → overestimates efficacy. If a study uses per-protocol, its efficacy data may be inflated.
+          </div>
+          <div style="background:var(--fill);border-radius:9px;padding:9px">
+            <b>Blinding:</b> Single-blind = patient unaware. Double-blind = patient AND investigator unaware. Triple-blind = patient, investigator, AND data analysts unaware. Lack of blinding = performance bias + detection bias.
+          </div>
+          <div style="background:var(--fill);border-radius:9px;padding:9px">
+            <b>Type I vs. Type II Error:</b> Type I (α) = false positive — rejected null when true. Type II (β) = false negative — failed to reject null when false. Power = 1-β. Underpowered studies miss real effects.
+          </div>
+        </div>
+
+        <div style="background:rgba(88,86,214,0.1);border-radius:10px;padding:10px;font-size:0.8rem;margin-top:8px">
+          <b>The BPS Biostat Mindset:</b> Every clinical question on this exam is anchored to evidence. When evaluating a trial, ask: What was the study design? Was it ITT? What did the CI include? Was the difference clinically meaningful, or just statistically significant? Is the study population similar to my patient? Answering these in sequence reveals the correct answer even when you don't recognize the specific trial.
+        </div>
+
+        <div style="background:rgba(255,59,48,0.08);border-radius:10px;padding:10px;font-size:0.8rem;margin-top:6px;border-left:3px solid var(--red)">
+          <b>Historical Warning:</b> The "Back to Sleep" campaign. For decades, prone sleeping was recommended for infants despite evidence that it increased SIDS risk — and it persisted until 1994. Expert opinion without evidence costs lives. This is why EBM exists — and why the BPS tests it heavily.
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end BPS methodology -->
+</div><!-- end exam-psych-grid -->
+</div><!-- end exampsych section -->
+
+<!-- DATA -->
+
+<!-- STUDY GUIDE -->
+
+<!-- ACCP MOCK EXAM REVIEW SECTION -->
+<div id="accp" class="section">
+  <div class="accp-wrap">
+
+    <!-- Header band -->
+    <div class="accp-header-band">
+      <h2>📋 ACCP Mock Exam Review</h2>
+      <p>150 official ACCP Pharmacotherapy Mock Exam questions — full answer review</p>
+      <div class="accp-prog-bar-wrap">
+        <div class="accp-prog-bar-fill" id="accpProgFill" style="width:0%"></div>
+      </div>
+      <div class="accp-stats-row">
+        <div class="accp-stat">
+          <div class="accp-stat-val" id="accpTotal">150</div>
+          <div class="accp-stat-lbl">Total Qs</div>
+        </div>
+        <div class="accp-stat">
+          <div class="accp-stat-val" id="accpReviewedCount">0</div>
+          <div class="accp-stat-lbl">Reviewed</div>
+        </div>
+        <div class="accp-stat">
+          <div class="accp-stat-val" id="accpRemaining">150</div>
+          <div class="accp-stat-lbl">Remaining</div>
+        </div>
+        <div class="accp-stat" style="margin-left:auto;">
+          <div class="accp-stat-val" style="font-size:0.75rem;opacity:0.7;" id="accpCatName">All categories</div>
+          <div class="accp-stat-lbl">Active filter</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="accp-controls-row">
+      <select id="accpCatFilter" onchange="accpFilter()" class="accp-select">
+        <option value="">All Categories (150)</option>
+<option value="1A1. Infectious Diseases">1A1. Infectious Diseases</option>
+<option value="1A2. Cardiology">1A2. Cardiology</option>
+<option value="1A3. Nephrology">1A3. Nephrology</option>
+<option value="1A4. Pain Management">1A4. Pain Management</option>
+<option value="1A5. Endocrinology">1A5. Endocrinology</option>
+<option value="1B1. Critical Care">1B1. Critical Care</option>
+<option value="1B2. Geriatrics">1B2. Geriatrics</option>
+<option value="1B3. Pulmonology">1B3. Pulmonology</option>
+<option value="1B4. Neurology">1B4. Neurology</option>
+<option value="1B5. Emergency Medicine and Toxicology">1B5. Emergency Medicine and Toxicology</option>
+<option value="1B7. Psychiatry and Mental Health">1B7. Psychiatry and Mental Health</option>
+<option value="1C1. Oncology and Hematology">1C1. Oncology and Hematology</option>
+<option value="1C2. Nutrition Support">1C2. Nutrition Support</option>
+<option value="1C3. Women's Health (e.g., gynecology, obstetrics)">1C3. Women&#x27;s Health (e.g., gynecology, obstetrics)</option>
+<option value="1C4. Hospice and Palliative Care">1C4. Hospice and Palliative Care</option>
+<option value="1C5. Pediatrics">1C5. Pediatrics</option>
+<option value="2A1. Clinical Assessment (e.g., functional, cognitive, physical)">2A1. Clinical Assessment (e.g., functional, cognitive, physical)</option>
+<option value="2A2. Diagnosis and Diagnostic Testing">2A2. Diagnosis and Diagnostic Testing</option>
+<option value="2A4. Disease and Medication History">2A4. Disease and Medication History</option>
+<option value="2A5. Goals of Treatment (e.g., risk vs. benefit, time to benefit)">2A5. Goals of Treatment (e.g., risk vs. benefit, time to benefit)</option>
+<option value="2B1. Pharmacotherapeutic Modalities (e.g., medications, supplements, herbals)">2B1. Pharmacotherapeutic Modalities (e.g., medications, supplements, herbals)</option>
+<option value="2B2. Non-Pharmacologic Treatments and Lifestyle Modification">2B2. Non-Pharmacologic Treatments and Lifestyle Modification</option>
+<option value="2B4. Medication Reconciliation and Optimization">2B4. Medication Reconciliation and Optimization</option>
+<option value="2B5. Drug Prescribing and Monitoring">2B5. Drug Prescribing and Monitoring</option>
+<option value="2B6. Patient and Caregiver Education and Counseling">2B6. Patient and Caregiver Education and Counseling</option>
+<option value="2B7. Medication Adherence">2B7. Medication Adherence</option>
+<option value="2C2. Non-Formulary Drug Requests and Therapeutic Interchange">2C2. Non-Formulary Drug Requests and Therapeutic Interchange</option>
+<option value="2C3. Pharmacoeconomics">2C3. Pharmacoeconomics</option>
+<option value="2C4. Drug Interactions">2C4. Drug Interactions</option>
+<option value="3A1. Public Health">3A1. Public Health</option>
+<option value="3A2. Preventative Care">3A2. Preventative Care</option>
+<option value="3A3. Health Literacy">3A3. Health Literacy</option>
+<option value="3A4. Clinical Practice Guidelines">3A4. Clinical Practice Guidelines</option>
+<option value="3B1. Research Methods (e.g., hypothesis, outcomes, study design)">3B1. Research Methods (e.g., hypothesis, outcomes, study design)</option>
+<option value="3B2. Statistics">3B2. Statistics</option>
+<option value="3B3. Biostatistics">3B3. Biostatistics</option>
+<option value="3B4. Critically Evaluating Drug Information Resources">3B4. Critically Evaluating Drug Information Resources</option>
+<option value="3C1. Professional Practice Standards, Guidelines, and Regulations">3C1. Professional Practice Standards, Guidelines, and Regulations</option>
+<option value="3C3. Healthcare Management and Quality Improvement">3C3. Healthcare Management and Quality Improvement</option>
+<option value="3C4. Informatics and Health Information Technology">3C4. Informatics and Health Information Technology</option>
+<option value="3C5. Emergency Preparedness">3C5. Emergency Preparedness</option>
+<option value="General">General</option>
+    </select>
+      </select>
+      <button class="accp-nav-btn accp-nav-prev" onclick="accpNav(-1)">◀ Prev</button>
+      <span class="accp-counter-pill">
+        <span id="accpCounter">1 / 150</span>
+      </span>
+      <button class="accp-nav-btn accp-nav-next" onclick="accpNav(1)">Next ▶</button>
+    </div>
+
+    <!-- Question card -->
+    <div class="accp-qcard" id="accpCard">
+      <div class="accp-qcard-header" id="accpMeta">
+        <!-- Badges injected by JS -->
+      </div>
+      <div class="accp-qcard-body">
+        <p class="accp-stem" id="accpStem">Loading question…</p>
+        <div class="accp-choices-grid" id="accpChoices">
+          <!-- Choices injected by JS -->
+        </div>
+        <div class="accp-explanation" id="accpExplanation">
+          <!-- Explanation injected by JS -->
+        </div>
+      </div>
+      <div class="accp-actions">
+        <button class="accp-reveal-btn" id="accpRevealBtn" onclick="accpReveal()">
+          🔍 Reveal Answer
+        </button>
+        <button class="accp-reviewed-btn" onclick="accpMarkReviewed()">
+          ✓ Mark Reviewed &amp; Next
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="study" class="section">
+  <div class="section-header"><h2>📖 Study Guide</h2><p>ACCP Updates in Therapeutics — 22 high-yield chapters</p></div>
+  <div id="progressStatsPanel" style="margin-bottom:4px;"></div>
+  <div class="controls">
+    <input type="text" id="studySearch" placeholder="Search topics..." class="concept-search" oninput="filterStudy(this.value)">
+  </div>
+  <div class="quick-stats" style="display:flex;gap:12px;margin-bottom:16px;flex-wrap:wrap">
+    <div style="flex:1;min-width:120px;background:var(--card);border-radius:14px;padding:14px 16px;border:1px solid var(--sep)">
+      <div style="font-size:1.6rem;font-weight:700;color:var(--primary)">449</div>
+      <div style="font-size:0.72rem;color:var(--label2)">Practice Questions</div>
+    </div>
+    <div style="flex:1;min-width:120px;background:var(--card);border-radius:14px;padding:14px 16px;border:1px solid var(--sep)">
+      <div style="font-size:1.6rem;font-weight:700;color:var(--primary)">206</div>
+      <div style="font-size:0.72rem;color:var(--label2)">Flashcards</div>
+    </div>
+    <div style="flex:1;min-width:120px;background:var(--card);border-radius:14px;padding:14px 16px;border:1px solid var(--sep)">
+      <div style="font-size:1.6rem;font-weight:700;color:var(--primary)">70</div>
+      <div style="font-size:0.72rem;color:var(--label2)">Drug Profiles</div>
+    </div>
+    <div style="flex:1;min-width:120px;background:var(--card);border-radius:14px;padding:14px 16px;border:1px solid var(--sep)">
+      <div style="font-size:1.6rem;font-weight:700;color:var(--primary)" id="gloTermCount">492</div>
+      <div style="font-size:0.72rem;color:var(--label2)">Glossary Terms</div>
+    </div>
+  </div>
+<div id="studyContent">
+<div class="chapter-card"><h3 onclick="this.closest(&quot;.chapter-card&quot;).classList.toggle(&quot;open&quot;)"><span>Acute Care Cardiology</span><span class="vol-badge">Volume 1</span></h3><div class="chapter-card-body"><p>Covers ACS, heart failure decompensation, arrhythmias, and cardiogenic shock management.</p>
+<h4>ACS Management</h4>
+<table><tr><th>Therapy</th><th>STEMI</th><th>NSTEMI/UA</th></tr>
+<tr><td>Aspirin</td><td>162-325mg load, then 81mg daily</td><td>Same</td></tr>
+<tr><td>P2Y12 inhibitor</td><td>Ticagrelor 180mg load preferred</td><td>Ticagrelor or clopidogrel</td></tr>
+<tr><td>Anticoagulation</td><td>UFH or bivalirudin (PCI)</td><td>UFH, enoxaparin, or fondaparinux</td></tr>
+<tr><td>Reperfusion</td><td>PCI &lt;90min (door-to-balloon)</td><td>Risk-stratify; early invasive if high-risk</td></tr></table>
+<h4>Acute HF Decompensation</h4>
+<table><tr><th>Profile</th><th>Tx Strategy</th></tr>
+<tr><td>Warm &amp; Wet</td><td>IV diuresis (furosemide 2.5× oral dose)</td></tr>
+<tr><td>Cold &amp; Wet</td><td>Vasopressors + diuresis</td></tr>
+<tr><td>Cold &amp; Dry</td><td>Cautious fluid challenge, then vasopressors</td></tr></table>
+<p><strong>Clinical Pearl:</strong> BNP &gt;500 supports HF diagnosis; &lt;100 makes HF unlikely. NT-proBNP cutoffs are age-adjusted (450/900/1800 pg/mL for &lt;50/50-75/&gt;75 years).</p>
+<p><strong>Cross-Volume Link:</strong> See Nephrology (Vol 2) for cardiorenal syndrome and diuretic resistance strategies.</p></div></div>
+<div class="chapter-card"><h3 onclick="this.closest(&quot;.chapter-card&quot;).classList.toggle(&quot;open&quot;)"><span>Chronic Care Cardiology</span><span class="vol-badge">Volume 1</span></h3><div class="chapter-card-body"><p>Stable CAD, chronic HFrEF/HFpEF, hypertension, and dyslipidemia management.</p>
+<h4>HFrEF Pillars (Mortality Benefit)</h4>
+<table><tr><th>Drug Class</th><th>Examples</th><th>Target Dose</th></tr>
+<tr><td>ACEi/ARB or ARNI</td><td>Sacubitril/valsartan (ARNI preferred)</td><td>Sacubitril/val 97/103mg BID</td></tr>
+<tr><td>Beta-blocker</td><td>Carvedilol, metoprolol succinate, bisoprolol</td><td>Max tolerated dose</td></tr>
+<tr><td>MRA</td><td>Spironolactone, eplerenone</td><td>25-50mg daily</td></tr>
+<tr><td>SGLT2i</td><td>Dapagliflozin, empagliflozin</td><td>Standard dose</td></tr></table>
+<h4>HTN Goals (ACC/AHA 2017)</h4>
+<ul><li>General: &lt;130/80 mmHg</li><li>Diabetes/CKD: &lt;130/80 mmHg</li><li>Age ≥65: &lt;130 mmHg SBP</li></ul>
+<h4>Statin Intensity</h4>
+<table><tr><th>Intensity</th><th>Agents</th><th>LDL Reduction</th></tr>
+<tr><td>High</td><td>Atorvastatin 40-80mg, Rosuvastatin 20-40mg</td><td>≥50%</td></tr>
+<tr><td>Moderate</td><td>Atorvastatin 10-20mg, Rosuvastatin 5-10mg, Simvastatin 20-40mg</td><td>30-49%</td></tr>
+<tr><td>Low</td><td>Simvastatin 10mg, Pravastatin 10-20mg</td><td>&lt;30%</td></tr></table>
+<p><strong>Clinical Pearl:</strong> ARNI (sacubitril/valsartan) is preferred over ACEi/ARB in HFrEF patients who can tolerate it. Requires 36-hour washout from ACEi before switching to prevent angioedema.</p></div></div>
+<div class="chapter-card"><h3 onclick="this.closest(&quot;.chapter-card&quot;).classList.toggle(&quot;open&quot;)"><span>Anticoagulation</span><span class="vol-badge">Volume 1</span></h3><div class="chapter-card-body"><p>VTE prevention, treatment, and special populations. AFib stroke prevention. Reversal agents.</p>
+<h4>DOAC Dosing in Non-valvular AFib</h4>
+<table><tr><th>DOAC</th><th>Standard Dose</th><th>Dose Reduction Criteria</th></tr>
+<tr><td>Apixaban</td><td>5mg BID</td><td>2.5mg BID if ≥2 of: age ≥80, wt ≤60kg, SCr ≥1.5</td></tr>
+<tr><td>Rivaroxaban</td><td>20mg daily with dinner</td><td>15mg daily if CrCl 15-50</td></tr>
+<tr><td>Dabigatran</td><td>150mg BID</td><td>75mg BID if CrCl 15-30</td></tr>
+<tr><td>Edoxaban</td><td>60mg daily</td><td>30mg daily if CrCl 15-50, wt ≤60kg, or P-gp inhibitor</td></tr></table>
+<h4>CHA₂DS₂-VASc Scoring</h4>
+<p>CHF(1), HTN(1), Age≥75(2), DM(1), Stroke/TIA(2), Vascular disease(1), Age 65-74(1), Sex category female(1)</p>
+<p>Anticoagulate: men ≥2, women ≥3. Consider: men =1, women =2.</p>
+<h4>Reversal Agents</h4>
+<table><tr><th>Agent</th><th>Reverses</th><th>Dose</th></tr>
+<tr><td>Idarucizumab (Praxbind)</td><td>Dabigatran</td><td>5g IV (two 2.5g doses)</td></tr>
+<tr><td>Andexanet alfa (Andexxa)</td><td>Factor Xa inhibitors</td><td>Low/high dose based on last dose timing</td></tr>
+<tr><td>4F-PCC (Kcentra)</td><td>Warfarin, rivaroxaban (off-label)</td><td>25-50 units/kg based on INR</td></tr>
+<tr><td>Vitamin K</td><td>Warfarin</td><td>2.5-10mg PO/IV</td></tr></table>
+<p><strong>Cross-Volume Link:</strong> See Nephrology (Vol 2) for DOAC dosing adjustments in CKD/ESRD patients.</p></div></div>
+<div class="chapter-card"><h3 onclick="this.closest(&quot;.chapter-card&quot;).classList.toggle(&quot;open&quot;)"><span>Infectious Diseases I</span><span class="vol-badge">Volume 1</span></h3><div class="chapter-card-body"><p>Community-acquired infections: pneumonia, UTI, skin/soft tissue infections, and sepsis management.</p>
+<h4>CAP Treatment (ATS/IDSA 2019)</h4>
+<table><tr><th>Setting</th><th>No Comorbidities</th><th>Comorbidities / Risk Factors</th></tr>
+<tr><td>Outpatient</td><td>Amoxicillin 1g TID OR Doxycycline 100mg BID</td><td>Amox-clav + macrolide OR respiratory FQ</td></tr>
+<tr><td>Inpatient (non-ICU)</td><td>Beta-lactam + macrolide</td><td>Beta-lactam + macrolide OR respiratory FQ</td></tr>
+<tr><td>ICU</td><td>Beta-lactam + azithromycin OR beta-lactam + FQ</td><td>Add anti-Pseudomonal if risk factors</td></tr></table>
+<h4>UTI Treatment</h4>
+<table><tr><th>Type</th><th>First-line</th><th>Duration</th></tr>
+<tr><td>Uncomplicated cystitis (women)</td><td>Nitrofurantoin 100mg BID or TMP-SMX DS BID</td><td>5 days (nitro) or 3 days (TMP-SMX)</td></tr>
+<tr><td>Complicated UTI/pyelonephritis</td><td>Fluoroquinolone or broad-spectrum beta-lactam</td><td>5-14 days based on severity</td></tr>
+<tr><td>Catheter-associated UTI</td><td>Based on culture; remove catheter if possible</td><td>7 days if prompt response</td></tr></table>
+<h4>Sepsis-3 Definitions</h4>
+<p><strong>Sepsis:</strong> Life-threatening organ dysfunction (SOFA score increase ≥2) from presumed infection.</p>
+<p><strong>Septic shock:</strong> Sepsis + vasopressor requirement + lactate &gt;2 mmol/L despite adequate fluid resuscitation.</p>
+<h4>Sepsis 1-Hour Bundle</h4>
+<ul><li>Measure lactate (re-measure if &gt;2)</li><li>Blood cultures before antibiotics</li><li>Broad-spectrum antibiotics within 1 hour</li><li>30mL/kg IV crystalloid for hypotension or lactate ≥4</li><li>Vasopressors for MAP &lt;65 mmHg</li></ul>
+<p><strong>Clinical Pearl:</strong> Procalcitonin guidance helps de-escalate antibiotics in CAP. PCT &lt;0.25 ng/mL = consider stopping; PCT decrease &gt;80% from peak = de-escalate.</p></div></div>
+<div class="chapter-card"><h3 onclick="this.closest(&quot;.chapter-card&quot;).classList.toggle(&quot;open&quot;)"><span>Infectious Diseases II</span><span class="vol-badge">Volume 1</span></h3><div class="chapter-card-body"><p>Hospital-acquired infections, resistant organisms, fungal infections, HIV, TB, and antiviral therapy.</p>
+<h4>Hospital-Acquired Pneumonia (HAP/VAP)</h4>
+<table><tr><th>Risk Factor</th><th>Empiric Coverage Needed</th></tr>
+<tr><td>MRSA risk factors (prior MRSA, IV antibiotics in 90 days, structural lung disease)</td><td>Add vancomycin or linezolid</td></tr>
+<tr><td>Pseudomonas risk (structural lung, prior Pseudomonas, recent antibiotics)</td><td>Anti-pseudomonal beta-lactam (pip-tazo, cefepime, meropenem)</td></tr>
+<tr><td>No risk factors</td><td>Cefepime, pip-tazo, or levofloxacin</td></tr></table>
+<h4>MRSA Treatment Options</h4>
+<table><tr><th>Indication</th><th>Preferred Agent</th></tr>
+<tr><td>Bacteremia / Endocarditis</td><td>Vancomycin IV (AUC-guided) or daptomycin</td></tr>
+<tr><td>Pneumonia</td><td>Vancomycin or linezolid (linezolid preferred for VAP)</td></tr>
+<tr><td>SSTI (uncomplicated)</td><td>TMP-SMX DS BID or doxycycline 100mg BID x 5-7 days</td></tr></table>
+<h4>C. difficile Treatment</h4>
+<table><tr><th>Severity</th><th>Treatment</th></tr>
+<tr><td>Non-severe (WBC &lt;15k, SCr &lt;1.5)</td><td>Vancomycin PO 125mg QID x 10 days OR fidaxomicin 200mg BID x 10 days</td></tr>
+<tr><td>Severe (WBC ≥15k or SCr ≥1.5)</td><td>Vancomycin PO 125mg QID x 10 days</td></tr>
+<tr><td>Fulminant</td><td>Vanco PO 500mg QID + metronidazole IV 500mg q8h ± surgery consult</td></tr>
+<tr><td>Recurrent (1st)</td><td>Fidaxomicin preferred; Bezlotoxumab for high recurrence risk</td></tr></table>
+<h4>HIV Key Concepts</h4>
+<ul><li>ART initiation: recommended for ALL HIV+ patients regardless of CD4 count</li><li>Goal: HIV RNA undetectable (&lt;50 copies/mL)</li><li>PCP prophylaxis: TMP-SMX 1 SS daily when CD4 &lt;200</li><li>MAI prophylaxis: azithromycin 1200mg weekly when CD4 &lt;50</li></ul>
+<p><strong>Clinical Pearl:</strong> Linezolid for MRSA pneumonia provides both MRSA coverage and lung penetration. Monitor for serotonin syndrome with linezolid + serotonergic drugs (SSRIs, TCAs).</p></div></div>
+<div class="chapter-card"><h3 onclick="this.closest(&quot;.chapter-card&quot;).classList.toggle(&quot;open&quot;)"><span>Critical Care</span><span class="vol-badge">Volume 1</span></h3><div class="chapter-card-body"><p>Mechanical ventilation, vasopressors, sedation/analgesia, and ICU pharmacotherapy.</p>
+<h4>Vasopressor Hierarchy (Septic Shock)</h4>
+<table><tr><th>Agent</th><th>Role</th><th>Key Points</th></tr>
+<tr><td>Norepinephrine</td><td>First-line</td><td>α1&gt;β1; preferred in septic shock</td></tr>
+<tr><td>Vasopressin</td><td>Add-on (second-line)</td><td>0.03-0.04 units/min; steroid-sparing effect</td></tr>
+<tr><td>Epinephrine</td><td>Second/third-line</td><td>Causes hyperglycemia, lactic acidosis</td></tr>
+<tr><td>Dopamine</td><td>Alternative first-line</td><td>More arrhythmias vs NE; avoid in tachycardia</td></tr>
+<tr><td>Phenylephrine</td><td>Specific indications</td><td>Pure α1; avoid in low CO states</td></tr></table>
+<h4>Lung-Protective Ventilation (ARDSNet)</h4>
+<ul><li>Tidal volume: 6 mL/kg IBW (4-8 range)</li><li>Plateau pressure: ≤30 cmH₂O</li><li>PEEP: per FiO₂/PEEP table</li><li>Target SpO₂ 88-95%, PaO₂ 55-80 mmHg</li></ul>
+<h4>Sedation (PADIS Guidelines)</h4>
+<p><strong>A-F Bundle:</strong> Assess/Treat pain, Both SAT+SBT, Choice of analgesia-first sedation, Delirium monitoring, Early mobility, Family engagement.</p>
+<p><strong>Preferred:</strong> Propofol or dexmedetomidine over benzodiazepines for sedation. Target RASS -1 to 0 (light sedation).</p></div></div>
+<div class="chapter-card"><h3 onclick="this.closest(&quot;.chapter-card&quot;).classList.toggle(&quot;open&quot;)"><span>Fluids, Electrolytes & Nutrition</span><span class="vol-badge">Volume 1</span></h3><div class="chapter-card-body"><p>IV fluid selection, electrolyte management, and nutritional support in hospitalized patients.</p>
+<h4>IV Fluid Comparison</h4>
+<table><tr><th>Fluid</th><th>Na (mEq/L)</th><th>Key Points</th></tr>
+<tr><td>Normal Saline (0.9%)</td><td>154</td><td>Hyperchloremic metabolic acidosis with large volumes; preferred for hyponatremia, hypochloremia</td></tr>
+<tr><td>Lactated Ringers</td><td>130</td><td>More physiologic; preferred for resuscitation (SMART, SALT-ED trials); avoid with hyperkalemia</td></tr>
+<tr><td>D5W</td><td>0</td><td>Free water; used for hypernatremia correction; NOT for resuscitation</td></tr>
+<tr><td>Albumin 5%</td><td>130-160</td><td>Colloid; used in SBP prophylaxis, hepatorenal syndrome, large-volume paracentesis</td></tr></table>
+<h4>Electrolyte Disorders</h4>
+<table><tr><th>Disorder</th><th>Treatment</th></tr>
+<tr><td>Hyponatremia (symptomatic)</td><td>Hypertonic saline 3%; correct &lt;8-10 mEq/L per 24h (risk of ODS if faster)</td></tr>
+<tr><td>Hypernatremia</td><td>Free water replacement; correct &lt;10-12 mEq/L per 24h</td></tr>
+<tr><td>Hypokalemia</td><td>PO preferred; IV KCl for severe (&lt;3.0); replace Mg simultaneously</td></tr>
+<tr><td>Hypomagnesemia</td><td>IV MgSO4 for severe; refractory hypokalemia/hypocalcemia = check Mg</td></tr>
+<tr><td>Hypophosphatemia</td><td>PO sodium/potassium phosphate for mild-moderate; IV Neutra-Phos for severe</td></tr></table>
+<h4>Nutrition Support</h4>
+<ul><li><strong>Enteral nutrition (EN):</strong> Preferred over PN when GI tract functional; start within 24-48h in ICU</li><li><strong>Parenteral nutrition (PN):</strong> Reserve for non-functional GI tract; monitor glucose, TGs, LFTs, electrolytes</li><li><strong>Refeeding syndrome:</strong> Risk with severe malnutrition; characterized by hypophosphatemia, hypokalemia, hypomagnesemia within 72h of refeeding</li></ul>
+<p><strong>Clinical Pearl:</strong> Balanced crystalloids (LR) are preferred over NS for most resuscitation. NS is still preferred for metabolic alkalosis, hyponatremia, and neurosurgical patients.</p></div></div>
+<div class="chapter-card"><h3 onclick="this.closest(&quot;.chapter-card&quot;).classList.toggle(&quot;open&quot;)"><span>Psychiatry</span><span class="vol-badge">Volume 1</span></h3><div class="chapter-card-body"><p>Depression, anxiety, bipolar disorder, schizophrenia, ADHD, and substance use disorder pharmacotherapy.</p>
+<h4>Antidepressant Selection</h4>
+<table><tr><th>Drug Class</th><th>Examples</th><th>Key Considerations</th></tr>
+<tr><td>SSRIs (first-line)</td><td>Sertraline, escitalopram, fluoxetine</td><td>Safe in most populations; QTc concern with citalopram (&gt;40mg)</td></tr>
+<tr><td>SNRIs</td><td>Venlafaxine, duloxetine, desvenlafaxine</td><td>Also for neuropathic pain, GAD, fibromyalgia</td></tr>
+<tr><td>Bupropion</td><td>Bupropion SR/XL</td><td>No sexual side effects; aids smoking cessation; lowers seizure threshold; avoid in eating disorders</td></tr>
+<tr><td>Mirtazapine</td><td>Mirtazapine 7.5-45mg</td><td>Sedating (especially at low doses); increases appetite; useful in elderly, insomnia</td></tr>
+<tr><td>TCAs</td><td>Amitriptyline, nortriptyline</td><td>Anticholinergic; QTc prolongation; lethal in overdose; use cautiously in elderly (Beers)</td></tr></table>
+<h4>Antipsychotics</h4>
+<table><tr><th>Generation</th><th>Examples</th><th>Side Effects</th></tr>
+<tr><td>First-generation (FGA/typical)</td><td>Haloperidol, chlorpromazine, fluphenazine</td><td>EPS, tardive dyskinesia, hyperprolactinemia; haloperidol preferred for acute agitation</td></tr>
+<tr><td>Second-generation (SGA/atypical)</td><td>Risperidone, olanzapine, quetiapine, aripiprazole, clozapine</td><td>Metabolic syndrome (weight gain, dyslipidemia, DM); QTc; sedation</td></tr>
+<tr><td>Clozapine</td><td>Reserved for treatment-resistant schizophrenia</td><td>Agranulocytosis (CBC monitoring required); myocarditis; seizures; most efficacious SGA</td></tr></table>
+<h4>Bipolar Disorder Treatment</h4>
+<ul><li><strong>Acute mania:</strong> Lithium, valproate, or atypical antipsychotic (olanzapine, quetiapine)</li><li><strong>Maintenance:</strong> Lithium (gold standard, suicide prevention), valproate, lamotrigine (for depressive episodes)</li><li><strong>Lithium monitoring:</strong> Narrow TI (goal 0.6-1.2 mEq/L); renal function, thyroid, calcium at baseline and periodically</li></ul>
+<h4>Substance Use Disorders</h4>
+<table><tr><th>Substance</th><th>Pharmacotherapy</th></tr>
+<tr><td>Alcohol use disorder</td><td>Naltrexone (first-line), acamprosate, disulfiram; thiamine for Wernicke prophylaxis</td></tr>
+<tr><td>Opioid use disorder</td><td>Buprenorphine/naloxone (first-line outpatient), methadone (specialized clinic), naltrexone ER (Vivitrol)</td></tr>
+<tr><td>Nicotine (smoking)</td><td>Varenicline (most effective), bupropion SR, NRT (patch, gum, lozenge)</td></tr></table>
+<p><strong>Clinical Pearl:</strong> Serotonin syndrome (agitation, clonus, hyperthermia, diaphoresis) differs from NMS (bradykinesia, lead-pipe rigidity, hyperthermia) — key for drug interaction questions.</p></div></div>
+<div class="chapter-card"><h3 onclick="this.closest(&quot;.chapter-card&quot;).classList.toggle(&quot;open&quot;)"><span>Neurology</span><span class="vol-badge">Volume 1</span></h3><div class="chapter-card-body"><p>Seizure management, ischemic stroke, Parkinson disease, pain pharmacotherapy, and headache treatment.</p>
+<h4>Seizure Pharmacotherapy</h4>
+<table><tr><th>Drug</th><th>Use</th><th>Key Points</th></tr>
+<tr><td>Levetiracetam (Keppra)</td><td>Broad-spectrum; focal and generalized</td><td>Renal adjustment; psychiatric side effects (irritability); no drug interactions</td></tr>
+<tr><td>Valproate</td><td>Generalized epilepsy, absence, myoclonic</td><td>Teratogenic (neural tube defects); hepatotoxicity; inhibits CYP2C9; lamotrigine interactions</td></tr>
+<tr><td>Lamotrigine</td><td>Focal, generalized, bipolar</td><td>Slow titration required (Stevens-Johnson risk if rapid); valproate doubles lamotrigine levels</td></tr>
+<tr><td>Phenytoin/fosphenytoin</td><td>Acute seizures/status epilepticus IV</td><td>Narrow TI; zero-order kinetics; purple glove syndrome; hepatic enzyme inducer</td></tr></table>
+<h4>Status Epilepticus Treatment (Stepwise)</h4>
+<p>Lorazepam IV 0.1mg/kg (or midazolam IM) → Fosphenytoin or valproate IV → Levetiracetam IV → Lacosamide IV → General anesthesia (propofol, midazolam, pentobarbital)</p>
+<h4>Ischemic Stroke Acute Management</h4>
+<ul><li><strong>IV tPA (alteplase):</strong> Within 3-4.5 hours of symptom onset; BP must be &lt;185/110 before and 24h after</li><li><strong>Mechanical thrombectomy:</strong> Within 24h if large vessel occlusion (LVO) and favorable imaging</li><li><strong>Aspirin 325mg:</strong> Within 24-48h (not within 24h of tPA); dual antiplatelet (ASA+clopidogrel) for 21 days in minor stroke/TIA</li></ul>
+<h4>Parkinson Disease Pharmacotherapy</h4>
+<table><tr><th>Drug Class</th><th>Example</th><th>Role</th></tr>
+<tr><td>Levodopa/carbidopa</td><td>Sinemet</td><td>Most effective; gold standard for motor symptoms</td></tr>
+<tr><td>Dopamine agonists</td><td>Pramipexole, ropinirole, rotigotine</td><td>Monotherapy in younger patients; impulse control disorders</td></tr>
+<tr><td>MAO-B inhibitors</td><td>Rasagiline, selegiline</td><td>Mild symptom control; serotonin syndrome with meperidine/SSRIs</td></tr>
+<tr><td>COMT inhibitors</td><td>Entacapone</td><td>Add-on to levodopa; reduces wearing-off</td></tr></table>
+<h4>Neuropathic Pain Management</h4>
+<p>First-line: gabapentinoids (gabapentin, pregabalin), SNRIs (duloxetine, venlafaxine), TCAs (nortriptyline)</p>
+<p><strong>Clinical Pearl:</strong> Contraindicated drugs in seizure patients: tramadol, bupropion, imipenem, and fluoroquinolones can lower the seizure threshold.</p></div></div>
+<div class="chapter-card"><h3 onclick="this.closest(&quot;.chapter-card&quot;).classList.toggle(&quot;open&quot;)"><span>Sexual & Reproductive Health</span><span class="vol-badge">Volume 1</span></h3><div class="chapter-card-body"><p>Contraception, STI treatment, pregnancy pharmacotherapy considerations, and menopausal therapy.</p>
+<h4>Contraception Methods and Drug Interactions</h4>
+<table><tr><th>Method</th><th>Failure Rate (typical use)</th><th>Key Considerations</th></tr>
+<tr><td>Combined oral contraceptives (COCs)</td><td>7%</td><td>Enzyme inducers (rifampin, carbamazepine) reduce efficacy; absolute CI: migraine with aura + smoking + age&gt;35</td></tr>
+<tr><td>Progestin-only pill (POP)</td><td>7-9%</td><td>Option when estrogen contraindicated (breastfeeding, VTE history, HTN)</td></tr>
+<tr><td>LNG-IUD (Mirena)</td><td>&lt;1%</td><td>Effective 5-7 years; reduces menstrual bleeding</td></tr>
+<tr><td>Copper IUD</td><td>&lt;1%</td><td>Non-hormonal; also used for emergency contraception within 5 days</td></tr>
+<tr><td>Etonogestrel implant (Nexplanon)</td><td>&lt;1%</td><td>3-year implant; most effective reversible contraception</td></tr></table>
+<h4>STI Treatment (CDC 2021 Guidelines)</h4>
+<table><tr><th>STI</th><th>First-line Treatment</th></tr>
+<tr><td>Chlamydia</td><td>Doxycycline 100mg BID x 7 days (preferred over azithromycin 1g single dose)</td></tr>
+<tr><td>Gonorrhea (uncomplicated)</td><td>Ceftriaxone 500mg IM single dose (1g if weight &gt;150kg)</td></tr>
+<tr><td>Syphilis (primary/secondary)</td><td>Benzathine penicillin G 2.4 million units IM single dose</td></tr>
+<tr><td>Bacterial vaginosis</td><td>Metronidazole 500mg BID x 7 days or 0.75% vaginal gel</td></tr>
+<tr><td>Trichomoniasis</td><td>Metronidazole 2g single dose (or 500mg BID x 7 days)</td></tr></table>
+<h4>Pregnancy Drug Safety Categories (FDA Labeling)</h4>
+<ul><li><strong>Avoid in pregnancy:</strong> ACEi/ARBs (2nd/3rd trimester - renal dysgenesis), valproate (neural tube defects), warfarin (embryopathy), isotretinoin (teratogenic), tetracyclines, fluoroquinolones</li><li><strong>Safe in pregnancy:</strong> Penicillins, cephalosporins, azithromycin, insulin, labetalol/nifedipine (HTN)</li><li><strong>UFH preferred over LMWH:</strong> In pregnancy for anticoagulation near delivery (reversible)</li></ul>
+<p><strong>Clinical Pearl:</strong> Emergency contraception: levonorgestrel (Plan B) within 72h; ulipristal (ella) within 120h; copper IUD most effective option within 5 days of unprotected intercourse.</p></div></div>
+<div class="chapter-card"><h3 onclick="this.closest(&quot;.chapter-card&quot;).classList.toggle(&quot;open&quot;)"><span>Pharmacokinetics</span><span class="vol-badge">Volume 2</span></h3><div class="chapter-card-body"><p>Drug absorption, distribution, metabolism, elimination, and individualized dosing using PK/PD principles.</p>
+<h4>Key PK Equations</h4>
+<table><tr><th>Parameter</th><th>Formula</th></tr>
+<tr><td>Cockcroft-Gault (CrCl)</td><td>[(140-age) × IBW / (72 × SCr)] × 0.85 if female</td></tr>
+<tr><td>Loading dose</td><td>LD = Vd × Cp_target / F</td></tr>
+<tr><td>Maintenance dose</td><td>MD = CL × Css_avg × dosing interval</td></tr>
+<tr><td>Half-life</td><td>t½ = 0.693 × Vd / CL</td></tr>
+<tr><td>Time to steady-state</td><td>~4-5 half-lives</td></tr></table>
+<h4>Vancomycin AUC-Guided Dosing (ASHP/IDSA 2020)</h4>
+<ul><li>Target AUC/MIC 400-600 mg·h/L (MIC ≤1 mg/L)</li><li>Two-point Bayesian estimation preferred over trough-only</li><li>Initial dose: 15-20 mg/kg actual body weight q8-12h</li><li>Winter-Tozer for obese: IBW + 0.4(TBW-IBW)</li></ul>
+<h4>PK/PD Targets by Drug Class</h4>
+<table><tr><th>Class</th><th>Parameter</th><th>Target</th></tr>
+<tr><td>Beta-lactams</td><td>%T&gt;MIC</td><td>40-70% (bactericidal)</td></tr>
+<tr><td>Aminoglycosides</td><td>Cmax/MIC</td><td>8-10× MIC</td></tr>
+<tr><td>Fluoroquinolones</td><td>AUC/MIC</td><td>&gt;125 (Gram-neg)</td></tr>
+<tr><td>Vancomycin</td><td>AUC/MIC</td><td>400-600 mg·h/L</td></tr></table>
+<p><strong>Cross-Volume Link:</strong> Applies to ID (Vol 1) antibiotic dosing and Nephrology (Vol 2) renal dose adjustments.</p></div></div>
+<div class="chapter-card"><h3 onclick="this.closest(&quot;.chapter-card&quot;).classList.toggle(&quot;open&quot;)"><span>Endocrine & Metabolic</span><span class="vol-badge">Volume 2</span></h3><div class="chapter-card-body"><p>Diabetes management, thyroid disorders, adrenal insufficiency, and osteoporosis.</p>
+<h4>Diabetes Drug Selection</h4>
+<table><tr><th>Patient Characteristic</th><th>Preferred Agent(s)</th></tr>
+<tr><td>ASCVD or high CV risk</td><td>GLP-1 RA (liraglutide, semaglutide) or SGLT2i</td></tr>
+<tr><td>HF (HFrEF or HFpEF)</td><td>SGLT2i (dapagliflozin, empagliflozin)</td></tr>
+<tr><td>CKD (albuminuria)</td><td>SGLT2i + finerenone; GLP-1 RA if eGFR allows</td></tr>
+<tr><td>Weight loss needed</td><td>GLP-1 RA or SGLT2i</td></tr>
+<tr><td>Hypoglycemia risk</td><td>Avoid sulfonylureas; prefer DPP-4i, GLP-1 RA, SGLT2i</td></tr>
+<tr><td>Cost constraints</td><td>Metformin first; sulfonylureas as add-on</td></tr></table>
+<h4>A1c Targets</h4>
+<ul><li>Most adults: &lt;7%</li><li>Older adults / limited life expectancy: &lt;8% or &lt;8.5%</li><li>Pregnancy: &lt;6% (if achievable without hypoglycemia)</li></ul>
+<h4>DKA vs HHS</h4>
+<table><tr><th></th><th>DKA</th><th>HHS</th></tr>
+<tr><td>Glucose</td><td>Usually 250-600</td><td>Usually &gt;600</td></tr>
+<tr><td>pH</td><td>&lt;7.3</td><td>Normal or mildly low</td></tr>
+<tr><td>Ketones</td><td>Positive</td><td>Absent/trace</td></tr>
+<tr><td>Osmolality</td><td>Variable</td><td>&gt;320 mOsm/kg</td></tr></table></div></div>
+<div class="chapter-card"><h3 onclick="this.closest(&quot;.chapter-card&quot;).classList.toggle(&quot;open&quot;)"><span>Nephrology</span><span class="vol-badge">Volume 2</span></h3><div class="chapter-card-body"><p>AKI, CKD management, electrolyte disorders, and renal replacement therapy considerations.</p>
+<h4>AKI KDIGO Staging</h4>
+<table><tr><th>Stage</th><th>SCr Criteria</th><th>UO Criteria</th></tr>
+<tr><td>1</td><td>1.5-1.9× baseline or ↑≥0.3mg/dL in 48h</td><td>&lt;0.5 mL/kg/h for 6-12h</td></tr>
+<tr><td>2</td><td>2.0-2.9× baseline</td><td>&lt;0.5 mL/kg/h for ≥12h</td></tr>
+<tr><td>3</td><td>3× baseline, SCr ≥4.0, or RRT initiation</td><td>&lt;0.3 mL/kg/h for ≥24h or anuria ≥12h</td></tr></table>
+<h4>CKD Drug Adjustments (High-Yield)</h4>
+<table><tr><th>Drug</th><th>CrCl Threshold</th><th>Action</th></tr>
+<tr><td>Metformin</td><td>&lt;30 mL/min</td><td>Contraindicated</td></tr>
+<tr><td>Dabigatran</td><td>&lt;15 mL/min</td><td>Avoid</td></tr>
+<tr><td>Rivaroxaban (AFib)</td><td>&lt;15 mL/min</td><td>Avoid</td></tr>
+<tr><td>Apixaban</td><td>ESRD on HD</td><td>5mg BID (or 2.5mg BID if ≥2 of 3 criteria)</td></tr>
+<tr><td>SGLT2i</td><td>eGFR &lt;20-25</td><td>Not for glycemic control (heart/renal benefits may persist)</td></tr>
+<tr><td>Gabapentin</td><td>&lt;60 mL/min</td><td>Dose reduce</td></tr></table>
+<h4>Hyperkalemia Treatment Ladder</h4>
+<p>Calcium gluconate (membrane stabilization) → Insulin + dextrose → Sodium bicarbonate → Kayexalate or patiromer → Dialysis</p></div></div>
+<div class="chapter-card"><h3 onclick="this.closest(&quot;.chapter-card&quot;).classList.toggle(&quot;open&quot;)"><span>Pulmonology & Vaccinations</span><span class="vol-badge">Volume 2</span></h3><div class="chapter-card-body"><p>Asthma stepwise therapy, COPD management, and adult immunization schedule.</p>
+<h4>Asthma Stepwise Approach (NAEPP)</h4>
+<table><tr><th>Step</th><th>Preferred</th></tr>
+<tr><td>1 (Intermittent)</td><td>SABA PRN</td></tr>
+<tr><td>2 (Mild persistent)</td><td>Low-dose ICS</td></tr>
+<tr><td>3 (Moderate)</td><td>Low-dose ICS + LABA or medium-dose ICS</td></tr>
+<tr><td>4</td><td>Medium-dose ICS + LABA</td></tr>
+<tr><td>5</td><td>High-dose ICS + LABA ± tiotropium</td></tr>
+<tr><td>6</td><td>Step 5 + oral corticosteroid</td></tr></table>
+<h4>COPD GOLD Classification</h4>
+<p><strong>mMRC/CAT symptoms + exacerbation history</strong> → Groups A/B (low risk) vs E (high risk)</p>
+<ul><li>Group A: SABA or SAMA PRN</li><li>Group B: LAMA or LABA (LAMA preferred, or LAMA+LABA if very symptomatic)</li><li>Group E: LAMA + LABA; add ICS if eos ≥300 or frequent exacerbations</li></ul>
+<h4>Key Vaccinations (Adult)</h4>
+<table><tr><th>Vaccine</th><th>Key Population</th></tr>
+<tr><td>Influenza</td><td>All adults annually</td></tr>
+<tr><td>COVID-19</td><td>All adults (updated annually)</td></tr>
+<tr><td>RSV (Abrysvo/Mresvia)</td><td>Age ≥60 (shared decision-making)</td></tr>
+<tr><td>Pneumococcal (PCV20 or PCV15+PPSV23)</td><td>Age ≥65 or immunocompromised</td></tr>
+<tr><td>Shingrix (RZV)</td><td>Age ≥50; 2 doses 2-6 months apart</td></tr>
+<tr><td>Tdap</td><td>Once, then Td booster q10y</td></tr></table></div></div>
+<div class="chapter-card"><h3 onclick="this.closest(&quot;.chapter-card&quot;).classList.toggle(&quot;open&quot;)"><span>Biostatistics</span><span class="vol-badge">Volume 2</span></h3><div class="chapter-card-body"><p>Statistical concepts, measures of association, hypothesis testing, and interpreting clinical trial data for BCPS.</p>
+<h4>Key Statistical Measures</h4>
+<table><tr><th>Measure</th><th>Formula / Definition</th></tr>
+<tr><td>Sensitivity</td><td>TP / (TP + FN) — rules OUT if negative (SnNout)</td></tr>
+<tr><td>Specificity</td><td>TN / (TN + FP) — rules IN if positive (SpPin)</td></tr>
+<tr><td>PPV</td><td>TP / (TP + FP) — depends on prevalence</td></tr>
+<tr><td>NPV</td><td>TN / (TN + FN) — depends on prevalence</td></tr>
+<tr><td>NNT</td><td>1 / ARR; lower is better</td></tr>
+<tr><td>NNH</td><td>1 / ARI; higher is safer</td></tr>
+<tr><td>ARR</td><td>Control event rate - Treatment event rate (absolute risk reduction)</td></tr>
+<tr><td>RRR</td><td>ARR / Control event rate (relative risk reduction)</td></tr>
+<tr><td>Relative Risk (RR)</td><td>Risk in exposed / Risk in unexposed (used in cohort studies)</td></tr>
+<tr><td>Odds Ratio (OR)</td><td>Odds in exposed / Odds in unexposed (used in case-control studies)</td></tr>
+<tr><td>Hazard Ratio (HR)</td><td>Used in survival analyses with time-to-event endpoints</td></tr></table>
+<h4>Confidence Intervals and P-values</h4>
+<ul><li><strong>95% CI:</strong> If CI for RR/OR includes 1.0, result is NOT statistically significant</li><li><strong>95% CI for ARR:</strong> If CI includes 0, result is NOT statistically significant</li><li><strong>P &lt;0.05:</strong> Statistically significant, but NOT necessarily clinically meaningful</li><li><strong>Type I error (alpha):</strong> False positive — finding an effect that does not exist</li><li><strong>Type II error (beta):</strong> False negative — missing an effect that does exist</li><li><strong>Power:</strong> 1 - beta; usually set at 80%; increased by larger sample size</li></ul>
+<h4>Bias Types</h4>
+<table><tr><th>Bias</th><th>Description</th></tr>
+<tr><td>Selection bias</td><td>Non-random group allocation; threatens internal validity</td></tr>
+<tr><td>Confounding</td><td>Third variable associated with both exposure and outcome</td></tr>
+<tr><td>Recall bias</td><td>Retrospective studies; cases may recall exposures differently</td></tr>
+<tr><td>Lead-time bias</td><td>Earlier detection makes survival appear longer without changing outcome</td></tr>
+<tr><td>Publication bias</td><td>Positive results more likely published; detected by funnel plot asymmetry</td></tr></table>
+<p><strong>Clinical Pearl:</strong> Always evaluate both statistical significance (p-value, CI) AND clinical significance (magnitude of effect, NNT/NNH) when interpreting trial results.</p></div></div>
+<div class="chapter-card"><h3 onclick="this.closest(&quot;.chapter-card&quot;).classList.toggle(&quot;open&quot;)"><span>Study Designs</span><span class="vol-badge">Volume 2</span></h3><div class="chapter-card-body"><p>Types of clinical studies, levels of evidence, critical appraisal principles, and pharmacoeconomics for BCPS Domain 3.</p>
+<h4>Study Design Hierarchy</h4>
+<table><tr><th>Design</th><th>Features</th><th>Strength</th></tr>
+<tr><td>Systematic review / Meta-analysis</td><td>Pools multiple RCT data; quantitative synthesis</td><td>Highest (if RCTs)</td></tr>
+<tr><td>RCT</td><td>Randomization controls confounding; prospective; blinding possible</td><td>High (causal inference)</td></tr>
+<tr><td>Cohort study</td><td>Prospective or retrospective; follows groups over time; uses RR</td><td>Moderate</td></tr>
+<tr><td>Case-control study</td><td>Retrospective; identifies cases vs controls; uses OR; efficient for rare outcomes</td><td>Moderate</td></tr>
+<tr><td>Cross-sectional study</td><td>Snapshot in time; prevalence data; cannot establish causality</td><td>Lower</td></tr>
+<tr><td>Case series / Case report</td><td>Descriptive; hypothesis-generating only</td><td>Lowest</td></tr></table>
+<h4>Critical Appraisal Framework (PICO)</h4>
+<ul><li><strong>P</strong>opulation: Is the study population similar to my patient?</li><li><strong>I</strong>ntervention: Was the intervention clearly defined and applied consistently?</li><li><strong>C</strong>omparison: Is the comparator appropriate (active control vs placebo)?</li><li><strong>O</strong>utcome: Are the outcomes clinically meaningful (mortality vs surrogate)?</li></ul>
+<h4>Pharmacoeconomic Study Types</h4>
+<table><tr><th>Analysis Type</th><th>Outcome Measure</th><th>Result Reported As</th></tr>
+<tr><td>Cost-minimization</td><td>Assumes equal effectiveness</td><td>Cost difference</td></tr>
+<tr><td>Cost-effectiveness (CEA)</td><td>Natural units (lives saved, mmHg reduced)</td><td>Cost per outcome unit (ICER)</td></tr>
+<tr><td>Cost-utility (CUA)</td><td>QALYs (quality-adjusted life years)</td><td>Cost per QALY; &lt;$50-150k/QALY generally acceptable</td></tr>
+<tr><td>Cost-benefit (CBA)</td><td>Monetary value assigned to outcomes</td><td>Net benefit or benefit-cost ratio</td></tr></table>
+<h4>Surrogate vs Clinical Outcomes</h4>
+<p>Surrogate endpoints (HbA1c, LDL, BP) are easier to measure but may not always predict clinical benefit. Clinical (patient-centered) outcomes include mortality, hospitalizations, MI, stroke.</p>
+<p><strong>Clinical Pearl:</strong> Intention-to-treat (ITT) analysis preserves randomization and is most conservative; per-protocol analysis may overestimate treatment effect.</p></div></div>
+<div class="chapter-card"><h3 onclick="this.closest(&quot;.chapter-card&quot;).classList.toggle(&quot;open&quot;)"><span>Healthcare Systems</span><span class="vol-badge">Volume 2</span></h3><div class="chapter-card-body"><p>Medication safety, quality improvement, formulary management, regulatory affairs, and healthcare policy.</p>
+<h4>Medication Error Types and Prevention</h4>
+<table><tr><th>Error Type</th><th>Example</th><th>Prevention Strategy</th></tr>
+<tr><td>Prescribing error</td><td>Wrong dose, wrong drug, omission</td><td>Clinical decision support, pharmacist review</td></tr>
+<tr><td>Transcription error</td><td>Misread handwriting, wrong entry</td><td>CPOE, pharmacy verification</td></tr>
+<tr><td>Dispensing error</td><td>Wrong drug or dose dispensed</td><td>Bar-code scanning, pharmacist counseling</td></tr>
+<tr><td>Administration error</td><td>Wrong patient, wrong time, wrong route</td><td>5 rights, bar-code medication administration (BCMA)</td></tr></table>
+<h4>High-Alert Medications (ISMP)</h4>
+<p>Insulin, heparin, concentrated electrolytes (KCl, hypertonic saline), opioids, chemotherapy, neuromuscular blockers, anticoagulants, antithrombotics.</p>
+<p>Require independent double-checks, weight-based dosing protocols, and standardized concentrations.</p>
+<h4>Quality Improvement Methodologies</h4>
+<table><tr><th>Method</th><th>Description</th></tr>
+<tr><td>PDSA cycle</td><td>Plan-Do-Study-Act; rapid iterative testing of changes</td></tr>
+<tr><td>Root Cause Analysis (RCA)</td><td>Retrospective after adverse event; identifies system failures</td></tr>
+<tr><td>Failure Mode Effects Analysis (FMEA)</td><td>Proactive; identifies potential failure points before they occur</td></tr>
+<tr><td>Lean / Six Sigma</td><td>Reduce waste / reduce variation in processes</td></tr></table>
+<h4>Drug Approval Pathways (FDA)</h4>
+<ul><li><strong>Standard Review:</strong> Standard NDA/BLA; 10-12 months</li><li><strong>Priority Review:</strong> Serious condition, significant improvement; 6 months</li><li><strong>Breakthrough Therapy:</strong> Preliminary evidence of substantial improvement over existing therapy</li><li><strong>Accelerated Approval:</strong> Based on surrogate endpoint; confirmatory trial required post-approval</li><li><strong>Fast Track:</strong> Facilitates development for serious conditions</li></ul>
+<p><strong>Clinical Pearl:</strong> Medication reconciliation at transitions of care (admission, discharge, transfer) is a critical patient safety step and a BCPS exam favorite for healthcare systems questions.</p></div></div>
+<div class="chapter-card"><h3 onclick="this.closest(&quot;.chapter-card&quot;).classList.toggle(&quot;open&quot;)"><span>Oncology Supportive Care</span><span class="vol-badge">Volume 2</span></h3><div class="chapter-card-body"><p>Chemotherapy-induced nausea/vomiting, myelosuppression, supportive medications, and oncologic emergencies.</p>
+<h4>CINV Prophylaxis by Emetogenic Risk</h4>
+<table><tr><th>Risk Level</th><th>Regimen</th></tr>
+<tr><td>High (e.g., cisplatin)</td><td>5-HT3 antagonist + NK1 antagonist (aprepitant) + dexamethasone ± olanzapine</td></tr>
+<tr><td>Moderate (e.g., carboplatin)</td><td>5-HT3 antagonist + dexamethasone ± NK1 antagonist</td></tr>
+<tr><td>Low</td><td>Dexamethasone or prochlorperazine</td></tr>
+<tr><td>Minimal</td><td>No routine prophylaxis</td></tr></table>
+<h4>5-HT3 Antagonists Comparison</h4>
+<table><tr><th>Drug</th><th>Duration</th><th>Notes</th></tr>
+<tr><td>Ondansetron</td><td>Short-acting</td><td>QTc prolongation; max 16mg IV; avoid in high-risk QT patients</td></tr>
+<tr><td>Granisetron</td><td>Short-acting</td><td>Less QTc risk; patch formulation available</td></tr>
+<tr><td>Palonosetron</td><td>Long-acting (half-life 40h)</td><td>Preferred for delayed CINV; no QTc concern</td></tr></table>
+<h4>Neutropenia and G-CSF</h4>
+<ul><li><strong>Febrile neutropenia:</strong> ANC &lt;500 + fever &gt;38.3°C → broad-spectrum antibiotics within 1 hour (cefepime or pip-tazo empirically)</li><li><strong>G-CSF prophylaxis:</strong> Indicated if febrile neutropenia risk &gt;20% (high-risk regimen); also used if &lt;10-20% with risk factors</li><li><strong>Filgrastim (Neupogen):</strong> Daily SQ injection; start 24-72h after chemotherapy</li><li><strong>Pegfilgrastim (Neulasta):</strong> Single dose per chemo cycle; avoid within 14 days of next chemotherapy</li></ul>
+<h4>Bone Metastases / Hypercalcemia of Malignancy</h4>
+<table><tr><th>Drug</th><th>Use</th></tr>
+<tr><td>Zoledronic acid</td><td>Monthly IV; skeletal-related events prevention; monitor renal function and dental health (ONJ risk)</td></tr>
+<tr><td>Denosumab</td><td>Monthly SQ; RANK-L inhibitor; preferred if renal impairment; monitor Ca/Mg (hypocalcemia)</td></tr>
+<tr><td>IV bisphosphonates + IV fluids</td><td>Hypercalcemia of malignancy; normal saline hydration first, then zoledronic acid</td></tr></table>
+<p><strong>Clinical Pearl:</strong> Tumor lysis syndrome prophylaxis with allopurinol (moderate risk) or rasburicase (high risk — caution in G6PD deficiency) for highly proliferative malignancies.</p></div></div>
+<div class="chapter-card"><h3 onclick="this.closest(&quot;.chapter-card&quot;).classList.toggle(&quot;open&quot;)"><span>Gastroenterology</span><span class="vol-badge">Volume 2</span></h3><div class="chapter-card-body"><p>GERD, peptic ulcer disease, IBD, IBS, constipation, diarrhea, and hepatic pharmacotherapy.</p>
+<h4>GERD / PUD Management</h4>
+<table><tr><th>Drug Class</th><th>Examples</th><th>Key Points</th></tr>
+<tr><td>PPIs (first-line)</td><td>Omeprazole, pantoprazole, lansoprazole</td><td>Take 30-60 min before first meal; interactions with clopidogrel (omeprazole&gt;others)</td></tr>
+<tr><td>H2 Receptor Antagonists</td><td>Famotidine, nizatidine</td><td>Tolerance develops with continuous use; famotidine safer (no CYP2C19 interaction)</td></tr>
+<tr><td>H. pylori eradication</td><td>Triple therapy: PPI + clarithromycin + amoxicillin x 14 days</td><td>Quadruple therapy preferred if clarithromycin resistance common; confirm eradication 4+ weeks after treatment</td></tr></table>
+<h4>IBD Pharmacotherapy</h4>
+<table><tr><th>Drug</th><th>Indication</th><th>Monitoring</th></tr>
+<tr><td>Mesalamine</td><td>UC induction and maintenance</td><td>Renal function; Crohn usually requires systemic therapy</td></tr>
+<tr><td>Corticosteroids</td><td>IBD flares (short-term only)</td><td>Bone density, glucose, adrenal suppression; budesonide for local effect</td></tr>
+<tr><td>Azathioprine / 6-MP</td><td>Maintenance; steroid-sparing</td><td>CBC, LFTs; TPMT testing before initiation (thiopurine metabolism); lymphoma risk</td></tr>
+<tr><td>Infliximab / adalimumab</td><td>Moderate-severe CD and UC</td><td>TB screening, hepatitis B, vaccinations before starting</td></tr></table>
+<h4>Constipation Management</h4>
+<p><strong>Osmotic:</strong> Polyethylene glycol (PEG/Miralax) - first-line for chronic constipation; safe in pregnancy and elderly</p>
+<p><strong>Stimulant:</strong> Senna, bisacodyl - for faster relief; avoid long-term without evaluation</p>
+<p><strong>Secretagogues:</strong> Linaclotide, lubiprostone - for IBS-C or chronic idiopathic constipation</p>
+<h4>Diarrhea Management</h4>
+<ul><li><strong>Loperamide:</strong> First-line for non-infectious acute diarrhea; avoid in C. diff or bloody diarrhea</li><li><strong>Rifaximin:</strong> Traveler's diarrhea, IBS-D, hepatic encephalopathy (non-systemic)</li><li><strong>Bismuth subsalicylate:</strong> Traveler's diarrhea; avoid in children/adolescents with viral illness (Reye syndrome risk)</li></ul>
+<p><strong>Clinical Pearl:</strong> PPIs are associated with C. diff, pneumonia, hypomagnesemia, and vitamin B12/iron malabsorption with long-term use. Use lowest effective dose and reassess regularly.</p></div></div>
+<div class="chapter-card"><h3 onclick="this.closest(&quot;.chapter-card&quot;).classList.toggle(&quot;open&quot;)"><span>Geriatrics</span><span class="vol-badge">Volume 2</span></h3><div class="chapter-card-body"><p>Pharmacotherapy in older adults: Beers criteria, polypharmacy, falls risk, dementia, and pain management.</p>
+<h4>Beers Criteria — High-Yield Drugs to Avoid in Elderly</h4>
+<table><tr><th>Drug Category</th><th>Concern</th></tr>
+<tr><td>First-generation antihistamines (diphenhydramine, hydroxyzine)</td><td>Anticholinergic; confusion, falls, urinary retention; strong Beers</td></tr>
+<tr><td>Benzodiazepines (all)</td><td>Falls, fractures, cognitive impairment, paradoxical agitation</td></tr>
+<tr><td>Non-benzodiazepine hypnotics (Z-drugs: zolpidem, eszopiclone)</td><td>Falls, fractures, cognitive impairment; avoid in elderly</td></tr>
+<tr><td>TCAs (amitriptyline, imipramine)</td><td>Anticholinergic; orthostatic hypotension; cardiac conduction</td></tr>
+<tr><td>NSAIDs</td><td>GI bleed, AKI, fluid retention, worsened HF; avoid unless no alternatives</td></tr>
+<tr><td>Proton pump inhibitors (long-term)</td><td>Fractures, C. diff, hypomagnesemia; use sparingly</td></tr>
+<tr><td>Meperidine</td><td>Normeperidine accumulation → seizures; avoid in elderly</td></tr>
+<tr><td>Sliding-scale insulin monotherapy</td><td>Hypoglycemia risk; reactive rather than proactive; avoid alone</td></tr></table>
+<h4>Dementia Pharmacotherapy</h4>
+<table><tr><th>Drug</th><th>Indication</th><th>Notes</th></tr>
+<tr><td>Donepezil, rivastigmine, galantamine</td><td>Mild-moderate Alzheimer disease</td><td>AChE inhibitors; GI side effects; bradycardia</td></tr>
+<tr><td>Memantine</td><td>Moderate-severe Alzheimer disease</td><td>NMDA receptor antagonist; can combine with AChE inhibitor</td></tr></table>
+<h4>Falls Risk — HIGH RISK Medications</h4>
+<p>Opioids, benzodiazepines, Z-drugs, antipsychotics, antihypertensives, diuretics, antidepressants (especially TCAs and SSRIs in elderly), anticonvulsants, and antihistamines.</p>
+<h4>Pain Management in Elderly</h4>
+<ul><li><strong>Acetaminophen:</strong> First-line for mild-moderate pain; max 2-3g/day in elderly or hepatic disease</li><li><strong>NSAIDs:</strong> Avoid if possible; if needed, lowest dose, shortest duration, with PPI gastroprotection</li><li><strong>Opioids:</strong> Start low, go slow; constipation prophylaxis always; avoid long-acting opioids in opioid-naive elderly</li><li><strong>Tramadol:</strong> Avoid in elderly (Beers); lowers seizure threshold; serotonin syndrome risk</li></ul>
+<p><strong>Clinical Pearl:</strong> The STOPP/START criteria complement Beers criteria for identifying inappropriate prescribing in elderly. START identifies drugs often underused in elderly (e.g., statins in ASCVD, bisphosphonates in osteoporosis).</p></div></div>
+<div class="chapter-card"><h3 onclick="this.closest(&quot;.chapter-card&quot;).classList.toggle(&quot;open&quot;)"><span>Pediatrics</span><span class="vol-badge">Volume 2</span></h3><div class="chapter-card-body"><p>Pediatric pharmacotherapy principles, weight-based dosing, common pediatric conditions, and off-label use.</p>
+<h4>Pediatric Dosing Principles</h4>
+<table><tr><th>Concept</th><th>Key Points</th></tr>
+<tr><td>Weight-based dosing</td><td>mg/kg calculations; use actual body weight; verify against max adult dose</td></tr>
+<tr><td>Age-based PK differences</td><td>Neonates: reduced renal/hepatic clearance, larger Vd for water-soluble drugs; infants: increased hepatic metabolism</td></tr>
+<tr><td>BSA dosing</td><td>Used for chemotherapy; BSA (m²) = √[(height cm × weight kg)/3600]</td></tr>
+<tr><td>Formulations</td><td>Prefer liquids/suspensions for children; verify concentration carefully</td></tr></table>
+<h4>Otitis Media Treatment</h4>
+<table><tr><th>Scenario</th><th>Treatment</th></tr>
+<tr><td>Uncomplicated AOM ≥2 years</td><td>Amoxicillin 80-90 mg/kg/day divided BID x 5-7 days</td></tr>
+<tr><td>Treatment failure or PCN allergy</td><td>Amoxicillin-clavulanate or cefdinir; or clindamycin for PCN allergy</td></tr>
+<tr><td>Age &lt;2 years with bilateral AOM</td><td>Always treat; 10 days</td></tr></table>
+<h4>Fever and Pain Management</h4>
+<table><tr><th>Drug</th><th>Dose</th><th>Notes</th></tr>
+<tr><td>Acetaminophen</td><td>10-15 mg/kg q4-6h (max 75mg/kg/day)</td><td>Safest for all ages; first-line for fever/pain</td></tr>
+<tr><td>Ibuprofen</td><td>5-10 mg/kg q6-8h (max 40mg/kg/day)</td><td>Not recommended &lt;6 months; anti-inflammatory benefit</td></tr></table>
+<h4>Pediatric Drug Contraindications / Safety</h4>
+<ul><li><strong>Aspirin:</strong> Avoid in children/adolescents with viral illness (Reye syndrome)</li><li><strong>Fluoroquinolones:</strong> Generally avoided in children (cartilage concerns); exceptions for certain infections</li><li><strong>Tetracyclines:</strong> Avoid in children &lt;8 years (tooth discoloration, bone growth)</li><li><strong>Codeine/tramadol:</strong> Contraindicated in children post-tonsillectomy/adenoidectomy (CYP2D6 ultra-rapid metabolizers; fatal respiratory depression)</li><li><strong>Metoclopramide:</strong> Extrapyramidal reactions more common in pediatric patients</li></ul>
+<h4>Neonatal Considerations</h4>
+<p><strong>Neonatal sepsis empiric coverage:</strong> Ampicillin + gentamicin (covers GBS, Listeria, Gram-negatives)</p>
+<p><strong>Jaundice:</strong> Phototherapy for neonatal hyperbilirubinemia; exchange transfusion for severe cases</p>
+<p><strong>Clinical Pearl:</strong> Always double-check pediatric doses against maximum adult doses — mg/kg calculations in larger children can exceed adult doses.</p></div></div>
+<div class="chapter-card"><h3 onclick="this.closest(&quot;.chapter-card&quot;).classList.toggle(&quot;open&quot;)"><span>Drug Information</span><span class="vol-badge">Volume 2</span></h3><div class="chapter-card-body"><p>Drug information resources, systematic literature searching, evidence grading, and application to practice.</p>
+<h4>Drug Information Resource Types</h4>
+<table><tr><th>Type</th><th>Examples</th><th>Use Case</th></tr>
+<tr><td>Tertiary (pre-appraised)</td><td>Lexicomp, Micromedex, Clinical Pharmacology, UpToDate</td><td>Quick answers; dosing, interactions, safety; starting point</td></tr>
+<tr><td>Secondary (indexing)</td><td>PubMed, Embase, International Pharmaceutical Abstracts (IPA)</td><td>Searching primary literature; finding recent studies</td></tr>
+<tr><td>Primary</td><td>Original research articles, clinical trials, case reports</td><td>Most current evidence; requires critical appraisal</td></tr></table>
+<h4>Systematic Literature Searching (Modified Systematic Approach)</h4>
+<ol><li>Define the question (PICO format)</li><li>Select appropriate databases (PubMed, Embase, Cochrane)</li><li>Identify search terms (MeSH headings + keywords)</li><li>Apply filters (date, study type, language)</li><li>Screen titles/abstracts then full-text articles</li><li>Critically appraise and synthesize evidence</li></ol>
+<h4>Evidence Grading Systems</h4>
+<table><tr><th>System</th><th>Key Feature</th></tr>
+<tr><td>GRADE</td><td>Rates evidence quality (high/moderate/low/very low) AND strength of recommendation (strong/conditional)</td></tr>
+<tr><td>USPSTF A-I</td><td>A-D + I grades; A/B = recommended services; D = recommend against; I = insufficient evidence</td></tr></table>
+<h4>Drug Interaction Evaluation</h4>
+<ul><li><strong>Pharmacokinetic (PK) interactions:</strong> Absorption, distribution, metabolism (CYP450), elimination — change drug levels</li><li><strong>Pharmacodynamic (PD) interactions:</strong> Additive or antagonistic effects without changing levels (e.g., two QTc-prolonging drugs)</li><li><strong>Clinically significant interaction criteria:</strong> Severity, documentation quality, patient-specific risk factors, ability to monitor and manage</li></ul>
+<h4>FDA MedWatch and Pharmacovigilance</h4>
+<p>Voluntary reporting for suspected adverse drug events; healthcare professionals encouraged to report; required for manufacturers. Post-marketing surveillance detects rare ADRs not found in clinical trials (underpowered for rare events).</p>
+<p><strong>Clinical Pearl:</strong> When using tertiary references, always note the publication date — drug information evolves and a tertiary reference may not reflect the most recent FDA labeling changes or guideline updates.</p></div></div>
+
+  </div>
+</div>
+
+<!-- QUIZ -->
+<div id="quiz" class="section">
+  <div class="section-header"><h2>🧠 Quiz Engine</h2><p>449 board-style questions • 3 BCPS exam domains • detailed explanations</p></div>
+  <div class="score-bar">
+    <div class="score-stat"><span class="score-stat-value" id="scoreDisplay">0/0</span><span class="score-stat-label">Score</span></div>
+    <div class="score-stat"><span class="score-stat-value" id="correctDisplay" style="color:var(--green)">0</span><span class="score-stat-label">Correct</span></div>
+    <div class="score-stat"><span class="score-stat-value" id="accuracyDisplay">--%</span><span class="score-stat-label">Accuracy</span></div>
+    <div class="progress-track" style="flex:1"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+  </div>
+  <div style="display:flex;justify-content:flex-end;margin-bottom:6px"><button id="topicStatsBtn" onclick="openTopicStats()">📊 Topic Stats</button></div>
+  <div class="controls">
+    <select id="domainFilter" onchange="loadQuestion()">
+      <option value="all">All Exam Domains</option>
+      <option value="Area 1">Area 1: Patient Care Specialty (36%)</option>
+      <option value="Area 2">Area 2: Therapeutics &amp; Management (36%)</option>
+      <option value="Area 3">Area 3: Professional Practice (28%)</option>
+    </select>
+    <select id="diffFilter" onchange="loadQuestion()">
+      <option value="all">All Difficulties</option>
+      <option value="exam">BCPS Exam Level</option>
+      <option value="hard">Harder Than Exam</option>
+      <option value="expert">Expert / Punishing</option>
+    </select>
+    <select id="topicFilter" onchange="loadQuestion()">
+      <option value="all">All Topics</option>
+    </select>
+    <button class="btn btn-primary" onclick="loadQuestion()">Next Question</button>
+    <button class="btn btn-secondary" onclick="resetScore()">Reset Score</button>
+    <button class="btn btn-secondary" id="reviewMissedBtn" onclick="toggleReviewMissed()" style="display:none">📋 Review Missed</button>
+  </div>
+  <div id="questionContainer"></div>
+</div>
+
+<!-- FLASHCARDS -->
+<div id="flash" class="section">
+  <div class="section-header"><h2>🃏 Flashcards</h2><p>206 spaced-repetition cards with SM-2 scheduling</p></div>
+  <!-- Stats bar -->
+  <div class="sr-stats">
+    <div class="sr-stat"><span class="sr-stat-val due-now" id="srDueToday">0</span><span class="sr-stat-lbl">Due Today</span></div>
+    <div class="sr-stat"><span class="sr-stat-val" id="srNewCount">0</span><span class="sr-stat-lbl">New</span></div>
+    <div class="sr-stat"><span class="sr-stat-val" id="srTotal">206</span><span class="sr-stat-lbl">Total</span></div>
+    <div class="sr-stat"><span class="sr-stat-val streak" id="srStreak">0&#128293;</span><span class="sr-stat-lbl">Day Streak</span></div>
+    <div class="sr-stat"><span class="sr-stat-val" id="srRetention">--%</span><span class="sr-stat-lbl">Retention</span></div>
+  </div>
+  <!-- Mode tabs -->
+  <div class="fc-mode-tabs">
+    <button class="fc-mode-tab active" onclick="switchFcMode('study')">&#127344; Study</button>
+    <button class="fc-mode-tab" onclick="switchFcMode('cloze')">&#9998; Cloze</button>
+
+    <button class="fc-mode-tab" onclick="switchFcMode('create')">&#43; Create</button>
+  </div>
+
+  <!-- STUDY MODE -->
+  <div id="fcModeStudy">
+    <div class="controls">
+      <select id="fcTopicFilter" onchange="filterFlash()">
+        <option value="all">All Topics</option>
+      </select>
+      <select id="fcQueueFilter" onchange="filterFlash()">
+        <option value="due">Due + New First</option>
+        <option value="all">All Cards</option>
+        <option value="new">New Only</option>
+        <option value="review">Review Only</option>
+      </select>
+      <button class="btn btn-secondary" onclick="shuffleFlash()">&#128256; Shuffle</button>
+      <button class="btn btn-secondary" onclick="resetSR()" title="Clear all SR progress">&#9851; Reset SR</button>
+    </div>
+    <div id="fcCounter" class="fc-counter"></div>
+    <div class="sr-progress"><div class="sr-progress-fill" id="srProgressFill" style="width:0%"></div></div>
+    <div class="fc-container" onclick="fcClickHandler(event)">
+      <div class="flashcard" id="flashcard">
+        <div class="flashcard-face flashcard-front">
+          <span class="fc-topic" id="fcTopicLabel"></span>
+          <div class="fc-front-text" id="fcFront"></div>
+          <span class="fc-hint" id="fcHint">Click to flip</span>
+        </div>
+        <div class="flashcard-face flashcard-back">
+          <span class="fc-topic" id="fcTopicLabelBack"></span>
+          <div class="fc-back-text" id="fcBack"></div>
+        </div>
+      </div>
+    </div>
+    <!-- SR rating buttons (shown after flip) -->
+    <div class="sr-btns" id="srBtns">
+      <button class="sr-btn sr-again" onclick="rateCard(0)">Again<span class="sr-interval" id="srI0">&lt;1d</span></button>
+      <button class="sr-btn sr-hard" onclick="rateCard(1)">Hard<span class="sr-interval" id="srI1"></span></button>
+      <button class="sr-btn sr-good" onclick="rateCard(2)">Good<span class="sr-interval" id="srI2"></span></button>
+      <button class="sr-btn sr-easy" onclick="rateCard(3)">Easy<span class="sr-interval" id="srI3"></span></button>
+    </div>
+    <!-- Prev/Next (before flip) -->
+    <div class="fc-actions" id="fcNavBtns">
+      <button class="btn btn-secondary" onclick="prevCard()">&#8592; Prev</button>
+      <button class="btn btn-secondary" onclick="nextCard()">Skip &#8594;</button>
+    </div>
+  </div>
+
+  <!-- CLOZE MODE -->
+  <div id="fcModeCloze" style="display:none">
+    <p style="color:var(--label2);font-size:0.875rem;margin-bottom:1rem">Cards with <code style="color:var(--primary)">[[blank]]</code> syntax — tap the blank to reveal the answer.</p>
+    <div id="clozeCards"></div>
+  </div>
+
+  <!-- CREATE CARD MODE -->
+  <div id="fcModeCreate" style="display:none">
+    <div class="create-form">
+      <h3>&#9998; New Cloze Card</h3>
+      <span class="cloze-hint" style="color:var(--label2);">Use [[blank]] in the front text to create fill-in-the-blank cloze deletions. Example: "Vancomycin targets the [[D-Ala-D-Ala terminus]] of peptidoglycan"</span>
+      <input type="text" id="newCardTopic" placeholder="Topic (e.g. Pharmacokinetics)" />
+      <textarea id="newCardFront" placeholder="Front text — use [[blank]] for cloze deletions"></textarea>
+      <textarea id="newCardBack" placeholder="Back / full answer / explanation"></textarea>
+      <button class="btn btn-primary" onclick="saveCustomCard()">&#43; Save Card</button>
+    </div>
+
+    <div class="create-form" id="customCardListWrap" style="display:none">
+      <h3>&#128218; My Custom Cards (<span id="customCount">0</span>)</h3>
+      <div id="customCardList"></div>
+    </div>
+  </div>
+</div>
+
+<!-- CONCEPT CONNECTOR -->
+<div id="concepts" class="section">
+  <div class="drug-wrap">
+    <h2 style="margin-top: 0;">💊 Drugs Reference Database</h2>
+    <p>Comprehensive BCPS-level drug reference with clinical details, dosing, interactions, and pearls.</p>
+    <div class="drug-search-row" style="position: sticky; top: 60px; z-index: 100; background: var(--bg1); padding: 12px; border-radius: 8px; border-bottom: 1px solid var(--divider); margin-bottom: 16px;">
+      <div style="display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; align-items: center;">
+        <input type="text" id="drugSearch" placeholder="Search by name, brand, class, MOA, or indication..." style="flex: 1; min-width: 250px; padding: 8px 12px; border: 1px solid var(--divider); border-radius: 4px; background: var(--bg2);" />
+        <button id="drugExpandAll" style="padding: 8px 16px; background: var(--primary); color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">Expand All</button>
+        <button id="drugCollapseAll" style="padding: 8px 16px; background: var(--label2); color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">Collapse All</button>
+      </div>
+      <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+        <button class="drug-area-btn" data-area="ALL" style="padding: 6px 12px; background: var(--primary); color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">ALL</button>
+        <button class="drug-area-btn" data-area="Cardiovascular" style="padding: 6px 12px; background: #D62246; color: white; border: none; border-radius: 4px; cursor: pointer;">Cardiovascular</button>
+        <button class="drug-area-btn" data-area="Infectious Disease" style="padding: 6px 12px; background: #06A77D; color: white; border: none; border-radius: 4px; cursor: pointer;">Infectious Disease</button>
+        <button class="drug-area-btn" data-area="Critical Care" style="padding: 6px 12px; background: #F4B942; color: white; border: none; border-radius: 4px; cursor: pointer;">Critical Care</button>
+        <button class="drug-area-btn" data-area="Endocrinology" style="padding: 6px 12px; background: #9B5DE5; color: white; border: none; border-radius: 4px; cursor: pointer;">Endocrinology</button>
+        <button class="drug-area-btn" data-area="Neurology" style="padding: 6px 12px; background: #00B4D8; color: white; border: none; border-radius: 4px; cursor: pointer;">Neurology</button>
+        <button class="drug-area-btn" data-area="Hematology" style="padding: 6px 12px; background: #FF6B35; color: white; border: none; border-radius: 4px; cursor: pointer;">Hematology</button>
+        <button class="drug-area-btn" data-area="Pulmonology" style="padding: 6px 12px; background: #4EA8DE; color: white; border: none; border-radius: 4px; cursor: pointer;">Pulmonology</button>
+        <button class="drug-area-btn" data-area="Nephrology" style="padding: 6px 12px; background: #6366F1; color: white; border: none; border-radius: 4px; cursor: pointer;">Nephrology</button>
+        <button class="drug-area-btn" data-area="GI/Hepatology" style="padding: 6px 12px; background: #10B981; color: white; border: none; border-radius: 4px; cursor: pointer;">GI/Hepatology</button>
+        <button class="drug-area-btn" data-area="Psychiatry" style="padding: 6px 12px; background: #8B5CF6; color: white; border: none; border-radius: 4px; cursor: pointer;">Psychiatry</button>
+        <button class="drug-area-btn" data-area="Oncology" style="padding: 6px 12px; background: #F59E0B; color: white; border: none; border-radius: 4px; cursor: pointer;">Oncology</button>
+        <button class="drug-area-btn" data-area="Transplant" style="padding: 6px 12px; background: #EC4899; color: white; border: none; border-radius: 4px; cursor: pointer;">Transplant</button>
+        <button class="drug-area-btn" data-area="Pain" style="padding: 6px 12px; background: #EF4444; color: white; border: none; border-radius: 4px; cursor: pointer;">Pain</button>
+      </div>
+    </div>
+    <div id="drugList" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); gap: 12px;"></div>
+  </div>
+</div>
+
+<div id="glossary" class="section">
+
+<div class="section-header glo-section-header">
+  <div class="section-title">📚 Medical & Pharmacology Glossary</div>
+  <div class="section-subtitle">600+ terms — Pharmacokinetics, Clinical Pharmacology, Cardiovascular, ID, Critical Care & more</div>
+</div>
+
+<div class="glo-wrap">
+  <div class="glo-search-row">
+    <input type="text" id="gloSearch" class="glo-search" placeholder="Search terms, definitions, abbreviations..." oninput="gloFilter()" onkeyup="gloFilter()" autocomplete="off" spellcheck="false">
+    <span id="gloCount" class="glo-count">Loading...</span>
+  </div>
+  <div class="glo-filters" id="gloFilters">
+    <button class="glo-filter-btn active" onclick="gloSetCat(this,'ALL')">All</button>
+    <button class="glo-filter-btn" onclick="gloSetCat(this,'PK/PD')">PK/PD</button>
+    <button class="glo-filter-btn" onclick="gloSetCat(this,'Pharmacology')">Pharmacology</button>
+    <button class="glo-filter-btn" onclick="gloSetCat(this,'Cardiovascular')">Cardiovascular</button>
+    <button class="glo-filter-btn" onclick="gloSetCat(this,'Infectious Disease')">ID</button>
+    <button class="glo-filter-btn" onclick="gloSetCat(this,'Critical Care')">Critical Care</button>
+    <button class="glo-filter-btn" onclick="gloSetCat(this,'Endocrinology')">Endocrine</button>
+    <button class="glo-filter-btn" onclick="gloSetCat(this,'Neurology')">Neuro</button>
+    <button class="glo-filter-btn" onclick="gloSetCat(this,'Nephrology')">Nephro</button>
+    <button class="glo-filter-btn" onclick="gloSetCat(this,'Hematology')">Heme</button>
+    <button class="glo-filter-btn" onclick="gloSetCat(this,'Pulmonology')">Pulm</button>
+    <button class="glo-filter-btn" onclick="gloSetCat(this,'Lab Values')">Lab Values</button>
+    <button class="glo-filter-btn" onclick="gloSetCat(this,'Abbreviations')">Abbreviations</button>
+    <button class="glo-filter-btn" onclick="gloSetCat(this,'Psychiatry')">Psych</button>
+    <button class="glo-filter-btn" onclick="gloSetCat(this,'Oncology')">Onc</button>
+  </div>
+  <div class="glo-az" id="gloAZ"></div>
+  <div class="glo-scroll"><div id="gloOutput"></div>
+</div>
+
+</div>
+
+<!-- ═══ LIGHTBOX OVERLAY ═══════════════════════════════════════════════ -->
+<div id="vizLightbox">
+  <div id="vizLbHeader">
+    <span id="vizLbTitle">Visual</span>
+    <div id="vizLbControls">
+      <button class="viz-ctrl-btn" onclick="vizLbDownload()">⬇ Save PNG</button>
+      <button class="viz-ctrl-btn close-btn" onclick="vizLbClose()">✕ Close</button>
+    </div>
+  </div>
+  <div id="vizLbBody">
+    <canvas id="vizLbCanvas"></canvas>
+  </div>
+  <div id="vizLbZoomBar">
+    <button class="viz-zoom-bar-btn" onclick="vizLbZoom(-0.25)" title="Zoom out">−</button>
+    <input type="range" id="vizZoomSlider" min="0.5" max="3" step="0.1" value="1"
+           style="width:140px; accent-color:#4a9eff; cursor:pointer;"
+           oninput="vizLbSetZoom(parseFloat(this.value))">
+    <button class="viz-zoom-bar-btn" onclick="vizLbZoom(0.25)" title="Zoom in">+</button>
+    <span id="vizLbZoomPct">100%</span>
+    <button class="viz-ctrl-btn" onclick="vizLbSetZoom(1)">Reset</button>
+    <button class="viz-ctrl-btn" onclick="vizLbSetZoom(2)">2×</button>
+    <button class="viz-ctrl-btn" onclick="vizLbFit()">Fit</button>
+  </div>
+</div>
+
+<div id="sessionTimer">⏱ <span id="sessionTimerVal">0:00</span></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     AUTH MODAL — BCPS Learning Hub Progress Sync
+═══════════════════════════════════════════════════════════ -->
+<div id="authOverlay" onclick="if(event.target===this)hideAuthModal()" style="
+  display:none; position:fixed; inset:0; z-index:9999;
+  background:rgba(0,0,0,0.6); backdrop-filter:blur(5px);
+  align-items:center; justify-content:center;
+">
+  <div id="authBox" style="
+    background:var(--card,#fff); border-radius:20px; padding:30px 26px;
+    width:min(420px,94vw); max-height:90vh; overflow-y:auto;
+    box-shadow:0 24px 80px rgba(0,0,0,0.35);
+    position:relative;
+  ">
+    <button onclick="hideAuthModal()" style="
+      position:absolute; top:14px; right:16px; background:none;
+      border:none; font-size:22px; cursor:pointer; color:var(--label3,#aaa);
+      line-height:1;
+    " aria-label="Close">✕</button>
+
+    <!-- Logo / title -->
+    <div style="text-align:center; margin-bottom:22px;">
+      <div style="font-size:2.8rem; margin-bottom:6px;">💊</div>
+      <h2 style="margin:0 0 4px; font-size:1.3rem; font-weight:700;" id="authTitle">Sync Your Progress</h2>
+      <p style="margin:0; font-size:0.82rem; color:var(--label3,#888);" id="authSubtitle">Sign in to enable progress tracking</p>
+    </div>
+
+    <!-- Logged-in user card (hidden by default) -->
+    <div id="authUserCard" style="display:none; background:var(--bg2,#f3f4f6); border-radius:12px; padding:16px; text-align:center; margin-bottom:16px;">
+      <div id="authAvatar" style="
+        width:54px; height:54px; border-radius:50%; background:var(--primary,#0071e3);
+        color:white; font-size:1.4rem; font-weight:700;
+        display:flex; align-items:center; justify-content:center; margin:0 auto 8px;
+      ">?</div>
+      <div id="authUserEmail" style="font-size:0.88rem; font-weight:600; color:var(--label1,#111);"></div>
+      <div id="authLastSync" style="font-size:0.74rem; color:var(--label3,#888); margin-top:4px;"></div>
+    </div>
+
+    <!-- Auth form -->
+    <div id="authForm">
+      <div style="margin-bottom:13px;">
+        <label style="font-size:0.78rem; font-weight:600; color:var(--label2,#555); display:block; margin-bottom:5px;">Username</label>
+        <input type="text" id="authEmail" placeholder="Olaiya" autocomplete="username" style="
+          width:100%; padding:11px 13px; border:1.5px solid var(--divider,#e5e7eb);
+          border-radius:9px; font-size:0.9rem; background:var(--bg2,#f9fafb);
+          color:var(--label1,#111); box-sizing:border-box; outline:none;
+          transition:border-color 0.15s;
+        " onfocus="this.style.borderColor='var(--primary,#0071e3)'"
+           onblur="this.style.borderColor='var(--divider,#e5e7eb)'"
+           onkeydown="if(event.key==='Enter')authSubmit()">
+      </div>
+      <div style="margin-bottom:16px;">
+        <label style="font-size:0.78rem; font-weight:600; color:var(--label2,#555); display:block; margin-bottom:5px;">Password</label>
+        <input type="password" id="authPassword" placeholder="••••••••" autocomplete="current-password" style="
+          width:100%; padding:11px 13px; border:1.5px solid var(--divider,#e5e7eb);
+          border-radius:9px; font-size:0.9rem; background:var(--bg2,#f9fafb);
+          color:var(--label1,#111); box-sizing:border-box; outline:none;
+          transition:border-color 0.15s;
+        " onfocus="this.style.borderColor='var(--primary,#0071e3)'"
+           onblur="this.style.borderColor='var(--divider,#e5e7eb)'"
+           onkeydown="if(event.key==='Enter')authSubmit()">
+      </div>
+
+      <!-- Error message -->
+      <div id="authError" style="
+        display:none; color:#DC2626; font-size:0.8rem; margin-bottom:13px;
+        padding:9px 12px; background:#FEE2E2; border-radius:8px; line-height:1.4;
+      "></div>
+
+      <button id="authSubmitBtn" onclick="authSubmit()" style="
+        width:100%; padding:13px; background:var(--primary,#0071e3); color:white;
+        border:none; border-radius:10px; font-size:0.95rem; font-weight:700;
+        cursor:pointer; margin-bottom:10px; transition:opacity 0.15s;
+      " onmouseover="this.style.opacity='0.88'" onmouseout="this.style.opacity='1'">Sign In</button>
+    </div>
+
+    <!-- Logged-in actions -->
+    <div id="authLoggedInActions" style="display:none;">
+      <button onclick="syncNow()" style="
+        width:100%; padding:12px; background:var(--primary,#0071e3); color:white;
+        border:none; border-radius:10px; font-size:0.9rem; font-weight:700;
+        cursor:pointer; margin-bottom:10px;
+      ">🔄 Sync Now</button>
+      <button onclick="authSignOut()" style="
+        width:100%; padding:11px; background:none; color:#EF4444;
+        border:1.5px solid #EF4444; border-radius:10px; font-size:0.85rem;
+        font-weight:600; cursor:pointer;
+      ">Sign Out</button>
+    </div>
+
+    <div style="text-align:center; margin-top:14px;">
+      <button onclick="hideAuthModal()" style="
+        background:none; border:none; color:var(--label3,#aaa);
+        font-size:0.78rem; cursor:pointer; padding:4px 8px;
+      ">Continue without account →</button>
+    </div>
+
+    <!-- What's saved -->
+    <div style="
+      margin-top:16px; padding:12px; background:var(--bg2,#f8f9fa);
+      border-radius:10px; font-size:0.75rem; color:var(--label3,#888);
+      line-height:1.7;
+    ">
+      <strong style="color:var(--label2,#666);">What gets saved</strong><br>
+      ✓ Quiz history &amp; accuracy per topic<br>
+      ✓ Missed questions (for Review Missed mode)<br>
+      ✓ Flashcard spaced-repetition schedule<br>
+      ✓ Study streak &amp; total time<br>
+      <span style="font-size:0.7rem; margin-top:4px; display:block;">
+        Powered by <a href="https://supabase.com" target="_blank" rel="noopener" style="color:var(--primary,#0071e3);">Supabase</a>
+        · Your data is private and only accessible to you.
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- AinaDara Footer -->
+<div style="background:var(--card);border-top:1px solid var(--sep);padding:20px;text-align:center;margin-top:40px;">
+  <div style="font-family:Georgia,serif;font-size:15px;color:var(--label2);margin-bottom:4px;">
+    <span style="font-weight:400;">Aina</span><span style="font-weight:700;">Dara</span>
+  </div>
+  <div style="font-size:11px;color:var(--label3);letter-spacing:0.5px;">BCPS Learning Hub · Built to pass boards</div>
+</div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

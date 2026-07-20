@@ -10,3 +10,6 @@ public/
 # Eleventy build output
 _site/
 .audit-src/
+
+# Generated data bundle (run scripts/build-data.js)
+app/data.js
