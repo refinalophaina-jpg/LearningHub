@@ -1084,3 +1084,65 @@ body.dark-mode{ --bg0:#1c1815; --bg1:#252119; --bg2:#2b2620; --bg3:#1c1815; --in
   border:1px solid var(--rule, rgba(45,52,40,.14)) !important; font-weight:500 !important;
   text-transform:uppercase; letter-spacing:.08em; font-size:.62rem !important;
 }
+
+/* ── Study plan panel (home) ─────────────────────────────────────────── */
+.sp-wrap{ display:flex; flex-direction:column; gap:12px; }
+.sp-exam-set{ display:flex; align-items:center; flex-wrap:wrap; gap:8px; font-size:13px; color:var(--label2); }
+.sp-exam-set input[type="date"]{ padding:5px 8px; border:1px solid var(--divider,var(--sep)); border-radius:6px; background:var(--card); color:var(--label); font-family:inherit; }
+.sp-link-btn{ background:none; border:none; color:var(--terracotta); font-size:12.5px; cursor:pointer; text-decoration:underline; padding:0; }
+.sp-queue{ display:flex; align-items:center; flex-wrap:wrap; gap:14px; }
+.sp-queue-item{ font-size:13px; color:var(--label2); }
+.sp-queue-item strong{ color:var(--label); }
+.sp-cal-wrap{ border-top:1px solid var(--divider,var(--sep)); padding-top:10px; }
+.sp-cal{ display:flex; flex-wrap:wrap; gap:14px; align-items:center; margin-top:6px; }
+.sp-cal-item{ font-size:13px; color:var(--label2); }
+.sp-cal-item strong{ color:var(--label); }
+.sp-cal-warn{ flex-basis:100%; font-size:12.5px; color:var(--terracotta); margin-top:4px; }
+.sp-cal-empty{ font-size:12.5px; color:var(--label3); margin:6px 0 0; }
+
+/* ── Due-today banner (quiz) ─────────────────────────────────────────── */
+.due-banner{ display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap; background:var(--primary-light); border:1px solid var(--terracotta); border-radius:10px; padding:10px 14px; margin-bottom:14px; font-size:13.5px; color:var(--label); }
+
+/* ── Confidence capture row (quiz) ───────────────────────────────────── */
+.conf-row{ display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin:0 0 12px; }
+.conf-label{ font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--label3); font-weight:500; }
+.conf-btn{ background:transparent; border:1px solid var(--divider,var(--sep)); color:var(--label2); border-radius:999px; padding:5px 12px; font-size:12.5px; font-weight:500; cursor:pointer; transition:all .15s; }
+.conf-btn:hover{ border-color:var(--terracotta); color:var(--terracotta); }
+.conf-btn.active{ background:var(--terracotta); border-color:var(--terracotta); color:var(--bg); font-weight:600; }
+
+/* ── Readiness meter (home) ──────────────────────────────────────────── */
+.sp-readiness-wrap{ border-top:1px solid var(--divider,var(--sep)); padding-top:10px; }
+.sp-readiness{ display:flex; align-items:center; gap:10px; margin-top:6px; flex-wrap:wrap; }
+.sp-readiness-band{ font-weight:600; font-size:13.5px; padding:4px 12px; border-radius:999px; border:1px solid; }
+.sp-readiness.not-ready .sp-readiness-band{ color:#b0533a; border-color:#b0533a; }
+.sp-readiness.borderline .sp-readiness-band{ color:var(--terracotta); border-color:var(--terracotta); }
+.sp-readiness.ready .sp-readiness-band{ color:var(--moss); border-color:var(--moss); }
+.sp-readiness-pct{ font-size:12.5px; color:var(--label2); }
+
+/* ── Timed mock exam (ACCP tab) ───────────────────────────────────────── */
+.mock-start, .mock-result{ background:var(--card); border:1px solid var(--divider,var(--sep)); border-radius:12px; padding:18px 20px; margin-bottom:18px; }
+.mock-start-opts{ display:flex; gap:10px; flex-wrap:wrap; }
+.mock-area-breakdown{ display:flex; flex-direction:column; gap:4px; margin-top:8px; }
+.mock-area-row{ display:flex; justify-content:space-between; font-size:13.5px; padding:4px 0; border-bottom:1px solid var(--divider,var(--sep)); }
+.mock-live{ background:var(--card); border:1px solid var(--divider,var(--sep)); border-radius:12px; padding:16px 18px; margin-bottom:18px; }
+.mock-live-head{ display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:12px; }
+.mock-timer{ font-family:var(--font-code,monospace); font-weight:700; font-size:1.1rem; color:var(--terracotta); }
+.mock-progress{ font-size:13px; color:var(--label2); }
+.mock-nav-grid{ display:flex; flex-wrap:wrap; gap:4px; margin-bottom:14px; max-height:120px; overflow-y:auto; }
+.mock-nav-cell{ width:28px; height:28px; border-radius:6px; border:1px solid var(--divider,var(--sep)); background:transparent; color:var(--label2); font-size:11px; cursor:pointer; }
+.mock-nav-cell.answered{ background:var(--primary-light); border-color:var(--terracotta); color:var(--terracotta); }
+.mock-nav-cell.cur{ background:var(--terracotta); border-color:var(--terracotta); color:var(--bg); font-weight:700; }
+.mock-nav-cell.flagged{ box-shadow:0 0 0 2px var(--purple) inset; }
+.mock-live-foot{ display:flex; justify-content:space-between; gap:8px; margin-top:14px; }
+.mock-choice.selected{ border-color:var(--terracotta); background:var(--primary-light); }
+
+/* Retone ACCP mock-review domain colors + buttons to the AinaDara system */
+:root{
+  --accp-1a:#4f6d8a; --accp-1b:#6a5a8a; --accp-1c:#7a6aa8;
+  --accp-2a:#5a7d4a; --accp-2b:#4a5c28; --accp-2c:#4f7d7a;
+  --accp-3a:#a8763a; --accp-3b:#b0533a; --accp-3c:#8a5a7a;
+}
+.accp-nav-next{ background:var(--terracotta); box-shadow:none; }
+.accp-choice-btn:hover:not(:disabled){ border-color:var(--terracotta); background:var(--primary-light); box-shadow:none; }
+.accp-choice-btn.selected{ border-color:var(--terracotta); background:var(--primary-light); }
+.accp-reveal-btn{ background:var(--terracotta); box-shadow:none; }
