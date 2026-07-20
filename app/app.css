@@ -1044,7 +1044,7 @@ body.dark-mode{
   --terracotta:#d88a6e; --purple:#8e7dc8; --moss:#9aad68; --brand:#d88a6e;
 }
 body{ font-family:var(--font-body); font-weight:300; }
-.header h1, .section-header h2, .section-header h1, h2.section-title{
+.header h1, .section h2, .section-header h2, .section-header h1, h2.section-title{
   font-family:var(--font-display); font-weight:400; letter-spacing:.005em;
 }
 ::selection{ background:var(--terracotta); color:var(--bg); }
