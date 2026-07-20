@@ -37,7 +37,7 @@
   {
     "topic": "Cardiology",
     "front": "Statin intensity classification",
-    "back": "HIGH (>=50% LDL reduction): Atorvastatin 40-80mg, Rosuvastatin 20-40mg\nMODERATE (30-49%): Atorvastatin 10-20mg, Rosuvastatin 5-10mg, Simvastatin 20-40mg\nLOW (<30%): Simvastatin 10mg, Pravastatin 10-20mg\nHigh-intensity indicated: ASCVD, LDL>=190, DM age 40-75 with 10-yr risk >=7.5%"
+    "back": "High-intensity indicated: clinical ASCVD, LDL>=190; DM age 40-75 = moderate-intensity by default, escalate to high-intensity if 10-yr ASCVD risk >=20% or multiple risk factors"
   },
   {
     "topic": "Cardiology",
@@ -92,7 +92,7 @@
   {
     "topic": "Anticoagulation",
     "front": "DOAC mechanisms and key properties",
-    "back": "Dabigatran: direct thrombin inhibitor; 80% renal; only DOAC with specific reversal agent (idarucizumab); requires capsule form integrity\nRivaroxaban: factor Xa; take 20mg WITH dinner (absorption)\nApixaban: factor Xa; least renal (~27%); preferred in CKD/ESRD; BID dosing\nEdoxaban: factor Xa; avoid if CrCl >95 (paradoxically too low exposure in ENGAGE AF)\nAll 4: andexanet alfa or 4F-PCC (off-label) for reversal"
+    "back": "Dabigatran: direct thrombin inhibitor; 80% renal; specific reversal agent is idarucizumab (Xa inhibitors have their own specific agent, andexanet alfa); requires capsule form integrity"
   },
   {
     "topic": "Infectious Diseases",
@@ -107,7 +107,7 @@
   {
     "topic": "Infectious Diseases",
     "front": "C. difficile: severity and treatment",
-    "back": "Non-severe: WBC <15k AND SCr <1.5 -- vancomycin 125mg QID x10d OR fidaxomicin 200mg BID x10d\nSevere: WBC >=15k OR SCr >=1.5 -- same treatment\nFulminant: hypotension/shock/ileus -- vancomycin 500mg QID PO + IV metronidazole; surgery consult\nRecurrent: fidaxomicin preferred; consider bezlotoxumab; FMT for multiple recurrences\nMetronidazole NO LONGER recommended for any CDI (inferior outcomes)"
+    "back": "Oral metronidazole NO LONGER first-line for non-severe/severe CDI (inferior to vancomycin/fidaxomicin); IV metronidazole still added in fulminant disease"
   },
   {
     "topic": "Infectious Diseases",
@@ -192,7 +192,7 @@
   {
     "topic": "Endocrine",
     "front": "SGLT2 inhibitor adverse effects",
-    "back": "Genital mycotic infections (most common; yeast due to glucosuria)\nUTI (increased risk)\nVolume depletion + orthostatic hypotension (hold if NPO/surgery for 24-72h)\nEuglycemic DKA (T2DM; even near-normal glucose)\nFournier gangrene (rare necrotizing fasciitis; stop drug, surgery)\nAmputation risk: canagliflozin (not class effect)\nBone fractures: canagliflozin\nBenefits outweigh risks in most high-risk patients"
+    "back": "Volume depletion + orthostatic hypotension; euglycemic DKA risk perioperatively -- per FDA, discontinue at least 3 days (canagliflozin/dapagliflozin/empagliflozin) or 4 days (ertugliflozin) before scheduled surgery"
   },
   {
     "topic": "Endocrine",
@@ -207,7 +207,7 @@
   {
     "topic": "Endocrine",
     "front": "Metformin clinical pharmacology",
-    "back": "Mechanism: activates AMPK; reduces hepatic gluconeogenesis; improves insulin sensitivity\nBenefits: weight-neutral/modest loss; no hypoglycemia alone; CV benefit (UKPDS); first-line T2DM\nContraindications: CrCl <30 (lactic acidosis risk); hepatic impairment; excessive alcohol\nHold: 48h before contrast if eGFR 30-60 (restart after recheck); acute illness\nAdverse effects: GI (take with food; ER formulation better); B12 deficiency (check annually)"
+    "back": "Hold around contrast only if eGFR <30, AKI, or intra-arterial contrast with renal exposure (per ACR); no hold needed for IV contrast if eGFR >=30 without AKI; also hold for acute illness"
   },
   {
     "topic": "Endocrine",
@@ -267,7 +267,7 @@
   {
     "topic": "Pulmonology",
     "front": "Adult immunization key vaccines and ages",
-    "back": "All adults annually: Influenza, COVID-19 booster\nAge >=19: Tdap (once), then Td q10 years; HepB series (all adults through 59)\nAge >=50: Shingrix (RZV) 2 doses 2-6 months apart\nAge >=65: PCV20 alone OR PCV15 then PPSV23 at 1 year; RSV vaccine (Abrysvo or Mresvia; shared decision)\nImmunocompromised: live vaccines (MMR, varicella) require CD4 >200 (HIV)"
+    "back": "Age >=50: single PCV dose (PCV20 or PCV21/Capvaxive alone, OR PCV15 then PPSV23 >=1 year later) -- ACIP lowered age from 65 to 50 (Oct 2024); RSV vaccine: routine for all adults >=75, and 60-74 at increased risk (ACIP 2024)"
   },
   {
     "topic": "Psychiatry",
@@ -362,12 +362,12 @@
   {
     "topic": "Healthcare Systems",
     "front": "FDA REMS programs: examples",
-    "back": "REMS = Risk Evaluation and Mitigation Strategies: FDA-required programs for high-risk drugs\nCLOZAPINE REMS: ANC monitoring required (agranulocytosis risk); no dispensing without ANC check\niPLEDGE: isotretinoin; two forms of contraception required; monthly pregnancy test\nTHALOMID REMS: thalidomide; teratogenicity; contraception, pregnancy testing\nRESTORED MEDS: transmucosal fentanyl products; TIRF REMS access; cancer breakthrough pain only\nSafety pharmacies: must enroll in program to dispense"
+    "back": "CLOZAPINE: FDA removed the Clozapine REMS effective June 13, 2025 (no REMS Dispense Authorization or ANC reporting needed to dispense); ANC monitoring per prescribing information is still recommended for severe neutropenia/agranulocytosis risk"
   },
   {
     "topic": "Cardiology",
     "front": "Acute decompensated HF: hemodynamic profiles",
-    "back": "WARM + WET: adequate perfusion, volume overloaded -- IV diuresis (furosemide 2.5x oral dose)\nWARM + DRY: compensated (no treatment needed or gentle oral diuresis)\nCOLD + WET: low perfusion + congestion -- vasopressors + diuresis\nCOLD + DRY: cardiogenic shock + hypovolemia -- cautious fluid challenge, then vasopressors\nDiuretic resistance: use thiazide + loop combination; SGLT2i; consider ultrafiltration"
+    "back": "COLD + WET: low perfusion + congestion -- inotropes (dobutamine or milrinone) + diuresis; add vasopressor only if hypotensive/shock"
   },
   {
     "topic": "Cardiology",
@@ -482,12 +482,12 @@
   {
     "topic": "Critical Care",
     "front": "ICU sedation and analgesia (PADIS guidelines)",
-    "back": "PAIN: assess with NRS (0-10) or CPOT (non-verbal); opioids for pain (fentanyl IV preferred)\nAGITATION: target RASS -1 to 0 (light sedation); propofol or dexmedetomidine preferred over BZDs\nDELIRIUM: CAM-ICU or ICDSC; A-F bundle (Assess pain, Both SAT+SBT, Choice of sedation, Delirium monitoring, Early mobility, Family engagement)\nBZDs increase delirium duration; dexmedetomidine reduces duration vs midazolam (MENDS)\nDexmedetomidine: causes bradycardia and hypotension; does not cause respiratory depression"
+    "back": "dexmedetomidine reduces duration vs midazolam (SEDCOM)"
   },
   {
     "topic": "Critical Care",
     "front": "Nutrition in critically ill patients",
-    "back": "Initiate EN within 24-48h of ICU admission (if hemodynamically stable and GI tract functional)\nCaloric target: 25-30 kcal/kg/day (avoid overfeeding; hypocaloric/trophic feeding first 1 week for obese)\nProtein: 1.2-2.0 g/kg/day (IBW in obese)\nContral PN: avoid unless EN not feasible after 7 days (increases infection risk)\nGlucose target: 140-180 mg/dL (tight control <110 increases hypoglycemia and mortality - NICE-SUGAR)\nProkinetics (metoclopramide, erythromycin) for high gastric residuals"
+    "back": "Central PN: avoid unless EN not feasible after 7 days (increases infection risk)"
   },
   {
     "topic": "Geriatrics",
@@ -512,7 +512,7 @@
   {
     "topic": "Psychiatry",
     "front": "Clozapine: indications and monitoring",
-    "back": "Indications: treatment-resistant schizophrenia (2+ failed antipsychotics); reduction of suicidality in schizophrenia; tardive dyskinesia\nBlack box warnings: AGRANULOCYTOSIS (ANC monitoring required; CLOZAPINE REMS program), SEIZURES, MYOCARDITIS, ORTHOSTASIS\nANC monitoring: weekly x 26 weeks, biweekly x 26 weeks, then monthly\nOther ADEs: metabolic syndrome, sedation, hypersalivation, constipation, seizures (dose-dependent)\nNo EPS or tardive dyskinesia (lowest D2 binding of all antipsychotics)"
+    "back": "Black box warnings: AGRANULOCYTOSIS/SEVERE NEUTROPENIA (ANC monitoring still recommended per prescribing information; FDA eliminated the mandatory Clozapine REMS program effective June 2025), SEIZURES, MYOCARDITIS, ORTHOSTASIS"
   },
   {
     "topic": "Oncology",
@@ -592,7 +592,7 @@
   {
     "topic": "Infectious Diseases",
     "front": "Antibiotic adverse effects: key toxicities",
-    "back": "Aminoglycosides: nephrotoxicity (tubular) + ototoxicity (cochlear and vestibular; irreversible)\nVancomycin: nephrotoxicity (synergistic with aminoglycosides), Red man syndrome (not allergy; slow infusion)\nFluoroquinolones: QT prolongation, tendinopathy (Achilles rupture), peripheral neuropathy, C. difficile\nLinezolid: serotonin syndrome (MAOI effect; avoid with SSRIs), myelosuppression (>2 weeks)\nChlorampenicol: aplastic anemia, Gray baby syndrome (neonates)\nTetracyclines: photosensitivity, dental/bone development (children, pregnancy)"
+    "back": "Chloramphenicol: aplastic anemia, Gray baby syndrome (neonates)"
   },
   {
     "topic": "Infectious Diseases",
@@ -647,7 +647,7 @@
   {
     "topic": "Gastroenterology",
     "front": "Upper GI bleed: pharmacotherapy management",
-    "back": "PPI: IV pantoprazole or esomeprazole (bolus + infusion) before and after endoscopy -- reduces rebleeding\nHigh-dose PPI: 80mg IV bolus + 8mg/h infusion x 72h after endoscopic hemostasis\nSomatostatin analogs (octreotide): used for variceal bleeding (reduce portal pressure)\nAntibiotics (norfloxacin or ceftriaxone): for cirrhosis patients with GI bleed (reduces bacterial translocation and mortality)\nHold: anticoagulants/antiplatelets until bleeding controlled\nTransfusion: target Hgb 7-8 g/dL (restrictive strategy reduces rebleeding and mortality - TRICC-GI)"
+    "back": "Transfusion: target Hgb 7-8 g/dL (restrictive strategy reduces rebleeding and mortality - Villanueva et al., NEJM 2013)"
   },
   {
     "topic": "Gastroenterology",
@@ -682,7 +682,7 @@
   {
     "topic": "Neurology",
     "front": "Migraine pharmacotherapy",
-    "back": "ACUTE treatment (mild-moderate): NSAIDs (ibuprofen, naproxen), acetaminophen, combination analgesics\nACUTE treatment (moderate-severe): triptans (sumatriptan, rizatriptan); gepants (ubrogepant, rimegepant - CGRP antagonists); ditans (lasmiditan - 5-HT1F)\nAvoid triptans in: coronary artery disease, stroke, uncontrolled HTN, hemiplegic migraine\nPREVENTION (if >=4 headache days/month): propranolol, topiramate, amitriptyline, valproate, CGRP antagonists (monoclonal antibodies: erenumab, fremanezumab, galcanezumab)\nCalcium supplements may reduce menstrual migraine frequency"
+    "back": "Magnesium supplements may reduce menstrual migraine frequency"
   },
   {
     "topic": "Neurology",
@@ -702,7 +702,7 @@
   {
     "topic": "Healthcare Systems",
     "front": "Drug information hierarchy: primary, secondary, tertiary",
-    "back": "TERTIARY (synthesized summaries): textbooks, Micromedex, Lexi-Comp, UpToDate, package inserts\n- PROS: quick access, pre-evaluated; CONS: may lag current evidence; simplified\nSECONDARY (indexing/abstracting): PubMed/MEDLINE, Cochrane, Embase, IPA\n- Helps locate primary literature\nPRIMARY (original research): RCTs, cohort studies, case reports, clinical guidelines\n- GOLD STANDARD for clinical decisions\nBCPS Domain 3: use primary literature to evaluate evidence; understand levels of evidence"
+    "back": "PRIMARY (original research): RCTs, cohort studies, case reports (clinical practice guidelines are tertiary/synthesized resources)"
   },
   {
     "topic": "Healthcare Systems",
@@ -717,7 +717,7 @@
   {
     "topic": "Biostatistics",
     "front": "Measures of association: RR, OR, HR",
-    "back": "Relative Risk (RR): prospective studies; RR = (a/(a+b)) / (c/(c+d)); ratio of incidence rates\nOdds Ratio (OR): case-control; OR = (a x d) / (b x c); approximates RR when event rare\nHazard Ratio (HR): survival analysis (Cox regression); ratio of hazard rates; time-to-event\nAttributable Risk (AR) = RR - 1: how much of the risk is attributable to exposure\nPopulation Attributable Risk (PAR): impact of exposure in entire population\nAll values: <1 = protective; 1 = null; >1 = increased risk"
+    "back": "Attributable Risk (AR) = incidence in exposed - incidence in unexposed (absolute risk difference); Attributable Risk Percent = (RR-1)/RR x 100"
   },
   {
     "topic": "Biostatistics",
@@ -802,7 +802,7 @@
   {
     "topic": "BPS Strategy",
     "front": "Biostatistics Trap: Statistical vs. Clinical Significance",
-    "back": "Statistical significance (p<0.05): 5% chance result occurred by chance. Does NOT equal clinical importance.\n\nClinical significance: Is the effect size large enough to matter to patients?\n\nCI Null-Crossing Rule:\n• RR/OR crosses 1.0 → NOT statistically significant\n• Mean difference crosses 0 → NOT statistically significant\n• CI NOT crossing null → statistically significant\n\nRRR vs. ARR Trap:\n• RRR can be impressive even when ARR is tiny\n• Example: 2% event rate → 1% with treatment = RRR 50%, ARR 1%, NNT 100\n• Always report ARR — RRR without baseline risk misleads\n• NNT = 1/ARR"
+    "back": "Statistical significance (p<0.05): assuming no true effect (null true), <5% probability of observing a result this extreme. Does NOT equal clinical importance and is NOT the probability the result is 'due to chance.'"
   },
   {
     "topic": "BPS Strategy",
@@ -891,12 +891,12 @@
   },
   {
     "front": "Mechanism of metformin: [[inhibits Complex I of hepatic mitochondrial respiratory chain]], reducing hepatic gluconeogenesis and increasing peripheral glucose uptake. Risk of [[lactic acidosis]] is contraindicated with eGFR [[<30]].",
-    "back": "Metformin: biguanide. Primary mechanism = inhibition of mitochondrial glycerophosphate dehydrogenase and Complex I → reduces hepatic gluconeogenesis. Weight neutral/weight loss. Hold for IV contrast if eGFR <60, restart when stable 48h later. Contraindicated eGFR <30.",
+    "back": "Hold for iodinated contrast if eGFR <30, AKI, or intra-arterial contrast (per ACR); recheck renal function ~48h before restarting.",
     "topic": "Endocrinology"
   },
   {
     "front": "GOLD COPD classification: FEV₁/FVC <0.70 post-bronchodilator confirms obstruction. GOLD 1=FEV₁≥[[80%]], GOLD 2=50-79%, GOLD 3=30-49%, GOLD 4=[[<30%]] predicted.",
-    "back": "GOLD spirometric grades determine pharmacotherapy intensity. Groups A/B/C/D incorporate symptoms (CAT, mMRC) and exacerbation history. Group D (most severe) = ≥2 exacerbations or ≥1 leading to hospitalization per year = requires triple therapy (LABA+LAMA+ICS) ± roflumilast ± azithromycin.",
+    "back": "Groups A/B/E (GOLD 2023 merged former C and D into group E) incorporate symptoms (CAT, mMRC) and exacerbation history. Group E (≥2 moderate exacerbations or ≥1 leading to hospitalization/year) = start LABA+LAMA; add ICS if blood eosinophils ≥300 (triple therapy) ± roflumilast ± azithromycin.",
     "topic": "Pulmonology"
   },
   {
@@ -915,7 +915,7 @@
     "topic": "Infectious Diseases"
   },
   {
-    "front": "Clozapine black box warnings: [[agranulocytosis]] (1-2% risk, requires REMS monitoring with ANC), [[seizures]] (dose-related), [[myocarditis]] (highest risk in first 4-8 weeks), and [[orthostatic hypotension]].",
+    "front": "[[agranulocytosis/severe neutropenia]] (boxed warning; the Clozapine REMS was eliminated by FDA in 2025, but ANC monitoring per the prescribing information is still recommended)",
     "back": "Clozapine REMS: ANC monitored weekly x6 months → every 2 weeks x6 months → monthly thereafter. Discontinue if ANC <1,000. Maximum dose associated with seizure risk ~600mg/day. Titrate slowly to minimize myocarditis risk. Used only for treatment-resistant schizophrenia and suicidality reduction.",
     "topic": "Psychiatry"
   },
@@ -931,7 +931,7 @@
   },
   {
     "front": "Type I error (α) = [[falsely rejecting true null hypothesis (false positive)]]. Type II error (β) = [[failing to reject false null hypothesis (false negative)]]. Power = [[1 − β]].",
-    "back": "α (significance level) = probability of Type I error = conventionally 0.05. β = probability of Type II error. Power = 1−β = probability of correctly detecting a true effect. Standard power ≥80% (β ≤20%). Increasing sample size reduces both α and β simultaneously.",
+    "back": "Increasing sample size reduces β (increases power); α is a preset significance threshold chosen by the investigator and is not changed by sample size.",
     "topic": "Biostatistics"
   },
   {
@@ -995,13 +995,13 @@
     "topic": "Pharmacokinetics"
   },
   {
-    "front": "In a one-compartment model, if t½ = 8 hours and the drug is given q12h, the accumulation ratio (R) = [[1 / (1 − e^(−0.693 × τ/t½))]] ≈ [[1.59]] (meaning steady-state Cmax is 1.59× single-dose Cmax).",
+    "front": "≈ [[1.55]] (meaning steady-state Cmax is ~1.55× single-dose Cmax)",
     "back": "Accumulation ratio R = 1 / (1 − e^(−ke × τ)). With t½=8h and τ=12h: ke=0.693/8=0.0866 hr⁻¹; e^(−0.0866×12) = e^(−1.04) = 0.354; R = 1/(1−0.354) = 1/(0.646) ≈ 1.55. This means significant accumulation occurs at q12h dosing with 8h half-life.",
     "topic": "Pharmacokinetics"
   },
   {
     "front": "Fluoxetine has an active metabolite [[norfluoxetine]] with t½ of [[4-16 days]], making its drug interactions last [[4-6 weeks after stopping]] the drug.",
-    "back": "Fluoxetine parent t½ ≈ 1-4 days; norfluoxetine t½ ≈ 4-16 days → effective washout takes 5-6 weeks. Critical for: (1) MAOi interactions (14-day washout required before MAOi after fluoxetine, but only 5 days for other SSRIs), (2) CYP2D6 inhibition persists after discontinuation. Contrast with sertraline t½ ≈ 26h.",
+    "back": "(1) MAOi interactions (5-week washout required before an MAOi after fluoxetine due to the long half-life, vs 2 weeks for other SSRIs)",
     "topic": "Pharmacology"
   },
   {
