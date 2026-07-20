@@ -35,9 +35,10 @@ body{background:var(--bg);color:var(--label);font-family:-apple-system,BlinkMacS
 .section-header p{font-size:0.82rem;color:var(--label2);margin-top:3px}
 
 /* ── CARDS ── */
-.ios-card{background:var(--card);border-radius:16px;box-shadow:0 1px 3px rgba(0,0,0,0.08),0 4px 12px rgba(0,0,0,0.04);margin-bottom:12px;overflow:hidden}
+.ios-card{background:var(--card);border-radius:16px;box-shadow:var(--shadow-1);margin-bottom:12px;overflow:hidden;transition:box-shadow .18s,transform .18s}
 .ios-card-inner{padding:16px}
-.chapter-card{background:var(--card);border-radius:16px;box-shadow:0 1px 3px rgba(0,0,0,0.06),0 4px 12px rgba(0,0,0,0.03);margin-bottom:12px;overflow:hidden}
+.chapter-card{background:var(--card);border-radius:16px;box-shadow:var(--shadow-1);margin-bottom:12px;overflow:hidden;transition:box-shadow .18s,transform .18s}
+.chapter-card:hover{box-shadow:var(--shadow-2);transform:translateY(-2px)}
 .chapter-card h3{font-size:1rem;font-weight:700;padding:14px 16px 10px;color:var(--label);display:flex;justify-content:space-between;align-items:center;cursor:pointer;user-select:none}
 .chapter-card h3:active{background:var(--fill)}
 .chapter-card h3::after{content:'›';font-size:1.2rem;color:var(--label3);transition:transform 0.2s;display:inline-block}
@@ -57,7 +58,7 @@ body{background:var(--bg);color:var(--label);font-family:-apple-system,BlinkMacS
 .chapter-card-body td{padding:6px 10px;border-bottom:0.5px solid var(--sep)}
 
 /* ── SCORE BAR ── */
-.score-bar{background:var(--card);border-radius:14px;padding:14px 16px;margin-bottom:14px;display:flex;gap:16px;align-items:center;flex-wrap:wrap;box-shadow:0 1px 3px rgba(0,0,0,0.06)}
+.score-bar{background:var(--card);border-radius:14px;padding:14px 16px;margin-bottom:14px;display:flex;gap:16px;align-items:center;flex-wrap:wrap;box-shadow:var(--shadow-1)}
 .score-stat{display:flex;flex-direction:column;align-items:center;gap:2px}
 .score-stat-value{font-size:1.4rem;font-weight:700;color:var(--primary)}
 .score-stat-label{font-size:0.65rem;color:var(--label2);font-weight:500;text-transform:uppercase;letter-spacing:0.04em}
@@ -81,7 +82,7 @@ body{background:var(--bg);color:var(--label);font-family:-apple-system,BlinkMacS
 .btn-danger{background:var(--red);color:#fff}
 
 /* ── QUIZ SECTION ── */
-.question-card{background:var(--card);border-radius:20px;padding:20px;margin-bottom:14px;box-shadow:0 2px 8px rgba(0,0,0,0.07),0 8px 24px rgba(0,0,0,0.04);transition:all 0.3s cubic-bezier(0.34,1.56,0.64,1)}
+.question-card{background:var(--card);border-radius:20px;padding:20px;margin-bottom:14px;box-shadow:var(--shadow-2);transition:all 0.3s cubic-bezier(0.34,1.56,0.64,1)}
 .question-card.correct-anim{animation:correctBounce 0.5s cubic-bezier(0.34,1.56,0.64,1)}
 .question-card.wrong-anim{animation:wrongShake 0.4s ease}
 @keyframes correctBounce{0%{transform:scale(1)}40%{transform:scale(1.03)}70%{transform:scale(0.98)}100%{transform:scale(1)}}
@@ -110,7 +111,7 @@ body{background:var(--bg);color:var(--label);font-family:-apple-system,BlinkMacS
 .ref-tag{font-size:0.7rem;color:var(--label3);margin-top:8px;font-style:italic}
 
 /* ── FLASHCARDS ── */
-.sr-stats{display:flex;justify-content:space-around;background:var(--card);border-radius:14px;padding:12px 8px;margin-bottom:12px;box-shadow:0 1px 3px rgba(0,0,0,0.06)}
+.sr-stats{display:flex;justify-content:space-around;background:var(--card);border-radius:14px;padding:12px 8px;margin-bottom:12px;box-shadow:var(--shadow-1)}
 .sr-stat{display:flex;flex-direction:column;align-items:center;gap:3px}
 .sr-stat-val{font-size:1.3rem;font-weight:700;color:var(--primary)}
 .sr-stat-val.due-now{color:var(--orange)}
@@ -164,7 +165,8 @@ body{background:var(--bg);color:var(--label);font-family:-apple-system,BlinkMacS
 .concept-tabs::-webkit-scrollbar{display:none}
 .concept-tab{flex-shrink:0;padding:6px 12px;border-radius:10px;border:none;cursor:pointer;font-size:0.78rem;font-weight:600;background:var(--fill);color:var(--label2);transition:all 0.18s;white-space:nowrap}
 .concept-tab.active{background:var(--primary-light);color:var(--primary)}
-.drug-group-card{background:var(--card);border-radius:16px;box-shadow:0 1px 3px rgba(0,0,0,0.06);margin-bottom:10px;overflow:hidden}
+.drug-group-card{background:var(--card);border-radius:16px;box-shadow:var(--shadow-1);margin-bottom:10px;overflow:hidden;transition:box-shadow .18s,transform .18s}
+.drug-group-card:hover{box-shadow:var(--shadow-2);transform:translateY(-2px)}
 .drug-group-title{padding:12px 16px;font-size:0.95rem;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none}
 .drug-group-title:active{background:var(--fill)}
 .drug-group-title .count-badge{background:var(--primary-light);color:var(--primary);font-size:0.65rem;padding:2px 8px;border-radius:10px;font-weight:600}
@@ -207,7 +209,8 @@ background:linear-gradient(135deg,var(--indigo),var(--purple));color:#fff;border
 /* ── VISUAL PHARMA ── */
 .visual-section-grid{display:grid;gap:12px;grid-template-columns:1fr}
 @media(min-width:600px){.visual-section-grid{grid-template-columns:1fr 1fr}}
-.visual-card{background:var(--card);border-radius:16px;box-shadow:0 1px 3px rgba(0,0,0,0.06),0 4px 12px rgba(0,0,0,0.04);overflow:hidden}
+.visual-card{background:var(--card);border-radius:16px;box-shadow:var(--shadow-1);overflow:hidden;transition:box-shadow .18s,transform .18s}
+.visual-card:hover{box-shadow:var(--shadow-2);transform:translateY(-2px)}
 .visual-card-title{padding:14px 16px 4px;font-size:0.95rem;font-weight:700;color:var(--label)}
 .visual-card-desc{padding:0 16px 10px;font-size:0.77rem;color:var(--label2)}
 .visual-canvas{width:100%;display:block;border-top:0.5px solid var(--sep)}
@@ -219,7 +222,8 @@ background:linear-gradient(135deg,var(--indigo),var(--purple));color:#fff;border
 .ev-filter-btn.active,.ev-filter-btn:hover{background:var(--primary);color:#fff;border-color:var(--primary)}
 .ev-search{flex:1;min-width:180px;padding:7px 12px;border-radius:12px;border:1.5px solid var(--sep);font-size:0.85rem;background:var(--fill);color:var(--label);outline:none}
 .ev-search:focus{border-color:var(--primary)}
-.ev-card{background:var(--card);border-radius:14px;margin-bottom:10px;box-shadow:0 1px 3px rgba(0,0,0,0.05),0 2px 8px rgba(0,0,0,0.04);overflow:hidden;border-left:4px solid transparent}
+.ev-card{background:var(--card);border-radius:14px;margin-bottom:10px;box-shadow:var(--shadow-1);overflow:hidden;border-left:4px solid transparent;transition:box-shadow .18s,transform .18s}
+.ev-card:hover{box-shadow:var(--shadow-2);transform:translateY(-2px)}
 .ev-card.ev-landmark{border-left-color:#dc2626}
 .ev-card.ev-guideline{border-left-color:var(--primary)}
 .ev-card.ev-meta{border-left-color:var(--purple)}
@@ -256,7 +260,8 @@ background:linear-gradient(135deg,var(--indigo),var(--purple));color:#fff;border
 
 
 /* ── EXAM PSYCHOLOGY ── */
-.ep-card{background:var(--card);border-radius:18px;padding:0;margin-bottom:14px;box-shadow:0 2px 8px rgba(0,0,0,0.07),0 6px 20px rgba(0,0,0,0.04);overflow:hidden;border-left-width:4px;border-left-style:solid;border-left-color:transparent}
+.ep-card{background:var(--card);border-radius:18px;padding:0;margin-bottom:14px;box-shadow:var(--shadow-1);overflow:hidden;border-left-width:4px;border-left-style:solid;border-left-color:transparent;transition:box-shadow .18s,transform .18s}
+.ep-card:hover{box-shadow:var(--shadow-2);transform:translateY(-2px)}
 .ep-card-header{padding:16px 18px 12px;border-bottom:0.5px solid var(--sep)}
 .ep-card-title{font-size:0.97rem;font-weight:700;color:var(--label)}
 .ep-card-subtitle{font-size:0.75rem;color:var(--label2);margin-top:3px}
@@ -1146,3 +1151,54 @@ body.dark-mode{ --bg0:#1c1815; --bg1:#252119; --bg2:#2b2620; --bg3:#1c1815; --in
 .accp-choice-btn:hover:not(:disabled){ border-color:var(--terracotta); background:var(--primary-light); box-shadow:none; }
 .accp-choice-btn.selected{ border-color:var(--terracotta); background:var(--primary-light); }
 .accp-reveal-btn{ background:var(--terracotta); box-shadow:none; }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Section color spectrum — one distinct, muted-jewel accent per section, used
+   for wayfinding (tab icons, home cards, section headers). Research basis:
+   color-coded categories measurably speed navigation (NN/g, color-in-UX
+   studies) as long as the base UI stays calm — so these are used ONLY on
+   icons/chips/accents, never on body text or large surfaces. Hues are held to
+   similar saturation/lightness as --terracotta/--purple/--moss so the set
+   reads as one family, not a rainbow grab-bag.
+   ═══════════════════════════════════════════════════════════════════════════ */
+:root{
+  --sec-home:#cc785c; --sec-study:#b8873a; --sec-quiz:#5b6ea8; --sec-cards:#a8547a;
+  --sec-drugs:#3f8f7a; --sec-visuals:#4a8aa4; --sec-exam:#b85a42; --sec-evidence:#6b5b95;
+  --sec-glossary:#5c7a3a; --sec-mock:#4a5a72;
+}
+body.dark-mode{
+  --sec-home:#d88a6e; --sec-study:#d4a35e; --sec-quiz:#8b9bd4; --sec-cards:#d47ba3;
+  --sec-drugs:#5cb8a0; --sec-visuals:#6fb0cc; --sec-exam:#d47a62; --sec-evidence:#9a8cc4;
+  --sec-glossary:#8fae68; --sec-mock:#8b9bb0;
+}
+
+/* Icon chip — a soft tinted badge behind a section's icon; the one place
+   color is allowed to be rich, per the calm-base/colorful-accent pattern. */
+.icon-chip{ display:inline-flex; align-items:center; justify-content:center; border-radius:12px; flex-shrink:0; background:color-mix(in srgb, var(--chip-c,var(--terracotta)) 16%, transparent); color:var(--chip-c,var(--terracotta)); }
+.icon-chip svg{ width:60%; height:60%; }
+.icon-chip.sm{ width:28px; height:28px; border-radius:8px; }
+.icon-chip.md{ width:40px; height:40px; }
+.icon-chip.lg{ width:52px; height:52px; border-radius:14px; }
+
+/* Tab bar: icons carry their section color always (wayfinding before you click);
+   active tab gets a tinted chip behind it, inactive stays a quieter tint. */
+.tab-btn .tab-icon svg{ color:var(--tab-c,var(--label3)); opacity:.72; transition:opacity .15s,transform .2s cubic-bezier(0.34,1.56,0.64,1); }
+.tab-btn.active .tab-icon svg{ opacity:1; }
+.tab-btn.active .tab-icon{ background:color-mix(in srgb, var(--tab-c,var(--terracotta)) 15%, transparent); border-radius:9px; }
+.tab-btn.active .tab-label{ color:var(--tab-c,var(--terracotta)); font-weight:600; }
+.tab-color-home{ --tab-c:var(--sec-home); } .tab-color-study{ --tab-c:var(--sec-study); }
+.tab-color-quiz{ --tab-c:var(--sec-quiz); } .tab-color-cards{ --tab-c:var(--sec-cards); }
+.tab-color-drugs{ --tab-c:var(--sec-drugs); } .tab-color-visuals{ --tab-c:var(--sec-visuals); }
+.tab-color-exam{ --tab-c:var(--sec-exam); } .tab-color-evidence{ --tab-c:var(--sec-evidence); }
+.tab-color-glossary{ --tab-c:var(--sec-glossary); } .tab-color-mock{ --tab-c:var(--sec-mock); }
+
+/* Section header identity chip — small colored icon next to each H1/H2 title */
+.section-title-row{ display:flex; align-items:center; gap:10px; }
+
+/* ── Elevation system — soft, ink-tinted shadows (not pure black), 3 levels ── */
+:root{ --shadow-1:0 1px 2px rgba(45,52,40,.05), 0 2px 8px rgba(45,52,40,.05); --shadow-2:0 2px 6px rgba(45,52,40,.07), 0 8px 20px rgba(45,52,40,.07); --shadow-3:0 8px 24px rgba(45,52,40,.14), 0 2px 8px rgba(45,52,40,.08); }
+body.dark-mode{ --shadow-1:0 1px 2px rgba(0,0,0,.2), 0 2px 8px rgba(0,0,0,.16); --shadow-2:0 2px 6px rgba(0,0,0,.25), 0 8px 20px rgba(0,0,0,.22); --shadow-3:0 8px 28px rgba(0,0,0,.4), 0 2px 8px rgba(0,0,0,.3); }
+
+.home-tool-card{ background:var(--card); border-radius:14px; padding:18px 14px; text-align:center; cursor:pointer; border:1px solid var(--divider,var(--sep)); box-shadow:var(--shadow-1); transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease; }
+.home-tool-card:hover{ transform:translateY(-3px); box-shadow:var(--shadow-2); border-color:color-mix(in srgb, var(--chip-c,var(--terracotta)) 45%, var(--divider,var(--sep))); }
+.home-tool-card .icon-chip{ margin:0 auto 10px; }
