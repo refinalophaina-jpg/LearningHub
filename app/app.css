@@ -1062,3 +1062,25 @@ body{ font-family:var(--font-body); font-weight:300; }
 /* Tokens the original theme referenced but never defined — map to the warm system */
 :root{ --bg0:#faf5ed; --bg1:#f2ecdf; --bg2:#fffcf6; --bg3:#faf5ed; --indigo:#4a3d7a; --teal:#4a5c28; }
 body.dark-mode{ --bg0:#1c1815; --bg1:#252119; --bg2:#2b2620; --bg3:#1c1815; --indigo:#8e7dc8; --teal:#9aad68; }
+
+/* Line nav icons + logo-less header */
+.tab-icon svg{ width:22px; height:22px; display:block; }
+.tab-btn .tab-icon{ font-size:0; line-height:0; }
+.header{ padding-left:16px; }
+
+/* Full restraint — category chips become quiet hairline pills; terracotta only when active */
+.drug-area-btn, .glo-filter-btn{
+  background:transparent !important; color:var(--label2) !important;
+  border:1px solid var(--rule, rgba(45,52,40,.14)) !important; border-radius:999px !important;
+  font-weight:500 !important; letter-spacing:.02em; opacity:1 !important; transition:all .15s;
+}
+.drug-area-btn:hover, .glo-filter-btn:hover{ border-color:var(--terracotta) !important; color:var(--terracotta) !important; }
+.drug-area-btn.active, .glo-filter-btn.active{
+  background:var(--terracotta) !important; color:var(--bg) !important; border-color:var(--terracotta) !important; font-weight:600 !important;
+}
+/* Per-item category labels: quiet, not colored blocks */
+.drug-class-badge, .glo-cat-badge{
+  background:transparent !important; color:var(--label3) !important;
+  border:1px solid var(--rule, rgba(45,52,40,.14)) !important; font-weight:500 !important;
+  text-transform:uppercase; letter-spacing:.08em; font-size:.62rem !important;
+}

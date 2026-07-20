@@ -2586,7 +2586,8 @@ function drugRender() {
   // Update button opacity
   const allBtn = document.querySelector('[data-area="ALL"]');
   document.querySelectorAll('.drug-area-btn').forEach(btn => {
-    btn.style.opacity = (btn.getAttribute('data-area') === drugFilterState.area) ? '1' : '0.6';
+    btn.style.opacity = '';
+    btn.classList.toggle('active', btn.getAttribute('data-area') === drugFilterState.area);
   });
 }
 
