@@ -1022,3 +1022,43 @@ input, select { font-size: 16px !important; } /* prevent iOS zoom */
 /* ═══════════════════════════════════════════════════════════════════════════ */
 /* Supabase/auth removed — hide the dead sign-in affordances (progress is local). */
 #authHeaderBtn, #syncBadge { display: none !important; }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   AinaDara house style — warm bone-paper / ink / terracotta.
+   Remaps the app's existing design tokens; canonical values mirror ainadara.com.
+   ═══════════════════════════════════════════════════════════════════════════ */
+:root{
+  --bg:#faf5ed; --card:#fffcf6; --card-2:#f2ecdf;
+  --primary:#cc785c; --primary-light:#f3e3da;
+  --label:#2d3428; --label1:#2d3428; --label2:#5a6151; --label3:#8a8e80;
+  --sep:rgba(45,52,40,.10); --divider:rgba(45,52,40,.12); --fill:rgba(45,52,40,.05);
+  --terracotta:#cc785c; --purple:#4a3d7a; --moss:#4a5c28; --brand:#cc785c;
+  --font-display:'DM Serif Display',Georgia,serif;
+  --font-body:'Outfit',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+body.dark-mode{
+  --bg:#1c1815; --card:#252119; --card-2:#322d24;
+  --primary:#d88a6e; --primary-light:rgba(216,138,110,.16);
+  --label:#ece4d2; --label1:#ece4d2; --label2:#b8af9d; --label3:#7d7666;
+  --sep:rgba(236,228,210,.10); --divider:rgba(236,228,210,.12); --fill:rgba(236,228,210,.06);
+  --terracotta:#d88a6e; --purple:#8e7dc8; --moss:#9aad68; --brand:#d88a6e;
+}
+body{ font-family:var(--font-body); font-weight:300; }
+.header h1, .section-header h2, .section-header h1, h2.section-title{
+  font-family:var(--font-display); font-weight:400; letter-spacing:.005em;
+}
+::selection{ background:var(--terracotta); color:var(--bg); }
+:focus-visible{ outline:2px solid var(--terracotta); outline-offset:2px; }
+
+/* Re-tone the hardcoded iOS-blue accents to the warm system */
+.header-icon{ background:linear-gradient(135deg,var(--terracotta),#e0a98c); }
+.flashcard-front{ background:linear-gradient(150deg,#2d3428 0%,#3a3d2e 100%); color:#faf5ed; }
+.ep-drill-card{ background:linear-gradient(150deg,var(--purple),#2d3428); color:#faf5ed; box-shadow:0 4px 16px rgba(45,52,40,.25); }
+.accp-header-band{ background:linear-gradient(150deg,#2d3428 0%,#1c1815 100%); }
+.diff-exam, .dom-1, .sr-easy{ background:var(--primary-light); color:var(--primary); }
+.vol-badge{ background:var(--primary-light); color:var(--primary); }
+@media (prefers-reduced-motion: reduce){ *{ animation-duration:.01ms !important; transition-duration:.01ms !important; } }
+
+/* Tokens the original theme referenced but never defined — map to the warm system */
+:root{ --bg0:#faf5ed; --bg1:#f2ecdf; --bg2:#fffcf6; --bg3:#faf5ed; --indigo:#4a3d7a; --teal:#4a5c28; }
+body.dark-mode{ --bg0:#1c1815; --bg1:#252119; --bg2:#2b2620; --bg3:#1c1815; --indigo:#8e7dc8; --teal:#9aad68; }

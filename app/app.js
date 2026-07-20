@@ -2252,11 +2252,11 @@ function gloRender() {
   });
 
   const catColors = {
-    'PK/PD': '#4a9eff', 'Pharmacology': '#9c6bff', 'Cardiovascular': '#e05a5a',
-    'Infectious Disease': '#2ecc71', 'Critical Care': '#e67e22',
-    'Endocrinology': '#f59e0b', 'Neurology': '#8b5cf6', 'Nephrology': '#06b6d4',
-    'Hematology': '#ec4899', 'Pulmonology': '#14b8a6', 'Lab Values': '#6366f1',
-    'Abbreviations': '#78716c', 'Psychiatry': '#a855f7', 'Oncology': '#f43f5e'
+    'PK/PD': '#4f6d8a', 'Pharmacology': '#7a6aa8', 'Cardiovascular': '#b0533a',
+    'Infectious Disease': '#5a7d4a', 'Critical Care': '#a8763a',
+    'Endocrinology': '#8a6d3a', 'Neurology': '#6a5a8a', 'Nephrology': '#4f7d7a',
+    'Hematology': '#9a4a4a', 'Pulmonology': '#5a7d7a', 'Lab Values': '#5a6478',
+    'Abbreviations': '#8a8578', 'Psychiatry': '#8a5a7a', 'Oncology': '#6a5a8a'
   };
 
   let html = '';
@@ -2355,19 +2355,19 @@ function drugInit() {
 }
 
 const AREA_COLORS = {
-  'Cardiovascular':    '#D62246',
-  'Infectious Disease':'#06A77D',
-  'Critical Care':     '#F4B942',
-  'Endocrinology':     '#8B5CF6',
-  'Neurology':         '#3B82F6',
-  'Hematology':        '#EF4444',
-  'Pulmonology':       '#0EA5E9',
-  'Nephrology':        '#06B6D4',
-  'GI/Hepatology':     '#F59E0B',
-  'Psychiatry':        '#EC4899',
-  'Oncology':          '#6366F1',
-  'Transplant':        '#14B8A6',
-  'Pain':              '#78716C',
+  'Cardiovascular':    '#b0533a',
+  'Infectious Disease':'#5a7d4a',
+  'Critical Care':     '#a8763a',
+  'Endocrinology':     '#7a6aa8',
+  'Neurology':         '#4f6d8a',
+  'Hematology':        '#9a4a4a',
+  'Pulmonology':       '#5a7d7a',
+  'Nephrology':        '#4f7d7a',
+  'GI/Hepatology':     '#8a6d3a',
+  'Psychiatry':        '#8a5a7a',
+  'Oncology':          '#6a5a8a',
+  'Transplant':        '#5a7d5a',
+  'Pain':              '#7a6a5a',
 };
 function drugRender() {
   const listEl = document.getElementById('drugList');
