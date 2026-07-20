@@ -6724,7 +6724,7 @@
       "C. Discontinue apixaban; ESRD patients require warfarin only",
       "D. Reduce to apixaban 2.5mg BID because 2 of 3 criteria are met (age ≥80 no; SCr ≥1.5 YES; weight ≤60 kg no)"
     ],
-    "correct": 3,
+    "correct": 0,
     "exp": "FDA apixaban dose reduction for AF: Use 2.5mg BID if patient meets ≥2 of: (1) age ≥80, (2) body weight ≤60 kg, (3) SCr ≥1.5 mg/dL. This patient: SCr 3.4 ≥1.5 ✓; weight 62 kg > 60 ✗; age 78 < 80 ✗ → only 1 criterion met → dose remains 5mg BID per labeling. However, this patient has severe CKD (CrCl 19 mL/min) which is a concern for accumulation, and clinical judgment may favor monitoring. BUT strictly per FDA labeling, only 1 criterion is met, so no reduction is indicated. Option D's reasoning is correct (only 1 criterion met, no reduction per FDA) — BUT the conclusion states 2.5mg BID which is incorrect for 1 criterion. CORRECT answer: A.",
     "diff": "expert",
     "topic": "Anticoagulation - Vol 1",
@@ -6765,7 +6765,7 @@
     "opts_exp": []
   },
   {
-    "q": "A 67-year-old with COPD (GOLD Group D — 3 exacerbations last year, CAT score 28, FEV₁ 38% predicted) is on LABA/LAMA (tiotropium + salmeterol). He also has an eosinophil count of 420 cells/µL. Which treatment modification is supported by evidence to reduce exacerbations?",
+    "q": "A 67-year-old with COPD (GOLD Group E — 3 exacerbations last year, CAT score 28, FEV₁ 38% predicted) is on LABA/LAMA (tiotropium + salmeterol). He also has an eosinophil count of 420 cells/µL. Which treatment modification is supported by evidence to reduce exacerbations?",
     "opts": [
       "A. Add roflumilast 500 mcg daily — PDE4 inhibitor reduces exacerbations in chronic bronchitis phenotype",
       "B. Add ICS to form triple therapy (LABA/LAMA/ICS) — IMPACT trial shows reduction in exacerbations with eos ≥150",
@@ -6773,7 +6773,7 @@
       "D. Both A and B are appropriate add-on options with evidence for this patient"
     ],
     "correct": 3,
-    "exp": "Both options have evidence for GOLD Group D patients: (1) ICS addition (LABA/LAMA/ICS triple therapy) — IMPACT trial showed significant reduction in moderate/severe exacerbations with eosinophils ≥150 cells/µL; this patient has 420 → strong candidate. (2) Roflumilast — indicated for severe COPD with chronic bronchitis and frequent exacerbations (FEV₁ <50% + chronic bronchitis phenotype). Given FEV₁ 38% and 3 exacerbations, both are guideline-supported additions. GINA 2023 supports this dual approach.",
+    "exp": "Both options have evidence for GOLD Group E patients: (1) ICS addition (LABA/LAMA/ICS triple therapy) — IMPACT trial showed significant reduction in moderate/severe exacerbations with eosinophils ≥150 cells/µL; this patient has 420 → strong candidate. (2) Roflumilast — indicated for severe COPD with chronic bronchitis and frequent exacerbations (FEV₁ <50% + chronic bronchitis phenotype). Given FEV₁ 38% and 3 exacerbations, both are guideline-supported additions. GOLD 2023/2024 supports this dual approach.",
     "diff": "expert",
     "topic": "Pulmonology - Vol 2",
     "domain": "Area 2",
@@ -6797,7 +6797,7 @@
     "opts_exp": []
   },
   {
-    "q": "A 58-year-old woman with CKD Stage 4 (eGFR 22) and type 2 diabetes has albumin-to-creatinine ratio 1,800 mg/g on maximal ACE inhibitor therapy (lisinopril 40mg/day, K+ 5.0 mEq/L). She is not on an MRA. Blood pressure is 138/88 despite 3 antihypertensives. Which new agent most strongly reduces CKD progression?",
+    "q": "A 58-year-old woman with CKD Stage 4 (eGFR 28) and type 2 diabetes has albumin-to-creatinine ratio 1,800 mg/g on maximal ACE inhibitor therapy (lisinopril 40mg/day, K+ 4.8 mEq/L). She is not on an MRA. Blood pressure is 138/88 despite 3 antihypertensives. Which new agent most strongly reduces CKD progression?",
     "opts": [
       "A. Spironolactone 25mg daily — MRA provides additional proteinuria reduction",
       "B. Finerenone 10-20mg daily — nonsteroidal MRA reduces CKD progression and CV events in T2DM with CKD (FIDELIO-DKD)",
@@ -6816,7 +6816,7 @@
     "q": "A 28-year-old woman with bipolar I disorder becomes pregnant (6 weeks). She is on lithium 900mg/day (level 0.8 mEq/L) and lamotrigine 200mg/day. Which medication management is most appropriate given the teratogenicity profile?",
     "opts": [
       "A. Discontinue lithium immediately — Ebstein anomaly risk is absolute contraindication in pregnancy",
-      "B. Continue both medications with enhanced fetal monitoring; Ebstein risk with lithium is ~1.5-3x baseline but still <1%; benefit-risk favors continuation",
+      "B. Continue both medications with enhanced fetal monitoring; absolute Ebstein risk with lithium remains low (~1-2 per 1,000 vs ~1 per 20,000 baseline), still <1%; benefit-risk favors continuation",
       "C. Switch lithium to valproate — better evidence in bipolar I during pregnancy",
       "D. Discontinue both medications — all mood stabilizers are category D or X in pregnancy"
     ],
@@ -6836,8 +6836,8 @@
       "C. Interrupt clozapine; ANC <1,500 triggers hold; recheck ANC every day until ≥1,500, then every week x4 weeks",
       "D. Permanently discontinue clozapine; ANC <1,500 is an absolute contraindication to re-challenge"
     ],
-    "correct": 2,
-    "exp": "Per the FDA Clozapine REMS Program: ANC 1,000-1,499 (severe neutropenia) = interrupt clozapine, increase monitoring frequency (daily ANC), recheck every day until ANC ≥1,500, then monitor twice weekly for 4 weeks before resuming weekly. This patient's ANC is 1,200 → severe neutropenia threshold → interrupt. Permanent discontinuation is required only if ANC falls below 500 (agranulocytosis). Dose reduction is not a guideline-endorsed strategy.",
+    "correct": 0,
+    "exp": "Per current FDA clozapine ANC monitoring: ANC 1,000–1,499 = MILD neutropenia → CONTINUE clozapine and monitor ANC 3× weekly until ≥1,500. Interrupt only at ANC 500–999 (moderate; daily ANC until ≥1,000) and discontinue/do not rechallenge at <500 (severe/agranulocytosis). This patient’s ANC 1,200 is mild → continue (option A). Note: the FDA removed the Clozapine REMS in Feb 2025, but these ANC thresholds remain in the prescribing information.",
     "diff": "expert",
     "topic": "Psychiatry - Vol 1",
     "domain": "Area 1",
