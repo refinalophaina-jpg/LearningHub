@@ -233,14 +233,20 @@
     <!-- Progress Hub (rendered by renderProgressStats / renderHomeStats) -->
     <div id="homeProgressPanel" style="margin-bottom:20px;"></div>
 
-    <!-- Sign in prompt -->
-    <div id="homeSignInPrompt" style="background:rgba(59, 130, 246, 0.1); border:1px solid var(--primary-light); border-radius:12px; padding:20px; text-align:center; margin-bottom:20px;">
-      <h3 style="margin:0 0 8px; font-size:16px; font-weight:600;">Your Progress Hub</h3>
-      <p style="margin:0 0 16px; font-size:14px; color:var(--label2);">Sign in to track your progress. All data is saved automatically — even offline.</p>
-      <div style="display:flex; gap:8px; justify-content:center; flex-wrap:wrap;">
-        <button onclick="quickDemoLogin()" style="padding:10px 20px; background:var(--primary); color:#fff; border:none; border-radius:8px; font-weight:600; cursor:pointer; font-size:14px;">🔑 Sign In (Olaiya)</button>
-        <button onclick="toggleAuthModal()" style="padding:10px 20px; background:transparent; color:var(--primary); border:1.5px solid var(--primary); border-radius:8px; font-weight:600; cursor:pointer; font-size:14px;">Other Login</button>
-      </div>
+    <!-- Exam-window note: BPS lags brand-new guideline changes -->
+    <div style="background:var(--card,#fff); border:1px solid var(--divider,#e5e7eb); border-left:3px solid #b84a2e; border-radius:12px; padding:16px 18px; margin-bottom:20px;">
+      <h3 style="margin:0 0 6px; font-size:15px; font-weight:700; color:var(--label1,#111);">Studying to the exam's window</h3>
+      <p style="margin:0 0 10px; font-size:13.5px; line-height:1.55; color:var(--label2,#555);">
+        BPS builds each exam from guidelines as they stood <strong>about 6–12 months before your test date</strong>, and deliberately excludes rapidly-evolving or brand-new practice changes. This hub reflects current practice but marks anything recent inline with <strong>⚑</strong>. When you see a ⚑ flag, know the fact — but for the exam, the <em>prior</em> standard may still be what's tested.
+      </p>
+      <details style="font-size:13px; color:var(--label2,#555);">
+        <summary style="cursor:pointer; font-weight:600; color:#b84a2e;">Recent changes this hub reflects (may be outside the exam window)</summary>
+        <div style="margin-top:8px; line-height:1.6;">
+          <p style="margin:0 0 4px;"><strong>2025 (likely not yet tested):</strong> andexanet/Andexxa US withdrawal (Dec 2025) · clozapine REMS removed (Jun 2025; ANC monitoring still applies) · semaglutide CKD/FLOW &amp; MASH approvals · tenecteplase approved for stroke (Mar 2025) · mavacamten label change (Apr 2025) · bezlotoxumab discontinued (Jan 2025) · GINA 2025 asthma update.</p>
+          <p style="margin:0;"><strong>2024 (borderline — likely within range for a 2026 exam):</strong> ACG H. pylori (clarithromycin triple no longer first-line) · KDIGO 2024 metabolic-acidosis target · ACIP pneumococcal age ≥50 · voxelotor/Oxbryta withdrawal (Sep 2024) · GOLD ABE grouping.</p>
+          <p style="margin:8px 0 0; font-size:12px;">Source: <a href="https://bpsweb.org/faq/examination/" target="_blank" rel="noopener" style="color:#b84a2e;">BPS examination FAQ</a> — "refer to guidelines as they were ~6–12 months prior… great care is taken to exclude rapidly evolving or emerging practice changes."</p>
+        </div>
+      </details>
     </div>
 
     <!-- Progress Code (cross-device sync) — enhanced -->

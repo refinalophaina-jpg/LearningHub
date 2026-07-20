@@ -305,7 +305,7 @@
     "pubmed": "https://pubmed.ncbi.nlm.nih.gov/?term=rivaroxaban+factor+Xa+inhibitor+AFib",
     "pk": "t½ ~5–9 h (young), ~11–13 h (elderly). Bioavailability: 15 mg/20 mg tablets 80% with food (take WITH FOOD for ≥15 mg). Protein binding 92–95%. Metabolized by CYP3A4/CYP2J2 + P-gp substrate. Excretion: renal ~33%, fecal ~28%.",
     "bbw": "PREMATURE DISCONTINUATION INCREASES STROKE RISK (AFib): Do not stop without adequate anticoagulation. SPINAL/EPIDURAL HEMATOMA: Risk with neuraxial procedures.",
-    "highyield": "Andexanet alfa (Andexxa) was the FDA-approved factor Xa reversal agent but was withdrawn from the US market (Dec 22, 2025) due to thromboembolic risk; 4-factor PCC is now the practical reversal option"
+    "highyield": "Andexanet alfa (Andexxa) was the FDA-approved factor Xa reversal agent but was withdrawn from the US market (Dec 22, 2025) due to thromboembolic risk; 4-factor PCC is now the practical reversal option [⚑ Recent change — 2025. BPS tests guidelines ~6–12 months old and excludes rapidly-evolving changes, so your exam may still expect the prior standard. Andexxa withdrawn from the US market Dec 2025.]"
   },
   {
     "id": "apixaban",
@@ -327,7 +327,7 @@
     "pubmed": "https://pubmed.ncbi.nlm.nih.gov/?term=apixaban+ARISTOTLE+factor+Xa+inhibitor",
     "pk": "t½ ~12 h. Bioavailability ~50% (not food-dependent for ≤10 mg). Protein binding 87%. Metabolized by CYP3A4/P-gp. Excretion: fecal ~56%, renal ~27%.",
     "bbw": "PREMATURE DISCONTINUATION INCREASES STROKE RISK (AFib). SPINAL/EPIDURAL HEMATOMA: Risk with neuraxial anesthesia/spinal puncture.",
-    "highyield": "Andexanet alfa (Andexxa) was the specific FDA-approved reversal agent but was voluntarily withdrawn from the US market effective Dec 22, 2025 for excess thromboembolic risk; 4-factor PCC (Kcentra) is now used for reversal of apixaban-associated life-threatening bleeding. (Update the pearls field likewise.)"
+    "highyield": "Andexanet alfa (Andexxa) was the specific FDA-approved reversal agent but was voluntarily withdrawn from the US market effective Dec 22, 2025 for excess thromboembolic risk; 4-factor PCC (Kcentra) is now used for reversal of apixaban-associated life-threatening bleeding. (Update the pearls field likewise.) [⚑ Recent change — 2025. BPS tests guidelines ~6–12 months old and excludes rapidly-evolving changes, so your exam may still expect the prior standard. Andexxa was withdrawn from the US market Dec 2025; for the exam still know it as the factor Xa-inhibitor reversal agent.]"
   },
   {
     "id": "edoxaban",
@@ -349,7 +349,7 @@
     "pubmed": "https://pubmed.ncbi.nlm.nih.gov/?term=edoxaban+AFib+factor+Xa+inhibitor",
     "pk": "t½ ~10–14 h. Bioavailability ~62% (not significantly food-affected). Protein binding 55%. Minimal CYP metabolism; P-gp substrate. Excretion: renal ~50%, biliary ~50%.",
     "bbw": "REDUCED EFFICACY AT HIGHER CrCl: Avoid in non-valvular AFib if CrCl >95 mL/min (increased stroke risk demonstrated in ENGAGE AF). PREMATURE DISCONTINUATION: ↑ stroke risk.",
-    "highyield": "No FDA-approved specific reversal agent for edoxaban; 4-factor PCC is the recommended option. (Andexanet was only approved for apixaban/rivaroxaban and was withdrawn from the US market Dec 2025.)"
+    "highyield": "No FDA-approved specific reversal agent for edoxaban; 4-factor PCC is the recommended option. (Andexanet was only approved for apixaban/rivaroxaban and was withdrawn from the US market Dec 2025.) [⚑ Recent change — 2025. BPS tests guidelines ~6–12 months old and excludes rapidly-evolving changes, so your exam may still expect the prior standard. Andexxa withdrawn from the US market Dec 2025.]"
   },
   {
     "id": "dabigatran",
@@ -409,7 +409,7 @@
     "ades": "Intracerebral hemorrhage (ICH: 6% stroke, 0.4% STEMI); major bleeding (GI, pulmonary, retroperitoneal); reperfusion arrhythmias (STEMI, bradycardia, asystole); myocardial rupture (post-MI, rare); fever; nausea",
     "monitoring": "Baseline NIHSS score (stroke), ECG (STEMI), CT/MRI (exclude intracranial hemorrhage); post-thrombolysis: neurovital signs q15 min × 2h, then q30 min × 6h, then q1h × 16h; monitor for signs of bleeding; coagulation labs post-treatment",
     "ddi": "Anticoagulants (heparin, DOACs: start after 24h if possible, ↑ bleeding); antiplatelet agents (aspirin, P2Y12i: use with caution, can start 24h post-thrombolysis); fibrinolytic agents (avoid concurrent use)",
-    "pearls": "Time-sensitive: \"Time is brain\" (stroke window 4.5h or 3h, STEMI 12h). NINDS rt-PA Study (1995): improved stroke outcomes 30% with tPA (though ↑ hemorrhage risk). Contraindications: prior ICH, active bleeding, recent surgery, BP >185/110. Reperfusion arrhythmias common in STEMI (prepare for ACLS). ICH risk highest if age >80, weight <70 kg, on anticoagulants. PCI preferred over fibrinolysis if available (better outcomes, lower bleeding).",
+    "pearls": "Time-sensitive: \"Time is brain\" (stroke window 4.5h or 3h, STEMI 12h). NINDS rt-PA Study (1995): improved stroke outcomes 30% with tPA (though ↑ hemorrhage risk). Contraindications: prior ICH, active bleeding, recent surgery, BP >185/110. Reperfusion arrhythmias common in STEMI (prepare for ACLS). ICH risk highest if age >80, weight <70 kg, on anticoagulants. PCI preferred over fibrinolysis if available (better outcomes, lower bleeding). [⚑ Recent change — Mar 2025. BPS tests guidelines ~6–12 months old and excludes rapidly-evolving changes, so your exam may still expect the prior standard. Tenecteplase gained FDA stroke approval Mar 2025.]",
     "trials": "NINDS rt-PA, ASSENT-3, GUSTO",
     "dailymed": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=alteplase+tPA",
     "pubmed": "https://pubmed.ncbi.nlm.nih.gov/?term=alteplase+thrombolysis+stroke+STEMI",
@@ -539,7 +539,7 @@
     "renal": "No dose adjustment; severe renal disease: limited data",
     "hepatic": "Avoid if moderate-severe hepatic impairment",
     "ades": "HF exacerbation/reduced EF (↓ contractility, ↑ HFrEF risk if EF already reduced); hypotension; dizziness; fatigue; bradycardia; syncope (from reduced contractility); back pain",
-    "monitoring": "Echocardiogram at baseline (do not initiate if LVEF <55%), then at Weeks 4, 8, and 12 during titration, then every 12 weeks; per the April 2025 label update, stable maintenance patients (Week ≥12, LVEF ≥55%, Valsalva LVOT gradient <30 mmHg) may extend echo monitoring to every 6 months. Interrupt therapy if LVEF <50% at any visit.",
+    "monitoring": "Echocardiogram at baseline (do not initiate if LVEF <55%), then at Weeks 4, 8, and 12 during titration, then every 12 weeks; per the April 2025 label update, stable maintenance patients (Week ≥12, LVEF ≥55%, Valsalva LVOT gradient <30 mmHg) may extend echo monitoring to every 6 months. Interrupt therapy if LVEF <50% at any visit. [⚑ Recent change — Apr 2025. BPS tests guidelines ~6–12 months old and excludes rapidly-evolving changes, so your exam may still expect the prior standard. April 2025 label reduced echo frequency.]",
     "ddi": "Negative inotropes (beta-blockers, CCBs: additive effect, use with caution); NSAIDs (↓ efficacy); anticoagulants if AFib develops (HCM+AFib ↑ stroke risk); CYP3A4 inhibitors (ketoconazole: may ↑ mavacamten, caution)",
     "pearls": "Not a contraindication but a boxed-warning/dosing restriction: do not initiate if LVEF <55%; during treatment maintain LVEF ≥50% (do not up-titrate if LVEF <50%); interrupt therapy if LVEF <50% at any visit.",
     "trials": "EXPLORER-HCM, VALOR-HCM",
@@ -547,7 +547,7 @@
     "pubmed": "https://pubmed.ncbi.nlm.nih.gov/?term=mavacamten+cardiac+myosin+inhibitor+HCM",
     "pk": "t½ ~7–9 days. Bioavailability ~77%. Protein binding 97–98%. Metabolized primarily by CYP2C19 (major), CYP3A4, CYP2C9. Excretion: fecal ~85%, renal ~11%.",
     "bbw": "HEART FAILURE RISK: Can cause symptomatic heart failure due to systolic dysfunction. Hold if LVEF <50% on echocardiogram. Available only through REMS program (Camzyos REMS).",
-    "highyield": "Per the April 2025 label update, moderate CYP2C19 inhibitors and strong CYP3A4 inhibitors are no longer contraindicated (now manageable drug interactions requiring dose adjustment/monitoring); remains contraindicated with strong CYP2C19 inhibitors and with moderate-to-strong CYP2C19 or moderate-to-strong CYP3A4 inducers."
+    "highyield": "Per the April 2025 label update, moderate CYP2C19 inhibitors and strong CYP3A4 inhibitors are no longer contraindicated (now manageable drug interactions requiring dose adjustment/monitoring); remains contraindicated with strong CYP2C19 inhibitors and with moderate-to-strong CYP2C19 or moderate-to-strong CYP3A4 inducers. [⚑ Recent change — Apr 2025. BPS tests guidelines ~6–12 months old and excludes rapidly-evolving changes, so your exam may still expect the prior standard. April 2025 label reclassified the CYP interactions.]"
   },
   {
     "id": "vancomycin",
@@ -908,7 +908,7 @@
     "class": "GLP-1 receptor agonist",
     "area": "Endocrinology",
     "moa": "Mimics endogenous GLP-1 → binds GLP-1 receptors: (1) pancreatic beta cells → glucose-dependent insulin secretion + glucagon suppression; (2) CNS (hypothalamus) → appetite suppression + satiety; (3) GI → delayed gastric emptying; (4) liver → reduced hepatic glucose output. CV benefits via direct vascular anti-inflammatory effects.",
-    "indications": "Add: Ozempic also indicated to reduce risk of sustained eGFR decline, kidney failure, and CV death in adults with T2DM and CKD (FLOW trial; FDA approved Jan 28, 2025 — first GLP-1 RA with a kidney indication). Wegovy 2.4 mg also indicated for noncirrhotic MASH with moderate-to-advanced (F2–F3) liver fibrosis (ESSENCE trial; FDA accelerated approval Aug 15, 2025). Ozempic PAD label extension (STRIDE) filed/anticipated 2025.",
+    "indications": "Add: Ozempic also indicated to reduce risk of sustained eGFR decline, kidney failure, and CV death in adults with T2DM and CKD (FLOW trial; FDA approved Jan 28, 2025 — first GLP-1 RA with a kidney indication). Wegovy 2.4 mg also indicated for noncirrhotic MASH with moderate-to-advanced (F2–F3) liver fibrosis (ESSENCE trial; FDA accelerated approval Aug 15, 2025). Ozempic PAD label extension (STRIDE) filed/anticipated 2025. [⚑ Recent change — 2025. BPS tests guidelines ~6–12 months old and excludes rapidly-evolving changes, so your exam may still expect the prior standard. Ozempic CKD (FLOW) and Wegovy MASH approvals are 2025.]",
     "dosing": "Ozempic SC: start 0.25 mg weekly x 4 weeks → 0.5 mg weekly; max 2 mg/week. Rybelsus PO: 3 mg daily x 30d → 7 mg → 14 mg (take 30 min before food with 4 oz water only). Wegovy SC: escalation over 16–20 weeks to 2.4 mg weekly.",
     "renal": "No dose adjustment required. Use with caution in severe renal impairment (limited data; GI side effects may worsen dehydration → AKI).",
     "hepatic": "No dose adjustment required.",

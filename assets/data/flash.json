@@ -362,7 +362,7 @@
   {
     "topic": "Healthcare Systems",
     "front": "FDA REMS programs: examples",
-    "back": "CLOZAPINE: FDA removed the Clozapine REMS effective June 13, 2025 (no REMS Dispense Authorization or ANC reporting needed to dispense); ANC monitoring per prescribing information is still recommended for severe neutropenia/agranulocytosis risk"
+    "back": "CLOZAPINE: FDA removed the Clozapine REMS effective June 13, 2025 (no REMS Dispense Authorization or ANC reporting needed to dispense); ANC monitoring per prescribing information is still recommended for severe neutropenia/agranulocytosis risk [⚑ Recent change — Jun 2025. BPS tests guidelines ~6–12 months old and excludes rapidly-evolving changes, so your exam may still expect the prior standard. FDA removed the Clozapine REMS June 2025; ANC monitoring per the label still applies, but the exam may still describe a REMS.]"
   },
   {
     "topic": "Cardiology",
@@ -512,7 +512,7 @@
   {
     "topic": "Psychiatry",
     "front": "Clozapine: indications and monitoring",
-    "back": "Black box warnings: AGRANULOCYTOSIS/SEVERE NEUTROPENIA (ANC monitoring still recommended per prescribing information; FDA eliminated the mandatory Clozapine REMS program effective June 2025), SEIZURES, MYOCARDITIS, ORTHOSTASIS"
+    "back": "Black box warnings: AGRANULOCYTOSIS/SEVERE NEUTROPENIA (ANC monitoring still recommended per prescribing information; FDA eliminated the mandatory Clozapine REMS program effective June 2025), SEIZURES, MYOCARDITIS, ORTHOSTASIS [⚑ Recent change — Jun 2025. BPS tests guidelines ~6–12 months old and excludes rapidly-evolving changes, so your exam may still expect the prior standard. FDA removed the Clozapine REMS June 2025; ANC monitoring per the label still applies, but the exam may still describe a REMS.]"
   },
   {
     "topic": "Oncology",
@@ -777,7 +777,7 @@
   {
     "topic": "BPS Strategy",
     "front": "Red Flag Drugs — Clozapine",
-    "back": "Trigger: See clozapine → expect agranulocytosis question\n• Mandatory ANC monitoring via REMS program\n  - Baseline ANC ≥1500/mm³ before starting\n  - Weekly monitoring for 6 months, then every 2 weeks, then monthly\n  - ANC <500 = stop immediately\n• Other toxicities: Metabolic syndrome (weight gain, diabetes, dyslipidemia), Myocarditis (highest risk first month), Seizures (dose-related)\n• Clinical use: ONLY for treatment-resistant schizophrenia (failed ≥2 antipsychotics)\n• Most effective antipsychotic for reducing suicidality"
+    "back": "Trigger: See clozapine → expect agranulocytosis question\n• Mandatory ANC monitoring via REMS program\n  - Baseline ANC ≥1500/mm³ before starting\n  - Weekly monitoring for 6 months, then every 2 weeks, then monthly\n  - ANC <500 = stop immediately\n• Other toxicities: Metabolic syndrome (weight gain, diabetes, dyslipidemia), Myocarditis (highest risk first month), Seizures (dose-related)\n• Clinical use: ONLY for treatment-resistant schizophrenia (failed ≥2 antipsychotics)\n• Most effective antipsychotic for reducing suicidality [⚑ Recent change — Jun 2025. BPS tests guidelines ~6–12 months old and excludes rapidly-evolving changes, so your exam may still expect the prior standard. FDA removed the Clozapine REMS June 2025; ANC monitoring per the label still applies, but the exam may still describe a REMS.]"
   },
   {
     "topic": "BPS Strategy",
@@ -916,7 +916,7 @@
   },
   {
     "front": "[[agranulocytosis/severe neutropenia]] (boxed warning; the Clozapine REMS was eliminated by FDA in 2025, but ANC monitoring per the prescribing information is still recommended)",
-    "back": "Clozapine REMS: ANC monitored weekly x6 months → every 2 weeks x6 months → monthly thereafter. Discontinue if ANC <1,000. Maximum dose associated with seizure risk ~600mg/day. Titrate slowly to minimize myocarditis risk. Used only for treatment-resistant schizophrenia and suicidality reduction.",
+    "back": "Clozapine REMS: ANC monitored weekly x6 months → every 2 weeks x6 months → monthly thereafter. Discontinue if ANC <1,000. Maximum dose associated with seizure risk ~600mg/day. Titrate slowly to minimize myocarditis risk. Used only for treatment-resistant schizophrenia and suicidality reduction. [⚑ Recent change — Jun 2025. BPS tests guidelines ~6–12 months old and excludes rapidly-evolving changes, so your exam may still expect the prior standard. FDA removed the Clozapine REMS June 2025; ANC monitoring per the label still applies, but the exam may still describe a REMS.]",
     "topic": "Psychiatry"
   },
   {
