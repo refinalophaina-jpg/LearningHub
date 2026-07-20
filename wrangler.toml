@@ -1,0 +1,5 @@
+# Cloudflare Pages config for the BCPS Learning Hub.
+# Build step generates app/data.js from assets/data/*.json, then Pages serves app/.
+name = "bcps-ainadara"
+compatibility_date = "2026-07-20"
+pages_build_output_dir = "app"
