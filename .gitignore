@@ -9,3 +9,4 @@ public/
 
 # Eleventy build output
 _site/
+.audit-src/
