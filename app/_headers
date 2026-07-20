@@ -1,0 +1,9 @@
+# Cloudflare Pages headers. Long-cache the generated bundles; always revalidate the page.
+/index.html
+  Cache-Control: no-cache
+/data.js
+  Cache-Control: public, max-age=86400
+/app.js
+  Cache-Control: public, max-age=86400
+/app.css
+  Cache-Control: public, max-age=86400

@@ -1,0 +1,68 @@
+[
+  {
+    "q": "A question stem ends with: \"Which statement is MOST appropriate regarding this medication?\" What should you do FIRST?",
+    "opts": [
+      "Read all options then choose the best clinical answer",
+      "Re-read the final question sentence carefully — note it asks MOST appropriate, meaning multiple answers may be partially correct",
+      "Start with option A since MOST questions have A as correct",
+      "Skip it if unsure — board exams have more straightforward questions"
+    ],
+    "correct": 1,
+    "exp": "'MOST appropriate' signals that 2+ options may be defensible but one is superior per guidelines or evidence. Read all options before committing. Never assume A is right or skip difficult stems."
+  },
+  {
+    "q": "You are 2 hours in with 80 questions remaining and 90 minutes left. Your current pace leaves you 10 minutes short. Best strategy?",
+    "opts": [
+      "Skip all calculation questions — they take too long",
+      "Increase pace on straightforward knowledge recall questions; mark complex dosing calculations for review",
+      "Stop reviewing marked questions to save time",
+      "Guess on the last 20 questions to ensure completion"
+    ],
+    "correct": 1,
+    "exp": "Differentiating question types by time investment is the key pacing strategy. Straightforward recall questions should take <60 seconds. Reserve 90-120 seconds for application questions. Complex calculation/case questions: 2-3 min max, then mark and return."
+  },
+  {
+    "q": "You know for certain that options A and C are wrong. You are deciding between B and D. You initially chose B, but now D \"feels\" right. What should you do?",
+    "opts": [
+      "Change to D — new insights during review are usually correct",
+      "Change to D only if you can articulate a SPECIFIC reason why D is better than B",
+      "Keep B — first instinct is always right",
+      "Flip a coin — both are equally uncertain"
+    ],
+    "correct": 1,
+    "exp": "Research on answer-changing shows: change answers ONLY with specific rationale. 'Gut feeling' or vague discomfort is not sufficient. If you can say 'D is correct because [specific pharmacology fact]', change it. If not, keep your original answer."
+  },
+  {
+    "q": "A question describes a patient with multiple comorbidities. You are experiencing anchoring on the cardiac disease, but the question asks about a drug interaction with an antibiotic. Best approach?",
+    "opts": [
+      "Trust the cardiac focus — cardiology is the highest-yield BCPS topic",
+      "Re-center on exactly what was asked: the drug interaction, not the cardiac condition",
+      "Skip if the comorbidities are too complex to sort through",
+      "Assume the cardiac disease makes option D the obvious choice"
+    ],
+    "correct": 1,
+    "exp": "Anchoring bias occurs when one prominent feature (cardiac disease) dominates your reasoning despite the question asking about something else (a drug interaction). Actively re-center: 'What does the LAST SENTENCE ask?' Not 'what do I know about cardiac disease?'"
+  },
+  {
+    "q": "Which statistical measure directly tells you how many patients must be treated to prevent one adverse outcome?",
+    "opts": [
+      "Relative risk",
+      "Number needed to treat (NNT) = 1 ÷ ARR",
+      "Odds ratio",
+      "P-value"
+    ],
+    "correct": 1,
+    "exp": "NNT = 1 ÷ ARR (absolute risk reduction). NNT directly quantifies clinical impact: NNT=10 means treat 10 patients to prevent 1 event. Low NNT = high clinical impact. This is a high-yield BCPS biostatistics concept tested frequently."
+  },
+  {
+    "q": "A question asks about the most common cause of medication errors in a hospital. Which response reflects ISMP's systems-based approach?",
+    "opts": [
+      "Individual pharmacist knowledge deficits",
+      "Systems failures: poor communication, look-alike/sound-alike labeling, lack of independent double-checks for high-alert medications",
+      "Inadequate nurse training",
+      "Poor patient adherence"
+    ],
+    "correct": 1,
+    "exp": "ISMP and patient safety science consistently identify SYSTEMS factors (not individual practitioners) as the root cause of most medication errors. BCPS Area 3 heavily tests Just Culture and systems-thinking approaches to medication safety."
+  }
+]

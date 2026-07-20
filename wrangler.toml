@@ -1,0 +1,12 @@
+# Cloudflare Worker (static assets) config for the BCPS Learning Hub.
+# Build command generates app/data.js from assets/data/*.json, then `wrangler deploy`
+# publishes app/ as static assets — no Worker script needed for this pure static site.
+name = "bcps-ainadara"
+compatibility_date = "2026-07-20"
+
+[assets]
+directory = "./app"
+
+[[routes]]
+pattern = "bcps.ainadara.com"
+custom_domain = true
