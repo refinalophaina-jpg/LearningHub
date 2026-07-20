@@ -3,26 +3,38 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pages: write
-      id-token: write
-
     steps:
       - uses: actions/checkout@v4
-      - name: Prepare artifact
-        run: |
-          rm -rf out || true
-          mkdir out
-          # Copy only top-level files and directories (exclude .git and workflow artifacts)
-          rsync -av --exclude='.git' --exclude='.github' ./ out/
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+      - uses: actions/setup-node@v4
         with:
-          path: out
-      - name: Deploy to Pages
-        uses: actions/deploy-pages@v1
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npx eleventy
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

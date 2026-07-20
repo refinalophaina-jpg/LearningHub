@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="LearningHub — focused, calm ACCP study materials">
+  <meta name="description" content="LearningHub — focused, calm BCPS pharmacotherapy study materials">
   <title>{% if title %}{{ title }} — {% endif %}LearningHub</title>
   <link rel="stylesheet" href="/assets/css/theme.css">
 </head>
@@ -15,17 +15,18 @@
       </div>
       <nav class="main-nav">
         <a href="/">Home</a>
-        <a href="/legacy/index.html">Legacy</a>
-        <a href="/src/">Admin</a>
+        <a href="/modules/biostatistics/">Biostatistics</a>
+        <a href="/about/">How to use</a>
       </nav>
-      <p class="lead">Inviting, calm study materials — refreshed UI inspired by AinaDara.</p>
     </header>
 
     <main>
       {{ content | safe }}
     </main>
 
-    <footer class="foot">&copy; 2026 LearningHub</footer>
+    <footer class="foot">
+      <p>&copy; 2026 LearningHub · Original study material for personal exam prep. Not affiliated with BPS or ACCP. Verify doses and recommendations against current guidelines before clinical use.</p>
+    </footer>
   </div>
 </body>
 </html>
