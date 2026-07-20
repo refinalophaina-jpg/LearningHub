@@ -1,12 +1,10 @@
 {
-  "name": "learninghub",
-  "version": "0.1.0",
+  "name": "bcps-ainadara",
+  "version": "1.0.0",
   "private": true,
+  "description": "BCPS Learning Hub — study app for the BPS Pharmacotherapy exam",
   "scripts": {
-    "build": "eleventy",
-    "start": "eleventy --serve"
-  },
-  "devDependencies": {
-    "@11ty/eleventy": "^1.0.1"
+    "build": "node scripts/build-data.js",
+    "start": "npm run build && node scripts/serve.js"
   }
 }
