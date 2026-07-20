@@ -1203,66 +1203,7 @@ body.dark-mode{ --shadow-1:0 1px 2px rgba(0,0,0,.2), 0 2px 8px rgba(0,0,0,.16); 
 .home-tool-card:hover{ transform:translateY(-3px); box-shadow:var(--shadow-2); border-color:color-mix(in srgb, var(--chip-c,var(--terracotta)) 45%, var(--divider,var(--sep))); }
 .home-tool-card .icon-chip{ margin:0 auto 10px; }
 
-/* ═══════════════════════════════════════════════════════════════════════════
-   Rich theme layer — per-section color, layered depth, modern polish.
-   Muted jewel/earth hues (2026 restraint) over the warm AinaDara paper base.
-   Each section owns an accent used by its tab icon, active state, and header.
-   ═══════════════════════════════════════════════════════════════════════════ */
-:root{
-  --sec-home:#c1653f; --sec-study:#2e7d6b; --sec-quiz:#5a5bb0; --sec-flash:#b0863a;
-  --sec-concepts:#b0567e; --sec-visuals:#3a86a8; --sec-exampsych:#b0473f;
-  --sec-evidence:#6a5a9c; --sec-glossary:#5a8a4a; --sec-accp:#4a6d8a;
-  --elev-1:0 1px 2px rgba(45,52,40,.05), 0 3px 8px rgba(45,52,40,.05), 0 10px 24px rgba(45,52,40,.045);
-  --elev-2:0 2px 4px rgba(45,52,40,.06), 0 8px 18px rgba(45,52,40,.08), 0 18px 40px rgba(45,52,40,.06);
-  --card-hair:1px solid rgba(45,52,40,.07);
-}
-body.dark-mode{
-  --sec-home:#e08a5f; --sec-study:#4aa892; --sec-quiz:#9091e6; --sec-flash:#d4a85a;
-  --sec-concepts:#d47ba0; --sec-visuals:#5aa8cc; --sec-exampsych:#e0736a;
-  --sec-evidence:#9a8ad0; --sec-glossary:#7ab85f; --sec-accp:#6a9ac0;
-  --elev-1:0 1px 2px rgba(0,0,0,.30), 0 4px 12px rgba(0,0,0,.28);
-  --elev-2:0 2px 6px rgba(0,0,0,.42), 0 10px 26px rgba(0,0,0,.40);
-  --card-hair:1px solid rgba(236,228,210,.08);
-}
-
-/* Per-section accent, inherited by each section's content */
-#home{--accent:var(--sec-home)} #study{--accent:var(--sec-study)} #quiz{--accent:var(--sec-quiz)}
-#flash{--accent:var(--sec-flash)} #concepts{--accent:var(--sec-concepts)} #visuals{--accent:var(--sec-visuals)}
-#exampsych{--accent:var(--sec-exampsych)} #evidence{--accent:var(--sec-evidence)}
-#glossary{--accent:var(--sec-glossary)} #accp{--accent:var(--sec-accp)}
-
-/* ── Colorful section icons in the tab bar ──────────────────────────────── */
-#tab-home{--a:var(--sec-home)} #tab-study{--a:var(--sec-study)} #tab-quiz{--a:var(--sec-quiz)}
-#tab-flash{--a:var(--sec-flash)} #tab-concepts{--a:var(--sec-concepts)} #tab-visuals{--a:var(--sec-visuals)}
-#tab-exampsych{--a:var(--sec-exampsych)} #tab-evidence{--a:var(--sec-evidence)}
-#tab-glossary{--a:var(--sec-glossary)} #tab-accp{--a:var(--sec-accp)}
-.tab-bar{ box-shadow:0 -1px 0 var(--sep), 0 -10px 28px rgba(45,52,40,.05); }
-.tab-btn{ border-radius:14px 14px 10px 10px; transition:background .18s; }
-.tab-btn .tab-icon{ color:var(--a); transition:transform .18s ease; }
-.tab-btn .tab-label{ color:var(--label3); }
-.tab-btn:not(.active) .tab-icon{ opacity:.82; }
-.tab-btn.active{ background:color-mix(in srgb, var(--a) 13%, transparent); }
-.tab-btn.active .tab-icon{ transform:translateY(-1px) scale(1.1); }
-.tab-btn.active .tab-label{ color:var(--a); font-weight:600; }
-.tab-btn.active::before{ content:''; position:absolute; top:0; left:50%; transform:translateX(-50%); width:22px; height:3px; border-radius:0 0 4px 4px; background:var(--a); }
-
-/* ── Colored accent bar on section titles ───────────────────────────────── */
-.section h2{ position:relative; }
-.section > .section-header h2::before,
-.section > .drug-wrap > h2::before,
-.section > h2::before,
-.section > .accp-wrap .accp-header-band h2::before{
-  content:''; display:inline-block; width:4px; height:.9em; vertical-align:-1px;
-  background:var(--accent, var(--terracotta)); border-radius:2px; margin-right:.6rem;
-}
-
-/* ── Layered depth on cards ─────────────────────────────────────────────── */
+/* Extend the elevation system to the main content cards (was only on home-tool-cards). */
 .ios-card, .chapter-card, .question-card, .score-bar, .sr-stats,
-.mock-live, .mock-start, .mock-result, .progress-wrap, .sp-wrap{
-  box-shadow:var(--elev-1);
-  border:var(--card-hair);
-}
-.chapter-card:hover, .question-card:hover{ box-shadow:var(--elev-2); }
-
-/* Study-tools cards on home pick up their target section's accent on hover */
-a.card:hover, .card:hover{ box-shadow:var(--elev-2); }
+.mock-live, .mock-start, .mock-result, .progress-wrap, .sp-wrap{ box-shadow:var(--shadow-2); }
+.chapter-card:hover, .question-card:hover{ box-shadow:var(--shadow-3); }
