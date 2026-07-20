@@ -46,34 +46,34 @@
 </div>
 
 <nav class="tab-bar">
-  <button class="tab-btn active" onclick="switchSection('home')" id="tab-home">
+  <button class="tab-btn active tab-color-home" onclick="switchSection('home')" id="tab-home">
     <span class="tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V20h14V9.5"/></svg></span><span class="tab-label">Home</span>
   </button>
-  <button class="tab-btn" onclick="switchSection('study')" id="tab-study">
+  <button class="tab-btn tab-color-study" onclick="switchSection('study')" id="tab-study">
     <span class="tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M6 19h13"/></svg></span><span class="tab-label">Study</span>
   </button>
-  <button class="tab-btn" onclick="switchSection('quiz')" id="tab-quiz">
+  <button class="tab-btn tab-color-quiz" onclick="switchSection('quiz')" id="tab-quiz">
     <span class="tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.4a2.6 2.6 0 0 1 4.6 1.6c0 1.6-2.1 2-2.1 3.2"/><path d="M12 17h.01"/></svg></span><span class="tab-label">Quiz</span>
   </button>
-  <button class="tab-btn" onclick="switchSection('flash')" id="tab-flash">
+  <button class="tab-btn tab-color-cards" onclick="switchSection('flash')" id="tab-flash">
     <span class="tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="13" height="13" rx="2"/><path d="M8 7V5.5A2 2 0 0 1 10 3.5h9a2 2 0 0 1 2 2V15a2 2 0 0 1-2 2h-1.5"/></svg></span><span class="tab-label">Cards</span>
   </button>
-  <button class="tab-btn" onclick="switchSection('concepts')" id="tab-concepts">
+  <button class="tab-btn tab-color-drugs" onclick="switchSection('concepts')" id="tab-concepts">
     <span class="tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="8.5" width="19" height="7" rx="3.5"/><path d="M12 8.7v6.6"/></svg></span><span class="tab-label">Drugs</span>
   </button>
-  <button class="tab-btn" onclick="switchSection('visuals')" id="tab-visuals">
+  <button class="tab-btn tab-color-visuals" onclick="switchSection('visuals')" id="tab-visuals">
     <span class="tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3v6l-4.7 7.6A2 2 0 0 0 7 20h10a2 2 0 0 0 1.7-3.4L14 9V3"/><path d="M8 15h8"/></svg></span><span class="tab-label">Visuals</span>
   </button>
-  <button class="tab-btn" onclick="switchSection('exampsych')" id="tab-exampsych">
+  <button class="tab-btn tab-color-exam" onclick="switchSection('exampsych')" id="tab-exampsych">
     <span class="tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4"/></svg></span><span class="tab-label">Exam</span>
   </button>
-  <button class="tab-btn" onclick="switchSection('evidence')" id="tab-evidence">
+  <button class="tab-btn tab-color-evidence" onclick="switchSection('evidence')" id="tab-evidence">
     <span class="tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 12 4l9 5"/><path d="M5.5 9.5v8M12 9.5v8M18.5 9.5v8"/><path d="M3.5 20.5h17"/></svg></span><span class="tab-label">Evidence</span>
   </button>
-  <button class="tab-btn" onclick="switchSection('glossary')" id="tab-glossary">
+  <button class="tab-btn tab-color-glossary" onclick="switchSection('glossary')" id="tab-glossary">
     <span class="tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-2-1.2-5-1.2-7 0v12c2-1.2 5-1.2 7 0 2-1.2 5-1.2 7 0V6c-2-1.2-5-1.2-7 0z"/><path d="M12 6v12"/></svg></span><span class="tab-label">Glossary</span>
   </button>
-  <button class="tab-btn" onclick="switchSection('accp')" id="tab-accp">
+  <button class="tab-btn tab-color-mock" onclick="switchSection('accp')" id="tab-accp">
     <span class="tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4.5" width="12" height="16.5" rx="2"/><path d="M9 4.5V3.5h6v1"/><path d="M9 10h6M9 13.5h6M9 17h4"/></svg></span><span class="tab-label">Mock Exam</span>
   </button>
 </nav>
@@ -124,66 +124,84 @@
     </div>
 
     <!-- Feature cards -->
-    <h3 style="font-size:16px; font-weight:700; margin:0 0 16px; text-transform:uppercase; letter-spacing:0.5px; color:var(--label2);">Study Tools</h3>
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(160px, 1fr)); gap:12px; margin-bottom:28px;">
+    <h3 style="font-size:16px; font-weight:700; margin:0 0 16px; text-transform:uppercase; letter-spacing:0.5px; color:var(--label2);">Study tools</h3>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(140px, 1fr)); gap:12px; margin-bottom:28px;">
 
-      <div onclick="switchSection('quiz')" style="background:var(--card); border-radius:12px; padding:16px; text-align:center; cursor:pointer; border:1px solid var(--sep); transition:all 0.15s; margin:0;">
-        <div style="font-size:32px; margin-bottom:8px;">❓</div>
+      <div class="home-tool-card" style="--chip-c:var(--sec-quiz);" onclick="switchSection('quiz')">
+        <div class="icon-chip lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.4a2.6 2.6 0 0 1 4.6 1.6c0 1.6-2.1 2-2.1 3.2"/><path d="M12 17h.01"/></svg></div>
         <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Quiz</div>
-        <div style="font-size:12px; color:var(--label2);">449 Questions</div>
+        <div style="font-size:12px; color:var(--label2);">449 questions</div>
       </div>
 
-      <div onclick="switchSection('flash')" style="background:var(--card); border-radius:12px; padding:16px; text-align:center; cursor:pointer; border:1px solid var(--sep); transition:all 0.15s; margin:0;">
-        <div style="font-size:32px; margin-bottom:8px;">🎴</div>
+      <div class="home-tool-card" style="--chip-c:var(--sec-cards);" onclick="switchSection('flash')">
+        <div class="icon-chip lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="13" height="13" rx="2"/><path d="M8 7V5.5A2 2 0 0 1 10 3.5h9a2 2 0 0 1 2 2V15a2 2 0 0 1-2 2h-1.5"/></svg></div>
         <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Flashcards</div>
-        <div style="font-size:12px; color:var(--label2);">206 Cards (SM-2)</div>
+        <div style="font-size:12px; color:var(--label2);">206 cards · SM-2</div>
       </div>
 
-      <div onclick="switchSection('concepts')" style="background:var(--card); border-radius:12px; padding:16px; text-align:center; cursor:pointer; border:1px solid var(--sep); transition:all 0.15s; margin:0;">
-        <div style="font-size:32px; margin-bottom:8px;">💊</div>
-        <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Drug Ref</div>
-        <div style="font-size:12px; color:var(--label2);">25+ Drugs</div>
+      <div class="home-tool-card" style="--chip-c:var(--sec-drugs);" onclick="switchSection('concepts')">
+        <div class="icon-chip lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="8.5" width="19" height="7" rx="3.5"/><path d="M12 8.7v6.6"/></svg></div>
+        <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Drug Reference</div>
+        <div style="font-size:12px; color:var(--label2);">80 monographs</div>
       </div>
 
-      <div onclick="switchSection('accp')" style="background:var(--card); border-radius:12px; padding:16px; text-align:center; cursor:pointer; border:1px solid var(--sep); transition:all 0.15s; margin:0;">
-        <div style="font-size:32px; margin-bottom:8px;">📋</div>
-        <div style="font-weight:600; font-size:14px; margin-bottom:4px;">ACCP Exam</div>
-        <div style="font-size:12px; color:var(--label2);">150 Questions</div>
+      <div class="home-tool-card" style="--chip-c:var(--sec-mock);" onclick="switchSection('accp')">
+        <div class="icon-chip lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4.5" width="12" height="16.5" rx="2"/><path d="M9 4.5V3.5h6v1"/><path d="M9 10h6M9 13.5h6M9 17h4"/></svg></div>
+        <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Mock Exam</div>
+        <div style="font-size:12px; color:var(--label2);">150 questions, timed</div>
       </div>
 
-      <div onclick="switchSection('study')" style="background:var(--card); border-radius:12px; padding:16px; text-align:center; cursor:pointer; border:1px solid var(--sep); transition:all 0.15s; margin:0;">
-        <div style="font-size:32px; margin-bottom:8px;">📚</div>
+      <div class="home-tool-card" style="--chip-c:var(--sec-study);" onclick="switchSection('study')">
+        <div class="icon-chip lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M6 19h13"/></svg></div>
         <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Study Guide</div>
-        <div style="font-size:12px; color:var(--label2);">22 Chapters</div>
+        <div style="font-size:12px; color:var(--label2);">22 chapters</div>
       </div>
 
-      <div onclick="switchSection('glo')" style="background:var(--card); border-radius:12px; padding:16px; text-align:center; cursor:pointer; border:1px solid var(--sep); transition:all 0.15s; margin:0;">
-        <div style="font-size:32px; margin-bottom:8px;">📖</div>
+      <div class="home-tool-card" style="--chip-c:var(--sec-glossary);" onclick="switchSection('glossary')">
+        <div class="icon-chip lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-2-1.2-5-1.2-7 0v12c2-1.2 5-1.2 7 0 2-1.2 5-1.2 7 0V6c-2-1.2-5-1.2-7 0z"/><path d="M12 6v12"/></svg></div>
         <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Glossary</div>
-        <div style="font-size:12px; color:var(--label2);">397 Terms</div>
+        <div style="font-size:12px; color:var(--label2);">492 terms</div>
+      </div>
+
+      <div class="home-tool-card" style="--chip-c:var(--sec-evidence);" onclick="switchSection('evidence')">
+        <div class="icon-chip lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 12 4l9 5"/><path d="M5.5 9.5v8M12 9.5v8M18.5 9.5v8"/><path d="M3.5 20.5h17"/></svg></div>
+        <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Evidence</div>
+        <div style="font-size:12px; color:var(--label2);">101 landmark trials</div>
+      </div>
+
+      <div class="home-tool-card" style="--chip-c:var(--sec-visuals);" onclick="switchSection('visuals')">
+        <div class="icon-chip lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3v6l-4.7 7.6A2 2 0 0 0 7 20h10a2 2 0 0 0 1.7-3.4L14 9V3"/><path d="M8 15h8"/></svg></div>
+        <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Visuals</div>
+        <div style="font-size:12px; color:var(--label2);">Diagrams &amp; pathways</div>
+      </div>
+
+      <div class="home-tool-card" style="--chip-c:var(--sec-exam);" onclick="switchSection('exampsych')">
+        <div class="icon-chip lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4"/></svg></div>
+        <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Exam Skills</div>
+        <div style="font-size:12px; color:var(--label2);">Pacing &amp; strategy</div>
       </div>
 
     </div>
 
     <!-- Key features -->
-    <h3 style="font-size:16px; font-weight:700; margin:0 0 16px; text-transform:uppercase; letter-spacing:0.5px; color:var(--label2);">Key Features</h3>
-    <div style="background:var(--primary-light); border-radius:12px; padding:16px; margin-bottom:28px; border-left:4px solid var(--primary);">
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; font-size:14px;">
+    <h3 style="font-size:16px; font-weight:700; margin:0 0 16px; text-transform:uppercase; letter-spacing:0.5px; color:var(--label2);">Built for the exam</h3>
+    <div style="background:var(--primary-light); border-radius:12px; padding:16px; margin-bottom:28px; border-left:4px solid var(--terracotta);">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; font-size:14px;">
         <div>
-          <strong style="color:var(--primary);">📊 Progress Sync</strong>
-          <div style="font-size:13px; color:var(--label2); margin-top:4px;">Sign in to sync flashcard progress, quiz history, and ACCP bookmarks across all your devices.</div>
+          <strong style="color:var(--terracotta);">Spaced review</strong>
+          <div style="font-size:13px; color:var(--label2); margin-top:4px;">Missed questions resurface on a schedule — graduate only after getting one right twice, on separate days.</div>
         </div>
         <div>
-          <strong style="color:var(--primary);">🧠 SM-2 Algorithm</strong>
-          <div style="font-size:13px; color:var(--label2); margin-top:4px;">Spaced-repetition flashcards adapt to your learning pace—review harder cards more often.</div>
+          <strong style="color:var(--terracotta);">Confidence calibration</strong>
+          <div style="font-size:13px; color:var(--label2); margin-top:4px;">Rate your confidence before each answer; the home page flags where you're confidently wrong.</div>
         </div>
         <div>
-          <strong style="color:var(--primary);">🎯 Domain Breakdown</strong>
-          <div style="font-size:13px; color:var(--label2); margin-top:4px;">Filter quiz questions by pharmacology, pathophysiology, and therapeutics domains.</div>
+          <strong style="color:var(--terracotta);">Exam-condition mock</strong>
+          <div style="font-size:13px; color:var(--label2); margin-top:4px;">A real timed run — countdown, flag-for-review, no feedback until you submit — feeding a readiness estimate.</div>
         </div>
         <div>
-          <strong style="color:var(--primary);">🔍 Instant Search</strong>
-          <div style="font-size:13px; color:var(--label2); margin-top:4px;">Press ⌘K to search across all sections—drugs, glossary, study chapters, and more.</div>
+          <strong style="color:var(--terracotta);">Instant search</strong>
+          <div style="font-size:13px; color:var(--label2); margin-top:4px;">Press ⌘K to search everything — drugs, glossary, study chapters, and more.</div>
         </div>
       </div>
     </div>
@@ -248,7 +266,7 @@
 
 <div id="visuals" class="section">
   <div class="section-header">
-    <h2>Visual Pharmacology</h2>
+    <div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-visuals);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3v6l-4.7 7.6A2 2 0 0 0 7 20h10a2 2 0 0 0 1.7-3.4L14 9V3"/><path d="M8 15h8"/></svg></span><h2>Visual Pharmacology</h2></div>
     <p>Mechanism of action pathways, drug cascade diagrams, and pharmacology mind map</p>
   </div>
 
@@ -362,7 +380,7 @@
 <!-- EVIDENCE-BASED REFERENCES SECTION -->
 <div id="evidence" class="section">
   <div class="section-header">
-    <h2>Evidence-Based References</h2>
+    <div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-evidence);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 12 4l9 5"/><path d="M5.5 9.5v8M12 9.5v8M18.5 9.5v8"/><path d="M3.5 20.5h17"/></svg></span><h2>Evidence-Based References</h2></div>
     <p>120+ landmark trials &amp; guidelines · All 13 BCPS chapters · Cardiology · Anticoagulation · ID · Pulm · Nephrology · Psychiatry · GI · Oncology · Transplant · Geriatrics · Pain · PK/TDM · Biostatistics</p>
   </div>
   <div class="ev-filter-bar">
@@ -909,7 +927,7 @@
 
     <!-- Header band -->
     <div class="accp-header-band">
-      <h2>ACCP Mock Exam Review</h2>
+      <div class="section-title-row"><span class="icon-chip md" style="--chip-c:#faf5ed;background:rgba(250,245,237,.16);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4.5" width="12" height="16.5" rx="2"/><path d="M9 4.5V3.5h6v1"/><path d="M9 10h6M9 13.5h6M9 17h4"/></svg></span><h2>ACCP Mock Exam Review</h2></div>
       <p>150 official ACCP Pharmacotherapy Mock Exam questions — full answer review</p>
       <div class="accp-prog-bar-wrap">
         <div class="accp-prog-bar-fill" id="accpProgFill" style="width:0%"></div>
@@ -1017,7 +1035,7 @@
 </div>
 
 <div id="study" class="section">
-  <div class="section-header"><h2>Study Guide</h2><p>ACCP Updates in Therapeutics — 22 high-yield chapters</p></div>
+  <div class="section-header"><div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-study);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M6 19h13"/></svg></span><h2>Study Guide</h2></div><p>ACCP Updates in Therapeutics — 22 high-yield chapters</p></div>
   <div id="progressStatsPanel" style="margin-bottom:4px;"></div>
   <div class="controls">
     <input type="text" id="studySearch" placeholder="Search topics..." class="concept-search" oninput="filterStudy(this.value)">
@@ -1450,7 +1468,7 @@
 
 <!-- QUIZ -->
 <div id="quiz" class="section">
-  <div class="section-header"><h2>Quiz Engine</h2><p>449 board-style questions • 3 BCPS exam domains • detailed explanations</p></div>
+  <div class="section-header"><div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-quiz);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.4a2.6 2.6 0 0 1 4.6 1.6c0 1.6-2.1 2-2.1 3.2"/><path d="M12 17h.01"/></svg></span><h2>Quiz Engine</h2></div><p>449 board-style questions • 3 BCPS exam domains • detailed explanations</p></div>
   <div id="dueTodayBanner"></div>
   <div class="score-bar">
     <div class="score-stat"><span class="score-stat-value" id="scoreDisplay">0/0</span><span class="score-stat-label">Score</span></div>
@@ -1484,7 +1502,7 @@
 
 <!-- FLASHCARDS -->
 <div id="flash" class="section">
-  <div class="section-header"><h2>Flashcards</h2><p>206 spaced-repetition cards with SM-2 scheduling</p></div>
+  <div class="section-header"><div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-cards);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="13" height="13" rx="2"/><path d="M8 7V5.5A2 2 0 0 1 10 3.5h9a2 2 0 0 1 2 2V15a2 2 0 0 1-2 2h-1.5"/></svg></span><h2>Flashcards</h2></div><p>206 spaced-repetition cards with SM-2 scheduling</p></div>
   <!-- Stats bar -->
   <div class="sr-stats">
     <div class="sr-stat"><span class="sr-stat-val due-now" id="srDueToday">0</span><span class="sr-stat-lbl">Due Today</span></div>
@@ -1572,7 +1590,7 @@
 <!-- CONCEPT CONNECTOR -->
 <div id="concepts" class="section">
   <div class="drug-wrap">
-    <h2 style="margin-top: 0;">Drugs Reference Database</h2>
+    <div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-drugs);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="8.5" width="19" height="7" rx="3.5"/><path d="M12 8.7v6.6"/></svg></span><h2 style="margin-top: 0;">Drugs Reference Database</h2></div>
     <p>Comprehensive BCPS-level drug reference with clinical details, dosing, interactions, and pearls.</p>
     <div class="drug-search-row" style="position: sticky; top: 60px; z-index: 100; background: var(--bg1); padding: 12px; border-radius: 8px; border-bottom: 1px solid var(--divider); margin-bottom: 16px;">
       <div style="display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; align-items: center;">
@@ -1604,8 +1622,8 @@
 <div id="glossary" class="section">
 
 <div class="section-header glo-section-header">
-  <div class="section-title">📚 Medical & Pharmacology Glossary</div>
-  <div class="section-subtitle">600+ terms — Pharmacokinetics, Clinical Pharmacology, Cardiovascular, ID, Critical Care & more</div>
+  <div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-glossary);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-2-1.2-5-1.2-7 0v12c2-1.2 5-1.2 7 0 2-1.2 5-1.2 7 0V6c-2-1.2-5-1.2-7 0z"/><path d="M12 6v12"/></svg></span><div class="section-title">Medical &amp; Pharmacology Glossary</div></div>
+  <div class="section-subtitle">492 terms — Pharmacokinetics, Clinical Pharmacology, Cardiovascular, ID, Critical Care & more</div>
 </div>
 
 <div class="glo-wrap">
