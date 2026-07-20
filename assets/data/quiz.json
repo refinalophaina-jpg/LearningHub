@@ -227,12 +227,12 @@
     "q": "A patient with community-acquired pneumonia requiring ICU admission has no obvious risk factors for Pseudomonas. Which antibiotic regimen is recommended?",
     "opts": [
       "A. Azithromycin monotherapy",
-      "B. Ceftriaxone + azithromycin or a respiratory FQ alone",
+      "B. Ceftriaxone + azithromycin or ceftriaxone plus a respiratory fluoroquinolone",
       "C. Piperacillin-tazobactam + vancomycin",
       "D. Meropenem + azithromycin"
     ],
     "correct": 1,
-    "exp": "Severe CAP requiring ICU admission is treated with a beta-lactam (ceftriaxone or ampicillin-sulbactam) PLUS a macrolide OR a respiratory fluoroquinolone alone. Anti-pseudomonal coverage (pip-tazo, meropenem) is only added if there are specific risk factors (structural lung disease, prior Pseudomonas isolation, recent antibiotics, hospitalization in last 90 days).",
+    "exp": "Severe CAP requiring ICU admission is treated with a beta-lactam (ceftriaxone or ampicillin-sulbactam) PLUS a macrolide, OR a beta-lactam PLUS a respiratory fluoroquinolone; fluoroquinolone monotherapy is not recommended in severe CAP. Anti-pseudomonal coverage (pip-tazo, meropenem) is only added if there are specific risk factors (structural lung disease, prior Pseudomonas isolation, recent antibiotics, hospitalization in last 90 days).",
     "diff": "exam",
     "topic": "Infectious Diseases - Vol 1",
     "domain": "Area 1",
@@ -293,7 +293,7 @@
       "A. INH 300mg daily x 9 months",
       "B. INH 300mg daily x 6 months",
       "C. Rifapentine + INH weekly x 12 weeks (3HP)",
-      "D. Rifampin 600mg daily x 4 months"
+      "D. Rifampin + pyrazinamide daily x 2 months"
     ],
     "correct": 2,
     "exp": "The preferred LTBI regimens are shorter course: 3HP (rifapentine + INH weekly x 12 weeks) or 4R (rifampin daily x 4 months), which have improved completion rates over 9H (INH x 9 months). Both 3HP and 4R are CDC/IDSA preferred. INH x 6 months (6H) is an alternative but less effective than 9H. 9H remains acceptable.",
@@ -451,7 +451,7 @@
     "q": "A patient with a seizure disorder is on phenytoin 300mg daily. Her albumin is 2.2 g/dL (normal 4.0). Her measured phenytoin level is 8 mcg/mL. What is the corrected (true free equivalent) phenytoin level?",
     "opts": [
       "A. 8 mcg/mL — no correction needed",
-      "B. Corrected = 8 / [0.2(2.2) + 0.1] = 12.1 mcg/mL",
+      "B. Corrected = 8 / [0.2(2.2) + 0.1] = 14.8 mcg/mL",
       "C. Corrected = 8 × (4.0/2.2) = 14.5 mcg/mL",
       "D. Corrected = 8 / (2.2/4.0) = 14.5 mcg/mL"
     ],
@@ -584,7 +584,7 @@
       "D. After bicarb normalizes above 15"
     ],
     "correct": 1,
-    "exp": "Insulin drives K+ into cells and can worsen hypokalemia, causing life-threatening cardiac arrhythmias. Per ADA DKA protocol, insulin should NOT be started until K+ ≥3.5 mEq/L. Replace potassium IV (20-40 mEq/h) until K+ ≥3.5, then start insulin. Glucose cutoff of 250 mg/dL is when dextrose is added to IV fluids (not when to start insulin). Bicarb is rarely needed (only if pH <6.9).",
+    "exp": "Insulin drives K+ into cells and can worsen hypokalemia, causing life-threatening cardiac arrhythmias. Per ADA DKA protocol, insulin should NOT be started until K+ ≥3.5 mEq/L. Replace potassium IV (~10 mEq/h) until K+ >3.5, then start insulin. Glucose cutoff of 250 mg/dL is when dextrose is added to IV fluids (not when to start insulin). Bicarb is rarely needed (only if pH <6.9).",
     "diff": "exam",
     "topic": "Endocrine - Vol 2",
     "domain": "Area 1",
@@ -663,8 +663,8 @@
       "C. Levofloxacin triple therapy x 10 days",
       "D. PPI monotherapy x 8 weeks"
     ],
-    "correct": 1,
-    "exp": "Clarithromycin-based triple therapy (PPI + clarithromycin + amoxicillin) x 14 days is first-line in regions with low clarithromycin resistance (<15%) and no prior macrolide use. In areas with high resistance or prior macrolide exposure, bismuth quadruple therapy is preferred. Confirmation of eradication should be done ≥4 weeks after therapy completion with urea breath test or fecal antigen.",
+    "correct": 0,
+    "exp": "Per the 2024 ACG guideline, optimized bismuth quadruple therapy (PPI + bismuth + tetracycline + a nitroimidazole such as metronidazole) for 14 days is the preferred first-line regimen when clarithromycin susceptibility is unknown. Clarithromycin triple therapy was removed as a first-line option because of rising clarithromycin resistance (>15% in most of the US). Confirmation of eradication should be done ≥4 weeks after therapy completion with urea breath test or fecal antigen.",
     "diff": "exam",
     "topic": "Gastroenterology - Vol 2",
     "domain": "Area 1",
@@ -723,7 +723,7 @@
     "q": "A 68-year-old man with COPD GOLD Group E (mMRC dyspnea 3, 2 exacerbations last year) is on a LABA. What is the most appropriate intensification?",
     "opts": [
       "A. Add ICS",
-      "B. Add LAMA",
+      "B. Add theophylline / C. Switch to LAMA + LABA (dual bronchodilator)",
       "C. Switch to LAMA + LABA (dual bronchodilator)",
       "D. Add roflumilast"
     ],
@@ -856,7 +856,7 @@
       "D. Prochlorperazine 10mg IV only"
     ],
     "correct": 2,
-    "exp": "Cisplatin is highly emetogenic (HEC). ASCO/NCCN guidelines for HEC: triple therapy — 5-HT3 antagonist (ondansetron) + dexamethasone + NK1 receptor antagonist (aprepitant or fosaprepitant). Doxorubicin alone is moderately emetogenic but the combination makes this HEC. Ondansetron alone is insufficient for HEC. Adding olanzapine (4th agent) is recommended for highly refractory nausea.",
+    "exp": "Cisplatin is highly emetogenic (HEC). ASCO/NCCN guidelines for HEC: triple therapy — 5-HT3 antagonist (ondansetron) + dexamethasone + NK1 receptor antagonist (aprepitant or fosaprepitant). Doxorubicin alone is moderately emetogenic but the combination makes this HEC. Ondansetron alone is insufficient for HEC. Olanzapine is now recommended as a component of first-line 4-drug prophylaxis (NK1 antagonist + 5-HT3 antagonist + dexamethasone + olanzapine) for highly emetogenic chemotherapy, not only for refractory nausea.",
     "diff": "exam",
     "topic": "Oncology - Vol 2",
     "domain": "Area 1",
@@ -1128,7 +1128,7 @@
       "D. TMP-SMX DS BID x 3 days"
     ],
     "correct": 1,
-    "exp": "Asymptomatic bacteriuria in pregnancy requires treatment due to high risk of progression to pyelonephritis (25-30%) and preterm birth. Nitrofurantoin is first-line in first and second trimester. Avoid in third trimester (hemolytic anemia risk). Avoid TMP-SMX in first trimester (folate antagonist) and near term (kernicterus). Fluoroquinolones are generally avoided in pregnancy.",
+    "exp": "Asymptomatic bacteriuria in pregnancy requires treatment due to high risk of progression to pyelonephritis (25-30%) and preterm birth. Nitrofurantoin is an appropriate first-line agent in the second and third trimesters (and reasonable in the first when alternatives are lacking). Avoid only at term (approximately 38–42 weeks) and during labor/delivery due to risk of neonatal hemolytic anemia; at 32 weeks it remains a safe first-line choice. Avoid TMP-SMX in first trimester (folate antagonist) and near term (kernicterus). Fluoroquinolones are generally avoided in pregnancy.",
     "diff": "exam",
     "topic": "Infectious Diseases - Vol 1",
     "domain": "Area 1",
@@ -1272,7 +1272,7 @@
       "D. IV acetazolamide"
     ],
     "correct": 0,
-    "exp": "KDIGO recommends sodium bicarbonate supplementation to maintain serum bicarbonate at or above 22 mEq/L in CKD. Chronic metabolic acidosis accelerates GFR decline, muscle catabolism, and bone disease. Oral NaHCO3 tablets (650mg 2-3x/day) are first-line. Sodium citrate is an alternative. Protein restriction (0.6-0.8 g/kg/day) also slows progression.",
+    "exp": "KDIGO 2024 no longer sets a serum bicarbonate target of >=22 mEq/L; its practice point suggests oral alkali (sodium bicarbonate) to avoid bicarbonate falling below ~18 mEq/L while not overcorrecting above the upper limit of normal. Chronic metabolic acidosis accelerates GFR decline, muscle catabolism, and bone disease. Oral NaHCO3 tablets (650mg 2-3x/day) are first-line. Sodium citrate is an alternative. Protein restriction (0.6-0.8 g/kg/day) also slows progression.",
     "diff": "hard",
     "topic": "Nephrology - Vol 2",
     "domain": "Area 1",
@@ -1432,7 +1432,7 @@
       "D. Systemic corticosteroids"
     ],
     "correct": 2,
-    "exp": "Bronchiolitis management is primarily supportive. Supplemental oxygen is the most important intervention when SpO2 <90-92%. AAP guidelines: bronchodilators (albuterol, epinephrine) are NOT routinely recommended (no consistent benefit). Corticosteroids are NOT recommended. High-flow nasal cannula (HFNC) or CPAP for severe cases. Ribavirin is not routinely used. Palivizumab (RSV prophylaxis) for high-risk infants (premature <29 weeks, hemodynamically significant CHD, CLD).",
+    "exp": "Bronchiolitis management is primarily supportive. Supplemental oxygen is the most important intervention when SpO2 <90-92%. AAP guidelines: bronchodilators (albuterol, epinephrine) are NOT routinely recommended (no consistent benefit). Corticosteroids are NOT recommended. High-flow nasal cannula (HFNC) or CPAP for severe cases. Ribavirin is not routinely used. Nirsevimab (or clesrovimab) is recommended as first-line RSV prophylaxis for all infants <8 months born during or entering their first RSV season (when the pregnant parent did not receive maternal RSVpreF vaccine); high-risk children 8-19 months may receive a dose in their second RSV season. Palivizumab is no longer routinely recommended and is being discontinued as of December 31, 2025.",
     "diff": "exam",
     "topic": "Pediatrics - Vol 2",
     "domain": "Area 1",
@@ -1902,7 +1902,7 @@
       "D. Double dose for reduced absorption in ESRD"
     ],
     "correct": 2,
-    "exp": "Prasugrel has renal elimination concerns in ESRD. More importantly, P2Y12 inhibitors carry high bleeding risk in ESRD. Careful risk-benefit assessment needed; consider alternative (ticagrelor preferred in renal disease).",
+    "exp": "Prasugrel requires no renal dose adjustment, including in ESRD, per its labeling (ESRD patients actually show lower, not higher, active-metabolite exposure). The concern is the high bleeding risk of P2Y12 inhibitors in ESRD from uremic platelet dysfunction, so careful risk-benefit assessment is needed and an alternative may be considered.",
     "diff": "hard",
     "topic": "Pharmacology - Vol 2",
     "domain": "Area 2",
@@ -2800,12 +2800,12 @@
     "q": "A 4-year-old (20 kg) presents with otitis media. Amoxicillin high-dose is ordered. What is the appropriate dose?",
     "opts": [
       "A. 250 mg twice daily",
-      "B. 40-45 mg/kg/day divided BID (400 mg BID)",
+      "B. 80-90 mg/kg/day divided BID (800 mg BID)",
       "C. 875 mg BID",
       "D. 500 mg three times daily"
     ],
     "correct": 1,
-    "exp": "High-dose amoxicillin for AOM (acute otitis media) is 80-90 mg/kg/day divided BID. For a 20 kg child: 80-90 mg/kg × 20 kg = 1600-1800 mg/day ÷ 2 = 800-900 mg BID. However, the maximum dose per administration and practical tablet availability means 400 mg BID (40-45 mg/kg/day) represents the standard high-dose recommendation per AAP/AAFP guidelines. Standard-dose is 40 mg/kg/day; high-dose is 80-90 mg/kg/day for resistant S. pneumoniae coverage.",
+    "exp": "High-dose amoxicillin for AOM (acute otitis media) is 80-90 mg/kg/day divided BID. For a 20 kg child: 80-90 mg/kg × 20 kg = 1600-1800 mg/day ÷ 2 = 800-900 mg BID. For a 20 kg child, high-dose amoxicillin is 800-900 mg BID (80-90 mg/kg/day) per AAP/AAFP guidelines. Standard-dose is 40-45 mg/kg/day; high-dose is 80-90 mg/kg/day for penicillin-nonsusceptible S. pneumoniae coverage.",
     "diff": "exam",
     "topic": "Pediatrics - Vol 2",
     "domain": "Area 1",
@@ -3514,7 +3514,7 @@
     "q": "A patient receiving vancomycin for MRSA bacteremia has an AUC/MIC of 280 mg·h/L (target 400-600). The MIC of the isolate is 1 mg/L. The current dose is 1250 mg IV every 12 hours. What change is most appropriate?",
     "opts": [
       "A. Decrease dose — AUC is above target",
-      "B. Increase dose or interval to achieve AUC/MIC 400-600 (increase total daily dose by ~40%)",
+      "B. Increase dose or interval to achieve AUC/MIC 400-600 (increase total daily dose by ~80%)",
       "C. Switch to linezolid immediately",
       "D. Add rifampin to achieve synergy"
     ],
@@ -3939,7 +3939,7 @@
       "D. No clinically significant interaction between sertraline and bupropion"
     ],
     "correct": 1,
-    "exp": "Sertraline is a moderate CYP2D6 inhibitor at higher doses (≥150 mg). Bupropion and its active metabolite hydroxybupropion are CYP2D6 substrates. Sertraline inhibition of CYP2D6 may increase bupropion/hydroxybupropion levels, potentially increasing seizure risk (bupropion lowers seizure threshold in a dose-dependent manner). Monitor for signs of bupropion toxicity (tremor, agitation, seizures). Bupropion itself is also a potent CYP2D6 inhibitor, which can affect co-administered drugs metabolized by CYP2D6 (TCAs, many antipsychotics).",
+    "exp": "Sertraline is a moderate CYP2D6 inhibitor at higher doses (≥150 mg). Bupropion is metabolized primarily by CYP2B6 to hydroxybupropion; bupropion and its metabolites are potent CYP2D6 inhibitors (not CYP2D6 substrates). The main PK/PD concerns of this combination are additive lowering of the seizure threshold and bupropion raising levels of co-administered CYP2D6 substrates. Sertraline inhibition of CYP2D6 may increase bupropion/hydroxybupropion levels, potentially increasing seizure risk (bupropion lowers seizure threshold in a dose-dependent manner). Monitor for signs of bupropion toxicity (tremor, agitation, seizures). Bupropion itself is also a potent CYP2D6 inhibitor, which can affect co-administered drugs metabolized by CYP2D6 (TCAs, many antipsychotics).",
     "diff": "hard",
     "topic": "Psychiatry - Vol 1",
     "domain": "Area 2",
@@ -4170,7 +4170,7 @@
       "D. HIV testing and herpes zoster vaccination only"
     ],
     "correct": 1,
-    "exp": "TNF-alpha inhibitors (adalimumab, etanercept, infliximab, certolizumab, golimumab) cause immunosuppression, particularly of cell-mediated immunity, and reactivate latent infections. Mandatory pre-treatment screening: (1) TB screening: TST (PPD) or IGRA (QuantiFERON-TB Gold) — if positive LTBI, treat TB infection before starting TNF-i (9 months INH or 4 months rifampin); (2) Hepatitis B serology: HBsAg, HBcAb — HBV reactivation risk with TNF-i → antiviral prophylaxis if HBcAb positive; (3) Review for active infection, malignancy, or demyelinating disease. Herpes zoster vaccine (live) should be given before TNF-i initiation.",
+    "exp": "TNF-alpha inhibitors (adalimumab, etanercept, infliximab, certolizumab, golimumab) cause immunosuppression, particularly of cell-mediated immunity, and reactivate latent infections. Mandatory pre-treatment screening: (1) TB screening: TST (PPD) or IGRA (QuantiFERON-TB Gold) — if positive LTBI, treat TB infection before starting TNF-i (9 months INH or 4 months rifampin); (2) Hepatitis B serology: HBsAg, HBcAb — HBV reactivation risk with TNF-i → antiviral prophylaxis if HBcAb positive; (3) Review for active infection, malignancy, or demyelinating disease. The recombinant zoster vaccine (Shingrix/RZV) is non-live and recommended for immunosuppressed adults; it can be given before or during TNF-inhibitor therapy. (The former live zoster vaccine, Zostavax, was discontinued in the US in 2020 and is no longer used.)",
     "diff": "exam",
     "topic": "Pharmacokinetics - Vol 2",
     "domain": "Area 2",
@@ -4863,7 +4863,7 @@
       "D. IV iron inhibits intestinal phosphate absorption"
     ],
     "correct": 1,
-    "exp": "Ferric carboxymaltose (Injectafer) and ferric derisomaltose (Monoferric) are associated with hypophosphatemia in up to 50-75% of patients, sometimes severe (<1.0 mg/dL). Mechanism: these IV iron formulations trigger a marked increase in FGF-23 (fibroblast growth factor 23) which acts on renal proximal tubules to reduce sodium-phosphate co-transporter (NaPi-2a) activity → increased phosphaturia → hypophosphatemia. Other IV iron formulations (iron sucrose, ferumoxytol, low molecular weight iron dextran) have significantly less FGF-23 elevation and hypophosphatemia risk.",
+    "exp": "Ferric carboxymaltose (Injectafer) is associated with hypophosphatemia in up to 50-75% of patients, sometimes severe (<1.0 mg/dL). In contrast, ferric derisomaltose (Monoferric) causes far less FGF-23 elevation and hypophosphatemia (~8% in head-to-head trials) and is often the lower-risk alternative. Mechanism: these IV iron formulations trigger a marked increase in FGF-23 (fibroblast growth factor 23) which acts on renal proximal tubules to reduce sodium-phosphate co-transporter (NaPi-2a) activity → increased phosphaturia → hypophosphatemia. Other IV iron formulations (iron sucrose, ferumoxytol, low molecular weight iron dextran) have significantly less FGF-23 elevation and hypophosphatemia risk.",
     "diff": "hard",
     "topic": "Pharmacokinetics - Vol 2",
     "domain": "Area 2",
@@ -5026,7 +5026,7 @@
     "q": "A patient asks her pharmacist about a natural product she saw advertised: 'coenzyme Q10 for heart health.' She is on warfarin and atorvastatin. Which statement reflects evidence-based counseling?",
     "opts": [
       "A. CoQ10 is fully safe with all medications — no interactions",
-      "B. CoQ10 may have mild anticoagulant properties; limited evidence for efficacy; potential interaction with warfarin warrants INR monitoring if used",
+      "B. CoQ10 is structurally similar to vitamin K and may reduce warfarin's anticoagulant effect (INR); limited evidence for efficacy; potential interaction with warfarin warrants INR monitoring if used",
       "C. CoQ10 is FDA-approved for heart failure — recommend it to her cardiologist",
       "D. CoQ10 definitively reverses statin-induced myopathy — recommend it with atorvastatin"
     ],
@@ -5044,7 +5044,7 @@
     ]
   },
   {
-    "q": "A root cause analysis (RCA) is conducted after a patient received 10x the intended methotrexate weekly dose (1500 mg instead of 15 mg). Which system-level intervention best prevents recurrence?",
+    "q": "A root cause analysis (RCA) is conducted after a patient received 10x the intended methotrexate weekly dose (150 mg instead of 15 mg). Which system-level intervention best prevents recurrence?",
     "opts": [
       "A. Require the nurse to reread the order before administration",
       "B. Disciplinary action against the pharmacist who dispensed the incorrect dose",
@@ -5110,7 +5110,7 @@
     "q": "In a clinical trial, 15 patients experience the primary endpoint in the treatment group (n=150) and 25 patients in the control group (n=150). Calculate the RRR and NNT.",
     "opts": [
       "A. RRR=10%, NNT=100",
-      "B. RRR=40%, NNT=10",
+      "B. RRR=40%, NNT=15",
       "C. RRR=16.7%, NNT=6",
       "D. RRR=25%, NNT=4"
     ],
@@ -5212,7 +5212,7 @@
     ]
   },
   {
-    "q": "A pharmacist is asked to compound a preparation that falls under the 503A outsourcing framework. Which statement about compounding pharmacies is correct?",
+    "q": "A pharmacist is asked to compound a preparation under the 503A traditional-compounding framework (as distinguished from 503B outsourcing facilities). Which statement about compounding pharmacies is correct?",
     "opts": [
       "A. 503A compounds can be commercially manufactured in unlimited quantities",
       "B. 503B outsourcing facilities may compound drug products without patient-specific prescriptions for healthcare facilities under FDA oversight and must meet cGMP standards",
@@ -5383,7 +5383,7 @@
     "q": "A patient is being converted from IV morphine 8 mg/day to oral oxycodone. Using standard equianalgesic tables, what oral oxycodone dose is equivalent?",
     "opts": [
       "A. 8 mg oral oxycodone/day — same dose",
-      "B. 24 mg oral oxycodone/day (IV morphine 8 mg × 3 = oral morphine 24 mg; oral morphine:oral oxycodone ≈ 1.5:1 = 16 mg; or using direct conversion, IV morphine 10 mg = oral oxycodone 20 mg; 8 mg IV × 2 = 16 mg)",
+      "B. 16 mg oral oxycodone/day (IV morphine 8 mg × 3 = oral morphine 24 mg; oral morphine:oral oxycodone ≈ 1.5:1 → 16 mg oxycodone; reduce ~25% for incomplete cross-tolerance)",
       "C. 40 mg oral oxycodone/day",
       "D. 4 mg oral oxycodone/day"
     ],
@@ -5492,7 +5492,7 @@
       "C. Semaglutide inhibits CYP2C9, increasing warfarin levels — reduce warfarin dose preemptively",
       "D. GLP-1 RAs are contraindicated with warfarin"
     ],
-    "correct": 1,
+    "correct": 0,
     "exp": "GLP-1 receptor agonists (liraglutide, semaglutide, dulaglutide) delay gastric emptying. For oral medications whose absorption depends on gastric emptying rate, delayed emptying may reduce peak concentrations and alter AUC. For warfarin: reduced absorption rate may lower peak warfarin levels, potentially decreasing INR. However, the clinical significance is generally modest for warfarin (highly protein-bound, active for days). Monitor INR within 1-2 weeks of GLP-1 RA initiation and at dose escalation steps. No preemptive dose change recommended without monitoring.",
     "diff": "exam",
     "topic": "Endocrine and Metabolic Disease - Vol 2",
@@ -6497,7 +6497,7 @@
     "opts": [
       "A. Colistin 5 mg/kg/day CBA divided q8h targeting AUC/MIC",
       "B. Colistin 9 mg/kg/day CBA loading then 4.5 mg/kg/day maintenance",
-      "C. Colistin 9 mg CBA load, then 4.5 mg/kg/day divided q12h, adjusted for CrCl 45 mL/min",
+      "C. Colistin 9 mg/kg CBA load, then 4.5 mg/kg/day divided q12h, adjusted for CrCl 45 mL/min",
       "D. Polymyxin B 1.5-2.5 mg/kg/day with no dose adjustment needed"
     ],
     "correct": 2,
@@ -6789,7 +6789,7 @@
       "D. Subcutaneous treprostinil + sildenafil — parenteral prostacyclin required for FC III"
     ],
     "correct": 1,
-    "exp": "The AMBITION trial demonstrated that upfront combination therapy with ambrisentan (ERA) + tadalafil (PDE5i) significantly reduced the risk of clinical failure events compared to either monotherapy in WHO FC II/III PAH patients. This is now the preferred initial strategy for intermediate-to-high risk PAH per ACC/AHA/ERS guidelines. IV epoprostenol is reserved for high-risk/FC IV patients or those failing oral therapy.",
+    "exp": "The AMBITION trial demonstrated that upfront combination therapy with ambrisentan (ERA) + tadalafil (PDE5i) significantly reduced the risk of clinical failure events compared to either monotherapy in WHO FC II/III PAH patients. This is now the preferred initial strategy for intermediate-to-high risk PAH per 2022 ESC/ERS guidelines. IV epoprostenol is reserved for high-risk/FC IV patients or those failing oral therapy.",
     "diff": "expert",
     "topic": "Pulmonology - Vol 2",
     "domain": "Area 2",
@@ -6933,7 +6933,7 @@
       "D. Buccal midazolam 0.5 mg/kg — established non-IV benzodiazepine for pediatric SE"
     ],
     "correct": 1,
-    "exp": "For pediatric status epilepticus without IV access, intranasal (IN) midazolam 0.2 mg/kg (max 10mg total; split between nostrils if >5mg) is recommended first-line by pediatric neurology and emergency medicine guidelines — non-inferior to IV lorazepam (LoSE trial), faster onset than rectal diazepam, and more practical. Buccal midazolam is also used but IN is preferred in the acute ED/prehospital setting. Rectal diazepam is used in community/home settings but less practical in ED. IM lorazepam is appropriate when IN unavailable.",
+    "exp": "For pediatric status epilepticus without IV access, intranasal (IN) midazolam 0.2 mg/kg (max 10mg total; split between nostrils if >5mg) is recommended first-line by pediatric neurology and emergency medicine guidelines — comparable to IV benzodiazepines with faster onset than rectal diazepam (IM midazolam non-inferior to IV lorazepam in the RAMPART trial), and more practical. Buccal midazolam is also used but IN is preferred in the acute ED/prehospital setting. Rectal diazepam is used in community/home settings but less practical in ED. IM lorazepam is appropriate when IN unavailable.",
     "diff": "expert",
     "topic": "Pediatrics - Vol 2",
     "domain": "Area 2",
@@ -7181,10 +7181,10 @@
     "opts_exp": []
   },
   {
-    "q": "A 27-year-old woman is in her first trimester of pregnancy. She has been diagnosed this week with Graves disease, and her endocrinologist is looking for suggestions on implementing pharmacotherapy to both improve her symptoms (heat intolerance and weight loss) and help normalize her free T4 and thyroid-simulating hormone. Which is the most appropriate answer?",
+    "q": "A 27-year-old woman is in her first trimester of pregnancy. She has been diagnosed this week with Graves disease, and her endocrinologist is looking for suggestions on implementing pharmacotherapy to both improve her symptoms (heat intolerance and weight loss) and help normalize her free T4 and thyroid-stimulating hormone. Which is the most appropriate answer?",
     "opts": [
       "A. Add radioactive iodine",
-      "B. Add propanolol",
+      "B. Add propranolol ... D. Add propylthiouracil",
       "C. Add methimazole",
       "D. Add propylthiouricil"
     ],
@@ -7749,7 +7749,7 @@
       "D. Start labetalol 100 mg intravenously every 12 hours"
     ],
     "correct": 1,
-    "exp": "This patient is experiencing pregnancy-induced hypertension because she is currently further along than 20 weeks gestation and does not have a pre-existing history of hypertension. She is not experiencing any urgent warning signs and has not progressed to a diagnosis of pre-eclampsia; therefore, immediate delivery is not necessary because she is not at full term (Answer A is incorrect). The use of oral nifedipine is a safe and appropriate choice for pregnancy-induced hypertension (Answer B is co",
+    "exp": "This patient is experiencing pregnancy-induced hypertension because she is currently further along than 20 weeks gestation and does not have a pre-existing history of hypertension. She now meets criteria for preeclampsia (new-onset hypertension after 20 weeks with proteinuria) but has no severe features, so immediate delivery is not necessary at 34 weeks and expectant management with blood pressure control is appropriate (Answer A is incorrect). The use of oral nifedipine is a safe and appropriate choice for pregnancy-induced hypertension (Answer B is co",
     "diff": "expert",
     "topic": "Women's Health",
     "domain": "Women's Health",
@@ -7794,7 +7794,7 @@
       "A. Add hydrochlorothiazide 25 mg orally daily",
       "B. Increase furosemide to 80 mg intravenously twice daily",
       "C. Administer milrinone 0.125-mcg/kg/h continuous infusion",
-      "D. Administer intravenous nitroglycerin 5-mcgg/min continuous infusion"
+      "D. Administer intravenous nitroglycerin 5-mcg/min continuous infusion"
     ],
     "correct": 1,
     "exp": "After an ineffective initial attempt at diuresis, this patient requires escalated diuretic strategies to address his volume overload. Guidelines recommend initial intravenous loop diuretic 1 to 2.5 times the patient's home diuretic dose either as intermittent bolus or by continuous infusion, according to the DOSE trial (Answer B is correct). Optimization of high-dose intravenous loop diuretics is recommended before adding a thiazide or thiazide-like diuretic because of the increased risk of impa",
@@ -7845,7 +7845,7 @@
       "D. Duloxetine"
     ],
     "correct": 1,
-    "exp": "Clopidogrel is a tablet that can be crushed without affecting its efficacy (Answer B is correct). Metoprolol succinate is extended release and should not be crushed (Answer A is incorrect). Duloxetine and pantoprazole are both delayed-release capsules, so they should not be crushed but may be opened to be administered by G-tube (Answers C and D are incorrect).",
+    "exp": "Clopidogrel is a tablet that can be crushed without affecting its efficacy (Answer B is correct). Metoprolol succinate is extended release and should not be crushed (Answer A is incorrect). Clopidogrel is a tablet that can be crushed without affecting its efficacy (Answer B is correct). Metoprolol succinate is extended release and should not be crushed (Answer A is incorrect). Duloxetine and omeprazole are both delayed-release capsules, so they should not be crushed but may be opened to be administered by G-tube (Answers C and D are incorrect).",
     "diff": "expert",
     "topic": "Cardiology",
     "domain": "Cardiology",
@@ -7989,7 +7989,7 @@
       "D. Umeclidinium"
     ],
     "correct": 3,
-    "exp": "According to the Global Initiative for Chronic Obstructive Lung Disease guidelines, this patient's asthma is classified as group A because she has not had any exacerbations within the past year and her CAT score is less than 10. A long-acting anticholinergic-muscarinic antagonist (LAMA) is preferred for group A (Answer D is correct). An inhaled corticosteroid (ICS)-long-acting β2-agonist (LABA) combination is not recommended in the treatment of COPD (Answer A is incorrect). A LAMA-LABA-ICS combi",
+    "exp": "According to the Global Initiative for Chronic Obstructive Lung Disease guidelines, this patient's COPD is classified as group A because she has not had any exacerbations within the past year and her CAT score is less than 10. A long-acting anticholinergic-muscarinic antagonist (LAMA) is preferred for group A (Answer D is correct). An inhaled corticosteroid (ICS)-long-acting β2-agonist (LABA) combination is not recommended in the treatment of COPD (Answer A is incorrect). A LAMA-LABA-ICS combi",
     "diff": "expert",
     "topic": "Pulmonary/Allergy",
     "domain": "Pulmonology",
@@ -8289,7 +8289,7 @@
     "opts": [
       "A. Apixaban 5 mg orally twice daily for 7 days, followed by 2.5 mg orally twice daily thereafter",
       "B. Dabigatran 75 mg orally twice daily after 5 days of parenteral heparin administered intravenously",
-      "C. Edoxaban 60 mg orally twice daily after 10 days of therapeutic parenteral heparin administered intravenously",
+      "C. Edoxaban 60 mg orally once daily after 10 days of therapeutic parenteral heparin administered intravenously",
       "D. Rivaroxaban 15 mg orally twice daily for 21 days, followed by 20 mg orally once daily thereafter"
     ],
     "correct": 0,

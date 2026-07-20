@@ -1,12 +1,12 @@
 [
   {
     "num": 1,
-    "stem": "A 27-year-old woman is in her first trimester of pregnancy. She has been diagnosed this week with Graves disease, and her endocrinologist is looking for suggestions on implementing pharmacotherapy to both improve her symptoms (heat intolerance and weight loss) and help normalize her free T4 and thyroid-simulating hormone. Which is the most appropriate answer?",
+    "stem": "A 27-year-old woman is in her first trimester of pregnancy. She has been diagnosed this week with Graves disease, and her endocrinologist is looking for suggestions on implementing pharmacotherapy to both improve her symptoms (heat intolerance and weight loss) and help normalize her free T4 and thyroid-stimulating hormone. Which is the most appropriate answer?",
     "choices": [
       "Add radioactive iodine",
-      "Add propanolol",
+      "Add propranolol",
       "Add methimazole",
-      "Add propylthiouricil"
+      "Add propylthiouracil"
     ],
     "correctIdx": 3,
     "category": "1A5. Endocrinology",
@@ -205,7 +205,7 @@
     ],
     "correctIdx": 0,
     "category": "3A2. Preventative Care",
-    "exp": "Given the patient's CHAD2S2-VASc score of 0, oral anticoagulant therapy is not indicated; this patient's stroke/systemic embolism risk is considered low at 0.0%/y (Answer A is correct). Apixaban, edoxaban, and rivaroxaban would all be reasonable oral anticoagulants to initiate in the setting of an indication for such oral anticoagulant intervention (ie, CHAD2S2-VASc risk score 2 or greater in men or 3 or greater in women) (Answers B, C, and D are incorrect)."
+    "exp": "Given the patient's CHA2DS2-VASc score of 0, oral anticoagulant therapy is not indicated; this patient's stroke/systemic embolism risk is considered low at 0.0%/y (Answer A is correct). Apixaban, edoxaban, and rivaroxaban would all be reasonable oral anticoagulants to initiate in the setting of an indication for such oral anticoagulant intervention (ie, CHAD2S2-VASc risk score 2 or greater in men or 3 or greater in women) (Answers B, C, and D are incorrect)."
   },
   {
     "num": 17,
@@ -510,7 +510,7 @@
     "num": 40,
     "stem": "A 65-year-old patient (height 183 cm, weight 60 kg) is admitted to the ICU with pneumonia. Medical history is significant for hypertension and small cell lung cancer, for which he is receiving chemotherapy. His family reports that he has had a poor appetite because of the chemotherapy and that he has lost 10 kg in the past month. Vital signs are blood pressure 90/56 mm Hg and heart rate 104 beats/minute. Laboratory results are magnesium 1.4 mg/dL, phosphorus 2.1 mg/dL, K 3.2 mEq/L, Na 138 mEq/L, and WBC 20 × 103 cells/mm3. Which is the best approach for this patient?APotassium phosphate 30-mmol intravenous infusion, magnesium sulfate 4-g intravenous infusion; initiate enteral nutrition at 10 mL/hour and do not titrate until electrolyte improvement.",
     "choices": [
-      "Potassium phosphate 30-mmol intravenous infusion, magnesium sulfate 4-g intravenous infusion",
+      "Potassium phosphate 30-mmol intravenous infusion, magnesium sulfate 4-g intravenous infusion; initiate enteral nutrition at 10 mL/hour and do not titrate until electrolyte improvement",
       "Potassium chloride 20-mEq/L intravenous infusion, sodium phosphate 15-mmol intravenous infusion, magnesium sulfate 2-g intravenous infusion; initiate enteral nutrition at goal of 70 mL/hour",
       "Potassium phosphate 30-mmol intravenous infusion, magnesium sulfate 4-g intravenous infusion; initiate enteral nutrition at goal of 70 mL/hour",
       "Potassium chloride 20-mEq/L intravenous infusion, sodium phosphate 15-mmol intravenous infusion, magnesium sulfate 2-g intravenous infusion; initiate enteral nutrition at 10 mL/hour and do not titrate until electrolyte improvement"
@@ -612,7 +612,7 @@
   },
   {
     "num": 48,
-    "stem": "A 66-year-old woman is admitted to the hospital's general medicine unit with concerns of fatigue, malaise, constipation, and some mild confusion. Her other medical history includes hypertension, hyperlipidemia, and gastroesophageal reflux disease. Home medications include lisinopril 40 mg daily, hydrochlorothiazide 25 mg daily, vitamin D 2000 units daily, atorvastatin 20 mg daily, and pantoprazole 40 mg daily. Laboratory values include Na 135 mEq/L, K 3.9 mEq/L, SCr 1.2 mg/dL (baseline), glucose 140 mg/dL, calcium 11.2 g/dL, and albumin 4.0 g/dL. The medical team is considering administering zoledronic acid for hypercalcemia of malignancy (HOM). Which is most accurate regarding the patient's medication regimen and hypercalcemia?",
+    "stem": "A 66-year-old woman is admitted to the hospital's general medicine unit with concerns of fatigue, malaise, constipation, and some mild confusion. Her other medical history includes hypertension, hyperlipidemia, and gastroesophageal reflux disease. Home medications include lisinopril 40 mg daily, hydrochlorothiazide 25 mg daily, vitamin D 2000 units daily, atorvastatin 20 mg daily, and pantoprazole 40 mg daily. Laboratory values include Na 135 mEq/L, K 3.9 mEq/L, SCr 1.2 mg/dL (baseline), glucose 140 mg/dL, calcium 11.2 mg/dL, and albumin 4.0 g/dL. The medical team is considering administering zoledronic acid for hypercalcemia of malignancy (HOM). Which is most accurate regarding the patient's medication regimen and hypercalcemia?",
     "choices": [
       "Vitamin D administration will keep serum calcium concentrations lower over the long term",
       "Hydrochlorothiazide administration will help lower serum calcium concentrations",
@@ -790,7 +790,7 @@
     ],
     "correctIdx": 1,
     "category": "1C3. Women's Health (e.g., gynecology, obstetrics)",
-    "exp": "The oral contraceptives (combined and progestin-only) have a typical use efficacy of 91% for pregnancy prevention (Answers A and D are incorrect). Implants and IUDs have a typical use efficacy of >99% (Answer B is correct). The DMPA intramuscular injection has a typical use efficacy of 94% (Answer C is correct)."
+    "exp": "The oral contraceptives (combined and progestin-only) have a typical use efficacy of 91% for pregnancy prevention (Answers A and D are incorrect). Implants and IUDs have a typical use efficacy of >99% (Answer B is correct). The DMPA intramuscular injection has a typical use efficacy of 94% (Answer C is incorrect)."
   },
   {
     "num": 62,
@@ -803,7 +803,7 @@
     ],
     "correctIdx": 1,
     "category": "1C3. Women's Health (e.g., gynecology, obstetrics)",
-    "exp": "This patient is experiencing pregnancy-induced hypertension because she is currently further along than 20 weeks gestation and does not have a pre-existing history of hypertension. She is not experiencing any urgent warning signs and has not progressed to a diagnosis of pre-eclampsia; therefore, immediate delivery is not necessary because she is not at full term (Answer A is incorrect). The use of oral nifedipine is a safe and appropriate choice for pregnancy-induced hypertension (Answer B is correct). A magnesium sulfate infusion should only be used to prevent progression to eclampsia in the "
+    "exp": "This patient is experiencing pregnancy-induced hypertension because she is currently further along than 20 weeks gestation and does not have a pre-existing history of hypertension. She has preeclampsia without severe features (BP < 160/110 mm Hg with otherwise normal labs and no warning signs); therefore, expectant management with an antihypertensive is appropriate and immediate delivery is not necessary before 37 weeks (Answer A is incorrect). The use of oral nifedipine is a safe and appropriate choice for pregnancy-induced hypertension (Answer B is correct). A magnesium sulfate infusion should only be used to prevent progression to eclampsia in the "
   },
   {
     "num": 63,
@@ -816,7 +816,7 @@
     ],
     "correctIdx": 2,
     "category": "1A2. Cardiology",
-    "exp": "Patients with a surgical aortic bioprosthetic valve with an indication for anticoagulation because of AF and a CHA2DS2-VASc score of 2 can discontinue warfarin after 3-6 months and start guideline-directed anticoagulation such as rivaroxaban 20 mg orally daily (Answer C is correct). Although warfarin may be a reasonable anticoagulant for the prevention of stroke in a patient with AF, a higher INR target (3.0) would be indicated for this patient with a bioprosthetic aortic valve and an additional thrombotic risk factor (e.g., AF) (Answer A is incorrect). In a patient with a bioprosthetic aortic"
+    "exp": "Patients with a surgical aortic bioprosthetic valve with an indication for anticoagulation because of AF and a CHA2DS2-VASc score of 2 can discontinue warfarin after 3-6 months and start guideline-directed anticoagulation such as rivaroxaban 20 mg orally daily (Answer C is correct). Although warfarin may be a reasonable anticoagulant for the prevention of stroke in a patient with AF, the appropriate warfarin target for a bioprosthetic aortic valve is an INR of 2.5 (range 2.0-3.0); Answer A is inferior because the patient is seeking an alternative to warfarin, and a DOAC is acceptable for AF beyond 3 months after bioprosthetic valve placement (Answer A is incorrect). In a patient with a bioprosthetic aortic"
   },
   {
     "num": 64,
@@ -933,7 +933,7 @@
     ],
     "correctIdx": 1,
     "category": "2C2. Non-Formulary Drug Requests and Therapeutic Interchange",
-    "exp": "Clopidogrel is a tablet that can be crushed without affecting its efficacy (Answer B is correct). Metoprolol succinate is extended release and should not be crushed (Answer A is incorrect). Duloxetine and pantoprazole are both delayed-release capsules, so they should not be crushed but may be opened to be administered by G-tube (Answers C and D are incorrect)."
+    "exp": "Clopidogrel is a tablet that can be crushed without affecting its efficacy (Answer B is correct). Metoprolol succinate is extended release and should not be crushed (Answer A is incorrect). Duloxetine and omeprazole are both delayed-release capsules, so they should not be crushed but may be opened to be administered by G-tube (Answers C and D are incorrect)."
   },
   {
     "num": 73,
@@ -1037,7 +1037,7 @@
     ],
     "correctIdx": 0,
     "category": "1A4. Pain Management",
-    "exp": "The participants enrolled in the initial trial were asked to recall their symptoms over the previous month and during usual conditions (at the start of the study). They were again asked to recall their symptoms over the month when they knowingly received therapy with the open-label study drug. This study design is subject to recall bias because the outcomes rely on patients' retrospective assessment of their symptoms (Answer A is correct). Recall bias may be mitigated by selecting objective measures for outcomes of interest and assigning participants to blinded treatment, when possible. Public"
+    "exp": "This retrospective study asks patients with newly diagnosed PUD to recall how frequently and at what doses they used NSAIDs in the 6 months preceding diagnosis. Because patients who already have the disease tend to search their memory for possible exposures more thoroughly (and differently) than unaffected people, self-reported exposure data collected after the outcome is prone to recall bias, which can distort the estimated NSAID–PUD association (Answer A is correct). Recall bias may be mitigated by using objective exposure measures (e.g., pharmacy dispensing records) rather than patient recall. Publication bias reflects selective publication of positive studies, channeling bias occurs when prognosis or characteristics influence which treatment a patient receives, and selection bias arises from how participants are enrolled or retained (Answers B, C, and D are incorrect). This study design is subject to recall bias because the outcomes rely on patients' retrospective assessment of their symptoms (Answer A is correct). Recall bias may be mitigated by selecting objective measures for outcomes of interest and assigning participants to blinded treatment, when possible. Public"
   },
   {
     "num": 81,
@@ -1193,7 +1193,7 @@
     ],
     "correctIdx": 3,
     "category": "1B2. Geriatrics",
-    "exp": "According to the Global Initiative for Chronic Obstructive Lung Disease guidelines, this patient's asthma is classified as group A because she has not had any exacerbations within the past year and her CAT score is less than 10. A long-acting anticholinergic-muscarinic antagonist (LAMA) is preferred for group A (Answer D is correct). An inhaled corticosteroid (ICS)-long-acting β2-agonist (LABA) combination is not recommended in the treatment of COPD (Answer A is incorrect). A LAMA-LABA-ICS combination is considered an initial treatment only in group E if the patient has an eosinophil count of "
+    "exp": "According to the Global Initiative for Chronic Obstructive Lung Disease guidelines, this patient's COPD is classified as group A because she has not had any exacerbations within the past year and her CAT score is less than 10. A long-acting anticholinergic-muscarinic antagonist (LAMA) is preferred for group A (Answer D is correct). An inhaled corticosteroid (ICS)-long-acting β2-agonist (LABA) combination is not recommended in the treatment of COPD (Answer A is incorrect). A LAMA-LABA-ICS combination is considered an initial treatment only in group E if the patient has an eosinophil count of "
   },
   {
     "num": 93,
@@ -1206,7 +1206,7 @@
     ],
     "correctIdx": 1,
     "category": "2B6. Patient and Caregiver Education and Counseling",
-    "exp": "The patient has hypoalbuminemia. Phenytoin concentrations should be corrected for low albumin. The patient's corrected phenytoin serum concentration is 8.4 mg/L, below the lower end of the therapeutic range (10-20 mg/L). The dosage should be increased (Answer B is correct). The dosage should be increased slowly because of phenytoin's nonlinear kinetics; doubling the dose may lead to excessive exposure and contribute to toxicity (Answer A is incorrect). Because the patient is not exhibiting seizures, aggressive dose titrations are not essential. Decreasing or maintaining the current dose is not"
+    "exp": "The patient has hypoalbuminemia. Phenytoin concentrations should be corrected for low albumin. The patient's corrected phenytoin serum concentration is approximately 10.8 mg/L (6.5 / [0.2 x 2.5 + 0.1]), at the low end of the therapeutic range (10-20 mg/L); because concurrent carbamazepine (an enzyme inducer) continues to lower phenytoin exposure, a modest dose increase is still warranted. The dosage should be increased (Answer B is correct). The dosage should be increased slowly because of phenytoin's nonlinear kinetics; doubling the dose may lead to excessive exposure and contribute to toxicity (Answer A is incorrect). Because the patient is not exhibiting seizures, aggressive dose titrations are not essential. Decreasing or maintaining the current dose is not"
   },
   {
     "num": 94,
@@ -1219,7 +1219,7 @@
     ],
     "correctIdx": 2,
     "category": "3C4. Informatics and Health Information Technology",
-    "exp": "The CDC is responsible for developing guidelines and resources to aid in disaster relief, including management of the Strategic National Stockpile (Answer C is incorrect). Emergency preparedness professionals at state and local health departments perform hazard vulnerability analyses and help implement plans in an emergency situation specific for the area of their responsibility, which may include distribution of medications. However, they do not help maintain a stockpile (Answer B is incorrect). Trust for America's Health evaluates 10 indicators of emergency preparedness to follow overall tre"
+    "exp": "The CDC is responsible for developing guidelines and resources to aid in disaster relief, including management of the Strategic National Stockpile (Answer C is correct). Emergency preparedness professionals at state and local health departments perform hazard vulnerability analyses and help implement plans in an emergency situation specific for the area of their responsibility, which may include distribution of medications. However, they do not help maintain a stockpile (Answer B is incorrect). Trust for America's Health evaluates 10 indicators of emergency preparedness to follow overall tre"
   },
   {
     "num": 95,
@@ -1323,7 +1323,7 @@
     ],
     "correctIdx": 3,
     "category": "1A2. Cardiology",
-    "exp": "All individuals are recommended to receive an annual influenza vaccine. In addition, this patient is due for a Tdap booster, which is recommended every 10 years. Because the patient had a previous dose of Tdap 10 years ago, either a tetanus, diphtheria (Td) or a Tdap booster is appropriate in this situation (Answer D is correct). Answer A is incorrect because it does not include Td or Tdap. The patient is not a candidate for the RZV because of age younger than 50 and lack of immunocompromising conditions (Answer B is incorrect). Answer C is incorrect because it does not include IIV, and the pa"
+    "exp": "All individuals are recommended to receive an annual influenza vaccine. In addition, this patient is due for a Tdap booster, which is recommended every 10 years. Because the patient's last Tdap was 11 years ago (>10 years), either a Td or Tdap booster is appropriate in this situation (Answer D is correct). Answer A is incorrect because it does not include Td or Tdap. The patient is not a candidate for the RZV because of age younger than 50 and lack of immunocompromising conditions (Answer B is incorrect). Answer C is incorrect because it does not include IIV, and the pa"
   },
   {
     "num": 103,
@@ -1496,7 +1496,7 @@
   },
   {
     "num": 116,
-    "stem": "A 36-year-old woman with no significant medical history presents to the emergency department with the \"worst headache of my life.\"",
+    "stem": "A 36-year-old woman with no significant medical history presents to the emergency department with the \"worst headache of my life.\" Noncontrast head CT confirms a subarachnoid hemorrhage. Which is the most appropriate intervention for acute management at this time? Noncontrast head CT confirms a subarachnoid hemorrhage. Which is the most appropriate intervention for acute management at this time?",
     "choices": [
       "Nimodipine 60 mg orally every 4 hours",
       "Recombinant activated factor VII 90 mcg/kg intravenously once",
@@ -1531,7 +1531,7 @@
     ],
     "correctIdx": 0,
     "category": "3C3. Healthcare Management and Quality Improvement",
-    "exp": "Patients may develop hypotension and arrhythmias, notably bradycardia, during cooling. Initiating esmolol would worsen the patient's hemodynamic stability (Answer B is incorrect). Paralytics are not mandatory for shivering prevention during the rewarming phase and should be avoided, if possible (Answer C is incorrect). Therapeutic hypothermia increases the risk of coagulopathy and may result in bleeding (Answer D is incorrect). The maintenance phase of therapeutic hyperthermia may cause reduced insulin secretion and sensitivity, placing patients at risk of hyperglycemia. Therefore, blood gluco"
+    "exp": "Patients may develop hypotension and arrhythmias, notably bradycardia, during cooling. Initiating esmolol would worsen the patient's hemodynamic stability (Answer B is incorrect). Paralytics are not mandatory for shivering prevention during the rewarming phase and should be avoided, if possible (Answer C is incorrect). Therapeutic hypothermia increases the risk of coagulopathy and may result in bleeding (Answer D is incorrect). The maintenance phase of therapeutic hypothermia may cause reduced insulin secretion and sensitivity, placing patients at risk of hyperglycemia. Therefore, blood gluco"
   },
   {
     "num": 119,
@@ -1587,7 +1587,7 @@
   },
   {
     "num": 123,
-    "stem": "A 48-year-old woman who has a 12-year history of type 2 diabetes was recently diagnosed with gastroparesis. Her symptoms include bloating and nausea during mealtimes. Her A1c has been uncontrolled for over a year. Her current A1c this week is 8.8% (personal goal less than 7%). Her current therapy for hyperglycemia includes metformin and insulin glargine. Which agent, if added to her current regimen, would most likely exacerbate her gastroparesis symptoms?ASemaglutide.",
+    "stem": "A 48-year-old woman who has a 12-year history of type 2 diabetes was recently diagnosed with gastroparesis. Her symptoms include bloating and nausea during mealtimes. Her A1c has been uncontrolled for over a year. Her current A1c this week is 8.8% (personal goal less than 7%). Her current therapy for hyperglycemia includes metformin and insulin glargine. Which agent, if added to her current regimen, A 48-year-old woman who has a 12-year history of type 2 diabetes was recently diagnosed with gastroparesis. Her symptoms include bloating and nausea during mealtimes. Her A1c has been uncontrolled for over a year. Her current A1c this week is 8.8% (personal goal less than 7%). Her current therapy for hyperglycemia includes metformin and insulin glargine. Which agent, if added to her current regimen, would most likely exacerbate her gastroparesis symptoms?",
     "choices": [
       "Semaglutide",
       "Empagliflozin",
@@ -1626,7 +1626,7 @@
   },
   {
     "num": 126,
-    "stem": "An interprofessional heart failure clinic is developing a program to assess patients' future adherence to guideline-directed medication therapy for a complex regimen of medications. Patients are to receive extensive medication counseling by the pharmacist during their first visit with the team, and their future adherence will be assessed during this session. Which tool would be most useful for assessing effective education by predicting future adherence to these heart failure drug regimens?AMorisky Medication Adherence Scale.",
+    "stem": "An interprofessional heart failure clinic is developing a program to assess patients' future adherence to guideline-directed medication therapy for a complex regimen of medications. Patients are to receive extensive medication counseling by the pharmacist during their first visit with the team, and their future adherence will be assessed during this session. Which tool would be most useful for assessing effective education by An interprofessional heart failure clinic is developing a program to assess patients' future adherence to guideline-directed medication therapy for a complex regimen of medications. Patients are to receive extensive medication counseling by the pharmacist during their first visit with the team, and their future adherence will be assessed during this session. Which tool would be most useful for assessing effective education by predicting future adherence to these heart failure drug regimens?",
     "choices": [
       "Morisky Medication Adherence Scale",
       "Newest Vital Sign assessment",
@@ -1639,7 +1639,7 @@
   },
   {
     "num": 127,
-    "stem": "A pharmacist conducts a PubMed search to find any articles describing an increased risk of major bleeding from interactions involving direct oral anticoagulants (DOACs) and phenytoin-ideally, clinical studies that included older adult patients. The pharmacist combines the Medical Subject Headings (MeSH) terms for each individual DOAC (combined with \"AND\") with the MeSH terms for drug interactions \"AND\" phenytoin. The search yields few articles. Which step would be best for the pharmacist to take to broaden the search results?AChange the \"AND\" combining the DOACs to \"OR.\"",
+    "stem": "A pharmacist conducts a PubMed search to find any articles describing an increased risk of major bleeding from interactions involving direct oral anticoagulants (DOACs) and phenytoin-ideally, clinical studies that included older adult patients. The pharmacist combines the Medical Subject Headings (MeSH) terms for each individual DOAC (combined with \"AND\") with the MeSH terms for drug interactions \"AND\" phenytoin. The search yields few articles. A pharmacist conducts a PubMed search to find any articles describing an increased risk of major bleeding from interactions involving direct oral anticoagulants (DOACs) and phenytoin-ideally, clinical studies that included older adult patients. The pharmacist combines the Medical Subject Headings (MeSH) terms for each individual DOAC (combined with \"AND\") with the MeSH terms for drug interactions \"AND\" phenytoin. The search yields few articles. Which step would be best for the pharmacist to take to broaden the search results?",
     "choices": [
       "Combine the MeSH terms for each DOAC with \"OR\" and then combine with the MeSH term for phenytoin using \"AND\"",
       "Add geriatric as a keyword",
@@ -1691,7 +1691,7 @@
   },
   {
     "num": 131,
-    "stem": "A 43-year-old patient who is living with HIV was hospitalized 2 years ago for treatment of cryptococcal meningitis. At that time, the patient had a viral load of 800,000 copies/mL and a CD4 count of 16 cells/mm3. The patient was initiated on tenofovir alafenamide/emtricitabine/elvitegravir/cobicistat 3 weeks after being discharged from the hospital. They are currently receiving fluconazole 200 mg/day as secondary prophylaxis. The viral load at today's visit (1 year later) is undetectable, and the CD4 count is 440 cells/mm3. Which is the best recommendation for the patient's fluconazole prophylaxis?ADiscontinue fluconazole; no further prophylaxis is necessary unless the patient's CD4 count decreases to less than 100 cells/mm3.",
+    "stem": "A 43-year-old patient who is living with HIV was hospitalized 2 years ago for treatment of cryptococcal meningitis. At that time, the patient had a viral load of 800,000 copies/mL and a CD4 count of 16 cells/mm3. The patient was initiated on tenofovir alafenamide/emtricitabine/elvitegravir/cobicistat 3 weeks after being discharged from the hospital. They are currently receiving fluconazole 200 mg/day as secondary prophylaxis. The viral load at today's visit (1 year later) is undetectable, and the CD4 count is 440 cells/mm3. A 43-year-old patient who is living with HIV was hospitalized 2 years ago for treatment of cryptococcal meningitis. At that time, the patient had a viral load of 800,000 copies/mL and a CD4 count of 16 cells/mm3. The patient was initiated on tenofovir alafenamide/emtricitabine/elvitegravir/cobicistat 3 weeks after being discharged from the hospital. They are currently receiving fluconazole 200 mg/day as secondary prophylaxis. The viral load at today's visit (1 year later) is undetectable, and the CD4 count is 440 cells/mm3. Which is the best recommendation for the patient's fluconazole prophylaxis?",
     "choices": [
       "Continue the current fluconazole dose and extend prophylaxis for 1 year",
       "Fluconazole should be continued, but the dose can be changed to 400 mg once weekly",

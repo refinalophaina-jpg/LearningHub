@@ -667,7 +667,7 @@
     "term": "Steady State",
     "abbrev": "Css",
     "cat": "PK/PD",
-    "def": "Input = output; constant plasma concentration. Reached ~5 half-lives. Css = (Dose/τ)/(CL × F).",
+    "def": "Input = output; constant plasma concentration. Reached ~5 half-lives. Css = (F × Dose/τ)/CL.",
     "related": [
       "Half-Life",
       "Clearance",
@@ -913,7 +913,7 @@
     "term": "Ceiling Effect",
     "abbrev": "",
     "cat": "Pharmacology",
-    "def": "Maximum response that cannot increase with further dose. Aspirin analgesia has ceiling; not anti-inflammatory.",
+    "def": "Maximum response that cannot increase with further dose. Aspirin/NSAID analgesia shows a ceiling, whereas anti-inflammatory effect continues at higher doses.",
     "related": [
       "Efficacy",
       "Emax Model",
@@ -926,7 +926,7 @@
     "term": "Cholinergic Effect",
     "abbrev": "",
     "cat": "Pharmacology",
-    "def": "Muscarinic/nicotinic activation: SLUDGE (salivation, lacrimation, urination, defecation, GI, emesis), mydriasis, bradycardia, bronchoconstriction.",
+    "def": "Muscarinic/nicotinic activation: SLUDGE (salivation, lacrimation, urination, defecation, GI, emesis), miosis, bradycardia, bronchoconstriction.",
     "related": [
       "Anticholinergic",
       "Parasympathomimetic",
@@ -1121,7 +1121,7 @@
     "term": "Mechanism-Based Inhibition",
     "abbrev": "MBI",
     "cat": "Pharmacology",
-    "def": "Irreversible inhibition where enzyme converts inhibitor to reactive intermediate covalently binding enzyme. Cimetidine, fluoxetine, ketoconazole.",
+    "def": "Irreversible inhibition where enzyme converts inhibitor to reactive intermediate covalently binding enzyme. Examples: erythromycin/clarithromycin, diltiazem, verapamil, ritonavir.",
     "related": [
       "Irreversible Inhibition",
       "Time-Dependent Inhibition",
@@ -1238,7 +1238,7 @@
     "term": "Time-Dependent Inhibition",
     "abbrev": "TDI",
     "cat": "Pharmacology",
-    "def": "Enzyme inhibition increasing over time via mechanism-based inactivation. Example: cimetidine TDI of CYP1A2.",
+    "def": "Enzyme inhibition increasing over time via mechanism-based inactivation. Example: erythromycin/clarithromycin TDI of CYP3A4.",
     "related": [
       "Mechanism-Based Inhibition",
       "CYP450",
@@ -1576,7 +1576,7 @@
     "term": "CHA2DS2-VASc Score",
     "abbrev": "",
     "cat": "Cardiovascular",
-    "def": "Stroke risk in AFib: C=CHF, H=HTN, A=age≥75 (2 pts), D=DM, S=stroke (2 pts), V=vascular, A=age 65-74, Sc=sex female. Score ≥2 → anticoagulation.",
+    "def": "Stroke risk in AFib: C=CHF, H=HTN, A=age≥75 (2 pts), D=DM, S=stroke (2 pts), V=vascular, A=age 65-74, Sc=sex female. Anticoagulation recommended at score ≥2 in men or ≥3 in women.",
     "related": [
       "Atrial Fibrillation",
       "Anticoagulation",
@@ -2031,7 +2031,7 @@
     "term": "NYHA Functional Classification",
     "abbrev": "NYHA",
     "cat": "Cardiovascular",
-    "def": "HF symptom classification: Class I = no symptoms, II = dyspnea exertion, III = dyspnea rest, IV = dyspnea rest. Guides therapy intensity.",
+    "def": "HF symptom classification: Class I = no symptoms/no limitation, II = symptoms with ordinary activity, III = symptoms with less-than-ordinary activity (marked limitation), IV = symptoms at rest. Guides therapy intensity.",
     "related": [
       "Heart Failure",
       "Dyspnea",
@@ -2083,7 +2083,7 @@
     "term": "PCSK9 Inhibitor",
     "abbrev": "",
     "cat": "Cardiovascular",
-    "def": "Monoclonal antibodies (evolocumab, alirocumab) inhibiting PCSK9, increase LDL receptor degradation. LDL reduction 50-60%. Familial hypercholesterolemia, CAD. High cost.",
+    "def": "Monoclonal antibodies (evolocumab, alirocumab) inhibiting PCSK9, decreasing LDL receptor degradation to increase LDL receptor recycling. LDL reduction 50-60%. Familial hypercholesterolemia, CAD. High cost.",
     "related": [
       "Statin",
       "LDL",
@@ -2392,10 +2392,10 @@
     "src": "Katzung"
   },
   {
-    "term": "Unfractioned Heparin",
+    "term": "Unfractionated Heparin",
     "abbrev": "UFH",
     "cat": "Cardiovascular",
-    "def": "Direct thrombin inhibitor via antithrombin complex. Rapid IV/SC onset. Shorter half-life than LMWH. Requires PTT monitoring. ACS, VTE, cardiopulmonary bypass.",
+    "def": "Indirect thrombin (and factor Xa) inhibitor acting via antithrombin. Rapid IV/SC onset. Shorter half-life than LMWH. Requires aPTT monitoring. ACS, VTE, cardiopulmonary bypass.",
     "related": [
       "Anticoagulation",
       "LMWH",
@@ -2556,7 +2556,7 @@
     "term": "CAP (Community-Acquired Pneumonia)",
     "abbrev": "CAP",
     "cat": "Infectious Disease",
-    "def": "Pneumonia acquired outside healthcare settings. Severity stratified by CURB-65 (≥2 = hospitalize) or PSI/PORT score. Outpatient: amoxicillin + macrolide or doxycycline (no comorbidities) or resp. fluoroquinolone (with comorbidities). Inpatient non-ICU: beta-lactam + macrolide or resp. fluoroquinolone. ICU: beta-lactam + macrolide ± antipseudomonal. Duration: 5 days if responding.",
+    "def": "Outpatient no comorbidities: amoxicillin OR doxycycline OR macrolide (if local pneumococcal resistance <25%). With comorbidities: amoxicillin/clavulanate or cephalosporin + macrolide/doxycycline, OR respiratory fluoroquinolone.",
     "related": [
       "CURB-65",
       "Fluoroquinolone",
@@ -2584,7 +2584,7 @@
   {
     "term": "Caspofungin",
     "cat": "Infectious Disease",
-    "def": "Echinocandin antifungal that inhibits beta-1,3-D-glucan synthesis in the fungal cell wall. First-line for Candida bloodstream infections and invasive candidiasis (superior to fluconazole per ASPECT-C trial). No significant renal toxicity. Loading dose 70mg, then 50mg daily. NOT effective for CNS infections (poor penetration) or Cryptococcus. Hepatically metabolized; reduce maintenance dose in Child-Pugh B/C.",
+    "def": "First-line for Candida bloodstream infections and invasive candidiasis (echinocandins preferred over fluconazole for initial therapy).",
     "related": [
       "Echinocandin",
       "Candida",
@@ -2812,7 +2812,7 @@
     "term": "Procalcitonin",
     "abbrev": "PCT",
     "cat": "Infectious Disease",
-    "def": "Biomarker of bacterial infection produced by C-cells when stimulated by bacterial endotoxins. Rises within 6-12h of infection, peaks 24h, returns to normal as infection resolves. PCT-guided therapy reduces antibiotic duration by 2-3 days without worse outcomes (PRORATA, SAPS trials). Normal <0.25 mcg/L. Limitations: elevated in some viral infections (influenza), trauma, post-surgical states; less useful for localized infections.",
+    "def": "Biomarker of bacterial infection; during systemic infection procalcitonin is produced ubiquitously by parenchymal tissues (liver, lung, etc.) in response to bacterial endotoxins and inflammatory cytokines (baseline is from thyroid C-cells).",
     "related": [
       "Antimicrobial Stewardship",
       "Sepsis",
@@ -2842,7 +2842,7 @@
     "term": "TMP-SMX (Trimethoprim-Sulfamethoxazole)",
     "abbrev": "TMP-SMX",
     "cat": "Infectious Disease",
-    "def": "Dihydrofolate reductase inhibitor combination with synergistic bactericidal activity against many gram-positives and gram-negatives. First-line for PJP treatment/prophylaxis, CA-MRSA SSTIs, UTIs caused by susceptible organisms, Nocardia, Listeria. Avoid with eGFR <15 (renal elimination). Key ADRs: hyperkalemia (trimethoprim blocks tubular K+ excretion — behaves like potassium-sparing diuretic), bone marrow suppression, rash, hepatotoxicity. Sulfa allergy cross-reactivity with other sulfonamides is rare but considered.",
+    "def": "Sequential folate-synthesis inhibitor combination (trimethoprim = dihydrofolate reductase inhibitor; sulfamethoxazole = dihydropteroate synthase inhibitor) with synergistic bactericidal activity against many gram-positives and gram-negatives.",
     "related": [
       "PJP Prophylaxis",
       "MRSA SSTI",
@@ -2857,7 +2857,7 @@
     "term": "VAP (Ventilator-Associated Pneumonia)",
     "abbrev": "VAP",
     "cat": "Infectious Disease",
-    "def": "Pneumonia occurring ≥48-72h after endotracheal intubation. Same pathogens as HAP plus higher risk of MDROs in long ICU stays. Empiric: antipseudomonal beta-lactam ± vancomycin (MRSA risk per local antibiogram >20%). VAP bundle: HOB elevation 30-45°, oral chlorhexidine, daily sedation interruption, early extubation readiness assessment. Duration: 7 days non-inferior to 14 days (PRORATA).",
+    "def": "Duration: 7-8 days non-inferior to 14-15 days (Chastre et al. PneumA, JAMA 2003).",
     "related": [
       "HAP",
       "MRSA",
@@ -2871,7 +2871,7 @@
   {
     "term": "Vancomycin",
     "cat": "Infectious Disease",
-    "def": "Glycopeptide antibiotic that inhibits cell wall synthesis by binding D-Ala-D-Ala terminus of peptidoglycan. Active against gram-positive organisms including MRSA and VRE (VanB). Time-dependent killing; monitor AUC24/MIC 400-600 (ASHP/IDSA/SIDP 2020 guideline) — trough-only monitoring abandoned for serious infections. IV for systemic; oral for CDI (not absorbed). Initial dose: 15-20 mg/kg q8-12h (CrCl-dependent). Use Bayesian software for subsequent dosing.",
+    "def": "Active against gram-positive organisms including MRSA; NOT active against VRE (both VanA and VanB gene clusters confer vancomycin resistance — VanB retains teicoplanin susceptibility).",
     "related": [
       "MRSA",
       "AUC/MIC",
@@ -3005,7 +3005,7 @@
   {
     "term": "Driving Pressure",
     "cat": "Critical Care",
-    "def": "Transpulmonary pressure difference = Plateau pressure - PEEP. Reflects the pressure that inflates the baby lung (functional lung units). Target: ≤15 cmH2O. Amato et al. 2015 demonstrated that driving pressure is the strongest predictor of ARDS mortality (stronger than either Vt or plateau pressure alone). If driving pressure is elevated, consider reducing Vt or increasing PEEP rather than simply adjusting one variable.",
+    "def": "Respiratory-system driving pressure (ΔP) = Plateau pressure - PEEP (equals tidal volume / respiratory-system compliance).",
     "related": [
       "ARDS",
       "Lung-Protective Ventilation",
@@ -3105,7 +3105,7 @@
   {
     "term": "Lactate (Critical Care)",
     "cat": "Critical Care",
-    "def": "End-product of anaerobic metabolism. Elevated lactate (>2 mmol/L) indicates tissue hypoperfusion or impaired clearance. Lactate >4 mmol/L = septic shock criterion (Sepsis-3). Serial lactate measurements guide resuscitation (target clearance ≥10% per 2h or normalization). Important caveat: metformin (biguanide) can cause lactic acidosis especially in renal impairment or contrast exposure — hold before iodinated contrast.",
+    "def": "Lactate >2 mmol/L (plus vasopressor requirement to maintain MAP ≥65 despite adequate fluid resuscitation) = septic shock criterion (Sepsis-3); lactate >4 mmol/L reflects severe hypoperfusion and markedly higher mortality but is not the Sepsis-3 threshold.",
     "related": [
       "Septic Shock",
       "Tissue Perfusion",
@@ -3208,7 +3208,7 @@
     "term": "Stress Ulcer Prophylaxis",
     "abbrev": "SUP",
     "cat": "Critical Care",
-    "def": "Prevention of gastric stress ulcers in mechanically ventilated ICU patients. Indications: mechanical ventilation >48h (strongest), coagulopathy, history of GI bleed within 1 year, corticosteroids, traumatic brain injury. PPIs (pantoprazole) are most used; histamine-2 blockers (famotidine) equally effective per SUP-ICU trial (but PPIs were associated with slightly more C. diff and pneumonia in some studies). Discontinue upon ICU discharge or when tolerating oral feeds.",
+    "def": "histamine-2 blockers (famotidine) an alternative; the PEPTIC trial found no clear mortality difference between PPI and H2 blocker (SUP-ICU compared pantoprazole vs placebo)",
     "related": [
       "PPI",
       "H2 Blocker",
@@ -3466,7 +3466,7 @@
   {
     "term": "Phenytoin",
     "cat": "Neurology",
-    "def": "Voltage-gated sodium channel blocker for partial and tonic-clonic seizures. Classic narrow therapeutic index drug (target: 10-20 mcg/mL free; correct for albumin). Michaelis-Menten (nonlinear, zero-order at therapeutic levels) — small dose increases cause large plasma concentration changes. IV: fosphenytoin preferred (water-soluble prodrug; less injection site toxicity). IV phenytoin: max infusion rate 50 mg/min (hypotension, arrhythmia). Strong CYP inducer (CYP2C9, CYP3A4, CYP2C19).",
+    "def": "Classic narrow therapeutic index drug (target total level 10-20 mcg/mL; free/unbound target 1-2 mcg/mL; correct total for low albumin).",
     "related": [
       "Michaelis-Menten Kinetics",
       "Narrow TI Drug",
@@ -3657,7 +3657,7 @@
     "term": "Hemodialysis Clearance",
     "abbrev": "HD clearance",
     "cat": "Nephrology",
-    "def": "Removal of drugs during intermittent hemodialysis depends on: molecular weight (smaller = more cleared), protein binding (free drug cleared), Vd (large Vd = less cleared — amiodarone), water solubility. HD-cleared drugs requiring supplemental doses post-HD: vancomycin (re-dose after HD session if trough <15), aminoglycosides (dose after HD), levetiracetam (supplemental dose 250-500mg), lithium (dose after). NOT HD-cleared: vancomycin OLD high-flux vs standard (check with pharmacy). Always check PK reference for dialysis dosing.",
+    "def": "Removal of drugs during intermittent hemodialysis depends on: molecular weight (smaller = more cleared), protein binding (free drug cleared), Vd (large Vd = less cleared — amiodarone), water solubility. HD-cleared drugs requiring supplemental doses post-HD: vancomycin (re-dose after HD session if trough <15), aminoglycosides (dose after HD), levetiracetam (supplemental dose 250-500mg), lithium (dose after). Vancomycin clearance depends on membrane type: high-flux dialyzers remove vancomycin (re-dose after HD if trough low), whereas older low-flux membranes remove little. Always check PK reference for dialysis dosing.",
     "related": [
       "Renal Replacement Therapy",
       "Vancomycin",
@@ -3774,7 +3774,7 @@
     "term": "TLS (Tumor Lysis Syndrome)",
     "abbrev": "TLS",
     "cat": "Hematology",
-    "def": "Metabolic emergency from massive cancer cell lysis releasing intracellular contents. Lab TLS: ≥2 of: uric acid ≥8 mg/dL, K ≥6 mEq/L, phosphorus ≥6.5 mg/dL, calcium ≤7 mg/dL. Clinical TLS: lab TLS + AKI, seizure, arrhythmia, or death. Prevention: aggressive IVF (aggressive hydration), allopurinol (24-72h before chemotherapy for moderate risk). Treatment: rasburicase (recombinant uricase — metabolizes uric acid; CONTRAINDICATED in G6PD deficiency due to hemolytic anemia). Avoid rasburicase with G6PD deficiency.",
+    "def": "Lab TLS: ≥2 of: uric acid ≥8 mg/dL, K ≥6 mEq/L, phosphorus ≥4.5 mg/dL (adults; ≥6.5 mg/dL in children), calcium ≤7 mg/dL.",
     "related": [
       "Rasburicase",
       "Allopurinol",
@@ -3924,7 +3924,7 @@
     "term": "INR (International Normalized Ratio)",
     "abbrev": "INR",
     "cat": "Lab Values",
-    "def": "Standardized measure of extrinsic coagulation pathway (factors II, VII, X, fibrinogen — vitamin K-dependent). Normal: 0.9-1.1. Therapeutic range for warfarin in AF or VTE: 2.0-3.0; mechanical mitral valve: 2.5-3.5; bileaflet aortic valve + no other risk factors: 2.0-3.0. TTR (time in therapeutic range) >70% associated with better outcomes. Elevated INR: liver disease, warfarin, vitamin K deficiency, DIC, coagulopathy.",
+    "def": "Standardized measure of the extrinsic coagulation pathway (factors II, VII, X, and fibrinogen); factors II, VII, IX, and X are the vitamin K-dependent factors.",
     "related": [
       "Warfarin",
       "TTR",
@@ -4265,7 +4265,7 @@
   {
     "term": "CYP3A4",
     "cat": "Pharmacology",
-    "def": "Most abundant hepatic CYP enzyme (~50% of all CYP-mediated drug metabolism). Metabolizes >50% of all drugs. Key substrates: statins (simvastatin, atorvastatin), cyclosporine, tacrolimus, midazolam, fentanyl, alprazolam, amiodarone, many HIV medications. Strong inhibitors: azole antifungals (fluconazole, itraconazole, ketoconazole, posaconazole), clarithromycin, ritonavir, grapefruit juice. Strong inducers: rifampin (most potent), carbamazepine, phenytoin, phenobarbital, St. John's Wort — can reduce drug levels by 80-90%.",
+    "def": "Strong inhibitors: azole antifungals (itraconazole, ketoconazole, posaconazole, voriconazole), clarithromycin, ritonavir, grapefruit juice (fluconazole is a moderate CYP3A4 inhibitor).",
     "related": [
       "CYP Inhibitor",
       "CYP Inducer",
@@ -4365,7 +4365,7 @@
   {
     "term": "Methanol/Ethylene Glycol Toxicity",
     "cat": "Pharmacology",
-    "def": "Both cause high anion gap metabolic acidosis via toxic metabolites (formaldehyde/formic acid from methanol; oxalic acid/glycolic acid from ethylene glycol — calcium oxalate crystals in urine → AKI). Elevated osmolal gap (early, before metabolism). Treatment: fomepizole (4-methylpyrazole — preferred ADH inhibitor; 15 mg/kg loading) or ethanol; folate for methanol (enhances formic acid metabolism); hemodialysis for severe cases (MOUD: methanol >25 mg/dL, pH <7.15, renal failure, visual symptoms). Ethylene glycol: calcium supplementation (binds oxalate); pyridoxine + thiamine.",
+    "def": "Both cause high anion gap metabolic acidosis via toxic metabolites (formaldehyde/formic acid from methanol; oxalic acid/glycolic acid from ethylene glycol — calcium oxalate crystals in urine → AKI). Elevated osmolal gap (early, before metabolism). Treatment: fomepizole (4-methylpyrazole — preferred ADH inhibitor; 15 mg/kg loading) or ethanol; folate for methanol (enhances formic acid metabolism); hemodialysis for severe cases (indications: methanol level >25 mg/dL, pH <7.15, renal failure, visual symptoms). Ethylene glycol: calcium supplementation (binds oxalate); pyridoxine + thiamine.",
     "related": [
       "Osmolal Gap",
       "Anion Gap",
@@ -4707,7 +4707,7 @@
   {
     "term": "Ezetimibe",
     "cat": "Cardiovascular",
-    "def": "Cholesterol absorption inhibitor that blocks Niemann-Pick C1-Like 1 (NPC1L1) protein in intestinal brush border, reducing intestinal cholesterol absorption by ~55%. Reduces LDL by additional 15-25% when added to statin. IMPROVE-IT trial: ezetimibe + simvastatin vs simvastatin alone after ACS → 6.4% vs 7.2% MACE (small but significant benefit; first non-statin to show incremental CV benefit). Minimal adverse effects. Use in combination with statins when LDL target not achieved or statin intolerant.",
+    "def": "IMPROVE-IT trial: ezetimibe + simvastatin vs simvastatin alone after ACS → 32.7% vs 34.7% MACE at 7 years (HR 0.936, p=0.016; small but significant benefit; first non-statin to show incremental CV benefit).",
     "related": [
       "LDL",
       "Statin",
@@ -4865,7 +4865,7 @@
   {
     "term": "Diuretic Resistance",
     "cat": "Nephrology",
-    "def": "Inadequate natriuretic response despite adequate diuretic doses. Mechanisms: dietary sodium non-restriction, braking phenomenon (compensatory renal Na reabsorption after diuresis), post-dose hypovolemia, reduced renal perfusion, drug absorption issues (oral furosemide bioavailability 10-80%). Management: sodium restriction (<2g/day), IV over oral, switch to torsemide (better oral bioavailability), add metolazone 30-60 min before loop diuretic (sequential nephron blockade), continuous IV infusion (superior to intermittent bolus — DOSE trial), ultrafiltration if refractory.",
+    "def": "continuous IV infusion (no proven superiority over intermittent bolus in the DOSE trial, but often used empirically for refractory cases)",
     "related": [
       "Loop Diuretic",
       "Metolazone",
@@ -4922,7 +4922,7 @@
     "term": "Diabetes Insipidus",
     "abbrev": "DI",
     "cat": "Endocrinology",
-    "def": "Inability to concentrate urine — large volumes of dilute urine (>30 mL/kg/day or >250 mL/h). Central DI: ADH deficiency (head trauma, pituitary surgery, infiltrative disease) — low urine osmolality, polyuria, hypernatremia. Treatment: desmopressin (DDAVP) intranasally or IV. Nephrogenic DI: renal resistance to ADH (lithium toxicity, hypercalcemia, hypokalemia, genetic) — high urine osmolality after desmopressin challenge. Treatment: eliminate cause; thiazide diuretics + low-sodium diet (paradoxical effect — reduces GFR → less dilute urine). Lithium causes 20-40% of nephrogenic DI.",
+    "def": "Nephrogenic DI: renal resistance to ADH (lithium toxicity, hypercalcemia, hypokalemia, genetic) — urine osmolality remains low (little/no rise) after desmopressin challenge, in contrast to central DI where urine concentrates.",
     "related": [
       "Desmopressin",
       "Lithium Toxicity",
@@ -4979,7 +4979,7 @@
   {
     "term": "Bone Health (Osteoporosis)",
     "cat": "Endocrinology",
-    "def": "T-score ≤-2.5 = osteoporosis; -1 to -2.5 = osteopenia. FRAX score estimates 10-year fracture probability. Treatment thresholds: FRAX ≥3% hip fracture or ≥20% major osteoporotic fracture. First-line: bisphosphonates (alendronate, risedronate, zoledronic acid IV yearly). Ensure calcium 1000-1200 mg/day + vitamin D 800-1000 IU/day with therapy. Anabolic therapy: teriparatide (PTHrP analog), romosozumab (sclerostin inhibitor). Corticosteroid-induced osteoporosis: start bisphosphonate when prednisone ≥5mg/day for ≥3 months anticipated.",
+    "def": "Anabolic therapy: teriparatide (recombinant PTH(1-34) analog), abaloparatide (PTHrP analog), romosozumab (sclerostin inhibitor).",
     "related": [
       "Bisphosphonate",
       "Teriparatide",
@@ -4993,7 +4993,7 @@
   {
     "term": "Alzheimer's Disease (Pharmacotherapy)",
     "cat": "Neurology",
-    "def": "Cholinesterase inhibitors (donepezil, rivastigmine, galantamine) inhibit AChE → increase ACh in synaptic cleft. Used for mild-moderate-severe AD (donepezil for severe). Modest benefit on cognition and ADLs. ADRs: GI (nausea, diarrhea, vomiting) — take with food, start low, titrate slowly; bradycardia/syncope (caution in cardiac patients). Memantine (NMDA receptor antagonist): for moderate-severe AD; may combine with cholinesterase inhibitor. Lecanemab and donanemab (anti-amyloid antibodies): FDA-approved (2023) for early AD — modest slowing of decline; ARIA (amyloid-related imaging abnormalities) risk.",
+    "def": "Lecanemab (FDA-approved 2023) and donanemab (FDA-approved 2024) — anti-amyloid antibodies for early AD",
     "related": [
       "Cholinesterase Inhibitor",
       "Donepezil",
@@ -5352,7 +5352,7 @@
     "term": "ASCVD",
     "abbrev": "ASCVD",
     "cat": "Abbreviations",
-    "def": "Atherosclerotic Cardiovascular Disease — includes clinical ASCVD (prior MI, ACS, PCI/CABG, stroke/TIA, PAD) and primary prevention candidates. 10-year ASCVD risk score (Pooled Cohort Equations) guides statin therapy: high risk (≥20%): high-intensity statin; borderline (7.5-20%): moderate-high statin; low (<7.5%): lifestyle. Risk-enhancing factors can upgrade decision (CKD, metabolic syndrome, inflammatory disease, high-risk ethnicity). Coronary artery calcium (CAC) scoring for intermediate risk (7.5-20%) — CAC=0: can defer statin; CAC≥100: high risk, initiate statin.",
+    "def": "high risk (≥20%): high-intensity statin; intermediate (7.5 to <20%): moderate-intensity statin (consider high); borderline (5 to <7.5%): risk discussion/consider statin with enhancers; low (<5%): lifestyle.",
     "related": [
       "Statin",
       "10-Year Risk",
@@ -5559,7 +5559,7 @@
     "term": "Area Under the Curve",
     "abbrev": "AUC",
     "cat": "PK/PD",
-    "def": "Total drug exposure over time. Directly related to total amount of drug absorbed (F × Dose / CL). Used in PK/PD target attainment (AUC/MIC for aminoglycosides, vancomycin). Bioequivalence uses AUC0-∞.",
+    "def": "Used in PK/PD target attainment (AUC/MIC for vancomycin and fluoroquinolones; aminoglycosides are concentration-dependent, targeting Cmax/MIC).",
     "related": [
       "Bioavailability",
       "PK/PD Targets",
@@ -5637,7 +5637,7 @@
     "term": "Pharmacogenomics",
     "abbrev": "PGx",
     "cat": "Pharmacology",
-    "def": "Study of how genetic variation affects drug response. Key polymorphisms: CYP2D6 (codeine → morphine conversion; poor metabolizers at risk for toxicity), CYP2C19 (clopidogrel activation; poor metabolizers lack antiplatelet effect), TPMT (thiopurine toxicity), HLA-B*5701 (abacavir hypersensitivity), HLA-B*1502 (carbamazepine SJS in Asian patients).",
+    "def": "Key polymorphisms: CYP2D6 (codeine → morphine conversion; ultra-rapid metabolizers at risk for morphine toxicity/respiratory depression, poor metabolizers lack analgesia), CYP2C19 (clopidogrel activation; poor metabolizers lack antiplatelet effect)",
     "related": [
       "CYP2D6",
       "CYP2C19",
@@ -6365,7 +6365,7 @@
     "term": "Acute Ischemic Stroke",
     "abbrev": "AIS",
     "cat": "Neurology",
-    "def": "Thrombotic/embolic occlusion of cerebral artery. NIHSS assessment. Time-sensitive treatment: IV alteplase (tPA) within 4.5h (0.9 mg/kg, max 90mg — 10% bolus, 90% over 1hr); thrombectomy for large vessel occlusion up to 24h (select patients). Contraindications for tPA: recent surgery/trauma, BP>185/110 (treat first), active bleeding, oral anticoagulants (INR>1.7, DOAC taken within 48h unless reversal given).",
+    "def": "Time-sensitive treatment: IV alteplase (tPA, 0.9 mg/kg, max 90mg — 10% bolus, 90% over 1hr) OR tenecteplase (0.25 mg/kg, max 25mg, single bolus) within 4.5h",
     "related": [
       "tPA Contraindications",
       "Mechanical Thrombectomy",
@@ -6456,7 +6456,7 @@
     "term": "Sickle Cell Disease",
     "abbrev": "SCD",
     "cat": "Hematology",
-    "def": "Hemoglobin S (HbS) mutation — sickling under hypoxia/dehydration/cold. Acute pain crisis: IV fluids, opioids (multimodal), incentive spirometry, avoid over-hydration. Acute chest syndrome: broad-spectrum antibiotics, simple or exchange transfusion, bronchodilators, O2. Preventive: hydroxyurea (increases HbF, reduces crises), voxelotor (anti-sickling), crizanlizumab (P-selectin inhibitor). Penicillin prophylaxis through age 5.",
+    "def": "Preventive: hydroxyurea (increases HbF, reduces crises), crizanlizumab (P-selectin inhibitor), L-glutamine. (Note: voxelotor/Oxbryta was withdrawn from worldwide markets in Sept 2024 for safety concerns and is no longer available.)",
     "related": [
       "Hydroxyurea",
       "Voxelotor",
@@ -6612,7 +6612,7 @@
     "term": "ARB",
     "abbrev": "ARB",
     "cat": "Abbreviations",
-    "def": "Angiotensin Receptor Blocker — blocks AT1 receptor. Examples: losartan, valsartan, irbesartan, sacubitril/valsartan (ARNI). Use when ACEi not tolerated (cough). Same cardiovascular indications as ACEi. Less angioedema risk (but cross-reactivity exists — ~30%). Contraindications: pregnancy. Combined ACEi+ARB not recommended (increased AKI/hyperkalemia).",
+    "def": "Less angioedema risk (cross-reactivity exists but low — roughly 3-10%; meta-analysis ~3.5% for confirmed angioedema, ~9.4% for any angioedema).",
     "related": [
       "ACEi",
       "RAAS Inhibition",

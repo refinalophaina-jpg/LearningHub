@@ -1,0 +1,76 @@
+# Content corrections needing manual application
+
+`updated: 2026-07-20` · 24 verified findings not applied mechanically (compound per-option rationales, OCR reconstructions, answer-key changes needing item confirmation, and one conflict already fixed differently). Each is real and confirmed — apply by hand against the cited source.
+
+- **quiz #52** `correct` (critical) — answer-key change needs item confirmation
+  - issue: The keyed answer (IV zoledronic acid) is FDA-contraindicated at this patient's CrCl of 28 mL/min, and the correct agent for CrCl <30 (denosumab) is not offered, so the item has no valid correct option and the explanation contradicts its own key.
+  - fix: Replace distractor D ("IV ibandronate 3mg every 3 months") with "Denosumab 60 mg SC every 6 months" and set correct = 3 (denosumab), keeping the stem CrCl at 28 mL/min. Update the explanation to key d
+- **quiz #95** `q/stem` (minor) — compound/opts_exp field — apply by hand
+  - issue: The stem names the stroke-risk score as "CHADS2-VASc," which conflates two distinct tools; a value of 5 is a CHA2DS2-VASc score (CHADS2 maxes at 6 and lacks the vascular/sex/age-65-74 elements).
+  - fix: Her CHA2DS2-VASc is 5.
+- **quiz #158** `opts_exp (option D)` (minor) — compound/opts_exp field — apply by hand
+  - issue: The adult 7 mg/kg once-daily (extended-interval) aminoglycoside protocol is the Hartford nomogram; 'Hartmann-Begg protocol' is not a recognized aminoglycoside dosing protocol.
+  - fix: 7 mg/kg extended-interval is the adult dosing protocol (Hartford nomogram).
+- **quiz #166** `opts_exp[1] (option B explanation) / opts` (major) — compound/opts_exp field — apply by hand
+  - issue: Paliperidone palmitate 1-month (Invega Sustenna) requires NO oral supplementation — the day-1/day-8 two-injection loading regimen was designed specifically to eliminate oral overlap — so option B is actually a TRUE statement, giving the item two correct answers (B and D) and making the B explanation factually wrong.
+  - fix: opts[1] (option B text): "B. Risperidone long-acting injectable (Risperdal Consta) requires no oral antipsychotic overlap at initiation"; opts_exp[1] (option B explanation): "B. Incorrect. Risperidone
+- **quiz #171** `opts_exp[2] (option C explanation)` (major) — compound/opts_exp field — apply by hand
+  - issue: Combined hormonal contraceptives with efavirenz are US/WHO MEC Category 2 (advantages generally outweigh risks), not Category 3; the explanation both mislabels the number and misstates the interpretation ('risks outweigh benefits'). The keyed answer (C) is still correct.
+  - fix: CDC/WHO MEC Category 2 (advantages generally outweigh risks) for COC use with efavirenz — use with counseling that efavirenz may reduce contraceptive effectiveness; non-hormonal or IUD methods are pre
+- **quiz #169** `opts_exp[1] (option B explanation)` (minor) — compound/opts_exp field — apply by hand
+  - issue: Unit error: reduced levonorgestrel EC efficacy is associated with body weight >75 kg (or BMI >30 kg/m²), not 'BMI >75 kg' — BMI is not measured in kilograms.
+  - fix: At body weight >75 kg (~165 lbs) or BMI >30 kg/m², LNG may have reduced efficacy and ulipristal or copper IUD is preferred.
+- **quiz #198** `opts_exp[B]` (minor) — compound/opts_exp field — apply by hand
+  - issue: The FDA action on ondansetron is mischaracterized: it was not a black box warning, the 32 mg single IV dose was removed (not 'limited to 32 mg'), and the change was 2012, not 2011.
+  - fix: In 2012 the FDA had the 32 mg single IV dose of ondansetron removed from the label due to dose-dependent QT prolongation; the maximum single IV dose is now 16 mg. This was a labeling/warning change, n
+- **quiz #198** `opts_exp[B]` (minor) — compound/opts_exp field — apply by hand
+  - issue: Fluconazole is not a clinically significant CYP2D6 inhibitor; it slows ondansetron clearance mainly via CYP3A4 inhibition (fluconazole inhibits CYP2C9, CYP3A4, and CYP2C19).
+  - fix: fluconazole (direct QT prolongation + CYP3A4 inhibition slowing ondansetron clearance)
+- **quiz #218** `opts_exp` (minor) — compound/opts_exp field — apply by hand
+  - issue: US MEC classifies the LNG-IUD (and DMPA) as Category 1 — not Category 2 — with enzyme-inducing anticonvulsants; only the etonogestrel implant, COC/POP are more restricted.
+  - fix: CDC US MEC Category 1 for the LNG-IUD with enzyme-inducing drugs (local progestin action is unaffected by hepatic enzyme induction); the copper IUD is likewise Category 1 and fully non-hormonal.
+- **quiz #241** `opts_exp[0]` (minor) — compound/opts_exp field — apply by hand
+  - issue: The cited fluconazole breakpoints are wrong for C. glabrata (and even generic Candida); for C. glabrata CLSI defines only SDD ≤32 and R ≥64, so the stem's MIC of 32 is technically SDD, not resistant (echinocandin answer is unaffected).
+  - fix: A. For C. glabrata, CLSI fluconazole breakpoints are susceptible-dose-dependent (SDD) ≤32 mg/L and resistant ≥64 mg/L, with no "susceptible" category. An MIC of 32 is therefore SDD, achievable only wi
+- **quiz #246** `opts_exp[3]` (minor) — compound/opts_exp field — apply by hand
+  - issue: Letermovir statement is outdated and mischaracterizes its role: since June 2023 letermovir IS approved for CMV prophylaxis in high-risk (D+/R-) kidney transplant recipients, and it is not a treatment for resistant CMV (low resistance barrier) — maribavir is the agent approved for post-transplant refractory/resistant CMV.
+  - fix: D. Letermovir (Prevymis) is approved for CMV prophylaxis in CMV-seropositive allogeneic HSCT recipients and, since 2023, in high-risk (donor+/recipient-) kidney transplant recipients; it has a low bar
+- **quiz #267** `exp` (minor) — not locatable — apply by hand
+  - issue: The explanation is self-contradictory/thinking-aloud, explicitly conceding the keyed option's NNT is wrong ('NNT should be 15... closest answer is B'); it should state the corrected values cleanly once option B is fixed.
+  - fix: Event rate (treatment) = 15/150 = 10%. Event rate (control) = 25/150 = 16.7%. ARR = 16.7% − 10% = 6.7%. RRR = ARR/control rate = 6.7%/16.7% = 40%. NNT = 1/ARR = 1/0.067 ≈ 15. Therefore RRR = 40% and N
+- **quiz #258** `opts_exp` (minor) — compound/opts_exp field — apply by hand
+  - issue: The option explanations cite 'National Patient Safety Goal 8'/'NPSG 8' for medication reconciliation, which is the retired (pre-2011) numbering; the current Joint Commission designation is NPSG.03.06.01.
+  - fix: TJC NPSG.03.06.01 (Maintain and communicate accurate patient medication information): medication reconciliation = complete and accurate medication list + comparison to current orders at all care trans
+- **quiz #272** `opts_exp (option B rationale)` (minor) — compound/opts_exp field — apply by hand
+  - issue: NECC fungal meningitis death count stated as '303 deaths' is incorrect and contradicts option C of the same item, which correctly says 64 deaths.
+  - fix: Sterile compounding by 503B facilities addressed the 2012 NECC fungal meningitis outbreak trigger (64 deaths, ~751-798 infections from contaminated sterile compounds).
+- **quiz #273** `opts_exp (option C rationale)` (minor) — compound/opts_exp field — apply by hand
+  - issue: Cites PCSK9 inhibitors as an example of Accelerated Approval, but evolocumab/alirocumab received traditional (standard) FDA approval using LDL-C as an accepted surrogate.
+  - fix: Examples: many oncology drugs (ORR/response rate as surrogate). (Note: PCSK9 inhibitors received traditional approval on LDL-C lowering, not Accelerated Approval.)
+- **quiz #300** `q/stem` (major) — compound/opts_exp field — apply by hand
+  - issue: The stem instructs the test-taker to assume vancomycin clearance equals the full effluent flow of 2 L/hr, but the explanation silently recalculates with a sieving coefficient (~0.8 x 2 = 1.6 L/hr) to justify the keyed answer; under the stem's own literal assumption (Cl = 2 L/hr) the keyed answer D yields AUC24 = 750/2 = 375 mg·h/L (subtherapeutic), while option B (1000 mg/day) yields 500 mg·h/L, right on target.
+  - fix: Assuming Vd = 0.7 L/kg and vancomycin clearance ≈ 1.6 L/hr (sieving coefficient ~0.8 × effluent flow 2 L/hr)
+- **quiz #320** `opts (option B) / exp` (major) — compound/opts_exp field — apply by hand
+  - issue: Keyed answer requires andexanet alfa reversal before mechanical thrombectomy, but thrombectomy for LVO does not require reversal and pre-reperfusion andexanet is discouraged due to thrombotic risk — contradicting the item's own explanation which states reversal 'is not required.'
+  - fix: B. Proceed directly to mechanical thrombectomy if large vessel occlusion is confirmed on imaging — thrombectomy is anticoagulant-agnostic and does not require reversal (IV tPA is contraindicated given
+- **quiz #320** `opts_exp (option D)` (minor) — compound/opts_exp field — apply by hand
+  - issue: The 'time is brain' figure is misstated — approximately 1.9 million neurons are lost per minute of untreated stroke, not per 9 minutes.
+  - fix: each minute without intervention equals ~1.9 million neurons lost
+- **quiz #352** `correct` (major) — conflict: fixed via pass-1 stem rewrite
+  - issue: Finerenone initiation is not recommended in this patient (eGFR 22 is below the ≥25 mL/min/1.73m² initiation threshold, and K+ 5.0 is at the upper initiation limit), so the single best answer is C (empagliflozin), not D (both B and C).
+  - fix: 2
+- **quiz #350** `exp` (minor) — not locatable — apply by hand
+  - issue: The explanation cites 'GINA 2023' (asthma) to support COPD triple therapy; the correct guideline body for COPD is GOLD.
+  - fix: GOLD 2023 supports this dual approach.
+- **quiz #372** `opts/exp` (minor) — compound/opts_exp field — apply by hand
+  - issue: For a patient with eGFR 38 mL/min/1.73m2, the correct valganciclovir CMV treatment dose is 450 mg once daily, not 450 mg BID; 450 mg BID applies only to CrCl 40-59.
+  - fix: Oral valganciclovir 900mg BID (adjust for renal function: CrCl 40-59 → 450mg BID; CrCl 25-39 → 450mg once daily) plus immunosuppression reduction; monitor weekly CMV VL
+- **accp #21** `opts` (minor) — not locatable — apply by hand
+  - issue: Piperacillin/tazobactam is written as '3.75 g' in the keyed-correct option D (and in option C), but there is no 3.75 g formulation; the standard dose is 3.375 g.
+  - fix: Admit the patient to the hospital; initiate piperacillin/tazobactam 3.375 g every 8 hours administered over 4 hours intravenously for high-risk febrile neutropenia
+- **accp #89** `correct/choices` (critical) — compound/opts_exp field — apply by hand
+  - issue: The keyed answer (Category C, 'did not cause patient harm') is wrong: the patient suffered temporary harm (days of severe nausea/vomiting) and required intervention (IV fluids, ondansetron) at urgent care, which is NCC MERP Category E; the options array is also OCR-corrupted with categories run together.
+  - fix: correctIdx: 2 -> Category E. Reconstruct the OCR-corrupted choices into four discrete NCC MERP categories: ["An error occurred that reached the patient but did not cause patient harm (Category C)", "A
+- **accp #143** `opts` (minor) — not locatable — apply by hand
+  - issue: Edoxaban is a once-daily anticoagulant, but distractor option C states it is dosed twice daily.
+  - fix: Edoxaban 60 mg orally once daily after 10 days of therapeutic parenteral heparin administered intravenously
