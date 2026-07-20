@@ -1020,3 +1020,5 @@ input, select { font-size: 16px !important; } /* prevent iOS zoom */
 }
 
 /* ═══════════════════════════════════════════════════════════════════════════ */
+/* Supabase/auth removed — hide the dead sign-in affordances (progress is local). */
+#authHeaderBtn, #syncBadge { display: none !important; }
