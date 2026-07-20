@@ -191,6 +191,9 @@
     <!-- Progress Hub (rendered by renderProgressStats / renderHomeStats) -->
     <div id="homeProgressPanel" style="margin-bottom:20px;"></div>
 
+    <!-- Study plan: exam date, due-today queue, calibration (rendered by study-features.js) -->
+    <div id="studyPlanPanel" style="margin-bottom:20px;"></div>
+
     <!-- Exam-window note: BPS lags brand-new guideline changes -->
     <div style="background:var(--card,#fff); border:1px solid var(--divider,#e5e7eb); border-left:3px solid #b84a2e; border-radius:12px; padding:16px 18px; margin-bottom:20px;">
       <h3 style="margin:0 0 6px; font-size:15px; font-weight:700; color:var(--label1,#111);">Studying to the exam's window</h3>
@@ -902,6 +905,7 @@
 <!-- ACCP MOCK EXAM REVIEW SECTION -->
 <div id="accp" class="section">
   <div class="accp-wrap">
+    <div id="mockExamPanel"></div>
 
     <!-- Header band -->
     <div class="accp-header-band">
@@ -1447,6 +1451,7 @@
 <!-- QUIZ -->
 <div id="quiz" class="section">
   <div class="section-header"><h2>Quiz Engine</h2><p>449 board-style questions • 3 BCPS exam domains • detailed explanations</p></div>
+  <div id="dueTodayBanner"></div>
   <div class="score-bar">
     <div class="score-stat"><span class="score-stat-value" id="scoreDisplay">0/0</span><span class="score-stat-label">Score</span></div>
     <div class="score-stat"><span class="score-stat-value" id="correctDisplay" style="color:var(--green)">0</span><span class="score-stat-label">Correct</span></div>
@@ -1783,5 +1788,6 @@
 </div>
   <script src="data.js"></script>
   <script src="app.js"></script>
+  <script src="study-features.js"></script>
 </body>
 </html>
