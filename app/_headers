@@ -1,9 +1,6 @@
-# Cloudflare Pages headers. Long-cache the generated bundles; always revalidate the page.
-/index.html
+# Cloudflare headers. Filenames are un-hashed (app.css, data.js, …) and the site
+# redeploys in place, so assets must always revalidate — a long max-age would serve
+# stale CSS/JS/content to returning visitors after a deploy. no-cache = store but
+# revalidate against the etag (cheap 304s when unchanged), so every deploy is live at once.
+/*
   Cache-Control: no-cache
-/data.js
-  Cache-Control: public, max-age=86400
-/app.js
-  Cache-Control: public, max-age=86400
-/app.css
-  Cache-Control: public, max-age=86400
