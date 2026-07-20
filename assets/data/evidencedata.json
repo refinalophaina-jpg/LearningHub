@@ -29,7 +29,7 @@
     "drug": "Enalapril",
     "n": "2569",
     "design": "RCT, double-blind",
-    "endpoint": "Death or HF hospitalization",
+    "endpoint": "All-cause mortality (primary); death or HF hospitalization was a secondary endpoint",
     "finding": "Enalapril reduced death/HF hospitalization 26% vs placebo. Mortality reduced 16% (35.2% vs 39.7%). Benefit across full NYHA II-III spectrum.",
     "impact": "Expanded ACEi indication beyond NYHA IV. Underpins ACEi Class I recommendation in all HFrEF (EF ≤40%).",
     "tags": [
@@ -218,7 +218,7 @@
     "n": "3445",
     "design": "RCT, double-blind",
     "endpoint": "CV death, cardiac arrest, HF hospitalization",
-    "finding": "Primary endpoint NOT met overall (HR 0.89, p=0.14). Americas subgroup showed benefit; Russia/Georgia contamination suspected (low event rates). Significant hyperkalemia 5x higher.",
+    "finding": "Hyperkalemia roughly doubled (18.7% vs 9.1%, ~2x).",
     "impact": "No Class I indication for MRA in HFpEF. However, consider MRA for HFpEF with diuretic need. Eplerenone post-MI HF data (EPHESUS 2003): reduces mortality in HFrEF post-MI. Avoid in CrCl <30 or K+ >5.",
     "tags": [
       "HFpEF",
@@ -348,7 +348,7 @@
     "n": "14264",
     "design": "RCT, double-blind",
     "endpoint": "Stroke or systemic embolism",
-    "finding": "Rivaroxaban 20mg daily noninferior to warfarin (1.7% vs 2.2%/yr, HR 0.88, p<0.001 NI). Less ICH and fatal bleeding. More GI bleeding.",
+    "finding": "noninferior to warfarin (per-protocol 1.7% vs 2.2%/yr, HR 0.79; ITT 2.1% vs 2.4%/yr, HR 0.88; p<0.001 NI)",
     "impact": "Rivaroxaban once-daily advantage for adherence. CRITICAL Pearl: must take 20mg WITH EVENING MEAL (food increases bioavailability from 66% to ~100%). Reduce to 15mg/day if CrCl 15-50. Reversal: andexanet alfa. CYP3A4/P-gp interactions.",
     "tags": [
       "AFib",
@@ -358,7 +358,7 @@
       "Factor Xa",
       "food interaction"
     ],
-    "pubmed": "21870978"
+    "pubmed": "21830957"
   },
   {
     "trial": "ARISTOTLE",
@@ -370,7 +370,7 @@
     "n": "18201",
     "design": "RCT, double-blind",
     "endpoint": "Stroke or systemic embolism",
-    "finding": "Apixaban 5mg BID superior to warfarin: stroke/embolism 27% reduction (1.27% vs 1.60%/yr, p<0.001). Also less major bleeding (HR 0.69, p<0.001) AND less mortality (HR 0.89, p=0.047). Triple advantage over warfarin.",
+    "finding": "stroke/embolism 21% reduction (1.27% vs 1.60%/yr, HR 0.79; p<0.001 noninferiority, p=0.01 superiority)",
     "impact": "Only DOAC superior to warfarin in all 3 key outcomes (efficacy, safety, mortality). Use 2.5mg BID if ≥2 of: age ≥80, weight ≤60kg, SCr ≥1.5. Least renal dependence (27% renal excretion). Reversal: andexanet alfa.",
     "tags": [
       "AFib",
@@ -492,7 +492,7 @@
       "ADRENAL",
       "Vasopressor"
     ],
-    "pubmed": "29490185"
+    "pubmed": "29347874"
   },
   {
     "trial": "APROCCHSS",
@@ -502,7 +502,7 @@
     "subtitle": "Hydrocortisone + fludrocortisone in septic shock",
     "drug": "Hydrocortisone 200mg/day + Fludrocortisone 50mcg/day",
     "n": "1241",
-    "design": "RCT, double-blind (2×2 factorial)",
+    "design": "RCT, double-blind (initially designed as 2×2 factorial with drotrecogin alfa; became a two-group trial after drotrecogin was withdrawn)",
     "endpoint": "90-day mortality",
     "finding": "Combination reduced 90-day mortality (43.0% vs 49.1%, p=0.03). Also reduced 28-day mortality and vasopressor days. No excess GI bleeding.",
     "impact": "Conflicting results vs ADRENAL. The mineralocorticoid (fludrocortisone) component may be key. SSC 2021: weak recommendation to consider in refractory septic shock. Practical: start when norepinephrine ≥0.25 mcg/kg/min at 4h OR unstable hemodynamics.",
@@ -526,7 +526,7 @@
     "design": "RCT, double-blind",
     "endpoint": "28-day mortality",
     "finding": "No overall mortality difference. Dopamine: significantly more arrhythmias (24.1% vs 12.4%, p<0.001). Cardiogenic shock subgroup: dopamine had higher 28-day mortality.",
-    "impact": "Norepinephrine is first-line vasopressor for septic shock. Dopamine associated with significantly more arrhythmias — avoid in hemodynamically unstable patients. \"Renal-dose dopamine\" (1-3 mcg/kg/min) does NOT protect kidneys (DOPAMINE trial, BMJ 2000).",
+    "impact": "\"Renal-dose dopamine\" (1-3 mcg/kg/min) does NOT protect kidneys (ANZICS low-dose dopamine trial, Lancet 2000;356:2139-2143).",
     "tags": [
       "Shock",
       "Norepinephrine",
@@ -635,7 +635,7 @@
     "n": "1900",
     "design": "RCT, double-blind (outcome assessors blinded)",
     "endpoint": "All-cause mortality at 6 months",
-    "finding": "NO significant difference in 6-month mortality (50% vs 48%, p=0.37). No difference in neurologic outcomes. More arrhythmias with hypothermia (24% vs 17%). Study used no fever management in control arm.",
+    "finding": "Control arm targeted normothermia with early active fever treatment (surface/intravascular cooling devices deployed when temperature reached >=37.8C to maintain <=37.5C).",
     "impact": "TTM2 effectively overturned routine cooling to 33°C. Current: PREVENT FEVER (>37.7-38°C) in comatose post-ROSC patients for at least 72h — fever is clearly harmful. Active cooling to 33°C no longer recommended routinely. Maintain normothermia.",
     "tags": [
       "Cardiac arrest",
@@ -721,7 +721,7 @@
     "type": "landmark",
     "area": "Neurology",
     "subtitle": "Dual antiplatelet (clopidogrel + aspirin) for minor stroke/TIA",
-    "drug": "Clopidogrel 300mg load then 75mg + Aspirin 50-325mg x21d vs aspirin alone",
+    "drug": "Clopidogrel 600mg load then 75mg + Aspirin 50-325mg x90d vs aspirin alone (note: guidelines recommend limiting DAPT to 21 days)",
     "n": "4881",
     "design": "RCT, double-blind",
     "endpoint": "Major ischemic event at 90 days",
@@ -817,7 +817,7 @@
     "design": "RCT, double-blind",
     "endpoint": "Kidney failure, SCr doubling, CV/renal death",
     "finding": "Canagliflozin reduced primary composite 30% (HR 0.70, p<0.001). ESKD reduced 32%. HF hospitalization reduced 39%. Trial stopped early at interim for kidney endpoint benefit.",
-    "impact": "First trial stopped early specifically for renal benefit. Established SGLT2i for CKD in T2DM. KDIGO 2022: SGLT2i recommended for T2DM + CKD with eGFR ≥20. Can continue drug through dialysis once initiated. Pearl: initial eGFR dip (hemodynamic) is expected and does not indicate harm.",
+    "impact": "Can be continued until dialysis or transplantation is initiated (do not use in dialysis-dependent patients).",
     "tags": [
       "CKD",
       "T2DM",
@@ -858,7 +858,7 @@
     "subtitle": "Intensive BP control (<120) in T2DM",
     "drug": "Intensive SBP <120 vs standard <140 mmHg",
     "n": "4733",
-    "design": "RCT, double-blind",
+    "design": "RCT, open-label (blinded endpoint adjudication)",
     "endpoint": "Non-fatal MI, non-fatal stroke, CV death",
     "finding": "Intensive BP NOT superior for primary composite (1.87% vs 2.09%/yr, p=0.20). Stroke only significantly reduced (0.32% vs 0.53%/yr). More adverse events (electrolyte, syncope, elevated creatinine).",
     "impact": "SPRINT (2015) showed SBP <120 benefited non-DM high-risk patients (25% MACE reduction). ACCORD: DM patients do not clearly benefit from SBP <120. Current guidelines: SBP <130 for T2DM (ADA, ACC/AHA). Pearl: ACCORD + SPRINT together highlight differential effects by DM status.",
@@ -881,7 +881,7 @@
     "n": "9361",
     "design": "RCT, double-blind (stopped early)",
     "endpoint": "MI, ACS, stroke, HF, CV death",
-    "finding": "Intensive control reduced primary composite 25% (HR 0.75, p<0.001). All-cause mortality reduced 27%. Stopped at 3.3 years for clear benefit. More AKI (2.5x) and syncope in intensive group.",
+    "finding": "More AKI (~1.7x; serious AKI/acute renal failure 4.1% vs 2.5%, HR ~1.66) and syncope in intensive group.",
     "impact": "Drove 2017 ACC/AHA guidelines to define hypertension as ≥130/80 (was ≥140/90). Target SBP <130 for high-risk non-DM adults. Note: SPRINT used automated unattended office BP — corresponds to ~5-7 mmHg lower than standard clinic measurement. Adjust targets accordingly.",
     "tags": [
       "Hypertension",
@@ -903,7 +903,7 @@
     "n": "CAST: 1455 | ISIS-2: 17187",
     "design": "RCT, double-blind",
     "endpoint": "CAST: arrhythmia suppression + mortality | ISIS-2: vascular mortality",
-    "finding": "CAST: Class IC drugs suppressed PVCs (surrogate benefit) but INCREASED mortality 2.5x vs placebo (10.2% vs 4.5%). ISIS-2: Aspirin alone reduced 5-week vascular mortality 23%. Streptokinase alone 25%. Both together 42% reduction.",
+    "finding": "INCREASED mortality ~2.5x vs placebo (total mortality 7.7% [56/730] active encainide/flecainide vs 3.0% [22/725] placebo; RR 2.5, 95% CI 1.6-4.5)",
     "impact": "CAST: seminal lesson — surrogate endpoint improvement does NOT equal clinical benefit. Class IC agents now contraindicated post-MI or structural heart disease. ISIS-2: aspirin cornerstone of ACS therapy. Additive benefit of aspirin + fibrinolytic.",
     "tags": [
       "Antiarrhythmic",
@@ -927,7 +927,7 @@
     "design": "RCT, double-blind, non-inferiority",
     "endpoint": "Recurrent VTE or VTE-related death; major bleeding",
     "finding": "Apixaban non-inferior for recurrent VTE (2.3% vs 2.7%) with 69% less major bleeding (0.6% vs 1.8%, p<0.001) vs enoxaparin/warfarin. No bridging needed.",
-    "impact": "Established apixaban as preferred DOAC for VTE: same efficacy, far less bleeding. BID x7d then QD dosing. Now first-line in most guidelines.",
+    "impact": "10 mg BID x7d then 5 mg BID dosing.",
     "tags": [
       "VTE",
       "DVT",
@@ -991,7 +991,7 @@
     "n": "1050",
     "design": "Open-label RCT, non-inferiority",
     "endpoint": "Composite of recurrent VTE or major bleeding at 12 months",
-    "finding": "Edoxaban non-inferior to dalteparin (12.8% vs 13.5%). More major GI bleeding with edoxaban (3.7% vs 0.9%). Superiority on recurrent VTE (7.9% vs 11.3%).",
+    "finding": "Numerically fewer recurrent VTE (7.9% vs 11.3%), but not statistically superior (risk diff -3.4%, 95% CI -7.0 to 0.2).",
     "impact": "DOAC option for cancer VTE emerged alongside SELECT-D (rivaroxaban). Caution with luminal GI cancers due to bleeding. ISTH: prefer DOAC over LMWH in most cancer VTE.",
     "tags": [
       "Cancer VTE",
@@ -1053,7 +1053,7 @@
     "n": "1884",
     "design": "RCT, double-blind, placebo-controlled",
     "endpoint": "Arterial thromboembolism (ATE); major bleeding",
-    "finding": "No significant difference in ATE (0.4% bridge vs 0.3% no-bridge). Significantly more major bleeding with bridging (3.2% vs 1.3%, p=0.005).",
+    "finding": "No significant difference in ATE (0.3% bridge vs 0.4% no-bridge).",
     "impact": "Low-to-moderate stroke risk Afib patients do NOT benefit from bridging — bridging increases bleeding without reducing stroke. High-risk (mechanical valves, recent stroke) still bridge.",
     "tags": [
       "Bridging",
@@ -1070,7 +1070,7 @@
     "year": 2021,
     "type": "guideline",
     "area": "Anticoagulation",
-    "subtitle": "ACCP/AHA VTE treatment and prophylaxis guidelines",
+    "subtitle": "ACCP/CHEST VTE treatment and prophylaxis guidelines",
     "drug": "DOACs, LMWH, warfarin",
     "n": "N/A",
     "design": "Systematic review + Delphi consensus",
@@ -1293,7 +1293,7 @@
     "n": "10355",
     "design": "RCT, double-blind",
     "endpoint": "Moderate-severe exacerbations; spirometry; mortality",
-    "finding": "Triple therapy reduced exacerbations 15% vs LAMA/LABA and 25% vs ICS/LABA. Reduced all-cause mortality 42% vs LAMA/LABA (p=0.003). More pneumonia vs LAMA/LABA.",
+    "finding": "Reduced all-cause mortality 28% vs LAMA/LABA (HR 0.72, 95% CI 0.53-0.99; p=0.042).",
     "impact": "Triple therapy superior to dual in high-risk COPD (≥2 exacerbations/yr or ≥1 hospitalization). Now GOLD E recommendation. ICS component for eosinophils >300 cells/μL most benefit.",
     "tags": [
       "COPD",
@@ -1337,7 +1337,7 @@
     "n": "1902",
     "design": "RCT, double-blind",
     "endpoint": "Annualized severe exacerbation rate; FEV1; OCS use",
-    "finding": "Dupilumab reduced exacerbations 48% (eos ≥300 cells/μL subgroup: 68%) and improved FEV1 by 210 mL. Eosinophilia transient. No significant benefit in eos <300.",
+    "finding": "reduced severe exacerbations 47.7% (eos ≥300 cells/μL subgroup: 65.8%) and improved pre-bronchodilator FEV1 by 0.14 L vs placebo (0.32 L absolute vs 0.18 L placebo at wk 12; ~0.21 L placebo-adjusted in the eos ≥300 subgroup)",
     "impact": "Dupilumab (anti-IL-4Rα = blocks IL-4 and IL-13) approved for moderate-severe uncontrolled asthma. Also approved for OCS-dependent asthma, atopic dermatitis, CRSwNP. Q2W SQ.",
     "tags": [
       "Asthma",
@@ -1380,7 +1380,7 @@
     "n": "N/A",
     "design": "Annual update",
     "endpoint": "Symptom-based ABCD assessment + exacerbation history",
-    "finding": "GOLD 2024: GOLD A → SABA; GOLD B → LAMA or LAMA/LABA; GOLD E (formerly C/D with exacerbations) → LAMA/LABA first-line, ICS add-on if eos ≥300 or on maximal LAMA/LABA.",
+    "finding": "GOLD A → a bronchodilator (short- or long-acting); GOLD B → LABA+LAMA dual bronchodilator; assessment framework is ABE (not ABCD)",
     "impact": "Foundation of COPD pharmacotherapy decisions on BCPS. GOLD B changed: ALL Grade B should start dual bronchodilator. ICS only in E group or eos >300. Step-up if uncontrolled.",
     "tags": [
       "Guidelines",
@@ -1426,7 +1426,7 @@
     "design": "Systematic review + expert panel",
     "endpoint": "Cure, recurrence prevention, severity classification",
     "finding": "Fidaxomicin preferred over vancomycin for initial nonsevere CDI (10-day course). Vancomycin acceptable if cost prohibits fidaxomicin. Bezlotoxumab for first recurrence prevention in high-risk. AVOID metronidazole for most CDI.",
-    "impact": "Major shift: fidaxomicin is now preferred (less recurrence 15% vs 25%). Metronidazole no longer recommended even for mild CDI. Fecal microbiota transplant for recurrent CDI.",
+    "impact": "Bezlotoxumab was a monoclonal antibody option for recurrence prevention but was discontinued by Merck (effective Jan 31, 2025) and is no longer available in the US; FDA-approved live biotherapeutics (fecal microbiota products Rebyota, Vowst) are now used for recurrent CDI prevention.",
     "tags": [
       "CDI",
       "C. diff",
@@ -1470,7 +1470,7 @@
     "design": "Expert panel + meta-analyses",
     "endpoint": "Hour-1 and Hour-6 bundle; 30-day mortality",
     "finding": "1-hour bundle: blood cultures, antibiotics within 1h of sepsis recognition, 30 mL/kg crystalloid if hypoperfusion, vasopressors if MAP <65. Norepinephrine first-line vasopressor. Hydrocortisone for refractory shock.",
-    "impact": "Crystalloid resuscitation now targets individualized endpoints (lactate, CVP, ScvO2). Balanced solutions (LR) preferred over NS for reducing AKI. De-escalate antibiotics based on cultures.",
+    "impact": "Crystalloid resuscitation guided by dynamic measures, capillary refill time, and lactate clearance (SSC 2021 does not recommend CVP/ScvO2 as targets).",
     "tags": [
       "Sepsis",
       "Septic shock",
@@ -1492,7 +1492,7 @@
     "design": "Two separate RCTs",
     "endpoint": "Early clinical response (72h) for ABSSSI",
     "finding": "Single-dose oritavancin and 2-dose dalbavancin non-inferior to vancomycin for ABSSSI. Comparable cure rates (~80%). No renal monitoring needed.",
-    "impact": "Long-acting lipoglycopeptides enable outpatient OPAT for serious skin infections. Single dose oritavancin (1200 mg) or 2-dose dalbavancin (1500 mg then 500 mg). Not active against VRE. Avoid with UFH.",
+    "impact": "Oritavancin retains activity against vanA/vanB VRE (not FDA-labeled for it); dalbavancin is active against vanB but not vanA VRE.",
     "tags": [
       "ABSSSI",
       "Skin infection",
@@ -1556,7 +1556,7 @@
     "n": "4041",
     "design": "Multi-step effectiveness study (NIMH)",
     "endpoint": "Remission rate at each treatment step; relapse after remission",
-    "finding": "Step 1 (citalopram): 28% remission. Step 2 switch/augment: 26-29% additional. Step 3: 14-20%. Step 4: 13%. Cumulative remission 67% but relapse high. Each step: adequate trial (8-12 weeks).",
+    "finding": "Theoretical cumulative remission ~67% (original report), though independent reanalysis (Pigott et al.) estimated actual cumulative remission closer to ~35%; relapse rates high across steps.",
     "impact": "Real-world evidence for treatment-resistant depression. Most patients do not achieve remission with first SSRI. Augmentation strategies (bupropion, lithium, thyroid) evidence-based. Try 2-3 agents before declaring TRD.",
     "tags": [
       "MDD",
@@ -1622,7 +1622,7 @@
     "n": "N/A",
     "design": "FDA REMS program",
     "endpoint": "Absolute neutrophil count (ANC) monitoring thresholds",
-    "finding": "ANC ≥1500 cells/μL to initiate; ≥1000 to continue in general population (≥500 in benign ethnic neutropenia). Stop if ANC <1000 (severe neutropenia) or <500 (agranulocytosis). Monthly ANC after 6 months.",
+    "finding": "ANC weekly for first 6 months, then every 2 weeks for months 6-12, then monthly (every 4 weeks) after 12 months of continuous therapy.",
     "impact": "Clozapine only antipsychotic with evidence for treatment-resistant schizophrenia and schizophrenia suicidality. REMS required for prescribing and dispensing. ANC monitoring mandatory. Seizure risk dose-dependent.",
     "tags": [
       "Clozapine",
@@ -1688,7 +1688,7 @@
     "design": "Two RCTs, double-blind",
     "endpoint": "Clinical remission at week 6 and 52; endoscopic improvement",
     "finding": "GEMINI 1 (UC): vedolizumab achieved remission 17.3% vs 5.5% at week 6; 41.8% vs 15.9% at week 52. GEMINI 2 (CD): week 52 remission 39% vs 22%. Gut-selective mechanism.",
-    "impact": "Vedolizumab: gut-selective anti-integrin (α4β7) — lower systemic immunosuppression, preferred in elderly and those with extra-intestinal infections. No TB reactivation risk unlike anti-TNFs.",
+    "impact": "Substantially lower risk of serious/opportunistic infection and TB reactivation than anti-TNFs due to gut-selective mechanism, but risk is not zero; latent TB screening is still recommended before initiation.",
     "tags": [
       "IBD",
       "Vedolizumab",
@@ -1705,7 +1705,7 @@
     "type": "landmark",
     "area": "GI/Hepatology",
     "subtitle": "Direct-acting antivirals for hepatitis C",
-    "drug": "Sofosbuvir/velpatasvir (Epclusa), sofosbuvir/ledipasvir (Harvoni)",
+    "drug": "Sofosbuvir/velpatasvir (Epclusa; ASTRAL trials), sofosbuvir/velpatasvir/voxilaprevir (Vosevi; POLARIS trials)",
     "n": ">1000 each",
     "design": "Phase III RCTs",
     "endpoint": "Sustained virologic response at 12 weeks (SVR12)",
@@ -1755,7 +1755,7 @@
     "design": "Meta-analysis + expert panel",
     "endpoint": "Eradication rates by regimen and resistance pattern",
     "finding": "Clarithromycin resistance >15%: use bismuth quadruple (PPI + bismuth + metronidazole + tetracycline) x14 days (>90% eradication). Clarithromycin triple therapy only if local resistance <15%.",
-    "impact": "Clarithromycin-based triple therapy no longer empirically recommended in most US areas (>20% resistance). Vonoprazan-based regimens emerging (FDA 2022). Test-and-treat if ≥60 years or alarm symptoms.",
+    "impact": "Test-and-treat for H. pylori in patients <60 years without alarm features; endoscopy (EGD) if ≥60 years or alarm symptoms.",
     "tags": [
       "H. pylori",
       "PPI",
@@ -1817,7 +1817,7 @@
     "area": "Oncology",
     "subtitle": "Obinutuzumab and ibrutinib in CLL",
     "drug": "Obinutuzumab (Gazyva), Ibrutinib (Imbruvica)",
-    "n": "590/391",
+    "n": "781/391",
     "design": "Two open-label RCTs",
     "endpoint": "PFS; OS; CR rates",
     "finding": "CLL11: Obinutuzumab + chlorambucil superior to rituximab + chlorambucil in PFS (26.7 vs 15.2 months). RESONATE: Ibrutinib superior to ofatumumab in PFS (NR vs 8.1 months, HR 0.22).",
@@ -1885,7 +1885,7 @@
     "subtitle": "Consensus on tacrolimus therapeutic drug monitoring",
     "drug": "Tacrolimus (Prograf, Envarsus)",
     "n": "N/A",
-    "design": "Expert consensus (ITAS/ESOT)",
+    "design": "Expert consensus (IATDMCT)",
     "endpoint": "Trough levels (C0) and AUC targets by organ and time post-transplant",
     "finding": "Kidney Tx: C0 target 8-12 ng/mL (months 1-3), then 5-8 ng/mL (>6 months). Liver Tx: 8-12 ng/mL initially. CYP3A4/P-gp interactions major (azole antifungals, macrolides, rifampin, calcium channel blockers).",
     "impact": "Tacrolimus narrow TI: CYP3A4 inhibitors (azoles, verapamil) drastically increase levels; inducers (rifampin, St. John's Wort) decrease. Toxicities: nephrotoxicity, neurotoxicity, PTDM, hypertension. AUC-based dosing emerging.",
@@ -1952,7 +1952,7 @@
     "drug": "Indapamide ± perindopril",
     "n": "3845",
     "design": "RCT, double-blind",
-    "endpoint": "Fatal stroke; all-cause mortality; cardiovascular events",
+    "endpoint": "Fatal or nonfatal stroke (primary); all-cause mortality and cardiovascular events (secondary)",
     "finding": "Indapamide ± perindopril reduced fatal stroke 39%, all-cause mortality 21%, CV events 34% vs placebo in patients ≥80 years. Terminated early for benefit. Target BP <150/80 mmHg.",
     "impact": "Established antihypertensive therapy in very elderly. JNC8/ACC/AHA: target <130/80 in fit elderly; <150 systolic acceptable in frail. Caution with orthostatic hypotension (fall risk). Start low, go slow.",
     "tags": [
@@ -1975,7 +1975,7 @@
     "n": "N/A",
     "design": "Expert panel consensus",
     "endpoint": "Potentially inappropriate prescriptions (PIPs) and prescribing omissions (POs)",
-    "finding": "STOPP (Screening Tool of Older Persons Prescriptions): 143 criteria for potentially inappropriate prescribing. START (Screening Tool to Alert to Right Treatment): prescribing omissions that should be considered.",
+    "finding": "STOPP (Screening Tool of Older Persons Prescriptions): 133 criteria for potentially inappropriate prescribing (START adds 57 prescribing-omission criteria; 190 total).",
     "impact": "Complements Beers Criteria (US vs European perspective). Key additions: proton pump inhibitors at high doses >8 weeks, NSAIDs in CKD stages 3-5, opioids without laxatives. Use both tools together for medication review.",
     "tags": [
       "Geriatrics",
@@ -2019,7 +2019,7 @@
     "n": "N/A",
     "design": "Systematic review + expert consensus",
     "endpoint": "Appropriate use, dosing, monitoring, and tapering of opioids for chronic pain",
-    "finding": "Non-opioid therapies preferred for chronic pain (SNRIs, TCAs, gabapentinoids, topicals, PT, CBT). If opioid needed: lowest effective dose, immediate-release first. MME thresholds: caution ≥50 MME/day; avoid >90 MME/day without specialist.",
+    "finding": "The 2022 update removed fixed dosage thresholds/ceilings that the 2016 guideline had set; it advises caution and careful reassessment when considering doses in the ≥50 MME/day range and greater caution at higher doses, but emphasizes individualized clinical judgment rather than a hard 90 MME limit.",
     "impact": "Co-prescribe naloxone for ≥50 MME/day or concurrent benzodiazepine use. Buprenorphine preferred for chronic pain with opioid use disorder. Taper no faster than 10% per week. Avoid abrupt discontinuation.",
     "tags": [
       "Opioids",
@@ -2191,7 +2191,7 @@
   },
   {
     "trial": "Adaptive and Pragmatic Trial Design",
-    "year": 2020,
+    "year": 2019,
     "type": "guideline",
     "area": "Biostatistics",
     "subtitle": "FDA guidance on adaptive clinical trial designs",
