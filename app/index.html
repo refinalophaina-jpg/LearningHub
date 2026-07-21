@@ -76,6 +76,9 @@
   <button class="tab-btn tab-color-mock" onclick="switchSection('accp')" id="tab-accp">
     <span class="tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4.5" width="12" height="16.5" rx="2"/><path d="M9 4.5V3.5h6v1"/><path d="M9 10h6M9 13.5h6M9 17h4"/></svg></span><span class="tab-label">Mock Exam</span>
   </button>
+  <button class="tab-btn tab-color-podcasts" onclick="switchSection('podcasts')" id="tab-podcasts">
+    <span class="tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13v-1a8 8 0 0 1 16 0v1"/><rect x="3" y="13" width="4" height="6" rx="1.5"/><rect x="17" y="13" width="4" height="6" rx="1.5"/></svg></span><span class="tab-label">Podcasts</span>
+  </button>
 </nav>
 
 <!-- VISUAL PHARMA SECTION -->
@@ -1654,6 +1657,8 @@
 
 </div>
 
+</div><!-- close #glossary (was missing — lightbox/timer/auth-modal/podcasts below are top-level siblings) -->
+
 <!-- ═══ LIGHTBOX OVERLAY ═══════════════════════════════════════════════ -->
 <div id="vizLightbox">
   <div id="vizLbHeader">
@@ -1790,11 +1795,18 @@
       ✓ Flashcard spaced-repetition schedule<br>
       ✓ Study streak &amp; total time<br>
       <span style="font-size:0.7rem; margin-top:4px; display:block;">
-        Powered by <a href="https://supabase.com" target="_blank" rel="noopener" style="color:var(--primary,#0071e3);">Supabase</a>
-        · Your data is private and only accessible to you.
+        Stored on this device only — nothing leaves your browser.
       </span>
     </div>
   </div>
+</div>
+
+<div id="podcasts" class="section">
+  <div class="section-header">
+    <div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-podcasts);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13v-1a8 8 0 0 1 16 0v1"/><rect x="3" y="13" width="4" height="6" rx="1.5"/><rect x="17" y="13" width="4" height="6" rx="1.5"/></svg></span><div class="section-title">Podcasts</div></div>
+    <div class="section-subtitle">Long-form audio reviews by topic — listen while you commute, cook, or wind down. Progress and playback speed are saved on this device.</div>
+  </div>
+  <div id="podcastList"></div>
 </div>
 
 <!-- AinaDara Footer -->
@@ -1805,7 +1817,9 @@
   <div style="font-size:11px;color:var(--label3);letter-spacing:0.5px;">BCPS Learning Hub · Built to pass boards</div>
 </div>
   <script src="data.js"></script>
+  <script src="podcasts-data.js"></script>
   <script src="app.js"></script>
   <script src="study-features.js"></script>
+  <script src="podcasts.js"></script>
 </body>
 </html>
