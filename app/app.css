@@ -1234,3 +1234,20 @@ body.dark-mode{ --sec-podcasts:#5cb8b8; }
 .podcast-speed{ padding:5px 8px; border-radius:8px; border:1px solid var(--divider,var(--sep)); background:var(--card); color:var(--label); font-size:12.5px; }
 .podcast-progress-track{ height:6px; border-radius:3px; background:var(--fill); cursor:pointer; position:relative; }
 .podcast-progress-fill{ height:100%; border-radius:3px; background:var(--sec-podcasts); width:0%; }
+
+/* ── Slides & Study Guides ───────────────────────────────────────────────── */
+:root{ --sec-slides:#8a6d3a; }
+body.dark-mode{ --sec-slides:#c9a35e; }
+#tab-slides{ --tab-c:var(--sec-slides); }
+#slideList{ display:flex; flex-direction:column; gap:10px; }
+.slide-item{ background:var(--card); border:1px solid var(--divider,var(--sep)); border-radius:14px; box-shadow:var(--shadow-1); overflow:hidden; transition:box-shadow .18s ease; }
+.slide-item:hover{ box-shadow:var(--shadow-2); }
+.slide-item-row{ display:flex; align-items:center; gap:12px; padding:14px 16px; }
+.slide-item-info{ flex:1; min-width:0; }
+.slide-item-title{ font-weight:600; font-size:0.95rem; color:var(--label); margin-bottom:4px; }
+.slide-item-info .tag{ font-size:0.68rem; font-weight:500; text-transform:uppercase; letter-spacing:.05em; color:var(--label3); border:1px solid var(--divider,var(--sep)); border-radius:999px; padding:2px 9px; }
+.slide-open-btn, .slide-preview-btn{ flex-shrink:0; padding:7px 14px; font-size:12.5px; white-space:nowrap; }
+.slide-preview-wrap:empty{ display:none; }
+.slide-preview-wrap{ border-top:1px solid var(--divider,var(--sep)); padding:12px; }
+.slide-iframe{ width:100%; height:70vh; border:1px solid var(--divider,var(--sep)); border-radius:8px; }
+@media (max-width:520px){ .slide-item-row{ flex-wrap:wrap; } }

@@ -79,6 +79,9 @@
   <button class="tab-btn tab-color-podcasts" onclick="switchSection('podcasts')" id="tab-podcasts">
     <span class="tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13v-1a8 8 0 0 1 16 0v1"/><rect x="3" y="13" width="4" height="6" rx="1.5"/><rect x="17" y="13" width="4" height="6" rx="1.5"/></svg></span><span class="tab-label">Podcasts</span>
   </button>
+  <button class="tab-btn tab-color-slides" onclick="switchSection('slides')" id="tab-slides">
+    <span class="tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span><span class="tab-label">Slides</span>
+  </button>
 </nav>
 
 <!-- VISUAL PHARMA SECTION -->
@@ -1809,6 +1812,14 @@
   <div id="podcastList"></div>
 </div>
 
+<div id="slides" class="section">
+  <div class="section-header">
+    <div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-slides);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span><div class="section-title">Slides &amp; Study Guides</div></div>
+    <div class="section-subtitle">Reference slide decks by topic. Open full-screen with native PDF controls, or preview inline.</div>
+  </div>
+  <div id="slideList"></div>
+</div>
+
 <!-- AinaDara Footer -->
 <div style="background:var(--card);border-top:1px solid var(--sep);padding:20px;text-align:center;margin-top:40px;">
   <div style="font-family:Georgia,serif;font-size:15px;color:var(--label2);margin-bottom:4px;">
@@ -1818,8 +1829,10 @@
 </div>
   <script src="data.js"></script>
   <script src="podcasts-data.js"></script>
+  <script src="slides-data.js"></script>
   <script src="app.js"></script>
   <script src="study-features.js"></script>
   <script src="podcasts.js"></script>
+  <script src="slides.js"></script>
 </body>
 </html>
