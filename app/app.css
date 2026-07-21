@@ -207,13 +207,14 @@ background:linear-gradient(135deg,var(--indigo),var(--purple));color:#fff;border
 .cq-opt.cq-wrong{background:rgba(255,59,48,0.35);border-color:var(--red)}
 
 /* ── VISUAL PHARMA ── */
-.visual-section-grid{display:grid;gap:12px;grid-template-columns:1fr}
-@media(min-width:600px){.visual-section-grid{grid-template-columns:1fr 1fr}}
-.visual-card{background:var(--card);border-radius:16px;box-shadow:var(--shadow-1);overflow:hidden;transition:box-shadow .18s,transform .18s}
+.visual-section-grid{display:grid;gap:14px;grid-template-columns:1fr;align-items:start}
+@media(min-width:640px){.visual-section-grid{grid-template-columns:1fr 1fr}}
+.visual-card{background:var(--card);border-radius:16px;box-shadow:var(--shadow-1);overflow:hidden;transition:box-shadow .18s,transform .18s;display:flex;flex-direction:column}
 .visual-card:hover{box-shadow:var(--shadow-2);transform:translateY(-2px)}
-.visual-card-title{padding:14px 16px 4px;font-size:0.95rem;font-weight:700;color:var(--label)}
-.visual-card-desc{padding:0 16px 10px;font-size:0.77rem;color:var(--label2)}
-.visual-canvas{width:100%;display:block;border-top:0.5px solid var(--sep)}
+.visual-card-head{padding:14px 16px 10px;min-height:66px;display:flex;flex-direction:column;justify-content:flex-start;gap:3px}
+.visual-card-title{font-size:0.95rem;font-weight:700;color:var(--label);line-height:1.25;padding-right:58px}
+.visual-card-desc{font-size:0.77rem;color:var(--label2);line-height:1.35}
+.visual-canvas{width:100%;display:block;margin-top:auto;border-top:0.5px solid var(--sep)}
 .mm-container,.chord-container{width:100%;aspect-ratio:1;display:block;border-top:0.5px solid var(--sep)}
 /* ── EVIDENCE SECTION ── */
 .ev-section{padding:12px 0}
