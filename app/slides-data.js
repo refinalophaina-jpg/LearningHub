@@ -1,7 +1,26 @@
-/* Slide decks / study-guide PDFs — hosted on Cloudflare R2, same bucket as the
-   podcasts. Filled in once real R2 object keys are confirmed (do not guess
-   filenames here — verify each one with a HEAD request before adding it). */
+/* Slide decks / study-guide PDFs — hosted on Cloudflare R2, same bucket as the podcasts. */
 window.__SLIDES_BASE = 'https://audio.ainadara.com/Notebook%20llm%20pdf%20slides/';
 window.__SLIDES = [
-  // { file: '<exact R2 key>.pdf', title: '...', area: '...' },
+  { file: 'Acute_Care_Cardiology_Masterclass.pdf', title: 'Acute Care Cardiology Masterclass', area: 'Cardiovascular' },
+  { file: 'Clinicians_Codex_Chronic_Cardiology_Mastery.pdf', title: "Clinician's Codex: Chronic Cardiology Mastery", area: 'Cardiovascular' },
+  { file: 'Anticoagulation_Complexity_An_Evidence_Blueprint.pdf', title: 'Anticoagulation Complexity: An Evidence Blueprint', area: 'Cardiovascular' },
+  { file: 'Critical_Care_Pharmacotherapy_Review.pdf', title: 'Critical Care Pharmacotherapy Review', area: 'Critical Care' },
+  { file: 'Fluid_Electrolyte_Nutrition_Management_(2).pdf', title: 'Fluid, Electrolyte & Nutrition Management', area: 'Critical Care' },
+  { file: 'Infectious_Disease_Clinical_Mastery.pdf', title: 'Infectious Disease Clinical Mastery', area: 'Infectious Disease' },
+  { file: 'HIV_and_Infections_Strategic_Review.pdf', title: 'HIV and Infections: Strategic Review', area: 'Infectious Disease' },
+  { file: 'Critical_GI_Hepatology_Pharmacotherapy.pdf', title: 'Critical GI & Hepatology Pharmacotherapy', area: 'GI/Hepatology' },
+  { file: 'Neurology_Pharmacotherapy_Precision_Review.pdf', title: 'Neurology Pharmacotherapy: Precision Review', area: 'Neurology' },
+  { file: 'Psychiatry_Pharmacotherapy_Board_Review.pdf', title: 'Psychiatry Pharmacotherapy Board Review', area: 'Psychiatry' },
+  { file: 'Endocrine_Pharmacotherapy_Board_Review.pdf', title: 'Endocrine Pharmacotherapy Board Review', area: 'Endocrinology' },
+  { file: 'Advanced_Nephrology_Pharmacotherapy.pdf', title: 'Advanced Nephrology Pharmacotherapy', area: 'Nephrology' },
+  { file: 'Pulmonology_and_Adult_Immunizations_Review.pdf', title: 'Pulmonology and Adult Immunizations Review', area: 'Pulmonology' },
+  { file: 'Oncology_Pain_Management_Mastery.pdf', title: 'Oncology Pain Management Mastery', area: 'Oncology' },
+  { file: 'Oncology_Supportive_Care_Essentials.pdf', title: 'Oncology Supportive Care Essentials', area: 'Oncology' },
+  { file: 'Geriatric_Pharmacotherapy_Board_Masterclass.pdf', title: 'Geriatric Pharmacotherapy Board Masterclass', area: 'Geriatrics' },
+  { file: 'Pediatric_Pharmacotherapy_Blueprint.pdf', title: 'Pediatric Pharmacotherapy Blueprint', area: 'Pediatrics' },
+  { file: 'BCPS_Reproductive_Health_Review.pdf', title: 'BCPS Reproductive Health Review', area: 'Reproductive Health' },
+  { file: 'BCPS_Systems_and_Population_Health.pdf', title: 'BCPS Systems and Population Health', area: 'Healthcare Systems' },
+  { file: 'Clinical_Information_and_Communication_Mastery.pdf', title: 'Clinical Information and Communication Mastery', area: 'Drug Information' },
+  { file: 'BCPS_Pharmacokinetics_Mastery.pdf', title: 'BCPS Pharmacokinetics Mastery', area: 'Pharmacokinetics' },
+  { file: 'Clinical_Biostatistics_Blueprint.pdf', title: 'Clinical Biostatistics Blueprint', area: 'Biostatistics' },
 ];
