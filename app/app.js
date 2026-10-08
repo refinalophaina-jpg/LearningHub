@@ -980,7 +980,7 @@ function renderDrugRow(d, highlight) {
     const re = new RegExp('(' + highlight.replace(/[.*+?^${}()|[\]\\]/g,'\\$&') + ')', 'gi');
     return txt.replace(re, '<mark class="highlighted">$1</mark>');
   };
-  const moaHtml = d.moa ? `<div class="moa-tag">⚙️ <em>${hl(d.moa)}</em></div>` : '';
+  const moaHtml = d.moa ? `<div class="moa-tag"><em>${hl(d.moa)}</em></div>` : '';
   const cautionHtml = d.caution ? `<div class="caution-tag">⚠️ ${hl(d.caution)}</div>` : '';
   // Build clickable resource links
   const drugName = encodeURIComponent(d.drug.split('+')[0].split('/')[0].trim().split(' ')[0]);
@@ -2466,7 +2466,6 @@ function drugRender() {
     cardEl.style.cssText = `
       background: var(--card);
       border: 1px solid var(--sep, #e5e7eb);
-      border-left: 4px solid ${areaColor};
       border-radius: 8px;
       padding: 12px;
       cursor: pointer;
@@ -3307,12 +3306,12 @@ function renderProgressStats() {
 
   el.innerHTML = `
     
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(90px,1fr));gap:8px;margin-bottom:14px;">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(60px,1fr));gap:8px;margin-bottom:14px;">
       <div class="ps-card"><div class="ps-val" style="color:var(--primary,#0071e3);">${acc}%</div><div class="ps-lbl">Accuracy</div></div>
       <div class="ps-card"><div class="ps-val" style="color:#22c55e;">${totalC}</div><div class="ps-lbl">Correct</div></div>
-      <div class="ps-card"><div class="ps-val" style="color:#f59e0b;">${missed}</div><div class="ps-lbl">Missed Q's</div></div>
+      <div class="ps-card"><div class="ps-val" style="color:#f59e0b;">${missed}</div><div class="ps-lbl">Missed</div></div>
       <div class="ps-card"><div class="ps-val" style="color:#8b5cf6;">${sessions}</div><div class="ps-lbl">Sessions</div></div>
-      <div class="ps-card"><div class="ps-val" style="color:#ef4444;">${streak}</div><div class="ps-lbl">Day Streak 🔥</div></div>
+      <div class="ps-card"><div class="ps-val" style="color:#ef4444;">${streak}</div><div class="ps-lbl">Day streak</div></div>
     </div>
     ${Object.keys(ts).length > 0 ? `
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
