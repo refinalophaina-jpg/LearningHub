@@ -166,7 +166,7 @@
       <div class="home-tool-card" style="--chip-c:var(--sec-glossary);" onclick="switchSection('glossary')">
         <div class="icon-chip lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-2-1.2-5-1.2-7 0v12c2-1.2 5-1.2 7 0 2-1.2 5-1.2 7 0V6c-2-1.2-5-1.2-7 0z"/><path d="M12 6v12"/></svg></div>
         <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Glossary</div>
-        <div style="font-size:12px; color:var(--label2);">492 terms</div>
+        <div style="font-size:12px; color:var(--label2);">543 terms</div>
       </div>
 
       <div class="home-tool-card" style="--chip-c:var(--sec-evidence);" onclick="switchSection('evidence')">
@@ -1141,7 +1141,7 @@
       <div style="font-size:0.72rem;color:var(--label2)">Drug Profiles</div>
     </div>
     <div style="flex:1;min-width:120px;background:var(--card);border-radius:14px;padding:14px 16px;border:1px solid var(--sep)">
-      <div style="font-size:1.6rem;font-weight:700;color:var(--primary)" id="gloTermCount">492</div>
+      <div style="font-size:1.6rem;font-weight:700;color:var(--primary)" id="gloTermCount">543</div>
       <div style="font-size:0.72rem;color:var(--label2)">Glossary Terms</div>
     </div>
   </div>
@@ -1706,7 +1706,7 @@
 
 <div class="section-header glo-section-header">
   <div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-glossary);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-2-1.2-5-1.2-7 0v12c2-1.2 5-1.2 7 0 2-1.2 5-1.2 7 0V6c-2-1.2-5-1.2-7 0z"/><path d="M12 6v12"/></svg></span><div class="section-title">Medical &amp; Pharmacology Glossary</div></div>
-  <div class="section-subtitle">492 terms — Pharmacokinetics, Clinical Pharmacology, Cardiovascular, ID, Critical Care & more</div>
+  <div class="section-subtitle">543 terms — Biostatistics, Pharmacokinetics, Clinical Pharmacology, Cardiovascular, ID, Critical Care & more</div>
 </div>
 
 <div class="glo-wrap">
@@ -1716,6 +1716,7 @@
   </div>
   <div class="glo-filters" id="gloFilters">
     <button class="glo-filter-btn active" onclick="gloSetCat(this,'ALL')">All</button>
+    <button class="glo-filter-btn" onclick="gloSetCat(this,'Biostatistics')">Biostats</button>
     <button class="glo-filter-btn" onclick="gloSetCat(this,'PK/PD')">PK/PD</button>
     <button class="glo-filter-btn" onclick="gloSetCat(this,'Pharmacology')">Pharmacology</button>
     <button class="glo-filter-btn" onclick="gloSetCat(this,'Cardiovascular')">Cardiovascular</button>
@@ -1728,8 +1729,6 @@
     <button class="glo-filter-btn" onclick="gloSetCat(this,'Pulmonology')">Pulm</button>
     <button class="glo-filter-btn" onclick="gloSetCat(this,'Lab Values')">Lab Values</button>
     <button class="glo-filter-btn" onclick="gloSetCat(this,'Abbreviations')">Abbreviations</button>
-    <button class="glo-filter-btn" onclick="gloSetCat(this,'Psychiatry')">Psych</button>
-    <button class="glo-filter-btn" onclick="gloSetCat(this,'Oncology')">Onc</button>
   </div>
   <div class="glo-az" id="gloAZ"></div>
   <div class="glo-scroll"><div id="gloOutput"></div>
