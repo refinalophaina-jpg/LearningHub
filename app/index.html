@@ -33,7 +33,7 @@
     <h1 style="font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:1.05rem;letter-spacing:.01em;color:var(--label);white-space:nowrap;">BCPS Learning <em style="font-style:italic;color:var(--terracotta);">Hub</em></h1>
     <div class="subtitle">449 Questions · 206 Flashcards · 22 Chapters</div>
   </div>
-  <button class="search-btn" onclick="openSpotlight()" title="Search everything (⌘K)">🔍 Search</button>
+  <button class="search-btn" onclick="openSpotlight()" title="Search everything (⌘K)">Search</button>
 </div>
 
 <!-- SPOTLIGHT SEARCH MODAL -->
@@ -93,13 +93,13 @@
   <div id="resetModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:9999;display:none;align-items:center;justify-content:center;">
     <div style="background:var(--card,#fff);border-radius:16px;padding:28px 24px;max-width:360px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.25);">
       <div style="font-size:2.5rem;margin-bottom:8px;">⚠️</div>
-      <h3 style="margin:0 0 8px;font-size:17px;font-weight:700;color:var(--label1,#111);">Reset All Progress?</h3>
+      <h2 style="margin:0 0 8px;font-size:17px;font-weight:700;color:var(--label1,#111);">Reset all progress?</h2>
       <p style="margin:0 0 20px;font-size:13px;color:var(--label2,#555);line-height:1.5;">This will permanently erase your quiz history, flashcard intervals, streaks, and missed question list. <strong>This cannot be undone.</strong></p>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px;">
-        <button onclick="resetSection('quiz')" style="padding:10px 6px;background:rgba(239,68,68,0.08);color:#dc2626;border:1px solid rgba(239,68,68,0.3);border-radius:10px;font-size:12px;font-weight:600;cursor:pointer;">🧠 Quiz Only</button>
-        <button onclick="resetSection('flash')" style="padding:10px 6px;background:rgba(239,68,68,0.08);color:#dc2626;border:1px solid rgba(239,68,68,0.3);border-radius:10px;font-size:12px;font-weight:600;cursor:pointer;">🃏 Flashcards Only</button>
+        <button onclick="resetSection('quiz')" style="padding:10px 6px;background:rgba(239,68,68,0.08);color:#dc2626;border:1px solid rgba(239,68,68,0.3);border-radius:10px;font-size:12px;font-weight:600;cursor:pointer;">Quiz only</button>
+        <button onclick="resetSection('flash')" style="padding:10px 6px;background:rgba(239,68,68,0.08);color:#dc2626;border:1px solid rgba(239,68,68,0.3);border-radius:10px;font-size:12px;font-weight:600;cursor:pointer;">Flashcards only</button>
       </div>
-      <button onclick="resetSection('all')" style="width:100%;padding:12px;background:#ef4444;color:#fff;border:none;border-radius:10px;font-size:14px;font-weight:700;cursor:pointer;margin-bottom:10px;">💣 Reset Everything</button>
+      <button onclick="resetSection('all')" style="width:100%;padding:12px;background:#ef4444;color:#fff;border:none;border-radius:10px;font-size:14px;font-weight:700;cursor:pointer;margin-bottom:10px;">Reset everything</button>
       <button onclick="document.getElementById('resetModal').style.display='none'" style="width:100%;padding:10px;background:var(--fill,#f2f2f7);color:var(--label1,#111);border:none;border-radius:10px;font-size:13px;font-weight:600;cursor:pointer;">Cancel</button>
     </div>
   </div>
@@ -122,12 +122,6 @@
 
   <!-- Content -->
   <div style="padding:24px 20px;">
-
-    <!-- Quick intro -->
-    <div style="background:var(--card); border-radius:16px; padding:20px; margin-bottom:28px; border:1px solid var(--sep);">
-      <h2 style="font-size:20px; font-weight:600; margin:0 0 12px;">What You'll Find Here</h2>
-      <p style="margin:0; font-size:15px; color:var(--label2); line-height:1.6;">This hub brings together everything you need to prepare for the BCPS certification exam across all therapeutic areas.</p>
-    </div>
 
     <!-- Feature cards -->
     <h3 style="font-size:16px; font-weight:700; margin:0 0 16px; text-transform:uppercase; letter-spacing:0.5px; color:var(--label2);">Study tools</h3>
@@ -191,7 +185,7 @@
 
     <!-- Key features -->
     <h3 style="font-size:16px; font-weight:700; margin:0 0 16px; text-transform:uppercase; letter-spacing:0.5px; color:var(--label2);">Built for the exam</h3>
-    <div style="background:var(--primary-light); border-radius:12px; padding:16px; margin-bottom:28px; border-left:4px solid var(--terracotta);">
+    <div style="background:var(--primary-light); border-radius:12px; padding:16px; margin-bottom:28px;">
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; font-size:14px;">
         <div>
           <strong style="color:var(--terracotta);">Spaced review</strong>
@@ -219,7 +213,7 @@
     <div id="studyPlanPanel" style="margin-bottom:20px;"></div>
 
     <!-- Exam-window note: BPS lags brand-new guideline changes -->
-    <div style="background:var(--card,#fff); border:1px solid var(--divider,#e5e7eb); border-left:3px solid #b84a2e; border-radius:12px; padding:16px 18px; margin-bottom:20px;">
+    <div style="background:var(--card,#fff); border:1px solid var(--divider,#e5e7eb); border-radius:12px; padding:16px 18px; margin-bottom:20px;">
       <h3 style="margin:0 0 6px; font-size:15px; font-weight:700; color:var(--label1,#111);">Studying to the exam's window</h3>
       <p style="margin:0 0 10px; font-size:13.5px; line-height:1.55; color:var(--label2,#555);">
         BPS builds each exam from guidelines as they stood <strong>about 6–12 months before your test date</strong>, and deliberately excludes rapidly-evolving or brand-new practice changes. This hub reflects current practice but marks anything recent inline with <strong>⚑</strong>. When you see a ⚑ flag, know the fact — but for the exam, the <em>prior</em> standard may still be what's tested.
@@ -246,13 +240,13 @@
       <!-- Code preview textarea (always visible, auto-populated) -->
       <div style="position:relative;margin-bottom:10px;">
         <textarea id="liveCodePreview" readonly placeholder="Your backup code will appear here…" onclick="this.select()" style="width:100%;height:64px;border-radius:8px;border:1px solid var(--sep);padding:8px 10px 8px 10px;font-size:10.5px;font-family:monospace;resize:none;box-sizing:border-box;background:var(--fill);color:var(--label);cursor:pointer;" title="Click to select all"></textarea>
-        <span style="position:absolute;top:6px;right:8px;font-size:10px;color:var(--label3,#aaa);">click to select</span>
+        <span style="position:absolute;top:6px;right:8px;font-size:11px;color:var(--label2);">click to select</span>
       </div>
 
       <!-- Action buttons -->
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px;">
-        <button onclick="copyProgressCode()" style="padding:9px 10px;background:var(--primary);color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer;font-size:13px;">📋 Copy Code</button>
-        <button onclick="emailProgressCode()" style="padding:9px 10px;background:transparent;color:var(--primary);border:1.5px solid var(--primary);border-radius:8px;font-weight:600;cursor:pointer;font-size:13px;">✉️ Email to Me</button>
+        <button onclick="copyProgressCode()" style="padding:9px 10px;background:var(--primary);color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer;font-size:13px;">Copy code</button>
+        <button onclick="emailProgressCode()" style="padding:9px 10px;background:transparent;color:var(--primary);border:1.5px solid var(--primary);border-radius:8px;font-weight:600;cursor:pointer;font-size:13px;">Email to me</button>
       </div>
 
       <!-- Load code row -->
@@ -260,7 +254,7 @@
         <summary style="font-size:13px;font-weight:600;color:var(--label2);cursor:pointer;user-select:none;padding:6px 0;">📥 Load a saved code</summary>
         <div style="margin-top:8px;">
           <textarea id="importCodeInput" placeholder="Paste your progress code here…" style="width:100%;height:64px;border-radius:8px;border:1px solid var(--sep);padding:8px 10px;font-size:11px;font-family:monospace;resize:vertical;box-sizing:border-box;background:var(--fill);color:var(--label);"></textarea>
-          <button onclick="importProgressCode()" style="width:100%;margin-top:8px;padding:10px;background:#34C759;color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer;font-size:13px;">✓ Apply Code &amp; Reload</button>
+          <button onclick="importProgressCode()" style="width:100%;margin-top:8px;padding:10px;background:#34C759;color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer;font-size:13px;">Apply code &amp; reload</button>
           <div id="importCodeMsg" style="margin-top:6px;font-size:12px;min-height:14px;"></div>
         </div>
       </details>
@@ -274,7 +268,7 @@
 <div id="more" class="section">
   <div class="section-header">
     <div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-more);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="12" r="1.7"/><circle cx="12" cy="12" r="1.7"/><circle cx="19" cy="12" r="1.7"/></svg></span><h2>More Study Tools</h2></div>
-    <p>Deeper reference material — kept off the main bar so it stays uncluttered. Pick a tool to dive in.</p>
+    <p>Deeper reference material for when you want to go beyond the core loop.</p>
   </div>
   <div class="more-hub-grid">
     <button class="more-hub-card" style="--chip-c:var(--sec-exam);" onclick="switchSection('exampsych')">
@@ -317,7 +311,7 @@
     <div class="visual-card">
       <button class="viz-zoom-trigger" onclick="vizLbOpen('cascadeCanvas','Coagulation Cascade & Anticoagulant Targets')">⊕ Zoom</button>
       <div class="visual-card-head">
-        <div class="visual-card-title">🩸 Coagulation Cascade & Anticoagulant Targets</div>
+        <div class="visual-card-title">Coagulation Cascade & Anticoagulant Targets</div>
         <div class="visual-card-desc">Where each anticoagulant acts in the clotting pathway</div>
       </div>
       <canvas id="cascadeCanvas" onclick="vizLbOpen('cascadeCanvas','Coagulation Cascade & Anticoagulant Targets')" title="Click to zoom" class="visual-canvas" height="320"></canvas>
@@ -325,7 +319,7 @@
     <div class="visual-card">
       <button class="viz-zoom-trigger" onclick="vizLbOpen('raasCanvas','RAAS Pathway & Drug Targets')">⊕ Zoom</button>
       <div class="visual-card-head">
-        <div class="visual-card-title">❤️ RAAS Pathway & Drug Targets</div>
+        <div class="visual-card-title">RAAS Pathway & Drug Targets</div>
         <div class="visual-card-desc">ACEi, ARB, ARNI, MRA, and direct renin inhibitor action sites</div>
       </div>
       <canvas id="raasCanvas" onclick="vizLbOpen('raasCanvas','RAAS Pathway & Drug Targets')" title="Click to zoom" class="visual-canvas" height="320"></canvas>
@@ -333,7 +327,7 @@
     <div class="visual-card">
       <button class="viz-zoom-trigger" onclick="vizLbOpen('adrenCanvas','Adrenergic Receptor Pharmacology')">⊕ Zoom</button>
       <div class="visual-card-head">
-        <div class="visual-card-title">💉 Adrenergic Receptor Pharmacology</div>
+        <div class="visual-card-title">Adrenergic Receptor Pharmacology</div>
         <div class="visual-card-desc">α1, α2, β1, β2 receptor effects and drug selectivity map</div>
       </div>
       <canvas id="adrenCanvas" onclick="vizLbOpen('adrenCanvas','Adrenergic Receptor Pharmacology')" title="Click to zoom" class="visual-canvas" height="320"></canvas>
@@ -341,7 +335,7 @@
     <div class="visual-card">
       <button class="viz-zoom-trigger" onclick="vizLbOpen('betalactamCanvas','Beta-Lactam MOA: Cell Wall Synthesis')">⊕ Zoom</button>
       <div class="visual-card-head">
-        <div class="visual-card-title">🔵 Beta-Lactam MOA: Cell Wall Synthesis</div>
+        <div class="visual-card-title">Beta-Lactam MOA: Cell Wall Synthesis</div>
         <div class="visual-card-desc">PBP binding, transpeptidase inhibition, autolytic cascade</div>
       </div>
       <canvas id="betalactamCanvas" onclick="vizLbOpen('betalactamCanvas','Beta-Lactam MOA: Cell Wall Synthesis')" title="Click to zoom" class="visual-canvas" height="320"></canvas>
@@ -349,7 +343,7 @@
     <div class="visual-card">
       <button class="viz-zoom-trigger" onclick="vizLbOpen('spectrumCanvas','Antibiotic Spectrum Visual Matrix')">⊕ Zoom</button>
       <div class="visual-card-head">
-        <div class="visual-card-title">📊 Antibiotic Spectrum Visual Matrix</div>
+        <div class="visual-card-title">Antibiotic Spectrum Visual Matrix</div>
         <div class="visual-card-desc">Coverage heatmap: Gram+, Gram−, Pseudo, MRSA, Anaerobes</div>
       </div>
       <canvas id="spectrumCanvas" onclick="vizLbOpen('spectrumCanvas','Antibiotic Spectrum Visual Matrix')" title="Click to zoom" class="visual-canvas" height="320"></canvas>
@@ -357,7 +351,7 @@
     <div class="visual-card">
       <button class="viz-zoom-trigger" onclick="vizLbOpen('cypCanvas','CYP450 Drug Interaction Web')">⊕ Zoom</button>
       <div class="visual-card-head">
-        <div class="visual-card-title">🧬 CYP450 Drug Interaction Web</div>
+        <div class="visual-card-title">CYP450 Drug Interaction Web</div>
         <div class="visual-card-desc">Major enzyme substrates, inhibitors, and inducers — interactive web</div>
       </div>
       <canvas id="cypCanvas" onclick="vizLbOpen('cypCanvas','CYP450 Drug Interaction Web')" title="Click to zoom" class="visual-canvas" height="320"></canvas>
@@ -365,7 +359,7 @@
     <div class="visual-card">
       <button class="viz-zoom-trigger" onclick="vizLbOpen('glucoseCanvas','Glucose/Insulin Physiology')">⊕ Zoom</button>
       <div class="visual-card-head">
-        <div class="visual-card-title">🍬 Glucose-Lowering Mechanisms</div>
+        <div class="visual-card-title">Glucose-Lowering Mechanisms</div>
         <div class="visual-card-desc">Sites and mechanisms of all major antidiabetic drug classes</div>
       </div>
       <canvas id="glucoseCanvas" onclick="vizLbOpen('glucoseCanvas','Glucose/Insulin Physiology')" title="Click to zoom" class="visual-canvas" height="320"></canvas>
@@ -373,21 +367,21 @@
     <div class="visual-card">
       <button class="viz-zoom-trigger" onclick="vizLbOpen('renalCanvas','Renal Drug Elimination')">⊕ Zoom</button>
       <div class="visual-card-head">
-        <div class="visual-card-title">💧 Renal Drug Handling</div>
+        <div class="visual-card-title">Renal Drug Handling</div>
         <div class="visual-card-desc">Nephron segments and major drug transport mechanisms</div>
       </div>
       <canvas id="renalCanvas" onclick="vizLbOpen('renalCanvas','Renal Drug Elimination')" title="Click to zoom" class="visual-canvas" height="320"></canvas>
     </div>
     <div class="visual-card">
       <div class="visual-card-head">
-        <div class="visual-card-title">🧪 Antibiotic Target Sites</div>
+        <div class="visual-card-title">Antibiotic Target Sites</div>
         <div class="visual-card-desc">Cell wall, protein synthesis, DNA gyrase, and membrane targets</div>
       </div>
       <canvas id="abxTargetCanvas" class="visual-canvas" height="320"></canvas>
     </div>
     <div class="visual-card">
       <div class="visual-card-head">
-        <div class="visual-card-title">💔 Heart Failure Neurohormonal Cascade</div>
+        <div class="visual-card-title">Heart Failure Neurohormonal Cascade</div>
         <div class="visual-card-desc">RAAS, SNS, and natriuretic peptide pathways — and where drugs intervene</div>
       </div>
       <canvas id="hfCanvas" class="visual-canvas" height="360"></canvas>
@@ -395,7 +389,7 @@
     <div class="visual-card">
       <button class="viz-zoom-trigger" onclick="vizLbOpen('ssNmsCanvas','Serotonin Syndrome vs NMS')">⊕ Zoom</button>
       <div class="visual-card-head">
-        <div class="visual-card-title">⚡ Serotonin Syndrome vs NMS</div>
+        <div class="visual-card-title">Serotonin Syndrome vs NMS</div>
         <div class="visual-card-desc">Side-by-side comparison of clinical features and causative agents</div>
       </div>
       <canvas id="ssNmsCanvas" onclick="vizLbOpen('ssNmsCanvas','Serotonin Syndrome vs NMS')" title="Click to zoom" class="visual-canvas" height="320"></canvas>
@@ -403,7 +397,7 @@
       <div class="visual-card">
       <button class="viz-zoom-trigger" onclick="vizLbOpen('copdCanvas','COPD/Asthma Stepwise Therapy & Bronchodilator Targets')">⊕ Zoom</button>
       <div class="visual-card-head">
-        <div class="visual-card-title">🫁 COPD/Asthma Stepwise Therapy</div>
+        <div class="visual-card-title">COPD/Asthma Stepwise Therapy</div>
         <div class="visual-card-desc">GOLD COPD groups, stepwise bronchodilator targets, and key pharmacology</div>
       </div>
       <canvas id="copdCanvas" onclick="vizLbOpen('copdCanvas','COPD/Asthma Stepwise Therapy & Bronchodilator Targets')" title="Click to zoom" class="visual-canvas" height="340"></canvas>
@@ -411,7 +405,7 @@
     <div class="visual-card">
       <button class="viz-zoom-trigger" onclick="vizLbOpen('opioidCanvas','Opioid Receptor Pharmacology & Analgesic Ladder')">⊕ Zoom</button>
       <div class="visual-card-head">
-        <div class="visual-card-title">💊 Opioid Receptor Pharmacology</div>
+        <div class="visual-card-title">Opioid Receptor Pharmacology</div>
         <div class="visual-card-desc">Mu/Kappa/Delta receptor effects, WHO analgesic ladder, reversal agents</div>
       </div>
       <canvas id="opioidCanvas" onclick="vizLbOpen('opioidCanvas','Opioid Receptor Pharmacology & Analgesic Ladder')" title="Click to zoom" class="visual-canvas" height="340"></canvas>
@@ -419,7 +413,7 @@
     <div class="visual-card">
       <button class="viz-zoom-trigger" onclick="vizLbOpen('pkpdCanvas','PK/PD Targets: Concentration vs Time Profiles')">⊕ Zoom</button>
       <div class="visual-card-head">
-        <div class="visual-card-title">📈 PK/PD Antibiotic Targets</div>
+        <div class="visual-card-title">PK/PD Antibiotic Targets</div>
         <div class="visual-card-desc">AUC/MIC, Cmax/MIC, and %T>MIC — visual guide to antibiotic PK/PD optimization</div>
       </div>
       <canvas id="pkpdCanvas" onclick="vizLbOpen('pkpdCanvas','PK/PD Targets: Concentration vs Time Profiles')" title="Click to zoom" class="visual-canvas" height="340"></canvas>
@@ -427,7 +421,7 @@
     <div class="visual-card">
       <button class="viz-zoom-trigger" onclick="vizLbOpen('antidepCanvas','Antidepressant Mechanisms & Receptor Profiles')">⊕ Zoom</button>
       <div class="visual-card-head">
-        <div class="visual-card-title">🧠 Antidepressant Mechanisms</div>
+        <div class="visual-card-title">Antidepressant Mechanisms</div>
         <div class="visual-card-desc">SSRI, SNRI, TCA, MAOI, and novel antidepressant receptor targets compared</div>
       </div>
       <canvas id="antidepCanvas" onclick="vizLbOpen('antidepCanvas','Antidepressant Mechanisms & Receptor Profiles')" title="Click to zoom" class="visual-canvas" height="340"></canvas>
@@ -435,7 +429,7 @@
     <div class="visual-card">
       <button class="viz-zoom-trigger" onclick="vizLbOpen('ibdCanvas','IBD Therapy: Ulcerative Colitis vs Crohn Stepwise')">⊕ Zoom</button>
       <div class="visual-card-head">
-        <div class="visual-card-title">🔬 IBD Therapy Comparison</div>
+        <div class="visual-card-title">IBD Therapy Comparison</div>
         <div class="visual-card-desc">UC vs Crohn therapy pyramid: 5-ASA, steroids, immunomodulators, biologics</div>
       </div>
       <canvas id="ibdCanvas" onclick="vizLbOpen('ibdCanvas','IBD Therapy: Ulcerative Colitis vs Crohn Stepwise')" title="Click to zoom" class="visual-canvas" height="340"></canvas>
@@ -444,7 +438,7 @@
   </div>
 
   <div style="margin-top:1.5rem">
-    <h3 style="margin-bottom:0.75rem;font-size:1rem;color:var(--label)">🗺️ Pharmacology Relationship Mind Map</h3>
+    <h3 style="margin-bottom:0.75rem;font-size:1rem;color:var(--label)">Pharmacology Relationship Mind Map</h3>
     <p style="font-size:0.8rem;color:var(--label2);margin-bottom:0.75rem">Click a node to highlight connections. Drag to explore. Color = exam domain.</p>
     <div class="mindmap-wrap">
       <svg id="mindmapSvg" class="mindmap-svg"></svg>
@@ -463,29 +457,29 @@
   </div>
   <div class="section-header">
     <div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-evidence);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 12 4l9 5"/><path d="M5.5 9.5v8M12 9.5v8M18.5 9.5v8"/><path d="M3.5 20.5h17"/></svg></span><h2>Evidence-Based References</h2></div>
-    <p>120+ landmark trials &amp; guidelines · All 13 BCPS chapters · Cardiology · Anticoagulation · ID · Pulm · Nephrology · Psychiatry · GI · Oncology · Transplant · Geriatrics · Pain · PK/TDM · Biostatistics</p>
+    <p>120+ landmark trials &amp; guidelines across all 13 BCPS chapters</p>
   </div>
   <div class="ev-filter-bar">
-    <input class="ev-search" id="evSearch" placeholder="🔍 Search trials, drugs, outcomes…" oninput="filterEvidence(this.value)">
+    <input class="ev-search" id="evSearch" placeholder="Search trials, drugs, outcomes…" oninput="filterEvidence(this.value)">
     <button class="ev-filter-btn active" onclick="setEvFilter('all',this)">All</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Cardiology',this)">❤️ Cardiology</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Anticoagulation',this)">🩸 Anticoag</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Infectious Disease',this)">🦠 ID</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Endocrinology',this)">🍬 Endocrine</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Nephrology',this)">💧 Nephrology</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Pulmonology',this)">🫁 Pulm</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Neurology',this)">🧠 Neurology</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Psychiatry',this)">🧬 Psychiatry</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('GI/Hepatology',this)">🫀 GI/Hep</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Oncology',this)">🔬 Oncology</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Transplant',this)">💊 Transplant</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Geriatrics',this)">👴 Geriatrics</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Pain',this)">🩹 Pain</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Pharmacokinetics',this)">⚗️ PK/TDM</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Biostatistics',this)">📊 Biostats</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Critical Care',this)">🏥 Critical Care</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('landmark',this)">🔴 Landmark</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('guideline',this)">📘 Guidelines</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Cardiology',this)">Cardiology</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Anticoagulation',this)">Anticoag</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Infectious Disease',this)">ID</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Endocrinology',this)">Endocrine</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Nephrology',this)">Nephrology</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Pulmonology',this)">Pulm</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Neurology',this)">Neurology</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Psychiatry',this)">Psychiatry</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('GI/Hepatology',this)">GI/Hep</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Oncology',this)">Oncology</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Transplant',this)">Transplant</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Geriatrics',this)">Geriatrics</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Pain',this)">Pain</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Pharmacokinetics',this)">PK/TDM</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Biostatistics',this)">Biostats</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Critical Care',this)">Critical Care</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('landmark',this)">Landmark</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('guideline',this)">Guidelines</button>
   </div>
   <div id="evTimeline" style="display:none;padding:10px 0 14px"></div>
   <div id="evContent"></div>
@@ -632,7 +626,7 @@
       <p>How question writers think — and how to reverse-engineer it</p>
     </div>
 
-    <div class="ep-card" style="border-left:4px solid var(--purple)">
+    <div class="ep-card">
       <div class="ep-card-header"><div class="ep-card-title">🏗️ How BPS Constructs Board Questions</div>
       <div class="ep-card-subtitle">The item-writing philosophy behind every BCPS question</div></div>
       <div class="ep-card-body">
@@ -645,7 +639,7 @@
       </div>
     </div>
 
-    <div class="ep-card" style="border-left:4px solid var(--orange)">
+    <div class="ep-card">
       <div class="ep-card-header"><div class="ep-card-title">🧩 The 4 Distractor Archetypes</div>
       <div class="ep-card-subtitle">Pattern-recognize wrong answers before reading options</div></div>
       <div class="ep-card-body">
@@ -670,7 +664,7 @@
       </div>
     </div>
 
-    <div class="ep-card" style="border-left:4px solid var(--green)">
+    <div class="ep-card">
       <div class="ep-card-header"><div class="ep-card-title">📈 BPS Biostatistics: The Mental Model</div>
       <div class="ep-card-subtitle">The specific framework BPS uses to test statistics and EBM</div></div>
       <div class="ep-card-body">
@@ -692,7 +686,7 @@
       </div>
     </div>
 
-    <div class="ep-card" style="border-left:4px solid var(--primary)">
+    <div class="ep-card">
       <div class="ep-card-header"><div class="ep-card-title">🔍 Advanced Stem Dissection: BPS-Specific Signals</div>
       <div class="ep-card-subtitle">Keywords that change everything — and what they signal</div></div>
       <div class="ep-card-body">
@@ -721,7 +715,7 @@
       </div>
     </div>
 
-    <div class="ep-card" style="border-left:4px solid var(--red)">
+    <div class="ep-card">
       <div class="ep-card-header"><div class="ep-card-title">⚡ High-Yield BPS Answer Selection Rules</div>
       <div class="ep-card-subtitle">Decision rules that apply to 80% of BCPS questions</div></div>
       <div class="ep-card-body">
@@ -857,10 +851,10 @@
             <div><b>Formulate before reading options.</b> Mentally commit to an answer before seeing the choices. This prevents distractor anchoring — being seduced by a plausible-but-wrong option. Then: if options match your gut → you're probably right. Tiebreaker: mortality/QoL benefit wins.</div>
           </div>
         </div>
-        <div style="background:rgba(52,199,89,0.1);border-radius:10px;padding:10px;font-size:0.8rem;margin-top:4px;border-left:3px solid var(--green)">
+        <div style="background:rgba(52,199,89,0.1);border-radius:10px;padding:10px;font-size:0.8rem;margin-top:4px">
           <b>Panic Protocol:</b> Remember a core concept is being tested — not a trick. Trust your first instinct. Eliminate 1-2 options: 25% guess → 50-75% odds. Never leave blank. Take a breath, reset, attack it like a clinical consult.
         </div>
-        <div style="background:rgba(255,149,0,0.1);border-radius:10px;padding:10px;font-size:0.8rem;margin-top:4px;border-left:3px solid var(--orange)">
+        <div style="background:rgba(255,149,0,0.1);border-radius:10px;padding:10px;font-size:0.8rem;margin-top:4px">
           <b>Lab Interpretation is Mandatory:</b> You WILL be tested on basic lab interpretation. Know: CMP, CBC, TSH, lipid panel, coagulation studies. Be comfortable identifying when a lab is unexpected given the PMH — that's often the pivot point of the question.
         </div>
       </div>
@@ -924,7 +918,7 @@
             Both: troponin elevation. Key differentiator: <b>Type 1 = plaque rupture/thrombosis</b>. Type 2 = supply/demand mismatch (sepsis, severe anemia, tachyarrhythmia). Treatment differs: Type 1 → ACS protocol (antiplatelet, anticoagulation, cath). Type 2 → treat the underlying cause. Giving dual antiplatelet for a Type 2 MI is wrong.
           </div>
         </div>
-        <div style="background:rgba(255,59,48,0.08);border-radius:10px;padding:10px;font-size:0.8rem;margin-top:6px;border-left:3px solid var(--red)">
+        <div style="background:rgba(255,59,48,0.08);border-radius:10px;padding:10px;font-size:0.8rem;margin-top:6px">
           <b>Killer Foil Mindset:</b> When a clinical scenario doesn't quite fit the expected disease, look for the one differentiating detail. The question is testing whether you know the single distinguishing feature. Train yourself to identify what DOESN'T fit — that's where the answer lives.
         </div>
       </div>
@@ -945,17 +939,17 @@
             <div style="background:#fff;border-radius:8px;padding:8px">
               <div style="font-size:1.2rem">📚</div>
               <div style="font-weight:700;font-size:0.8rem;color:var(--indigo)">Best Available Evidence</div>
-              <div style="font-size:0.74rem;color:var(--label2)">RCTs, systematic reviews, meta-analyses</div>
+              <div style="font-size:0.75rem;color:var(--label2)">RCTs, systematic reviews, meta-analyses</div>
             </div>
             <div style="background:#fff;border-radius:8px;padding:8px">
               <div style="font-size:1.2rem">🩺</div>
               <div style="font-weight:700;font-size:0.8rem;color:var(--indigo)">Clinical Expertise</div>
-              <div style="font-size:0.74rem;color:var(--label2)">Specialist knowledge, judgment, experience</div>
+              <div style="font-size:0.75rem;color:var(--label2)">Specialist knowledge, judgment, experience</div>
             </div>
             <div style="background:#fff;border-radius:8px;padding:8px">
               <div style="font-size:1.2rem">👤</div>
               <div style="font-weight:700;font-size:0.8rem;color:var(--indigo)">Patient-Specific Factors</div>
-              <div style="font-size:0.74rem;color:var(--label2)">Values, preferences, comorbidities</div>
+              <div style="font-size:0.75rem;color:var(--label2)">Values, preferences, comorbidities</div>
             </div>
           </div>
           <div style="font-size:0.78rem;color:var(--label2);margin-top:6px;text-align:center">No single pillar dominates. Questions test integration of all three.</div>
@@ -993,7 +987,7 @@
           <b>The BPS Biostat Mindset:</b> Every clinical question on this exam is anchored to evidence. When evaluating a trial, ask: What was the study design? Was it ITT? What did the CI include? Was the difference clinically meaningful, or just statistically significant? Is the study population similar to my patient? Answering these in sequence reveals the correct answer even when you don't recognize the specific trial.
         </div>
 
-        <div style="background:rgba(255,59,48,0.08);border-radius:10px;padding:10px;font-size:0.8rem;margin-top:6px;border-left:3px solid var(--red)">
+        <div style="background:rgba(255,59,48,0.08);border-radius:10px;padding:10px;font-size:0.8rem;margin-top:6px">
           <b>Historical Warning:</b> The "Back to Sleep" campaign. For decades, prone sleeping was recommended for infants despite evidence that it increased SIDS risk — and it persisted until 1994. Expert opinion without evidence costs lives. This is why EBM exists — and why the BPS tests it heavily.
         </div>
       </div>
@@ -1126,24 +1120,6 @@
   <div id="progressStatsPanel" style="margin-bottom:4px;"></div>
   <div class="controls">
     <input type="text" id="studySearch" placeholder="Search topics..." class="concept-search" oninput="filterStudy(this.value)">
-  </div>
-  <div class="quick-stats" style="display:flex;gap:12px;margin-bottom:16px;flex-wrap:wrap">
-    <div style="flex:1;min-width:120px;background:var(--card);border-radius:14px;padding:14px 16px;border:1px solid var(--sep)">
-      <div style="font-size:1.6rem;font-weight:700;color:var(--primary)">449</div>
-      <div style="font-size:0.72rem;color:var(--label2)">Practice Questions</div>
-    </div>
-    <div style="flex:1;min-width:120px;background:var(--card);border-radius:14px;padding:14px 16px;border:1px solid var(--sep)">
-      <div style="font-size:1.6rem;font-weight:700;color:var(--primary)">206</div>
-      <div style="font-size:0.72rem;color:var(--label2)">Flashcards</div>
-    </div>
-    <div style="flex:1;min-width:120px;background:var(--card);border-radius:14px;padding:14px 16px;border:1px solid var(--sep)">
-      <div style="font-size:1.6rem;font-weight:700;color:var(--primary)">70</div>
-      <div style="font-size:0.72rem;color:var(--label2)">Drug Profiles</div>
-    </div>
-    <div style="flex:1;min-width:120px;background:var(--card);border-radius:14px;padding:14px 16px;border:1px solid var(--sep)">
-      <div style="font-size:1.6rem;font-weight:700;color:var(--primary)" id="gloTermCount">543</div>
-      <div style="font-size:0.72rem;color:var(--label2)">Glossary Terms</div>
-    </div>
   </div>
 <div id="studyContent">
 <div class="chapter-card"><h3 onclick="this.closest(&quot;.chapter-card&quot;).classList.toggle(&quot;open&quot;)"><span>Acute Care Cardiology</span><span class="vol-badge">Volume 1</span></h3><div class="chapter-card-body"><p>Covers ACS, heart failure decompensation, arrhythmias, and cardiogenic shock management.</p>
@@ -1562,9 +1538,9 @@
     <div class="score-stat"><span class="score-stat-value" id="correctDisplay" style="color:var(--green)">0</span><span class="score-stat-label">Correct</span></div>
     <div class="score-stat"><span class="score-stat-value" id="accuracyDisplay">--%</span><span class="score-stat-label">Accuracy</span></div>
     <div class="progress-track" style="flex:1"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+    <button id="topicStatsBtn" onclick="openTopicStats()">Topic stats</button>
   </div>
-  <div style="display:flex;justify-content:flex-end;margin-bottom:6px"><button id="topicStatsBtn" onclick="openTopicStats()">📊 Topic Stats</button></div>
-  <div class="controls">
+  <div class="controls quiz-controls">
     <select id="domainFilter" onchange="loadQuestion()">
       <option value="all">All Exam Domains</option>
       <option value="Area 1">Area 1: Patient Care Specialty (36%)</option>
@@ -1580,9 +1556,11 @@
     <select id="topicFilter" onchange="loadQuestion()">
       <option value="all">All Topics</option>
     </select>
-    <button class="btn btn-primary" onclick="loadQuestion()">Next Question</button>
-    <button class="btn btn-secondary" onclick="resetScore()">Reset Score</button>
-    <button class="btn btn-secondary" id="reviewMissedBtn" onclick="toggleReviewMissed()" style="display:none">📋 Review Missed</button>
+    <div class="quiz-actions">
+      <button class="btn btn-primary" onclick="loadQuestion()">Next question</button>
+      <button class="btn btn-secondary" onclick="resetScore()">Reset score</button>
+      <button class="btn btn-secondary" id="reviewMissedBtn" onclick="toggleReviewMissed()" style="display:none">Review missed</button>
+    </div>
   </div>
   <div id="questionContainer"></div>
 </div>
@@ -1616,7 +1594,7 @@
         <option value="new">New Only</option>
         <option value="review">Review Only</option>
       </select>
-      <button class="btn btn-secondary" onclick="shuffleFlash()">&#128256; Shuffle</button>
+      <button class="btn btn-secondary" onclick="shuffleFlash()">Shuffle</button>
       <button class="btn btn-secondary" onclick="resetSR()" title="Clear all SR progress">&#9851; Reset SR</button>
     </div>
     <div id="fcCounter" class="fc-counter"></div>
@@ -1655,8 +1633,8 @@
       <select id="clozeTopicFilter" onchange="buildClozeSection()">
         <option value="all">All Topics</option>
       </select>
-      <button class="btn btn-secondary" onclick="shuffleCloze()">&#128256; Shuffle</button>
-      <button class="btn btn-secondary" id="clozeRevealAllBtn" onclick="toggleClozeRevealAll()">&#128065; Reveal all</button>
+      <button class="btn btn-secondary" onclick="shuffleCloze()">Shuffle</button>
+      <button class="btn btn-secondary" id="clozeRevealAllBtn" onclick="toggleClozeRevealAll()">Reveal all</button>
       <span id="clozeCounter" class="fc-counter" style="margin-left:auto"></span>
     </div>
     <div id="clozeCards"></div>
@@ -1790,7 +1768,7 @@
 <div id="topicStatsOverlay" onclick="if(event.target===this)closeTopicStats()">
   <div id="topicStatsPanel">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
-      <h3 style="margin:0">📊 Accuracy by Topic</h3>
+      <h3 style="margin:0">Accuracy by topic</h3>
       <button onclick="closeTopicStats()" aria-label="Close" style="background:none;border:none;font-size:20px;line-height:1;cursor:pointer;color:var(--label3)">✕</button>
     </div>
     <p style="margin:0 0 12px;font-size:0.78rem;color:var(--label2)">Based on quiz questions you've answered this device. Weakest topics are worth the most review time.</p>
