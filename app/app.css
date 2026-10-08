@@ -74,7 +74,7 @@ body{background:var(--bg);color:var(--label);font-family:-apple-system,BlinkMacS
 .btn{padding:9px 18px;border-radius:12px;border:none;cursor:pointer;font-size:0.85rem;font-weight:600;transition:all 0.15s;letter-spacing:0.01em;display:inline-flex;align-items:center;gap:5px}
 .btn:active{transform:scale(0.96)}
 .btn-primary{background:var(--primary);color:#fff}
-.btn-primary:active{background:#0060D0}
+.btn-primary:active{background:#8f4c30}
 .btn-secondary{background:var(--fill);color:var(--label)}
 .btn-secondary:active{background:rgba(120,120,128,.22)}
 .btn-success{background:var(--green);color:#fff}
