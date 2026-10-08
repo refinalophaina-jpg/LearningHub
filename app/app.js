@@ -158,14 +158,19 @@ const quizData = JSON.parse(({textContent: JSON.stringify(window.__quizData)}).t
 const flashData = JSON.parse(({textContent: JSON.stringify(window.__flashData)}).textContent);
 
 // ── NAVIGATION ────────────────────────────────────────────────────────────
+const MORE_SUBS = ['exampsych', 'visuals', 'evidence', 'glossary'];
 function switchSection(id) {
   try{window.dispatchEvent(new CustomEvent("bcps:tab",{detail:id}));}catch(e){}
   document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
   const el = document.getElementById(id);
   if (el) el.classList.add('active');
-  const tb = document.getElementById('tab-'+id);
+  // Sub-sections of "More" keep the More tab lit; everything else lights its own tab.
+  const tabId = MORE_SUBS.indexOf(id) !== -1 ? 'more' : id;
+  const tb = document.getElementById('tab-'+tabId);
   if (tb) tb.classList.add('active');
+  // Reflect the active sub-tab inside the More sub-nav bars.
+  document.querySelectorAll('.more-subtab').forEach(b => b.classList.toggle('active', b.dataset.sub === id));
   if (id === 'quiz' && !quizInitialized) initQuiz();
   if (id === 'flash' && !flashInitialized) initFlash();
   if (id === 'concepts' && !window._drugInitDone) { window._drugInitDone = true; drugInit(); }
@@ -444,14 +449,14 @@ function initFlash() {
 
 function switchFcMode(mode) {
   currentFcMode = mode;
-  ['study','cloze','create'].forEach(m => {
+  ['study','cloze'].forEach(m => {
     const el = document.getElementById('fcMode' + m.charAt(0).toUpperCase() + m.slice(1));
     if (el) el.style.display = m === mode ? '' : 'none';
   });
   document.querySelectorAll('.fc-mode-tab').forEach((b,i) => {
-    b.classList.toggle('active', ['study','cloze','create'][i] === mode);
+    b.classList.toggle('active', ['study','cloze'][i] === mode);
   });
-  if (mode === 'create') refreshCustomList();
+  if (mode === 'cloze') { populateClozeTopics(); buildClozeSection(); }
 }
 
 // ── Stats ─────────────────────────────────────────────────────────────────
@@ -616,29 +621,88 @@ function resetSR() {
 }
 
 // ── CLOZE RENDERING ───────────────────────────────────────────────────────
+let _clozeShuffleSeed = 0;      // bumped by Shuffle to reorder
+let _clozeRevealAll = false;    // Reveal-all toggle state
+
+function _clozeEscapeAttr(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;')
+    .replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+// Replace [[answer]] tokens with clickable blanks. Reveal is handled by a
+// delegated click listener on the container (see clozeClickHandler) so the
+// answer text is carried safely in a data-attribute rather than inline JS.
 function renderClozeHidden(text) {
-  return text.replace(/\[\[(.+?)\]\]/g, (match, word) =>
-    `<span class="cloze-blank" onclick="this.classList.toggle('revealed');this.textContent=this.classList.contains('revealed')?'${word.replace(/'/g,"'")}':'_____';event.stopPropagation()" title="Click to reveal">_____</span>`
+  return String(text).replace(/\[\[(.+?)\]\]/g, (m, word) =>
+    `<span class="cloze-blank" data-answer="${_clozeEscapeAttr(word.trim())}" title="Click to reveal">_____</span>`
   );
+}
+
+function clozeClickHandler(e) {
+  const b = e.target.closest('.cloze-blank');
+  if (!b) return;
+  e.stopPropagation();
+  const revealed = b.classList.toggle('revealed');
+  b.textContent = revealed ? (b.dataset.answer || '') : '_____';
+}
+
+function populateClozeTopics() {
+  const sel = document.getElementById('clozeTopicFilter');
+  if (!sel) return;
+  const cards = [...flashData, ...customCards].filter(c => c.front && c.front.includes('[['));
+  const topics = [...new Set(cards.map(c => c.topic || 'General'))].sort();
+  const cur = sel.value || 'all';
+  sel.innerHTML = '<option value="all">All Topics</option>' +
+    topics.map(t => `<option value="${_clozeEscapeAttr(t)}">${t}</option>`).join('');
+  sel.value = topics.includes(cur) || cur === 'all' ? cur : 'all';
+}
+
+function shuffleCloze() { _clozeShuffleSeed++; buildClozeSection(); }
+
+function toggleClozeRevealAll() {
+  _clozeRevealAll = !_clozeRevealAll;
+  const btn = document.getElementById('clozeRevealAllBtn');
+  if (btn) btn.innerHTML = _clozeRevealAll ? '🙈 Hide all' : '👁 Reveal all';
+  buildClozeSection();
 }
 
 function buildClozeSection() {
   allCards = [...flashData, ...customCards];
-  const clozeCards = allCards.filter(c => c.front && c.front.includes('[['));
+  const topicFilter = (document.getElementById('clozeTopicFilter') || {}).value || 'all';
+  let clozeCards = allCards.filter(c => c.front && c.front.includes('[['));
+  if (topicFilter !== 'all') clozeCards = clozeCards.filter(c => (c.topic || 'General') === topicFilter);
+
+  // Stable-ish shuffle keyed off the seed so Shuffle reorders deterministically per click
+  if (_clozeShuffleSeed) {
+    clozeCards = clozeCards.map((c, i) => ({ c, k: (Math.sin((i + 1) * 999 * _clozeShuffleSeed) + 1) }))
+      .sort((a, b) => a.k - b.k).map(x => x.c);
+  }
+
   const container = document.getElementById('clozeCards');
+  if (!container) return;
+  const counter = document.getElementById('clozeCounter');
+  if (counter) counter.textContent = clozeCards.length + (clozeCards.length === 1 ? ' card' : ' cards');
+
   if (!clozeCards.length) {
-    container.innerHTML = '<div class="empty-state"><h3>No cloze cards yet</h3><p>Add [[blanks]] in the Create tab to make cloze cards.</p></div>';
+    container.innerHTML = '<div class="empty-state"><h3>No cloze cards in this topic</h3><p>Pick another topic, or switch to Study mode for the full deck.</p></div>';
     return;
   }
-  container.innerHTML = clozeCards.map((c, i) => `
-    <div style="background:var(--card);border:1px solid var(--sep);border-radius:12px;padding:1.25rem;margin-bottom:0.75rem;box-shadow:0 1px 4px rgba(0,0,0,.06)">
-      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem">
-        <span style="background:var(--primary);color:#fff;font-size:0.68rem;font-weight:700;padding:0.2rem 0.6rem;border-radius:20px">${c.topic||'General'}</span>
-        <button onclick="this.closest('div').querySelector('.cloze-answer').classList.toggle('show')" class="btn btn-secondary" style="font-size:0.75rem;padding:0.3rem 0.8rem">Show Answer</button>
+  const revealCls = _clozeRevealAll ? ' revealed' : '';
+  container.innerHTML = clozeCards.map((c) => `
+    <div class="cloze-card">
+      <div class="cloze-card-head">
+        <span class="cloze-topic-chip">${c.topic || 'General'}</span>
+        <button onclick="this.closest('.cloze-card').querySelector('.cloze-answer').classList.toggle('show')" class="btn btn-secondary cloze-show-btn">Show answer</button>
       </div>
-      <div style="font-size:1rem;color:var(--label);line-height:1.6;margin-bottom:0.75rem">${renderClozeHidden(c.front)}</div>
-      <div class="cloze-answer" style="display:none;background:var(--fill);border-left:3px solid #10b981;padding:0.75rem;border-radius:0 6px 6px 0;color:var(--label);font-size:0.875rem">${c.back||''}</div>
+      <div class="cloze-front">${renderClozeHidden(c.front).replace(/class="cloze-blank"/g, 'class="cloze-blank' + revealCls + '"')}</div>
+      <div class="cloze-answer">${(c.back || '').replace(/\n/g, '<br>')}</div>
     </div>`).join('');
+
+  // when reveal-all is on, fill the blanks with their answers immediately
+  if (_clozeRevealAll) {
+    container.querySelectorAll('.cloze-blank').forEach(b => { b.textContent = b.dataset.answer || ''; });
+  }
+  container.onclick = clozeClickHandler;
 }
 
 // ── IMAGE OCCLUSION ───────────────────────────────────────────────────────
@@ -780,7 +844,9 @@ function saveCustomCard() {
 function refreshCustomList() {
   const wrap = document.getElementById('customCardListWrap');
   const list = document.getElementById('customCardList');
-  document.getElementById('customCount').textContent = customCards.length;
+  const count = document.getElementById('customCount');
+  if (!wrap || !list || !count) return; // Create-card UI removed — nothing to render
+  count.textContent = customCards.length;
   if (!customCards.length) { wrap.style.display='none'; return; }
   wrap.style.display='';
   list.innerHTML = customCards.map((c,i) => `
@@ -914,7 +980,7 @@ function renderDrugRow(d, highlight) {
     const re = new RegExp('(' + highlight.replace(/[.*+?^${}()|[\]\\]/g,'\\$&') + ')', 'gi');
     return txt.replace(re, '<mark class="highlighted">$1</mark>');
   };
-  const moaHtml = d.moa ? `<div class="moa-tag">⚙️ <em>${hl(d.moa)}</em></div>` : '';
+  const moaHtml = d.moa ? `<div class="moa-tag"><em>${hl(d.moa)}</em></div>` : '';
   const cautionHtml = d.caution ? `<div class="caution-tag">⚠️ ${hl(d.caution)}</div>` : '';
   // Build clickable resource links
   const drugName = encodeURIComponent(d.drug.split('+')[0].split('/')[0].trim().split(' ')[0]);
@@ -2400,7 +2466,6 @@ function drugRender() {
     cardEl.style.cssText = `
       background: var(--card);
       border: 1px solid var(--sep, #e5e7eb);
-      border-left: 4px solid ${areaColor};
       border-radius: 8px;
       padding: 12px;
       cursor: pointer;
@@ -2761,7 +2826,7 @@ function openTopicStats() {
   const body = document.getElementById('topicStatsBody');
   const entries = Object.entries(window.topicStats || {})
     .filter(([,v]) => v.total > 0)
-    .sort((a,b) => (b[1].correct/b[1].total) - (a[1].correct/a[1].total));
+    .sort((a,b) => (a[1].correct/a[1].total) - (b[1].correct/b[1].total)); // weakest first
   if (!entries.length) {
     body.innerHTML = '<p style="color:var(--label2);text-align:center;padding:20px">Answer some questions to see stats!</p>';
   } else {
@@ -2787,7 +2852,6 @@ function closeTopicStats() {
 // ── DARK MODE ──────────────────────────────────────────────────────────────
 function toggleDarkMode() {
   const isDark = document.body.classList.toggle('dark-mode');
-  document.getElementById('darkModeToggle').textContent = isDark ? '☀️' : '🌙';
   try { localStorage.setItem('bcps_dark', isDark ? '1' : '0'); } catch(e) {}
 }
 // Restore preference
@@ -2795,8 +2859,6 @@ function toggleDarkMode() {
   try {
     if (localStorage.getItem('bcps_dark') === '1') {
       document.body.classList.add('dark-mode');
-      const btn = document.getElementById('darkModeToggle');
-      if (btn) btn.textContent = '☀️';
     }
   } catch(e) {}
 })();
@@ -2825,21 +2887,7 @@ window.updateGloFilterCounts = function updateGloFilterCounts() {
 ;
 /* ───── next block ───── */
 
-// ── SESSION TIMER ──────────────────────────────────────────────────────────
-(function() {
-  const start = Date.now();
-  const el = document.getElementById('sessionTimer');
-  const val = document.getElementById('sessionTimerVal');
-  if (!el || !val) return;
-  // Show after 5 seconds of activity
-  setTimeout(() => el.classList.add('visible'), 5000);
-  setInterval(() => {
-    const s = Math.floor((Date.now() - start) / 1000);
-    const m = Math.floor(s / 60);
-    const ss = String(s % 60).padStart(2, '0');
-    val.textContent = `${m}:${ss}`;
-  }, 1000);
-})();
+// ── SESSION TIMER — removed (floating bottom timer that couldn't be dismissed) ──
 
 ;
 /* ───── next block ───── */
@@ -2971,6 +3019,7 @@ function _updateHeaderBtn(user) {
   }
 }
 function _showLoggedIn(user) {
+  if (!document.getElementById('authUserCard')) return; // auth UI removed
   document.getElementById('authUserCard').style.display       = 'block';
   document.getElementById('authForm').style.display            = 'none';
   document.getElementById('authLoggedInActions').style.display = 'block';
@@ -2981,6 +3030,7 @@ function _showLoggedIn(user) {
   document.getElementById('authUserEmail').textContent = user.email || '';
 }
 function _showLoggedOut() {
+  if (!document.getElementById('authUserCard')) return; // auth UI removed
   document.getElementById('authUserCard').style.display       = 'none';
   document.getElementById('authForm').style.display            = 'block';
   document.getElementById('authLoggedInActions').style.display = 'none';
@@ -3223,16 +3273,6 @@ function renderProgressStats() {
     streak = JSON.parse(localStorage.getItem(sk) || '{}').streak || 0;
   } catch(e) {}
 
-  const syncCard = window._currentUser
-    ? `<div class="ps-card" style="background:linear-gradient(135deg,var(--primary,#0071e3),#5b5bd6);">
-         <div class="ps-val" style="color:white;font-size:1rem;">☁️</div>
-         <div class="ps-lbl" style="color:rgba(255,255,255,0.85);">${(window._currentUser.email||'').split('@')[0]}</div>
-       </div>`
-    : `<div class="ps-card" style="border:1.5px dashed var(--primary,#0071e3);cursor:pointer;" onclick="toggleAuthModal()">
-         <div class="ps-val" style="color:var(--primary,#0071e3);font-size:1.2rem;">☁️</div>
-         <div class="ps-lbl" style="color:var(--primary,#0071e3);">Sync login</div>
-       </div>`;
-
   // Build topic breakdown (top 5)
   const topicRows = Object.entries(ts)
     .sort((a, b) => (b[1].total || 0) - (a[1].total || 0))
@@ -3263,13 +3303,12 @@ function renderProgressStats() {
 
   el.innerHTML = `
     
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(90px,1fr));gap:8px;margin-bottom:14px;">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(60px,1fr));gap:8px;margin-bottom:14px;">
       <div class="ps-card"><div class="ps-val" style="color:var(--primary,#0071e3);">${acc}%</div><div class="ps-lbl">Accuracy</div></div>
       <div class="ps-card"><div class="ps-val" style="color:#22c55e;">${totalC}</div><div class="ps-lbl">Correct</div></div>
-      <div class="ps-card"><div class="ps-val" style="color:#f59e0b;">${missed}</div><div class="ps-lbl">Missed Q's</div></div>
+      <div class="ps-card"><div class="ps-val" style="color:#f59e0b;">${missed}</div><div class="ps-lbl">Missed</div></div>
       <div class="ps-card"><div class="ps-val" style="color:#8b5cf6;">${sessions}</div><div class="ps-lbl">Sessions</div></div>
-      <div class="ps-card"><div class="ps-val" style="color:#ef4444;">${streak}</div><div class="ps-lbl">Day Streak 🔥</div></div>
-      ${syncCard}
+      <div class="ps-card"><div class="ps-val" style="color:#ef4444;">${streak}</div><div class="ps-lbl">Day streak</div></div>
     </div>
     ${Object.keys(ts).length > 0 ? `
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
@@ -3293,16 +3332,8 @@ function renderProgressStats() {
     _applyProgress(local);
     console.log('[BCPS] Local progress loaded from', local.lastSaved);
   }
-  // 2. Restore local session (30-day token stored in localStorage) ────────────
-  try {
-    const sess = JSON.parse(localStorage.getItem('bcps_session') || 'null');
-    const THIRTY_DAYS = 30 * 24 * 60 * 60 * 1000;
-    if (sess && sess.username && (Date.now() - sess.ts < THIRTY_DAYS)) {
-      window._currentUser = { email: sess.username, id: 'local-' + sess.username.toLowerCase() };
-      _updateHeaderBtn(window._currentUser);
-      _showLoggedIn(window._currentUser);
-    }
-  } catch(e) {}
+  // 2. Login/sync removed — progress persists locally + via the Progress Code.
+  try { localStorage.removeItem('bcps_session'); } catch(e) {}
   // 3. Optional: check Supabase session (non-blocking, best-effort)
   if (_sb) {
     _sb.auth.getSession().then(({ data }) => {
@@ -3621,6 +3652,9 @@ function resetSection(which) {
     if (typeof customCards !== 'undefined') customCards = [];
     if (typeof updateSrStats === 'function') updateSrStats();
   }
+  // Clear study-features state (spaced-review queue, calibration, mock history, exam date)
+  if (which === 'all' && typeof window.BCPS_resetStudyData === 'function') window.BCPS_resetStudyData();
+
   // Save cleared snapshot
   if (typeof _saveLocal === 'function') _saveLocal();
   if (typeof renderProgressStats === 'function') renderProgressStats();
