@@ -2852,7 +2852,6 @@ function closeTopicStats() {
 // ── DARK MODE ──────────────────────────────────────────────────────────────
 function toggleDarkMode() {
   const isDark = document.body.classList.toggle('dark-mode');
-  document.getElementById('darkModeToggle').textContent = isDark ? '☀️' : '🌙';
   try { localStorage.setItem('bcps_dark', isDark ? '1' : '0'); } catch(e) {}
 }
 // Restore preference
@@ -2860,8 +2859,6 @@ function toggleDarkMode() {
   try {
     if (localStorage.getItem('bcps_dark') === '1') {
       document.body.classList.add('dark-mode');
-      const btn = document.getElementById('darkModeToggle');
-      if (btn) btn.textContent = '☀️';
     }
   } catch(e) {}
 })();
