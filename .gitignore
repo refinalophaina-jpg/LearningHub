@@ -13,3 +13,6 @@ _site/
 
 # Generated data bundle (run scripts/build-data.js)
 app/data.js
+
+# Wrangler local state (created by wrangler deploy)
+.wrangler/

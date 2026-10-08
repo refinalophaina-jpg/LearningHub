@@ -90,6 +90,28 @@
     return { due: due, upcoming: upcoming, graduated: graduated, total: due + upcoming + graduated };
   }
 
+  // ── Reset controls (R1) ─────────────────────────────────────────────────
+  // The spaced-review queue is easy to seed by accident (one missed practice
+  // question), so give it an explicit clear. Quiz scores live elsewhere and
+  // are untouched.
+  window.BCPS_resetSRS = function () {
+    if (!confirm('Clear the spaced-review queue? Questions you\'ve missed will stop resurfacing on a schedule. Your quiz scores and streak are not affected.')) return;
+    try { localStorage.removeItem(LS.quizSrs); } catch (e) {}
+    window._srsForceSet = null;
+    renderDueBanner();
+    renderStudyPlan();
+  };
+  // Clears everything this file owns (used by the global "Reset Everything").
+  window.BCPS_resetStudyData = function () {
+    [LS.quizSrs, LS.confLog, LS.mockHistory, LS.examDate].forEach(function (k) {
+      try { localStorage.removeItem(k); } catch (e) {}
+    });
+    window._srsForceSet = null;
+    renderDueBanner();
+    renderStudyPlan();
+    if (typeof renderMockPanel === 'function') renderMockPanel();
+  };
+
   window._srsForceSet = null; // when set (array), loadQuestion pulls only from these indices
   window.startDueReview = function () {
     var due = getDueIndices();
@@ -117,6 +139,7 @@
         '<div class="due-banner">' +
         '<span><strong>' + c.due + '</strong> question' + (c.due === 1 ? '' : 's') + ' due for spaced review today.</span>' +
         '<button class="btn btn-primary" onclick="window.startDueReview()">Review now</button>' +
+        '<button class="btn btn-secondary" onclick="window.BCPS_resetSRS()" title="Clear the spaced-review queue">Clear</button>' +
         '</div>';
     } else {
       el.innerHTML = '';
@@ -245,6 +268,7 @@
       '<span class="sp-queue-item"><strong>' + q.upcoming + '</strong> upcoming</span>' +
       '<span class="sp-queue-item"><strong>' + q.graduated + '</strong> mastered</span>' +
       (q.due > 0 ? '<button class="btn btn-primary" style="padding:6px 12px;font-size:12.5px;" onclick="window.startDueReview()">Review due questions</button>' : '') +
+      (q.total > 0 ? '<button class="sp-link-btn" onclick="window.BCPS_resetSRS()" title="Clear the spaced-review queue">Reset queue</button>' : '') +
       '</div>' +
       '<div class="sp-cal-wrap"><b style="font-size:12.5px;color:var(--label3);text-transform:uppercase;letter-spacing:.06em;">Confidence calibration</b>' + calRow + '</div>' +
       readinessHTML() +

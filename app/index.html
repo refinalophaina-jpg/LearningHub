@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Supabase sync -->
-
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BCPS Learning Hub — AinaDara</title>
 
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="app.css">
 </head>
 <body>
-<button id="darkModeToggle" onclick="toggleDarkMode()" title="Toggle dark mode">🌙</button>
+<button id="darkModeToggle" onclick="toggleDarkMode()" title="Toggle dark mode" aria-label="Toggle dark mode"><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.4 14.1A8.4 8.4 0 0 1 9.9 3.6a8.4 8.4 0 1 0 10.5 10.5z"/></svg><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.5 1.5M17.2 17.2l1.5 1.5M18.7 5.3l-1.5 1.5M6.8 17.2l-1.5 1.5"/></svg></button>
 <div class="header">
-  <div onclick="switchSection('home')" style="cursor:pointer;transition:transform 0.2s;display:flex;align-items:center;" title="Go home"></div>
+  <div onclick="switchSection('home')" style="cursor:pointer;transition:transform 0.2s;display:flex;align-items:center;margin-right:10px;" title="AinaDara — go home">
+    <svg class="brand-mark" width="38" height="38" viewBox="0 0 64 64" aria-label="AinaDara" role="img">
+      <rect width="64" height="64" rx="14" fill="#faf5ed"/>
+      <circle cx="32" cy="32" r="24" fill="#ede8dd" stroke="#2d3428" stroke-width="1.3"/>
+      <g stroke="#cc785c" fill="none" stroke-width="1.1" stroke-linecap="round">
+        <circle cx="23" cy="27" r="6"/><circle cx="23" cy="27" r="3.3"/><circle cx="23" cy="27" r="1.3"/>
+      </g>
+      <g stroke="#4a3d7a" stroke-width="1.1" stroke-linecap="round">
+        <line x1="43" y1="25" x2="47" y2="20"/><line x1="43" y1="25" x2="49" y2="25"/>
+        <line x1="43" y1="25" x2="47" y2="30"/><line x1="43" y1="25" x2="41" y2="32"/>
+      </g>
+      <path d="M 19 42 Q 32 51 45 42" stroke="#4a5c28" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+    </svg>
+  </div>
   <div style="flex:1;min-width:0;cursor:pointer;" onclick="switchSection('home')" title="Go home">
     <h1 style="font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:1.05rem;letter-spacing:.01em;color:var(--label);white-space:nowrap;">BCPS Learning <em style="font-style:italic;color:var(--terracotta);">Hub</em></h1>
     <div class="subtitle">449 Questions · 206 Flashcards · 22 Chapters</div>
   </div>
-  <button class="search-btn" onclick="openSpotlight()" title="Search everything (⌘K)">🔍 Search</button>
-  <button class="search-btn" id="authHeaderBtn" onclick="toggleAuthModal()" title="Login to sync progress across devices" style="background:var(--card,#fff);border:1px solid var(--divider,#e5e7eb);color:var(--label1,#111);gap:6px;">👤 <span id="authBtnText">Login</span></button>
-  <div id="syncBadge" style="display:none;font-size:10px;color:var(--label3,#999);align-self:center;padding:0 2px;white-space:nowrap;"></div>
+  <button class="search-btn" onclick="openSpotlight()" title="Search everything (⌘K)">Search</button>
 </div>
 
 <!-- SPOTLIGHT SEARCH MODAL -->
@@ -61,17 +70,8 @@
   <button class="tab-btn tab-color-drugs" onclick="switchSection('concepts')" id="tab-concepts">
     <span class="tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="8.5" width="19" height="7" rx="3.5"/><path d="M12 8.7v6.6"/></svg></span><span class="tab-label">Drugs</span>
   </button>
-  <button class="tab-btn tab-color-visuals" onclick="switchSection('visuals')" id="tab-visuals">
-    <span class="tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3v6l-4.7 7.6A2 2 0 0 0 7 20h10a2 2 0 0 0 1.7-3.4L14 9V3"/><path d="M8 15h8"/></svg></span><span class="tab-label">Visuals</span>
-  </button>
-  <button class="tab-btn tab-color-exam" onclick="switchSection('exampsych')" id="tab-exampsych">
-    <span class="tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4"/></svg></span><span class="tab-label">Exam</span>
-  </button>
-  <button class="tab-btn tab-color-evidence" onclick="switchSection('evidence')" id="tab-evidence">
-    <span class="tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 12 4l9 5"/><path d="M5.5 9.5v8M12 9.5v8M18.5 9.5v8"/><path d="M3.5 20.5h17"/></svg></span><span class="tab-label">Evidence</span>
-  </button>
-  <button class="tab-btn tab-color-glossary" onclick="switchSection('glossary')" id="tab-glossary">
-    <span class="tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-2-1.2-5-1.2-7 0v12c2-1.2 5-1.2 7 0 2-1.2 5-1.2 7 0V6c-2-1.2-5-1.2-7 0z"/><path d="M12 6v12"/></svg></span><span class="tab-label">Glossary</span>
+  <button class="tab-btn tab-color-more" onclick="switchSection('more')" id="tab-more">
+    <span class="tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg></span><span class="tab-label">More</span>
   </button>
   <button class="tab-btn tab-color-mock" onclick="switchSection('accp')" id="tab-accp">
     <span class="tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4.5" width="12" height="16.5" rx="2"/><path d="M9 4.5V3.5h6v1"/><path d="M9 10h6M9 13.5h6M9 17h4"/></svg></span><span class="tab-label">Mock Exam</span>
@@ -93,13 +93,13 @@
   <div id="resetModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:9999;display:none;align-items:center;justify-content:center;">
     <div style="background:var(--card,#fff);border-radius:16px;padding:28px 24px;max-width:360px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.25);">
       <div style="font-size:2.5rem;margin-bottom:8px;">⚠️</div>
-      <h3 style="margin:0 0 8px;font-size:17px;font-weight:700;color:var(--label1,#111);">Reset All Progress?</h3>
+      <h2 style="margin:0 0 8px;font-size:17px;font-weight:700;color:var(--label1,#111);">Reset all progress?</h2>
       <p style="margin:0 0 20px;font-size:13px;color:var(--label2,#555);line-height:1.5;">This will permanently erase your quiz history, flashcard intervals, streaks, and missed question list. <strong>This cannot be undone.</strong></p>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px;">
-        <button onclick="resetSection('quiz')" style="padding:10px 6px;background:rgba(239,68,68,0.08);color:#dc2626;border:1px solid rgba(239,68,68,0.3);border-radius:10px;font-size:12px;font-weight:600;cursor:pointer;">🧠 Quiz Only</button>
-        <button onclick="resetSection('flash')" style="padding:10px 6px;background:rgba(239,68,68,0.08);color:#dc2626;border:1px solid rgba(239,68,68,0.3);border-radius:10px;font-size:12px;font-weight:600;cursor:pointer;">🃏 Flashcards Only</button>
+        <button onclick="resetSection('quiz')" style="padding:10px 6px;background:rgba(239,68,68,0.08);color:#dc2626;border:1px solid rgba(239,68,68,0.3);border-radius:10px;font-size:12px;font-weight:600;cursor:pointer;">Quiz only</button>
+        <button onclick="resetSection('flash')" style="padding:10px 6px;background:rgba(239,68,68,0.08);color:#dc2626;border:1px solid rgba(239,68,68,0.3);border-radius:10px;font-size:12px;font-weight:600;cursor:pointer;">Flashcards only</button>
       </div>
-      <button onclick="resetSection('all')" style="width:100%;padding:12px;background:#ef4444;color:#fff;border:none;border-radius:10px;font-size:14px;font-weight:700;cursor:pointer;margin-bottom:10px;">💣 Reset Everything</button>
+      <button onclick="resetSection('all')" style="width:100%;padding:12px;background:#ef4444;color:#fff;border:none;border-radius:10px;font-size:14px;font-weight:700;cursor:pointer;margin-bottom:10px;">Reset everything</button>
       <button onclick="document.getElementById('resetModal').style.display='none'" style="width:100%;padding:10px;background:var(--fill,#f2f2f7);color:var(--label1,#111);border:none;border-radius:10px;font-size:13px;font-weight:600;cursor:pointer;">Cancel</button>
     </div>
   </div>
@@ -122,12 +122,6 @@
 
   <!-- Content -->
   <div style="padding:24px 20px;">
-
-    <!-- Quick intro -->
-    <div style="background:var(--card); border-radius:16px; padding:20px; margin-bottom:28px; border:1px solid var(--sep);">
-      <h2 style="font-size:20px; font-weight:600; margin:0 0 12px;">What You'll Find Here</h2>
-      <p style="margin:0; font-size:15px; color:var(--label2); line-height:1.6;">This hub brings together everything you need to prepare for the BCPS certification exam across all therapeutic areas.</p>
-    </div>
 
     <!-- Feature cards -->
     <h3 style="font-size:16px; font-weight:700; margin:0 0 16px; text-transform:uppercase; letter-spacing:0.5px; color:var(--label2);">Study tools</h3>
@@ -166,7 +160,7 @@
       <div class="home-tool-card" style="--chip-c:var(--sec-glossary);" onclick="switchSection('glossary')">
         <div class="icon-chip lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-2-1.2-5-1.2-7 0v12c2-1.2 5-1.2 7 0 2-1.2 5-1.2 7 0V6c-2-1.2-5-1.2-7 0z"/><path d="M12 6v12"/></svg></div>
         <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Glossary</div>
-        <div style="font-size:12px; color:var(--label2);">492 terms</div>
+        <div style="font-size:12px; color:var(--label2);">543 terms</div>
       </div>
 
       <div class="home-tool-card" style="--chip-c:var(--sec-evidence);" onclick="switchSection('evidence')">
@@ -183,7 +177,7 @@
 
       <div class="home-tool-card" style="--chip-c:var(--sec-exam);" onclick="switchSection('exampsych')">
         <div class="icon-chip lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4"/></svg></div>
-        <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Exam Skills</div>
+        <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Exam Psychology</div>
         <div style="font-size:12px; color:var(--label2);">Pacing &amp; strategy</div>
       </div>
 
@@ -191,7 +185,7 @@
 
     <!-- Key features -->
     <h3 style="font-size:16px; font-weight:700; margin:0 0 16px; text-transform:uppercase; letter-spacing:0.5px; color:var(--label2);">Built for the exam</h3>
-    <div style="background:var(--primary-light); border-radius:12px; padding:16px; margin-bottom:28px; border-left:4px solid var(--terracotta);">
+    <div style="background:var(--primary-light); border-radius:12px; padding:16px; margin-bottom:28px;">
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; font-size:14px;">
         <div>
           <strong style="color:var(--terracotta);">Spaced review</strong>
@@ -219,7 +213,7 @@
     <div id="studyPlanPanel" style="margin-bottom:20px;"></div>
 
     <!-- Exam-window note: BPS lags brand-new guideline changes -->
-    <div style="background:var(--card,#fff); border:1px solid var(--divider,#e5e7eb); border-left:3px solid #b84a2e; border-radius:12px; padding:16px 18px; margin-bottom:20px;">
+    <div style="background:var(--card,#fff); border:1px solid var(--divider,#e5e7eb); border-radius:12px; padding:16px 18px; margin-bottom:20px;">
       <h3 style="margin:0 0 6px; font-size:15px; font-weight:700; color:var(--label1,#111);">Studying to the exam's window</h3>
       <p style="margin:0 0 10px; font-size:13.5px; line-height:1.55; color:var(--label2,#555);">
         BPS builds each exam from guidelines as they stood <strong>about 6–12 months before your test date</strong>, and deliberately excludes rapidly-evolving or brand-new practice changes. This hub reflects current practice but marks anything recent inline with <strong>⚑</strong>. When you see a ⚑ flag, know the fact — but for the exam, the <em>prior</em> standard may still be what's tested.
@@ -246,13 +240,13 @@
       <!-- Code preview textarea (always visible, auto-populated) -->
       <div style="position:relative;margin-bottom:10px;">
         <textarea id="liveCodePreview" readonly placeholder="Your backup code will appear here…" onclick="this.select()" style="width:100%;height:64px;border-radius:8px;border:1px solid var(--sep);padding:8px 10px 8px 10px;font-size:10.5px;font-family:monospace;resize:none;box-sizing:border-box;background:var(--fill);color:var(--label);cursor:pointer;" title="Click to select all"></textarea>
-        <span style="position:absolute;top:6px;right:8px;font-size:10px;color:var(--label3,#aaa);">click to select</span>
+        <span style="position:absolute;top:6px;right:8px;font-size:11px;color:var(--label2);">click to select</span>
       </div>
 
       <!-- Action buttons -->
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px;">
-        <button onclick="copyProgressCode()" style="padding:9px 10px;background:var(--primary);color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer;font-size:13px;">📋 Copy Code</button>
-        <button onclick="emailProgressCode()" style="padding:9px 10px;background:transparent;color:var(--primary);border:1.5px solid var(--primary);border-radius:8px;font-weight:600;cursor:pointer;font-size:13px;">✉️ Email to Me</button>
+        <button onclick="copyProgressCode()" style="padding:9px 10px;background:var(--primary);color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer;font-size:13px;">Copy code</button>
+        <button onclick="emailProgressCode()" style="padding:9px 10px;background:transparent;color:var(--primary);border:1.5px solid var(--primary);border-radius:8px;font-weight:600;cursor:pointer;font-size:13px;">Email to me</button>
       </div>
 
       <!-- Load code row -->
@@ -260,7 +254,7 @@
         <summary style="font-size:13px;font-weight:600;color:var(--label2);cursor:pointer;user-select:none;padding:6px 0;">📥 Load a saved code</summary>
         <div style="margin-top:8px;">
           <textarea id="importCodeInput" placeholder="Paste your progress code here…" style="width:100%;height:64px;border-radius:8px;border:1px solid var(--sep);padding:8px 10px;font-size:11px;font-family:monospace;resize:vertical;box-sizing:border-box;background:var(--fill);color:var(--label);"></textarea>
-          <button onclick="importProgressCode()" style="width:100%;margin-top:8px;padding:10px;background:#34C759;color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer;font-size:13px;">✓ Apply Code &amp; Reload</button>
+          <button onclick="importProgressCode()" style="width:100%;margin-top:8px;padding:10px;background:#34C759;color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer;font-size:13px;">Apply code &amp; reload</button>
           <div id="importCodeMsg" style="margin-top:6px;font-size:12px;min-height:14px;"></div>
         </div>
       </details>
@@ -270,7 +264,44 @@
 
 </div>
 
+<!-- ═══════════ MORE — reference hub (Exam Psychology · Visuals · Evidence · Glossary) ═══════════ -->
+<div id="more" class="section">
+  <div class="section-header">
+    <div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-more);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="12" r="1.7"/><circle cx="12" cy="12" r="1.7"/><circle cx="19" cy="12" r="1.7"/></svg></span><h2>More Study Tools</h2></div>
+    <p>Deeper reference material for when you want to go beyond the core loop.</p>
+  </div>
+  <div class="more-hub-grid">
+    <button class="more-hub-card" style="--chip-c:var(--sec-exam);" onclick="switchSection('exampsych')">
+      <span class="icon-chip md" style="--chip-c:var(--sec-exam);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4"/></svg></span>
+      <span class="more-hub-title">Exam Psychology</span>
+      <span class="more-hub-desc">Cognitive strategy, stem dissection, timing mastery, and interactive drills.</span>
+    </button>
+    <button class="more-hub-card" style="--chip-c:var(--sec-visuals);" onclick="switchSection('visuals')">
+      <span class="icon-chip md" style="--chip-c:var(--sec-visuals);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3v6l-4.7 7.6A2 2 0 0 0 7 20h10a2 2 0 0 0 1.7-3.4L14 9V3"/><path d="M8 15h8"/></svg></span>
+      <span class="more-hub-title">Visual Pharmacology</span>
+      <span class="more-hub-desc">MOA pathways, cascade diagrams, and an interactive pharmacology mind map.</span>
+    </button>
+    <button class="more-hub-card" style="--chip-c:var(--sec-evidence);" onclick="switchSection('evidence')">
+      <span class="icon-chip md" style="--chip-c:var(--sec-evidence);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 12 4l9 5"/><path d="M5.5 9.5v8M12 9.5v8M18.5 9.5v8"/><path d="M3.5 20.5h17"/></svg></span>
+      <span class="more-hub-title">Evidence &amp; Trials</span>
+      <span class="more-hub-desc">120+ landmark trials and guidelines, searchable across all BCPS domains.</span>
+    </button>
+    <button class="more-hub-card" style="--chip-c:var(--sec-glossary);" onclick="switchSection('glossary')">
+      <span class="icon-chip md" style="--chip-c:var(--sec-glossary);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-2-1.2-5-1.2-7 0v12c2-1.2 5-1.2 7 0 2-1.2 5-1.2 7 0V6c-2-1.2-5-1.2-7 0z"/><path d="M12 6v12"/></svg></span>
+      <span class="more-hub-title">Glossary</span>
+      <span class="more-hub-desc">Board terms with plain-language definitions and instant search.</span>
+    </button>
+  </div>
+</div>
+
 <div id="visuals" class="section">
+  <div class="more-subnav" data-active="visuals">
+    <button class="more-back" onclick="switchSection('more')">&#8592; More</button>
+    <button class="more-subtab" data-sub="exampsych" onclick="switchSection('exampsych')">Exam Psychology</button>
+    <button class="more-subtab" data-sub="visuals" onclick="switchSection('visuals')">Visuals</button>
+    <button class="more-subtab" data-sub="evidence" onclick="switchSection('evidence')">Evidence</button>
+    <button class="more-subtab" data-sub="glossary" onclick="switchSection('glossary')">Glossary</button>
+  </div>
   <div class="section-header">
     <div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-visuals);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3v6l-4.7 7.6A2 2 0 0 0 7 20h10a2 2 0 0 0 1.7-3.4L14 9V3"/><path d="M8 15h8"/></svg></span><h2>Visual Pharmacology</h2></div>
     <p>Mechanism of action pathways, drug cascade diagrams, and pharmacology mind map</p>
@@ -279,104 +310,136 @@
   <div class="visual-section-grid">
     <div class="visual-card">
       <button class="viz-zoom-trigger" onclick="vizLbOpen('cascadeCanvas','Coagulation Cascade & Anticoagulant Targets')">⊕ Zoom</button>
-      <div class="visual-card-title">🩸 Coagulation Cascade & Anticoagulant Targets</div>
-      <div class="visual-card-desc">Where each anticoagulant acts in the clotting pathway</div>
+      <div class="visual-card-head">
+        <div class="visual-card-title">Coagulation Cascade & Anticoagulant Targets</div>
+        <div class="visual-card-desc">Where each anticoagulant acts in the clotting pathway</div>
+      </div>
       <canvas id="cascadeCanvas" onclick="vizLbOpen('cascadeCanvas','Coagulation Cascade & Anticoagulant Targets')" title="Click to zoom" class="visual-canvas" height="320"></canvas>
     </div>
     <div class="visual-card">
       <button class="viz-zoom-trigger" onclick="vizLbOpen('raasCanvas','RAAS Pathway & Drug Targets')">⊕ Zoom</button>
-      <div class="visual-card-title">❤️ RAAS Pathway & Drug Targets</div>
-      <div class="visual-card-desc">ACEi, ARB, ARNI, MRA, and direct renin inhibitor action sites</div>
+      <div class="visual-card-head">
+        <div class="visual-card-title">RAAS Pathway & Drug Targets</div>
+        <div class="visual-card-desc">ACEi, ARB, ARNI, MRA, and direct renin inhibitor action sites</div>
+      </div>
       <canvas id="raasCanvas" onclick="vizLbOpen('raasCanvas','RAAS Pathway & Drug Targets')" title="Click to zoom" class="visual-canvas" height="320"></canvas>
     </div>
     <div class="visual-card">
       <button class="viz-zoom-trigger" onclick="vizLbOpen('adrenCanvas','Adrenergic Receptor Pharmacology')">⊕ Zoom</button>
-      <div class="visual-card-title">💉 Adrenergic Receptor Pharmacology</div>
-      <div class="visual-card-desc">α1, α2, β1, β2 receptor effects and drug selectivity map</div>
+      <div class="visual-card-head">
+        <div class="visual-card-title">Adrenergic Receptor Pharmacology</div>
+        <div class="visual-card-desc">α1, α2, β1, β2 receptor effects and drug selectivity map</div>
+      </div>
       <canvas id="adrenCanvas" onclick="vizLbOpen('adrenCanvas','Adrenergic Receptor Pharmacology')" title="Click to zoom" class="visual-canvas" height="320"></canvas>
     </div>
     <div class="visual-card">
       <button class="viz-zoom-trigger" onclick="vizLbOpen('betalactamCanvas','Beta-Lactam MOA: Cell Wall Synthesis')">⊕ Zoom</button>
-      <div class="visual-card-title">🔵 Beta-Lactam MOA: Cell Wall Synthesis</div>
-      <div class="visual-card-desc">PBP binding, transpeptidase inhibition, autolytic cascade</div>
+      <div class="visual-card-head">
+        <div class="visual-card-title">Beta-Lactam MOA: Cell Wall Synthesis</div>
+        <div class="visual-card-desc">PBP binding, transpeptidase inhibition, autolytic cascade</div>
+      </div>
       <canvas id="betalactamCanvas" onclick="vizLbOpen('betalactamCanvas','Beta-Lactam MOA: Cell Wall Synthesis')" title="Click to zoom" class="visual-canvas" height="320"></canvas>
     </div>
     <div class="visual-card">
       <button class="viz-zoom-trigger" onclick="vizLbOpen('spectrumCanvas','Antibiotic Spectrum Visual Matrix')">⊕ Zoom</button>
-      <div class="visual-card-title">📊 Antibiotic Spectrum Visual Matrix</div>
-      <div class="visual-card-desc">Coverage heatmap: Gram+, Gram−, Pseudo, MRSA, Anaerobes</div>
+      <div class="visual-card-head">
+        <div class="visual-card-title">Antibiotic Spectrum Visual Matrix</div>
+        <div class="visual-card-desc">Coverage heatmap: Gram+, Gram−, Pseudo, MRSA, Anaerobes</div>
+      </div>
       <canvas id="spectrumCanvas" onclick="vizLbOpen('spectrumCanvas','Antibiotic Spectrum Visual Matrix')" title="Click to zoom" class="visual-canvas" height="320"></canvas>
     </div>
     <div class="visual-card">
       <button class="viz-zoom-trigger" onclick="vizLbOpen('cypCanvas','CYP450 Drug Interaction Web')">⊕ Zoom</button>
-      <div class="visual-card-title">🧬 CYP450 Drug Interaction Web</div>
-      <div class="visual-card-desc">Major enzyme substrates, inhibitors, and inducers — interactive web</div>
+      <div class="visual-card-head">
+        <div class="visual-card-title">CYP450 Drug Interaction Web</div>
+        <div class="visual-card-desc">Major enzyme substrates, inhibitors, and inducers — interactive web</div>
+      </div>
       <canvas id="cypCanvas" onclick="vizLbOpen('cypCanvas','CYP450 Drug Interaction Web')" title="Click to zoom" class="visual-canvas" height="320"></canvas>
     </div>
     <div class="visual-card">
       <button class="viz-zoom-trigger" onclick="vizLbOpen('glucoseCanvas','Glucose/Insulin Physiology')">⊕ Zoom</button>
-      <div class="visual-card-title">🍬 Glucose-Lowering Mechanisms</div>
-      <div class="visual-card-desc">Sites and mechanisms of all major antidiabetic drug classes</div>
+      <div class="visual-card-head">
+        <div class="visual-card-title">Glucose-Lowering Mechanisms</div>
+        <div class="visual-card-desc">Sites and mechanisms of all major antidiabetic drug classes</div>
+      </div>
       <canvas id="glucoseCanvas" onclick="vizLbOpen('glucoseCanvas','Glucose/Insulin Physiology')" title="Click to zoom" class="visual-canvas" height="320"></canvas>
     </div>
     <div class="visual-card">
       <button class="viz-zoom-trigger" onclick="vizLbOpen('renalCanvas','Renal Drug Elimination')">⊕ Zoom</button>
-      <div class="visual-card-title">💧 Renal Drug Handling</div>
-      <div class="visual-card-desc">Nephron segments and major drug transport mechanisms</div>
+      <div class="visual-card-head">
+        <div class="visual-card-title">Renal Drug Handling</div>
+        <div class="visual-card-desc">Nephron segments and major drug transport mechanisms</div>
+      </div>
       <canvas id="renalCanvas" onclick="vizLbOpen('renalCanvas','Renal Drug Elimination')" title="Click to zoom" class="visual-canvas" height="320"></canvas>
     </div>
     <div class="visual-card">
-      <div class="visual-card-title">🧪 Antibiotic Target Sites</div>
-      <div class="visual-card-desc">Cell wall, protein synthesis, DNA gyrase, and membrane targets</div>
+      <div class="visual-card-head">
+        <div class="visual-card-title">Antibiotic Target Sites</div>
+        <div class="visual-card-desc">Cell wall, protein synthesis, DNA gyrase, and membrane targets</div>
+      </div>
       <canvas id="abxTargetCanvas" class="visual-canvas" height="320"></canvas>
     </div>
     <div class="visual-card">
-      <div class="visual-card-title">💔 Heart Failure Neurohormonal Cascade</div>
-      <div class="visual-card-desc">RAAS, SNS, and natriuretic peptide pathways — and where drugs intervene</div>
+      <div class="visual-card-head">
+        <div class="visual-card-title">Heart Failure Neurohormonal Cascade</div>
+        <div class="visual-card-desc">RAAS, SNS, and natriuretic peptide pathways — and where drugs intervene</div>
+      </div>
       <canvas id="hfCanvas" class="visual-canvas" height="360"></canvas>
     </div>
     <div class="visual-card">
       <button class="viz-zoom-trigger" onclick="vizLbOpen('ssNmsCanvas','Serotonin Syndrome vs NMS')">⊕ Zoom</button>
-      <div class="visual-card-title">⚡ Serotonin Syndrome vs NMS</div>
-      <div class="visual-card-desc">Side-by-side comparison of clinical features and causative agents</div>
+      <div class="visual-card-head">
+        <div class="visual-card-title">Serotonin Syndrome vs NMS</div>
+        <div class="visual-card-desc">Side-by-side comparison of clinical features and causative agents</div>
+      </div>
       <canvas id="ssNmsCanvas" onclick="vizLbOpen('ssNmsCanvas','Serotonin Syndrome vs NMS')" title="Click to zoom" class="visual-canvas" height="320"></canvas>
     </div>
       <div class="visual-card">
       <button class="viz-zoom-trigger" onclick="vizLbOpen('copdCanvas','COPD/Asthma Stepwise Therapy & Bronchodilator Targets')">⊕ Zoom</button>
-      <div class="visual-card-title">🫁 COPD/Asthma Stepwise Therapy</div>
-      <div class="visual-card-desc">GOLD COPD groups, stepwise bronchodilator targets, and key pharmacology</div>
+      <div class="visual-card-head">
+        <div class="visual-card-title">COPD/Asthma Stepwise Therapy</div>
+        <div class="visual-card-desc">GOLD COPD groups, stepwise bronchodilator targets, and key pharmacology</div>
+      </div>
       <canvas id="copdCanvas" onclick="vizLbOpen('copdCanvas','COPD/Asthma Stepwise Therapy & Bronchodilator Targets')" title="Click to zoom" class="visual-canvas" height="340"></canvas>
     </div>
     <div class="visual-card">
       <button class="viz-zoom-trigger" onclick="vizLbOpen('opioidCanvas','Opioid Receptor Pharmacology & Analgesic Ladder')">⊕ Zoom</button>
-      <div class="visual-card-title">💊 Opioid Receptor Pharmacology</div>
-      <div class="visual-card-desc">Mu/Kappa/Delta receptor effects, WHO analgesic ladder, reversal agents</div>
+      <div class="visual-card-head">
+        <div class="visual-card-title">Opioid Receptor Pharmacology</div>
+        <div class="visual-card-desc">Mu/Kappa/Delta receptor effects, WHO analgesic ladder, reversal agents</div>
+      </div>
       <canvas id="opioidCanvas" onclick="vizLbOpen('opioidCanvas','Opioid Receptor Pharmacology & Analgesic Ladder')" title="Click to zoom" class="visual-canvas" height="340"></canvas>
     </div>
     <div class="visual-card">
       <button class="viz-zoom-trigger" onclick="vizLbOpen('pkpdCanvas','PK/PD Targets: Concentration vs Time Profiles')">⊕ Zoom</button>
-      <div class="visual-card-title">📈 PK/PD Antibiotic Targets</div>
-      <div class="visual-card-desc">AUC/MIC, Cmax/MIC, and %T>MIC — visual guide to antibiotic PK/PD optimization</div>
+      <div class="visual-card-head">
+        <div class="visual-card-title">PK/PD Antibiotic Targets</div>
+        <div class="visual-card-desc">AUC/MIC, Cmax/MIC, and %T>MIC — visual guide to antibiotic PK/PD optimization</div>
+      </div>
       <canvas id="pkpdCanvas" onclick="vizLbOpen('pkpdCanvas','PK/PD Targets: Concentration vs Time Profiles')" title="Click to zoom" class="visual-canvas" height="340"></canvas>
     </div>
     <div class="visual-card">
       <button class="viz-zoom-trigger" onclick="vizLbOpen('antidepCanvas','Antidepressant Mechanisms & Receptor Profiles')">⊕ Zoom</button>
-      <div class="visual-card-title">🧠 Antidepressant Mechanisms</div>
-      <div class="visual-card-desc">SSRI, SNRI, TCA, MAOI, and novel antidepressant receptor targets compared</div>
+      <div class="visual-card-head">
+        <div class="visual-card-title">Antidepressant Mechanisms</div>
+        <div class="visual-card-desc">SSRI, SNRI, TCA, MAOI, and novel antidepressant receptor targets compared</div>
+      </div>
       <canvas id="antidepCanvas" onclick="vizLbOpen('antidepCanvas','Antidepressant Mechanisms & Receptor Profiles')" title="Click to zoom" class="visual-canvas" height="340"></canvas>
     </div>
     <div class="visual-card">
       <button class="viz-zoom-trigger" onclick="vizLbOpen('ibdCanvas','IBD Therapy: Ulcerative Colitis vs Crohn Stepwise')">⊕ Zoom</button>
-      <div class="visual-card-title">🔬 IBD Therapy Comparison</div>
-      <div class="visual-card-desc">UC vs Crohn therapy pyramid: 5-ASA, steroids, immunomodulators, biologics</div>
+      <div class="visual-card-head">
+        <div class="visual-card-title">IBD Therapy Comparison</div>
+        <div class="visual-card-desc">UC vs Crohn therapy pyramid: 5-ASA, steroids, immunomodulators, biologics</div>
+      </div>
       <canvas id="ibdCanvas" onclick="vizLbOpen('ibdCanvas','IBD Therapy: Ulcerative Colitis vs Crohn Stepwise')" title="Click to zoom" class="visual-canvas" height="340"></canvas>
     </div>
 
   </div>
 
   <div style="margin-top:1.5rem">
-    <h3 style="margin-bottom:0.75rem;font-size:1rem;color:#0f172a">🗺️ Pharmacology Relationship Mind Map</h3>
-    <p style="font-size:0.8rem;color:#64748b;margin-bottom:0.75rem">Click a node to highlight connections. Drag to explore. Color = exam domain.</p>
+    <h3 style="margin-bottom:0.75rem;font-size:1rem;color:var(--label)">Pharmacology Relationship Mind Map</h3>
+    <p style="font-size:0.8rem;color:var(--label2);margin-bottom:0.75rem">Click a node to highlight connections. Drag to explore. Color = exam domain.</p>
     <div class="mindmap-wrap">
       <svg id="mindmapSvg" class="mindmap-svg"></svg>
     </div>
@@ -385,31 +448,38 @@
 
 <!-- EVIDENCE-BASED REFERENCES SECTION -->
 <div id="evidence" class="section">
+  <div class="more-subnav" data-active="evidence">
+    <button class="more-back" onclick="switchSection('more')">&#8592; More</button>
+    <button class="more-subtab" data-sub="exampsych" onclick="switchSection('exampsych')">Exam Psychology</button>
+    <button class="more-subtab" data-sub="visuals" onclick="switchSection('visuals')">Visuals</button>
+    <button class="more-subtab" data-sub="evidence" onclick="switchSection('evidence')">Evidence</button>
+    <button class="more-subtab" data-sub="glossary" onclick="switchSection('glossary')">Glossary</button>
+  </div>
   <div class="section-header">
     <div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-evidence);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 12 4l9 5"/><path d="M5.5 9.5v8M12 9.5v8M18.5 9.5v8"/><path d="M3.5 20.5h17"/></svg></span><h2>Evidence-Based References</h2></div>
-    <p>120+ landmark trials &amp; guidelines · All 13 BCPS chapters · Cardiology · Anticoagulation · ID · Pulm · Nephrology · Psychiatry · GI · Oncology · Transplant · Geriatrics · Pain · PK/TDM · Biostatistics</p>
+    <p>120+ landmark trials &amp; guidelines across all 13 BCPS chapters</p>
   </div>
   <div class="ev-filter-bar">
-    <input class="ev-search" id="evSearch" placeholder="🔍 Search trials, drugs, outcomes…" oninput="filterEvidence(this.value)">
+    <input class="ev-search" id="evSearch" placeholder="Search trials, drugs, outcomes…" oninput="filterEvidence(this.value)">
     <button class="ev-filter-btn active" onclick="setEvFilter('all',this)">All</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Cardiology',this)">❤️ Cardiology</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Anticoagulation',this)">🩸 Anticoag</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Infectious Disease',this)">🦠 ID</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Endocrinology',this)">🍬 Endocrine</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Nephrology',this)">💧 Nephrology</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Pulmonology',this)">🫁 Pulm</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Neurology',this)">🧠 Neurology</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Psychiatry',this)">🧬 Psychiatry</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('GI/Hepatology',this)">🫀 GI/Hep</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Oncology',this)">🔬 Oncology</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Transplant',this)">💊 Transplant</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Geriatrics',this)">👴 Geriatrics</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Pain',this)">🩹 Pain</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Pharmacokinetics',this)">⚗️ PK/TDM</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Biostatistics',this)">📊 Biostats</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('Critical Care',this)">🏥 Critical Care</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('landmark',this)">🔴 Landmark</button>
-    <button class="ev-filter-btn" onclick="setEvFilter('guideline',this)">📘 Guidelines</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Cardiology',this)">Cardiology</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Anticoagulation',this)">Anticoag</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Infectious Disease',this)">ID</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Endocrinology',this)">Endocrine</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Nephrology',this)">Nephrology</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Pulmonology',this)">Pulm</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Neurology',this)">Neurology</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Psychiatry',this)">Psychiatry</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('GI/Hepatology',this)">GI/Hep</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Oncology',this)">Oncology</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Transplant',this)">Transplant</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Geriatrics',this)">Geriatrics</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Pain',this)">Pain</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Pharmacokinetics',this)">PK/TDM</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Biostatistics',this)">Biostats</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('Critical Care',this)">Critical Care</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('landmark',this)">Landmark</button>
+    <button class="ev-filter-btn" onclick="setEvFilter('guideline',this)">Guidelines</button>
   </div>
   <div id="evTimeline" style="display:none;padding:10px 0 14px"></div>
   <div id="evContent"></div>
@@ -417,12 +487,17 @@
 
 <!-- EXAM PSYCHOLOGY SECTION -->
 <div id="exampsych" class="section">
-  <div class="section-header">
-    <h2>Exam Psychology</h2>
-    <p>Mental strategies, pacing drills, and high-yield exam mindset training</p>
+  <div class="more-subnav" data-active="exampsych">
+    <button class="more-back" onclick="switchSection('more')">&#8592; More</button>
+    <button class="more-subtab" data-sub="exampsych" onclick="switchSection('exampsych')">Exam Psychology</button>
+    <button class="more-subtab" data-sub="visuals" onclick="switchSection('visuals')">Visuals</button>
+    <button class="more-subtab" data-sub="evidence" onclick="switchSection('evidence')">Evidence</button>
+    <button class="more-subtab" data-sub="glossary" onclick="switchSection('glossary')">Glossary</button>
   </div>
-  <h2 style="margin-bottom:0.25rem">Exam Skills & Strategy</h2>
-  <p style="color:#64748b;font-size:0.87rem;margin-bottom:1.25rem">Optimize your BCPS exam performance with cognitive strategies, stem dissection, timing mastery, and interactive drills</p>
+  <div class="section-header">
+    <div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-exam);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4"/></svg></span><h2>Exam Psychology</h2></div>
+    <p>Cognitive strategies, stem dissection, timing mastery, and interactive drills to optimize BCPS exam performance</p>
+  </div>
 
   <div class="exam-psych-grid">
 
@@ -551,7 +626,7 @@
       <p>How question writers think — and how to reverse-engineer it</p>
     </div>
 
-    <div class="ep-card" style="border-left:4px solid var(--purple)">
+    <div class="ep-card">
       <div class="ep-card-header"><div class="ep-card-title">🏗️ How BPS Constructs Board Questions</div>
       <div class="ep-card-subtitle">The item-writing philosophy behind every BCPS question</div></div>
       <div class="ep-card-body">
@@ -564,7 +639,7 @@
       </div>
     </div>
 
-    <div class="ep-card" style="border-left:4px solid var(--orange)">
+    <div class="ep-card">
       <div class="ep-card-header"><div class="ep-card-title">🧩 The 4 Distractor Archetypes</div>
       <div class="ep-card-subtitle">Pattern-recognize wrong answers before reading options</div></div>
       <div class="ep-card-body">
@@ -589,7 +664,7 @@
       </div>
     </div>
 
-    <div class="ep-card" style="border-left:4px solid var(--green)">
+    <div class="ep-card">
       <div class="ep-card-header"><div class="ep-card-title">📈 BPS Biostatistics: The Mental Model</div>
       <div class="ep-card-subtitle">The specific framework BPS uses to test statistics and EBM</div></div>
       <div class="ep-card-body">
@@ -611,7 +686,7 @@
       </div>
     </div>
 
-    <div class="ep-card" style="border-left:4px solid var(--primary)">
+    <div class="ep-card">
       <div class="ep-card-header"><div class="ep-card-title">🔍 Advanced Stem Dissection: BPS-Specific Signals</div>
       <div class="ep-card-subtitle">Keywords that change everything — and what they signal</div></div>
       <div class="ep-card-body">
@@ -640,7 +715,7 @@
       </div>
     </div>
 
-    <div class="ep-card" style="border-left:4px solid var(--red)">
+    <div class="ep-card">
       <div class="ep-card-header"><div class="ep-card-title">⚡ High-Yield BPS Answer Selection Rules</div>
       <div class="ep-card-subtitle">Decision rules that apply to 80% of BCPS questions</div></div>
       <div class="ep-card-body">
@@ -776,10 +851,10 @@
             <div><b>Formulate before reading options.</b> Mentally commit to an answer before seeing the choices. This prevents distractor anchoring — being seduced by a plausible-but-wrong option. Then: if options match your gut → you're probably right. Tiebreaker: mortality/QoL benefit wins.</div>
           </div>
         </div>
-        <div style="background:rgba(52,199,89,0.1);border-radius:10px;padding:10px;font-size:0.8rem;margin-top:4px;border-left:3px solid var(--green)">
+        <div style="background:rgba(52,199,89,0.1);border-radius:10px;padding:10px;font-size:0.8rem;margin-top:4px">
           <b>Panic Protocol:</b> Remember a core concept is being tested — not a trick. Trust your first instinct. Eliminate 1-2 options: 25% guess → 50-75% odds. Never leave blank. Take a breath, reset, attack it like a clinical consult.
         </div>
-        <div style="background:rgba(255,149,0,0.1);border-radius:10px;padding:10px;font-size:0.8rem;margin-top:4px;border-left:3px solid var(--orange)">
+        <div style="background:rgba(255,149,0,0.1);border-radius:10px;padding:10px;font-size:0.8rem;margin-top:4px">
           <b>Lab Interpretation is Mandatory:</b> You WILL be tested on basic lab interpretation. Know: CMP, CBC, TSH, lipid panel, coagulation studies. Be comfortable identifying when a lab is unexpected given the PMH — that's often the pivot point of the question.
         </div>
       </div>
@@ -843,7 +918,7 @@
             Both: troponin elevation. Key differentiator: <b>Type 1 = plaque rupture/thrombosis</b>. Type 2 = supply/demand mismatch (sepsis, severe anemia, tachyarrhythmia). Treatment differs: Type 1 → ACS protocol (antiplatelet, anticoagulation, cath). Type 2 → treat the underlying cause. Giving dual antiplatelet for a Type 2 MI is wrong.
           </div>
         </div>
-        <div style="background:rgba(255,59,48,0.08);border-radius:10px;padding:10px;font-size:0.8rem;margin-top:6px;border-left:3px solid var(--red)">
+        <div style="background:rgba(255,59,48,0.08);border-radius:10px;padding:10px;font-size:0.8rem;margin-top:6px">
           <b>Killer Foil Mindset:</b> When a clinical scenario doesn't quite fit the expected disease, look for the one differentiating detail. The question is testing whether you know the single distinguishing feature. Train yourself to identify what DOESN'T fit — that's where the answer lives.
         </div>
       </div>
@@ -864,17 +939,17 @@
             <div style="background:#fff;border-radius:8px;padding:8px">
               <div style="font-size:1.2rem">📚</div>
               <div style="font-weight:700;font-size:0.8rem;color:var(--indigo)">Best Available Evidence</div>
-              <div style="font-size:0.74rem;color:var(--label2)">RCTs, systematic reviews, meta-analyses</div>
+              <div style="font-size:0.75rem;color:var(--label2)">RCTs, systematic reviews, meta-analyses</div>
             </div>
             <div style="background:#fff;border-radius:8px;padding:8px">
               <div style="font-size:1.2rem">🩺</div>
               <div style="font-weight:700;font-size:0.8rem;color:var(--indigo)">Clinical Expertise</div>
-              <div style="font-size:0.74rem;color:var(--label2)">Specialist knowledge, judgment, experience</div>
+              <div style="font-size:0.75rem;color:var(--label2)">Specialist knowledge, judgment, experience</div>
             </div>
             <div style="background:#fff;border-radius:8px;padding:8px">
               <div style="font-size:1.2rem">👤</div>
               <div style="font-weight:700;font-size:0.8rem;color:var(--indigo)">Patient-Specific Factors</div>
-              <div style="font-size:0.74rem;color:var(--label2)">Values, preferences, comorbidities</div>
+              <div style="font-size:0.75rem;color:var(--label2)">Values, preferences, comorbidities</div>
             </div>
           </div>
           <div style="font-size:0.78rem;color:var(--label2);margin-top:6px;text-align:center">No single pillar dominates. Questions test integration of all three.</div>
@@ -912,7 +987,7 @@
           <b>The BPS Biostat Mindset:</b> Every clinical question on this exam is anchored to evidence. When evaluating a trial, ask: What was the study design? Was it ITT? What did the CI include? Was the difference clinically meaningful, or just statistically significant? Is the study population similar to my patient? Answering these in sequence reveals the correct answer even when you don't recognize the specific trial.
         </div>
 
-        <div style="background:rgba(255,59,48,0.08);border-radius:10px;padding:10px;font-size:0.8rem;margin-top:6px;border-left:3px solid var(--red)">
+        <div style="background:rgba(255,59,48,0.08);border-radius:10px;padding:10px;font-size:0.8rem;margin-top:6px">
           <b>Historical Warning:</b> The "Back to Sleep" campaign. For decades, prone sleeping was recommended for infants despite evidence that it increased SIDS risk — and it persisted until 1994. Expert opinion without evidence costs lives. This is why EBM exists — and why the BPS tests it heavily.
         </div>
       </div>
@@ -1045,24 +1120,6 @@
   <div id="progressStatsPanel" style="margin-bottom:4px;"></div>
   <div class="controls">
     <input type="text" id="studySearch" placeholder="Search topics..." class="concept-search" oninput="filterStudy(this.value)">
-  </div>
-  <div class="quick-stats" style="display:flex;gap:12px;margin-bottom:16px;flex-wrap:wrap">
-    <div style="flex:1;min-width:120px;background:var(--card);border-radius:14px;padding:14px 16px;border:1px solid var(--sep)">
-      <div style="font-size:1.6rem;font-weight:700;color:var(--primary)">449</div>
-      <div style="font-size:0.72rem;color:var(--label2)">Practice Questions</div>
-    </div>
-    <div style="flex:1;min-width:120px;background:var(--card);border-radius:14px;padding:14px 16px;border:1px solid var(--sep)">
-      <div style="font-size:1.6rem;font-weight:700;color:var(--primary)">206</div>
-      <div style="font-size:0.72rem;color:var(--label2)">Flashcards</div>
-    </div>
-    <div style="flex:1;min-width:120px;background:var(--card);border-radius:14px;padding:14px 16px;border:1px solid var(--sep)">
-      <div style="font-size:1.6rem;font-weight:700;color:var(--primary)">70</div>
-      <div style="font-size:0.72rem;color:var(--label2)">Drug Profiles</div>
-    </div>
-    <div style="flex:1;min-width:120px;background:var(--card);border-radius:14px;padding:14px 16px;border:1px solid var(--sep)">
-      <div style="font-size:1.6rem;font-weight:700;color:var(--primary)" id="gloTermCount">492</div>
-      <div style="font-size:0.72rem;color:var(--label2)">Glossary Terms</div>
-    </div>
   </div>
 <div id="studyContent">
 <div class="chapter-card"><h3 onclick="this.closest(&quot;.chapter-card&quot;).classList.toggle(&quot;open&quot;)"><span>Acute Care Cardiology</span><span class="vol-badge">Volume 1</span></h3><div class="chapter-card-body"><p>Covers ACS, heart failure decompensation, arrhythmias, and cardiogenic shock management.</p>
@@ -1481,9 +1538,9 @@
     <div class="score-stat"><span class="score-stat-value" id="correctDisplay" style="color:var(--green)">0</span><span class="score-stat-label">Correct</span></div>
     <div class="score-stat"><span class="score-stat-value" id="accuracyDisplay">--%</span><span class="score-stat-label">Accuracy</span></div>
     <div class="progress-track" style="flex:1"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+    <button id="topicStatsBtn" onclick="openTopicStats()">Topic stats</button>
   </div>
-  <div style="display:flex;justify-content:flex-end;margin-bottom:6px"><button id="topicStatsBtn" onclick="openTopicStats()">📊 Topic Stats</button></div>
-  <div class="controls">
+  <div class="controls quiz-controls">
     <select id="domainFilter" onchange="loadQuestion()">
       <option value="all">All Exam Domains</option>
       <option value="Area 1">Area 1: Patient Care Specialty (36%)</option>
@@ -1499,9 +1556,11 @@
     <select id="topicFilter" onchange="loadQuestion()">
       <option value="all">All Topics</option>
     </select>
-    <button class="btn btn-primary" onclick="loadQuestion()">Next Question</button>
-    <button class="btn btn-secondary" onclick="resetScore()">Reset Score</button>
-    <button class="btn btn-secondary" id="reviewMissedBtn" onclick="toggleReviewMissed()" style="display:none">📋 Review Missed</button>
+    <div class="quiz-actions">
+      <button class="btn btn-primary" onclick="loadQuestion()">Next question</button>
+      <button class="btn btn-secondary" onclick="resetScore()">Reset score</button>
+      <button class="btn btn-secondary" id="reviewMissedBtn" onclick="toggleReviewMissed()" style="display:none">Review missed</button>
+    </div>
   </div>
   <div id="questionContainer"></div>
 </div>
@@ -1521,8 +1580,6 @@
   <div class="fc-mode-tabs">
     <button class="fc-mode-tab active" onclick="switchFcMode('study')">&#127344; Study</button>
     <button class="fc-mode-tab" onclick="switchFcMode('cloze')">&#9998; Cloze</button>
-
-    <button class="fc-mode-tab" onclick="switchFcMode('create')">&#43; Create</button>
   </div>
 
   <!-- STUDY MODE -->
@@ -1537,7 +1594,7 @@
         <option value="new">New Only</option>
         <option value="review">Review Only</option>
       </select>
-      <button class="btn btn-secondary" onclick="shuffleFlash()">&#128256; Shuffle</button>
+      <button class="btn btn-secondary" onclick="shuffleFlash()">Shuffle</button>
       <button class="btn btn-secondary" onclick="resetSR()" title="Clear all SR progress">&#9851; Reset SR</button>
     </div>
     <div id="fcCounter" class="fc-counter"></div>
@@ -1571,25 +1628,16 @@
 
   <!-- CLOZE MODE -->
   <div id="fcModeCloze" style="display:none">
-    <p style="color:var(--label2);font-size:0.875rem;margin-bottom:1rem">Cards with <code style="color:var(--primary)">[[blank]]</code> syntax — tap the blank to reveal the answer.</p>
+    <p style="color:var(--label2);font-size:0.875rem;margin-bottom:0.75rem">Active-recall drill: each card hides a key term. Tap the <span class="cloze-blank" style="pointer-events:none">_____</span> to reveal it, then check the full explanation. Recalling before you peek is what builds retention.</p>
+    <div class="controls" style="margin-bottom:12px">
+      <select id="clozeTopicFilter" onchange="buildClozeSection()">
+        <option value="all">All Topics</option>
+      </select>
+      <button class="btn btn-secondary" onclick="shuffleCloze()">Shuffle</button>
+      <button class="btn btn-secondary" id="clozeRevealAllBtn" onclick="toggleClozeRevealAll()">Reveal all</button>
+      <span id="clozeCounter" class="fc-counter" style="margin-left:auto"></span>
+    </div>
     <div id="clozeCards"></div>
-  </div>
-
-  <!-- CREATE CARD MODE -->
-  <div id="fcModeCreate" style="display:none">
-    <div class="create-form">
-      <h3>&#9998; New Cloze Card</h3>
-      <span class="cloze-hint" style="color:var(--label2);">Use [[blank]] in the front text to create fill-in-the-blank cloze deletions. Example: "Vancomycin targets the [[D-Ala-D-Ala terminus]] of peptidoglycan"</span>
-      <input type="text" id="newCardTopic" placeholder="Topic (e.g. Pharmacokinetics)" />
-      <textarea id="newCardFront" placeholder="Front text — use [[blank]] for cloze deletions"></textarea>
-      <textarea id="newCardBack" placeholder="Back / full answer / explanation"></textarea>
-      <button class="btn btn-primary" onclick="saveCustomCard()">&#43; Save Card</button>
-    </div>
-
-    <div class="create-form" id="customCardListWrap" style="display:none">
-      <h3>&#128218; My Custom Cards (<span id="customCount">0</span>)</h3>
-      <div id="customCardList"></div>
-    </div>
   </div>
 </div>
 
@@ -1626,10 +1674,17 @@
 </div>
 
 <div id="glossary" class="section">
+  <div class="more-subnav" data-active="glossary">
+    <button class="more-back" onclick="switchSection('more')">&#8592; More</button>
+    <button class="more-subtab" data-sub="exampsych" onclick="switchSection('exampsych')">Exam Psychology</button>
+    <button class="more-subtab" data-sub="visuals" onclick="switchSection('visuals')">Visuals</button>
+    <button class="more-subtab" data-sub="evidence" onclick="switchSection('evidence')">Evidence</button>
+    <button class="more-subtab" data-sub="glossary" onclick="switchSection('glossary')">Glossary</button>
+  </div>
 
 <div class="section-header glo-section-header">
   <div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-glossary);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-2-1.2-5-1.2-7 0v12c2-1.2 5-1.2 7 0 2-1.2 5-1.2 7 0V6c-2-1.2-5-1.2-7 0z"/><path d="M12 6v12"/></svg></span><div class="section-title">Medical &amp; Pharmacology Glossary</div></div>
-  <div class="section-subtitle">492 terms — Pharmacokinetics, Clinical Pharmacology, Cardiovascular, ID, Critical Care & more</div>
+  <div class="section-subtitle">543 terms — Biostatistics, Pharmacokinetics, Clinical Pharmacology, Cardiovascular, ID, Critical Care & more</div>
 </div>
 
 <div class="glo-wrap">
@@ -1639,6 +1694,7 @@
   </div>
   <div class="glo-filters" id="gloFilters">
     <button class="glo-filter-btn active" onclick="gloSetCat(this,'ALL')">All</button>
+    <button class="glo-filter-btn" onclick="gloSetCat(this,'Biostatistics')">Biostats</button>
     <button class="glo-filter-btn" onclick="gloSetCat(this,'PK/PD')">PK/PD</button>
     <button class="glo-filter-btn" onclick="gloSetCat(this,'Pharmacology')">Pharmacology</button>
     <button class="glo-filter-btn" onclick="gloSetCat(this,'Cardiovascular')">Cardiovascular</button>
@@ -1651,8 +1707,6 @@
     <button class="glo-filter-btn" onclick="gloSetCat(this,'Pulmonology')">Pulm</button>
     <button class="glo-filter-btn" onclick="gloSetCat(this,'Lab Values')">Lab Values</button>
     <button class="glo-filter-btn" onclick="gloSetCat(this,'Abbreviations')">Abbreviations</button>
-    <button class="glo-filter-btn" onclick="gloSetCat(this,'Psychiatry')">Psych</button>
-    <button class="glo-filter-btn" onclick="gloSetCat(this,'Oncology')">Onc</button>
   </div>
   <div class="glo-az" id="gloAZ"></div>
   <div class="glo-scroll"><div id="gloOutput"></div>
@@ -1687,123 +1741,6 @@
   </div>
 </div>
 
-<div id="sessionTimer">⏱ <span id="sessionTimerVal">0:00</span></div>
-
-<!-- ═══════════════════════════════════════════════════════════
-     AUTH MODAL — BCPS Learning Hub Progress Sync
-═══════════════════════════════════════════════════════════ -->
-<div id="authOverlay" onclick="if(event.target===this)hideAuthModal()" style="
-  display:none; position:fixed; inset:0; z-index:9999;
-  background:rgba(0,0,0,0.6); backdrop-filter:blur(5px);
-  align-items:center; justify-content:center;
-">
-  <div id="authBox" style="
-    background:var(--card,#fff); border-radius:20px; padding:30px 26px;
-    width:min(420px,94vw); max-height:90vh; overflow-y:auto;
-    box-shadow:0 24px 80px rgba(0,0,0,0.35);
-    position:relative;
-  ">
-    <button onclick="hideAuthModal()" style="
-      position:absolute; top:14px; right:16px; background:none;
-      border:none; font-size:22px; cursor:pointer; color:var(--label3,#aaa);
-      line-height:1;
-    " aria-label="Close">✕</button>
-
-    <!-- Logo / title -->
-    <div style="text-align:center; margin-bottom:22px;">
-      <div style="font-size:2.8rem; margin-bottom:6px;">💊</div>
-      <h2 style="margin:0 0 4px; font-size:1.3rem; font-weight:700;" id="authTitle">Sync Your Progress</h2>
-      <p style="margin:0; font-size:0.82rem; color:var(--label3,#888);" id="authSubtitle">Sign in to enable progress tracking</p>
-    </div>
-
-    <!-- Logged-in user card (hidden by default) -->
-    <div id="authUserCard" style="display:none; background:var(--bg2,#f3f4f6); border-radius:12px; padding:16px; text-align:center; margin-bottom:16px;">
-      <div id="authAvatar" style="
-        width:54px; height:54px; border-radius:50%; background:var(--primary,#0071e3);
-        color:white; font-size:1.4rem; font-weight:700;
-        display:flex; align-items:center; justify-content:center; margin:0 auto 8px;
-      ">?</div>
-      <div id="authUserEmail" style="font-size:0.88rem; font-weight:600; color:var(--label1,#111);"></div>
-      <div id="authLastSync" style="font-size:0.74rem; color:var(--label3,#888); margin-top:4px;"></div>
-    </div>
-
-    <!-- Auth form -->
-    <div id="authForm">
-      <div style="margin-bottom:13px;">
-        <label style="font-size:0.78rem; font-weight:600; color:var(--label2,#555); display:block; margin-bottom:5px;">Username</label>
-        <input type="text" id="authEmail" placeholder="Olaiya" autocomplete="username" style="
-          width:100%; padding:11px 13px; border:1.5px solid var(--divider,#e5e7eb);
-          border-radius:9px; font-size:0.9rem; background:var(--bg2,#f9fafb);
-          color:var(--label1,#111); box-sizing:border-box; outline:none;
-          transition:border-color 0.15s;
-        " onfocus="this.style.borderColor='var(--primary,#0071e3)'"
-           onblur="this.style.borderColor='var(--divider,#e5e7eb)'"
-           onkeydown="if(event.key==='Enter')authSubmit()">
-      </div>
-      <div style="margin-bottom:16px;">
-        <label style="font-size:0.78rem; font-weight:600; color:var(--label2,#555); display:block; margin-bottom:5px;">Password</label>
-        <input type="password" id="authPassword" placeholder="••••••••" autocomplete="current-password" style="
-          width:100%; padding:11px 13px; border:1.5px solid var(--divider,#e5e7eb);
-          border-radius:9px; font-size:0.9rem; background:var(--bg2,#f9fafb);
-          color:var(--label1,#111); box-sizing:border-box; outline:none;
-          transition:border-color 0.15s;
-        " onfocus="this.style.borderColor='var(--primary,#0071e3)'"
-           onblur="this.style.borderColor='var(--divider,#e5e7eb)'"
-           onkeydown="if(event.key==='Enter')authSubmit()">
-      </div>
-
-      <!-- Error message -->
-      <div id="authError" style="
-        display:none; color:#DC2626; font-size:0.8rem; margin-bottom:13px;
-        padding:9px 12px; background:#FEE2E2; border-radius:8px; line-height:1.4;
-      "></div>
-
-      <button id="authSubmitBtn" onclick="authSubmit()" style="
-        width:100%; padding:13px; background:var(--primary,#0071e3); color:white;
-        border:none; border-radius:10px; font-size:0.95rem; font-weight:700;
-        cursor:pointer; margin-bottom:10px; transition:opacity 0.15s;
-      " onmouseover="this.style.opacity='0.88'" onmouseout="this.style.opacity='1'">Sign In</button>
-    </div>
-
-    <!-- Logged-in actions -->
-    <div id="authLoggedInActions" style="display:none;">
-      <button onclick="syncNow()" style="
-        width:100%; padding:12px; background:var(--primary,#0071e3); color:white;
-        border:none; border-radius:10px; font-size:0.9rem; font-weight:700;
-        cursor:pointer; margin-bottom:10px;
-      ">🔄 Sync Now</button>
-      <button onclick="authSignOut()" style="
-        width:100%; padding:11px; background:none; color:#EF4444;
-        border:1.5px solid #EF4444; border-radius:10px; font-size:0.85rem;
-        font-weight:600; cursor:pointer;
-      ">Sign Out</button>
-    </div>
-
-    <div style="text-align:center; margin-top:14px;">
-      <button onclick="hideAuthModal()" style="
-        background:none; border:none; color:var(--label3,#aaa);
-        font-size:0.78rem; cursor:pointer; padding:4px 8px;
-      ">Continue without account →</button>
-    </div>
-
-    <!-- What's saved -->
-    <div style="
-      margin-top:16px; padding:12px; background:var(--bg2,#f8f9fa);
-      border-radius:10px; font-size:0.75rem; color:var(--label3,#888);
-      line-height:1.7;
-    ">
-      <strong style="color:var(--label2,#666);">What gets saved</strong><br>
-      ✓ Quiz history &amp; accuracy per topic<br>
-      ✓ Missed questions (for Review Missed mode)<br>
-      ✓ Flashcard spaced-repetition schedule<br>
-      ✓ Study streak &amp; total time<br>
-      <span style="font-size:0.7rem; margin-top:4px; display:block;">
-        Stored on this device only — nothing leaves your browser.
-      </span>
-    </div>
-  </div>
-</div>
-
 <div id="podcasts" class="section">
   <div class="section-header">
     <div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-podcasts);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13v-1a8 8 0 0 1 16 0v1"/><rect x="3" y="13" width="4" height="6" rx="1.5"/><rect x="17" y="13" width="4" height="6" rx="1.5"/></svg></span><div class="section-title">Podcasts</div></div>
@@ -1827,6 +1764,18 @@
   </div>
   <div style="font-size:11px;color:var(--label3);letter-spacing:0.5px;">BCPS Learning Hub · Built to pass boards</div>
 </div>
+<!-- TOPIC STATS OVERLAY (per-topic quiz accuracy) -->
+<div id="topicStatsOverlay" onclick="if(event.target===this)closeTopicStats()">
+  <div id="topicStatsPanel">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+      <h3 style="margin:0">Accuracy by topic</h3>
+      <button onclick="closeTopicStats()" aria-label="Close" style="background:none;border:none;font-size:20px;line-height:1;cursor:pointer;color:var(--label3)">✕</button>
+    </div>
+    <p style="margin:0 0 12px;font-size:0.78rem;color:var(--label2)">Based on quiz questions you've answered this device. Weakest topics are worth the most review time.</p>
+    <div id="topicStatsBody"></div>
+  </div>
+</div>
+
   <script src="data.js"></script>
   <script src="podcasts-data.js"></script>
   <script src="slides-data.js"></script>
