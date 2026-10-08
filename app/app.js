@@ -3277,16 +3277,6 @@ function renderProgressStats() {
     streak = JSON.parse(localStorage.getItem(sk) || '{}').streak || 0;
   } catch(e) {}
 
-  const syncCard = window._currentUser
-    ? `<div class="ps-card" style="background:linear-gradient(135deg,var(--primary,#0071e3),#5b5bd6);">
-         <div class="ps-val" style="color:white;font-size:1rem;">☁️</div>
-         <div class="ps-lbl" style="color:rgba(255,255,255,0.85);">${(window._currentUser.email||'').split('@')[0]}</div>
-       </div>`
-    : `<div class="ps-card" style="border:1.5px dashed var(--primary,#0071e3);cursor:pointer;" onclick="toggleAuthModal()">
-         <div class="ps-val" style="color:var(--primary,#0071e3);font-size:1.2rem;">☁️</div>
-         <div class="ps-lbl" style="color:var(--primary,#0071e3);">Sync login</div>
-       </div>`;
-
   // Build topic breakdown (top 5)
   const topicRows = Object.entries(ts)
     .sort((a, b) => (b[1].total || 0) - (a[1].total || 0))
@@ -3323,7 +3313,6 @@ function renderProgressStats() {
       <div class="ps-card"><div class="ps-val" style="color:#f59e0b;">${missed}</div><div class="ps-lbl">Missed Q's</div></div>
       <div class="ps-card"><div class="ps-val" style="color:#8b5cf6;">${sessions}</div><div class="ps-lbl">Sessions</div></div>
       <div class="ps-card"><div class="ps-val" style="color:#ef4444;">${streak}</div><div class="ps-lbl">Day Streak 🔥</div></div>
-      ${syncCard}
     </div>
     ${Object.keys(ts).length > 0 ? `
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
