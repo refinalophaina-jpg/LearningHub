@@ -28,3 +28,7 @@ Mock Exam offers a separate 150-case original educational draft. Full simulation
 Choose **Save backup** to download a file. On another device, choose **Restore backup**, select that file, and confirm. **Undo restore** recovers the prior local progress. Codes remain available under “Use a progress code instead.” Backups include flashcards, general progress, revision-aware quiz review, confidence, mock history, active session, last result, and exam date. Legacy v3 codes remain importable; revised questions do not inherit old mastery records.
 
 The 150-case bank includes a mix of foundational and applied items. Forty-two received a further case/distractor pass. A full independent clinical, difficulty, and blueprint-subdomain review remains necessary; no passing-score prediction is provided.
+
+## Deployment
+
+The canonical site is [bcps.ainadara.com](https://bcps.ainadara.com). Cloudflare Worker static assets serve only `app/`; `wrangler.toml` binds that custom domain. Build first, then deploy with this repository’s explicit config (`wrangler deploy --config ./wrangler.toml`). The `app/_headers` file requests fresh validation for un-hashed assets. No private review files are part of the deployment.
