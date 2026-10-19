@@ -31,6 +31,14 @@
         "lightPrimaryButton": 4.9,
         "darkPrimaryPressed": 8.16
       }
+    },
+    {
+      "purpose": "App-wide dark-mode readability pass",
+      "version": "b915b1f5-d4d6-4bdb-9d44-ba4a753cb091",
+      "sourceMergeCommit": "ea3e009c303804fb8e86ff65c70d0e9ec586a233",
+      "pullRequest": "https://github.com/refinalophaina-jpg/LearningHub/pull/3",
+      "verification": "21 tests pass; nine-bank build; desktop/phone checks across all app sections and expanded reference content. Live native-input and flashcard rating colors match the new theme pairs. No real progress reset or restored; no public-origin quiz attempt started.",
+      "audit": "docs/reviews/2026-10-19-dark-mode-audit.md"
     }
   ]
 }
