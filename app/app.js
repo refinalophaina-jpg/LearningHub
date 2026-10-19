@@ -2514,15 +2514,15 @@ function drugRender() {
       if (drug.bbw) {
         const bbwDiv = document.createElement('div');
         bbwDiv.style.cssText = `
-          background: #FEE2E2;
-          border: 2px solid #DC2626;
+          background: var(--negative-surface);
+          border: 1px solid var(--negative-ink);
           border-radius: 6px;
           padding: 10px 14px;
           margin-bottom: 14px;
         `;
         bbwDiv.innerHTML = `
-          <div style="font-weight: bold; color: #DC2626; font-size: 12px; letter-spacing: 0.05em; margin-bottom: 4px;">⚠ BLACK BOX WARNING</div>
-          <div style="font-size: 13px; line-height: 1.5; color: #7F1D1D;">${drug.bbw}</div>
+          <div style="font-weight: bold; color: var(--negative-ink); font-size: 12px; letter-spacing: 0.05em; margin-bottom: 4px;">⚠ BLACK BOX WARNING</div>
+          <div style="font-size: 13px; line-height: 1.5; color: var(--negative-ink);">${drug.bbw}</div>
         `;
         detailEl.appendChild(bbwDiv);
       }
@@ -2531,16 +2531,16 @@ function drugRender() {
       if (drug.highyield) {
         const hyDiv = document.createElement('div');
         hyDiv.style.cssText = `
-          background: #FEFCE8;
-          border: 2px solid #EAB308;
+          background: var(--caution-surface);
+          border: 1px solid var(--caution-ink);
           border-radius: 6px;
           padding: 10px 14px;
           margin-bottom: 14px;
         `;
         const hyLines = drug.highyield.split('\n').map(l => `<div style="padding: 2px 0;">${l}</div>`).join('');
         hyDiv.innerHTML = `
-          <div style="font-weight: bold; color: #92400E; font-size: 12px; letter-spacing: 0.05em; margin-bottom: 6px;">⭐ HIGH-YIELD EXAM POINTS</div>
-          <div style="font-size: 13px; line-height: 1.6; color: #78350F;">${hyLines}</div>
+          <div style="font-weight: bold; color: var(--caution-ink); font-size: 12px; letter-spacing: 0.05em; margin-bottom: 6px;">⭐ HIGH-YIELD EXAM POINTS</div>
+          <div style="font-size: 13px; line-height: 1.6; color: var(--caution-ink);">${hyLines}</div>
         `;
         detailEl.appendChild(hyDiv);
       }
@@ -2586,7 +2586,7 @@ function drugRender() {
         gap: 6px;
         padding: 8px 12px;
         background: var(--primary);
-        color: white;
+        color: var(--on-primary);
         text-decoration: none;
         border-radius: 4px;
         font-size: 12px;
@@ -3212,17 +3212,17 @@ function renderHomeStats() {
           <div style="font-size:11px;color:var(--label2);">Missed</div>
         </div>
         <div style="background:var(--fill);border-radius:10px;padding:10px 6px;text-align:center;">
-          <div style="font-size:1.4rem;font-weight:800;color:#8b5cf6;">${sessions}</div>
+          <div style="font-size:1.4rem;font-weight:800;color:var(--purple);">${sessions}</div>
           <div style="font-size:11px;color:var(--label2);">Sessions</div>
         </div>
         <div style="background:var(--fill);border-radius:10px;padding:10px 6px;text-align:center;">
-          <div style="font-size:1.4rem;font-weight:800;color:#ef4444;">${streak}🔥</div>
+          <div style="font-size:1.4rem;font-weight:800;color:var(--negative-ink);">${streak}🔥</div>
           <div style="font-size:11px;color:var(--label2);">Streak</div>
         </div>
       </div>
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;margin-top:4px;">
         ${hist.length > 0 ? `<div style="font-size:12px;color:var(--label2);">Last session: ${hist[0].correct}/${hist[0].total} (${hist[0].pct}%) · <a onclick="switchSection('study')" style="color:var(--primary);cursor:pointer;text-decoration:none;">View full history →</a></div>` : '<div></div>'}
-        <button onclick="confirmResetProgress()" style="font-size:11px;padding:4px 10px;background:transparent;color:#ef4444;border:1px solid #ef4444;border-radius:6px;cursor:pointer;font-weight:600;">🗑 Reset Progress</button>
+        <button onclick="confirmResetProgress()" style="font-size:11px;padding:4px 10px;background:transparent;color:var(--negative-ink);border:1px solid #ef4444;border-radius:6px;cursor:pointer;font-weight:600;">🗑 Reset Progress</button>
       </div>
     </div>`;
   // Update timestamp
@@ -3286,8 +3286,8 @@ function renderProgressStats() {
       <div class="ps-card"><div class="ps-val" style="color:var(--primary,#0071e3);">${acc}%</div><div class="ps-lbl">Accuracy</div></div>
       <div class="ps-card"><div class="ps-val" style="color:#22c55e;">${totalC}</div><div class="ps-lbl">Correct</div></div>
       <div class="ps-card"><div class="ps-val" style="color:#f59e0b;">${missed}</div><div class="ps-lbl">Missed</div></div>
-      <div class="ps-card"><div class="ps-val" style="color:#8b5cf6;">${sessions}</div><div class="ps-lbl">Sessions</div></div>
-      <div class="ps-card"><div class="ps-val" style="color:#ef4444;">${streak}</div><div class="ps-lbl">Day streak</div></div>
+      <div class="ps-card"><div class="ps-val" style="color:var(--purple);">${sessions}</div><div class="ps-lbl">Sessions</div></div>
+      <div class="ps-card"><div class="ps-val" style="color:var(--negative-ink);">${streak}</div><div class="ps-lbl">Day streak</div></div>
     </div>
     ${Object.keys(ts).length > 0 ? `
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
@@ -3412,7 +3412,7 @@ function copyProgressCode() {
     const msg = document.getElementById('importCodeMsg');
     navigator.clipboard.writeText(code).then(
       () => {
-        if (msg) { msg.style.color='#34C759'; msg.textContent='✓ Code copied!'; setTimeout(() => msg.textContent='', 3000); }
+        if (msg) { msg.style.color='var(--positive-ink)'; msg.textContent='✓ Code copied!'; setTimeout(() => msg.textContent='', 3000); }
         _refreshLivePreview();
       },
       () => { prompt('Copy this code:', code); }
@@ -3424,14 +3424,14 @@ function importProgressCode() {
   const inp = document.getElementById('importCodeInput');
   const msg = document.getElementById('importCodeMsg');
   const raw = (inp ? inp.value : '').trim();
-  if (!raw) { if (msg) { msg.style.color='#ef4444'; msg.textContent='Please paste a code first.'; } return; }
+  if (!raw) { if (msg) { msg.style.color='var(--negative-ink)'; msg.textContent='Please paste a code first.'; } return; }
   try {
     BCPSProgressCode.restore(raw, localStorage);
-    if (msg) { msg.style.color='#34C759'; msg.textContent='✓ Progress loaded! Refreshing in 2 seconds…'; }
+    if (msg) { msg.style.color='var(--positive-ink)'; msg.textContent='✓ Progress loaded! Refreshing in 2 seconds…'; }
     localStorage.setItem('bcps_justImported', '1');
     setTimeout(() => location.reload(), 2000);
   } catch(e) {
-    if (msg) { msg.style.color='#ef4444'; msg.textContent=e.message || 'Invalid code. Your progress has not changed.'; }
+    if (msg) { msg.style.color='var(--negative-ink)'; msg.textContent=e.message || 'Invalid code. Your progress has not changed.'; }
   }
 }
 
