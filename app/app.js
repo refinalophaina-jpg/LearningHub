@@ -158,7 +158,7 @@ const quizData = JSON.parse(({textContent: JSON.stringify(window.__quizData)}).t
 const flashData = JSON.parse(({textContent: JSON.stringify(window.__flashData)}).textContent);
 
 // ── NAVIGATION ────────────────────────────────────────────────────────────
-const MORE_SUBS = ['exampsych', 'visuals', 'evidence', 'glossary'];
+const MORE_SUBS = ['exampsych', 'visuals', 'evidence', 'glossary', 'sources'];
 function switchSection(id) {
   try{window.dispatchEvent(new CustomEvent("bcps:tab",{detail:id}));}catch(e){}
   document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
@@ -177,7 +177,6 @@ function switchSection(id) {
   if (id === 'visuals') { setTimeout(()=>{initVisuals();},100); }
   if (id === 'exampsych') { setTimeout(()=>{initEpDrills(); calcTiming();},100); }
   if (id === 'evidence' && !evidenceInitialized) initEvidence();
-  if (id === 'accp' && !window._accpInitDone) { window._accpInitDone=true; initAccpReview(); }
 }
 
 // ── STUDY GUIDE ───────────────────────────────────────────────────────────
@@ -262,7 +261,7 @@ function renderQuestion(q) {
   const diffClass = {exam:'diff-exam', hard:'diff-hard', expert:'diff-expert'}[q.diff] || 'diff-exam';
   const domMap = {'Area 1':'dom-1','Area 2':'dom-2','Area 3':'dom-3'};
   const domainBadge = q.domain ? `<span class="domain-badge ${domMap[q.domain] || ''}" title="${q.topic || ''}">${q.domain}</span>` : '';
-  const topicBadge = q.topic ? `<span class="topic-badge" style="background:var(--fill);color:var(--label2);font-size:0.6rem;padding:2px 8px;border-radius:10px;font-weight:500">${q.topic}</span>` : '';
+  const topicBadge = q.topic ? `<span class="topic-badge" style="background:var(--fill);color:var(--label2);font-size:11px;padding:2px 8px;border-radius:10px;font-weight:500">${q.topic}</span>` : '';
   // FIX: store opts_exp in cache to avoid HTML attribute escaping issues
   const cacheKey = ++_optsExpIdx;
   _optsExpCache[cacheKey] = q.opts_exp || [];
@@ -716,7 +715,7 @@ function buildImageSection() {
   container.innerHTML = imageCards.map((c, i) => `
     <div style="background:#1e293b;border:1px solid #334155;border-radius:10px;padding:1.25rem;margin-bottom:1.25rem">
       <div style="margin-bottom:0.75rem;display:flex;justify-content:space-between;align-items:center">
-        <span style="background:#06b6d4;color:#0f172a;font-size:0.68rem;font-weight:700;padding:0.2rem 0.6rem;border-radius:20px">${c.topic||'General'}</span>
+        <span style="background:#06b6d4;color:#0f172a;font-size:11px;font-weight:700;padding:0.2rem 0.6rem;border-radius:20px">${c.topic||'General'}</span>
         <button onclick="revealAllOcc(this)" class="btn btn-secondary" style="font-size:0.75rem;padding:0.3rem 0.8rem">Reveal All</button>
       </div>
       ${renderImageFront(c)}
@@ -852,7 +851,7 @@ function refreshCustomList() {
   list.innerHTML = customCards.map((c,i) => `
     <div style="display:flex;justify-content:space-between;align-items:center;padding:0.6rem 0.75rem;background:#0f172a;border-radius:6px;margin-bottom:0.5rem">
       <div style="font-size:0.82rem;color:#cbd5e1;flex:1;margin-right:1rem;overflow:hidden;white-space:nowrap;text-overflow:ellipsis">${c.type==='image'?'🖼️ '+c.topic : c.front.substring(0,60)+(c.front.length>60?'...':'')}</div>
-      <span style="background:#334155;color:#94a3b8;font-size:0.65rem;padding:0.15rem 0.5rem;border-radius:20px;margin-right:0.75rem">${c.topic}</span>
+      <span style="background:#334155;color:#94a3b8;font-size:11px;padding:0.15rem 0.5rem;border-radius:20px;margin-right:0.75rem">${c.topic}</span>
       <button onclick="deleteCustomCard(${i})" style="background:#450a0a;color:#fca5a5;border:none;border-radius:4px;padding:0.2rem 0.5rem;cursor:pointer;font-size:0.75rem">✕</button>
     </div>`).join('');
 }
@@ -1941,30 +1940,6 @@ function buildSpotlightIndex() {
       });
     });
   }
-  // ── ACCP Mock Exam questions (accpData) ─────────────────────────────────────
-  try {
-    const _accpEl = ({textContent: JSON.stringify(window.__accpData)});
-    if (_accpEl) {
-      const _accpQ = JSON.parse(_accpEl.textContent);
-      _accpQ.forEach((q) => {
-        idx.push({ type:'accp', icon:'📋',
-          title: 'Q' + q.num + '. ' + q.stem.slice(0,70) + (q.stem.length>70?'…':''),
-          sub: q.category + ' · ACCP Mock Exam',
-          search: (q.stem + ' ' + q.category + ' ' + (q.exp||'') + ' ' + (q.choices||[]).join(' ')).toLowerCase(),
-          action: ()=>{
-            switchSection('accp');
-            setTimeout(()=>{
-              const qi = q.num - 1;
-              if (typeof window._aq !== 'undefined') {
-                window._aq = qi;
-                if (typeof window.renderAccpQ === 'function') window.renderAccpQ();
-              }
-            }, 200);
-          }
-        });
-      });
-    }
-  } catch(e) { /* accpData unavailable */ }
   // ── Study Guide chapters ────────────────────────────────────────────────────
   const _studyChapters = window.__studyChapters;;
   _studyChapters.forEach((title) => {
@@ -2059,7 +2034,7 @@ function searchSpotlight(raw) {
       {icon:'💊',title:'Drug Reference',sub:'70 BCPS drugs with PK, interactions, pearls',action:()=>{switchSection('concepts');closeSpotlight();}},
       {icon:'🔬',title:'Visual Pharmacology',sub:'Pathways, cascades, mechanism diagrams',action:()=>{switchSection('visuals');closeSpotlight();}},
       {icon:'🏛️',title:'Evidence-Based References',sub:'Landmark trials & major guidelines',action:()=>{switchSection('evidence');closeSpotlight();}},
-      {icon:'📋',title:'ACCP Mock Exam',sub:'150 practice questions · Category-based review',action:()=>{switchSection('accp');closeSpotlight();}},
+      {icon:'📋',title:'Mock Exam',sub:'150 original cases · full simulation or flexible practice',action:()=>{switchSection('accp');closeSpotlight();}},
       {icon:'🎯',title:'Exam Psychology',sub:'Strategy, timing, cognitive biases',action:()=>{switchSection('exampsych');closeSpotlight();}}
     ];
     container.innerHTML = '<div class="spotlight-cat">Quick Jump</div>' +
@@ -2916,6 +2891,7 @@ const _PROG_KEY = 'bcps_progress_v2';
 // ── SNAPSHOT ─────────────────────────────────────────────────────────────────
 function _snap() {
   return {
+    questionRevision: '2026-10-19',
     missedQIds:  Array.from(window.missedQIds || []),
     topicStats:  window.topicStats  || {},
     quizHistory: window.quizHistory || [],
@@ -2935,7 +2911,10 @@ function _loadLocal() {
 }
 function _applyProgress(d) {
   if (!d) return;
-  if (Array.isArray(d.missedQIds))  window.missedQIds  = new Set(d.missedQIds);
+  if (Array.isArray(d.missedQIds)) {
+    const changed = new Set([0, 52, 88, 95, 158, 166, 169, 171, 188, 198, 218, 241, 246, 258, 267, 272, 273, 296, 300, 305, 311, 320, 350, 372, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448]);
+    window.missedQIds = new Set(d.missedQIds.filter(i => Number.isInteger(i) && i >= 0 && i < quizData.length && (d.questionRevision === '2026-10-19' || !changed.has(i))));
+  }
   if (d.topicStats)                 window.topicStats   = d.topicStats;
   if (Array.isArray(d.quizHistory)) window.quizHistory  = d.quizHistory;
   if (d.srData)     localStorage.setItem(typeof SR_KEY !== 'undefined' ? SR_KEY : 'bcps_sr_v1', d.srData);
@@ -3222,23 +3201,23 @@ function renderHomeStats() {
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(80px,1fr));gap:8px;margin-bottom:12px;">
         <div style="background:var(--fill);border-radius:10px;padding:10px 6px;text-align:center;">
           <div style="font-size:1.4rem;font-weight:800;color:var(--primary,#0071e3);">${acc}%</div>
-          <div style="font-size:10px;color:var(--label2);">Accuracy</div>
+          <div style="font-size:11px;color:var(--label2);">Accuracy</div>
         </div>
         <div style="background:var(--fill);border-radius:10px;padding:10px 6px;text-align:center;">
           <div style="font-size:1.4rem;font-weight:800;color:#22c55e;">${totalC}</div>
-          <div style="font-size:10px;color:var(--label2);">Correct</div>
+          <div style="font-size:11px;color:var(--label2);">Correct</div>
         </div>
         <div style="background:var(--fill);border-radius:10px;padding:10px 6px;text-align:center;">
           <div style="font-size:1.4rem;font-weight:800;color:#f59e0b;">${missed}</div>
-          <div style="font-size:10px;color:var(--label2);">Missed</div>
+          <div style="font-size:11px;color:var(--label2);">Missed</div>
         </div>
         <div style="background:var(--fill);border-radius:10px;padding:10px 6px;text-align:center;">
           <div style="font-size:1.4rem;font-weight:800;color:#8b5cf6;">${sessions}</div>
-          <div style="font-size:10px;color:var(--label2);">Sessions</div>
+          <div style="font-size:11px;color:var(--label2);">Sessions</div>
         </div>
         <div style="background:var(--fill);border-radius:10px;padding:10px 6px;text-align:center;">
           <div style="font-size:1.4rem;font-weight:800;color:#ef4444;">${streak}🔥</div>
-          <div style="font-size:10px;color:var(--label2);">Streak</div>
+          <div style="font-size:11px;color:var(--label2);">Streak</div>
         </div>
       </div>
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;margin-top:4px;">
@@ -3377,174 +3356,7 @@ setInterval(() => {
 ;
 /* ───── next block ───── */
 
-// ── ACCP MOCK EXAM REVIEW ─────────────────────────────────────────────────
-(function() {
-  let _aq = null;       // filtered question list
-  let _allQ = null;     // all 150
-  let _idx = 0;         // current index in filtered list
-  let _reviewed = {};   // num -> bool
-
-  function getData() {
-    if (!_allQ) {
-      _allQ = JSON.parse(({textContent: JSON.stringify(window.__accpData)}).textContent);
-    }
-    return _allQ;
-  }
-
-  window.initAccpReview = function() {
-    getData();
-    _aq = _allQ.slice();
-    _idx = 0;
-    renderQ();
-    // Load saved progress from Supabase
-    if (typeof sbLoadAccpProgress === 'function') {
-      sbLoadAccpProgress().then(saved => {
-        if (saved && Object.keys(saved).length) {
-          Object.assign(_reviewed, saved);
-          _updateStats();
-          renderQ();
-        }
-      }).catch(() => {});
-    }
-  };
-
-  window.accpFilter = function() {
-    const cat = document.getElementById('accpCatFilter').value;
-    getData();
-    _aq = cat ? _allQ.filter(q => q.category === cat) : _allQ.slice();
-    _idx = 0;
-    document.getElementById('accpStats').querySelector('#accpCatName').textContent = cat || 'All categories';
-    document.getElementById('accpTotal').textContent = _aq.length;
-    renderQ();
-  };
-
-  window.accpNav = function(dir) {
-    if (!_aq) return;
-    _idx = Math.max(0, Math.min(_aq.length - 1, _idx + dir));
-    renderQ();
-  };
-
-  window.accpSelectChoice = function(idx) {
-    document.querySelectorAll('.accp-choice-btn').forEach((el, i) => {
-      el.classList.toggle('selected', i === idx);
-    });
-  };
-
-  window.accpReveal = function() {
-    const q = _aq[_idx];
-    // Highlight choices with new CSS classes
-    document.querySelectorAll('.accp-choice-btn').forEach((el, i) => {
-      el.disabled = true;
-      el.classList.remove('selected');
-      if (i === q.correctIdx) el.classList.add('correct');
-      else el.classList.add('wrong');
-    });
-    // Show styled explanation
-    const expDiv = document.getElementById('accpExplanation');
-    expDiv.style.display = 'block';
-    expDiv.innerHTML =
-      `<div class="accp-exp-header">
-        <span class="accp-exp-correct-pill">✓ Answer ${'ABCD'[q.correctIdx]}</span>
-        <strong style="font-size:13.5px;">${escH(q.choices[q.correctIdx])}</strong>
-      </div>
-      <div class="accp-exp-text">${escH(q.exp || 'No explanation available.')}</div>`;
-    document.getElementById('accpRevealBtn').disabled = true;
-    document.getElementById('accpRevealBtn').style.opacity = '0.45';
-  };
-
-  window.accpMarkReviewed = function() {
-    const q = _aq[_idx];
-    _reviewed[q.num] = true;
-    if (typeof sbMarkAccpReviewed === 'function') sbMarkAccpReviewed(q.num);
-    _updateStats();
-    // Auto-advance
-    if (_idx < _aq.length - 1) {
-      _idx++;
-      renderQ();
-    }
-  };
-
-  function escH(s) {
-    if (!s) return '';
-    return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-  }
-
-  // Domain color map
-  const _domainColor = {
-    '1A': 'var(--accp-1a,#0ea5e9)', '1B': 'var(--accp-1b,#6366f1)',
-    '1C': 'var(--accp-1c,#8b5cf6)', '2A': 'var(--accp-2a,#10b981)',
-    '2B': 'var(--accp-2b,#059669)', '2C': 'var(--accp-2c,#0d9488)',
-    '3A': 'var(--accp-3a,#f59e0b)', '3B': 'var(--accp-3b,#ef4444)',
-    '3C': 'var(--accp-3c,#ec4899)'
-  };
-
-  function _getDomainColor(catCode) {
-    const prefix = catCode.slice(0,2).toUpperCase();
-    return _domainColor[prefix] || '#6366f1';
-  }
-
-  function _updateStats() {
-    const rev = Object.keys(_reviewed).length;
-    const total = _allQ ? _allQ.length : 150;
-    const qLen = _aq ? _aq.length : total;
-    document.getElementById('accpReviewedCount').textContent = rev;
-    document.getElementById('accpRemaining').textContent = total - rev;
-    document.getElementById('accpTotal').textContent = qLen;
-    const pct = total > 0 ? (rev / total * 100) : 0;
-    const fill = document.getElementById('accpProgFill');
-    if (fill) fill.style.width = pct.toFixed(1) + '%';
-  }
-
-  window.renderAccpQ = function() { renderQ(); };
-
-  function renderQ() {
-    if (!_aq || !_aq.length) {
-      document.getElementById('accpCard').innerHTML = '<div style="padding:40px;text-align:center;color:var(--label2,#888);">No questions match this filter.</div>';
-      return;
-    }
-    const q = _aq[_idx];
-    const letters = ['A','B','C','D'];
-    const catParts = q.category ? q.category.split('. ') : ['',''];
-    const catCode = catParts[0] || '';
-    const catName = catParts.slice(1).join('. ') || q.category;
-    const domColor = _getDomainColor(catCode);
-    const isRev = !!_reviewed[q.num];
-
-    // Meta badges
-    document.getElementById('accpMeta').innerHTML =
-      `<span class="accp-num-badge">Q${q.num}</span>` +
-      `<span class="accp-domain-badge" style="color:${domColor};border-color:${domColor};">${escH(catCode)}</span>` +
-      `<span class="accp-cat-badge">${escH(catName)}</span>` +
-      (isRev ? `<span class="accp-reviewed-badge">✓ Reviewed</span>` : '');
-
-    // Stem
-    document.getElementById('accpStem').textContent = q.stem;
-
-    // Choices — as clickable buttons (no reveal-gating needed)
-    const choicesHtml = (q.choices||[]).map((c, i) =>
-      `<button class="accp-choice-btn" id="accpChoice_${i}" onclick="accpSelectChoice(${i})"
-        data-idx="${i}">
-        <span class="accp-choice-letter">${letters[i]}</span>
-        <span>${escH(c)}</span>
-      </button>`
-    ).join('');
-    document.getElementById('accpChoices').innerHTML = choicesHtml;
-
-    // Counter
-    document.getElementById('accpCounter').textContent = (_idx+1) + ' / ' + _aq.length;
-    document.getElementById('accpCatName').textContent =
-      document.getElementById('accpCatFilter').options[document.getElementById('accpCatFilter').selectedIndex].text.split('(')[0].trim() || 'All categories';
-
-    // Hide explanation, re-enable reveal
-    const expDiv = document.getElementById('accpExplanation');
-    expDiv.style.display = 'none';
-    const revBtn = document.getElementById('accpRevealBtn');
-    revBtn.disabled = false;
-    revBtn.style.opacity = '1';
-
-    _updateStats();
-  }
-})();
+// ACCP mock-exam review removed: paid ACCP content is not redistributed. The timed mock (study-features.js) now draws from the hub's own quiz bank.
 
 ;
 /* ───── next block ───── */
@@ -3559,7 +3371,14 @@ function _buildProgressCode() {
     progress: localStorage.getItem('bcps_progress_v2'),
     custom:   localStorage.getItem('bcps_custom_cards'),
     accp:     localStorage.getItem('bcps_accp_reviewed'),
-    v: 3, ts: Date.now()
+    studyRevision: '2026-10-19',
+    quizSrs: localStorage.getItem('bcps_quiz_srs_20261019'),
+    confidence: localStorage.getItem('bcps_confidence_log_20261019'),
+    mockHistory: localStorage.getItem('bcps_mock_history'),
+    mockSession: localStorage.getItem('bcps_mock_session_20261019'),
+    mockResult: localStorage.getItem('bcps_mock_result_v1'),
+    examDate: localStorage.getItem('bcps_exam_date'),
+    v: 4, ts: Date.now()
   };
   Object.keys(data).forEach(k => { if (data[k] === null) delete data[k]; });
   return btoa(unescape(encodeURIComponent(JSON.stringify(data))));
@@ -3607,17 +3426,12 @@ function importProgressCode() {
   const raw = (inp ? inp.value : '').trim();
   if (!raw) { if (msg) { msg.style.color='#ef4444'; msg.textContent='Please paste a code first.'; } return; }
   try {
-    const data = JSON.parse(decodeURIComponent(escape(atob(raw))));
-    if (data.sr)       localStorage.setItem('bcps_sr_v2',           data.sr);
-    if (data.streak)   localStorage.setItem('bcps_streak_v1',       data.streak);
-    if (data.progress) localStorage.setItem('bcps_progress_v2',     data.progress);
-    if (data.custom)   localStorage.setItem('bcps_custom_cards',    data.custom);
-    if (data.accp)     localStorage.setItem('bcps_accp_reviewed',   data.accp);
+    BCPSProgressCode.restore(raw, localStorage);
     if (msg) { msg.style.color='#34C759'; msg.textContent='✓ Progress loaded! Refreshing in 2 seconds…'; }
     localStorage.setItem('bcps_justImported', '1');
     setTimeout(() => location.reload(), 2000);
   } catch(e) {
-    if (msg) { msg.style.color='#ef4444'; msg.textContent='Invalid code. Please check and try again.'; }
+    if (msg) { msg.style.color='#ef4444'; msg.textContent=e.message || 'Invalid code. Your progress has not changed.'; }
   }
 }
 
@@ -3632,9 +3446,9 @@ function resetSection(which) {
   if (modal) modal.style.display = 'none';
 
   const KEYS = {
-    quiz:  ['bcps_progress_v2', 'bcps_streak_v1'],
+    quiz:  ['bcps_progress_v2', 'bcps_streak_v1', 'bcps_quiz_srs', 'bcps_confidence_log', 'bcps_quiz_srs_20261019', 'bcps_confidence_log_20261019'],
     flash: ['bcps_sr_v2', 'bcps_custom_cards'],
-    all:   ['bcps_progress_v2', 'bcps_sr_v2', 'bcps_streak_v1', 'bcps_custom_cards', 'bcps_accp_reviewed'],
+    all:   ['bcps_progress_v2', 'bcps_sr_v2', 'bcps_streak_v1', 'bcps_custom_cards', 'bcps_accp_reviewed', 'bcps_restore_undo_v1', 'bcps_restore_notice'],
   };
   const labels = { quiz: 'quiz history', flash: 'flashcard progress', all: 'all progress' };
   const toRemove = KEYS[which] || KEYS.all;

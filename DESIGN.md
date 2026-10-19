@@ -139,7 +139,7 @@ Eleven muted-jewel hues, one per section, held to similar saturation and lightne
 
 ## Layout
 
-Single-column, mobile-first flow inside a 20px page gutter, with a sticky translucent header (56px) and a fixed 9-tab bottom bar (72px + safe-area). Content is organized as stacked cards on the paper; grids appear only where items are genuinely equivalent (home tool cards at `minmax(140px,1fr)`, More hub 2-col ≥600px, quiz filters 2-col mobile / 3-col ≥640px, visuals 2-col ≥640px with aligned card heads). Rhythm: 8px between siblings, 12–14px between cards, 16px card padding, 24–28px between sections. The primary content of a screen sits above the fold on a 420px phone; stat strips stay compact single rows. Reference material beyond the core loop lives one tap deeper in the More hub rather than widening the tab bar.
+Single-column, mobile-first flow inside a 20px page gutter, with a sticky translucent header (56px) and a fixed bottom bar (five primary tabs at phone widths; nine on larger screens) (72px + safe-area). Content is organized as stacked cards on the paper; grids appear only where items are genuinely equivalent (home tool cards at `minmax(140px,1fr)`, More hub 2-col ≥600px, quiz filters 2-col mobile / 3-col ≥640px, visuals 2-col ≥640px with aligned card heads). Rhythm: 8px between siblings, 12–14px between cards, 16px card padding, 24–28px between sections. The primary content of a screen sits above the fold on a 420px phone; stat strips stay compact single rows. Reference material beyond the core loop lives one tap deeper in the More hub rather than widening the tab bar.
 
 ## Elevation & Depth
 
@@ -182,7 +182,7 @@ Soft rectangles everywhere: 12px for controls, 14–16px for cards, 18–20px fo
 - **Focus:** fill deepens; `:focus-visible` adds the global 2px terracotta outline.
 
 ### Navigation
-- **Bottom tab bar:** fixed, frosted (blur + 92% paper), 9 tabs. Each tab's SVG icon permanently carries its section hue at 72% opacity; the active tab gets a 15% tinted chip behind the icon and a 600-weight label in its hue. Labels 11px.
+- **Bottom tab bar:** fixed, frosted (blur + 92% paper), five tabs at ≤600px (Home, Study, Quiz, Cards, More) and nine on larger screens. The phone More hub contains Drug reference, Timed practice, Podcasts, and Slides. Each tab's SVG icon permanently carries its section hue at 72% opacity; the active tab gets a 15% tinted chip behind the icon and a 600-weight label in its hue. Labels 11px.
 - **Header:** sticky, frosted, brand mark + serif wordmark + Search pill; circular theme toggle (stroke moon/sun) floats at top-right.
 - **More sub-nav:** pill row ("← More" + four sub-tabs) repeated atop each reference section; active pill fills with its section tint.
 
@@ -204,3 +204,9 @@ The recurring identity atom: a rounded square (8–14px by size) filled with a s
 - **Don't** put section-spectrum color on body text or large surfaces (The Wayfinding Rule).
 - **Don't** add tabs to the main bar; deeper material joins the More hub.
 - **Don't** reintroduce login/sync UI or any feature that breaks the static, local-first model.
+
+### Portable progress
+Save backup and Restore backup are the primary actions, with plain-language device-transfer guidance. Restoration validates the file before a dated inline confirmation and preserves an Undo restore copy. Codes stay inside an optional disclosure.
+
+### Mock examination
+The session chooser explains full simulation versus flexible practice before the timer starts. Active full simulation has one question, a visible continuous timer, one-way confirmation, and an optional timed break. Explanations, domain results, and simulated unscored labels appear after submission. Keep the educational-draft status visible.

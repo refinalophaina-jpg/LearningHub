@@ -9,9 +9,10 @@
 
   var LS = {
     examDate: 'bcps_exam_date',
-    quizSrs: 'bcps_quiz_srs',
-    confLog: 'bcps_confidence_log',
+    quizSrs: 'bcps_quiz_srs_20261019',
+    confLog: 'bcps_confidence_log_20261019',
     mockHistory: 'bcps_mock_history',
+    mockSession: 'bcps_mock_session_20261019',
   };
 
   function todayStr() { var d = new Date(); return d.toISOString().slice(0, 10); }
@@ -19,6 +20,23 @@
   function daysBetween(a, b) { return Math.round((new Date(b + 'T00:00:00') - new Date(a + 'T00:00:00')) / 86400000); }
   function readJSON(key, fallback) { try { var v = JSON.parse(localStorage.getItem(key)); return v == null ? fallback : v; } catch (e) { return fallback; } }
   function writeJSON(key, val) { try { localStorage.setItem(key, JSON.stringify(val)); } catch (e) { } }
+
+  // Changed question meanings must not inherit mastery from an older item.
+  // Keep legacy stores intact and migrate only unchanged question records.
+  (function migrateQuestionRevision() {
+    var changed = new Set([0, 52, 88, 95, 158, 166, 169, 171, 188, 198, 218, 241, 246, 258, 267, 272, 273, 296, 300, 305, 311, 320, 350, 372, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448]);
+    try {
+      if (localStorage.getItem(LS.quizSrs) === null) {
+        var old = readJSON('bcps_quiz_srs', {}), next = {};
+        Object.keys(old).forEach(function (k) { if (!changed.has(Number(k))) next[k] = old[k]; });
+        writeJSON(LS.quizSrs, next);
+      }
+      if (localStorage.getItem(LS.confLog) === null) {
+        var log = readJSON('bcps_confidence_log', []);
+        writeJSON(LS.confLog, Array.isArray(log) ? log.filter(function (r) { return !changed.has(Number(r.i)); }) : []);
+      }
+    } catch (e) { /* Storage may be unavailable; practice remains usable. */ }
+  })();
 
   // ── Exam date anchor (R3) ──────────────────────────────────────────────
   function getExamDate() { return localStorage.getItem(LS.examDate) || null; }
@@ -103,13 +121,13 @@
   };
   // Clears everything this file owns (used by the global "Reset Everything").
   window.BCPS_resetStudyData = function () {
-    [LS.quizSrs, LS.confLog, LS.mockHistory, LS.examDate].forEach(function (k) {
+    [LS.quizSrs, LS.confLog, LS.mockHistory, LS.mockSession, LS.examDate, 'bcps_quiz_srs', 'bcps_confidence_log', 'bcps_mock_result_v1'].forEach(function (k) {
       try { localStorage.removeItem(k); } catch (e) {}
     });
     window._srsForceSet = null;
     renderDueBanner();
     renderStudyPlan();
-    if (typeof renderMockPanel === 'function') renderMockPanel();
+    if (typeof window.BCPS_clearMockState === 'function') window.BCPS_clearMockState();
   };
 
   window._srsForceSet = null; // when set (array), loadQuestion pulls only from these indices
@@ -288,10 +306,10 @@
   if (document.readyState !== 'loading') { renderStudyPlan(); renderDueBanner(); }
 
   // ── Timed mock exam + readiness meter (R5) ──────────────────────────────
-  var MOCK_MIN_TIMED_ITEMS = 150; // readiness band withheld until this much timed volume exists
+  var MOCK_MIN_TIMED_ITEMS = 1; // readiness band withheld until this much timed volume exists
   var AREA_LABEL = { '1': 'Area 1: Patient Care', '2': 'Area 2: Therapeutics & Management', '3': 'Area 3: Professional Practice' };
 
-  function getMockHistory() { return readJSON(LS.mockHistory, []); }
+  function getMockHistory() { var h=readJSON(LS.mockHistory, []); return Array.isArray(h)?h.filter(function(a){return a && Number.isFinite(a.total) && a.total>0 && Number.isFinite(a.pct);}):[]; }
   function saveMockAttempt(attempt) {
     var h = getMockHistory(); h.push(attempt);
     if (h.length > 30) h = h.slice(-30);
@@ -304,7 +322,7 @@
     if (!h.length || timedItemTotal() < MOCK_MIN_TIMED_ITEMS) return null;
     var recent = h.slice(-3);
     var pct = recent.reduce(function (s, a) { return s + a.pct; }, 0) / recent.length;
-    var band = pct < 60 ? 'Not ready' : pct < 70 ? 'Borderline' : 'Likely ready';
+    var band = 'Recent practice accuracy';
     var cls = pct < 60 ? 'not-ready' : pct < 70 ? 'borderline' : 'ready';
     return { pct: Math.round(pct), band: band, cls: cls, attempts: h.length };
   }
@@ -312,139 +330,15 @@
   function readinessHTML() {
     var r = readinessBand();
     var wrap = '<div class="sp-readiness-wrap">';
-    wrap += '<b style="font-size:12.5px;color:var(--label3);text-transform:uppercase;letter-spacing:.06em;">Mock-exam readiness</b>';
+    wrap += '<b style="font-size:12.5px;color:var(--label3);text-transform:uppercase;letter-spacing:.06em;">Timed practice history</b>';
     if (!r) {
-      var have = timedItemTotal();
-      wrap += '<p class="sp-cal-empty">Take a timed mock exam (Mock Exam tab) to build a readiness estimate — needs ' + MOCK_MIN_TIMED_ITEMS + '+ timed questions answered (' + have + ' so far). Untimed review doesn\'t count toward this, since it inflates confidence.</p>';
+      wrap += '<p class="sp-cal-empty">Complete a timed session in Mock Exam to see your practice results here. On a phone, open More → Timed practice.</p>';
     } else {
       wrap += '<div class="sp-readiness ' + r.cls + '"><span class="sp-readiness-band">' + r.band + '</span><span class="sp-readiness-pct">' + r.pct + '% avg, last ' + Math.min(3, r.attempts) + ' timed attempt' + (r.attempts > 1 ? 's' : '') + '</span></div>';
-      wrap += '<p class="sp-cal-empty">An estimate from your own timed mock scores, not an official BPS cut score.</p>';
+      wrap += '<p class="sp-cal-empty">Your recent practice results. Different session modes and earlier question versions may not be directly comparable.</p>';
     }
     wrap += '</div>';
     return wrap;
   }
 
-  var mock = { active: false, items: [], answers: {}, flagged: {}, startedAt: 0, minutes: 0, timerId: null };
-
-  function areaOf(category) { var d = (category || '')[0]; return AREA_LABEL[d] || 'Other'; }
-
-  window.BCPS_startMock = function (count, minutes) {
-    var pool = (window.__accpData || []).slice();
-    for (var i = pool.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = pool[i]; pool[i] = pool[j]; pool[j] = t; }
-    mock.items = pool.slice(0, Math.min(count, pool.length));
-    mock.answers = {}; mock.flagged = {}; mock.active = true;
-    mock.startedAt = Date.now(); mock.minutes = minutes; mock.cur = 0;
-    if (mock.timerId) clearInterval(mock.timerId);
-    mock.timerId = setInterval(mockTick, 1000);
-    renderMockPanel();
-  };
-
-  function mockTick() {
-    var remaining = mock.minutes * 60 - Math.floor((Date.now() - mock.startedAt) / 1000);
-    if (remaining <= 0) { mockSubmit(true); return; }
-    var t = document.getElementById('mockTimer');
-    if (t) t.textContent = fmtClock(remaining);
-  }
-  function fmtClock(sec) {
-    var h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60), s = sec % 60;
-    return (h > 0 ? h + ':' : '') + String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0');
-  }
-
-  window.BCPS_mockSelect = function (choiceIdx) {
-    mock.answers[mock.cur] = choiceIdx;
-    renderMockPanel();
-  };
-  window.BCPS_mockFlag = function () { mock.flagged[mock.cur] = !mock.flagged[mock.cur]; renderMockPanel(); };
-  window.BCPS_mockGoto = function (i) { mock.cur = i; renderMockPanel(); };
-  window.BCPS_mockNav = function (d) { mock.cur = Math.max(0, Math.min(mock.items.length - 1, mock.cur + d)); renderMockPanel(); };
-  window.BCPS_mockSubmitConfirm = function () {
-    var unanswered = mock.items.length - Object.keys(mock.answers).length;
-    if (unanswered > 0 && !confirm(unanswered + ' question' + (unanswered === 1 ? ' is' : 's are') + ' unanswered. Submit anyway?')) return;
-    mockSubmit(false);
-  };
-
-  function mockSubmit(timedOut) {
-    clearInterval(mock.timerId);
-    var minutesUsed = Math.round((Date.now() - mock.startedAt) / 60000);
-    var correct = 0;
-    var byArea = {};
-    mock.items.forEach(function (q, i) {
-      var a = areaOf(q.category);
-      if (!byArea[a]) byArea[a] = { correct: 0, total: 0 };
-      byArea[a].total++;
-      if (mock.answers[i] === q.correctIdx) { correct++; byArea[a].correct++; }
-    });
-    var pct = Math.round(100 * correct / mock.items.length);
-    var attempt = { date: todayStr(), total: mock.items.length, correct: correct, pct: pct, minutesUsed: minutesUsed, minutesAllotted: mock.minutes, timedOut: !!timedOut, byArea: byArea };
-    saveMockAttempt(attempt);
-    mock.active = false;
-    mock.lastResult = attempt;
-    renderMockPanel();
-    renderStudyPlan();
-  }
-
-  function renderMockPanel() {
-    var el = document.getElementById('mockExamPanel');
-    if (!el) return;
-    if (!mock.active) {
-      if (mock.lastResult) { el.innerHTML = mockResultHTML(mock.lastResult); return; }
-      el.innerHTML = mockStartHTML();
-      return;
-    }
-    var i = mock.cur, q = mock.items[i];
-    var letters = ['A', 'B', 'C', 'D'];
-    var choicesHTML = q.choices.map(function (c, ci) {
-      var sel = mock.answers[i] === ci;
-      return '<button type="button" class="option-btn mock-choice' + (sel ? ' selected' : '') + '" onclick="window.BCPS_mockSelect(' + ci + ')">' + letters[ci] + '. ' + c + '</button>';
-    }).join('');
-    var nav = mock.items.map(function (_, ni) {
-      var cls = (mock.answers[ni] != null ? 'answered' : '') + (ni === i ? ' cur' : '');
-      if (mock.flagged[ni]) cls += ' flagged';
-      return '<button type="button" class="mock-nav-cell ' + cls + '" onclick="window.BCPS_mockGoto(' + ni + ')">' + (ni + 1) + '</button>';
-    }).join('');
-    el.innerHTML =
-      '<div class="mock-live">' +
-      '<div class="mock-live-head"><span id="mockTimer" class="mock-timer">' + fmtClock(mock.minutes * 60 - Math.floor((Date.now() - mock.startedAt) / 1000)) + '</span>' +
-      '<span class="mock-progress">Question ' + (i + 1) + ' of ' + mock.items.length + '</span>' +
-      '<button class="btn btn-secondary" style="padding:6px 12px;font-size:12.5px;" onclick="window.BCPS_mockSubmitConfirm()">Submit exam</button></div>' +
-      '<div class="mock-nav-grid">' + nav + '</div>' +
-      '<div class="question-card">' +
-      '<div class="question-text">' + q.stem + '</div>' +
-      '<div class="options">' + choicesHTML + '</div>' +
-      '</div>' +
-      '<div class="mock-live-foot">' +
-      '<button class="btn btn-secondary" onclick="window.BCPS_mockNav(-1)"' + (i === 0 ? ' disabled' : '') + '>&larr; Prev</button>' +
-      '<button class="btn btn-secondary" onclick="window.BCPS_mockFlag()">' + (mock.flagged[i] ? 'Unflag' : 'Flag for review') + '</button>' +
-      '<button class="btn btn-primary" onclick="window.BCPS_mockNav(1)"' + (i === mock.items.length - 1 ? ' disabled' : '') + '>Next &rarr;</button>' +
-      '</div></div>';
-  }
-
-  function mockStartHTML() {
-    return '<div class="mock-start">' +
-      '<h3 style="margin:0 0 6px;">Timed mock exam</h3>' +
-      '<p style="margin:0 0 12px;color:var(--label2);font-size:13.5px;">Exam conditions: no feedback until you submit, a countdown timer, and a question navigator. Scored results feed the readiness estimate below — untimed review in the tabs above does not.</p>' +
-      '<div class="mock-start-opts">' +
-      '<button class="btn btn-primary" onclick="window.BCPS_startMock(150,225)">Full mock — 150 Q · 3h45m</button>' +
-      '<button class="btn btn-secondary" onclick="window.BCPS_startMock(50,75)">Quick mock — 50 Q · 75m</button>' +
-      '</div></div>';
-  }
-
-  function mockResultHTML(a) {
-    var band = a.pct < 60 ? 'Not ready' : a.pct < 70 ? 'Borderline' : 'Likely ready';
-    var rows = Object.keys(a.byArea).sort().map(function (k) {
-      var d = a.byArea[k]; var p = Math.round(100 * d.correct / d.total);
-      return '<div class="mock-area-row"><span>' + k + '</span><span>' + d.correct + '/' + d.total + ' (' + p + '%)</span></div>';
-    }).join('');
-    return '<div class="mock-result">' +
-      '<h3 style="margin:0 0 4px;">' + a.correct + ' / ' + a.total + ' (' + a.pct + '%)</h3>' +
-      '<p style="margin:0 0 10px;color:var(--label2);font-size:13px;">' + band + ' (estimate, not an official cut score) · ' + a.minutesUsed + ' of ' + a.minutesAllotted + ' min used' + (a.timedOut ? ' · time expired' : '') + '</p>' +
-      '<div class="mock-area-breakdown">' + rows + '</div>' +
-      '<button class="btn btn-primary" style="margin-top:12px;" onclick="window.BCPS_mockReset()">Take another mock</button>' +
-      '</div>';
-  }
-  window.BCPS_mockReset = function () { mock.lastResult = null; renderMockPanel(); };
-
-  window.addEventListener('bcps:tab', function (e) { if (e.detail === 'accp') renderMockPanel(); });
-  document.addEventListener('DOMContentLoaded', renderMockPanel);
-  if (document.readyState !== 'loading') renderMockPanel();
 })();

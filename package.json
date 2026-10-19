@@ -5,6 +5,7 @@
   "description": "BCPS Learning Hub — study app for the BPS Pharmacotherapy exam",
   "scripts": {
     "build": "node scripts/build-data.js",
-    "start": "npm run build && node scripts/serve.js"
+    "start": "npm run build && node scripts/serve.js",
+    "test": "node --test tests/*.test.js"
   }
 }
