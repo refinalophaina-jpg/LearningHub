@@ -51,7 +51,7 @@ body{background:var(--bg);color:var(--label);font-family:-apple-system,BlinkMacS
 #studySearch{width:100%;padding:10px 14px;border-radius:12px;border:none;background:rgba(142,142,147,.12);font-size:0.9rem;color:var(--label);margin-bottom:12px;outline:none}
 #studySearch:focus{background:rgba(142,142,147,.18)}
 .chapter-card-body h4{font-size:0.82rem;font-weight:700;color:var(--primary);margin:12px 0 6px;text-transform:uppercase;letter-spacing:0.04em}
-.chapter-card-body p,.chapter-card-body li{font-size:0.87rem;line-height:1.6;color:rgba(0,0,0,0.8)}
+.chapter-card-body p,.chapter-card-body li{font-size:0.87rem;line-height:1.6;color:var(--label)}
 .chapter-card-body ul,.chapter-card-body ol{padding-left:18px;margin:6px 0}
 .chapter-card-body table{width:100%;border-collapse:collapse;margin:8px 0;font-size:0.8rem}
 .chapter-card-body th{background:var(--primary-light);color:var(--primary);padding:7px 10px;text-align:left;font-weight:600}
@@ -73,8 +73,8 @@ body{background:var(--bg);color:var(--label);font-family:-apple-system,BlinkMacS
 /* ── BUTTONS ── */
 .btn{padding:9px 18px;border-radius:12px;border:none;cursor:pointer;font-size:0.85rem;font-weight:600;transition:all 0.15s;letter-spacing:0.01em;display:inline-flex;align-items:center;gap:5px}
 .btn:active{transform:scale(0.96)}
-.btn-primary{background:var(--primary);color:#fff}
-.btn-primary:active{background:#8f4c30}
+.btn-primary{background:var(--primary);color:var(--on-primary, #fff)}
+.btn-primary:active{background:var(--primary-pressed, #8f4c30)}
 .btn-secondary{background:var(--fill);color:var(--label)}
 .btn-secondary:active{background:rgba(120,120,128,.22)}
 .btn-success{background:var(--green);color:#fff}
@@ -134,7 +134,7 @@ body{background:var(--bg);color:var(--label);font-family:-apple-system,BlinkMacS
 /* front text */
 #fcFront{font-size:1.1rem;font-weight:700;line-height:1.45;color:#fff;width:100%;text-align:center}
 /* back text */
-#fcBack{font-size:0.84rem;line-height:1.7;color:rgba(0,0,0,0.8);width:100%;text-align:left;white-space:pre-line;max-height:200px;overflow-y:auto}
+#fcBack{font-size:0.84rem;line-height:1.7;color:var(--label);width:100%;text-align:left;white-space:pre-line;max-height:200px;overflow-y:auto}
 .fc-hint{font-size:0.7rem;margin-top:14px;opacity:0.55}
 .flashcard-front .fc-hint{color:rgba(255,255,255,0.65)}
 .fc-counter{text-align:center;font-size:0.78rem;color:var(--label2);margin-bottom:8px;font-weight:500}
@@ -158,7 +158,7 @@ body{background:var(--bg);color:var(--label);font-family:-apple-system,BlinkMacS
 .concept-group-bar{display:flex;gap:6px;overflow-x:auto;padding-bottom:8px;margin-bottom:12px;-ms-overflow-style:none;scrollbar-width:none}
 .concept-group-bar::-webkit-scrollbar{display:none}
 .cg-btn{flex-shrink:0;padding:6px 14px;border-radius:20px;border:none;cursor:pointer;font-size:0.78rem;font-weight:600;background:var(--fill);color:var(--label2);transition:all 0.18s;white-space:nowrap}
-.cg-btn.active{background:var(--primary);color:#fff}
+.cg-btn.active{background:var(--primary);color:var(--on-primary, #fff)}
 .cg-btn:active{transform:scale(0.95)}
 .concept-search{width:100%;padding:10px 14px;border-radius:12px;border:none;background:rgba(142,142,147,.12);font-size:0.87rem;color:var(--label);margin-bottom:10px;outline:none}
 .concept-tabs{display:flex;gap:6px;overflow-x:auto;padding-bottom:6px;-ms-overflow-style:none;scrollbar-width:none}
@@ -187,7 +187,7 @@ body{background:var(--bg);color:var(--label);font-family:-apple-system,BlinkMacS
 .quiz-mode-active .drug-adjust{filter:blur(6px);cursor:pointer;user-select:none;color:transparent;background:rgba(0,122,255,0.07);border-radius:6px;padding:3px 6px}
 .quiz-mode-active .drug-adjust.revealed{filter:blur(0) !important;color:var(--label2);background:rgba(52,199,89,0.08);border-radius:6px;padding:3px 6px}
 .drug-quiz-bar{display:flex;align-items:center;gap:10px;padding:8px 16px;background:linear-gradient(90deg,var(--primary-light),#E8FBED);border-radius:12px;margin-bottom:10px;font-size:0.8rem;font-weight:600;color:var(--label)}
-.drug-quiz-score-chip{background:var(--primary);color:#fff;border-radius:20px;padding:2px 10px;font-size:0.75rem}
+.drug-quiz-score-chip{background:var(--primary);color:var(--on-primary, #fff);border-radius:20px;padding:2px 10px;font-size:0.75rem}
 .drug-row-links{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
 .drug-link-btn{font-size:11px;padding:2px 9px;border-radius:10px;text-decoration:none;border:1.5px solid var(--sep);background:var(--fill);color:var(--label2);cursor:pointer;transition:all 0.15s;white-space:nowrap}
 .drug-link-btn:hover,.drug-link-btn:focus{background:var(--primary-light);color:var(--primary);border-color:var(--primary);outline:none}
@@ -229,7 +229,7 @@ background:linear-gradient(135deg,var(--indigo),var(--purple));color:#fff;border
 .ev-section{padding:12px 0}
 .ev-filter-bar{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;align-items:center}
 .ev-filter-btn{padding:5px 12px;border-radius:20px;font-size:0.75rem;font-weight:600;border:1.5px solid var(--sep);background:var(--fill);color:var(--label2);cursor:pointer;transition:all 0.15s}
-.ev-filter-btn.active,.ev-filter-btn:hover{background:var(--primary);color:#fff;border-color:var(--primary)}
+.ev-filter-btn.active,.ev-filter-btn:hover{background:var(--primary);color:var(--on-primary, #fff);border-color:var(--primary)}
 .ev-search{flex:1;min-width:180px;padding:7px 12px;border-radius:12px;border:1.5px solid var(--sep);font-size:0.85rem;background:var(--fill);color:var(--label);outline:none}
 .ev-search:focus{border-color:var(--primary)}
 .ev-card{background:var(--card);border-radius:14px;margin-bottom:10px;box-shadow:var(--shadow-1);overflow:hidden;transition:box-shadow .18s,transform .18s}
@@ -543,7 +543,7 @@ input, select { font-size: 16px !important; } /* prevent iOS zoom */
 }
 
 /* ── Drug area filter bar ─────────────────────────────────────────────── */
-.drug-area-btn.active-area { opacity: 1 !important; background: var(--primary,#4a9eff) !important; color:#fff !important; }
+.drug-area-btn.active-area { opacity: 1 !important; background: var(--primary,#4a9eff) !important; color:var(--on-primary, #fff) !important; }
 
 /* ── Glossary grid ─────────────────────────────────────────────────────── */
 
@@ -732,7 +732,7 @@ input, select { font-size: 16px !important; } /* prevent iOS zoom */
   transition:all .12s;
 }
 .glo-az-btn.has-terms { color:var(--label); border-color:rgba(60,60,67,.25); }
-.glo-az-btn.active, .glo-az-btn:hover { background:var(--primary); color:#fff; border-color:transparent; }
+.glo-az-btn.active, .glo-az-btn:hover { background:var(--primary); color:var(--on-primary, #fff); border-color:transparent; }
 
 /* ── Scroll area ───────────────────────────────────────────────── */
 .glo-scroll { flex:1; overflow-y:auto; padding:0 16px 80px; }
@@ -821,7 +821,7 @@ input, select { font-size: 16px !important; } /* prevent iOS zoom */
   cursor:pointer; transition:all .12s;
   border:none; outline:none;
 }
-.glo-related-tag:hover { background:var(--primary); color:#fff; }
+.glo-related-tag:hover { background:var(--primary); color:var(--on-primary, #fff); }
 
 /* ── Meta row ──────────────────────────────────────────────────── */
 .glo-meta {
@@ -1075,6 +1075,7 @@ input, select { font-size: 16px !important; } /* prevent iOS zoom */
 :root{
   --bg:#faf5ed; --card:#fffcf6; --card-2:#f2ecdf;
   --primary:#a85a38; --primary-light:#f3e3da;
+  --on-primary:#fffcf6; --primary-pressed:#8f4c30;
   --label:#2d3428; --label1:#2d3428; --label2:#5a6151; --label3:#8a8e80;
   --sep:rgba(45,52,40,.10); --divider:rgba(45,52,40,.12); --fill:rgba(45,52,40,.05);
   --terracotta:#cc785c; --purple:#4a3d7a; --moss:#4a5c28; --brand:#cc785c;
@@ -1084,6 +1085,7 @@ input, select { font-size: 16px !important; } /* prevent iOS zoom */
 body.dark-mode{
   --bg:#1c1815; --card:#252119; --card-2:#322d24;
   --primary:#d88a6e; --primary-light:rgba(216,138,110,.16);
+  --on-primary:#1c1815; --primary-pressed:#e6a083;
   --label:#ece4d2; --label1:#ece4d2; --label2:#b8af9d; --label3:#7d7666;
   --sep:rgba(236,228,210,.10); --divider:rgba(236,228,210,.12); --fill:rgba(236,228,210,.06);
   --terracotta:#d88a6e; --purple:#8e7dc8; --moss:#9aad68; --brand:#d88a6e;
