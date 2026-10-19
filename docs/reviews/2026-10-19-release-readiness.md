@@ -70,3 +70,9 @@ A complete verified local Git bundle was saved under ignored `.private/backups/b
 The cleaned release tree was byte-for-byte identical to the tested tree (Git tree `a2d3363fc4ba43f0d584e40c857c76c135d936cd`). Exact remote tips were checked immediately before publication. An atomic push used explicit leases for main and the Claude branch and created the new Codex branch; it succeeded. No newer remote work was overwritten. Cleaned tips at publication: main `b81aa47`, Claude branch `f2ff7e8`, release branch `146a97f`.
 
 Old commit IDs changed. Existing clones must fetch the cleaned branches carefully rather than push old history back. GitHub caches, inaccessible refs, third-party clones/forks, previously downloaded files, and old deployed versions are outside this reachability rewrite; no purge of those copies is claimed. Private licensed review copies remain on the owner’s machine and are not deployed.
+
+## Verified deployment
+
+PR [#1](https://github.com/refinalophaina-jpg/LearningHub/pull/1) merged at `542e167` on October 19, 2026. A README-only conflict was resolved before merge; no application source changed during that reconciliation. Explicit-config Wrangler dry run succeeded, then 17 app assets were read and 10 changed assets uploaded. The deployed version is `5d5e6c2d-ed67-48cc-aed4-8cd03928374e` at [bcps.ainadara.com](https://bcps.ainadara.com/).
+
+The canonical browser visibly showed the new simulation and file-backup controls and recorded no warning/error messages during the checked session. Direct urllib byte comparison received HTTP 403, so byte-for-byte live HTTP equivalence is not claimed. The browser was left on Mock Exam without starting or overwriting a public-origin study session. `mock-live.png` records the published interface. Prior deployment details and the caution about restoring retired material are in `2026-10-19-deployment.json`.
