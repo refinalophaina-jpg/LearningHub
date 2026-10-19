@@ -51,7 +51,17 @@
       "pdfAuthorization": "User explicitly confirmed public redistribution permission for both supplied 2024 volumes; exact-file hashes in 2026-10-19-pdf-publication.json",
       "audit": "docs/reviews/2026-10-19-mock-and-reader-review.md",
       "proof": "docs/reviews/pdf-reader-live.png"
+    },
+    {
+      "purpose": "Download complete book PDFs with embedded study highlights and notes",
+      "version": "e7d148a8-015d-45d7-841c-ddfb96e59813",
+      "tag": "bcps-pdf-export-20261019",
+      "sourceMergeCommit": "a7de6217d334c7a98a6463cc79086af7504e3ed8",
+      "pullRequest": "https://github.com/refinalophaina-jpg/LearningHub/pull/5",
+      "verification": "34 tests pass; nine-bank build; explicit-config Wrangler dry run; 235 assets read and 7 updated assets uploaded. Isolated browser saved real highlight/comment and page note into a downloaded 646-page PDF, independently reopened and rendered with PyMuPDF. Both full-volume exports preserve source annotation counts on every page. Canonical Volume 2 export reached the prepared-file link successfully with no checked browser warnings/errors. Dark desktop and phone inspected; production notes not edited.",
+      "audit": "docs/reviews/2026-10-19-pdf-export.md",
+      "proof": "docs/reviews/pdf-export-live.png"
     }
   ],
-  "currentVersion": "3cb120df-6362-4cd5-b2da-32958339753d"
+  "currentVersion": "e7d148a8-015d-45d7-841c-ddfb96e59813"
 }

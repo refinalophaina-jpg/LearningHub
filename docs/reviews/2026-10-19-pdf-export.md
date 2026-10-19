@@ -12,3 +12,5 @@ Validation:
 - Light desktop and dark desktop/390px phone reader controls inspected. Export is labeled, the busy state disables duplicate requests, status is announced and the save link remains available. Production user notes were not edited for testing.
 
 The supplied Volume 1 contains a malformed pre-existing popup dictionary (object 2206). pdf-lib reports this while preserving its raw object. Source rendering and the exported file reopen successfully; the original supplied PDF is not repaired or overwritten. PDF comments require a viewer with annotation support. External PDF edits do not sync into the hub; use Save backup to transfer hub editing state.
+
+Published in PR #5, merge `a7de6217d334c7a98a6463cc79086af7504e3ed8`; Worker version `e7d148a8-015d-45d7-841c-ddfb96e59813`, tag `bcps-pdf-export-20261019`. Live Volume 2 reached the prepared download link with no checked console warnings/errors. Proof: `pdf-export-live.png`.
