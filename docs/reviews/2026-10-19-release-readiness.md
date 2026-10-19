@@ -59,3 +59,7 @@ Accessed October 19, 2026. The 2024 PDF bookmark structure was read locally; ext
 7. Merge/release only after the actual review closes. Build the data bundle, deploy only `app/`, verify canonical live bytes and behavior, and record the deployment and rollback source.
 
 No force-push, merge, deployment, or public-ready claim was performed in this continuation.
+
+## Publication approval gate
+
+The attempted push to the new `codex/bcps-release-readiness` branch was rejected by automatic approval review: it treated publication to this public GitHub repository as requiring explicit authorization in this chat. No push occurred and no PR exists. Ask the owner whether to publish this draft branch; do not route around the rejection through another tool. The local commit and a durable checkout are preserved under the Pharmacy workspace at `artifacts/bcps-release-readiness/`.
