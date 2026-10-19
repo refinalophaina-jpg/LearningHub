@@ -1430,3 +1430,62 @@ button,input,textarea,select { font-family:inherit; }
 .mock-break p { margin:12px 0; }
 .vol-badge { color:#8f4c30; }
 body.dark-mode .vol-badge { color:#e6a083; }
+
+
+/* Shared contrast pairs for feedback, warnings, and study ratings. */
+:root {
+  --positive-ink:#246438; --positive-surface:#e8fbed;
+  --negative-ink:#9a3029; --negative-surface:#ffe9e8;
+  --caution-ink:#76501d; --caution-surface:#fff5e0;
+}
+body.dark-mode {
+  color-scheme:dark;
+  --positive-ink:#b9d994; --positive-surface:#263225;
+  --negative-ink:#ffb4a6; --negative-surface:#402b28;
+  --caution-ink:#f2ce94; --caution-surface:#3b3022;
+  --purple:#b7a4ec; --indigo:#b7a4ec; --red:#ff9f95;
+}
+input,textarea { color:var(--label); }
+body.dark-mode input::placeholder,body.dark-mode textarea::placeholder { color:var(--label2); opacity:1; }
+.sr-again { background:var(--negative-surface); color:var(--negative-ink); }
+.sr-hard { background:var(--caution-surface); color:var(--caution-ink); }
+.sr-good { background:var(--positive-surface); color:var(--positive-ink); }
+.sr-interval,.flashcard-back .fc-topic { opacity:1; }
+.flashcard-front .fc-hint { opacity:1; color:#ece4d2; }
+.cloze-blank { color:var(--on-primary); }
+body.dark-mode .cloze-topic-chip { background:color-mix(in srgb,var(--sec-cards) 16%,transparent); color:var(--label); }
+.option-btn.correct { background:var(--positive-surface)!important; color:var(--positive-ink); }
+.option-btn.wrong,.option-btn.incorrect { background:var(--negative-surface)!important; color:var(--negative-ink); border-color:var(--negative-ink)!important; }
+.option-btn.reveal { background:var(--caution-surface)!important; color:var(--caution-ink); }
+.explanation { background:var(--card-2); color:var(--label); }
+.opt-exp { padding:8px 10px; margin-top:6px; border-radius:8px; line-height:1.6; }
+.opt-exp.is-correct,.opt-exp-item.correct-exp { background:var(--positive-surface); color:var(--positive-ink); }
+.opt-exp.is-chosen-wrong,.opt-exp-item.wrong-exp { background:var(--negative-surface); color:var(--negative-ink); }
+body.dark-mode .ev-card-year { color:var(--bg); }
+body.dark-mode .ev-card.ev-landmark .ev-card-year { background:var(--negative-surface); color:var(--negative-ink); }
+.ev-card.ev-guideline .ev-card-year { color:var(--on-primary); }
+body.dark-mode .ev-pubmed-link { background:var(--primary-light); color:var(--terracotta-ink); border-color:var(--terracotta-ink); }
+.viz-zoom-trigger { background:var(--primary-light); color:var(--terracotta-ink); border-color:var(--terracotta-ink); }
+.viz-zoom-trigger:hover { background:var(--primary); color:var(--on-primary); border-color:var(--primary); }
+body.dark-mode .sp-readiness-band { color:var(--label)!important; border-color:var(--label2)!important; }
+body.dark-mode .backup-error { color:var(--negative-ink); }
+body.dark-mode .ep-step-number { color:var(--bg)!important; }
+body.dark-mode .ep-drill-card,body.dark-mode .cq-card { background:linear-gradient(150deg,#4a3d7a,#2d3428); color:var(--label); }
+body.dark-mode .spotlight-box { background:var(--card); }
+body.dark-mode .spotlight-input,body.dark-mode .spotlight-item-title { color:var(--label); }
+body.dark-mode .spotlight-input::placeholder,body.dark-mode .spotlight-item-sub,
+body.dark-mode .spotlight-cat,body.dark-mode .spotlight-footer,body.dark-mode .spotlight-kbd { color:var(--label2); }
+body.dark-mode .spotlight-kbd { background:var(--fill); border-color:var(--sep); }
+body.dark-mode .spotlight-item:hover,body.dark-mode .spotlight-item.focused { background:var(--primary-light); }
+body.dark-mode #spotlightOverlay mark { background:var(--primary); color:var(--on-primary); }
+
+/* The same semantic pairs cover domain/difficulty chips and destructive actions. */
+.dom-2,.chip-green { background:var(--positive-surface); color:var(--positive-ink); }
+.dom-3,.chip-orange { background:var(--caution-surface); color:var(--caution-ink); }
+.diff-expert { background:var(--negative-surface); color:var(--negative-ink); }
+.diff-hard,.chip-purple { background:color-mix(in srgb,var(--purple) 14%,var(--card)); color:var(--purple); }
+.btn-danger { background:var(--negative-ink); color:var(--negative-surface); }
+.btn-warning { background:var(--caution-ink); color:var(--caution-surface); }
+.btn-success { background:var(--positive-ink); color:var(--positive-surface); }
+.sr-easy { background:var(--primary-light); color:var(--label); }
+.sr-stat-val.due-now { color:var(--caution-ink); }
