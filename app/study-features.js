@@ -328,8 +328,24 @@
 
   function areaOf(category) { var d = (category || '')[0]; return AREA_LABEL[d] || 'Other'; }
 
+  // Mock pool: the hub's own quiz bank, adapted to the mock item shape.
+  function mockPool() {
+    var src = window.__quizData || [];
+    return src.map(function (q, i) {
+      var area = ((q.domain || '').match(/\d/) || ['0'])[0];
+      return {
+        num: i + 1,
+        stem: q.q,
+        choices: (q.opts || []).map(function (c) { return c.replace(/^[A-D]\.\s*/, ''); }),
+        correctIdx: q.correct,
+        category: area + '. ' + (q.topic || ''),
+        exp: q.exp || ''
+      };
+    });
+  }
+
   window.BCPS_startMock = function (count, minutes) {
-    var pool = (window.__accpData || []).slice();
+    var pool = mockPool();
     for (var i = pool.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = pool[i]; pool[i] = pool[j]; pool[j] = t; }
     mock.items = pool.slice(0, Math.min(count, pool.length));
     mock.answers = {}; mock.flagged = {}; mock.active = true;

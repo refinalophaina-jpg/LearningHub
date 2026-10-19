@@ -7,7 +7,7 @@ const DATA = path.join(__dirname, '..', 'assets', 'data');
 const OUT = path.join(__dirname, '..', 'app', 'data.js');
 
 const map = {
-  __quizData: 'quiz.json', __flashData: 'flash.json', __accpData: 'accp.json', __conceptData: 'concept.json',
+  __quizData: 'quiz.json', __flashData: 'flash.json', __conceptData: 'concept.json',
   __DRUG_DB: 'drug_db.json', __GLO_TERMS: 'glo_terms.json', __evidenceData: 'evidencedata.json',
   __studyChapters: '_studychapters.json', __epDrills: 'epdrills.json',
 };

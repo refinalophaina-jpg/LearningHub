@@ -117,7 +117,7 @@
     <!-- Title -->
     <h1 style="font-family:'DM Serif Display',Georgia,serif; color:#faf5ed; font-size:44px; font-weight:400; letter-spacing:.01em; line-height:1.05; margin:0 0 6px; position:relative;">BCPS Learning <em style="font-style:italic; color:#d88a6e;">Hub</em></h1>
     <div style="color:rgba(236,228,210,0.55); font-size:12px; font-weight:500; letter-spacing:.2em; text-transform:uppercase; margin-bottom:18px; position:relative;">by <em style="font-family:'DM Serif Display',Georgia,serif; font-style:italic; text-transform:none; letter-spacing:.01em; font-size:15px; color:#d88a6e;">AinaDara</em></div>
-    <p style="color:rgba(236,228,210,0.82); font-size:16px; font-weight:300; margin:0; max-width:560px; line-height:1.6; position:relative;">Study material, practice questions, spaced-repetition flashcards, landmark trials, and a 150-question mock exam — for the BPS pharmacotherapy board exam.</p>
+    <p style="color:rgba(236,228,210,0.82); font-size:16px; font-weight:300; margin:0; max-width:560px; line-height:1.6; position:relative;">Study material, practice questions, spaced-repetition flashcards, landmark trials, and a timed mock exam — for the BPS pharmacotherapy board exam.</p>
   </div>
 
   <!-- Content -->
@@ -148,7 +148,7 @@
       <div class="home-tool-card" style="--chip-c:var(--sec-mock);" onclick="switchSection('accp')">
         <div class="icon-chip lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4.5" width="12" height="16.5" rx="2"/><path d="M9 4.5V3.5h6v1"/><path d="M9 10h6M9 13.5h6M9 17h4"/></svg></div>
         <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Mock Exam</div>
-        <div style="font-size:12px; color:var(--label2);">150 questions, timed</div>
+        <div style="font-size:12px; color:var(--label2);">Timed, exam conditions</div>
       </div>
 
       <div class="home-tool-card" style="--chip-c:var(--sec-study);" onclick="switchSection('study')">
@@ -1004,114 +1004,11 @@
 <!-- ACCP MOCK EXAM REVIEW SECTION -->
 <div id="accp" class="section">
   <div class="accp-wrap">
+    <div class="section-header">
+      <div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-mock);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4.5" width="12" height="16" rx="2"/><path d="M9 9h6M9 12.5h6M9 16h4"/></svg></span><h2>Mock Exam</h2></div>
+      <p>Timed, exam-condition practice drawn from this hub's own question bank — countdown, flag-for-review, and no feedback until you submit.</p>
+    </div>
     <div id="mockExamPanel"></div>
-
-    <!-- Header band -->
-    <div class="accp-header-band">
-      <div class="section-title-row"><span class="icon-chip md" style="--chip-c:#faf5ed;background:rgba(250,245,237,.16);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4.5" width="12" height="16.5" rx="2"/><path d="M9 4.5V3.5h6v1"/><path d="M9 10h6M9 13.5h6M9 17h4"/></svg></span><h2>ACCP Mock Exam Review</h2></div>
-      <p>150 official ACCP Pharmacotherapy Mock Exam questions — full answer review</p>
-      <div class="accp-prog-bar-wrap">
-        <div class="accp-prog-bar-fill" id="accpProgFill" style="width:0%"></div>
-      </div>
-      <div class="accp-stats-row">
-        <div class="accp-stat">
-          <div class="accp-stat-val" id="accpTotal">150</div>
-          <div class="accp-stat-lbl">Total Qs</div>
-        </div>
-        <div class="accp-stat">
-          <div class="accp-stat-val" id="accpReviewedCount">0</div>
-          <div class="accp-stat-lbl">Reviewed</div>
-        </div>
-        <div class="accp-stat">
-          <div class="accp-stat-val" id="accpRemaining">150</div>
-          <div class="accp-stat-lbl">Remaining</div>
-        </div>
-        <div class="accp-stat" style="margin-left:auto;">
-          <div class="accp-stat-val" style="font-size:0.75rem;opacity:0.7;" id="accpCatName">All categories</div>
-          <div class="accp-stat-lbl">Active filter</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Controls -->
-    <div class="accp-controls-row">
-      <select id="accpCatFilter" onchange="accpFilter()" class="accp-select">
-        <option value="">All Categories (150)</option>
-<option value="1A1. Infectious Diseases">1A1. Infectious Diseases</option>
-<option value="1A2. Cardiology">1A2. Cardiology</option>
-<option value="1A3. Nephrology">1A3. Nephrology</option>
-<option value="1A4. Pain Management">1A4. Pain Management</option>
-<option value="1A5. Endocrinology">1A5. Endocrinology</option>
-<option value="1B1. Critical Care">1B1. Critical Care</option>
-<option value="1B2. Geriatrics">1B2. Geriatrics</option>
-<option value="1B3. Pulmonology">1B3. Pulmonology</option>
-<option value="1B4. Neurology">1B4. Neurology</option>
-<option value="1B5. Emergency Medicine and Toxicology">1B5. Emergency Medicine and Toxicology</option>
-<option value="1B7. Psychiatry and Mental Health">1B7. Psychiatry and Mental Health</option>
-<option value="1C1. Oncology and Hematology">1C1. Oncology and Hematology</option>
-<option value="1C2. Nutrition Support">1C2. Nutrition Support</option>
-<option value="1C3. Women's Health (e.g., gynecology, obstetrics)">1C3. Women&#x27;s Health (e.g., gynecology, obstetrics)</option>
-<option value="1C4. Hospice and Palliative Care">1C4. Hospice and Palliative Care</option>
-<option value="1C5. Pediatrics">1C5. Pediatrics</option>
-<option value="2A1. Clinical Assessment (e.g., functional, cognitive, physical)">2A1. Clinical Assessment (e.g., functional, cognitive, physical)</option>
-<option value="2A2. Diagnosis and Diagnostic Testing">2A2. Diagnosis and Diagnostic Testing</option>
-<option value="2A4. Disease and Medication History">2A4. Disease and Medication History</option>
-<option value="2A5. Goals of Treatment (e.g., risk vs. benefit, time to benefit)">2A5. Goals of Treatment (e.g., risk vs. benefit, time to benefit)</option>
-<option value="2B1. Pharmacotherapeutic Modalities (e.g., medications, supplements, herbals)">2B1. Pharmacotherapeutic Modalities (e.g., medications, supplements, herbals)</option>
-<option value="2B2. Non-Pharmacologic Treatments and Lifestyle Modification">2B2. Non-Pharmacologic Treatments and Lifestyle Modification</option>
-<option value="2B4. Medication Reconciliation and Optimization">2B4. Medication Reconciliation and Optimization</option>
-<option value="2B5. Drug Prescribing and Monitoring">2B5. Drug Prescribing and Monitoring</option>
-<option value="2B6. Patient and Caregiver Education and Counseling">2B6. Patient and Caregiver Education and Counseling</option>
-<option value="2B7. Medication Adherence">2B7. Medication Adherence</option>
-<option value="2C2. Non-Formulary Drug Requests and Therapeutic Interchange">2C2. Non-Formulary Drug Requests and Therapeutic Interchange</option>
-<option value="2C3. Pharmacoeconomics">2C3. Pharmacoeconomics</option>
-<option value="2C4. Drug Interactions">2C4. Drug Interactions</option>
-<option value="3A1. Public Health">3A1. Public Health</option>
-<option value="3A2. Preventative Care">3A2. Preventative Care</option>
-<option value="3A3. Health Literacy">3A3. Health Literacy</option>
-<option value="3A4. Clinical Practice Guidelines">3A4. Clinical Practice Guidelines</option>
-<option value="3B1. Research Methods (e.g., hypothesis, outcomes, study design)">3B1. Research Methods (e.g., hypothesis, outcomes, study design)</option>
-<option value="3B2. Statistics">3B2. Statistics</option>
-<option value="3B3. Biostatistics">3B3. Biostatistics</option>
-<option value="3B4. Critically Evaluating Drug Information Resources">3B4. Critically Evaluating Drug Information Resources</option>
-<option value="3C1. Professional Practice Standards, Guidelines, and Regulations">3C1. Professional Practice Standards, Guidelines, and Regulations</option>
-<option value="3C3. Healthcare Management and Quality Improvement">3C3. Healthcare Management and Quality Improvement</option>
-<option value="3C4. Informatics and Health Information Technology">3C4. Informatics and Health Information Technology</option>
-<option value="3C5. Emergency Preparedness">3C5. Emergency Preparedness</option>
-<option value="General">General</option>
-    </select>
-      </select>
-      <button class="accp-nav-btn accp-nav-prev" onclick="accpNav(-1)">◀ Prev</button>
-      <span class="accp-counter-pill">
-        <span id="accpCounter">1 / 150</span>
-      </span>
-      <button class="accp-nav-btn accp-nav-next" onclick="accpNav(1)">Next ▶</button>
-    </div>
-
-    <!-- Question card -->
-    <div class="accp-qcard" id="accpCard">
-      <div class="accp-qcard-header" id="accpMeta">
-        <!-- Badges injected by JS -->
-      </div>
-      <div class="accp-qcard-body">
-        <p class="accp-stem" id="accpStem">Loading question…</p>
-        <div class="accp-choices-grid" id="accpChoices">
-          <!-- Choices injected by JS -->
-        </div>
-        <div class="accp-explanation" id="accpExplanation">
-          <!-- Explanation injected by JS -->
-        </div>
-      </div>
-      <div class="accp-actions">
-        <button class="accp-reveal-btn" id="accpRevealBtn" onclick="accpReveal()">
-          🔍 Reveal Answer
-        </button>
-        <button class="accp-reviewed-btn" onclick="accpMarkReviewed()">
-          ✓ Mark Reviewed &amp; Next
-        </button>
-      </div>
-    </div>
-
   </div>
 </div>
 

@@ -177,7 +177,6 @@ function switchSection(id) {
   if (id === 'visuals') { setTimeout(()=>{initVisuals();},100); }
   if (id === 'exampsych') { setTimeout(()=>{initEpDrills(); calcTiming();},100); }
   if (id === 'evidence' && !evidenceInitialized) initEvidence();
-  if (id === 'accp' && !window._accpInitDone) { window._accpInitDone=true; initAccpReview(); }
 }
 
 // ── STUDY GUIDE ───────────────────────────────────────────────────────────
@@ -1941,30 +1940,6 @@ function buildSpotlightIndex() {
       });
     });
   }
-  // ── ACCP Mock Exam questions (accpData) ─────────────────────────────────────
-  try {
-    const _accpEl = ({textContent: JSON.stringify(window.__accpData)});
-    if (_accpEl) {
-      const _accpQ = JSON.parse(_accpEl.textContent);
-      _accpQ.forEach((q) => {
-        idx.push({ type:'accp', icon:'📋',
-          title: 'Q' + q.num + '. ' + q.stem.slice(0,70) + (q.stem.length>70?'…':''),
-          sub: q.category + ' · ACCP Mock Exam',
-          search: (q.stem + ' ' + q.category + ' ' + (q.exp||'') + ' ' + (q.choices||[]).join(' ')).toLowerCase(),
-          action: ()=>{
-            switchSection('accp');
-            setTimeout(()=>{
-              const qi = q.num - 1;
-              if (typeof window._aq !== 'undefined') {
-                window._aq = qi;
-                if (typeof window.renderAccpQ === 'function') window.renderAccpQ();
-              }
-            }, 200);
-          }
-        });
-      });
-    }
-  } catch(e) { /* accpData unavailable */ }
   // ── Study Guide chapters ────────────────────────────────────────────────────
   const _studyChapters = window.__studyChapters;;
   _studyChapters.forEach((title) => {
@@ -2059,7 +2034,7 @@ function searchSpotlight(raw) {
       {icon:'💊',title:'Drug Reference',sub:'70 BCPS drugs with PK, interactions, pearls',action:()=>{switchSection('concepts');closeSpotlight();}},
       {icon:'🔬',title:'Visual Pharmacology',sub:'Pathways, cascades, mechanism diagrams',action:()=>{switchSection('visuals');closeSpotlight();}},
       {icon:'🏛️',title:'Evidence-Based References',sub:'Landmark trials & major guidelines',action:()=>{switchSection('evidence');closeSpotlight();}},
-      {icon:'📋',title:'ACCP Mock Exam',sub:'150 practice questions · Category-based review',action:()=>{switchSection('accp');closeSpotlight();}},
+      {icon:'📋',title:'Mock Exam',sub:'Timed run from the question bank',action:()=>{switchSection('accp');closeSpotlight();}},
       {icon:'🎯',title:'Exam Psychology',sub:'Strategy, timing, cognitive biases',action:()=>{switchSection('exampsych');closeSpotlight();}}
     ];
     container.innerHTML = '<div class="spotlight-cat">Quick Jump</div>' +
@@ -3377,174 +3352,7 @@ setInterval(() => {
 ;
 /* ───── next block ───── */
 
-// ── ACCP MOCK EXAM REVIEW ─────────────────────────────────────────────────
-(function() {
-  let _aq = null;       // filtered question list
-  let _allQ = null;     // all 150
-  let _idx = 0;         // current index in filtered list
-  let _reviewed = {};   // num -> bool
-
-  function getData() {
-    if (!_allQ) {
-      _allQ = JSON.parse(({textContent: JSON.stringify(window.__accpData)}).textContent);
-    }
-    return _allQ;
-  }
-
-  window.initAccpReview = function() {
-    getData();
-    _aq = _allQ.slice();
-    _idx = 0;
-    renderQ();
-    // Load saved progress from Supabase
-    if (typeof sbLoadAccpProgress === 'function') {
-      sbLoadAccpProgress().then(saved => {
-        if (saved && Object.keys(saved).length) {
-          Object.assign(_reviewed, saved);
-          _updateStats();
-          renderQ();
-        }
-      }).catch(() => {});
-    }
-  };
-
-  window.accpFilter = function() {
-    const cat = document.getElementById('accpCatFilter').value;
-    getData();
-    _aq = cat ? _allQ.filter(q => q.category === cat) : _allQ.slice();
-    _idx = 0;
-    document.getElementById('accpStats').querySelector('#accpCatName').textContent = cat || 'All categories';
-    document.getElementById('accpTotal').textContent = _aq.length;
-    renderQ();
-  };
-
-  window.accpNav = function(dir) {
-    if (!_aq) return;
-    _idx = Math.max(0, Math.min(_aq.length - 1, _idx + dir));
-    renderQ();
-  };
-
-  window.accpSelectChoice = function(idx) {
-    document.querySelectorAll('.accp-choice-btn').forEach((el, i) => {
-      el.classList.toggle('selected', i === idx);
-    });
-  };
-
-  window.accpReveal = function() {
-    const q = _aq[_idx];
-    // Highlight choices with new CSS classes
-    document.querySelectorAll('.accp-choice-btn').forEach((el, i) => {
-      el.disabled = true;
-      el.classList.remove('selected');
-      if (i === q.correctIdx) el.classList.add('correct');
-      else el.classList.add('wrong');
-    });
-    // Show styled explanation
-    const expDiv = document.getElementById('accpExplanation');
-    expDiv.style.display = 'block';
-    expDiv.innerHTML =
-      `<div class="accp-exp-header">
-        <span class="accp-exp-correct-pill">✓ Answer ${'ABCD'[q.correctIdx]}</span>
-        <strong style="font-size:13.5px;">${escH(q.choices[q.correctIdx])}</strong>
-      </div>
-      <div class="accp-exp-text">${escH(q.exp || 'No explanation available.')}</div>`;
-    document.getElementById('accpRevealBtn').disabled = true;
-    document.getElementById('accpRevealBtn').style.opacity = '0.45';
-  };
-
-  window.accpMarkReviewed = function() {
-    const q = _aq[_idx];
-    _reviewed[q.num] = true;
-    if (typeof sbMarkAccpReviewed === 'function') sbMarkAccpReviewed(q.num);
-    _updateStats();
-    // Auto-advance
-    if (_idx < _aq.length - 1) {
-      _idx++;
-      renderQ();
-    }
-  };
-
-  function escH(s) {
-    if (!s) return '';
-    return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-  }
-
-  // Domain color map
-  const _domainColor = {
-    '1A': 'var(--accp-1a,#0ea5e9)', '1B': 'var(--accp-1b,#6366f1)',
-    '1C': 'var(--accp-1c,#8b5cf6)', '2A': 'var(--accp-2a,#10b981)',
-    '2B': 'var(--accp-2b,#059669)', '2C': 'var(--accp-2c,#0d9488)',
-    '3A': 'var(--accp-3a,#f59e0b)', '3B': 'var(--accp-3b,#ef4444)',
-    '3C': 'var(--accp-3c,#ec4899)'
-  };
-
-  function _getDomainColor(catCode) {
-    const prefix = catCode.slice(0,2).toUpperCase();
-    return _domainColor[prefix] || '#6366f1';
-  }
-
-  function _updateStats() {
-    const rev = Object.keys(_reviewed).length;
-    const total = _allQ ? _allQ.length : 150;
-    const qLen = _aq ? _aq.length : total;
-    document.getElementById('accpReviewedCount').textContent = rev;
-    document.getElementById('accpRemaining').textContent = total - rev;
-    document.getElementById('accpTotal').textContent = qLen;
-    const pct = total > 0 ? (rev / total * 100) : 0;
-    const fill = document.getElementById('accpProgFill');
-    if (fill) fill.style.width = pct.toFixed(1) + '%';
-  }
-
-  window.renderAccpQ = function() { renderQ(); };
-
-  function renderQ() {
-    if (!_aq || !_aq.length) {
-      document.getElementById('accpCard').innerHTML = '<div style="padding:40px;text-align:center;color:var(--label2,#888);">No questions match this filter.</div>';
-      return;
-    }
-    const q = _aq[_idx];
-    const letters = ['A','B','C','D'];
-    const catParts = q.category ? q.category.split('. ') : ['',''];
-    const catCode = catParts[0] || '';
-    const catName = catParts.slice(1).join('. ') || q.category;
-    const domColor = _getDomainColor(catCode);
-    const isRev = !!_reviewed[q.num];
-
-    // Meta badges
-    document.getElementById('accpMeta').innerHTML =
-      `<span class="accp-num-badge">Q${q.num}</span>` +
-      `<span class="accp-domain-badge" style="color:${domColor};border-color:${domColor};">${escH(catCode)}</span>` +
-      `<span class="accp-cat-badge">${escH(catName)}</span>` +
-      (isRev ? `<span class="accp-reviewed-badge">✓ Reviewed</span>` : '');
-
-    // Stem
-    document.getElementById('accpStem').textContent = q.stem;
-
-    // Choices — as clickable buttons (no reveal-gating needed)
-    const choicesHtml = (q.choices||[]).map((c, i) =>
-      `<button class="accp-choice-btn" id="accpChoice_${i}" onclick="accpSelectChoice(${i})"
-        data-idx="${i}">
-        <span class="accp-choice-letter">${letters[i]}</span>
-        <span>${escH(c)}</span>
-      </button>`
-    ).join('');
-    document.getElementById('accpChoices').innerHTML = choicesHtml;
-
-    // Counter
-    document.getElementById('accpCounter').textContent = (_idx+1) + ' / ' + _aq.length;
-    document.getElementById('accpCatName').textContent =
-      document.getElementById('accpCatFilter').options[document.getElementById('accpCatFilter').selectedIndex].text.split('(')[0].trim() || 'All categories';
-
-    // Hide explanation, re-enable reveal
-    const expDiv = document.getElementById('accpExplanation');
-    expDiv.style.display = 'none';
-    const revBtn = document.getElementById('accpRevealBtn');
-    revBtn.disabled = false;
-    revBtn.style.opacity = '1';
-
-    _updateStats();
-  }
-})();
+// ACCP mock-exam review removed: paid ACCP content is not redistributed. The timed mock (study-features.js) now draws from the hub's own quiz bank.
 
 ;
 /* ───── next block ───── */
