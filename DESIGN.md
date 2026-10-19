@@ -220,3 +220,5 @@ Use `--positive-ink` / `--positive-surface`, `--negative-ink` / `--negative-surf
 ### Integrated PDF reading
 
 The reader extends Study Guide with a compact page navigator and a disclosure for book, zoom, and contents. Highlight controls stay adjacent to the page. Desktop notes sit beside the document; phone notes follow it. Preserve original PDF page colors while the surrounding reader follows the app theme. Highlights use normalized page coordinates. Every editable note has a label; removal offers Undo; save failures remain visible.
+
+Download annotated PDF sits beside the annotation controls, with a busy state and progress feedback. A named prepared-volume link remains available after export. Explain that PDF comments contain the notes and that Save backup restores editable hub annotations. Keep original downloads distinct. Export failures preserve notes and offer retry/backup; exports capture a fixed snapshot, so edits during generation appear in the next export.
