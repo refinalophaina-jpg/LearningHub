@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BCPS Learning Hub — AinaDara</title>
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -13,6 +12,7 @@
   <link rel="stylesheet" href="app.css">
 </head>
 <body>
+<a class="skip-link" href="#mainContent">Skip to study content</a>
 <button id="darkModeToggle" onclick="toggleDarkMode()" title="Toggle dark mode" aria-label="Toggle dark mode"><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.4 14.1A8.4 8.4 0 0 1 9.9 3.6a8.4 8.4 0 1 0 10.5 10.5z"/></svg><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.5 1.5M17.2 17.2l1.5 1.5M18.7 5.3l-1.5 1.5M6.8 17.2l-1.5 1.5"/></svg></button>
 <div class="header">
   <div onclick="switchSection('home')" style="cursor:pointer;transition:transform 0.2s;display:flex;align-items:center;margin-right:10px;" title="AinaDara — go home">
@@ -84,6 +84,8 @@
   </button>
 </nav>
 
+<main id="mainContent" tabindex="-1">
+<div class="edition-notice"><span><strong>2024 study foundation</strong> · Content review in progress</span><button onclick="switchSection('sources')">Sources &amp; review status <span aria-hidden="true">&#8594;</span></button></div>
 <!-- VISUAL PHARMA SECTION -->
 <!-- ═══════════════════════════════════════════════════════════════════════════════
                                     HOME / INTRO
@@ -197,7 +199,7 @@
         </div>
         <div>
           <strong style="color:var(--terracotta);">Exam-condition mock</strong>
-          <div style="font-size:13px; color:var(--label2); margin-top:4px;">A real timed run — countdown, flag-for-review, no feedback until you submit — feeding a readiness estimate.</div>
+          <div style="font-size:13px; color:var(--label2); margin-top:4px;">A real timed run — countdown, flag-for-review, no feedback until you submit — recording practice accuracy.</div>
         </div>
         <div>
           <strong style="color:var(--terracotta);">Instant search</strong>
@@ -212,20 +214,10 @@
     <!-- Study plan: exam date, due-today queue, calibration (rendered by study-features.js) -->
     <div id="studyPlanPanel" style="margin-bottom:20px;"></div>
 
-    <!-- Exam-window note: BPS lags brand-new guideline changes -->
-    <div style="background:var(--card,#fff); border:1px solid var(--divider,#e5e7eb); border-radius:12px; padding:16px 18px; margin-bottom:20px;">
-      <h3 style="margin:0 0 6px; font-size:15px; font-weight:700; color:var(--label1,#111);">Studying to the exam's window</h3>
-      <p style="margin:0 0 10px; font-size:13.5px; line-height:1.55; color:var(--label2,#555);">
-        BPS builds each exam from guidelines as they stood <strong>about 6–12 months before your test date</strong>, and deliberately excludes rapidly-evolving or brand-new practice changes. This hub reflects current practice but marks anything recent inline with <strong>⚑</strong>. When you see a ⚑ flag, know the fact — but for the exam, the <em>prior</em> standard may still be what's tested.
-      </p>
-      <details style="font-size:13px; color:var(--label2,#555);">
-        <summary style="cursor:pointer; font-weight:600; color:#b84a2e;">Recent changes this hub reflects (may be outside the exam window)</summary>
-        <div style="margin-top:8px; line-height:1.6;">
-          <p style="margin:0 0 4px;"><strong>2025 (likely not yet tested):</strong> andexanet/Andexxa US withdrawal (Dec 2025) · clozapine REMS removed (Jun 2025; ANC monitoring still applies) · semaglutide CKD/FLOW &amp; MASH approvals · tenecteplase approved for stroke (Mar 2025) · mavacamten label change (Apr 2025) · bezlotoxumab discontinued (Jan 2025) · GINA 2025 asthma update.</p>
-          <p style="margin:0;"><strong>2024 (borderline — likely within range for a 2026 exam):</strong> ACG H. pylori (clarithromycin triple no longer first-line) · KDIGO 2024 metabolic-acidosis target · ACIP pneumococcal age ≥50 · voxelotor/Oxbryta withdrawal (Sep 2024) · GOLD ABE grouping.</p>
-          <p style="margin:8px 0 0; font-size:12px;">Source: <a href="https://bpsweb.org/faq/examination/" target="_blank" rel="noopener" style="color:#b84a2e;">BPS examination FAQ</a> — "refer to guidelines as they were ~6–12 months prior… great care is taken to exclude rapidly evolving or emerging practice changes."</p>
-        </div>
-      </details>
+    <div class="edition-context">
+      <h3>Study the edition. Check the date.</h3>
+      <p>This hub starts from the <strong>2024 ACCP pharmacotherapy review topics</strong>. Later changes are identified where noted; the material is not a complete update to current practice or a prediction of exam content.</p>
+      <p>Use current prescribing information and guidelines for patient care, and the current BPS outline for exam planning. <button class="text-action" onclick="switchSection('sources')">View sources and review status</button></p>
     </div>
 
     <!-- Progress Code (cross-device sync) — enhanced -->
@@ -284,12 +276,17 @@
     <button class="more-hub-card" style="--chip-c:var(--sec-evidence);" onclick="switchSection('evidence')">
       <span class="icon-chip md" style="--chip-c:var(--sec-evidence);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 12 4l9 5"/><path d="M5.5 9.5v8M12 9.5v8M18.5 9.5v8"/><path d="M3.5 20.5h17"/></svg></span>
       <span class="more-hub-title">Evidence &amp; Trials</span>
-      <span class="more-hub-desc">120+ landmark trials and guidelines, searchable across all BCPS domains.</span>
+      <span class="more-hub-desc">101 trial and guideline summaries, searchable across all BCPS domains.</span>
     </button>
     <button class="more-hub-card" style="--chip-c:var(--sec-glossary);" onclick="switchSection('glossary')">
       <span class="icon-chip md" style="--chip-c:var(--sec-glossary);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-2-1.2-5-1.2-7 0v12c2-1.2 5-1.2 7 0 2-1.2 5-1.2 7 0V6c-2-1.2-5-1.2-7 0z"/><path d="M12 6v12"/></svg></span>
       <span class="more-hub-title">Glossary</span>
       <span class="more-hub-desc">Board terms with plain-language definitions and instant search.</span>
+    </button>
+    <button class="more-hub-card" style="--chip-c:var(--terracotta-ink);" onclick="switchSection('sources')">
+      <span class="icon-chip md"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 12h7M9 16h7"/></svg></span>
+      <span class="more-hub-title">Sources &amp; review status</span>
+      <span class="more-hub-desc">2024 foundation, dated updates, independent practice, and what remains under review.</span>
     </button>
   </div>
 </div>
@@ -301,6 +298,7 @@
     <button class="more-subtab" data-sub="visuals" onclick="switchSection('visuals')">Visuals</button>
     <button class="more-subtab" data-sub="evidence" onclick="switchSection('evidence')">Evidence</button>
     <button class="more-subtab" data-sub="glossary" onclick="switchSection('glossary')">Glossary</button>
+    <button class="more-subtab" data-sub="sources" onclick="switchSection('sources')">Sources</button>
   </div>
   <div class="section-header">
     <div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-visuals);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3v6l-4.7 7.6A2 2 0 0 0 7 20h10a2 2 0 0 0 1.7-3.4L14 9V3"/><path d="M8 15h8"/></svg></span><h2>Visual Pharmacology</h2></div>
@@ -454,6 +452,7 @@
     <button class="more-subtab" data-sub="visuals" onclick="switchSection('visuals')">Visuals</button>
     <button class="more-subtab" data-sub="evidence" onclick="switchSection('evidence')">Evidence</button>
     <button class="more-subtab" data-sub="glossary" onclick="switchSection('glossary')">Glossary</button>
+    <button class="more-subtab" data-sub="sources" onclick="switchSection('sources')">Sources</button>
   </div>
   <div class="section-header">
     <div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-evidence);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 12 4l9 5"/><path d="M5.5 9.5v8M12 9.5v8M18.5 9.5v8"/><path d="M3.5 20.5h17"/></svg></span><h2>Evidence-Based References</h2></div>
@@ -493,6 +492,7 @@
     <button class="more-subtab" data-sub="visuals" onclick="switchSection('visuals')">Visuals</button>
     <button class="more-subtab" data-sub="evidence" onclick="switchSection('evidence')">Evidence</button>
     <button class="more-subtab" data-sub="glossary" onclick="switchSection('glossary')">Glossary</button>
+    <button class="more-subtab" data-sub="sources" onclick="switchSection('sources')">Sources</button>
   </div>
   <div class="section-header">
     <div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-exam);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4"/></svg></span><h2>Exam Psychology</h2></div>
@@ -890,7 +890,7 @@
             <b>Methotrexate</b> — Hepatotoxicity, myelosuppression, mucositis. Leucovorin rescue. Hold with renal impairment. Drug interaction with NSAIDs (↑ MTX levels).
           </div>
           <div style="background:rgba(255,59,48,0.07);border-radius:9px;padding:9px">
-            <b>Clozapine</b> — Agranulocytosis (mandatory ANC monitoring via REMS). Also: metabolic syndrome, myocarditis, seizures. Most effective antipsychotic for treatment-resistant schizophrenia.
+            <b>Clozapine</b> — Severe neutropenia (ANC monitoring remains important; the US REMS was removed in 2025). Also: metabolic syndrome, myocarditis, seizures. Most effective antipsychotic for treatment-resistant schizophrenia.
           </div>
         </div>
 
@@ -1001,19 +1001,19 @@
 
 <!-- STUDY GUIDE -->
 
-<!-- ACCP MOCK EXAM REVIEW SECTION -->
+<!-- INDEPENDENT TIMED PRACTICE -->
 <div id="accp" class="section">
   <div class="accp-wrap">
     <div class="section-header">
       <div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-mock);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4.5" width="12" height="16" rx="2"/><path d="M9 9h6M9 12.5h6M9 16h4"/></svg></span><h2>Mock Exam</h2></div>
-      <p>Timed, exam-condition practice drawn from this hub's own question bank — countdown, flag-for-review, and no feedback until you submit.</p>
+      <p>Timed practice from the hub’s quiz bank, with a countdown, flags, and feedback after submission. This is independent practice, not an official ACCP or BPS examination.</p>
     </div>
     <div id="mockExamPanel"></div>
   </div>
 </div>
 
 <div id="study" class="section">
-  <div class="section-header"><div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-study);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M6 19h13"/></svg></span><h2>Study Guide</h2></div><p>ACCP Updates in Therapeutics — 22 high-yield chapters</p></div>
+  <div class="section-header"><div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-study);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M6 19h13"/></svg></span><h2>Study Guide</h2></div><p>Independent study notes · 22 topics from the 2024 review curriculum</p></div>
   <div id="progressStatsPanel" style="margin-bottom:4px;"></div>
   <div class="controls">
     <input type="text" id="studySearch" placeholder="Search topics..." class="concept-search" oninput="filterStudy(this.value)">
@@ -1577,6 +1577,7 @@
     <button class="more-subtab" data-sub="visuals" onclick="switchSection('visuals')">Visuals</button>
     <button class="more-subtab" data-sub="evidence" onclick="switchSection('evidence')">Evidence</button>
     <button class="more-subtab" data-sub="glossary" onclick="switchSection('glossary')">Glossary</button>
+    <button class="more-subtab" data-sub="sources" onclick="switchSection('sources')">Sources</button>
   </div>
 
 <div class="section-header glo-section-header">
@@ -1654,13 +1655,48 @@
   <div id="slideList"></div>
 </div>
 
+
+<section id="sources" class="section sources-section" aria-labelledby="sourcesTitle">
+  <div class="more-subnav"><button class="more-back" onclick="switchSection('more')">&#8592; More</button></div>
+  <div class="section-header"><h2 id="sourcesTitle">Sources &amp; review status</h2><p>Know the foundation, the date, and the limits of each study aid.</p></div>
+  <div class="sources-prose">
+    <h3>A 2024 foundation, with dated corrections</h3>
+    <p>The curriculum follows topics in ACCP’s <cite>2024 Updates in Therapeutics®: Pharmacotherapy Preparatory Review and Recertification Course</cite>. These are independent study notes and practice items. Chapter references identify the topic used for study; they do not establish that every statement has been verified or endorsed by ACCP.</p>
+    <p><a href="https://www.accp.com/report/index.aspx?art=3483" target="_blank" rel="noopener">ACCP’s official 2024 course description <span aria-hidden="true">&#8599;</span></a></p>
+    <h3>Review status · October 19, 2026</h3>
+    <p><strong>Full content review is still in progress.</strong> The dedicated ACCP mock bank has been removed. Seventy-three mock-derived items in the general quiz have been replaced with original drafts, and targeted corrections have been made to existing items. These changes do not constitute a completed clinical or copyright review of every chapter, card, drug entry, trial summary, glossary term, diagram, podcast, or slide.</p>
+    <p>Timed practice draws from the same quiz bank and shares its review status. Scores are learning feedback, not a validated estimate of board readiness. New items include explanations for every choice. Historical scores may refer to earlier question versions.</p>
+    <h3>Primary references for this correction pass</h3>
+    <ul class="source-links">
+      <li><a href="https://www.cdc.gov/mmwr/volumes/73/rr/rr7304a1_appendix.htm" target="_blank" rel="noopener">CDC · US Medical Eligibility Criteria, 2024</a><span>Contraceptive methods and drug interactions.</span></li>
+      <li><a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/021817s032lbl.pdf" target="_blank" rel="noopener">FDA · Reclast prescribing information</a><span>Osteoporosis formulation: contraindicated below CrCl 35 mL/min.</span></li>
+      <li><a href="https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=4c517a39-2ded-4c5a-8d56-276853414b31&amp;version=24" target="_blank" rel="noopener">DailyMed · Valcyte prescribing information</a><span>Adult treatment and prevention have different renal dosing schedules.</span></li>
+      <li><a href="https://www.janssenlabels.com/package-insert/product-monograph/prescribing-information/INVEGA%2BSUSTENNA-pi.pdf" target="_blank" rel="noopener">Manufacturer · Invega Sustenna prescribing information</a><span>Initiation regimen without routine oral supplementation.</span></li>
+      <li><a href="https://www.fda.gov/drugs/drug-safety-communications/fda-removes-risk-evaluation-and-mitigation-strategy-rems-program-antipsychotic-drug-clozapine" target="_blank" rel="noopener">FDA · Clozapine REMS removal, effective June 13, 2025</a><span>A later change: REMS removal does not eliminate severe neutropenia risk or label-directed monitoring.</span></li>
+      <li><a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2012/020007s043lbl.pdf" target="_blank" rel="noopener">FDA · Ondansetron label change, 2012</a><span>Removal of the 32 mg single IV dose.</span></li>
+      <li><a href="https://www.fda.gov/drugs/nda-and-bla-approvals/accelerated-approval-program" target="_blank" rel="noopener">FDA · Accelerated Approval Program</a><span>Surrogate endpoints and confirmatory evidence.</span></li>
+      <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7995316/" target="_blank" rel="noopener">European Stroke Organisation · IV thrombolysis guideline, 2021</a><span>DOAC exposure, reversal, and the distinction between thrombolysis and thrombectomy.</span></li>
+      <li><a href="https://www.thyroid.org/hyperthyroidism-in-pregnancy/" target="_blank" rel="noopener">American Thyroid Association · Hyperthyroidism in pregnancy</a><span>First-trimester antithyroid drug considerations.</span></li>
+    </ul>
+    <h3>Use the current source for the decision</h3>
+    <p>Drug labeling, guidelines, vaccine schedules, and exam outlines change. A 2024 chapter citation is historical context, not a claim of current clinical guidance. Verify doses, contraindications, renal estimates, interactions, and monitoring against the relevant current source before patient care.</p>
+    <p><a href="https://bpsweb.org/pharmacotherapy/" target="_blank" rel="noopener">Board of Pharmacy Specialties · Pharmacotherapy certification and examination information</a></p>
+    <h3>Access and attribution</h3>
+    <p>The paid ACCP source PDFs and official mock questions are not offered for download here. Obtain licensed course materials from ACCP. Podcast and slide links are separate learning aids and remain subject to their own content review.</p>
+    <p>AinaDara is independent of ACCP and BPS. Neither organization sponsors, endorses, or validates this hub.</p>
+    <button class="btn btn-secondary" onclick="switchSection('quiz')">Return to practice</button>
+  </div>
+</section>
+</main>
+
 <!-- AinaDara Footer -->
 <div style="background:var(--card);border-top:1px solid var(--sep);padding:20px;text-align:center;margin-top:40px;">
   <div style="font-family:Georgia,serif;font-size:15px;color:var(--label2);margin-bottom:4px;">
     <span style="font-weight:400;">Aina</span><span style="font-weight:700;">Dara</span>
   </div>
-  <div style="font-size:11px;color:var(--label3);letter-spacing:0.5px;">BCPS Learning Hub · Built to pass boards</div>
+  <div style="font-size:11px;color:var(--label3);letter-spacing:0.5px;">BCPS Learning Hub · Independent educational study aid</div>
 </div>
+<div class="source-footer"><button class="text-action" onclick="switchSection('sources')">2024 foundation · Sources &amp; review status</button></div>
 <!-- TOPIC STATS OVERLAY (per-topic quiz accuracy) -->
 <div id="topicStatsOverlay" onclick="if(event.target===this)closeTopicStats()">
   <div id="topicStatsPanel">

@@ -9,8 +9,8 @@
 
   var LS = {
     examDate: 'bcps_exam_date',
-    quizSrs: 'bcps_quiz_srs',
-    confLog: 'bcps_confidence_log',
+    quizSrs: 'bcps_quiz_srs_20261019',
+    confLog: 'bcps_confidence_log_20261019',
     mockHistory: 'bcps_mock_history',
   };
 
@@ -19,6 +19,23 @@
   function daysBetween(a, b) { return Math.round((new Date(b + 'T00:00:00') - new Date(a + 'T00:00:00')) / 86400000); }
   function readJSON(key, fallback) { try { var v = JSON.parse(localStorage.getItem(key)); return v == null ? fallback : v; } catch (e) { return fallback; } }
   function writeJSON(key, val) { try { localStorage.setItem(key, JSON.stringify(val)); } catch (e) { } }
+
+  // Changed question meanings must not inherit mastery from an older item.
+  // Keep legacy stores intact and migrate only unchanged question records.
+  (function migrateQuestionRevision() {
+    var changed = new Set([0, 52, 88, 95, 158, 166, 169, 171, 188, 198, 218, 241, 246, 258, 267, 272, 273, 296, 300, 305, 311, 320, 350, 372, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448]);
+    try {
+      if (localStorage.getItem(LS.quizSrs) === null) {
+        var old = readJSON('bcps_quiz_srs', {}), next = {};
+        Object.keys(old).forEach(function (k) { if (!changed.has(Number(k))) next[k] = old[k]; });
+        writeJSON(LS.quizSrs, next);
+      }
+      if (localStorage.getItem(LS.confLog) === null) {
+        var log = readJSON('bcps_confidence_log', []);
+        writeJSON(LS.confLog, Array.isArray(log) ? log.filter(function (r) { return !changed.has(Number(r.i)); }) : []);
+      }
+    } catch (e) { /* Storage may be unavailable; practice remains usable. */ }
+  })();
 
   // ── Exam date anchor (R3) ──────────────────────────────────────────────
   function getExamDate() { return localStorage.getItem(LS.examDate) || null; }
@@ -304,7 +321,7 @@
     if (!h.length || timedItemTotal() < MOCK_MIN_TIMED_ITEMS) return null;
     var recent = h.slice(-3);
     var pct = recent.reduce(function (s, a) { return s + a.pct; }, 0) / recent.length;
-    var band = pct < 60 ? 'Not ready' : pct < 70 ? 'Borderline' : 'Likely ready';
+    var band = 'Recent practice accuracy';
     var cls = pct < 60 ? 'not-ready' : pct < 70 ? 'borderline' : 'ready';
     return { pct: Math.round(pct), band: band, cls: cls, attempts: h.length };
   }
@@ -312,10 +329,10 @@
   function readinessHTML() {
     var r = readinessBand();
     var wrap = '<div class="sp-readiness-wrap">';
-    wrap += '<b style="font-size:12.5px;color:var(--label3);text-transform:uppercase;letter-spacing:.06em;">Mock-exam readiness</b>';
+    wrap += '<b style="font-size:12.5px;color:var(--label3);text-transform:uppercase;letter-spacing:.06em;">Timed practice history</b>';
     if (!r) {
       var have = timedItemTotal();
-      wrap += '<p class="sp-cal-empty">Take a timed mock exam (Mock Exam tab) to build a readiness estimate — needs ' + MOCK_MIN_TIMED_ITEMS + '+ timed questions answered (' + have + ' so far). Untimed review doesn\'t count toward this, since it inflates confidence.</p>';
+      wrap += '<p class="sp-cal-empty">Take a timed mock exam (Mock Exam tab) to record timed practice accuracy — needs ' + MOCK_MIN_TIMED_ITEMS + '+ timed questions answered (' + have + ' so far). These are practice results, not a validated prediction of board performance.</p>';
     } else {
       wrap += '<div class="sp-readiness ' + r.cls + '"><span class="sp-readiness-band">' + r.band + '</span><span class="sp-readiness-pct">' + r.pct + '% avg, last ' + Math.min(3, r.attempts) + ' timed attempt' + (r.attempts > 1 ? 's' : '') + '</span></div>';
       wrap += '<p class="sp-cal-empty">An estimate from your own timed mock scores, not an official BPS cut score.</p>';
@@ -438,7 +455,7 @@
   function mockStartHTML() {
     return '<div class="mock-start">' +
       '<h3 style="margin:0 0 6px;">Timed mock exam</h3>' +
-      '<p style="margin:0 0 12px;color:var(--label2);font-size:13.5px;">Exam conditions: no feedback until you submit, a countdown timer, and a question navigator. Scored results feed the readiness estimate below — untimed review in the tabs above does not.</p>' +
+      '<p style="margin:0 0 12px;color:var(--label2);font-size:13.5px;">Exam conditions: no feedback until you submit, a countdown timer, and a question navigator. Results are saved as practice history. This bank has not been validated to predict exam performance.</p>' +
       '<div class="mock-start-opts">' +
       '<button class="btn btn-primary" onclick="window.BCPS_startMock(150,225)">Full mock — 150 Q · 3h45m</button>' +
       '<button class="btn btn-secondary" onclick="window.BCPS_startMock(50,75)">Quick mock — 50 Q · 75m</button>' +
@@ -446,7 +463,7 @@
   }
 
   function mockResultHTML(a) {
-    var band = a.pct < 60 ? 'Not ready' : a.pct < 70 ? 'Borderline' : 'Likely ready';
+    var band = 'Practice result';
     var rows = Object.keys(a.byArea).sort().map(function (k) {
       var d = a.byArea[k]; var p = Math.round(100 * d.correct / d.total);
       return '<div class="mock-area-row"><span>' + k + '</span><span>' + d.correct + '/' + d.total + ' (' + p + '%)</span></div>';

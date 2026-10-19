@@ -1313,3 +1313,24 @@ body.dark-mode{ --sec-slides:#c9a35e; }
 .slide-preview-wrap{ border-top:1px solid var(--divider,var(--sep)); padding:12px; }
 .slide-iframe{ width:100%; height:70vh; border:1px solid var(--divider,var(--sep)); border-radius:8px; }
 @media (max-width:520px){ .slide-item-row{ flex-wrap:wrap; } }
+
+/* Edition and provenance use the existing Warm Study Desk palette. */
+.skip-link { position:fixed; top:8px; left:12px; z-index:10000; transform:translateY(-180%); padding:12px 16px; background:var(--card); color:var(--label); border:1px solid var(--sep); border-radius:8px; }
+.skip-link:focus { transform:translateY(0); }
+.edition-notice { max-width:1000px; margin:12px auto 0; padding:10px 20px; display:flex; flex-wrap:wrap; align-items:center; gap:6px 18px; color:var(--label2); font-size:12px; }
+.edition-notice button,.text-action { border:0; background:none; color:var(--terracotta-ink,#a85a38); font:inherit; text-decoration:underline; text-underline-offset:3px; cursor:pointer; padding:4px 0; }
+.edition-context { margin-bottom:24px; padding:18px 0; border-block:1px solid var(--sep); }
+.edition-context h3 { margin:0 0 8px; font-size:18px; }
+.edition-context p { max-width:70ch; font-size:14px; line-height:1.65; color:var(--label2); margin:8px 0; }
+.sources-section { max-width:900px; }
+.sources-prose { max-width:70ch; margin:0 auto; color:var(--label); line-height:1.7; }
+.sources-prose h3 { margin:30px 0 10px; font-family:'DM Serif Display',Georgia,serif; font-size:23px; font-weight:400; }
+.sources-prose p { margin:12px 0; }
+.sources-prose a { color:var(--terracotta-ink,#a85a38); text-underline-offset:3px; overflow-wrap:anywhere; }
+.source-links { padding-left:22px; }
+.source-links li { padding:10px 0; }
+.source-links li span { display:block; color:var(--label2); font-size:14px; }
+.source-footer { padding:8px 20px 24px; text-align:center; font-size:12px; }
+body.dark-mode .sources-prose a,body.dark-mode .text-action,body.dark-mode .edition-notice button { color:#e6a083; }
+:focus-visible { outline:2px solid var(--terracotta-ink,#a85a38); outline-offset:4px; }
+@media(max-width:600px) { .sources-prose { font-size:15px; } .edition-notice { padding-inline:16px; font-size:11px; } }

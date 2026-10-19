@@ -158,7 +158,7 @@ const quizData = JSON.parse(({textContent: JSON.stringify(window.__quizData)}).t
 const flashData = JSON.parse(({textContent: JSON.stringify(window.__flashData)}).textContent);
 
 // ── NAVIGATION ────────────────────────────────────────────────────────────
-const MORE_SUBS = ['exampsych', 'visuals', 'evidence', 'glossary'];
+const MORE_SUBS = ['exampsych', 'visuals', 'evidence', 'glossary', 'sources'];
 function switchSection(id) {
   try{window.dispatchEvent(new CustomEvent("bcps:tab",{detail:id}));}catch(e){}
   document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
@@ -3367,7 +3367,12 @@ function _buildProgressCode() {
     progress: localStorage.getItem('bcps_progress_v2'),
     custom:   localStorage.getItem('bcps_custom_cards'),
     accp:     localStorage.getItem('bcps_accp_reviewed'),
-    v: 3, ts: Date.now()
+    studyRevision: '2026-10-19',
+    quizSrs: localStorage.getItem('bcps_quiz_srs_20261019'),
+    confidence: localStorage.getItem('bcps_confidence_log_20261019'),
+    mockHistory: localStorage.getItem('bcps_mock_history'),
+    examDate: localStorage.getItem('bcps_exam_date'),
+    v: 4, ts: Date.now()
   };
   Object.keys(data).forEach(k => { if (data[k] === null) delete data[k]; });
   return btoa(unescape(encodeURIComponent(JSON.stringify(data))));
@@ -3421,6 +3426,12 @@ function importProgressCode() {
     if (data.progress) localStorage.setItem('bcps_progress_v2',     data.progress);
     if (data.custom)   localStorage.setItem('bcps_custom_cards',    data.custom);
     if (data.accp)     localStorage.setItem('bcps_accp_reviewed',   data.accp);
+    if (data.studyRevision === '2026-10-19') {
+      for (const [field, key] of Object.entries({quizSrs:'bcps_quiz_srs_20261019',confidence:'bcps_confidence_log_20261019',mockHistory:'bcps_mock_history'})) {
+        if (typeof data[field] === 'string') { JSON.parse(data[field]); localStorage.setItem(key, data[field]); }
+      }
+      if (typeof data.examDate === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(data.examDate)) localStorage.setItem('bcps_exam_date', data.examDate);
+    }
     if (msg) { msg.style.color='#34C759'; msg.textContent='✓ Progress loaded! Refreshing in 2 seconds…'; }
     localStorage.setItem('bcps_justImported', '1');
     setTimeout(() => location.reload(), 2000);

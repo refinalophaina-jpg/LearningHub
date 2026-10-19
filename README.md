@@ -1,28 +1,24 @@
-# LearningHub
+# BCPS Learning Hub
 
-A static BCPS (Board Certified Pharmacotherapy Specialist) study site built with [Eleventy](https://www.11ty.dev/). Review modules with high-yield notes and interactive practice quizzes; best scores are saved per browser via localStorage — no accounts, no backend.
+Independent AinaDara pharmacotherapy study hub. Static HTML/CSS/JavaScript, local browser progress, no account or backend. The curriculum starts from 2024 review topics; some later corrections are dated separately.
 
-## Local development
+**Release review is in progress.** See [the continuation record](docs/reviews/2026-10-19-release-readiness.md) for implemented changes, source checks, verification, and remaining work. This is educational material, not a clinically validated reference or official ACCP/BPS product.
 
-```bash
-npm install
-npm start        # serve at http://localhost:8080 with live reload
-npm run build    # output static site to _site/
+## Local use
+
+```sh
+npm run build  # generate app/data.js from assets/data/*.json
+npm start      # build, then serve app/ on port 8080
+npm test       # content/revision/backup regression checks
+node scripts/audit-content.js  # inventory and outstanding review triage
 ```
 
-## Structure
+Set `PORT` to choose another preview port. No package installation is needed for these Node standard-library commands.
 
-- `src/index.njk` — home page with module grid and progress badges
-- `src/modules/*.njk` — one page per study module (notes + quiz questions in a `window.LH_QUIZ` script block)
-- `src/_includes/base.njk`, `module.njk` — layouts
-- `assets/js/quiz.js` — quiz rendering, grading, localStorage progress
-- `assets/js/progress.js` — home-page progress badges
-- `.github/workflows/gh-pages.yml` — builds Eleventy and deploys `_site/` to GitHub Pages on push to `main`
+## Editing and release
 
-## Sharing with a study partner
+Edit source banks in `assets/data/`, then regenerate `app/data.js`; do not hand-edit the generated bundle. `app/` is the only static deployment directory. Review `PRODUCT.md`, `DESIGN.md`, and the latest release record before changing the interface.
 
-Progress is stored in each visitor's own browser, so two (or more) people can use the same URL without interfering with each other. Note: GitHub Pages sites are public — don't publish copyrighted question banks or private data here.
+Licensed source PDFs, extracted text, and review scratchpads belong in ignored `.private/`. Never publish them or copy them into `app/`. Their removal from the current tree does not remove copies from Git history. The retired paid mock is not part of the app; the 73 replacement quiz items remain explicitly marked as original drafts until reviewed.
 
-## Content notes
-
-All study content is original material written for this site; it does not reproduce ACCP/BPS copyrighted exam content. Verify doses and clinical recommendations against current guidelines before relying on them.
+Progress Code v4 includes flashcards, general progress, revision-aware quiz review, confidence, mock history, and exam date. Older codes remain importable; changed question meanings do not inherit old mastery records.
