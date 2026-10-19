@@ -39,6 +39,19 @@
       "pullRequest": "https://github.com/refinalophaina-jpg/LearningHub/pull/3",
       "verification": "21 tests pass; nine-bank build; desktop/phone checks across all app sections and expanded reference content. Live native-input and flashcard rating colors match the new theme pairs. No real progress reset or restored; no public-origin quiz attempt started.",
       "audit": "docs/reviews/2026-10-19-dark-mode-audit.md"
+    },
+    {
+      "purpose": "All-item mock evidence/editorial review and authorized integrated PDF books",
+      "version": "3cb120df-6362-4cd5-b2da-32958339753d",
+      "tag": "bcps-mock-reader-20261019",
+      "sourceMergeCommit": "126010ff473be3fcf101ddeb96603781cf66a3ed",
+      "pullRequest": "https://github.com/refinalophaina-jpg/LearningHub/pull/4",
+      "verification": "31 tests pass; nine-bank build; explicit-config Wrangler dry run; 230 assets read, 215 new/modified assets uploaded. Both full books render on the canonical domain with selectable text and reader controls. No checked browser warnings/errors. Live mock chooser shows the all-150 review status and preserves the earlier result. Local browser checks cover highlight/comment editing, latest-text Undo, zoom/page restoration, chapter navigation and an actual backup-file round trip.",
+      "clinicalReview": "AI-assisted evidence/editorial review completed for all 150 mock items and 600 option rationales; independent pharmacist sign-off and psychometric calibration pending. Other banks not covered.",
+      "pdfAuthorization": "User explicitly confirmed public redistribution permission for both supplied 2024 volumes; exact-file hashes in 2026-10-19-pdf-publication.json",
+      "audit": "docs/reviews/2026-10-19-mock-and-reader-review.md",
+      "proof": "docs/reviews/pdf-reader-live.png"
     }
-  ]
+  ],
+  "currentVersion": "3cb120df-6362-4cd5-b2da-32958339753d"
 }

@@ -32,3 +32,5 @@ The built-in reader uses locally vendored Mozilla PDF.js 6.4.299. Features: orig
 - Phone 390×844 dark mode and desktop light/dark reviewed; compact controls avoid page-wide overflow. Notes/reader chrome inherit semantic theme colors; PDF paper retains original colors.
 
 Deployment verification is recorded separately after publication.
+
+Published via merged PR #4, source commit `126010ff473be3fcf101ddeb96603781cf66a3ed`, Worker version `3cb120df-6362-4cd5-b2da-32958339753d`. Both books render on the canonical site with no checked warnings/errors. The live mock chooser exposes the review limits and earlier-edition result without starting a new public-origin attempt.
