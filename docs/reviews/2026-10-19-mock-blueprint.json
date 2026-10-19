@@ -1,6 +1,6 @@
 {
-  "edition": "2026-10-19-mock-v1",
-  "basis": "2024 curriculum, original cases; current 2026 simulator format",
+  "edition": "2026-10-19-mock-v2",
+  "basis": "Original curriculum-guided cases, AI-assisted source/editorial review October 19, 2026; current simulator format",
   "items": 150,
   "domains": {
     "Area 1": 54,
@@ -16,5 +16,11 @@
     "timerContinuesDuringBreak": true
   },
   "formatSource": "https://bpsweb.org/candidates-guide/",
-  "contentStatus": "Original educational draft, not psychometrically validated"
+  "contentStatus": "All 150 source/editorial reviewed; independent pharmacist sign-off and psychometric calibration pending",
+  "professionalPracticeSubdomains": {
+    "3A": 19,
+    "3B": 11,
+    "3C": 12
+  },
+  "remainingBlueprintLimit": "Area 1 and Area 2 fine-grained subdomain proportions and scored-only mix are not independently validated. Unscored designation is simulated, not psychometric pretesting."
 }

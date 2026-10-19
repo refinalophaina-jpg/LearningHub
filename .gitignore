@@ -17,5 +17,5 @@ app/data.js
 # Wrangler local state (created by wrangler deploy)
 .wrangler/
 
-# Licensed ACCP sources stay in ignored .private/sources/, never in releases.
+# Keep scratch/source copies private. Two explicitly authorized books are published only at app/books/; see the publication manifest.
 /2024_BCPS_Prep_Volume_*_Combined.pdf

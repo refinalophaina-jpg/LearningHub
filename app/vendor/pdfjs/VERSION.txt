@@ -1,0 +1,3 @@
+Mozilla PDF.js / pdfjs-dist 6.4.299, legacy browser build
+Source: https://www.npmjs.com/package/pdfjs-dist/v/6.4.299
+Apache-2.0; license and asset notices retained.

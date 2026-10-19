@@ -1,7 +1,7 @@
 /* Pure simulation rules. Content and the visual shell are separate. */
 (function (root) {
   'use strict';
-  const REVISION = '2026-10-19-mock-v1';
+  const REVISION = '2026-10-19-mock-v2';
   function shuffle(values, random) {
     const list = values.slice();
     for (let i=list.length-1;i>0;i--) { const j=Math.floor(random()*(i+1)); [list[i],list[j]]=[list[j],list[i]]; }
