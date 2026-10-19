@@ -1,22 +1,20 @@
-# BCPS release-readiness continuation — 2026-10-19
+# BCPS technical release — October 19, 2026
 
-Status: **Technical implementation verified; educational content remains a draft pending comprehensive clinical/provenance review. Publication is now authorized by the owner.**
+Status: **Technical implementation verified. Published as an educational draft; comprehensive clinical/provenance review remains open.** Deployment details are recorded separately once verified.
 
-## Context recovered
+## Recovered context and scope
 
-Read the Claude desktop conversation “BCPS project refresh” through computer use. Its cloud repo is `refinalophaina-jpg/LearningHub`, not the local Pharmacy simulator workspace. Started from `1f9c61e` on `claude/bcps-project-refresh-4i68ym`; main was `f08da8f`. The cloud scratchpad, reviewer bundles, and failed reviewer outputs were not available in the repository. No message was sent to Claude. With explicit owner approval in this chat, “Auto-continue when limits reset” was turned off in the Claude BCPS conversation and verified unchecked on October 19, 2026.
+Resumed the Claude desktop conversation “BCPS project refresh” for `refinalophaina-jpg/LearningHub`. The cloud scratchpad and failed reviewer outputs were unavailable. The local Pharmacy simulator is a different project and its source was not changed. No message was sent to Claude. The owner approved disabling Claude’s auto-continue; the unchecked state was verified.
 
-The owner's requested outcome is public pharmacist usability, content accuracy against the licensed 2024 review with other primary sources as appropriate, removal of paid mock material, clear edition attribution, polished UI, and a verified release. Claude's assertion that history purging had begun is not evidence it completed: the downloaded repository still tracked both PDFs.
+The owner subsequently approved publication, UI refinements, simple file backups, and a separate timed practice simulation guided by curriculum objectives. An earlier push rejection was resolved by that explicit publication approval; it was not bypassed.
 
-## Implemented in this draft
+## Earlier content corrections retained
 
-- Replaced all 73 `ACCP Pharmacotherapy Mock Exam` items in the regular bank (indices 376–448) with newly authored original drafts, preserving the 449-item count. These cover the 22 curriculum topic groups, include explanations for every option, and carry explicit draft provenance. They are foundational replacements, not a claim of equivalent difficulty or psychometric performance to the retired bank.
-- Corrected 24 existing items through targeted review, including invalid zoledronic-acid renal use, ambiguous P2Y12 selection, paliperidone oral-overlap misinformation, contraceptive classifications, a wrong unit in emergency contraception, ondansetron warning history, fungal susceptibility, CMV drug mechanism, renal valganciclovir treatment dosing, NNT explanation, CRRT math, stroke reversal, COPD escalation, and the DEA notification/Form 106 distinction. Exact zero-based indices are in `2026-10-19-targeted-corrections.json`.
-- Normalized numbered Volume 2 references to the actual 1–12 PDF chapter map. Corrected volume attribution that called the ACCP books “ASHP.” Free-form citations still need manual verification; a normalized label alone is not a content review.
-- Added a Sources & review-status destination under More, linked from an edition notice and footer. Clarified 2024 foundation, dated later corrections, independence, source access, and remaining review scope. Removed the speculative exam-window claims. Added a skip link and removed duplicate viewport metadata.
-- Replaced “Not ready / Borderline / Likely ready” predictions with practice-result language. Historical practice scores remain historical, not validated board-readiness estimates.
-- Versioned quiz SRS/confidence stores. Migrate only unchanged item records; preserve the legacy stores. Progress-code v4 includes the new stores, timed history, and exam date, and retains v3 import support.
-- Moved the licensed PDFs into ignored `.private/sources/` for local review. They are removed from the tracked tree in this draft. This does **not** purge remote Git history, cached objects, earlier deployments, or forks.
+- Replaced 73 mock-derived general quiz items with separately authored original drafts, preserving 449 total items. Complete option rationales and draft provenance are included. These are not claimed to match the licensed bank’s difficulty.
+- Corrected 24 targeted existing items. Exact zero-based indices are in `2026-10-19-targeted-corrections.json`; these include renal dosing, reproductive safety, incorrect units, drug mechanisms, study calculations, and regulatory reporting distinctions.
+- Normalized numbered Volume 2 references to the PDF’s 1–12 chapter map and corrected erroneous ASHP attribution. Free-form citations still require verification.
+- Added Sources & review status, 2024 foundation and dated update notices, independent-study attribution, and removed unsupported board-passing predictions.
+- Migrated only unchanged quiz SRS/confidence records into revision-aware stores. Legacy stores are preserved, and revised missed-question records do not inherit a previous question’s meaning.
 
 ## Source checks
 
@@ -38,32 +36,6 @@ Accessed October 19, 2026. The 2024 PDF bookmark structure was read locally; ext
 - [Hartford nomogram research](https://journals.asm.org/doi/10.1128/aac.00148-19): specified dose and 6–14-hour concentration, rather than invented graph boundaries.
 - [CDC outbreak summary](https://archive.cdc.gov/www_cdc_gov/hai/outbreaks/meningitis.html): 64 deaths, correcting 303.
 - [BPS content outlines](https://bpsweb.org/examination-content-outlines/) and [candidate guide](https://bpsweb.org/candidates-guide/): current official exam information is the destination, not this hub's predictions.
-
-## Earlier checkpoint (superseded technical checks)
-
-- `npm run build`: succeeds, all 8 banks bundled.
-- `npm test`: six tests pass: all 449 item shapes/keys, replacement provenance/rationales, targeted corrections, revision migration and preservation, backup contents, source destination and PDF exclusion.
-- `node --check` for app.js, study-features.js, podcasts.js, slides.js: passes.
-- `git diff --check`: passes.
-- Local in-app-browser inspection: Sources reachable, More remains active, edition notice visible, phone light/dark readable. Timed 50-item practice starts with a countdown; answer selection, flag, and Next work. Source screen did not show horizontal overflow at the inspected phone width.
-- **Submission verification incomplete:** browser-control protocol stalled at the native confirmation after submitting with unanswered questions. Do not claim a verified submitted score from this run. Do not bypass the computer-use tool with a second automation technology to finish that interaction.
-
-## Work still required before a public release claim
-
-1. Verify all 73 draft replacements against specific source passages/primary references, including single-best-answer validity, educational depth, and balance. They intentionally do not reproduce the paid mock cases.
-2. Complete the chapter-by-chapter accuracy/provenance audit across 449 quiz items, 206 flashcards, 80 drug entries, 101 evidence summaries, 543 terms, 22 chapter sections, 6 exam drills, visual diagrams, and linked media. Prior July reviews explicitly left manual findings; they are evidence to revisit, not blanket sign-off. There are still 139 quiz items without four option rationales.
-3. Verify the remaining free-form chapter references, reconcile later practice changes across every dependent surface, and attach precise sources. See the generated inventory.
-4. Recheck original slide/audio provenance. Claude reported owner-derived NotebookLM material, but that is not an independent content/provenance audit.
-5. Finish browser submission/results, backup import round-trip, keyboard focus, desktop/phone/tablet, light/dark, and console checks after final content changes.
-6. Prepare a backed-up Git-history rewrite removing both raw PDF paths and the retired official mock bank from every relevant remote branch/tag. Verify exact remote tips and the owner's destructive-action authorization before any force-push. Avoid restoring paid files from old refs. Coordinate Claude auto-resume before modifying its branch.
-7. Merge/release only after the actual review closes. Build the data bundle, deploy only `app/`, verify canonical live bytes and behavior, and record the deployment and rollback source.
-
-No force-push, merge, deployment, or public-ready claim was performed in this continuation.
-
-## Publication approval gate
-
-The attempted push to the new `codex/bcps-release-readiness` branch was rejected by automatic approval review: it treated publication to this public GitHub repository as requiring explicit authorization in this chat. No push occurred and no PR exists. Ask the owner whether to publish this draft branch; do not route around the rejection through another tool. The local commit and a durable checkout are preserved under the Pharmacy workspace at `artifacts/bcps-release-readiness/`.
-
 
 ## Final technical continuation
 
@@ -89,3 +61,12 @@ The owner explicitly approved publication after the earlier rejected push, reque
 ### Remaining content limits
 
 The full clinical/provenance review remains open. The inventory records 73 revised general-bank drafts, 150 mock drafts, 139 older general-bank questions without four option rationales, and 93 free-form references requiring review. Structural tests do not validate clinical accuracy. Linked media and every other learning surface have not received comprehensive sign-off. The product displays this status and offers no official passing-score prediction.
+
+
+## Git history cleanup and publication
+
+A complete verified local Git bundle was saved under ignored `.private/backups/before-publish-20261019.bundle`. A separate bare mirror was rewritten, leaving the working checkout and backup intact during verification. The rewrite removed both licensed PDF paths, `assets/data/accp.json`, and identified copied/mock-derived records from historical quiz JSON arrays. A scan of reachable historical JSON/JS/HTML found zero long copied-question fragment matches. This is a targeted check, not a complete copyright audit.
+
+The cleaned release tree was byte-for-byte identical to the tested tree (Git tree `a2d3363fc4ba43f0d584e40c857c76c135d936cd`). Exact remote tips were checked immediately before publication. An atomic push used explicit leases for main and the Claude branch and created the new Codex branch; it succeeded. No newer remote work was overwritten. Cleaned tips at publication: main `b81aa47`, Claude branch `f2ff7e8`, release branch `146a97f`.
+
+Old commit IDs changed. Existing clones must fetch the cleaned branches carefully rather than push old history back. GitHub caches, inaccessible refs, third-party clones/forks, previously downloaded files, and old deployed versions are outside this reachability rewrite; no purge of those copies is claimed. Private licensed review copies remain on the owner’s machine and are not deployed.
