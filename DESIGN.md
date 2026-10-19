@@ -212,3 +212,7 @@ Save backup and Restore backup are the primary actions, with plain-language devi
 The session chooser explains full simulation versus flexible practice before the timer starts. Active full simulation has one question, a visible continuous timer, one-way confirmation, and an optional timed break. Explanations, domain results, and simulated unscored labels appear after submission. Keep the educational-draft status visible.
 
 Chapter paragraphs, lists, and flashcard answer text use `--label` in both themes. Do not hard-code translucent black on these themed card surfaces.
+
+### Semantic feedback and form contrast
+
+Use `--positive-ink` / `--positive-surface`, `--negative-ink` / `--negative-surface`, and `--caution-ink` / `--caution-surface` for ratings, warnings, and answer feedback. Each pair has a light and dark rendering; do not combine a bright status foreground with a fixed pastel surface. Dark purple text uses #b7a4ec, while large plum drill surfaces keep the original deep #4a3d7a. Form values inherit the text theme, placeholders remain readable, and rating intervals must not fade below the text contrast floor. Filled evidence badges use the corresponding on-fill foreground.
