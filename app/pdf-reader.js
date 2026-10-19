@@ -4,11 +4,11 @@
   let active='volume-1',doc=null,docId=null,loading=null,renderTask=null,textTask=null,renderId=0,openId=0;
   let page=1,zoom=1,pending=null,allNotes=false,scrollTimer=null,saveFailed=false,undo=null;
   const canvas=$('pdfCanvas'),paper=$('pdfPaper'),textLayer=$('pdfTextLayer'),viewport=$('pdfViewport');
-  let library;
+  let library,exportLibrary,exporting=false,downloadUrl=null;
   function state(){try{return store.load(localStorage);}catch(e){status(e.message,true);return null;}}
   function bookState(){const s=state();return s?(s.books[active]||store.freshBook(active)):null;}
   function status(message,error=false){$('pdfStatus').textContent=message;$('pdfStatus').classList.toggle('pdf-error',error);}
-  function save(fn){try{store.change(localStorage,active,fn);saveFailed=false;status('Saved on this device · include notes with Save backup.');return true;}catch(e){saveFailed=true;status(e.message+' Keep this tab open.',true);return false;}}
+  function save(fn){try{store.change(localStorage,active,fn);saveFailed=false;if(!exporting)status('Saved on this device · include notes with Save backup.');return true;}catch(e){saveFailed=true;status(e.message+' Keep this tab open.',true);return false;}}
   function refreshLibrary(){const s=state();if(!s)return;for(const id of Object.keys(books)){const b=s.books[id],el=document.querySelector('[data-book-progress="'+id+'"]');if(el)el.textContent=b?'Continue at page '+b.page+' · '+b.annotations.length+' saved notes/highlights':'646 pages';if(el&&!b)el.textContent=books[id].pages+' pages · '+(books[id].bytes/1048576).toFixed(1)+' MB';}}
   function rememberScroll(){clearTimeout(scrollTimer);if(!doc||docId!==active||!$('books').classList.contains('active'))return;const max=viewport.scrollHeight-viewport.clientHeight;const ratio=max>0?Math.min(1,Math.max(0,viewport.scrollTop/max)):0;save(b=>{b.page=page;b.zoom=zoom;b.scroll=ratio;});}
   function clearSelection(){pending=null;$('pdfHighlight').disabled=true;window.getSelection()?.removeAllRanges();}
@@ -16,6 +16,7 @@
   async function openBook(id){
     if(!books[id])return;rememberScroll();++renderId;renderTask?.cancel();textTask?.cancel();const token=++openId;active=id;clearSelection();undo=null;$('pdfUndo').hidden=true;
     $('pdfBook').value=id;$('pdfBookTitle').textContent='2024 ACCP · '+books[id].title;$('pdfOriginal').href=books[id].url;
+    $('pdfDownloadReady').hidden=true;
     const b=bookState();if(!b)return;page=b.page;zoom=b.zoom;$('pdfZoom').value=String(zoom);
     $('pdfPage').max=books[id].pages;$('pdfPage').value=page;$('pdfTotal').textContent='of '+books[id].pages;renderNotes();
     if(docId===id&&doc){await renderPage(b.scroll);return;}
@@ -93,6 +94,28 @@
     }
     if(annotations.length>200){const p=document.createElement('p');p.textContent='Showing the latest 200. Choose “This page” to see earlier entries by page.';list.append(p);}
   }
+  async function downloadAnnotated(){
+    if(exporting)return;
+    if(!doc||docId!==active){status('Wait for the book to load, then try Download annotated PDF again.',true);return;}
+    if(saveFailed){status('Your latest edit could not save. Keep this tab open and save your note before downloading.',true);return;}
+    const saved=bookState();if(!saved)return;
+    const snapshot=JSON.parse(JSON.stringify(saved)),id=active,sourceDoc=doc,button=$('pdfDownload');
+    exporting=true;button.disabled=true;button.textContent='Preparing PDF…';button.setAttribute('aria-busy','true');
+    status('Preparing '+books[id].title+' with all '+snapshot.annotations.length+' saved highlights and notes…');
+    try{
+      const bytes=await sourceDoc.getData(),views=new Map();
+      for(const n of new Set(snapshot.annotations.map(a=>a.page)))views.set(n,(await sourceDoc.getPage(n)).getViewport({scale:1}));
+      if(!exportLibrary)exportLibrary=import('./vendor/pdf-lib/pdf-lib.min.js').then(()=>window.PDFLib).catch(e=>{exportLibrary=null;throw e;});
+      const PDFLib=await exportLibrary;
+      const result=await BCPSPDFExport.create({PDFLib,bytes,bookId:id,book:snapshot,viewportForPage:n=>views.get(n),onProgress:(done,total)=>status('Embedding '+books[id].title+' notes · '+done+' of '+total+'…')});
+      const url=URL.createObjectURL(new Blob([result],{type:'application/pdf'})),link=$('pdfDownloadReady');
+      const previousUrl=downloadUrl;downloadUrl=url;if(previousUrl)setTimeout(()=>URL.revokeObjectURL(previousUrl),60000);
+      link.href=url;link.download='BCPS-2024-'+id+'-annotated-'+new Date().toLocaleDateString('en-CA')+'.pdf';
+      link.textContent='Save prepared '+books[id].title+' PDF';link.hidden=false;link.click();
+      status(books[id].title+' PDF ready with '+snapshot.annotations.length+' highlights and notes. Use the save link if the download did not start. Open the PDF’s Comments panel to read notes.');
+    }catch(e){status('Could not create the annotated PDF. Your saved notes are unchanged. Stay in this book and try again, or choose Save backup.',true);console.warn('PDF export:',e.message);}
+    finally{exporting=false;button.disabled=false;button.textContent='Download annotated PDF';button.removeAttribute('aria-busy');}
+  }
   window.BCPS_openBook=id=>{if(!books[id])return;active=id;switchSection('books');};
   $('pdfBook').onchange=()=>openBook($('pdfBook').value);
   $('pdfPageForm').onsubmit=e=>{e.preventDefault();go($('pdfPage').value);};
@@ -102,6 +125,7 @@
   $('pdfNotesScope').onchange=()=>{allNotes=$('pdfNotesScope').value==='all';renderNotes();};
   $('pdfUndo').onclick=()=>{if(!undo||undo.book!==active)return;const a=undo.annotation;if(save(b=>{if(!b.annotations.some(x=>x.id===a.id))b.annotations.push(a);})){undo=null;$('pdfUndo').hidden=true;drawHighlights();renderNotes();}};
   $('pdfRetry').onclick=()=>doc&&docId===active?renderPage():openBook(active);
+  $('pdfDownload').onclick=downloadAnnotated;
   viewport.addEventListener('scroll',()=>{clearTimeout(scrollTimer);scrollTimer=setTimeout(rememberScroll,200);},{passive:true});
   document.addEventListener('selectionchange',collectSelection);
   window.addEventListener('bcps:before-backup',rememberScroll);

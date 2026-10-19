@@ -68,4 +68,4 @@ No user-specific needs declared. Standing requirement from the owner: dark-mode 
 
 ## Integrated book reader
 
-Study Guide opens both authorized 2024 books in an on-site PDF.js reader. Reading position, zoom, normalized text highlights, and editable notes are local to each exact PDF fingerprint and travel in the regular backup file. Original PDF downloads remain unmodified. Do not imply that browser notes are embedded in those downloads or that books from 2024 reflect every later clinical change.
+Study Guide opens both authorized 2024 books in an on-site PDF.js reader. Reading position, zoom, normalized text highlights, and editable notes are local to each exact PDF fingerprint and travel in the regular backup file. Download annotated PDF creates a private, local copy with standard PDF highlights and note comments from the whole current volume; no notes are uploaded. The PDF viewer’s Comments panel exposes the embedded notes. This copy is an export snapshot: use the backup file to restore editable hub notes and reading position. Library original-PDF downloads remain unmodified. Do not imply that books from 2024 reflect every later clinical change.
