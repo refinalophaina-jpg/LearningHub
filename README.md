@@ -1,43 +1,34 @@
-# LearningHub
+# BCPS Learning Hub
 
-The BCPS Learning Hub — a study app for the BPS Pharmacotherapy (BCPS) exam. It
-lives at [bcps.ainadara.com](https://bcps.ainadara.com): a static site with no
-accounts and no backend. Progress and best scores are kept in each visitor's own
-browser (`localStorage`), so several people can share the URL without colliding.
+Independent AinaDara pharmacotherapy study hub. Static HTML/CSS/JavaScript, local browser progress, no account or backend. The curriculum starts from 2024 review topics; some later corrections are dated separately.
 
-## How it is built
+**Release review is in progress.** See [the continuation record](docs/reviews/2026-10-19-release-readiness.md) for implemented changes, source checks, verification, and remaining work. This is educational material, not a clinically validated reference or official ACCP/BPS product.
 
-Content lives in JSON banks under `assets/data/`, and a build step bundles them
-into a single `app/data.js` as `window` globals the app reads synchronously — the
-site itself ships no fetch calls for content.
+## Local use
 
-- `assets/data/*.json` — the nine content banks: `quiz`, `flash`, `accp`,
-  `concept`, `drug_db`, `glo_terms`, `evidencedata`, `_studychapters`, `epdrills`.
-  **Edit these**, not the generated bundle.
-- `scripts/build-data.js` — reads the banks, drops any array holes, writes
-  `app/data.js` (marked generated; do not edit by hand).
-- `app/` — the deployed site. `app.js` is the study engine; `slides.js` /
-  `slides-data.js` and `podcasts.js` / `podcasts-data.js` add the slide decks and
-  podcast list; `study-features.js` carries the study tools. `app.css` is the
-  house-styled stylesheet; `app/_headers` sets `Cache-Control: no-cache` so every
-  in-place redeploy is live at once rather than serving stale, un-hashed assets.
-
-## Local development
-
-```bash
-npm run build    # regenerate app/data.js from assets/data/*.json
-npm start        # build, then serve app/ locally via scripts/serve.js
+```sh
+npm run build  # generate app/data.js from assets/data/*.json
+npm start      # build, then serve app/ on port 8080
+npm test       # content/revision/backup regression checks
+node scripts/audit-content.js  # inventory and outstanding review triage
 ```
+
+Set `PORT` to choose another preview port. No package installation is needed for these Node standard-library commands.
+
+## Editing and release
+
+Edit source banks in `assets/data/`, then regenerate `app/data.js`; do not hand-edit the generated bundle. `app/` is the only static deployment directory. Review `PRODUCT.md`, `DESIGN.md`, and the latest release record before changing the interface.
+
+Licensed source PDFs, extracted text, and review scratchpads belong in ignored `.private/`. Never publish them or copy them into `app/`. Their removal from the current tree does not remove copies from Git history. The retired paid mock is not part of the app; the 73 replacement quiz items remain explicitly marked as original drafts until reviewed.
+
+## Practice and progress
+
+Mock Exam offers a separate 150-case original educational draft. Full simulation is 225 minutes, forward-only, with 25 simulated unscored items and one optional ten-minute break that uses exam time. Flexible practice draws 50 cases for 75 minutes and permits flags/navigation. Sessions resume by wall-clock time after refresh. All explanations appear after submission. The primary domain mix is 36% / 36% / 28%; fine-grained subdomain equivalence and item difficulty are not validated.
+
+Choose **Save backup** to download a file. On another device, choose **Restore backup**, select that file, and confirm. **Undo restore** recovers the prior local progress. Codes remain available under “Use a progress code instead.” Backups include flashcards, general progress, revision-aware quiz review, confidence, mock history, active session, last result, and exam date. Legacy v3 codes remain importable; revised questions do not inherit old mastery records.
+
+The 150-case bank includes a mix of foundational and applied items. Forty-two received a further case/distractor pass. A full independent clinical, difficulty, and blueprint-subdomain review remains necessary; no passing-score prediction is provided.
 
 ## Deployment
 
-Deployed as Cloudflare Worker static assets — `wrangler.toml` points `[assets]`
-at `./app` and binds the custom domain `bcps.ainadara.com`; there is no Worker
-script, the site is purely static. Run the build first, then `wrangler deploy`.
-
-## Content notes
-
-The study material is original, written for this site; it does not reproduce
-ACCP/BPS copyrighted exam content. The BCPS prep PDFs in the repo root are
-reference volumes. Verify doses and clinical recommendations against current
-guidelines before relying on them.
+The canonical site is [bcps.ainadara.com](https://bcps.ainadara.com). Cloudflare Worker static assets serve only `app/`; `wrangler.toml` binds that custom domain. Build first, then deploy with this repository’s explicit config (`wrangler deploy --config ./wrangler.toml`). The `app/_headers` file requests fresh validation for un-hashed assets. No private review files are part of the deployment.

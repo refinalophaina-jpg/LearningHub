@@ -1,0 +1,20 @@
+{
+  "edition": "2026-10-19-mock-v1",
+  "basis": "2024 curriculum, original cases; current 2026 simulator format",
+  "items": 150,
+  "domains": {
+    "Area 1": 54,
+    "Area 2": 54,
+    "Area 3": 42
+  },
+  "fullSimulation": {
+    "minutes": 225,
+    "scored": 125,
+    "unscored": 25,
+    "forwardOnly": true,
+    "breakMinutes": 10,
+    "timerContinuesDuringBreak": true
+  },
+  "formatSource": "https://bpsweb.org/candidates-guide/",
+  "contentStatus": "Original educational draft, not psychometrically validated"
+}
