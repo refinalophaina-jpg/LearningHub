@@ -261,7 +261,7 @@ function renderQuestion(q) {
   const diffClass = {exam:'diff-exam', hard:'diff-hard', expert:'diff-expert'}[q.diff] || 'diff-exam';
   const domMap = {'Area 1':'dom-1','Area 2':'dom-2','Area 3':'dom-3'};
   const domainBadge = q.domain ? `<span class="domain-badge ${domMap[q.domain] || ''}" title="${q.topic || ''}">${q.domain}</span>` : '';
-  const topicBadge = q.topic ? `<span class="topic-badge" style="background:var(--fill);color:var(--label2);font-size:0.6rem;padding:2px 8px;border-radius:10px;font-weight:500">${q.topic}</span>` : '';
+  const topicBadge = q.topic ? `<span class="topic-badge" style="background:var(--fill);color:var(--label2);font-size:11px;padding:2px 8px;border-radius:10px;font-weight:500">${q.topic}</span>` : '';
   // FIX: store opts_exp in cache to avoid HTML attribute escaping issues
   const cacheKey = ++_optsExpIdx;
   _optsExpCache[cacheKey] = q.opts_exp || [];
@@ -715,7 +715,7 @@ function buildImageSection() {
   container.innerHTML = imageCards.map((c, i) => `
     <div style="background:#1e293b;border:1px solid #334155;border-radius:10px;padding:1.25rem;margin-bottom:1.25rem">
       <div style="margin-bottom:0.75rem;display:flex;justify-content:space-between;align-items:center">
-        <span style="background:#06b6d4;color:#0f172a;font-size:0.68rem;font-weight:700;padding:0.2rem 0.6rem;border-radius:20px">${c.topic||'General'}</span>
+        <span style="background:#06b6d4;color:#0f172a;font-size:11px;font-weight:700;padding:0.2rem 0.6rem;border-radius:20px">${c.topic||'General'}</span>
         <button onclick="revealAllOcc(this)" class="btn btn-secondary" style="font-size:0.75rem;padding:0.3rem 0.8rem">Reveal All</button>
       </div>
       ${renderImageFront(c)}
@@ -851,7 +851,7 @@ function refreshCustomList() {
   list.innerHTML = customCards.map((c,i) => `
     <div style="display:flex;justify-content:space-between;align-items:center;padding:0.6rem 0.75rem;background:#0f172a;border-radius:6px;margin-bottom:0.5rem">
       <div style="font-size:0.82rem;color:#cbd5e1;flex:1;margin-right:1rem;overflow:hidden;white-space:nowrap;text-overflow:ellipsis">${c.type==='image'?'🖼️ '+c.topic : c.front.substring(0,60)+(c.front.length>60?'...':'')}</div>
-      <span style="background:#334155;color:#94a3b8;font-size:0.65rem;padding:0.15rem 0.5rem;border-radius:20px;margin-right:0.75rem">${c.topic}</span>
+      <span style="background:#334155;color:#94a3b8;font-size:11px;padding:0.15rem 0.5rem;border-radius:20px;margin-right:0.75rem">${c.topic}</span>
       <button onclick="deleteCustomCard(${i})" style="background:#450a0a;color:#fca5a5;border:none;border-radius:4px;padding:0.2rem 0.5rem;cursor:pointer;font-size:0.75rem">✕</button>
     </div>`).join('');
 }
@@ -2034,7 +2034,7 @@ function searchSpotlight(raw) {
       {icon:'💊',title:'Drug Reference',sub:'70 BCPS drugs with PK, interactions, pearls',action:()=>{switchSection('concepts');closeSpotlight();}},
       {icon:'🔬',title:'Visual Pharmacology',sub:'Pathways, cascades, mechanism diagrams',action:()=>{switchSection('visuals');closeSpotlight();}},
       {icon:'🏛️',title:'Evidence-Based References',sub:'Landmark trials & major guidelines',action:()=>{switchSection('evidence');closeSpotlight();}},
-      {icon:'📋',title:'Mock Exam',sub:'Timed run from the question bank',action:()=>{switchSection('accp');closeSpotlight();}},
+      {icon:'📋',title:'Mock Exam',sub:'150 original cases · full simulation or flexible practice',action:()=>{switchSection('accp');closeSpotlight();}},
       {icon:'🎯',title:'Exam Psychology',sub:'Strategy, timing, cognitive biases',action:()=>{switchSection('exampsych');closeSpotlight();}}
     ];
     container.innerHTML = '<div class="spotlight-cat">Quick Jump</div>' +
@@ -2891,6 +2891,7 @@ const _PROG_KEY = 'bcps_progress_v2';
 // ── SNAPSHOT ─────────────────────────────────────────────────────────────────
 function _snap() {
   return {
+    questionRevision: '2026-10-19',
     missedQIds:  Array.from(window.missedQIds || []),
     topicStats:  window.topicStats  || {},
     quizHistory: window.quizHistory || [],
@@ -2910,7 +2911,10 @@ function _loadLocal() {
 }
 function _applyProgress(d) {
   if (!d) return;
-  if (Array.isArray(d.missedQIds))  window.missedQIds  = new Set(d.missedQIds);
+  if (Array.isArray(d.missedQIds)) {
+    const changed = new Set([0, 52, 88, 95, 158, 166, 169, 171, 188, 198, 218, 241, 246, 258, 267, 272, 273, 296, 300, 305, 311, 320, 350, 372, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448]);
+    window.missedQIds = new Set(d.missedQIds.filter(i => Number.isInteger(i) && i >= 0 && i < quizData.length && (d.questionRevision === '2026-10-19' || !changed.has(i))));
+  }
   if (d.topicStats)                 window.topicStats   = d.topicStats;
   if (Array.isArray(d.quizHistory)) window.quizHistory  = d.quizHistory;
   if (d.srData)     localStorage.setItem(typeof SR_KEY !== 'undefined' ? SR_KEY : 'bcps_sr_v1', d.srData);
@@ -3197,23 +3201,23 @@ function renderHomeStats() {
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(80px,1fr));gap:8px;margin-bottom:12px;">
         <div style="background:var(--fill);border-radius:10px;padding:10px 6px;text-align:center;">
           <div style="font-size:1.4rem;font-weight:800;color:var(--primary,#0071e3);">${acc}%</div>
-          <div style="font-size:10px;color:var(--label2);">Accuracy</div>
+          <div style="font-size:11px;color:var(--label2);">Accuracy</div>
         </div>
         <div style="background:var(--fill);border-radius:10px;padding:10px 6px;text-align:center;">
           <div style="font-size:1.4rem;font-weight:800;color:#22c55e;">${totalC}</div>
-          <div style="font-size:10px;color:var(--label2);">Correct</div>
+          <div style="font-size:11px;color:var(--label2);">Correct</div>
         </div>
         <div style="background:var(--fill);border-radius:10px;padding:10px 6px;text-align:center;">
           <div style="font-size:1.4rem;font-weight:800;color:#f59e0b;">${missed}</div>
-          <div style="font-size:10px;color:var(--label2);">Missed</div>
+          <div style="font-size:11px;color:var(--label2);">Missed</div>
         </div>
         <div style="background:var(--fill);border-radius:10px;padding:10px 6px;text-align:center;">
           <div style="font-size:1.4rem;font-weight:800;color:#8b5cf6;">${sessions}</div>
-          <div style="font-size:10px;color:var(--label2);">Sessions</div>
+          <div style="font-size:11px;color:var(--label2);">Sessions</div>
         </div>
         <div style="background:var(--fill);border-radius:10px;padding:10px 6px;text-align:center;">
           <div style="font-size:1.4rem;font-weight:800;color:#ef4444;">${streak}🔥</div>
-          <div style="font-size:10px;color:var(--label2);">Streak</div>
+          <div style="font-size:11px;color:var(--label2);">Streak</div>
         </div>
       </div>
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;margin-top:4px;">
@@ -3371,6 +3375,8 @@ function _buildProgressCode() {
     quizSrs: localStorage.getItem('bcps_quiz_srs_20261019'),
     confidence: localStorage.getItem('bcps_confidence_log_20261019'),
     mockHistory: localStorage.getItem('bcps_mock_history'),
+    mockSession: localStorage.getItem('bcps_mock_session_20261019'),
+    mockResult: localStorage.getItem('bcps_mock_result_v1'),
     examDate: localStorage.getItem('bcps_exam_date'),
     v: 4, ts: Date.now()
   };
@@ -3420,23 +3426,12 @@ function importProgressCode() {
   const raw = (inp ? inp.value : '').trim();
   if (!raw) { if (msg) { msg.style.color='#ef4444'; msg.textContent='Please paste a code first.'; } return; }
   try {
-    const data = JSON.parse(decodeURIComponent(escape(atob(raw))));
-    if (data.sr)       localStorage.setItem('bcps_sr_v2',           data.sr);
-    if (data.streak)   localStorage.setItem('bcps_streak_v1',       data.streak);
-    if (data.progress) localStorage.setItem('bcps_progress_v2',     data.progress);
-    if (data.custom)   localStorage.setItem('bcps_custom_cards',    data.custom);
-    if (data.accp)     localStorage.setItem('bcps_accp_reviewed',   data.accp);
-    if (data.studyRevision === '2026-10-19') {
-      for (const [field, key] of Object.entries({quizSrs:'bcps_quiz_srs_20261019',confidence:'bcps_confidence_log_20261019',mockHistory:'bcps_mock_history'})) {
-        if (typeof data[field] === 'string') { JSON.parse(data[field]); localStorage.setItem(key, data[field]); }
-      }
-      if (typeof data.examDate === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(data.examDate)) localStorage.setItem('bcps_exam_date', data.examDate);
-    }
+    BCPSProgressCode.restore(raw, localStorage);
     if (msg) { msg.style.color='#34C759'; msg.textContent='✓ Progress loaded! Refreshing in 2 seconds…'; }
     localStorage.setItem('bcps_justImported', '1');
     setTimeout(() => location.reload(), 2000);
   } catch(e) {
-    if (msg) { msg.style.color='#ef4444'; msg.textContent='Invalid code. Please check and try again.'; }
+    if (msg) { msg.style.color='#ef4444'; msg.textContent=e.message || 'Invalid code. Your progress has not changed.'; }
   }
 }
 
@@ -3451,9 +3446,9 @@ function resetSection(which) {
   if (modal) modal.style.display = 'none';
 
   const KEYS = {
-    quiz:  ['bcps_progress_v2', 'bcps_streak_v1'],
+    quiz:  ['bcps_progress_v2', 'bcps_streak_v1', 'bcps_quiz_srs', 'bcps_confidence_log', 'bcps_quiz_srs_20261019', 'bcps_confidence_log_20261019'],
     flash: ['bcps_sr_v2', 'bcps_custom_cards'],
-    all:   ['bcps_progress_v2', 'bcps_sr_v2', 'bcps_streak_v1', 'bcps_custom_cards', 'bcps_accp_reviewed'],
+    all:   ['bcps_progress_v2', 'bcps_sr_v2', 'bcps_streak_v1', 'bcps_custom_cards', 'bcps_accp_reviewed', 'bcps_restore_undo_v1', 'bcps_restore_notice'],
   };
   const labels = { quiz: 'quiz history', flash: 'flashcard progress', all: 'all progress' };
   const toRemove = KEYS[which] || KEYS.all;

@@ -18,19 +18,19 @@ A self-contained BCPS exam-prep hub: study chapters, a 449-item quiz engine (inc
 
 ## Positioning
 
-One coherent, beautifully built place covering the whole BCPS study loop (learn → drill → space → mock → review weaknesses) with no accounts, no server, and no cost — progress lives on-device with a portable Progress Code. Neighboring products are either question banks or note piles; this is both, under one brand, tuned by someone actually sitting the exam.
+One coherent, beautifully built place covering the whole BCPS study loop (learn → drill → space → mock → review weaknesses) with no accounts, no server, and no cost — progress lives on-device with a simple downloadable backup file. Neighboring products are either question banks or note piles; this is both, under one brand, tuned by someone actually sitting the exam.
 
 ## Operating Context
 
 - Static single-page app: `app/index.html` + `app/app.css` + `app/app.js` + `app/study-features.js` + generated `app/data.js`.
 - Content is authored in `assets/data/*.json`; `node scripts/build-data.js` regenerates `app/data.js` (gitignored — rebuild after fresh checkout and before deploy).
 - Deployed to https://bcps.ainadara.com via Cloudflare Workers static assets (`wrangler deploy`; `wrangler.toml` at repo root).
-- All progress is localStorage (quiz history, SRS queue, streaks, mock history) plus an export/import "Progress Code". No auth, no backend, no analytics.
+- All progress is localStorage (quiz history, SRS queue, streaks, mock history) plus Save backup / Restore backup files (codes remain an optional fallback). No auth, no backend, no analytics.
 - Headless verification harness lives in gitignored `.audit-src/` (Playwright against a local static server).
 
 ## Capabilities and Constraints
 
-- **ACCP mock-exam content is not publicly shareable.** The dedicated 150-item ACCP mock bank was removed in 1f9c61e. Another 73 mock-derived quiz items have now been replaced with original drafts. Full content/provenance review remains open. Every "make it public" decision runs through this gate first.
+- **ACCP mock-exam content is not publicly shareable.** The dedicated 150-item ACCP mock bank was removed in 1f9c61e. Another 73 mock-derived quiz items have now been replaced with original drafts. A separately authored 150-case educational draft powers the new simulation; it does not distribute the licensed bank. Full content/provenance review remains open. Every "make it public" decision runs through this gate first.
 - No server-side anything: features must work as static files (this is why sync/login was removed — do not reintroduce).
 - Progress must survive via localStorage + Progress Code only; never make durable progress depend on a third-party service.
 - Light and dark mode are both supported and both must stay readable; dark-mode regressions have been a recurring bug class.

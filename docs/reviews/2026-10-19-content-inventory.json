@@ -9,8 +9,11 @@
     "evidencedata.json": 101,
     "flash.json": 206,
     "glo_terms.json": 543,
+    "mock_exam.json": 150,
     "quiz.json": 449
   },
+  "mockDrafts": 150,
+  "mockClinicalReview": "pending",
   "replacementDrafts": [
     376,
     377,

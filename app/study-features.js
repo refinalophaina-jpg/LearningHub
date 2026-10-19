@@ -12,6 +12,7 @@
     quizSrs: 'bcps_quiz_srs_20261019',
     confLog: 'bcps_confidence_log_20261019',
     mockHistory: 'bcps_mock_history',
+    mockSession: 'bcps_mock_session_20261019',
   };
 
   function todayStr() { var d = new Date(); return d.toISOString().slice(0, 10); }
@@ -120,13 +121,13 @@
   };
   // Clears everything this file owns (used by the global "Reset Everything").
   window.BCPS_resetStudyData = function () {
-    [LS.quizSrs, LS.confLog, LS.mockHistory, LS.examDate].forEach(function (k) {
+    [LS.quizSrs, LS.confLog, LS.mockHistory, LS.mockSession, LS.examDate, 'bcps_quiz_srs', 'bcps_confidence_log', 'bcps_mock_result_v1'].forEach(function (k) {
       try { localStorage.removeItem(k); } catch (e) {}
     });
     window._srsForceSet = null;
     renderDueBanner();
     renderStudyPlan();
-    if (typeof renderMockPanel === 'function') renderMockPanel();
+    if (typeof window.BCPS_clearMockState === 'function') window.BCPS_clearMockState();
   };
 
   window._srsForceSet = null; // when set (array), loadQuestion pulls only from these indices
@@ -305,10 +306,10 @@
   if (document.readyState !== 'loading') { renderStudyPlan(); renderDueBanner(); }
 
   // ── Timed mock exam + readiness meter (R5) ──────────────────────────────
-  var MOCK_MIN_TIMED_ITEMS = 150; // readiness band withheld until this much timed volume exists
+  var MOCK_MIN_TIMED_ITEMS = 1; // readiness band withheld until this much timed volume exists
   var AREA_LABEL = { '1': 'Area 1: Patient Care', '2': 'Area 2: Therapeutics & Management', '3': 'Area 3: Professional Practice' };
 
-  function getMockHistory() { return readJSON(LS.mockHistory, []); }
+  function getMockHistory() { var h=readJSON(LS.mockHistory, []); return Array.isArray(h)?h.filter(function(a){return a && Number.isFinite(a.total) && a.total>0 && Number.isFinite(a.pct);}):[]; }
   function saveMockAttempt(attempt) {
     var h = getMockHistory(); h.push(attempt);
     if (h.length > 30) h = h.slice(-30);
@@ -331,153 +332,13 @@
     var wrap = '<div class="sp-readiness-wrap">';
     wrap += '<b style="font-size:12.5px;color:var(--label3);text-transform:uppercase;letter-spacing:.06em;">Timed practice history</b>';
     if (!r) {
-      var have = timedItemTotal();
-      wrap += '<p class="sp-cal-empty">Take a timed mock exam (Mock Exam tab) to record timed practice accuracy — needs ' + MOCK_MIN_TIMED_ITEMS + '+ timed questions answered (' + have + ' so far). These are practice results, not a validated prediction of board performance.</p>';
+      wrap += '<p class="sp-cal-empty">Complete a timed session in Mock Exam to see your practice results here. On a phone, open More → Timed practice.</p>';
     } else {
       wrap += '<div class="sp-readiness ' + r.cls + '"><span class="sp-readiness-band">' + r.band + '</span><span class="sp-readiness-pct">' + r.pct + '% avg, last ' + Math.min(3, r.attempts) + ' timed attempt' + (r.attempts > 1 ? 's' : '') + '</span></div>';
-      wrap += '<p class="sp-cal-empty">An estimate from your own timed mock scores, not an official BPS cut score.</p>';
+      wrap += '<p class="sp-cal-empty">Your recent practice results. Different session modes and earlier question versions may not be directly comparable.</p>';
     }
     wrap += '</div>';
     return wrap;
   }
 
-  var mock = { active: false, items: [], answers: {}, flagged: {}, startedAt: 0, minutes: 0, timerId: null };
-
-  function areaOf(category) { var d = (category || '')[0]; return AREA_LABEL[d] || 'Other'; }
-
-  // Mock pool: the hub's own quiz bank, adapted to the mock item shape.
-  function mockPool() {
-    var src = window.__quizData || [];
-    return src.map(function (q, i) {
-      var area = ((q.domain || '').match(/\d/) || ['0'])[0];
-      return {
-        num: i + 1,
-        stem: q.q,
-        choices: (q.opts || []).map(function (c) { return c.replace(/^[A-D]\.\s*/, ''); }),
-        correctIdx: q.correct,
-        category: area + '. ' + (q.topic || ''),
-        exp: q.exp || ''
-      };
-    });
-  }
-
-  window.BCPS_startMock = function (count, minutes) {
-    var pool = mockPool();
-    for (var i = pool.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = pool[i]; pool[i] = pool[j]; pool[j] = t; }
-    mock.items = pool.slice(0, Math.min(count, pool.length));
-    mock.answers = {}; mock.flagged = {}; mock.active = true;
-    mock.startedAt = Date.now(); mock.minutes = minutes; mock.cur = 0;
-    if (mock.timerId) clearInterval(mock.timerId);
-    mock.timerId = setInterval(mockTick, 1000);
-    renderMockPanel();
-  };
-
-  function mockTick() {
-    var remaining = mock.minutes * 60 - Math.floor((Date.now() - mock.startedAt) / 1000);
-    if (remaining <= 0) { mockSubmit(true); return; }
-    var t = document.getElementById('mockTimer');
-    if (t) t.textContent = fmtClock(remaining);
-  }
-  function fmtClock(sec) {
-    var h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60), s = sec % 60;
-    return (h > 0 ? h + ':' : '') + String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0');
-  }
-
-  window.BCPS_mockSelect = function (choiceIdx) {
-    mock.answers[mock.cur] = choiceIdx;
-    renderMockPanel();
-  };
-  window.BCPS_mockFlag = function () { mock.flagged[mock.cur] = !mock.flagged[mock.cur]; renderMockPanel(); };
-  window.BCPS_mockGoto = function (i) { mock.cur = i; renderMockPanel(); };
-  window.BCPS_mockNav = function (d) { mock.cur = Math.max(0, Math.min(mock.items.length - 1, mock.cur + d)); renderMockPanel(); };
-  window.BCPS_mockSubmitConfirm = function () {
-    var unanswered = mock.items.length - Object.keys(mock.answers).length;
-    if (unanswered > 0 && !confirm(unanswered + ' question' + (unanswered === 1 ? ' is' : 's are') + ' unanswered. Submit anyway?')) return;
-    mockSubmit(false);
-  };
-
-  function mockSubmit(timedOut) {
-    clearInterval(mock.timerId);
-    var minutesUsed = Math.round((Date.now() - mock.startedAt) / 60000);
-    var correct = 0;
-    var byArea = {};
-    mock.items.forEach(function (q, i) {
-      var a = areaOf(q.category);
-      if (!byArea[a]) byArea[a] = { correct: 0, total: 0 };
-      byArea[a].total++;
-      if (mock.answers[i] === q.correctIdx) { correct++; byArea[a].correct++; }
-    });
-    var pct = Math.round(100 * correct / mock.items.length);
-    var attempt = { date: todayStr(), total: mock.items.length, correct: correct, pct: pct, minutesUsed: minutesUsed, minutesAllotted: mock.minutes, timedOut: !!timedOut, byArea: byArea };
-    saveMockAttempt(attempt);
-    mock.active = false;
-    mock.lastResult = attempt;
-    renderMockPanel();
-    renderStudyPlan();
-  }
-
-  function renderMockPanel() {
-    var el = document.getElementById('mockExamPanel');
-    if (!el) return;
-    if (!mock.active) {
-      if (mock.lastResult) { el.innerHTML = mockResultHTML(mock.lastResult); return; }
-      el.innerHTML = mockStartHTML();
-      return;
-    }
-    var i = mock.cur, q = mock.items[i];
-    var letters = ['A', 'B', 'C', 'D'];
-    var choicesHTML = q.choices.map(function (c, ci) {
-      var sel = mock.answers[i] === ci;
-      return '<button type="button" class="option-btn mock-choice' + (sel ? ' selected' : '') + '" onclick="window.BCPS_mockSelect(' + ci + ')">' + letters[ci] + '. ' + c + '</button>';
-    }).join('');
-    var nav = mock.items.map(function (_, ni) {
-      var cls = (mock.answers[ni] != null ? 'answered' : '') + (ni === i ? ' cur' : '');
-      if (mock.flagged[ni]) cls += ' flagged';
-      return '<button type="button" class="mock-nav-cell ' + cls + '" onclick="window.BCPS_mockGoto(' + ni + ')">' + (ni + 1) + '</button>';
-    }).join('');
-    el.innerHTML =
-      '<div class="mock-live">' +
-      '<div class="mock-live-head"><span id="mockTimer" class="mock-timer">' + fmtClock(mock.minutes * 60 - Math.floor((Date.now() - mock.startedAt) / 1000)) + '</span>' +
-      '<span class="mock-progress">Question ' + (i + 1) + ' of ' + mock.items.length + '</span>' +
-      '<button class="btn btn-secondary" style="padding:6px 12px;font-size:12.5px;" onclick="window.BCPS_mockSubmitConfirm()">Submit exam</button></div>' +
-      '<div class="mock-nav-grid">' + nav + '</div>' +
-      '<div class="question-card">' +
-      '<div class="question-text">' + q.stem + '</div>' +
-      '<div class="options">' + choicesHTML + '</div>' +
-      '</div>' +
-      '<div class="mock-live-foot">' +
-      '<button class="btn btn-secondary" onclick="window.BCPS_mockNav(-1)"' + (i === 0 ? ' disabled' : '') + '>&larr; Prev</button>' +
-      '<button class="btn btn-secondary" onclick="window.BCPS_mockFlag()">' + (mock.flagged[i] ? 'Unflag' : 'Flag for review') + '</button>' +
-      '<button class="btn btn-primary" onclick="window.BCPS_mockNav(1)"' + (i === mock.items.length - 1 ? ' disabled' : '') + '>Next &rarr;</button>' +
-      '</div></div>';
-  }
-
-  function mockStartHTML() {
-    return '<div class="mock-start">' +
-      '<h3 style="margin:0 0 6px;">Timed mock exam</h3>' +
-      '<p style="margin:0 0 12px;color:var(--label2);font-size:13.5px;">Exam conditions: no feedback until you submit, a countdown timer, and a question navigator. Results are saved as practice history. This bank has not been validated to predict exam performance.</p>' +
-      '<div class="mock-start-opts">' +
-      '<button class="btn btn-primary" onclick="window.BCPS_startMock(150,225)">Full mock — 150 Q · 3h45m</button>' +
-      '<button class="btn btn-secondary" onclick="window.BCPS_startMock(50,75)">Quick mock — 50 Q · 75m</button>' +
-      '</div></div>';
-  }
-
-  function mockResultHTML(a) {
-    var band = 'Practice result';
-    var rows = Object.keys(a.byArea).sort().map(function (k) {
-      var d = a.byArea[k]; var p = Math.round(100 * d.correct / d.total);
-      return '<div class="mock-area-row"><span>' + k + '</span><span>' + d.correct + '/' + d.total + ' (' + p + '%)</span></div>';
-    }).join('');
-    return '<div class="mock-result">' +
-      '<h3 style="margin:0 0 4px;">' + a.correct + ' / ' + a.total + ' (' + a.pct + '%)</h3>' +
-      '<p style="margin:0 0 10px;color:var(--label2);font-size:13px;">' + band + ' (estimate, not an official cut score) · ' + a.minutesUsed + ' of ' + a.minutesAllotted + ' min used' + (a.timedOut ? ' · time expired' : '') + '</p>' +
-      '<div class="mock-area-breakdown">' + rows + '</div>' +
-      '<button class="btn btn-primary" style="margin-top:12px;" onclick="window.BCPS_mockReset()">Take another mock</button>' +
-      '</div>';
-  }
-  window.BCPS_mockReset = function () { mock.lastResult = null; renderMockPanel(); };
-
-  window.addEventListener('bcps:tab', function (e) { if (e.detail === 'accp') renderMockPanel(); });
-  document.addEventListener('DOMContentLoaded', renderMockPanel);
-  if (document.readyState !== 'loading') renderMockPanel();
 })();

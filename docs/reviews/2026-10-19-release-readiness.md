@@ -1,6 +1,6 @@
 # BCPS release-readiness continuation — 2026-10-19
 
-Status: **Draft; full release-readiness objective is not complete. Not deployed.**
+Status: **Technical implementation verified; educational content remains a draft pending comprehensive clinical/provenance review. Publication is now authorized by the owner.**
 
 ## Context recovered
 
@@ -39,7 +39,7 @@ Accessed October 19, 2026. The 2024 PDF bookmark structure was read locally; ext
 - [CDC outbreak summary](https://archive.cdc.gov/www_cdc_gov/hai/outbreaks/meningitis.html): 64 deaths, correcting 303.
 - [BPS content outlines](https://bpsweb.org/examination-content-outlines/) and [candidate guide](https://bpsweb.org/candidates-guide/): current official exam information is the destination, not this hub's predictions.
 
-## Verification completed
+## Earlier checkpoint (superseded technical checks)
 
 - `npm run build`: succeeds, all 8 banks bundled.
 - `npm test`: six tests pass: all 449 item shapes/keys, replacement provenance/rationales, targeted corrections, revision migration and preservation, backup contents, source destination and PDF exclusion.
@@ -63,3 +63,29 @@ No force-push, merge, deployment, or public-ready claim was performed in this co
 ## Publication approval gate
 
 The attempted push to the new `codex/bcps-release-readiness` branch was rejected by automatic approval review: it treated publication to this public GitHub repository as requiring explicit authorization in this chat. No push occurred and no PR exists. Ask the owner whether to publish this draft branch; do not route around the rejection through another tool. The local commit and a durable checkout are preserved under the Pharmacy workspace at `artifacts/bcps-release-readiness/`.
+
+
+## Final technical continuation
+
+The owner explicitly approved publication after the earlier rejected push, requested Impeccable UI refinements, asked for a simple nontechnical progress-backup method, and approved developing a dedicated timed simulation guided by the 150-item bank’s objectives. Claude auto-continue remains off.
+
+- Added `mock_exam.json`: 150 independently authored cases, four option rationales each, draft provenance and curriculum/source references. Forty-two cases received an additional detail/distractor pass. Correct answer positions were shuffled rather than retaining the authoring-order cycle. This is a mix of foundational and applied questions, not a validated high-difficulty bank or an ACCP reproduction.
+- Primary blueprint: 54 patient-care, 54 therapeutics/patient-management, 42 professional-practice cases (36% / 36% / 28%). Fine-grained subdomain quotas and difficulty equivalence remain unvalidated.
+- Full simulation: 150 questions, 225 minutes, 25 simulated unscored items chosen before the attempt, forward-only confirmed answers, no feedback before submission, one optional ten-minute break that consumes exam time. The scored split is 45 / 45 / 35 across the three domains. Flexible practice selects 50 cases for 75 minutes with navigation and flags. Both retain the last result and active session across refresh.
+- Verified the format against the [current BPS Candidate’s Guide](https://bpsweb.org/candidates-guide/) and the [Pharmacotherapy ECO linked from the current outlines page](https://bpsweb.org/wp-content/uploads/BCPS-Examination-Specifications-Fall-2024.pdf) on October 19, 2026. The simulated unscored selection is an app design choice, not BPS calibration.
+- Added Save backup / Restore backup file actions, a dated confirmation, pre-write validation, rollback on storage failure, and Undo restore. Progress codes remain inside a secondary disclosure. Active mock session, result, history, spaced review, custom cards, and exam date are portable. Timers retain their original start timestamp after restore.
+- Refined phone navigation to five primary tabs; moved four secondary destinations into More on phones. Preserved the warm bone/terracotta identity, centered wide layouts, improved compact header spacing, keyboard chapter controls, closed-search accessibility, focus behavior, minimum functional text sizes, and reduced-motion handling.
+- Impeccable’s prescribed mechanical detector ran once. It reported 1,013 findings, predominantly inherited static/inline style and token drift. This was not a clean audit; the new pure helper files had no reported findings. No automatic detector hook was enabled.
+
+### Final technical verification
+
+- Build: all nine source banks bundle successfully.
+- Tests: 21 pass, including simulation distribution/scoring, timer continuity, malformed saved sessions, backup atomicity, quota rollback, Unicode file round-trip, exact Undo, revision migration, and existing content structure/corrections.
+- JavaScript syntax checks and `git diff --check`: pass.
+- Actual browser flow: 150-question full simulation started at 3:45:00; selecting an answer enabled confirmation; continuing advanced without a back control; the optional break and timer survived refresh; returning consumed the one break; inline end confirmation submitted successfully. One correct scored item produced 1/125, with all 150 available for review and 25 marked simulated unscored only after submission.
+- File backup: actual download and file-chooser restore were verified, including dated confirmation, successful restore notice, and Undo restore. No technical code copying is required in the primary path.
+- Desktop and phone layout checked in light/dark; 1280px desktop showed no document overflow. Browser warning/error log was empty in the final checked session. Proof images: `mock-mobile.png` and `mock-desktop.png`.
+
+### Remaining content limits
+
+The full clinical/provenance review remains open. The inventory records 73 revised general-bank drafts, 150 mock drafts, 139 older general-bank questions without four option rationales, and 93 free-form references requiring review. Structural tests do not validate clinical accuracy. Linked media and every other learning surface have not received comprehensive sign-off. The product displays this status and offers no official passing-score prediction.
