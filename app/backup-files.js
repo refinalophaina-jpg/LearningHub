@@ -5,7 +5,7 @@
   let pending = null;
   const message = document.getElementById('backupFileMessage');
   const input = document.getElementById('backupFileInput');
-  function say(text, error) { message.textContent = text; message.classList.toggle('backup-error', !!error); }
+  function say(text, error) { message.textContent = text; message.classList.toggle('backup-error', !!error); window.dispatchEvent(new CustomEvent('bcps:backup-status',{detail:{text,error:!!error}})); }
   function reloadAfterRestore() {
     try { localStorage.setItem(noticeKey, 'restored'); } catch (_) {}
     say('Progress restored. Opening your study desk…');
