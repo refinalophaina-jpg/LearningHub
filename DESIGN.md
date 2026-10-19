@@ -162,7 +162,7 @@ Soft rectangles everywhere: 12px for controls, 14–16px for cards, 18–20px fo
 
 ### Buttons
 - **Shape:** gently rounded (12px), inline-flex with 5px icon gap.
-- **Primary:** Terracotta Ink (#a85a38) with white text, 9px 18px padding, 600 weight at 0.85rem.
+- **Primary:** Terracotta Ink (#a85a38) with warm-white text in light mode; brighter terracotta (#d88a6e) with dark-umber text in dark mode. Use `--on-primary` for filled accent controls and `--primary-pressed` for the pressed background. Padding 9px 18px, weight 600 at 0.85rem.
 - **Hover / Focus:** 0.15s all; press scales to 0.96 and deepens to #8f4c30. Focus is a 2px terracotta outline, offset 2px.
 - **Secondary:** 5%-ink fill with ink text, same geometry; deepens on press.
 
@@ -210,3 +210,5 @@ Save backup and Restore backup are the primary actions, with plain-language devi
 
 ### Mock examination
 The session chooser explains full simulation versus flexible practice before the timer starts. Active full simulation has one question, a visible continuous timer, one-way confirmation, and an optional timed break. Explanations, domain results, and simulated unscored labels appear after submission. Keep the educational-draft status visible.
+
+Chapter paragraphs, lists, and flashcard answer text use `--label` in both themes. Do not hard-code translucent black on these themed card surfaces.
