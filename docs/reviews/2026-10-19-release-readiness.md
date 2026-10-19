@@ -4,7 +4,7 @@ Status: **Draft; full release-readiness objective is not complete. Not deployed.
 
 ## Context recovered
 
-Read the Claude desktop conversation “BCPS project refresh” through computer use. Its cloud repo is `refinalophaina-jpg/LearningHub`, not the local Pharmacy simulator workspace. Started from `1f9c61e` on `claude/bcps-project-refresh-4i68ym`; main was `f08da8f`. The cloud scratchpad, reviewer bundles, and failed reviewer outputs were not available in the repository. No message was sent to Claude and no auto-continue preference was changed.
+Read the Claude desktop conversation “BCPS project refresh” through computer use. Its cloud repo is `refinalophaina-jpg/LearningHub`, not the local Pharmacy simulator workspace. Started from `1f9c61e` on `claude/bcps-project-refresh-4i68ym`; main was `f08da8f`. The cloud scratchpad, reviewer bundles, and failed reviewer outputs were not available in the repository. No message was sent to Claude. With explicit owner approval in this chat, “Auto-continue when limits reset” was turned off in the Claude BCPS conversation and verified unchecked on October 19, 2026.
 
 The owner's requested outcome is public pharmacist usability, content accuracy against the licensed 2024 review with other primary sources as appropriate, removal of paid mock material, clear edition attribution, polished UI, and a verified release. Claude's assertion that history purging had begun is not evidence it completed: the downloaded repository still tracked both PDFs.
 
