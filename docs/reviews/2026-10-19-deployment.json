@@ -1,0 +1,21 @@
+{
+  "site": "https://bcps.ainadara.com/",
+  "worker": "learninghub",
+  "version": "5d5e6c2d-ed67-48cc-aed4-8cd03928374e",
+  "tag": "bcps-20261019",
+  "sourceMergeCommit": "542e1678100687f28032c603875bcc1c71af25ea",
+  "pullRequest": "https://github.com/refinalophaina-jpg/LearningHub/pull/1",
+  "status": "deployed-educational-draft",
+  "previousVersion": "711db085-664b-4b6e-ae81-2bf9f056d4ef",
+  "rollbackCaution": "The previous version predates this content cleanup; prefer rebuilding the cleaned source instead of restoring retired paid material.",
+  "verification": {
+    "localTestsPassed": 21,
+    "buildBanks": 9,
+    "dryRun": "passed; explicit local wrangler.toml; only app assets",
+    "assetUpload": "17 assets read; 10 modified assets uploaded; deployment succeeded",
+    "canonicalBrowser": "new 150-case simulation, full/flexible controls and simple file backup controls visible",
+    "canonicalBrowserWarningsOrErrors": 0,
+    "rawHttpByteComparison": "not completed: direct urllib request received HTTP 403; canonical browser verification succeeded"
+  },
+  "clinicalReview": "pending; full content sign-off and difficulty calibration are not claimed"
+}
