@@ -17,5 +17,20 @@
     "canonicalBrowserWarningsOrErrors": 0,
     "rawHttpByteComparison": "not completed: direct urllib request received HTTP 403; canonical browser verification succeeded"
   },
-  "clinicalReview": "pending; full content sign-off and difficulty calibration are not claimed"
+  "clinicalReview": "pending; full content sign-off and difficulty calibration are not claimed",
+  "followUpReleases": [
+    {
+      "purpose": "Dark-mode readability correction",
+      "version": "b60e0e32-febd-419a-985a-5444d55ac586",
+      "sourceMergeCommit": "b9aa38debda66e1bd84066f20fff7f6a56bcabd2",
+      "pullRequest": "https://github.com/refinalophaina-jpg/LearningHub/pull/2",
+      "verification": "21 existing tests pass; live chapter list and flashcard answer foregrounds verified as rgb(236,228,210) over rgb(37,33,25); no checked browser warnings/errors. Desktop/phone inspected. Local preview port 8139 now serves the updated durable checkout.",
+      "contrastRatios": {
+        "darkChapterText": 12.67,
+        "darkPrimaryButton": 6.53,
+        "lightPrimaryButton": 4.9,
+        "darkPrimaryPressed": 8.16
+      }
+    }
+  ]
 }
