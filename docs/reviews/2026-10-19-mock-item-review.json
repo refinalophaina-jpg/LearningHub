@@ -1,0 +1,2100 @@
+{
+  "edition": "2026-10-19-mock-v2",
+  "date": "2026-10-19",
+  "reviewer": "AI-assisted evidence and editorial review (Codex)",
+  "itemsReviewed": 150,
+  "independentPharmacistSignOff": false,
+  "psychometricCalibration": false,
+  "scope": "All 150 mock items: stem assumptions, best answer, all 600 options/rationales, evidence anchor, calculation checks and content coverage. Other app banks are not covered.",
+  "sources": {
+    "accel": {
+      "title": "FDA: accelerated approval",
+      "url": "https://www.fda.gov/patients/fast-track-breakthrough-therapy-accelerated-approval-priority-review/accelerated-approval"
+    },
+    "acs": {
+      "title": "ACC/AHA acute coronary syndromes guideline (2025)",
+      "url": "https://www.jacc.org/doi/10.1016/j.jacc.2024.11.009"
+    },
+    "ada": {
+      "title": "ADA Standards of Care: hospital care (2026)",
+      "url": "https://diabetesjournals.org/care/article-pdf/49/Supplement_1/S339/848851/dc26s016.pdf"
+    },
+    "af": {
+      "title": "ACC/AHA/ACCP/HRS atrial fibrillation guideline (2023)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11104284/"
+    },
+    "ahrq": {
+      "title": "AHRQ Health Literacy Universal Precautions Toolkit (3rd edition, 2024)",
+      "url": "https://www.ahrq.gov/health-literacy/improve/precautions/toolkit.html"
+    },
+    "allergy": {
+      "title": "AAAAI/ACAAI drug-allergy practice parameter (2022)",
+      "url": "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Allergist%20Resources/Statements%20and%20Practice%20Parameters/Drug-Allergy-2022.pdf"
+    },
+    "apix": {
+      "title": "Eliquis US prescribing information",
+      "url": "https://www.eliquis.com/eliquis/servlet/servlet.FileDownload?file=00P4z00001PhAa3EAF"
+    },
+    "beers": {
+      "title": "American Geriatrics Society Beers Criteria (2023)",
+      "url": "https://agsjournals.onlinelibrary.wiley.com/doi/10.1111/jgs.18372"
+    },
+    "benzo": {
+      "title": "ASAM and partner societies: benzodiazepine tapering guideline (2025)",
+      "url": "https://www.asam.org/quality-care/clinical-guidelines/benzodiazepine-tapering"
+    },
+    "bleed": {
+      "title": "ACC expert consensus: bleeding on oral anticoagulants (2020)",
+      "url": "https://cvquality.acc.org/docs/default-source/initiatives/reduce-the-risk-pci-bleed/2020-acc-expert-consensus-decision-pathway-on-management-of-bleeding-in-patients-on-oral-anticoagulants.pdf"
+    },
+    "bp": {
+      "title": "AHA/ACC high blood pressure guideline (2025)",
+      "url": "https://professional.heart.org/en/guidelines-statements/2025-ahaaccaanpaapaabcaccpacpmagsamaaspcnmapcnasgim-guideline-for-thecir0000000000001356"
+    },
+    "bup": {
+      "title": "Bupropion XL US prescribing information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=98d5977f-9b32-46db-bd36-a2c4d1b0710a"
+    },
+    "candida": {
+      "title": "IDSA candidiasis guideline (2016)",
+      "url": "https://www.idsociety.org/practice-guideline/candidiasis/"
+    },
+    "cap": {
+      "title": "ATS/IDSA adult CAP guideline: recommendations 9.1–9.2 (2019)",
+      "url": "https://www.idsociety.org/globalassets/idsa/practice-guidelines/community-acquired-pneumonia-in-adults/executive_summary.pdf"
+    },
+    "cdi": {
+      "title": "IDSA/SHEA C. difficile focused update (2021)",
+      "url": "https://www.idsociety.org/practice-guideline/clostridioides-difficile-2021-focused-update/"
+    },
+    "cds": {
+      "title": "AHRQ: meaningful decision support to reduce drug interactions",
+      "url": "https://digital.ahrq.gov/program-overview/research-stories/creating-meaningful-decision-support-reduce-drug-drug"
+    },
+    "cefepime": {
+      "title": "Cefepime US prescribing information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=be5f8ca6-7232-423a-a2d5-cccb7abe7921"
+    },
+    "cipro": {
+      "title": "Ciprofloxacin US prescribing information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=1edcad8e-6918-453b-e054-00144ff8d46c"
+    },
+    "ckd": {
+      "title": "KDIGO CKD guideline (2024; published guideline, not the 2027 public-review draft)",
+      "url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf"
+    },
+    "cloz": {
+      "title": "Clozapine US prescribing information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=883b5d43-0339-7dc1-f775-93791fb9b978"
+    },
+    "clozrems": {
+      "title": "FDA: clozapine REMS removal effective June 13, 2025",
+      "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-removes-risk-evaluation-and-mitigation-strategy-rems-program-antipsychotic-drug-clozapine"
+    },
+    "cmv": {
+      "title": "Valganciclovir US prescribing information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0d0bbc91-27f6-29bc-e063-6394a90a0027"
+    },
+    "cochrane": {
+      "title": "Cochrane Handbook: effect measures and effect estimates, chapter 6",
+      "url": "https://training.cochrane.org/handbook/current/chapter-06"
+    },
+    "cold": {
+      "title": "CDC Vaccine Storage and Handling Toolkit resources (July 2026)",
+      "url": "https://www.cdc.gov/vaccines/hcp/downloads/storage-handling-toolkit-resources.pdf"
+    },
+    "compound": {
+      "title": "FDA: human drug compounding",
+      "url": "https://www.fda.gov/drugs/guidance-compliance-regulatory-information/human-drug-compounding"
+    },
+    "dapto": {
+      "title": "Daptomycin US prescribing information",
+      "url": "https://labeling.pfizer.com/ShowLabeling.aspx?id=14351"
+    },
+    "dea": {
+      "title": "21 CFR 1301.76(b): theft and significant loss",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-II/part-1301/subject-group-ECFRa7ff8142033a7a2/section-1301.76"
+    },
+    "dep": {
+      "title": "Depakote US prescribing information",
+      "url": "https://www.rxabbvie.com/pdf/depakote.pdf"
+    },
+    "depress": {
+      "title": "USPSTF depression screening recommendation (2023)",
+      "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/screening-depression-suicide-risk-adults"
+    },
+    "diagnostic": {
+      "title": "Cochrane Handbook for Diagnostic Test Accuracy",
+      "url": "https://training.cochrane.org/handbook-diagnostic-test-accuracy"
+    },
+    "dig": {
+      "title": "Digoxin US prescribing information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b2d10d0-6e9d-4c39-a025-6b2f30ff6243"
+    },
+    "dka": {
+      "title": "ADA/EASD/JBDS/AACE/DTS hyperglycemic crises consensus (2024)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11272983/"
+    },
+    "e9": {
+      "title": "ICH E9 statistical principles for clinical trials",
+      "url": "https://www.fda.gov/media/71336/download"
+    },
+    "e9r1": {
+      "title": "ICH E9(R1) estimands and sensitivity analysis",
+      "url": "https://www.fda.gov/media/148473/download"
+    },
+    "econ": {
+      "title": "NICE technology appraisal manual: economic evaluation (methods only)",
+      "url": "https://www.nice.org.uk/process/pmg36/chapter/economic-evaluation-2/"
+    },
+    "enteral": {
+      "title": "ASPEN Safe Practices for Enteral Nutrition Therapy (2017)",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1177/0148607116673053"
+    },
+    "extrip": {
+      "title": "Primary dialyzability analysis: binding, Vd and molecular weight (1983)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6851257/"
+    },
+    "fmea": {
+      "title": "IHI Failure Modes and Effects Analysis tool",
+      "url": "https://www.ihi.org/library/tools/failure-modes-and-effects-analysis-fmea-tool"
+    },
+    "fn": {
+      "title": "IDSA guideline: neutropenic patients with cancer (2010 update)",
+      "url": "https://www.idsociety.org/practice-guideline/neutropenic-patients-with-cancer/"
+    },
+    "formulary": {
+      "title": "ASHP policy: medication formulary system management",
+      "url": "https://www.ashp.org/pharmacy-practice/policy-positions-database/2020/2016"
+    },
+    "gent": {
+      "title": "Gentamicin pediatric injection US prescribing information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=be5b414e-d598-4721-80ee-5836156ad210"
+    },
+    "gina": {
+      "title": "GINA asthma strategy report (2026)",
+      "url": "https://ginasthma.org/wp-content/uploads/2026/05/GINA-2026-Strategy-Report-WMS.pdf"
+    },
+    "glp": {
+      "title": "Ozempic US prescribing information",
+      "url": "https://www.novo-pi.com/ozempic.pdf"
+    },
+    "gold": {
+      "title": "GOLD COPD pocket guide (2026)",
+      "url": "https://goldcopd.org/wp-content/uploads/2026/01/GOLD-Pocket-Guide-2026-v1.1-20Nov2025_WMV2.pdf"
+    },
+    "hart": {
+      "title": "Asempa et al: Hartford nomogram dose and sampling assumptions (2019)",
+      "url": "https://journals.asm.org/doi/10.1128/aac.00148-19"
+    },
+    "hf": {
+      "title": "AHA/ACC/HFSA heart failure guideline (2022)",
+      "url": "https://professional.heart.org/-/media/832EA0F4E73948848612F228F7FA2D35.pdf"
+    },
+    "hit": {
+      "title": "ASH heparin-induced thrombocytopenia guideline (2018)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6258919/"
+    },
+    "hyperk": {
+      "title": "UK Kidney Association acute hyperkalaemia guideline (2023)",
+      "url": "https://www.ukkidney.org/sites/renal.org/files/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20191223_0.pdf"
+    },
+    "immuno": {
+      "title": "CDC altered immunocompetence",
+      "url": "https://www.cdc.gov/vaccines/hcp/imz-best-practices/altered-immunocompetence.html"
+    },
+    "kidney": {
+      "title": "NIDDK: drug dosing in adults with CKD",
+      "url": "https://www.niddk.nih.gov/research-funding/research-programs/kidney-clinical-research-epidemiology/laboratory/ckd-drug-dosing-providers"
+    },
+    "levo": {
+      "title": "Levoxyl US prescribing information",
+      "url": "https://labeling.pfizer.com/ShowLabeling.aspx?id=688"
+    },
+    "linez": {
+      "title": "Linezolid US prescribing information",
+      "url": "https://labeling.pfizer.com/ShowLabeling.aspx?id=4501"
+    },
+    "lith": {
+      "title": "Lithium carbonate US prescribing information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cc6f07db-c9e6-4e2d-90f8-00868954594d"
+    },
+    "measure": {
+      "title": "IHI Model for Improvement: establishing measures",
+      "url": "https://www.ihi.org/library/model-for-improvement/establishing-measures"
+    },
+    "mec": {
+      "title": "CDC US Medical Eligibility Criteria for Contraceptive Use (2024)",
+      "url": "https://www.cdc.gov/contraception/hcp/usspr/classifications-mec-contraception.html"
+    },
+    "medwatch": {
+      "title": "FDA MedWatch voluntary reporting guide",
+      "url": "https://www.fda.gov/safety/medwatch-fda-safety-information-and-adverse-event-reporting-program/reporting-serious-problems-fda"
+    },
+    "meta": {
+      "title": "Cochrane Handbook chapter 10: meta-analysis",
+      "url": "https://training.cochrane.org/handbook/current/chapter-10"
+    },
+    "midaz": {
+      "title": "Midazolam US labeling: hepatic/renal pharmacokinetic studies",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2b29422e-54d5-4a49-8522-e9cf752368c3"
+    },
+    "mssa": {
+      "title": "IDSA S. aureus measures set (January 2025)",
+      "url": "https://www.idsociety.org/globalassets/idsa/clinical-practice/quality-measurement-and-improvement/staphylococcus-aureus-measures-set-sams-update-january-2025.pdf"
+    },
+    "mtx": {
+      "title": "Methotrexate tablets US prescribing information (2026)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/008085s072lbl.pdf"
+    },
+    "na": {
+      "title": "Society for Endocrinology: severe symptomatic hyponatraemia (2016)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5314809/"
+    },
+    "nal": {
+      "title": "FDA: naloxone and emergency opioid-overdose response",
+      "url": "https://www.fda.gov/consumers/consumer-updates/access-naloxone-can-save-life-during-opioid-overdose"
+    },
+    "ncc": {
+      "title": "NCC MERP medication-error outcome index",
+      "url": "https://www.nccmerp.org/types-medication-errors"
+    },
+    "ni": {
+      "title": "FDA: non-inferiority clinical trials to establish effectiveness (2016)",
+      "url": "https://www.fda.gov/media/78504/download"
+    },
+    "nmba": {
+      "title": "SCCM/ASHP sustained neuromuscular blockade guideline (2016)",
+      "url": "https://sccm.org/clinical-resources/guidelines/guidelines/guidelines-for-sustained-neuromuscular-blockade-in"
+    },
+    "nonrandom": {
+      "title": "Cochrane Handbook chapter 25: nonrandomized studies",
+      "url": "https://training.cochrane.org/handbook/current/chapter-25"
+    },
+    "notation": {
+      "title": "ISMP Guidelines for Standard Order Sets",
+      "url": "https://www.ismp.org/sites/default/files/attachments/2018-01/StandardOrderSets.pdf"
+    },
+    "oct": {
+      "title": "Fasano et al: randomized trial of octreotide for sulfonylurea hypoglycemia (2008)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17764782/"
+    },
+    "opioid": {
+      "title": "CDC opioid prescribing guideline (2022)",
+      "url": "https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm"
+    },
+    "palip": {
+      "title": "Invega Sustenna US prescribing information",
+      "url": "https://www.janssenlabels.com/package-insert/product-monograph/prescribing-information/INVEGA%2BSUSTENNA-pi.pdf"
+    },
+    "pall": {
+      "title": "Kutner et al: randomized statin discontinuation trial (2015)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25798575/"
+    },
+    "pax": {
+      "title": "Paxlovid US prescribing information",
+      "url": "https://labeling.pfizer.com/ShowLabeling.aspx?id=19599"
+    },
+    "pdsa": {
+      "title": "IHI Model for Improvement: testing changes",
+      "url": "https://www.ihi.org/library/model-for-improvement/testing-changes"
+    },
+    "pen": {
+      "title": "FDA diabetes pen-sharing safety communication",
+      "url": "https://www.fda.gov/media/90757/download"
+    },
+    "pheny": {
+      "title": "Phenytoin US prescribing information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c2542b8-ac54-e85d-e063-6294a90a759b"
+    },
+    "pk": {
+      "title": "FDA population pharmacokinetics guidance (2022); model context only",
+      "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/population-pharmacokinetics"
+    },
+    "ppi": {
+      "title": "AGA clinical practice update: PPI deprescribing (2022)",
+      "url": "https://gastro.org/clinical-guidance/de-prescribing-proton-pump-inhibitors-ppis/"
+    },
+    "preg": {
+      "title": "American Thyroid Association: hyperthyroidism in pregnancy",
+      "url": "https://www.thyroid.org/hyperthyroidism-in-pregnancy/"
+    },
+    "prolia": {
+      "title": "FDA boxed warning: denosumab in advanced CKD (2024)",
+      "url": "https://www.fda.gov/drugs/drug-safety-communications/fda-adds-boxed-warning-increased-risk-severe-hypocalcemia-patients-advanced-chronic-kidney-disease"
+    },
+    "prop": {
+      "title": "Propofol US prescribing information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=3acf8e6c-827d-11e2-9e96-0800200c9a66&type=display"
+    },
+    "rca": {
+      "title": "IHI: RCA2 and Action Hierarchy tools",
+      "url": "https://www.ihi.org/library/tools/rca2-improving-root-cause-analyses-and-actions-prevent-harm"
+    },
+    "recall": {
+      "title": "FDA: recalls background and definitions",
+      "url": "https://www.fda.gov/safety/industry-guidance-recalls/recalls-background-and-definitions"
+    },
+    "reclast": {
+      "title": "Reclast US prescribing information (2026)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/021817s032lbl.pdf"
+    },
+    "recon": {
+      "title": "AHRQ MATCH medication reconciliation toolkit: high-risk situations",
+      "url": "https://www.ahrq.gov/patient-safety/settings/hospital/match/chapter-7.html"
+    },
+    "refeed": {
+      "title": "ASPEN consensus recommendations for refeeding syndrome (2020)",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/ncp.10474"
+    },
+    "sab": {
+      "title": "IDSA/ESCMID S. aureus bacteremia consensus (2026)",
+      "url": "https://www.idsociety.org/practice-guideline/staphylococcus-aureus-bacteremia/"
+    },
+    "sdm": {
+      "title": "AHRQ SHARE approach (reviewed 2026)",
+      "url": "https://www.ahrq.gov/sdm/share-approach/index.html"
+    },
+    "sepsis": {
+      "title": "SCCM Surviving Sepsis Campaign adult guideline (2026)",
+      "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026"
+    },
+    "shortage": {
+      "title": "ASHP Guidelines on Managing Drug Product Shortages",
+      "url": "https://www.ashp.org/-/media/assets/policy-guidelines/docs/guidelines/managing-drug-product-shortages.pdf"
+    },
+    "sinemet": {
+      "title": "Sinemet US prescribing information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9b17b028-964a-473c-823d-81423535bd66"
+    },
+    "sotalol": {
+      "title": "Sotalol US prescribing information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=bc35a3e8-681c-4fe8-96cd-b2a62f024c4b"
+    },
+    "statin": {
+      "title": "Atorvastatin US prescribing information",
+      "url": "https://labeling.pfizer.com/ShowLabeling.aspx?id=978"
+    },
+    "status": {
+      "title": "AES convulsive status epilepticus guideline and algorithm (2016)",
+      "url": "https://www.acep.org/siteassets/uploads/uploaded-files/acep/clinical-and-practice-management/clinical-policies/aesconvulsivestatusepilepticus.pdf"
+    },
+    "steward": {
+      "title": "CDC Core Elements of Hospital Antibiotic Stewardship",
+      "url": "https://www.cdc.gov/antibiotic-use/media/pdfs/hospital-core-elements-508.pdf"
+    },
+    "stroke": {
+      "title": "European Stroke Organisation IV thrombolysis guideline (2021)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7995316/"
+    },
+    "tacro": {
+      "title": "Tacrolimus US prescribing information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=10ceb3bc-11cc-13e4-e063-6394a90acce4"
+    },
+    "tadalafil": {
+      "title": "Tadalafil US prescribing information",
+      "url": "https://pi.lilly.com/us/cialis-pi.pdf"
+    },
+    "tls": {
+      "title": "eviQ: prevention of tumour lysis syndrome",
+      "url": "https://www.eviq.org.au/clinical-resources/side-effect-and-toxicity-management/prophylaxis-and-treatment/108-prevention-of-tumour-lysis-syndrome"
+    },
+    "tmp": {
+      "title": "TMP/SMX US prescribing information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=0b261114-77e7-ff08-e063-6394a90a4e03"
+    },
+    "uti": {
+      "title": "IDSA complicated UTI guideline (2025)",
+      "url": "https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections/"
+    },
+    "vacc": {
+      "title": "CDC timing and spacing of immunobiologics",
+      "url": "https://www.cdc.gov/vaccines/hcp/imz-best-practices/timing-spacing-immunobiologics.html"
+    },
+    "vanc": {
+      "title": "ASHP/IDSA/PIDS/SIDP vancomycin monitoring consensus (2020)",
+      "url": "https://www.idsociety.org/practice-guideline/vancomycin/"
+    },
+    "varen": {
+      "title": "Chantix/varenicline US prescribing information",
+      "url": "https://labeling.pfizer.com/ShowLabeling.aspx?id=557"
+    },
+    "vcontra": {
+      "title": "CDC immunization contraindications and precautions",
+      "url": "https://www.cdc.gov/vaccines/hcp/imz-best-practices/contraindications-precautions.html"
+    },
+    "vin": {
+      "title": "Vincristine US prescribing information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b22e4c8e-dbe1-4d4b-a026-e1812974071c"
+    },
+    "warf": {
+      "title": "Warfarin US prescribing information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c41b7c23-8053-428a-ac1d-8395e714c2f1"
+    }
+  },
+  "items": [
+    {
+      "id": "AD-MOCK-001",
+      "evidenceAnchor": "Stage C HFrEF: SGLT2 inhibitors, ivabradine eligibility and diuretics",
+      "sourceKeys": [
+        "hf"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "96bd949cbc661a402d2b0319e1f00d0c33d2e094629903960070ed7e2ba6644f",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-002",
+      "evidenceAnchor": "ACS oral P2Y12 loading doses and prior stroke contraindication",
+      "sourceKeys": [
+        "acs"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "fe0621f0aed4ab5b1ba209818cfd58d1745dbbfae6c319751078254565ea56f5",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-003",
+      "evidenceAnchor": "Anticoagulants: mechanical heart valves and warfarin management",
+      "sourceKeys": [
+        "af"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "8f573c18389d0ec1531d30099c4b9e49936f15d3d1fb569a49774e4190b267ce",
+      "difficulty": "Foundational safety/application; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-004",
+      "evidenceAnchor": "Sections 2.1 and 8.6: nonvalvular AF dose reduction",
+      "sourceKeys": [
+        "apix"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "8cf89aecf449ef94b3028a51bf67dd568502aa7392ed2194dab0f3f6b39a1838",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-005",
+      "evidenceAnchor": "Renin-angiotensin system inhibition: ACE inhibitor to ARNI, 36-hour washout",
+      "sourceKeys": [
+        "hf"
+      ],
+      "task": "Apply a medication-switch timing constraint",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "fe3b7ee7a0f7f6d06c646d96622e46221dc95545bd65677dc93ee81dbdcfa515",
+      "difficulty": "Foundational safety/application; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-006",
+      "evidenceAnchor": "Section 6.8.2: AF with chronic coronary disease beyond one year",
+      "sourceKeys": [
+        "af"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "878d99148f093af1ffbc334cf4c226ccf70762f7eda439909e063f21d44387d9",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-007",
+      "evidenceAnchor": "Recommendations 2.6, 3.1 and 3.5; table 2 anticoagulant organ-clearance considerations",
+      "sourceKeys": [
+        "hit"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "9ea3a667a717ac84f130431b35236556deb1828152274cf3894f16586b1f95fb",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-008",
+      "evidenceAnchor": "Hospitalized HF: inadequate diuresis and intensification of loop/combination therapy",
+      "sourceKeys": [
+        "hf"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "6bbb709b4c524200e6737146c8e6b23399b3aa228563736535a2ca69a1c4610f",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-009",
+      "evidenceAnchor": "Myopathy/rhabdomyolysis and clarithromycin interaction",
+      "sourceKeys": [
+        "statin"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "621bb3877d23a796f23f2bf32af72a9649f1de76b5097222b960b4d34fc0d4ec",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-010",
+      "evidenceAnchor": "Tadalafil contraindication with nitrates; at least 48 hours if nitrate medically necessary with close monitoring",
+      "sourceKeys": [
+        "tadalafil",
+        "acs"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "dd946d1b36487e347139e4838c28439fb67824c00fb627479d5ab675a46aab04",
+      "difficulty": "Foundational safety/application; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-011",
+      "evidenceAnchor": "Recommendation 9.2: severe CAP without MRSA/Pseudomonas risk",
+      "sourceKeys": [
+        "cap"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "1eef06cdf633295aaa00a4a1d8ffe206c411dcc764941fb432415685c7a80f57",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-012",
+      "evidenceAnchor": "IV-to-oral transition: effective agents must reach blood, urine and relevant tissue",
+      "sourceKeys": [
+        "uti"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "6212e426d346d2cabcfb5d7fe5369c2ddb14e5080193b8fbb8d57f7bfa25dec4",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-013",
+      "evidenceAnchor": "Recommendation I and table 1: initial nonfulminant CDI",
+      "sourceKeys": [
+        "cdi"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "59af680bf21c21cb8a12a4e9a3c251d9cb3829dcf673c9902e8a2eb230a25c3c",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-014",
+      "evidenceAnchor": "Recommendations 3–5, 11–12: C. glabrata step-down and clearance",
+      "sourceKeys": [
+        "candida"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "07098e62b27b821f2d416934f262da729ecde9e410f3d6fb102b1a8fe844c954",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-015",
+      "evidenceAnchor": "Non-steady-state creatinine and limitations of estimated kidney function",
+      "sourceKeys": [
+        "kidney"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "079bdfff80b45e44f4dc8ea216efbc13da33a8931bea7f8154e1326a6a650125",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-016",
+      "evidenceAnchor": "Daptomycin limitations of use; linezolid pneumonia indication",
+      "sourceKeys": [
+        "dapto",
+        "linez"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "b34bffb53e9de9e24bdaa212c1e8120b7caa95ab4a9746a24bb416a7024d989c",
+      "difficulty": "Foundational safety/application; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-017",
+      "evidenceAnchor": "Section 2: adult renal-adjustment table, treatment/induction versus maintenance/prevention",
+      "sourceKeys": [
+        "cmv"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "023d0a7422016d90b545e799135953fe6802aa9e78c4a4318079d5588cac6765",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-018",
+      "evidenceAnchor": "MSSA beta-lactam preference; 2026 SAB consensus: clearance and diagnostic evaluation",
+      "sourceKeys": [
+        "mssa",
+        "sab"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "6844bba6d89345c014190b79368f864a4e8fe03b4c46ddc2475318e936de7de6",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-019",
+      "evidenceAnchor": "2026 recommendations: first-line vasopressor",
+      "sourceKeys": [
+        "sepsis"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "096210b507de9c512212aae291a735fccbc6740c280e5821608581b5b940d59b",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-020",
+      "evidenceAnchor": "Protocol requirements: analgesia/sedation separate from neuromuscular monitoring",
+      "sourceKeys": [
+        "nmba"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "d106e1f07e560f2b0d6b2d365d0bb460edcaed8e8dc225d1fc24af3e131a2610",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-021",
+      "evidenceAnchor": "2026 resuscitation: dynamic measures and individualized fluids",
+      "sourceKeys": [
+        "sepsis"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "c851c903fd652d67c42011db1512e1d7d4bc66e80c25b3d4c38c891f2aad7cc8",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-022",
+      "evidenceAnchor": "Warnings: propofol infusion syndrome, risk factors and discontinuation",
+      "sourceKeys": [
+        "prop"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "f9c882ab411a708bf44ec58146eb2b51cffb29e6db1c672b0a2ad6308965551f",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-023",
+      "evidenceAnchor": "DKA diagnostic criteria; euglycemic DKA; insulin, dextrose, fluids and potassium",
+      "sourceKeys": [
+        "dka"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "21fa3a8608b675135e647d30b64f7b7678d8310775e77282cf5d76854da4dddc",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-024",
+      "evidenceAnchor": "Type 1 diabetes and perioperative/NPO insulin management",
+      "sourceKeys": [
+        "ada"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "73f1f4b1742ef22e3fb35fcaa278a2473f049ccdb889458685bcf69912fc687e",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-025",
+      "evidenceAnchor": "Randomized ED trial: octreotide added to dextrose/carbohydrate supportive treatment",
+      "sourceKeys": [
+        "oct"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "aaf0dff5126bdafd90d585d0d9093df17bcafc43e95583f68abd49403dd3af27",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-026",
+      "evidenceAnchor": "Warnings: severe GI adverse reactions and severe gastroparesis",
+      "sourceKeys": [
+        "glp"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "c36370ec2ec933c11eadc80806660d254d04907e27022cf8f59c3cf957002c82",
+      "difficulty": "Foundational safety/application; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-027",
+      "evidenceAnchor": "Acute severe hyperkalemia: ECG changes, IV calcium and subsequent potassium shifting/removal",
+      "sourceKeys": [
+        "hyperk"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "4dc51d6dab21bea1742246f5f9c287b176c14cd7f4851c1f51bb4f5ea26dc25b",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-028",
+      "evidenceAnchor": "Recommendation 3.6.4: avoid combined ACE inhibitor, ARB and direct renin inhibitor",
+      "sourceKeys": [
+        "ckd"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "74272da085da04e248089ecac4fc6ee0c7ca9bb64593dde246e08922a085207b",
+      "difficulty": "Foundational safety/application; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-029",
+      "evidenceAnchor": "Renal replacement therapy: intermittent HD, predialysis 15–20 mg/L and dose timing",
+      "sourceKeys": [
+        "vanc"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "de60daba23c9d03adb383f6dd8fdabe9f4f21d066b589dd48c64d22a77d136d5",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-030",
+      "evidenceAnchor": "Advanced CKD: assess CKD-MBD and correct hypocalcemia; Reclast contraindications",
+      "sourceKeys": [
+        "prolia",
+        "reclast"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "7aa7bcea74996534aee578707ffd276d6758b134a549cbe591579953f0460fc4",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-031",
+      "evidenceAnchor": "Dosage and warnings: renal disease, hypoalbuminemia and unbound concentrations",
+      "sourceKeys": [
+        "pheny"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "780e1622d3231192b2bcc4492eb337d8965f47f0f9817176d93dee881687458f",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-032",
+      "evidenceAnchor": "Status algorithm: levetiracetam 60 mg/kg, maximum 4,500 mg",
+      "sourceKeys": [
+        "status"
+      ],
+      "task": "Calculate and apply a protocol maximum",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "b228917982c6009f76c02aa567f390acf28d615c513b36e4ea6019c24ab690a7",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-033",
+      "evidenceAnchor": "Wearing-off effects, dose individualization and abrupt-withdrawal warning",
+      "sourceKeys": [
+        "sinemet"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "fb40274eacd4b3ceb2701db7bdf738baa055f2c02c06e068b67f6ef924864c35",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-034",
+      "evidenceAnchor": "ESO IV thrombolysis guideline: recent NOAC use and mechanical thrombectomy distinction",
+      "sourceKeys": [
+        "stroke"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "3b2992a55c2c65ba2f695ff820402a8a01c5edb2b0d40788927d42ad07571384",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-035",
+      "evidenceAnchor": "Warnings: dehydration; interactions: NSAIDs and reduced renal lithium clearance",
+      "sourceKeys": [
+        "lith"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "0d16e0de2796a7f5bb7a4dc327f827cb5d6fea5cbd353ebe4398ed76c3dbda90",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-036",
+      "evidenceAnchor": "FDA 2025 removal: separate administrative requirements from ongoing ANC monitoring",
+      "sourceKeys": [
+        "clozrems"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "4ed3c195a245721fce04c085c7be73b83472c42fc73fd520faa7b5ff565d20ae",
+      "difficulty": "Foundational safety/application; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-037",
+      "evidenceAnchor": "Contraindications: current or prior bulimia/anorexia",
+      "sourceKeys": [
+        "bup"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "94e7f963eb3f029047017ba757e60d566a117558473db26d995f74da5b76167d",
+      "difficulty": "Foundational safety/application; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-038",
+      "evidenceAnchor": "Sections 2.2 and 2.5: initiation and mild renal impairment",
+      "sourceKeys": [
+        "palip"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "513f3641b5fc69494900caf338074711eb026b3faeca348744b02f21048e198f",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-039",
+      "evidenceAnchor": "Follow-up exacerbation pathway: LABA/LAMA to triple therapy and eosinophils",
+      "sourceKeys": [
+        "gold"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "2894f4e6784370fa3a23e1da085c76c7be464aa67c149b0a6e1538cc71b23d64",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-040",
+      "evidenceAnchor": "Safety: LABA without ICS; controller/reliever selection",
+      "sourceKeys": [
+        "gina"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "60ea62b057667eac2d98aa4d993f6d7db58dfcf9c002a7dd111279944bb7291e",
+      "difficulty": "Foundational safety/application; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-041",
+      "evidenceAnchor": "Before stepping up: assess inhaler technique and device suitability",
+      "sourceKeys": [
+        "gina"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "9043ef5c524812184453d9eb066811cc4a912e56157f7e23e44c93f0a646145a",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-042",
+      "evidenceAnchor": "Neurologic conditions: migraine with aura; CHC category 4",
+      "sourceKeys": [
+        "mec"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "48b478a2f8a3b587bed8f3a6706d6c5a11b601865a25874edc6f9166f96aa959",
+      "difficulty": "Foundational safety/application; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-043",
+      "evidenceAnchor": "Anticonvulsant interactions; IUD eligibility and heavy/prolonged bleeding",
+      "sourceKeys": [
+        "mec"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "4dd5d44cf3c1a28b8d8e95499b81e7cbb47cf24c00a94b39529228af700c4c0e",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-044",
+      "evidenceAnchor": "Treatment during pregnancy: first-trimester PTU and avoidance of radioiodine/block-and-replace",
+      "sourceKeys": [
+        "preg"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "ee42d2351be44ced8b88574a3e8827eb47832a3ac85c6489ae1fe98fbea014f5",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-045",
+      "evidenceAnchor": "Original dimensional-analysis case; concentration-change counseling and demonstrated mL dosing",
+      "sourceKeys": [
+        "ahrq"
+      ],
+      "task": "Recalculate after a formulation concentration change",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "20506b0f7719f7d6dc49d8b1ee1c21b43990094ed83a715d13b2448ca4cbf419",
+      "difficulty": "Foundational safety/application; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-046",
+      "evidenceAnchor": "2022 practice parameter: penicillin anaphylaxis and a non-cross-reactive cephalosporin",
+      "sourceKeys": [
+        "allergy"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "e6a4eefaaed45189a19ee093fbc2770524744cf81f93862b1e5814e9ae895c7a",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-047",
+      "evidenceAnchor": "Neonatal renal maturation/monitoring; adult nomogram population limitations",
+      "sourceKeys": [
+        "gent",
+        "hart"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "0de2c39cbf9a62580d59542a8c8f5cea03c4f8c4301626615180b62cc69e4b4b",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-048",
+      "evidenceAnchor": "Neurotoxicity, paralytic ileus and CYP3A inhibitor interactions",
+      "sourceKeys": [
+        "vin"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "190c853ad10e445315caaa100a7aef573064c95f6efa715eea4b24962a56a2f7",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-049",
+      "evidenceAnchor": "High-risk TLS; rasburicase contraindication in G6PD deficiency; individualized hydration",
+      "sourceKeys": [
+        "tls"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "6b735c71a9000cdbb372061de5b884d3c968748fdc80af1181ef172f7445b1d1",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-050",
+      "evidenceAnchor": "High-risk febrile neutropenia: antipseudomonal IV beta-lactam; vancomycin indication for instability",
+      "sourceKeys": [
+        "fn"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "16e213c0b707f1fa4515a18b04372ff576040eb5dafa7e5c2a3a25b63f145127",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-051",
+      "evidenceAnchor": "ASPEN diagnostic severity, early electrolyte monitoring and calorie reduction/advancement",
+      "sourceKeys": [
+        "refeed"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "b42a4cf57b372b0005d1addf95e7bfaabe45674be83079d981a02944b6c7669a",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-052",
+      "evidenceAnchor": "Severe symptoms: initial approximately 5-mmol/L rise; reassessment and prevention of overcorrection",
+      "sourceKeys": [
+        "na"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "1e2b421aa2dc304451fc8230e5e23e190c52cec228d509966b751f028be814ec",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-053",
+      "evidenceAnchor": "Anticholinergic/CNS burden in delirium; risks of abrupt benzodiazepine withdrawal",
+      "sourceKeys": [
+        "beers",
+        "benzo"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "65c459f1667513a56b3ea5396933b79a5863cc72f8446156707fe69e879ad252",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-054",
+      "evidenceAnchor": "Opioid emergency response: ventilation, repeat reversal and recurrence monitoring",
+      "sourceKeys": [
+        "nal"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "7ed701a2991e8ef95cf467599fd2b6affa98ec696843123c5ca5916e3a01ba38",
+      "difficulty": "Foundational safety/application; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-055",
+      "evidenceAnchor": "Serious MRSA AUC target 400–600; original proportional-dose calculation",
+      "sourceKeys": [
+        "vanc"
+      ],
+      "task": "Calculate exposure adjustment under explicit linear assumptions",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "c9c0aa7505982a239dbb56bc024c76fcd20985bc80315a924d5b905b8033c1ed",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-056",
+      "evidenceAnchor": "Self-contained one-compartment model: half-life and approach to steady state; all inputs supplied",
+      "sourceKeys": [
+        "pk"
+      ],
+      "task": "Combine half-life and accumulation calculations",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "6a89155cf9d8b241a1beb34fb7362237ceedf74e34f3c7991ac0a91f06e3ec11",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-057",
+      "evidenceAnchor": "Self-contained linear model: simultaneous bioavailability and clearance changes",
+      "sourceKeys": [
+        "pk"
+      ],
+      "task": "Integrate two PK changes rather than extrapolate dose alone",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "301be47d9bf67a64dfbcd8bc5a9f63fe1feae63540f21a4544713ab29b3188be",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-058",
+      "evidenceAnchor": "Self-contained model: loading = Vd×target; infusion rate = CL×target",
+      "sourceKeys": [
+        "pk"
+      ],
+      "task": "Separate distribution from elimination effects",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "bc6d9566e7be85dbe0ad5c4bbbe73e1a2f9200fc7274b7e895fd5755e15b462d",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-059",
+      "evidenceAnchor": "Self-contained first-order elimination model",
+      "sourceKeys": [
+        "pk"
+      ],
+      "task": "Calculate elapsed time to an exposure threshold",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "c90a8a5b1b1da08bb154228ceb00553b49bbd8977ece1272b70200425d472303",
+      "difficulty": "Foundational safety/application; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-060",
+      "evidenceAnchor": "Original dimensional-analysis calculation; verified order assumed, not a universal anticoagulant starting dose",
+      "sourceKeys": [
+        "pk"
+      ],
+      "task": "Convert a verified weight-based infusion order to pump units",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "291c1180b27ab8ae2c349f174330d3f3a82f86cc0e359f7a1e64c2cdd18c5f98",
+      "difficulty": "Foundational safety/application; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-061",
+      "evidenceAnchor": "Self-contained linear model: oral loading and average steady-state maintenance",
+      "sourceKeys": [
+        "pk"
+      ],
+      "task": "Calculate and distinguish loading versus maintenance",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "53e2d0f1721230c3ee95b3441bfa1547ec6169c5987ee5f47207c89b57e6b124",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-062",
+      "evidenceAnchor": "Clinical pharmacology: saturable metabolism; dose changes and steady state",
+      "sourceKeys": [
+        "pheny"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "38aa5f7ba863de75bd807655164fd5cef1f3f4139c00f5f36316b3e42cfd85c5",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-063",
+      "evidenceAnchor": "AUC estimation methods require reliable concentration and dose-time data",
+      "sourceKeys": [
+        "vanc"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "009ed03b908e579fb2a4c04368f8bf37e336c7982ed4f865740dad90b2ece771",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-064",
+      "evidenceAnchor": "Warnings: neurotoxicity with renal impairment; delivered CRRT clearance versus prescribed therapy",
+      "sourceKeys": [
+        "cefepime"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "aea7ef0ca6a947c14a00b26b9dd1fa42f97336d434a887ed99e2407883959fe5",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-065",
+      "evidenceAnchor": "Original Hartford dose 7 mg/kg; sampling 6–14 hours and dose-ratio dependence",
+      "sourceKeys": [
+        "hart"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "ae69d6dd28d606fd64d20c3ca0d9998cfe2e3156ba95c652d17fe08875a7d5d7",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-066",
+      "evidenceAnchor": "Primary dialyzability analysis: distribution and binding explain only part of removal variability; toxin-specific assessment needed",
+      "sourceKeys": [
+        "extrip"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "7225360fdec4ffa4215ae9e922993ebe79d03f839826fa8adab368efa52b1c3b",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-067",
+      "evidenceAnchor": "Interaction table: warfarin, prolonged prothrombin time/INR monitoring",
+      "sourceKeys": [
+        "tmp"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "f5770f7a9e1bf70db0b48d0f185c03f35c0b4acc694ae9d1ca95ad85ab7bfb08",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-068",
+      "evidenceAnchor": "Drug-interaction table: simvastatin/lovastatin interruption window",
+      "sourceKeys": [
+        "pax"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "9f1c2760d22ca82a5115cb3f61db5f96f10becedc3ce77c7a736543f07945278",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-069",
+      "evidenceAnchor": "Section 5.3: serotonin syndrome with serotonergic agents",
+      "sourceKeys": [
+        "linez"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "3794bf281070cabb2b277c178647461fc3f04b5e92187b6449fa3edb5efd8661",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-070",
+      "evidenceAnchor": "Nephrotoxicity and strong CYP3A inhibitor table: clarithromycin",
+      "sourceKeys": [
+        "tacro"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "587bcf95a0291281332ef729c792c6bf1fe3ae643d09ea50208ee2252c21505a",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-071",
+      "evidenceAnchor": "Sections 2 and 7: calcium/iron separation at least four hours; follow-up after administration changes",
+      "sourceKeys": [
+        "levo"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "b7249e083bdb235135b952ddb74d4577930ed92f2f89224d8ce7fad91f7d961c",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-072",
+      "evidenceAnchor": "Administration: ciprofloxacin at least two hours before or six hours after multivalent cations",
+      "sourceKeys": [
+        "cipro"
+      ],
+      "task": "Apply an asymmetric drug-separation interval",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "ad5d48203b51e38b271a759fc39e62e074b0e3638a69ba22ae6497386599c80a",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-073",
+      "evidenceAnchor": "QT ≥500 management, hypokalemia contraindication and other QT-prolonging drugs",
+      "sourceKeys": [
+        "sotalol"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "2dd91bb22d21057e50d1a04a0211d1388c652b640957a792000dc2c5ec88d577",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-074",
+      "evidenceAnchor": "Carbapenem interaction: decreased valproate concentrations and alternative therapy/monitoring",
+      "sourceKeys": [
+        "dep"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "dc8c0fef392051eed4322619e915fa4bbaf9aabcfd262b1fabf125d0dd4fef5d",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-075",
+      "evidenceAnchor": "Medication stewardship: NSAID nephrotoxicity, RAAS blockade and volume-depletion risk",
+      "sourceKeys": [
+        "ckd"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "cdedd586a43d64904dfcaac78ca8648348b2c9a8f2696e1dc734864656e77f87",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-076",
+      "evidenceAnchor": "Post-distribution sampling at least six hours after dose; amiodarone interaction and renal clearance",
+      "sourceKeys": [
+        "dig"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "0ec842a6e0d992f9445e4980d8fe6ddf9544cbb94ab30afa0b2d812db7605d5c",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-077",
+      "evidenceAnchor": "Mineralocorticoid receptor antagonists: eGFR >30 and potassium <5.0 at initiation",
+      "sourceKeys": [
+        "hf"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "1a0786459ac82a510dcf0bc8bf1e9a6dbb580c3c52568a6a8c2a9c1b8b2c1f13",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-078",
+      "evidenceAnchor": "Section 5.1: myelosuppression, weekly CBC and severe renal impairment risk",
+      "sourceKeys": [
+        "linez"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "3280da9e0bf609c6b49c1579303ab9760dbf21d00b336d2906bd4eb1f8e1e659",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-079",
+      "evidenceAnchor": "Boxed warning and precautions: auditory/vestibular toxicity and monitoring",
+      "sourceKeys": [
+        "gent"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "b4e82fb39a267da9cd3bca6e53fd5f57a7aa885c99f8d7a437c8a4ede6b930d5",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-080",
+      "evidenceAnchor": "Warnings: fatal daily-versus-weekly errors; overdose management",
+      "sourceKeys": [
+        "mtx"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "30fcd80cc197aeeb0754b0c03352e4e31cb83aada38410563d92ced2dcb45f34",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-081",
+      "evidenceAnchor": "SGLT2 practice points: reversible eGFR dip, temporary withholding during illness/fasting and volume assessment",
+      "sourceKeys": [
+        "ckd"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "5db9b90bc112abb5f2d9ebe0865e6edf14bf0afd59b1788a283a0681b2ca8f11",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-082",
+      "evidenceAnchor": "Boxed warning and section 5: discontinue upon suspicion of myocarditis/cardiomyopathy",
+      "sourceKeys": [
+        "cloz"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "cfc3de5db88c8aebe1b2d77f87dae74fb1b4384a3360606cdc9afdff64e1d88e",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-083",
+      "evidenceAnchor": "2020 ACC major/life-threatening VKA bleeding: 4F-PCC and IV vitamin K",
+      "sourceKeys": [
+        "bleed"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "c5b2f1a2f48c391985f638efff9cda759335fe8b921ec9828148e1074758b32d",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-084",
+      "evidenceAnchor": "Clinical pharmacology: cirrhosis, reduced clearance/prolonged half-life; respiratory monitoring",
+      "sourceKeys": [
+        "midaz"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "0bd8b9edbe2ef1fe75364c7cf713f11ac99a68a991bdd363a65a8a48d288df9e",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-085",
+      "evidenceAnchor": "ACE inhibitor/ARNI contraindication and reconciliation of a planned switch",
+      "sourceKeys": [
+        "hf"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "fc3819a2887928911e57598b557d75e51c64eee20fce78ea9eacfae4c0de66f9",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-086",
+      "evidenceAnchor": "Resistant hypertension assessment: adherence, home/out-of-office BP and regimen optimization",
+      "sourceKeys": [
+        "bp"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "fdbbe067b984ebe90d694f79b099d8996a7b908dd33f167056e4b2db359ee29b",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-087",
+      "evidenceAnchor": "Initial taper pace, individualized adjustments and avoidance of abrupt discontinuation",
+      "sourceKeys": [
+        "benzo"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "0e24b4f928dc4b127872fa09ed3bc0f7e9ea32929db373280d28592c7293e4d7",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-088",
+      "evidenceAnchor": "AGA best practice advice 1–2, 6–10: indication review, bleeding risk, rebound and stopping options",
+      "sourceKeys": [
+        "ppi"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "fd1113e32f231c6eb4b73d134560213400287318938fc0561483835269c028c3",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-089",
+      "evidenceAnchor": "Medication stewardship: NSAID-related nephrotoxicity and full OTC medication review",
+      "sourceKeys": [
+        "ckd"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "bb20655de5e03efe188919f4274d2e8571da051ec886b0f5d3662be11e430a15",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-090",
+      "evidenceAnchor": "IV-to-oral transition and duration: improving gram-negative bacteremic cUTI; exclusions/individualization",
+      "sourceKeys": [
+        "uti"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "9a736a1c8bb98905d91e97a50af5387c79bfed0e4f52922752e278843c4f9519",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-091",
+      "evidenceAnchor": "Evidence-based HFrEF beta blockers and formulation-specific metoprolol succinate",
+      "sourceKeys": [
+        "hf"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "73af00c8f1ee1ca8263d3aaa0061efe9461041cec6fdca426e09e457f392bf65",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-092",
+      "evidenceAnchor": "ASPEN safe practices: enteral medication formulation, separate administration and flushing",
+      "sourceKeys": [
+        "enteral"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "91e7d129f3deb5de6ba4246798674f1725bee7ea6a73da14eaa888453e1d30a8",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-093",
+      "evidenceAnchor": "Apixaban section 2.2 missed dose; teach-back with a concrete schedule",
+      "sourceKeys": [
+        "apix",
+        "ahrq"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "6177301002ef5b5b4fbb6bdbb205348b078fef380b5146b857e0d7dc55d77d49",
+      "difficulty": "Foundational safety/application; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-094",
+      "evidenceAnchor": "Shared decision-making and decision aids for AF stroke-prevention therapy",
+      "sourceKeys": [
+        "af"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "bfad1fd2a6bb34fdfd012ae65866342245527c114752b9bfcff931315400b221",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-095",
+      "evidenceAnchor": "Tools: address language differences, teach-back and medication management",
+      "sourceKeys": [
+        "ahrq"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "0a34920a0e9980f2c44ff8bfd7e01679a157d4679eb087ca2e4dd3e6b213d664",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-096",
+      "evidenceAnchor": "Inhaler skills: device-specific technique, DPI inspiratory flow and return demonstration",
+      "sourceKeys": [
+        "gina"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "9af5eff76f033c87693f4f1ee026f50f76260b3d18b867e57160668039c0ca30",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-097",
+      "evidenceAnchor": "Factors affecting INR: dietary vitamin K; patient counseling on consistent intake",
+      "sourceKeys": [
+        "warf"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "c637c28b0fd10fe77616b51c97074ddb4651e31839624c751eb38a6da8fbef54",
+      "difficulty": "Foundational safety/application; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-098",
+      "evidenceAnchor": "Medication management: clear dosing instructions and demonstration with a calibrated device",
+      "sourceKeys": [
+        "ahrq"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "6c924dfc3557618a7731cf81d7050bc2b9c3d51dab34da288c90c50ec0a73dcc",
+      "difficulty": "Foundational safety/application; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-099",
+      "evidenceAnchor": "Botanical products and CYP induction; monitor INR with starting/stopping interacting products",
+      "sourceKeys": [
+        "warf"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "353aa0381d75301a198509002d05772afddd42a19a5e99bf5830f34d1d0ddbf5",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-100",
+      "evidenceAnchor": "Overdose response: emergency assistance, ventilation/CPR and repeat dosing",
+      "sourceKeys": [
+        "nal"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "7b3d34117386a022d69ecc34e608c95071dcde8244bceb167a15fb671aac1eac",
+      "difficulty": "Foundational safety/application; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-101",
+      "evidenceAnchor": "MATCH: resolve discrepancies and communicate a single reconciled transition plan",
+      "sourceKeys": [
+        "recon"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "2362f895a76ec3d85c738bdf420ec3e616ac331572ce45ddaba9805df0369c00",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-102",
+      "evidenceAnchor": "Discharge insulin education: device identification, dose/timing and demonstrated understanding",
+      "sourceKeys": [
+        "ada",
+        "ahrq"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "4160c3a79342a059136befaf646197e38d2b1593927ef55f066c92cdacb9bdd1",
+      "difficulty": "Foundational safety/application; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-103",
+      "evidenceAnchor": "Low-risk remote benign cutaneous penicillin reactions and direct oral challenge",
+      "sourceKeys": [
+        "allergy"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "f1d734973f8e493fd7e7a5e65332a8a0012a5e1834ad461cfa57391d71b112ab",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-104",
+      "evidenceAnchor": "Positive screens need diagnostic evaluation; distinguish depressive symptoms from a complete diagnosis",
+      "sourceKeys": [
+        "depress"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "f1181d82fa9c8983df4dd569541b8cef1570e8967e8d3676a20f6cd29772298b",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-105",
+      "evidenceAnchor": "Therapeutic drug monitoring: adherence, trough interpretation and safe individualized adjustment",
+      "sourceKeys": [
+        "tacro"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "9ab9088c40865b37a8108aaf196870e6878c98136644a4a0db8cbf6199d161c2",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-106",
+      "evidenceAnchor": "Kutner trial population and individualized preventive-treatment decisions in life-limiting illness",
+      "sourceKeys": [
+        "pall"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "f64123e154d8530141e41e609a607d497110788aff0bcc54f5f8a74a0520bb23",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-107",
+      "evidenceAnchor": "Persistent SAB: source control, follow-up cultures and deep/endovascular evaluation",
+      "sourceKeys": [
+        "sab"
+      ],
+      "task": "Integrate case findings to choose the best action",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "64957821bf3165db2c5593b9ce449a346bc12d0237e0a684a77db2366a300083",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-108",
+      "evidenceAnchor": "Body surface area de-indexing and drug-label-specific kidney-function methods",
+      "sourceKeys": [
+        "kidney"
+      ],
+      "task": "Distinguish kidney estimates and apply a dosing cutoff appropriately",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "ee444b5be076d7fa0ab1504918a2cbd2938eb7baacb0d008ec1821a27e76db4f",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-109",
+      "evidenceAnchor": "Dichotomous effects: risk difference, relative reduction and NNT",
+      "sourceKeys": [
+        "cochrane"
+      ],
+      "task": "Calculate related effect measures",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "f8850119c49a79803d3a02a67f57ce3578ffc9acbb5b928edef9a55ff9dcd8fd",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-110",
+      "evidenceAnchor": "Risk difference and number needed to treat for an additional harmful outcome",
+      "sourceKeys": [
+        "cochrane"
+      ],
+      "task": "Calculate harm and contextualize net benefit",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "14bddfb603d887c422ea61606e9ace00cd57db9312f4cadff72f379203b9ecd8",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-111",
+      "evidenceAnchor": "Diagnostic accuracy 2×2 table; original prevalence/sensitivity/specificity calculation",
+      "sourceKeys": [
+        "diagnostic"
+      ],
+      "task": "Use prevalence to interpret a positive test",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "85d4d1088be8c63ac7c1eb7ba1456ef29d5b88958a6d6a98721f849ccc7f68a1",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-112",
+      "evidenceAnchor": "Hazard ratio null value, confidence intervals and distinction from equivalence/noninferiority",
+      "sourceKeys": [
+        "cochrane",
+        "ni"
+      ],
+      "task": "Interpret uncertainty rather than only the point estimate",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "ebe1a9655ac95fd4553cdcadf5f8233b46ecc0aeb9b2cc7cdbcbc7caf72ca4e3",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-113",
+      "evidenceAnchor": "Analysis populations, assay sensitivity and comparison of confidence limits to prespecified NI margin",
+      "sourceKeys": [
+        "ni"
+      ],
+      "task": "Appraise discordant noninferiority analyses",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "9236583bf316a0011b65317f36f78de0abe57d580a55559d98f22cd793699aee",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-114",
+      "evidenceAnchor": "Multiplicity, prespecified primary/secondary outcomes and interpretation of p-values",
+      "sourceKeys": [
+        "e9"
+      ],
+      "task": "Appraise a nominally positive secondary endpoint",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "7ffa754cebb2f6f7403bd353b55795465e653097f929ab33aa1f55ef87a0211c",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-115",
+      "evidenceAnchor": "Match the estimand and paired design; original continuous-outcome test-selection scenario",
+      "sourceKeys": [
+        "e9",
+        "cochrane"
+      ],
+      "task": "Select a test using dependence and assumptions",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "53fac779431bdb1b9dce081d23670606ec4186e430a0c164ef55fa127ee06f62",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-116",
+      "evidenceAnchor": "Cochrane nonrandomized-study appraisal: confounding, selection and case-control effect measures",
+      "sourceKeys": [
+        "nonrandom"
+      ],
+      "task": "Interpret an observational safety association",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "58975758d052e9cf535a39331f87aa7893e9efba7f93539a58a65d5e08e56a2b",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-117",
+      "evidenceAnchor": "Estimands, intercurrent events, missing data and sensitivity analyses",
+      "sourceKeys": [
+        "e9r1"
+      ],
+      "task": "Assess robustness to differential missing outcomes",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "5b7dcc35b83917114e7a6d21f0f0489e4d9b30f0ee30d948548778c5f4a8017e",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-118",
+      "evidenceAnchor": "Time-to-event effects and time-specific absolute risk/NNT",
+      "sourceKeys": [
+        "cochrane"
+      ],
+      "task": "Distinguish relative hazard from absolute benefit",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "129c129b9ee84b527ab09b27aa310b0eb916e7c503e60a0330321e96a0831cf6",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-119",
+      "evidenceAnchor": "Cochrane synthesis: clinical/methodologic heterogeneity, model limits and interpretation",
+      "sourceKeys": [
+        "meta"
+      ],
+      "task": "Judge whether pooling answers a useful clinical question",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "a8298fa6f58008dcda9f03a212eb54e9ab8560f3a9f0c707535ec20eb6b15237",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-120",
+      "evidenceAnchor": "Temperature-excursion response: quarantine, recommended storage, documentation, contact",
+      "sourceKeys": [
+        "cold"
+      ],
+      "task": "Respond to a cold-chain failure",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "a3cb650ec479a8ad47d709b4e7bd5d0555cbfc150e57868864620f3a384635cb",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-121",
+      "evidenceAnchor": "Lapsed schedules and valid documentation; hepatitis B series completion",
+      "sourceKeys": [
+        "vacc"
+      ],
+      "task": "Apply catch-up principles to documented doses",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "2d8a9d87d1aeec5971fa044ae3a9ae029370d348b019dd40c62c32c195a12248",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-122",
+      "evidenceAnchor": "Section 2: severe renal impairment dosing",
+      "sourceKeys": [
+        "varen"
+      ],
+      "task": "Integrate renal function with preventive pharmacotherapy",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "afca0f2a553457bc22623756cbb35e23f3ff5b7e158faa3c08adccb332e2a855",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-123",
+      "evidenceAnchor": "Contraindications versus precautions: anaphylaxis and mild acute illness",
+      "sourceKeys": [
+        "vcontra"
+      ],
+      "task": "Distinguish a true contraindication from a common false one",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "7febc91d047d1e54d9b157f62062b36e8ed15eb0d7b253e3bff2531d785a719e",
+      "difficulty": "Foundational safety/application; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-124",
+      "evidenceAnchor": "IHI FMEA: prospective process-risk assessment",
+      "sourceKeys": [
+        "fmea"
+      ],
+      "task": "Match an improvement method to a prospective hazard analysis",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "b8f0c61f5f30cf93629bb218da5fa0cd18e6850b6f8bacf26a70e6b62005ae1e",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-125",
+      "evidenceAnchor": "Medication-error index categories A, B, C and E",
+      "sourceKeys": [
+        "ncc"
+      ],
+      "task": "Classify a near miss by actual reach and outcome",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "7e1318b6b7e0f967ab7bd6846ea39c7e3274293a6087a375f3ae614d5d75c5d4",
+      "difficulty": "Foundational safety/application; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-126",
+      "evidenceAnchor": "Action hierarchy: stronger system redesign versus reminders/education",
+      "sourceKeys": [
+        "rca"
+      ],
+      "task": "Choose a safeguard that addresses the failure mechanism",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "ea42525e338aabfcc12de4b15b7424082c60723cef2d4f0fc1dc782d9701c11a",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-127",
+      "evidenceAnchor": "CDC Core Elements: prospective audit/feedback versus preauthorization",
+      "sourceKeys": [
+        "steward"
+      ],
+      "task": "Identify an intervention and a meaningful measurement plan",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "0dde2606a0f2e61217e418c5ec10ed4d6f6091a0b82d0473c4fef87c8da344c6",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-128",
+      "evidenceAnchor": "Language access and meaningful stratified improvement measures",
+      "sourceKeys": [
+        "ahrq",
+        "measure"
+      ],
+      "task": "Use stratified outcomes to guide an equitable intervention",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "4bba5de7bc4455de94842079057e57ad5e08ed6014436e7033719b15f3b5576e",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-129",
+      "evidenceAnchor": "High-risk transitions: brand/generic duplication and closure with outpatient supply",
+      "sourceKeys": [
+        "recon"
+      ],
+      "task": "Resolve a concrete reconciliation discrepancy",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "4bd8ba37416fc26b1592f96d8fd0a8c484caecc5830923ab877be529af6fec40",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-130",
+      "evidenceAnchor": "Drug-specific renal dosing evidence and uncertainty outside studied populations",
+      "sourceKeys": [
+        "kidney"
+      ],
+      "task": "Assess applicability before embedding a dosing policy",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "3b86747810fbd1cdf6a14885489dd4abefef46ea7940970f86440b7d09097d8e",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-131",
+      "evidenceAnchor": "AHRQ SHARE approach: patient preferences, risks/benefits and agreement on a plan",
+      "sourceKeys": [
+        "sdm"
+      ],
+      "task": "Respect autonomy while maintaining a follow-up plan",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "559b362740210be718cd43d08786f24c0509591590b20a4f22aaafe375ffb4ad",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-132",
+      "evidenceAnchor": "FDA insulin-pen safety: never share pens between patients even with needle changes",
+      "sourceKeys": [
+        "pen"
+      ],
+      "task": "Apply a device-specific infection-prevention rule",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "0d3deb0dbf04f8d21af6ba49e55554fdfe58efcbe1b24ef8ec0dddbcc76c882d",
+      "difficulty": "Foundational safety/application; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-133",
+      "evidenceAnchor": "CDC 2022 recommendation 8: offer naloxone with sleep-disordered breathing or concurrent benzodiazepines",
+      "sourceKeys": [
+        "opioid"
+      ],
+      "task": "Combine risk identification with overdose prevention",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "c7d82e9c069174efdf5a7f4e57cb47fc3862f4324723116f3339761fa96b2440",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-134",
+      "evidenceAnchor": "Altered immunocompetence: systemic high-dose steroids and live vaccine timing",
+      "sourceKeys": [
+        "immuno"
+      ],
+      "task": "Distinguish live-vaccine restrictions by immunosuppression",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "43fa4cdc8dad4f93ba691f1a032bc62f74ecc9067f0286074119527f1f094227",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-135",
+      "evidenceAnchor": "FDA MedWatch: report suspected serious adverse events; useful clinical details and uncertainty",
+      "sourceKeys": [
+        "medwatch"
+      ],
+      "task": "Report a safety signal accurately without overstating causation",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "906bc28372387b060a8ac8a50400eeea15a6b365e8a48768eade666296b9a0ec",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-136",
+      "evidenceAnchor": "FDA recall actions: scope, lot identification and safe continuity of essential treatment",
+      "sourceKeys": [
+        "recall"
+      ],
+      "task": "Integrate recall action with continuity of care",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "42995d10d6158dfca775aaef0eec6e651a60ddc6c3cd757d65a1567e171d727c",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-137",
+      "evidenceAnchor": "ISMP error-prone notation: use a leading zero; avoid trailing zeros and QD",
+      "sourceKeys": [
+        "notation"
+      ],
+      "task": "Apply notation standards to a tenfold-error mechanism",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "a182b3cbbef95f5c7a3d035c4d226d146d66b79b17919efecaa7a1d82923dda0",
+      "difficulty": "Foundational safety/application; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-138",
+      "evidenceAnchor": "Measurement-system changes and interpretation of voluntary reporting versus harm outcomes",
+      "sourceKeys": [
+        "measure",
+        "rca"
+      ],
+      "task": "Separate reporting behavior from actual harm rates",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "2c65755af713c722e27d240a58b87947087340942460a9de9174a8ac5ad71e1b",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-139",
+      "evidenceAnchor": "21 CFR 1301.76(b): one-business-day notice and 45-calendar-day electronic DEA-106",
+      "sourceKeys": [
+        "dea"
+      ],
+      "task": "Distinguish two federal reporting deadlines",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "49d1f504d8a68dd152cc545ca3abfe5961d3f4425ef6529034603c26b1924527",
+      "difficulty": "Foundational safety/application; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-140",
+      "evidenceAnchor": "Surrogate/intermediate endpoints and confirmatory clinical-benefit requirements",
+      "sourceKeys": [
+        "accel"
+      ],
+      "task": "Separate regulatory approval basis from a clinical outcome claim",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "8966f139446fb4a0ca0a9c4a0bf048edda8ab65887050e5183c0881ed875c2c1",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-141",
+      "evidenceAnchor": "FDA compounding: compounded drugs are not FDA-approved; facility registration versus premarket review",
+      "sourceKeys": [
+        "compound"
+      ],
+      "task": "Interpret a supplier regulatory claim",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "daa6a766e4a27ea00ad45b16c11c9f7489a96bf27a09ef15641269ac2f759e12",
+      "difficulty": "Foundational safety/application; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-142",
+      "evidenceAnchor": "Class I definition and recall-scope/traceability response",
+      "sourceKeys": [
+        "recall"
+      ],
+      "task": "Translate recall severity into a scoped workflow",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "4681b5c126235225bc682c12a04964c7c042a798dde02fb23600d27d45239de6",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-143",
+      "evidenceAnchor": "ICER = incremental cost/incremental QALYs; original US-dollar scenario, no imported UK threshold",
+      "sourceKeys": [
+        "econ"
+      ],
+      "task": "Calculate incremental value and state its limits",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "0076d361b01a61392e73df3df163ff040044b47d6ea6909a0eed6115ecb16707",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-144",
+      "evidenceAnchor": "Cost-utility versus resource/budget impact and local formulary factors",
+      "sourceKeys": [
+        "econ",
+        "formulary"
+      ],
+      "task": "Distinguish value from affordability",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "8802fdf3242d854012ae26d4ec9407c7bb96bba5de44dd9508f376d8e18e7f3c",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-145",
+      "evidenceAnchor": "Model for Improvement: plan–do–study–act cycles and local adaptation",
+      "sourceKeys": [
+        "pdsa"
+      ],
+      "task": "Identify iterative implementation learning",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "5808a3d557b1d3ca12044fbe44e4f508c76937b901bd7580ad6a2d8f6a53b963",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-146",
+      "evidenceAnchor": "IHI outcome, process and balancing measures",
+      "sourceKeys": [
+        "measure"
+      ],
+      "task": "Assess unintended consequences of a workflow change",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "1c1f2bffd7c86b377462be9784e230486e7450739f06bfd896724dfdc0586cde",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-147",
+      "evidenceAnchor": "AHRQ decision-support research: alert burden, clinical relevance and safety",
+      "sourceKeys": [
+        "cds"
+      ],
+      "task": "Improve alert specificity without losing high-risk protection",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "214cd23ecea42dde44c15131dab7c46de626bdb05f8d59a7d08aecc5659262a3",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-148",
+      "evidenceAnchor": "ASHP shortage management: coordinated allocation, alternatives and ethical framework",
+      "sourceKeys": [
+        "shortage"
+      ],
+      "task": "Choose an equitable shortage-management process",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "aa262707cf12c9946f325ca7e7001ce8ea5171d78e98b8e2783f78f16ce78f96",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-149",
+      "evidenceAnchor": "CDC storage toolkit: emergency vaccine storage, transport, monitoring and assigned responsibilities",
+      "sourceKeys": [
+        "cold"
+      ],
+      "task": "Design an operational contingency before an emergency",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "6ce73d6692c95d5bd449c1416800fea9a4f50622035a8be944e77765cc671655",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    },
+    {
+      "id": "AD-MOCK-150",
+      "evidenceAnchor": "Original denominator-based medication-use evaluation; stable definitions and balancing outcomes",
+      "sourceKeys": [
+        "measure"
+      ],
+      "task": "Calculate rates before judging an order-set change",
+      "action": "Revised stem and/or options, rationales and evidence traceability",
+      "questionSha256": "be9cc379df800c0f5f35176e211dc6ad929928d4e032c0a6ef6df976b71e3596",
+      "difficulty": "Applied analysis/calculation; uncalibrated"
+    }
+  ]
+}

@@ -121,7 +121,7 @@
   };
   // Clears everything this file owns (used by the global "Reset Everything").
   window.BCPS_resetStudyData = function () {
-    [LS.quizSrs, LS.confLog, LS.mockHistory, LS.mockSession, LS.examDate, 'bcps_quiz_srs', 'bcps_confidence_log', 'bcps_mock_result_v1'].forEach(function (k) {
+    [LS.quizSrs, LS.confLog, LS.mockHistory, LS.mockSession, LS.examDate, 'bcps_quiz_srs', 'bcps_confidence_log', 'bcps_mock_result_v1', 'bcps_mock_session_20261019_v2', 'bcps_mock_result_v2'].forEach(function (k) {
       try { localStorage.removeItem(k); } catch (e) {}
     });
     window._srsForceSet = null;

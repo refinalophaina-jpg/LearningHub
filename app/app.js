@@ -166,7 +166,7 @@ function switchSection(id) {
   const el = document.getElementById(id);
   if (el) el.classList.add('active');
   // Sub-sections of "More" keep the More tab lit; everything else lights its own tab.
-  const tabId = MORE_SUBS.indexOf(id) !== -1 ? 'more' : id;
+  const tabId = id === 'books' ? 'study' : MORE_SUBS.indexOf(id) !== -1 ? 'more' : id;
   const tb = document.getElementById('tab-'+tabId);
   if (tb) tb.classList.add('active');
   // Reflect the active sub-tab inside the More sub-nav bars.
@@ -3365,6 +3365,7 @@ setInterval(() => {
 
 // ── PROGRESS CODE: export / import all localStorage progress ─────────────────
 function _buildProgressCode() {
+  window.dispatchEvent(new CustomEvent('bcps:before-backup'));
   const data = {
     sr:       localStorage.getItem('bcps_sr_v2'),
     streak:   localStorage.getItem('bcps_streak_v1'),
@@ -3377,6 +3378,9 @@ function _buildProgressCode() {
     mockHistory: localStorage.getItem('bcps_mock_history'),
     mockSession: localStorage.getItem('bcps_mock_session_20261019'),
     mockResult: localStorage.getItem('bcps_mock_result_v1'),
+    currentMockSession: localStorage.getItem('bcps_mock_session_20261019_v2'),
+    currentMockResult: localStorage.getItem('bcps_mock_result_v2'),
+    pdfStudy: localStorage.getItem('bcps_pdf_study_v1'),
     examDate: localStorage.getItem('bcps_exam_date'),
     v: 4, ts: Date.now()
   };
@@ -3448,7 +3452,7 @@ function resetSection(which) {
   const KEYS = {
     quiz:  ['bcps_progress_v2', 'bcps_streak_v1', 'bcps_quiz_srs', 'bcps_confidence_log', 'bcps_quiz_srs_20261019', 'bcps_confidence_log_20261019'],
     flash: ['bcps_sr_v2', 'bcps_custom_cards'],
-    all:   ['bcps_progress_v2', 'bcps_sr_v2', 'bcps_streak_v1', 'bcps_custom_cards', 'bcps_accp_reviewed', 'bcps_restore_undo_v1', 'bcps_restore_notice'],
+    all:   ['bcps_progress_v2', 'bcps_sr_v2', 'bcps_streak_v1', 'bcps_custom_cards', 'bcps_accp_reviewed', 'bcps_restore_undo_v1', 'bcps_restore_notice', 'bcps_pdf_study_v1'],
   };
   const labels = { quiz: 'quiz history', flash: 'flashcard progress', all: 'all progress' };
   const toRemove = KEYS[which] || KEYS.all;

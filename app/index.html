@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="pdf-reader.css">
 </head>
 <body>
 <a class="skip-link" href="#mainContent">Skip to study content</a>
@@ -1017,6 +1018,13 @@
 
 <div id="study" class="section">
   <div class="section-header"><div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-study);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M6 19h13"/></svg></span><h2>Study Guide</h2></div><p>Independent study notes · 22 topics from the 2024 review curriculum</p></div>
+  <div class="book-library" aria-labelledby="bookLibraryTitle">
+    <h3 id="bookLibraryTitle">Read the full books</h3>
+    <p>2024 ACCP Updates in Therapeutics®. Read here, highlight passages and keep page notes.</p>
+    <div class="book-library-row"><div><strong>Volume 1</strong><span data-book-progress="volume-1">646 pages · 10.3 MB</span></div><button class="btn btn-primary" onclick="BCPS_openBook('volume-1')">Read Volume 1</button><a href="books/bcps-2024-volume-1.pdf" download="2024_BCPS_Prep_Volume_1.pdf">Download PDF</a></div>
+    <div class="book-library-row"><div><strong>Volume 2</strong><span data-book-progress="volume-2">594 pages · 9.1 MB</span></div><button class="btn btn-primary" onclick="BCPS_openBook('volume-2')">Read Volume 2</button><a href="books/bcps-2024-volume-2.pdf" download="2024_BCPS_Prep_Volume_2.pdf">Download PDF</a></div>
+    <p class="book-library-help">Notes and reading position save on this device. <button class="text-action" onclick="BCPS_saveBackupFile()">Save backup</button> to move them to another device. PDF downloads are the original books; your notes travel in the backup file.</p><p id="pdfLibraryStatus" class="book-library-help" role="status"></p>
+  </div>
   <div id="progressStatsPanel" style="margin-bottom:4px;"></div>
   <div class="controls">
     <input type="text" id="studySearch" placeholder="Search topics..." class="concept-search" oninput="filterStudy(this.value)">
@@ -1659,6 +1667,31 @@
 </div>
 
 
+<section id="books" class="section" aria-labelledby="pdfBookTitle">
+  <button class="text-action pdf-back" onclick="switchSection('study')">Back to Study Guide</button>
+  <div class="pdf-reader-heading"><h2 id="pdfBookTitle">2024 ACCP · Volume 1</h2><a id="pdfOriginal" href="books/bcps-2024-volume-1.pdf" target="_blank" rel="noopener">Open original PDF</a></div>
+  <div class="pdf-toolbar" aria-label="PDF reading controls">
+    <button class="btn btn-secondary" id="pdfPrev" aria-label="Previous page">Previous</button>
+    <form id="pdfPageForm"><label for="pdfPage">PDF page</label><div><input id="pdfPage" type="number" min="1" max="646" value="1" inputmode="numeric"><span id="pdfTotal">of 646</span><button class="btn btn-secondary" type="submit">Go</button></div></form>
+    <button class="btn btn-secondary" id="pdfNext" aria-label="Next page">Next</button>
+    <details class="pdf-reading-options"><summary>Book, zoom &amp; contents</summary><div>
+      <label>Book<select id="pdfBook"><option value="volume-1">Volume 1</option><option value="volume-2">Volume 2</option></select></label>
+      <label>Zoom<select id="pdfZoom"><option value="1">Fit width</option><option value="1.25">125%</option><option value="1.5">150%</option><option value="2">200%</option></select></label>
+      <label class="pdf-chapters-label">Contents<select id="pdfChapters" disabled><option>Loading chapters…</option></select></label>
+    </div></details>
+  </div>
+  <div class="pdf-tools"><label>Highlight color<select id="pdfColor"><option value="yellow">Yellow</option><option value="green">Green</option><option value="pink">Pink</option></select></label><button class="btn btn-primary" id="pdfHighlight" disabled>Highlight selection</button><button class="btn btn-secondary" id="pdfAddNote">Add page note</button><button class="text-action" id="pdfUndo" hidden>Undo remove</button><button class="text-action" onclick="BCPS_saveBackupFile()">Save backup</button></div>
+  <p id="pdfStatus" class="pdf-status" role="status">Select text, then choose Highlight. Notes save as you type.</p>
+  <div class="pdf-reading-layout">
+    <div id="pdfViewport" class="pdf-viewport" tabindex="0" aria-label="PDF page. Scroll to read; zoom for larger text.">
+      <p id="pdfLoading">Choose a volume to begin reading.</p><button class="btn btn-secondary" id="pdfRetry" hidden>Try again</button>
+      <div id="pdfPaper" class="pdf-paper" hidden><canvas id="pdfCanvas" aria-hidden="true"></canvas><div id="pdfHighlights" aria-hidden="true"></div><div id="pdfTextLayer" class="textLayer"></div></div>
+    </div>
+    <aside class="pdf-annotations" aria-labelledby="pdfNotesCount"><h3 id="pdfNotesCount">Your notes</h3><label for="pdfNotesScope">Show notes</label><select id="pdfNotesScope"><option value="page">This page</option><option value="all">Whole volume</option></select><div id="pdfNotes"></div></aside>
+  </div>
+  <p class="pdf-footnote">Page numbers refer to the PDF, including front matter. These are the original 2024 pages; consult current guidance for clinical decisions. Your notes stay private in this browser and your backup file.</p>
+</section>
+
 <section id="sources" class="section sources-section" aria-labelledby="sourcesTitle">
   <div class="more-subnav"><button class="more-back" onclick="switchSection('more')">&#8592; More</button></div>
   <div class="section-header"><h2 id="sourcesTitle">Sources &amp; review status</h2><p>Know the foundation, the date, and the limits of each study aid.</p></div>
@@ -1668,7 +1701,7 @@
     <p><a href="https://www.accp.com/report/index.aspx?art=3483" target="_blank" rel="noopener">ACCP’s official 2024 course description <span aria-hidden="true">&#8599;</span></a></p>
     <h3>Review status · October 19, 2026</h3>
     <p><strong>Full content review is still in progress.</strong> The dedicated ACCP mock bank has been removed. Seventy-three mock-derived items in the general quiz have been replaced with original drafts, and targeted corrections have been made to existing items. These changes do not constitute a completed clinical or copyright review of every chapter, card, drug entry, trial summary, glossary term, diagram, podcast, or slide.</p>
-    <p>The dedicated mock bank contains 150 separately authored case-based questions and also remains an educational draft. Scores are learning feedback, not a validated estimate of board readiness. New items include explanations for every choice. Historical scores may refer to earlier question versions.</p>
+    <p>All 150 separately authored mock questions received an AI-assisted source and editorial review on October 19, 2026, including every answer explanation. Independent pharmacist sign-off and measured difficulty calibration remain pending. Scores are learning feedback, not a validated estimate of board readiness. New items include explanations for every choice. Historical scores may refer to earlier question versions.</p>
     <h3>Primary references for this correction pass</h3>
     <ul class="source-links">
       <li><a href="https://www.cdc.gov/mmwr/volumes/73/rr/rr7304a1_appendix.htm" target="_blank" rel="noopener">CDC · US Medical Eligibility Criteria, 2024</a><span>Contraceptive methods and drug interactions.</span></li>
@@ -1685,7 +1718,7 @@
     <p>Drug labeling, guidelines, vaccine schedules, and exam outlines change. A 2024 chapter citation is historical context, not a claim of current clinical guidance. Verify doses, contraindications, renal estimates, interactions, and monitoring against the relevant current source before patient care.</p>
     <p><a href="https://bpsweb.org/pharmacotherapy/" target="_blank" rel="noopener">Board of Pharmacy Specialties · Pharmacotherapy certification and examination information</a></p>
     <h3>Access and attribution</h3>
-    <p>The paid ACCP source PDFs and official mock questions are not offered for download here. The new 150-case simulation uses original cases, choices, and explanations, guided by curriculum objectives rather than reproducing the licensed questions. Obtain licensed course materials from ACCP. Podcast and slide links are separate learning aids and remain subject to their own content review.</p>
+    <p>The two 2024 ACCP books are available in the Study Guide reader and as original PDF downloads, with redistribution permission confirmed by the site owner. The retired official mock-question JSON bank is not distributed. The new 150-case simulation uses original cases, choices, and explanations, guided by curriculum objectives rather than reproducing the licensed questions. Book copyright and attribution remain with ACCP; availability here does not imply ACCP endorsement. Podcast and slide links are separate learning aids and remain subject to their own content review.</p>
     <p>AinaDara is independent of ACCP and BPS. Neither organization sponsors, endorses, or validates this hub.</p>
     <button class="btn btn-secondary" onclick="switchSection('quiz')">Return to practice</button>
   </div>
@@ -1715,6 +1748,7 @@
   <script src="data.js"></script>
   <script src="podcasts-data.js"></script>
   <script src="slides-data.js"></script>
+  <script src="pdf-store.js"></script>
   <script src="progress-code.js"></script>
   <script src="app.js"></script>
   <script src="study-features.js"></script>
@@ -1724,5 +1758,6 @@
   <script src="mock-exam.js"></script>
   <script src="release-ui.js"></script>
   <script src="backup-files.js"></script>
+  <script src="pdf-reader.js"></script>
 </body>
 </html>
