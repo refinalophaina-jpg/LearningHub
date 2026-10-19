@@ -6,7 +6,9 @@
     progress: ['bcps_progress_v2', 'object'], custom: ['bcps_custom_cards', 'array'],
     accp: ['bcps_accp_reviewed', 'object'], quizSrs: ['bcps_quiz_srs_20261019', 'object'],
     confidence: ['bcps_confidence_log_20261019', 'array'], mockHistory: ['bcps_mock_history', 'array'],
-    mockSession: ['bcps_mock_session_20261019', 'object'], mockResult: ['bcps_mock_result_v1', 'object']
+    mockSession: ['bcps_mock_session_20261019', 'object'], mockResult: ['bcps_mock_result_v1', 'object'],
+    currentMockSession: ['bcps_mock_session_20261019_v2', 'object'], currentMockResult: ['bcps_mock_result_v2', 'object'],
+    pdfStudy: ['bcps_pdf_study_v1', 'object']
   };
   const object = x => x !== null && typeof x === 'object' && !Array.isArray(x);
   function decode(raw) {
@@ -19,11 +21,15 @@
     const writes = [];
     for (const [field, [key, shape]] of Object.entries(fields)) {
       if (data[field] == null) continue;
-      if (data.v === 3 && ['quizSrs', 'confidence', 'mockHistory', 'mockSession'].includes(field)) continue;
+      if (data.v === 3 && ['quizSrs', 'confidence', 'mockHistory', 'mockSession', 'mockResult', 'currentMockSession', 'currentMockResult', 'pdfStudy'].includes(field)) continue;
       if (typeof data[field] !== 'string') throw new Error('The backup contains an invalid ' + field + ' record.');
       let value;
       try { value = JSON.parse(data[field]); } catch (_) { throw new Error('The backup contains an incomplete ' + field + ' record.'); }
       if (!(shape === 'array' ? Array.isArray(value) : object(value))) throw new Error('The backup contains an invalid ' + field + ' format.');
+      if (field === 'pdfStudy') {
+        const pdfStore = root.BCPSPDFStore || (typeof require === 'function' ? require('./pdf-store.js') : null);
+        if (!pdfStore || !pdfStore.valid(value)) throw new Error('The backup contains invalid PDF notes. Your progress has not changed.');
+      }
       writes.push([key, data[field]]);
     }
     if (data.examDate != null) {

@@ -61,7 +61,7 @@ test('progress backup includes revision-aware spaced review, confidence, history
   const src=read('app/app.js');
   const fn=src.slice(src.indexOf('function _buildProgressCode()'),src.indexOf('function _refreshLivePreview()'));
   const entries = {'bcps_sr_v2':'{}','bcps_quiz_srs_20261019':'{"10":{"graduated":true}}','bcps_confidence_log_20261019':'[]','bcps_mock_history':'[]','bcps_exam_date':'2026-12-01'};
-  const ctx={localStorage:{getItem:k=>entries[k]??null}, btoa:s=>Buffer.from(s,'binary').toString('base64'),unescape,encodeURIComponent,Date};
+  const ctx={window:{dispatchEvent:()=>{}},CustomEvent:class{},localStorage:{getItem:k=>entries[k]??null}, btoa:s=>Buffer.from(s,'binary').toString('base64'),unescape,encodeURIComponent,Date};
   const code=vm.runInNewContext(fn+';_buildProgressCode()',ctx);
   const backup=JSON.parse(Buffer.from(code,'base64').toString());
   assert.equal(backup.v,4); assert.equal(backup.studyRevision,'2026-10-19');
