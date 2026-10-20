@@ -10,7 +10,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="app.css">
-  <link rel="stylesheet" href="pdf-reader.css">
 </head>
 <body>
 <a class="skip-link" href="#mainContent">Skip to study content</a>
@@ -1018,13 +1017,6 @@
 
 <div id="study" class="section">
   <div class="section-header"><div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-study);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M6 19h13"/></svg></span><h2>Study Guide</h2></div><p>Independent study notes · 22 topics from the 2024 review curriculum</p></div>
-  <div class="book-library" aria-labelledby="bookLibraryTitle">
-    <h3 id="bookLibraryTitle">Read the full books</h3>
-    <p>2024 ACCP Updates in Therapeutics®. Read here, highlight passages and keep page notes.</p>
-    <div class="book-library-row"><div><strong>Volume 1</strong><span data-book-progress="volume-1">646 pages · 10.3 MB</span></div><button class="btn btn-primary" onclick="BCPS_openBook('volume-1')">Read Volume 1</button><a href="books/bcps-2024-volume-1.pdf" download="2024_BCPS_Prep_Volume_1.pdf">Download PDF</a></div>
-    <div class="book-library-row"><div><strong>Volume 2</strong><span data-book-progress="volume-2">594 pages · 9.1 MB</span></div><button class="btn btn-primary" onclick="BCPS_openBook('volume-2')">Read Volume 2</button><a href="books/bcps-2024-volume-2.pdf" download="2024_BCPS_Prep_Volume_2.pdf">Download PDF</a></div>
-    <p class="book-library-help">Notes and reading position save on this device. In the reader, choose <strong>Download annotated PDF</strong> for a copy with your highlights and notes. <button class="text-action" onclick="BCPS_saveBackupFile()">Save backup</button> to continue editing them in the hub on another device.</p><p id="pdfLibraryStatus" class="book-library-help" role="status"></p>
-  </div>
   <div id="progressStatsPanel" style="margin-bottom:4px;"></div>
   <div class="controls">
     <input type="text" id="studySearch" placeholder="Search topics..." class="concept-search" oninput="filterStudy(this.value)">
@@ -1667,32 +1659,6 @@
 </div>
 
 
-<section id="books" class="section" aria-labelledby="pdfBookTitle">
-  <button class="text-action pdf-back" onclick="switchSection('study')">Back to Study Guide</button>
-  <div class="pdf-reader-heading"><h2 id="pdfBookTitle">2024 ACCP · Volume 1</h2><a id="pdfOriginal" href="books/bcps-2024-volume-1.pdf" target="_blank" rel="noopener">Open original PDF</a></div>
-  <div class="pdf-toolbar" aria-label="PDF reading controls">
-    <button class="btn btn-secondary" id="pdfPrev" aria-label="Previous page">Previous</button>
-    <form id="pdfPageForm"><label for="pdfPage">PDF page</label><div><input id="pdfPage" type="number" min="1" max="646" value="1" inputmode="numeric"><span id="pdfTotal">of 646</span><button class="btn btn-secondary" type="submit">Go</button></div></form>
-    <button class="btn btn-secondary" id="pdfNext" aria-label="Next page">Next</button>
-    <details class="pdf-reading-options"><summary>Book, zoom &amp; contents</summary><div>
-      <label>Book<select id="pdfBook"><option value="volume-1">Volume 1</option><option value="volume-2">Volume 2</option></select></label>
-      <label>Zoom<select id="pdfZoom"><option value="1">Fit width</option><option value="1.25">125%</option><option value="1.5">150%</option><option value="2">200%</option></select></label>
-      <label class="pdf-chapters-label">Contents<select id="pdfChapters" disabled><option>Loading chapters…</option></select></label>
-    </div></details>
-  </div>
-  <div class="pdf-tools"><label>Highlight color<select id="pdfColor"><option value="yellow">Yellow</option><option value="green">Green</option><option value="pink">Pink</option></select></label><button class="btn btn-primary" id="pdfHighlight" disabled>Highlight selection</button><button class="btn btn-secondary" id="pdfAddNote">Add page note</button><button class="text-action" id="pdfUndo" hidden>Undo remove</button><button class="btn btn-secondary" id="pdfDownload">Download annotated PDF</button><button class="text-action" onclick="BCPS_saveBackupFile()">Save backup</button></div>
-  <a id="pdfDownloadReady" class="pdf-download-ready" hidden download>Save prepared PDF</a>
-  <p id="pdfStatus" class="pdf-status" role="status">Select text, then choose Highlight. Notes save as you type.</p>
-  <div class="pdf-reading-layout">
-    <div id="pdfViewport" class="pdf-viewport" tabindex="0" aria-label="PDF page. Scroll to read; zoom for larger text.">
-      <p id="pdfLoading">Choose a volume to begin reading.</p><button class="btn btn-secondary" id="pdfRetry" hidden>Try again</button>
-      <div id="pdfPaper" class="pdf-paper" hidden><canvas id="pdfCanvas" aria-hidden="true"></canvas><div id="pdfHighlights" aria-hidden="true"></div><div id="pdfTextLayer" class="textLayer"></div></div>
-    </div>
-    <aside class="pdf-annotations" aria-labelledby="pdfNotesCount"><h3 id="pdfNotesCount">Your notes</h3><label for="pdfNotesScope">Show notes</label><select id="pdfNotesScope"><option value="page">This page</option><option value="all">Whole volume</option></select><div id="pdfNotes"></div></aside>
-  </div>
-  <p class="pdf-footnote">Download annotated PDF includes this volume’s saved highlights and notes on every page. Open the downloaded PDF’s Comments panel to read notes. Your copy is created privately on this device. Use Save backup to restore editable notes and reading position in the hub. Page numbers include front matter; these are the original 2024 pages, so consult current clinical guidance.</p>
-</section>
-
 <section id="sources" class="section sources-section" aria-labelledby="sourcesTitle">
   <div class="more-subnav"><button class="more-back" onclick="switchSection('more')">&#8592; More</button></div>
   <div class="section-header"><h2 id="sourcesTitle">Sources &amp; review status</h2><p>Know the foundation, the date, and the limits of each study aid.</p></div>
@@ -1719,8 +1685,9 @@
     <p>Drug labeling, guidelines, vaccine schedules, and exam outlines change. A 2024 chapter citation is historical context, not a claim of current clinical guidance. Verify doses, contraindications, renal estimates, interactions, and monitoring against the relevant current source before patient care.</p>
     <p><a href="https://bpsweb.org/pharmacotherapy/" target="_blank" rel="noopener">Board of Pharmacy Specialties · Pharmacotherapy certification and examination information</a></p>
     <h3>Access and attribution</h3>
-    <p>The two 2024 ACCP books are available in the Study Guide reader and as original PDF downloads, with redistribution permission confirmed by the site owner. The retired official mock-question JSON bank is not distributed. The new 150-case simulation uses original cases, choices, and explanations, guided by curriculum objectives rather than reproducing the licensed questions. Book copyright and attribution remain with ACCP; availability here does not imply ACCP endorsement. Podcast and slide links are separate learning aids and remain subject to their own content review.</p>
-    <p>AinaDara is independent of ACCP and BPS. Neither organization sponsors, endorses, or validates this hub.</p>
+    <p>This hub does not host or redistribute ACCP course materials. The 2024 course book is copyrighted by the American College of Clinical Pharmacy and may not be reproduced or shared electronically without ACCP’s written permission, so study from your own purchased copy. The official ACCP mock questions are not included; the 150-case simulation uses original cases, choices, and explanations, guided by curriculum objectives rather than reproducing ACCP’s questions. Podcast and slide links are separate learning aids and remain subject to their own content review.</p>
+    <p><a href="https://www.accp.com/store/" target="_blank" rel="noopener">Purchase ACCP Updates in Therapeutics® from the ACCP store</a></p>
+    <p>AinaDara is independent of ACCP and BPS. Neither organization sponsors, endorses, or validates this hub. Updates in Therapeutics® is a registered trademark of the American College of Clinical Pharmacy, used here only to identify the course these notes follow.</p>
     <button class="btn btn-secondary" onclick="switchSection('quiz')">Return to practice</button>
   </div>
 </section>
@@ -1749,7 +1716,6 @@
   <script src="data.js"></script>
   <script src="podcasts-data.js"></script>
   <script src="slides-data.js"></script>
-  <script src="pdf-store.js"></script>
   <script src="progress-code.js"></script>
   <script src="app.js"></script>
   <script src="study-features.js"></script>
@@ -1759,7 +1725,5 @@
   <script src="mock-exam.js"></script>
   <script src="release-ui.js"></script>
   <script src="backup-files.js"></script>
-  <script src="pdf-export.js"></script>
-  <script src="pdf-reader.js"></script>
 </body>
 </html>

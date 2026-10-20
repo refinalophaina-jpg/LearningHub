@@ -30,7 +30,8 @@ One coherent, beautifully built place covering the whole BCPS study loop (learn 
 
 ## Capabilities and Constraints
 
-- **Retired paid mock JSON remains excluded.** The dedicated 150-item ACCP mock bank was removed in 1f9c61e. Another 73 mock-derived quiz items have now been replaced with original drafts. A separately authored 150-case educational draft powers the new simulation; it does not distribute the licensed bank. Full content/provenance review remains open. On October 19, 2026 the user explicitly confirmed redistribution permission for both complete 2024 ACCP PDF volumes and requested public access plus an integrated reader. That authorization supersedes the earlier exclusion for those two fingerprinted files only; see docs/reviews/2026-10-19-pdf-publication.json.
+- **Retired paid mock JSON remains excluded.** The dedicated 150-item ACCP mock bank was removed in 1f9c61e. Another 73 mock-derived quiz items have now been replaced with original drafts. A separately authored 150-case educational draft powers the new simulation; it does not distribute the licensed bank. Full content/provenance review remains open.
+- **ACCP course PDFs are never hosted, bundled, or committed.** The 2024 book’s copyright page prohibits electronic reproduction or transmission without ACCP’s written permission, and none is on file. On October 20, 2026 the owner, after checking ACCP’s terms, directed their removal: the on-site reader and both volumes were taken off the site and purged from all Git history. A release test fails if any PDF ships in `app/`. Revisit only with written ACCP permission. “Updates in Therapeutics®” is ACCP’s registered trademark; use it only to identify the course the notes follow, alongside the not-affiliated notice.
 - No server-side anything: features must work as static files (this is why sync/login was removed — do not reintroduce).
 - Progress must survive via localStorage + the downloadable backup file (codes remain available); never make durable progress depend on a third-party service.
 - Light and dark mode are both supported and both must stay readable; dark-mode regressions have been a recurring bug class.
@@ -56,7 +57,7 @@ One coherent, beautifully built place covering the whole BCPS study loop (learn 
 2. **Respect the stolen moment.** Any screen should be useful within seconds on a phone: fast load, obvious next action, state preserved on return.
 3. **Evidence-based UI, literally.** WCAG contrast (4.5:1 small text, 11px functional-text floor), redundancy removal, progressive disclosure, calm motion with reduced-motion support — accessibility findings are fixed, not debated.
 4. **One brand, everywhere.** Every surface reads as AinaDara: warm palette, serif display voice, drawn icons. Portfolio-grade finish is a stated success criterion, not a nice-to-have.
-5. **Private until the gate clears.** Build as if it will be public someday, but never expose ACCP-derived content beyond the study circle.
+5. **Original work only.** The hub is public. Everything it ships must be original study material or properly attributed facts; no ACCP text, questions, figures, or files.
 
 ## Accessibility & Inclusion
 
@@ -65,7 +66,3 @@ No user-specific needs declared. Standing requirement from the owner: dark-mode 
 ## Edition and release status
 
 2024 topic foundation, with some later corrections explicitly dated. Do not describe the hub as comprehensively current or clinically validated. The Sources destination and release-readiness record expose the actual review scope. Raw licensed PDFs and extracted review text belong only in ignored `.private/`; never include them in a release.
-
-## Integrated book reader
-
-Study Guide opens both authorized 2024 books in an on-site PDF.js reader. Reading position, zoom, normalized text highlights, and editable notes are local to each exact PDF fingerprint and travel in the regular backup file. Download annotated PDF creates a private, local copy with standard PDF highlights and note comments from the whole current volume; no notes are uploaded. The PDF viewer’s Comments panel exposes the embedded notes. This copy is an export snapshot: use the backup file to restore editable hub notes and reading position. Library original-PDF downloads remain unmodified. Do not imply that books from 2024 reflect every later clinical change.

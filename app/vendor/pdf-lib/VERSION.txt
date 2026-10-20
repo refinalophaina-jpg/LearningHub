@@ -1,4 +1,0 @@
-pdf-lib 1.17.1
-Source: https://registry.npmjs.org/pdf-lib/-/pdf-lib-1.17.1.tgz
-MIT license: LICENSE.md
-Lazy-loaded only for annotated PDF export.

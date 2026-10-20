@@ -1,5 +1,7 @@
 # Mock review and integrated books — October 19, 2026
 
+> **Superseded October 20, 2026 (book reader and PDFs only).** The owner checked ACCP’s terms and directed removal of both PDF volumes and the reader. The mock-exam findings below still stand. See `2026-10-20-accp-material-removal.md`.
+
 All 150 original mock items were reviewed and revised in edition `2026-10-19-mock-v2`. This is an AI-assisted evidence and editorial review, not independent pharmacist approval or psychometric validation. The machine-readable ledger covers every ID, an evidence anchor, linked source keys, intended cognitive task, editorial difficulty classification and a hash of the final item. All 600 option explanations are aligned with the shuffled choices.
 
 ## Clinical and editorial changes

@@ -18,4 +18,5 @@ app/data.js
 .wrangler/
 
 # Keep scratch/source copies private. Two explicitly authorized books are published only at app/books/; see the publication manifest.
-/2024_BCPS_Prep_Volume_*_Combined.pdf
+# ACCP course PDFs are copyrighted (written permission required) — never commit any PDF
+*.pdf

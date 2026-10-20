@@ -166,7 +166,7 @@ function switchSection(id) {
   const el = document.getElementById(id);
   if (el) el.classList.add('active');
   // Sub-sections of "More" keep the More tab lit; everything else lights its own tab.
-  const tabId = id === 'books' ? 'study' : MORE_SUBS.indexOf(id) !== -1 ? 'more' : id;
+  const tabId = MORE_SUBS.indexOf(id) !== -1 ? 'more' : id;
   const tb = document.getElementById('tab-'+tabId);
   if (tb) tb.classList.add('active');
   // Reflect the active sub-tab inside the More sub-nav bars.
@@ -3380,7 +3380,6 @@ function _buildProgressCode() {
     mockResult: localStorage.getItem('bcps_mock_result_v1'),
     currentMockSession: localStorage.getItem('bcps_mock_session_20261019_v2'),
     currentMockResult: localStorage.getItem('bcps_mock_result_v2'),
-    pdfStudy: localStorage.getItem('bcps_pdf_study_v1'),
     examDate: localStorage.getItem('bcps_exam_date'),
     v: 4, ts: Date.now()
   };

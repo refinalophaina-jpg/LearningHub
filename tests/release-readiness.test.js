@@ -78,3 +78,15 @@ test('source UI is reachable and makes review limits explicit', () => {
   assert.ok(!fs.existsSync('2024_BCPS_Prep_Volume_1_Combined.pdf'));
   assert.ok(!fs.existsSync('2024_BCPS_Prep_Volume_2_Combined.pdf'));
 });
+
+test('no ACCP course material is hosted or bundled', () => {
+  const walk=d=>fs.readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(d+'/'+e.name):[d+'/'+e.name]);
+  const shipped=walk('app');
+  assert.deepEqual(shipped.filter(f=>/\.pdf$/i.test(f)),[],'no PDF may ship in the deployed app/ directory');
+  assert.ok(!fs.existsSync('app/books'),'app/books must not exist');
+  const html=read('app/index.html');
+  assert.doesNotMatch(html,/pdf-reader|BCPS_openBook|books\/bcps/,'no book reader or book links');
+  assert.match(html,/does not host or redistribute ACCP course materials/);
+  assert.match(html,/registered trademark of the American College of Clinical Pharmacy/);
+  assert.match(read('.gitignore'),/^\*\.pdf$/m);
+});

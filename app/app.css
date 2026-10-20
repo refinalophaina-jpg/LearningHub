@@ -1096,6 +1096,7 @@ body{ font-family:var(--font-body); font-weight:300; }
 }
 ::selection{ background:var(--terracotta); color:var(--bg); }
 :focus-visible{ outline:2px solid var(--terracotta); outline-offset:2px; }
+[tabindex="-1"]:focus{ outline:none; }
 
 /* Re-tone the hardcoded iOS-blue accents to the warm system */
 .header-icon{ background:linear-gradient(135deg,var(--terracotta),#e0a98c); }
