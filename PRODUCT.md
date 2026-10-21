@@ -14,7 +14,7 @@ Requested audience: practicing pharmacists and BCPS candidates. Public release r
 
 ## Product Purpose
 
-A self-contained BCPS exam-prep hub: study chapters, a 449-item quiz engine (including 73 original draft replacements) with spaced repetition and confidence tracking, 206 SM-2 flashcards with cloze drills, timed practice from the general quiz bank, a drug reference database, landmark-trial/evidence library, glossary (543 terms incl. biostatistics), exam-psychology coaching, visual pharmacology diagrams, podcasts, and slide decks. Success means two things, in order: the people using it pass the BCPS exam, and the site represents AinaDara.com's craft well enough to stand as a portfolio piece.
+A self-contained BCPS exam-prep hub: study chapters, a 449-item quiz engine (including 73 original draft replacements) with spaced repetition and confidence tracking, 206 SM-2 flashcards with cloze drills, timed practice from the general quiz bank, a drug reference database, landmark-trial/evidence library, glossary (502 terms incl. biostatistics), exam-psychology coaching, visual pharmacology diagrams, podcasts, and slide decks. Success means two things, in order: the people using it pass the BCPS exam, and the site represents AinaDara.com's craft well enough to stand as a portfolio piece.
 
 ## Positioning
 
@@ -48,7 +48,7 @@ One coherent, beautifully built place covering the whole BCPS study loop (learn 
 
 ## Evidence on Hand
 
-- 449 quiz questions, 206 flashcards, 543 glossary terms, 101 trial/evidence summaries, 70+ drug monographs, 22 study chapters, 22 slide-deck PDFs, podcast audio — all real content in `assets/data/` and `app/`.
+- 449 quiz questions, 206 flashcards, 502 glossary terms, 101 trial/evidence summaries, 75 drug monographs, 22 study chapters, 22 slide-deck PDFs, podcast audio — all real content in `assets/data/` and `app/`.
 - No testimonials, user counts, or outcome claims exist; do not fabricate any.
 
 ## Product Principles

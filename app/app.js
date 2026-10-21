@@ -309,12 +309,12 @@ function answerQuestion(btn, chosen, correct, card, optsExp) {
   const expDiv = card.querySelector('#exp');
   if (optsExp && optsExp.length === 4) {
     const labels = ['A','B','C','D'];
-    let html = '<div class="opts-rationale"><span class="opts-rationale-title">&#128203; Per-Option Analysis:</span>';
+    let html = '<div class="opts-rationale"><span class="opts-rationale-title">Why each option is right or wrong</span>';
     optsExp.forEach((ex, i) => {
       const isCor = i === correct;
       const isChWrong = (i === chosen && chosen !== correct);
       const cls = isCor ? 'is-correct' : isChWrong ? 'is-chosen-wrong' : 'is-wrong';
-      const icon = isCor ? '&#9989;' : isChWrong ? '&#9888;&#65039; Your answer &mdash;' : '&#10060;';
+      const icon = isCor ? '<span class="opt-exp-tag">Correct</span>' : isChWrong ? '<span class="opt-exp-tag">Your answer</span>' : '';
       html += `<div class="opt-exp ${cls}">${icon} <strong>${labels[i]}:</strong> ${ex}</div>`;
     });
     html += '</div>';
@@ -326,8 +326,21 @@ function answerQuestion(btn, chosen, correct, card, optsExp) {
     nb.type = 'button'; nb.className = 'btn btn-primary next-question-btn'; nb.textContent = 'Next question';
     nb.onclick = () => { loadQuestion(); const qc = document.getElementById('questionContainer'); if (qc) qc.scrollIntoView({block:'start'}); };
     expDiv.after(nb);
+    const qIdx = quizData.indexOf(window._currentQ);
+    if (qIdx >= 0) {
+      const rb = document.createElement('button');
+      rb.type = 'button'; rb.className = 'text-action report-link'; rb.textContent = 'Report a problem with this question';
+      rb.onclick = () => window.BCPS_report && window.BCPS_report({ kind: 'Quiz', id: 'Q' + String(qIdx).padStart(3, '0'), index: qIdx });
+      nb.after(rb);
+    }
   }
 }
+window.BCPS_reportCard = function () {
+  const c = fcDeck[fcIndex];
+  if (!c || !window.BCPS_report) return;
+  const strip = h => String(h || '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+  window.BCPS_report({ kind: 'Flashcard', id: c._id, text: 'Front: ' + strip(c.front) + '\nBack: ' + strip(c.back) + '\nTopic: ' + strip(c.topic) });
+};
 
 function updateScore() {
   const pct = sessionAttempts > 0 ? Math.round(sessionScore / sessionAttempts * 100) : 0;
@@ -894,7 +907,7 @@ function buildGroupTabs() {
       g === 'Pharmacokinetics & Dosing' ? '⚗️ PK & Dosing' :
       g === 'Cardiovascular Pharmacology' ? '❤️ Cardiovascular' :
       g === 'Antimicrobial Pharmacology' ? '🦠 Antimicrobials' :
-      g === 'Drug Safety & Toxicology' ? '⚠️ Safety & Tox' :
+      g === 'Drug Safety & Toxicology' ? 'Safety & Tox' :
       g === 'Clinical Practice & Systems' ? '🏥 Clinical & Systems' : g;
     b.onclick = () => {
       conceptGroupFilter = g;
@@ -1041,7 +1054,7 @@ function toggleConceptQuizMode() {
   conceptQuizMode = !conceptQuizMode;
   const btn = document.getElementById('quizModeBtn');
   btn.classList.toggle('on', conceptQuizMode);
-  btn.textContent = conceptQuizMode ? '✅ Quiz On' : '🧠 Quiz Me';
+  btn.textContent = conceptQuizMode ? 'Quiz on' : 'Quiz me';
   const c = document.getElementById('conceptContent');
   c.classList.toggle('quiz-mode-active', conceptQuizMode);
   // Inject/remove quiz score bar
@@ -2576,7 +2589,7 @@ function drugRender() {
         const sectionDiv = document.createElement('div');
         sectionDiv.style.cssText = 'margin-bottom: 12px;';
         sectionDiv.innerHTML = `
-          <div class="drug-section-label" style="font-weight: bold; color: var(--primary); margin-bottom: 4px;">${sec.icon} ${sec.label}:</div>
+          <div class="drug-section-label" style="font-weight: bold; color: var(--primary); margin-bottom: 4px;">${sec.label}</div>
           <div style="font-size: 13px; line-height: 1.5; color: var(--label1);">${sec.value}</div>
         `;
         detailEl.appendChild(sectionDiv);
@@ -2623,7 +2636,7 @@ function drugRender() {
         font-size: 12px;
         font-weight: bold;
       `;
-      pubmedBtn.innerHTML = '🔍 PubMed';
+      pubmedBtn.textContent = 'PubMed';
 
       linksDiv.appendChild(dailymedBtn);
       linksDiv.appendChild(pubmedBtn);
@@ -2646,6 +2659,8 @@ function drugRender() {
 
 // ─── Deferred initialization: called after all scripts load ───────────────
 window.addEventListener('DOMContentLoaded', function() {
+  const _counts = { drugs: (window.__DRUG_DB || []).length, glossary: (window.__GLO_TERMS || []).length };
+  document.querySelectorAll('[data-count]').forEach(el => { const n = _counts[el.dataset.count]; if (n) el.textContent = n; });
   // gloInit is called above; drugInit is triggered by switchSection('concepts')
   // But pre-render drugs for instant tab switch:
   if (typeof drugInit === 'function' && !window._drugInitDone) {
@@ -2782,7 +2797,7 @@ function trackMissed(questionIndex, correct) {
   const btn = document.getElementById('reviewMissedBtn');
   if (btn) {
     btn.style.display = window.missedQIds.size > 0 ? '' : 'none';
-    if (!window.reviewMissedMode) btn.textContent = `📋 Review Missed (${window.missedQIds.size})`;
+    if (!window.reviewMissedMode) btn.textContent = `Review missed (${window.missedQIds.size})`;
   }
 }
 
@@ -2790,7 +2805,7 @@ function toggleReviewMissed() {
   window.reviewMissedMode = !window.reviewMissedMode;
   const btn = document.getElementById('reviewMissedBtn');
   if (btn) {
-    btn.textContent = window.reviewMissedMode ? '✅ All Questions' : `📋 Review Missed (${window.missedQIds.size})`;
+    btn.textContent = window.reviewMissedMode ? 'All questions' : `Review missed (${window.missedQIds.size})`;
     btn.style.background = window.reviewMissedMode ? 'var(--red, #FF3B30)' : '';
     btn.style.color = window.reviewMissedMode ? '#fff' : '';
   }

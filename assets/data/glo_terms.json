@@ -49,42 +49,6 @@
   "src": "Clinical Pharmacology"
  },
  {
-  "term": "Apparent Volume of Distribution",
-  "abbrev": "Vd",
-  "cat": "PK/PD",
-  "def": "Theoretical volume into which drug distributes: Vd = Dose/Cp₀. Highly lipophilic drugs have large Vd; protein-bound drugs have low Vd.",
-  "related": [
-   "Distribution",
-   "Clearance"
-  ],
-  "chapter": "PK",
-  "src": "Katzung"
- },
- {
-  "term": "Area Under the Curve",
-  "abbrev": "AUC",
-  "cat": "PK/PD",
-  "def": "Integral of drug concentration over time. Proportional to absorbed dose. AUC = Dose/CL. Used for bioavailability assessment and TDM.",
-  "related": [
-   "Clearance",
-   "Cmax"
-  ],
-  "chapter": "PK",
-  "src": "Katzung"
- },
- {
-  "term": "Bioavailability",
-  "abbrev": "F",
-  "cat": "PK/PD",
-  "def": "Fraction of administered dose reaching systemic circulation. IV=100%; oral typically 50-90%. Affected by absorption, stability, first-pass metabolism.",
-  "related": [
-   "First-Pass Effect",
-   "Oral Bioavailability"
-  ],
-  "chapter": "PK",
-  "src": "Katzung"
- },
- {
   "term": "Biliary Excretion",
   "abbrev": "",
   "cat": "PK/PD",
@@ -278,19 +242,6 @@
   "src": "Katzung"
  },
  {
-  "term": "Enterohepatic Recirculation",
-  "abbrev": "",
-  "cat": "PK/PD",
-  "def": "Bile-excreted drugs reabsorbed in small intestine, returning to liver. Prolongs half-life. Interrupted by cholestyramine.",
-  "related": [
-   "Biliary Excretion",
-   "Elimination",
-   "First-Pass Effect"
-  ],
-  "chapter": "PK",
-  "src": "Katzung"
- },
- {
   "term": "Enzyme Induction",
   "abbrev": "",
   "cat": "PK/PD",
@@ -324,31 +275,6 @@
   "related": [
    "Hepatic Clearance",
    "First-Pass Effect"
-  ],
-  "chapter": "PK",
-  "src": "Katzung"
- },
- {
-  "term": "First-Order Kinetics",
-  "abbrev": "",
-  "cat": "PK/PD",
-  "def": "Elimination rate proportional to concentration. Most drugs. Constant half-life. Linear semi-log decline.",
-  "related": [
-   "Zero-Order Kinetics",
-   "Half-Life",
-   "Clearance"
-  ],
-  "chapter": "PK",
-  "src": "Katzung"
- },
- {
-  "term": "First-Pass Effect",
-  "abbrev": "",
-  "cat": "PK/PD",
-  "def": "Metabolism before systemic circulation, reducing bioavailability. Nitroglycerin, propranolol require sublingual/IV dosing.",
-  "related": [
-   "Bioavailability",
-   "Hepatic Clearance"
   ],
   "chapter": "PK",
   "src": "Katzung"
@@ -393,19 +319,6 @@
   "src": "Katzung"
  },
  {
-  "term": "Hepatic Clearance",
-  "abbrev": "CLh",
-  "cat": "PK/PD",
-  "def": "Fraction of liver blood flow removing drug. CLh = Q × ER. High extraction drugs sensitive to flow changes.",
-  "related": [
-   "Clearance",
-   "Extraction Ratio",
-   "First-Pass Effect"
-  ],
-  "chapter": "PK",
-  "src": "Katzung"
- },
- {
   "term": "High Extraction Drug",
   "abbrev": "",
   "cat": "PK/PD",
@@ -445,19 +358,6 @@
   "src": "Katzung"
  },
  {
-  "term": "Loading Dose",
-  "abbrev": "LD",
-  "cat": "PK/PD",
-  "def": "Initial dose to rapidly achieve Css: LD = Vd × Css_target. Followed by maintenance doses.",
-  "related": [
-   "Maintenance Dose",
-   "Steady State",
-   "Vd"
-  ],
-  "chapter": "PK",
-  "src": "Katzung"
- },
- {
   "term": "Low Extraction Drug",
   "abbrev": "",
   "cat": "PK/PD",
@@ -466,31 +366,6 @@
    "Extraction Ratio",
    "Hepatic Clearance",
    "Enzyme Inhibition"
-  ],
-  "chapter": "PK",
-  "src": "Katzung"
- },
- {
-  "term": "Maintenance Dose",
-  "abbrev": "MD",
-  "cat": "PK/PD",
-  "def": "Regular dose to maintain Css: MD = Css × CL × τ/F. Frequency depends on half-life.",
-  "related": [
-   "Loading Dose",
-   "Steady State",
-   "Clearance"
-  ],
-  "chapter": "PK",
-  "src": "Katzung"
- },
- {
-  "term": "Michaelis-Menten Kinetics",
-  "abbrev": "",
-  "cat": "PK/PD",
-  "def": "Enzyme kinetics: V = Vmax × [S]/(Km + [S]). Becomes zero-order at saturation.",
-  "related": [
-   "Saturation Kinetics",
-   "Nonlinear Pharmacokinetics"
   ],
   "chapter": "PK",
   "src": "Katzung"
@@ -535,19 +410,6 @@
   "src": "Katzung"
  },
  {
-  "term": "P-Glycoprotein",
-  "abbrev": "P-gp",
-  "cat": "PK/PD",
-  "def": "ATP-dependent pump removing drugs from cells. Reduces absorption, increases biliary/renal excretion. Substrate for digoxin, cyclosporine.",
-  "related": [
-   "Active Transport",
-   "Bioavailability",
-   "Drug Interaction"
-  ],
-  "chapter": "PK",
-  "src": "Katzung"
- },
- {
   "term": "Passive Diffusion",
   "abbrev": "",
   "cat": "PK/PD",
@@ -587,19 +449,6 @@
   "src": "Katzung"
  },
  {
-  "term": "Pharmacogenomics",
-  "abbrev": "PGx",
-  "cat": "PK/PD",
-  "def": "How genetic variation affects drug response and metabolism. CYP2D6 polymorphisms, TPMT mutations, VKORC1.",
-  "related": [
-   "CYP2D6",
-   "CYP2C19",
-   "Pharmacogenetics"
-  ],
-  "chapter": "Pharmacogenetics",
-  "src": "Katzung"
- },
- {
   "term": "Pharmacokinetics",
   "abbrev": "PK",
   "cat": "PK/PD",
@@ -621,31 +470,6 @@
    "Free Drug Fraction",
    "Drug Interaction",
    "Vd"
-  ],
-  "chapter": "PK",
-  "src": "Katzung"
- },
- {
-  "term": "Prodrug",
-  "abbrev": "",
-  "cat": "PK/PD",
-  "def": "Inactive drug metabolized to active form. Enalapril → enalaprilat, clopidogrel → active metabolite, codeine → morphine.",
-  "related": [
-   "Active Metabolite",
-   "Metabolism"
-  ],
-  "chapter": "PK",
-  "src": "Katzung"
- },
- {
-  "term": "Renal Clearance",
-  "abbrev": "CLr",
-  "cat": "PK/PD",
-  "def": "Elimination via kidneys: filtration + secretion - reabsorption. CLr = (U_drug × V)/P_drug. Proportional to GFR.",
-  "related": [
-   "Glomerular Filtration",
-   "CrCl",
-   "Tubular Secretion"
   ],
   "chapter": "PK",
   "src": "Katzung"
@@ -674,19 +498,6 @@
    "Loading Dose"
   ],
   "chapter": "PK",
-  "src": "Katzung"
- },
- {
-  "term": "Therapeutic Drug Monitoring",
-  "abbrev": "TDM",
-  "cat": "PK/PD",
-  "def": "Measure plasma concentration to optimize therapy. Especially narrow TI drugs (digoxin, vancomycin). Sample at Cmin.",
-  "related": [
-   "Therapeutic Index",
-   "Steady State",
-   "Cmin"
-  ],
-  "chapter": "Clinical Pharmacology",
   "src": "Katzung"
  },
  {
@@ -776,19 +587,6 @@
    "Distribution",
    "Plasma Protein Binding",
    "Clearance"
-  ],
-  "chapter": "PK",
-  "src": "Katzung"
- },
- {
-  "term": "Zero-Order Kinetics",
-  "abbrev": "",
-  "cat": "PK/PD",
-  "def": "Elimination independent of concentration, occurring at saturation. Constant amount/time eliminated. Phenytoin, ethanol, aspirin.",
-  "related": [
-   "First-Order Kinetics",
-   "Saturation Kinetics",
-   "Michaelis-Menten"
   ],
   "chapter": "PK",
   "src": "Katzung"
@@ -975,58 +773,6 @@
   "src": "Katzung"
  },
  {
-  "term": "CYP2C19",
-  "abbrev": "",
-  "cat": "Pharmacology",
-  "def": "CYP450 metabolizes clopidogrel (Plavix), omeprazole, phenytoin, diazepam. Loss-of-function variants impair clopidogrel activation. ~10% metabolism.",
-  "related": [
-   "CYP450",
-   "Pharmacogenomics",
-   "Drug Interaction"
-  ],
-  "chapter": "Pharmacogenetics",
-  "src": "Katzung"
- },
- {
-  "term": "CYP2C9",
-  "abbrev": "",
-  "cat": "Pharmacology",
-  "def": "CYP450 metabolizes warfarin, NSAIDs, phenytoin. Variants (CYP2C9*2, *3) slow metabolism, increase warfarin toxicity. ~11% hepatic metabolism.",
-  "related": [
-   "CYP450",
-   "Warfarin",
-   "Pharmacogenomics"
-  ],
-  "chapter": "Pharmacogenetics",
-  "src": "Katzung"
- },
- {
-  "term": "CYP2D6",
-  "abbrev": "",
-  "cat": "Pharmacology",
-  "def": "CYP450 metabolizes codeine, tamoxifen, antiarrhythmics, antipsychotics. Creates ultrarapid/slow metabolizers. PGx testing guides dosing. Inhibited by SSRIs.",
-  "related": [
-   "CYP450",
-   "Pharmacogenomics",
-   "Drug Interaction"
-  ],
-  "chapter": "Pharmacogenetics",
-  "src": "Katzung"
- },
- {
-  "term": "CYP3A4",
-  "abbrev": "",
-  "cat": "Pharmacology",
-  "def": "Most abundant CYP450, metabolizes ~50% drugs: statins, protease inhibitors, macrolides, CCBs. Induced by rifampin; inhibited by ketoconazole, ritonavir. Major interaction source.",
-  "related": [
-   "CYP450",
-   "Drug Interaction",
-   "Enzyme Inhibition"
-  ],
-  "chapter": "Pharmacokinetics",
-  "src": "Katzung"
- },
- {
   "term": "Drug Interaction",
   "abbrev": "",
   "cat": "Pharmacology",
@@ -1193,19 +939,6 @@
    "Pharmacodynamics"
   ],
   "chapter": "Pharmacodynamics",
-  "src": "Katzung"
- },
- {
-  "term": "Serotonin Syndrome",
-  "abbrev": "",
-  "cat": "Pharmacology",
-  "def": "Life-threatening toxidrome from excessive serotonergic activity: agitation, confusion, hyperthermia, hyperreflexia, clonus, rigidity. SSRIs + MAOIs. Treat with benzodiazepines, cyproheptadine.",
-  "related": [
-   "SSRI",
-   "MAOI",
-   "Serotonin Agonist"
-  ],
-  "chapter": "Toxicology",
   "src": "Katzung"
  },
  {
@@ -1404,32 +1137,6 @@
   "src": "Cardiovascular Textbooks"
  },
  {
-  "term": "Atrial Fibrillation",
-  "abbrev": "AFib",
-  "cat": "Cardiovascular",
-  "def": "Most common arrhythmia: disorganized atrial activity, irregular VR. Stroke risk (CHA2DS2-VASc score ≥2 → anticoagulation). Heart failure, syncope.",
-  "related": [
-   "Antiarrhythmic",
-   "Anticoagulation",
-   "Stroke Prevention"
-  ],
-  "chapter": "Cardiology",
-  "src": "Katzung"
- },
- {
-  "term": "Atrial Flutter",
-  "abbrev": "",
-  "cat": "Cardiovascular",
-  "def": "Regular rapid atrium (250-350 bpm), sawtooth ECG. Often paroxysmal. Palpitations, dyspnea. May degenerate to AFib.",
-  "related": [
-   "Atrial Fibrillation",
-   "Arrhythmia",
-   "SVT"
-  ],
-  "chapter": "Cardiology",
-  "src": "Katzung"
- },
- {
   "term": "AV Node",
   "abbrev": "",
   "cat": "Cardiovascular",
@@ -1534,19 +1241,6 @@
   "src": "Katzung"
  },
  {
-  "term": "Cardiogenic Shock",
-  "abbrev": "",
-  "cat": "Cardiovascular",
-  "def": "Inadequate CO causing tissue hypoperfusion/organ dysfunction. From acute MI, HF decompensation, severe arrhythmia. Inotropes, vasopressors, mechanical support.",
-  "related": [
-   "Shock",
-   "Acute Heart Failure",
-   "MI Complications"
-  ],
-  "chapter": "Critical Care",
-  "src": "Katzung"
- },
- {
   "term": "Cardiomyopathy",
   "abbrev": "",
   "cat": "Cardiovascular",
@@ -1571,19 +1265,6 @@
   ],
   "chapter": "Cardiology",
   "src": "ACLS Guidelines"
- },
- {
-  "term": "CHA2DS2-VASc Score",
-  "abbrev": "",
-  "cat": "Cardiovascular",
-  "def": "Stroke risk in AFib: C=CHF, H=HTN, A=age≥75 (2 pts), D=DM, S=stroke (2 pts), V=vascular, A=age 65-74, Sc=sex female. Anticoagulation recommended at score ≥2 in men or ≥3 in women.",
-  "related": [
-   "Atrial Fibrillation",
-   "Anticoagulation",
-   "Stroke Prevention"
-  ],
-  "chapter": "Cardiology",
-  "src": "ACC Guidelines"
  },
  {
   "term": "Chronotropy",
@@ -1622,19 +1303,6 @@
    "Heart Block"
   ],
   "chapter": "Cardiac Conduction",
-  "src": "Katzung"
- },
- {
-  "term": "Coronary Artery Disease",
-  "abbrev": "CAD",
-  "cat": "Cardiovascular",
-  "def": "Atherosclerotic coronary narrowing reducing myocardial perfusion. Angina, MI, SCD. Risk factors: HTN, DM, hyperlipidemia, smoking.",
-  "related": [
-   "MI",
-   "Angina",
-   "Atherosclerosis"
-  ],
-  "chapter": "Cardiology",
   "src": "Katzung"
  },
  {
@@ -1711,19 +1379,6 @@
    "Systolic Dysfunction",
    "Cardiac Output",
    "Echocardiography"
-  ],
-  "chapter": "Cardiology",
-  "src": "Katzung"
- },
- {
-  "term": "Endocarditis",
-  "abbrev": "IE",
-  "cat": "Cardiovascular",
-  "def": "Endocardium/valve infection (Streptococci, Staphylococci, HACEK). Fever, new murmur, emboli. Diagnosed: blood cultures + echo. Prolonged IV antibiotics.",
-  "related": [
-   "Infective Endocarditis",
-   "Bacteremia",
-   "Antibiotic Prophylaxis"
   ],
   "chapter": "Cardiology",
   "src": "Katzung"
@@ -1859,19 +1514,6 @@
   "src": "Katzung"
  },
  {
-  "term": "Hypertrophic Cardiomyopathy",
-  "abbrev": "HCM",
-  "cat": "Cardiovascular",
-  "def": "Genetic disorder (sarcomeric protein mutations) causing unexplained LV hypertrophy. Sudden cardiac death, AFib, HF risk. Murmur increases with Valsalva. Beta-blockers.",
-  "related": [
-   "Cardiomyopathy",
-   "Sudden Cardiac Death",
-   "Genetics"
-  ],
-  "chapter": "Cardiology",
-  "src": "Katzung"
- },
- {
   "term": "Inotropy",
   "abbrev": "",
   "cat": "Cardiovascular",
@@ -1882,19 +1524,6 @@
    "Cardiogenic Shock"
   ],
   "chapter": "Cardiac Physiology",
-  "src": "Katzung"
- },
- {
-  "term": "INR (International Normalized Ratio)",
-  "abbrev": "INR",
-  "cat": "Cardiovascular",
-  "def": "Standardized warfarin measure: INR = (PT_patient/PT_normal)^ISI. Target 2-3 most indications. Requires monitoring; affected by food/drugs.",
-  "related": [
-   "Warfarin",
-   "Anticoagulation",
-   "PT"
-  ],
-  "chapter": "Hematology",
   "src": "Katzung"
  },
  {
@@ -2080,19 +1709,6 @@
   "src": "Katzung"
  },
  {
-  "term": "PCSK9 Inhibitor",
-  "abbrev": "",
-  "cat": "Cardiovascular",
-  "def": "Monoclonal antibodies (evolocumab, alirocumab) inhibiting PCSK9, decreasing LDL receptor degradation to increase LDL receptor recycling. LDL reduction 50-60%. Familial hypercholesterolemia, CAD. High cost.",
-  "related": [
-   "Statin",
-   "LDL",
-   "Hyperlipidemia"
-  ],
-  "chapter": "Cardiology",
-  "src": "ACC/AHA Guidelines"
- },
- {
   "term": "PCI (Percutaneous Coronary Intervention)",
   "abbrev": "PCI",
   "cat": "Cardiovascular",
@@ -2273,19 +1889,6 @@
   ],
   "chapter": "Cardiology",
   "src": "Katzung"
- },
- {
-  "term": "STEMI",
-  "abbrev": "",
-  "cat": "Cardiovascular",
-  "def": "ST-elevation MI from transmural MI with coronary occlusion. ST elevation ≥1 mm ≥2 contiguous leads. Urgent reperfusion (PCI <120 min or thrombolysis).",
-  "related": [
-   "MI",
-   "ACS",
-   "PCI"
-  ],
-  "chapter": "Cardiology",
-  "src": "ACC/AHA Guidelines"
  },
  {
   "term": "Stroke Volume",
@@ -2492,7 +2095,10 @@
    "De-escalation",
    "Procalcitonin",
    "Empiric Therapy",
-   "IDSA Guidelines"
+   "IDSA Guidelines",
+   "Antibiotic Resistance",
+   "CDI",
+   "De-Escalation"
   ],
   "chapter": "Infectious Disease",
   "src": "IDSA/SHEA Stewardship Guidelines"
@@ -2922,7 +2528,9 @@
    "MIC",
    "TDM",
    "PK/PD Target",
-   "Bayesian TDM"
+   "Bayesian TDM",
+   "AUC",
+   "Vancomycin AUC Monitoring"
   ],
   "chapter": "Infectious Disease",
   "src": "ASHP/IDSA 2020 Vancomycin Guidelines"
@@ -2967,7 +2575,10 @@
    "RASS",
    "Sedation Interruption",
    "CAM-ICU",
-   "Pain Management (ICU)"
+   "Pain Management (ICU)",
+   "Delirium in the ICU",
+   "Weaning from Mechanical Ventilation",
+   "Sedation Management"
   ],
   "chapter": "Critical Care",
   "src": "Pun et al. Critical Care Medicine 2019"
@@ -3205,21 +2816,6 @@
   "src": "Sessler et al. AJRCCM 2002"
  },
  {
-  "term": "Stress Ulcer Prophylaxis",
-  "abbrev": "SUP",
-  "cat": "Critical Care",
-  "def": "histamine-2 blockers (famotidine) an alternative; the PEPTIC trial found no clear mortality difference between PPI and H2 blocker (SUP-ICU compared pantoprazole vs placebo)",
-  "related": [
-   "PPI",
-   "H2 Blocker",
-   "GI Bleed",
-   "Mechanical Ventilation",
-   "C. difficile"
-  ],
-  "chapter": "Critical Care",
-  "src": "SUP-ICU Trial NEJM 2018"
- },
- {
   "term": "TTM (Targeted Temperature Management)",
   "abbrev": "TTM",
   "cat": "Critical Care",
@@ -3286,7 +2882,9 @@
    "Levothyroxine",
    "Myxedema Coma",
    "Hashimoto Disease",
-   "Free T4"
+   "Free T4",
+   "Thyroid Function Tests",
+   "Hyperthyroidism"
   ],
   "chapter": "Endocrinology",
   "src": "ATA Hypothyroidism Guidelines 2014"
@@ -3300,7 +2898,8 @@
    "PTU",
    "Graves Disease",
    "RAI",
-   "Thyroid Storm"
+   "Thyroid Storm",
+   "Propylthiouracil"
   ],
   "chapter": "Endocrinology",
   "src": "ATA Hyperthyroidism Guidelines 2016"
@@ -3444,10 +3043,14 @@
    "Fludrocortisone",
    "Hydrocortisone",
    "ACTH Stimulation",
-   "Steroid Taper"
+   "Steroid Taper",
+   "Corticosteroids",
+   "Stress-Dose Steroids",
+   "Hypothalamic-Pituitary Axis"
   ],
   "chapter": "Endocrinology",
-  "src": "Endocrine Society Adrenal Insufficiency Guidelines 2016"
+  "src": "Endocrine Society Adrenal Insufficiency Guidelines 2016",
+  "abbrev": "AI"
  },
  {
   "term": "Epilepsy",
@@ -3486,10 +3089,14 @@
    "Fosphenytoin",
    "Levetiracetam",
    "Benzodiazepine",
-   "Epilepsy"
+   "Epilepsy",
+   "Seizure Management",
+   "Antiepileptic Drugs",
+   "ESETT Trial"
   ],
   "chapter": "Neurology",
-  "src": "AES/ACNS Status Epilepticus Guidelines"
+  "src": "AES/ACNS Status Epilepticus Guidelines",
+  "abbrev": "SE"
  },
  {
   "term": "Ischemic Stroke (Acute)",
@@ -3924,11 +3531,12 @@
   "term": "INR (International Normalized Ratio)",
   "abbrev": "INR",
   "cat": "Lab Values",
-  "def": "Standardized measure of the extrinsic coagulation pathway (factors II, VII, X, and fibrinogen); factors II, VII, IX, and X are the vitamin K-dependent factors.",
+  "def": "Standardized prothrombin-time ratio: INR = (PT patient / PT mean normal)^ISI. The PT reflects the extrinsic and common pathways (factors VII, X, V, II, and fibrinogen); warfarin lowers the vitamin K–dependent factors II, VII, IX, and X. Target 2–3 for most warfarin indications (2.5–3.5 for some mechanical mitral valves). Affected by diet, interacting drugs, and liver function.",
   "related": [
    "Warfarin",
-   "TTR",
+   "Anticoagulation",
    "PT",
+   "TTR",
    "Factor Deficiency",
    "Coagulation"
   ],
@@ -4059,7 +3667,7 @@
   "term": "TDM",
   "abbrev": "TDM",
   "cat": "Abbreviations",
-  "def": "Therapeutic Drug Monitoring — systematic measurement of drug concentrations to individualize dosing and ensure therapeutic efficacy while avoiding toxicity. Applied to drugs with narrow therapeutic indices, significant PK variability, or difficult-to-assess clinical endpoints. Key BCPS drugs: vancomycin (AUC/MIC), aminoglycosides (peak/trough), digoxin (0.5-0.8 ng/mL), phenytoin (10-20 mcg/mL free-corrected), cyclosporine/tacrolimus (troughs), lithium (0.6-1.2 mEq/L).",
+  "def": "Therapeutic Drug Monitoring — systematic measurement of drug concentrations to individualize dosing and ensure therapeutic efficacy while avoiding toxicity. Applied to drugs with narrow therapeutic indices, significant PK variability, or difficult-to-assess clinical endpoints. Key BCPS drugs: vancomycin (AUC/MIC), aminoglycosides (peak/trough), digoxin (0.5-0.8 ng/mL), phenytoin (10-20 mcg/mL free-corrected), cyclosporine/tacrolimus (troughs), lithium (0.8–1.2 mEq/L in acute mania; 0.6–1.0 mEq/L for maintenance).",
   "related": [
    "Narrow TI Drug",
    "Vancomycin",
@@ -4207,7 +3815,7 @@
   "term": "Narrow Therapeutic Index Drug",
   "abbrev": "NTI",
   "cat": "Pharmacology",
-  "def": "Drugs with a small difference between the minimum effective concentration and the minimum toxic concentration, requiring careful monitoring. Key BCPS NTI drugs: digoxin (0.5-0.8 ng/mL), vancomycin (AUC 400-600), phenytoin (10-20 mcg/mL free), lithium (0.6-1.2 mEq/L acute, 0.4-1 mEq/L maintenance), warfarin (INR 2-3), cyclosporine/tacrolimus (variable), aminoglycosides (peak 8-10, trough <1). Generic substitution of NTI drugs requires caution — small changes in bioavailability can cause toxicity.",
+  "def": "Drugs with a small difference between the minimum effective concentration and the minimum toxic concentration, requiring careful monitoring. Key BCPS NTI drugs: digoxin (0.5-0.8 ng/mL), vancomycin (AUC 400-600), phenytoin (10-20 mcg/mL free), lithium (0.8–1.2 mEq/L in acute mania; 0.6–1.0 mEq/L for maintenance), warfarin (INR 2-3), cyclosporine/tacrolimus (variable), aminoglycosides (peak 8-10, trough <1). Generic substitution of NTI drugs requires caution — small changes in bioavailability can cause toxicity.",
   "related": [
    "TDM",
    "Vancomycin",
@@ -4226,6 +3834,7 @@
   "related": [
    "SSRI",
    "MAOI",
+   "Serotonin Agonist",
    "Linezolid",
    "Hunter Criteria",
    "Cyproheptadine"
@@ -4265,11 +3874,13 @@
  {
   "term": "CYP3A4",
   "cat": "Pharmacology",
-  "def": "Strong inhibitors: azole antifungals (itraconazole, ketoconazole, posaconazole, voriconazole), clarithromycin, ritonavir, grapefruit juice (fluconazole is a moderate CYP3A4 inhibitor).",
+  "def": "Most abundant hepatic and intestinal CYP enzyme; metabolizes roughly half of marketed drugs (statins such as simvastatin and atorvastatin, calcium channel blockers, protease inhibitors, macrolides, tacrolimus, cyclosporine). Strong inhibitors: ketoconazole, itraconazole, posaconazole, voriconazole, clarithromycin, ritonavir/cobicistat; grapefruit juice inhibits intestinal CYP3A4. Fluconazole is a moderate inhibitor. Strong inducers: rifampin, carbamazepine, phenytoin, St. John's wort. A major source of clinically significant interactions.",
   "related": [
+   "CYP450",
+   "Drug Interaction",
+   "Enzyme Inhibition",
    "CYP Inhibitor",
    "CYP Inducer",
-   "Drug Interaction",
    "Rifampin",
    "Azole"
   ],
@@ -4281,10 +3892,11 @@
   "cat": "Pharmacology",
   "def": "Key CYP enzyme metabolizing: warfarin (S-enantiomer — more potent anticoagulant), phenytoin, NSAIDs (ibuprofen, celecoxib), losartan, glipizide, fluvastatin. Strong inhibitors: fluconazole (major — significantly increases warfarin effect), amiodarone, metronidazole, miconazole. Strong inducers: rifampin, carbamazepine. Pharmacogenomics: CYP2C9 *2/*3 poor metabolizers require lower warfarin doses; *2/*3 polymorphisms combined with VKORC1 influence warfarin dosing algorithms.",
   "related": [
+   "CYP450",
    "Warfarin",
+   "Pharmacogenomics",
    "Phenytoin",
    "CYP2C9 Inhibitor",
-   "Pharmacogenomics",
    "Drug Interaction"
   ],
   "chapter": "Pharmacology",
@@ -4295,10 +3907,12 @@
   "cat": "Pharmacology",
   "def": "Polymorphic enzyme (poor metabolizers 7-10% Caucasians, ultrarapid metabolizers 1-7%). Metabolizes: codeine → morphine (ultrarapid metabolizers at risk for opioid toxicity; PM: no analgesia); tramadol; antidepressants (fluoxetine, paroxetine, venlafaxine); antipsychotics (haloperidol, risperidone); beta-blockers (metoprolol, carvedilol). Inhibitors (also act as substrates): paroxetine, fluoxetine, bupropion, cinacalcet. CYP2D6 cannot be induced. Tamoxifen: CYP2D6 converts to active metabolite endoxifen; PMs have lower efficacy.",
   "related": [
+   "CYP450",
+   "Pharmacogenomics",
+   "Drug Interaction",
    "Codeine",
    "Tramadol",
    "Tamoxifen",
-   "Pharmacogenomics",
    "Ultrarapid Metabolizer"
   ],
   "chapter": "Pharmacology",
@@ -4309,10 +3923,12 @@
   "cat": "Pharmacology",
   "def": "Polymorphic enzyme metabolizing: clopidogrel (prodrug → active metabolite via CYP2C19 — loss-of-function alleles *2, *3 reduce antiplatelet effect; FDA Black Box Warning: test if possible), PPIs (omeprazole, pantoprazole — PMs have higher PPI levels = better acid suppression but not different clinical outcomes), voriconazole (nonlinear kinetics in PMs — dose adjust), escitalopram. Poor metabolizers: reduced clopidogrel efficacy → increased MACE risk post-ACS/PCI. Ultrarapid metabolizers: may need higher clopidogrel doses.",
   "related": [
+   "CYP450",
+   "Pharmacogenomics",
+   "Drug Interaction",
    "Clopidogrel",
    "PPI",
    "Voriconazole",
-   "Pharmacogenomics",
    "MACE"
   ],
   "chapter": "Pharmacology",
@@ -4414,7 +4030,10 @@
    "Lung-Protective Ventilation",
    "SBT",
    "Weaning",
-   "Extubation"
+   "Extubation",
+   "ARDS Management",
+   "PEEP",
+   "Weaning from Mechanical Ventilation"
   ],
   "chapter": "Critical Care",
   "src": "SCCM Mechanical Ventilation Guidelines"
@@ -4670,7 +4289,9 @@
    "LBBB",
    "QRS Width",
    "ICD",
-   "Device Therapy"
+   "Device Therapy",
+   "Heart Failure with Reduced EF",
+   "LVEF"
   ],
   "chapter": "Cardiovascular",
   "src": "ACC/AHA HF Guidelines / COMPANION/CARE-HF"
@@ -4681,6 +4302,9 @@
   "cat": "Cardiovascular",
   "def": "Atherosclerotic plaque disease in coronary arteries. Stable CAD: angina with exertion, managed medically (aspirin, statin, beta-blocker, RAAS, sublingual NTG PRN). Unstable angina/NSTEMI: plaque rupture without complete occlusion (no ST elevation, troponin rise). STEMI: complete occlusion with ST elevation — primary PCI within 90 min (door-to-balloon); fibrinolysis if PCI unavailable within 120 min. Risk factor modification: statin (high-intensity for ASCVD), aspirin, smoking cessation, BP control <130/80, diabetes management.",
   "related": [
+   "MI",
+   "Angina",
+   "Atherosclerosis",
    "ACS",
    "STEMI",
    "NSTEMI",
@@ -4724,6 +4348,9 @@
   "cat": "Cardiovascular",
   "def": "Most common sustained cardiac arrhythmia. Chaotic atrial electrical activity → irregular ventricular response. Rate control: beta-blocker or non-dihydropyridine CCB (diltiazem/verapamil) for rapid ventricular response; digoxin + BB for sedentary patients. Rhythm control: amiodarone (most effective, most side effects), sotalol, flecainide (pill-in-pocket), dofetilide. Anticoagulation: CHA2DS2-VASc ≥2 (males) or ≥3 (females) → anticoagulate. DOACs preferred over warfarin. Cardioversion if >48h or unknown duration: anticoagulate 3 weeks before or TEE-guided (rule out thrombus).",
   "related": [
+   "Antiarrhythmic",
+   "Anticoagulation",
+   "Stroke Prevention",
    "CHA2DS2-VASc",
    "Rate Control",
    "Rhythm Control",
@@ -4738,9 +4365,11 @@
   "cat": "Cardiovascular",
   "def": "Stroke risk stratification in AFib: C=CHF (+1), H=Hypertension (+1), A2=Age ≥75 (+2), D=Diabetes (+1), S2=Stroke/TIA/thromboembolism (+2), V=Vascular disease (+1), A=Age 65-74 (+1), Sc=Sex category female (+1). Total 0-9. Anticoagulation thresholds: males ≥2, females ≥3. Score 0 (male) or 1 (female): no anticoagulation recommended. Score 1 (male): may consider anticoagulation. Note: female sex is a risk modifier, not independent predictor — females with no other risk factors do not require anticoagulation.",
   "related": [
+   "Atrial Fibrillation",
+   "Anticoagulation",
+   "Stroke Prevention",
    "AFib",
    "DOAC",
-   "Anticoagulation",
    "Stroke Risk",
    "Warfarin"
   ],
@@ -4767,8 +4396,9 @@
   "cat": "Cardiovascular",
   "def": "Monoclonal antibodies (evolocumab = Repatha, alirocumab = Praluent) that inhibit PCSK9 enzyme, which normally degrades LDL receptors. Inhibition → more LDL receptors → marked LDL lowering (50-60% additional reduction). FOURIER trial (evolocumab): ↓ MACE 15% in established ASCVD on maximally tolerated statin, LDL reaching ~30 mg/dL. ODYSSEY OUTCOMES (alirocumab): similar benefit in post-ACS. Indication: ASCVD with LDL ≥70 on maximally tolerated statin + ezetimibe, or familial hypercholesterolemia. Subcutaneous injection every 2 weeks or monthly. Very expensive.",
   "related": [
-   "LDL",
    "Statin",
+   "LDL",
+   "Hyperlipidemia",
    "Ezetimibe",
    "FOURIER Trial",
    "ASCVD"
@@ -5091,7 +4721,7 @@
  {
   "term": "Lithium Toxicity",
   "cat": "Pharmacology",
-  "def": "Narrow TI: therapeutic range 0.6-1.2 mEq/L (acute therapy); 0.4-1.0 maintenance. Toxicity symptoms: tremor (fine early, coarse toxic), GI (nausea, diarrhea, vomiting), neurological (confusion, ataxia, dysarthria), seizures, cardiac arrhythmias. Risk factors: Na+ depletion (ACEi, thiazides — increase Li+ reabsorption), NSAIDs (↑levels 25-60%), dehydration. Therapeutic level does not rule out toxicity if chronic. Treatment: aggressive IVF with 0.9% NS (expand Na+ → less Li+ reabsorption), hemodialysis for severe toxicity (level >4 mEq/L or severe symptoms). Renally cleared; adjust with CrCl.",
+  "def": "Narrow TI: therapeutic range 0.8–1.2 mEq/L in acute mania; 0.6–1.0 mEq/L for maintenance. Toxicity symptoms: tremor (fine early, coarse toxic), GI (nausea, diarrhea, vomiting), neurological (confusion, ataxia, dysarthria), seizures, cardiac arrhythmias. Risk factors: Na+ depletion (ACEi, thiazides — increase Li+ reabsorption), NSAIDs (↑levels 25-60%), dehydration. Therapeutic level does not rule out toxicity if chronic. Treatment: aggressive IVF with 0.9% NS (expand Na+ → less Li+ reabsorption), hemodialysis for severe toxicity (level >4 mEq/L or severe symptoms). Renally cleared; adjust with CrCl.",
   "related": [
    "Narrow TI Drug",
    "TDM",
@@ -5458,6 +5088,8 @@
   "def": "Drug elimination rate is constant regardless of concentration (e.g., alcohol, phenytoin at high doses). Unlike first-order, doubling the dose more than doubles the drug effect and duration.",
   "related": [
    "First-Order Kinetics",
+   "Saturation Kinetics",
+   "Michaelis-Menten",
    "Michaelis-Menten Kinetics",
    "Phenytoin"
   ],
@@ -5483,6 +5115,8 @@
   "cat": "PK/PD",
   "def": "Saturable, nonlinear kinetics. At low concentrations follows first-order; at high concentrations becomes zero-order. Phenytoin and ethanol are classic examples. Small dose changes cause disproportionate level changes at high concentrations.",
   "related": [
+   "Saturation Kinetics",
+   "Nonlinear Pharmacokinetics",
    "Zero-Order Kinetics",
    "Phenytoin",
    "Saturable Protein Binding"
@@ -5496,9 +5130,10 @@
   "cat": "PK/PD",
   "def": "Large initial dose used to rapidly achieve therapeutic concentrations. LD = (Vd × Css) / F. Used when rapid attainment of steady-state is critical (e.g., digoxin, phenytoin, vancomycin in severe infections).",
   "related": [
-   "Volume of Distribution",
+   "Maintenance Dose",
    "Steady State",
-   "Maintenance Dose"
+   "Vd",
+   "Volume of Distribution"
   ],
   "chapter": "Pharmacokinetics",
   "src": "Basic Clinical Pharmacokinetics, Winter"
@@ -5510,8 +5145,8 @@
   "def": "Dose given to maintain steady-state concentration. MD = CL × Css × τ / F. Determined by clearance and desired steady-state concentration, not volume of distribution.",
   "related": [
    "Loading Dose",
-   "Clearance",
-   "Steady State"
+   "Steady State",
+   "Clearance"
   ],
   "chapter": "Pharmacokinetics",
   "src": "Basic Clinical Pharmacokinetics, Winter"
@@ -5522,6 +5157,8 @@
   "cat": "PK/PD",
   "def": "Hypothetical volume that would contain total drug at plasma concentration. Vd = Dose/C0. High Vd (>1 L/kg) indicates extensive tissue distribution. Low Vd (<0.1 L/kg) suggests drug stays in plasma.",
   "related": [
+   "Distribution",
+   "Clearance",
    "Loading Dose",
    "Lipophilicity",
    "Protein Binding"
@@ -5536,6 +5173,7 @@
   "def": "Fraction of drug that reaches systemic circulation unchanged. Oral F affected by gut wall metabolism and first-pass hepatic extraction. IV F = 100%. Key for dose conversion between routes.",
   "related": [
    "First-Pass Effect",
+   "Oral Bioavailability",
    "AUC",
    "Bioequivalence"
   ],
@@ -5561,6 +5199,8 @@
   "cat": "PK/PD",
   "def": "Used in PK/PD target attainment (AUC/MIC for vancomycin and fluoroquinolones; aminoglycosides are concentration-dependent, targeting Cmax/MIC).",
   "related": [
+   "Clearance",
+   "Cmax",
    "Bioavailability",
    "PK/PD Targets",
    "Vancomycin AUC Monitoring"
@@ -5587,6 +5227,9 @@
   "cat": "PK/PD",
   "def": "Drug removed by kidneys via filtration, secretion, and reabsorption. CLR = (fe × CL). Affected by GFR, tubular secretion (OAT/OCT transporters), and urine pH. Dose adjust when CLR major elimination pathway.",
   "related": [
+   "Glomerular Filtration",
+   "CrCl",
+   "Tubular Secretion",
    "GFR",
    "Creatinine Clearance",
    "Drug Transporters"
@@ -5600,6 +5243,8 @@
   "cat": "PK/PD",
   "def": "Drug eliminated by liver = hepatic blood flow × extraction ratio (E). High-E drugs (>0.7): clearance flow-dependent — sensitive to cardiac output changes. Low-E drugs (<0.3): clearance capacity-dependent — sensitive to liver disease and protein binding.",
   "related": [
+   "Clearance",
+   "Extraction Ratio",
    "First-Pass Effect",
    "CYP Enzymes",
    "Hepatic Extraction Ratio"
@@ -5626,6 +5271,9 @@
   "cat": "PK/PD",
   "def": "ATP-dependent efflux transporter (MDR1/ABCB1). Pumps drugs out of cells — limits oral absorption and CNS penetration. Substrates: digoxin, dabigatran, colchicine. Inhibitors (amiodarone, clarithromycin) increase substrate levels. Inducers (rifampin) decrease levels.",
   "related": [
+   "Active Transport",
+   "Bioavailability",
+   "Drug Interaction",
    "Drug Transporters",
    "Drug-Drug Interactions",
    "Digoxin"
@@ -5641,6 +5289,7 @@
   "related": [
    "CYP2D6",
    "CYP2C19",
+   "Pharmacogenetics",
    "Abacavir Hypersensitivity"
   ],
   "chapter": "Pharmacology",
@@ -5652,6 +5301,9 @@
   "cat": "Pharmacology",
   "def": "Measuring drug concentrations to optimize therapy. Indicated for: narrow therapeutic index drugs, variable pharmacokinetics, toxicity assessment. Examples: vancomycin (AUC-guided), aminoglycosides (extended-interval), phenytoin, digoxin, lithium, cyclosporine, tacrolimus.",
   "related": [
+   "Therapeutic Index",
+   "Steady State",
+   "Cmin",
    "Narrow Therapeutic Index",
    "AUC",
    "Vancomycin AUC Monitoring"
@@ -5678,6 +5330,9 @@
   "cat": "Pharmacology",
   "def": "Drug secreted into bile, hydrolyzed by gut bacteria, reabsorbed into portal circulation, prolonging effect and half-life. Relevant for: estrogen (oral contraceptive failure with antibiotics debated), mycophenolate, morphine, methotrexate. Cholestyramine can interrupt EHC as treatment strategy.",
   "related": [
+   "Biliary Excretion",
+   "Elimination",
+   "First-Pass Effect",
    "Hepatic Clearance",
    "Drug-Drug Interactions",
    "Mycophenolate"
@@ -5691,6 +5346,8 @@
   "cat": "Pharmacology",
   "def": "Pharmacologically inactive compound converted to active drug in vivo. Requires metabolic activation. Examples: clopidogrel→active thiol (CYP2C19), codeine→morphine (CYP2D6), enalapril→enalaprilat, valganciclovir→ganciclovir. Genetic polymorphisms affecting activation enzymes can alter efficacy/toxicity.",
   "related": [
+   "Active Metabolite",
+   "Metabolism",
    "CYP2C19",
    "CYP2D6",
    "Pharmacogenomics"
@@ -5783,6 +5440,8 @@
   "def": "Macro-reentrant circuit in right atrium, typically 300 bpm with 2:1 conduction giving ventricular rate ~150 bpm. Classic sawtooth pattern in leads II, III, aVF. Stroke risk same as AFib — anticoagulate by same criteria. Cardioversion often easier than AFib. Catheter ablation (CTI ablation) highly effective (>95%).",
   "related": [
    "Atrial Fibrillation",
+   "Arrhythmia",
+   "SVT",
    "Anticoagulation in AFib",
    "Cardioversion"
   ],
@@ -5829,19 +5488,6 @@
   "src": "AHA ACLS 2020"
  },
  {
-  "term": "Cardiac Resynchronization Therapy",
-  "abbrev": "CRT",
-  "cat": "Cardiovascular",
-  "def": "Biventricular pacemaker (±ICD = CRT-D) corrects ventricular dyssynchrony in HFrEF with LBBB. Indication: EF ≤35%, LBBB with QRS ≥150ms (Class I), QRS 120-149ms (Class IIa). Improves mortality, hospitalization, quality of life, and EF. Non-LBBB benefit uncertain.",
-  "related": [
-   "Heart Failure with Reduced EF",
-   "ICD",
-   "LVEF"
-  ],
-  "chapter": "Cardiovascular",
-  "src": "ACC/AHA HF Guidelines 2022"
- },
- {
   "term": "Coronary Artery Bypass Graft",
   "abbrev": "CABG",
   "cat": "Cardiovascular",
@@ -5873,6 +5519,8 @@
   "cat": "Cardiovascular",
   "def": "ST-elevation MI: complete coronary occlusion. Immediate reperfusion: primary PCI preferred (<90 min door-to-balloon at PCI center, <120 min transfer). Fibrinolysis if PCI unavailable within 120 min. Medications: aspirin, P2Y12 inhibitor (prasugrel or ticagrelor preferred), anticoagulation, high-intensity statin. Avoid NSAIDs post-MI.",
   "related": [
+   "MI",
+   "ACS",
    "PCI",
    "Fibrinolysis",
    "Dual Antiplatelet Therapy"
@@ -5886,6 +5534,9 @@
   "cat": "Cardiovascular",
   "def": "Hemodynamic compromise from severe cardiac dysfunction: SBP <90 mmHg, CI <2.2 L/min/m², elevated filling pressures, end-organ hypoperfusion. Most common cause: STEMI. Treatment: emergent revascularization (PCI), vasopressors (norepinephrine preferred over dopamine per SOAP II), inotropes (dobutamine), consider mechanical circulatory support (IABP, Impella).",
   "related": [
+   "Shock",
+   "Acute Heart Failure",
+   "MI Complications",
    "STEMI",
    "Vasopressors",
    "Dobutamine"
@@ -5925,7 +5576,9 @@
   "cat": "Cardiovascular",
   "def": "Genetic (sarcomere mutations) myocardial hypertrophy, often asymmetric septal. LVOTO in 70%. Risk of sudden cardiac death (SCD). Avoid: digoxin, vasodilators, diuretics (preload reduction worsens obstruction), high-intensity exercise. Treatment: beta-blockers, disopyramide. Mavacamten (myosin inhibitor) approved 2022 for obstructive HCM. ICD for SCD prevention.",
   "related": [
+   "Cardiomyopathy",
    "Sudden Cardiac Death",
+   "Genetics",
    "ICD",
    "Mavacamten"
   ],
@@ -6016,6 +5669,9 @@
   "cat": "Infectious Disease",
   "def": "Infective endocarditis: infection of cardiac valves/endocardium. Modified Duke criteria for diagnosis. Common organisms: S. aureus (most common acute; IV drug use), viridans streptococci (subacute), enterococci, HACEK. Empiric: vancomycin + ceftriaxone (native valve); add gentamicin for prosthetic valve. 4-6 weeks therapy. Indications for surgery: heart failure, persistent bacteremia, abscess, prosthetic valve.",
   "related": [
+   "Infective Endocarditis",
+   "Bacteremia",
+   "Antibiotic Prophylaxis",
    "MRSA",
    "Streptococcal Endocarditis",
    "Duke Criteria"
@@ -6063,19 +5719,6 @@
   "src": "ATS/CDC/IDSA TB Guidelines 2016"
  },
  {
-  "term": "Antimicrobial Stewardship",
-  "abbrev": "AMS",
-  "cat": "Infectious Disease",
-  "def": "Coordinated program to optimize antibiotic use, improving outcomes while reducing resistance and C. diff. Core strategies: prospective audit with feedback, formulary restriction with pre-authorization, de-escalation, IV-to-oral switch, optimal duration, culture-guided therapy. Pharmacists are central to stewardship teams. IDSA/SHEA core elements published 2016.",
-  "related": [
-   "Antibiotic Resistance",
-   "CDI",
-   "De-Escalation"
-  ],
-  "chapter": "Infectious Disease",
-  "src": "IDSA/SHEA Stewardship Guidelines 2016"
- },
- {
   "term": "Septic Shock",
   "abbrev": "",
   "cat": "Critical Care",
@@ -6100,19 +5743,6 @@
   ],
   "chapter": "Critical Care",
   "src": "PROSEVA Trial 2013; ROSE Trial 2019"
- },
- {
-  "term": "Mechanical Ventilation Modes",
-  "abbrev": "",
-  "cat": "Critical Care",
-  "def": "AC/VC (Assist Control/Volume Control): set tidal volume, variable pressure — lung protective preferred. AC/PC (Pressure Control): set pressure, variable volume. SIMV: synchronized intermittent mandatory ventilation — rarely used. PSV (Pressure Support): partial support — used for weaning. CPAP: continuous positive pressure — spontaneous breathing. Key settings: FiO2, PEEP, rate, Vt, I:E ratio.",
-  "related": [
-   "ARDS Management",
-   "PEEP",
-   "Weaning from Mechanical Ventilation"
-  ],
-  "chapter": "Critical Care",
-  "src": "ACCP Mechanical Ventilation Guidelines"
  },
  {
   "term": "Weaning from Mechanical Ventilation",
@@ -6141,19 +5771,6 @@
   "src": "PADIS Guidelines 2018"
  },
  {
-  "term": "ABCDEF Bundle",
-  "abbrev": "",
-  "cat": "Critical Care",
-  "def": "Evidence-based ICU care bundle: A=Assess/manage pain; B=Spontaneous awakening+breathing trials; C=Choice of sedation/analgesia (minimize benzodiazepines); D=Delirium monitoring/management; E=Early mobility and exercise; F=Family engagement. Implementation associated with 68% reduction in ICU delirium, shorter ventilation, reduced mortality.",
-  "related": [
-   "Delirium in the ICU",
-   "Weaning from Mechanical Ventilation",
-   "Sedation Management"
-  ],
-  "chapter": "Critical Care",
-  "src": "Ely et al., Critical Care Medicine 2001; SCCM PADIS 2018"
- },
- {
   "term": "Targeted Temperature Management",
   "abbrev": "TTM",
   "cat": "Critical Care",
@@ -6170,8 +5787,13 @@
   "term": "Stress Ulcer Prophylaxis",
   "abbrev": "SUP",
   "cat": "Critical Care",
-  "def": "Prevention of stress-related mucosal disease (SRMD) in ICU. Indications: mechanical ventilation >48h, coagulopathy (platelets <50k, INR >1.5, PTT >2×ULN). PPIs and H2 blockers comparable efficacy (SUP-ICU: no difference in GI bleeding). PPIs increase C. diff and pneumonia risk. Limit to high-risk patients; discontinue on discharge.",
+  "def": "Prevention of stress-related mucosal bleeding in critically ill patients. Indications include mechanical ventilation >48 h and coagulopathy (platelets <50,000/mm³, INR >1.5, or aPTT >2× ULN). PPIs and H2-receptor antagonists are both used; SUP-ICU (pantoprazole vs placebo) found no mortality difference, and PEPTIC found no clear mortality difference between PPI and H2RA strategies. Discontinue when risk factors resolve.",
   "related": [
+   "PPI",
+   "H2 Blocker",
+   "GI Bleed",
+   "Mechanical Ventilation",
+   "C. difficile",
    "Proton Pump Inhibitors",
    "H2 Blockers",
    "GI Bleeding"
@@ -6284,45 +5906,6 @@
   "src": "ADA DKA Guidelines; Endocrine Society"
  },
  {
-  "term": "Hypothyroidism",
-  "abbrev": "",
-  "cat": "Endocrinology",
-  "def": "TSH elevated, free T4 low. Symptoms: fatigue, weight gain, cold intolerance, constipation, bradycardia, depression, hair loss, delayed DTRs. Treatment: levothyroxine (T4) — start 1.6 mcg/kg/day. Recheck TSH in 6-8 weeks. Drug interactions: antacids, calcium, iron reduce absorption (take 4h apart or 30-60 min before food). Myxedema coma: IV T4 200-400mcg then 75-100mcg daily + stress-dose steroids.",
-  "related": [
-   "Levothyroxine",
-   "Thyroid Function Tests",
-   "Hyperthyroidism"
-  ],
-  "chapter": "Endocrinology",
-  "src": "ATA Hypothyroidism Guidelines 2014"
- },
- {
-  "term": "Hyperthyroidism",
-  "abbrev": "",
-  "cat": "Endocrinology",
-  "def": "TSH low, free T4/T3 elevated. Causes: Graves (most common — diffuse goiter, exophthalmos, pretibial myxedema), toxic nodule, thyroiditis. Treatment: beta-blockers for symptoms, thionamides (methimazole preferred, PTU in first trimester pregnancy/thyroid storm), radioactive iodine (RAI), or surgery. Thyroid storm: PTU + saturated solution potassium iodide (SSKI, 1h after PTU) + beta-blocker + glucocorticoids + cooling.",
-  "related": [
-   "Methimazole",
-   "Propylthiouracil",
-   "Graves Disease"
-  ],
-  "chapter": "Endocrinology",
-  "src": "ATA Hyperthyroidism Guidelines 2016"
- },
- {
-  "term": "Adrenal Insufficiency",
-  "abbrev": "AI",
-  "cat": "Endocrinology",
-  "def": "Primary (Addison's disease): adrenal cortex destruction — low cortisol+aldosterone, high ACTH, hyponatremia, hyperkalemia, hyperpigmentation. Secondary: pituitary/hypothalamic → low ACTH, low cortisol only. Adrenal crisis: hypotension, nausea, abdominal pain → hydrocortisone 100mg IV bolus then 50-100mg q6-8h + aggressive fluids. Chronic: hydrocortisone 15-20mg AM + 5-10mg early PM; fludrocortisone for primary AI.",
-  "related": [
-   "Corticosteroids",
-   "Stress-Dose Steroids",
-   "Hypothalamic-Pituitary Axis"
-  ],
-  "chapter": "Endocrinology",
-  "src": "Endocrine Society Clinical Practice Guideline 2016"
- },
- {
   "term": "Hyperparathyroidism",
   "abbrev": "HPT",
   "cat": "Endocrinology",
@@ -6347,19 +5930,6 @@
   ],
   "chapter": "Endocrinology",
   "src": "EJE/ADA/ASN Hyponatremia Guidelines 2013"
- },
- {
-  "term": "Status Epilepticus",
-  "abbrev": "SE",
-  "cat": "Neurology",
-  "def": "Seizure >5 min or recurrent without recovery. Treatment: benzodiazepines (lorazepam 0.1 mg/kg IV or diazepam 0.15 mg/kg — first-line; IM midazolam 10mg pre-hospital). Second-line (after 2 benzo doses): fosphenytoin 20 mg PE/kg IV, valproic acid 40 mg/kg IV, levetiracetam 60 mg/kg IV (ESETT trial: all three second-line agents equally effective). Third-line (refractory): phenobarbital, propofol, midazolam, ketamine infusions.",
-  "related": [
-   "Seizure Management",
-   "Antiepileptic Drugs",
-   "ESETT Trial"
-  ],
-  "chapter": "Neurology",
-  "src": "Epilepsy Foundation; ESETT Trial NEJM 2019"
  },
  {
   "term": "Acute Ischemic Stroke",
@@ -6659,19 +6229,6 @@
   ],
   "chapter": "Critical Care",
   "src": "Surviving Sepsis Campaign 2021"
- },
- {
-  "term": "AUC/MIC",
-  "abbrev": "AUC/MIC",
-  "cat": "Abbreviations",
-  "def": "Area Under the Curve to Minimum Inhibitory Concentration ratio — primary PK/PD target for concentration-dependent antibiotics. Vancomycin: AUC/MIC 400-600 mg·h/L (for MIC ≤1) per 2020 ASHP/IDSA/SIDP guidelines. Aminoglycosides: AUC/MIC >80-100 for gram-negatives. Azithromycin: tissue AUC/MIC relevant for atypical pathogens.",
-  "related": [
-   "AUC",
-   "MIC",
-   "Vancomycin AUC Monitoring"
-  ],
-  "chapter": "Infectious Disease",
-  "src": "ASHP/IDSA/SIDP Vancomycin Guidelines 2020"
  },
  {
   "term": "NNT/NNH",

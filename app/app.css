@@ -1549,3 +1549,22 @@ body.dark-mode{ --primary-on-tint:var(--primary); }
 /* Exam psychology: brand ink, not SaaS blue; tips get a quiet dot, not emoji. */
 .timing-val{ font-weight:700; color:var(--primary-on-tint); font-variant-numeric:tabular-nums; }
 .ep-tip-icon{ width:6px; height:6px; border-radius:50%; background:var(--sec-exam); margin-top:8px; flex-shrink:0; font-size:0; }
+
+/* Report a problem: quiet link under the explanation; native dialog sheet. */
+.report-link{ display:block; margin-top:10px; font-size:13px; color:var(--label2) !important; text-decoration:underline; text-underline-offset:3px; }
+.report-link:hover{ color:var(--primary-on-tint) !important; }
+.fc-report{ margin:10px auto 0; }
+.report-dialog{ border:1px solid var(--sep); border-radius:16px; padding:0; width:min(520px, calc(100vw - 32px)); background:var(--card); color:var(--label); box-shadow:var(--shadow-3); }
+.report-dialog::backdrop{ background:rgba(28,24,21,.45); }
+.report-form{ display:flex; flex-direction:column; gap:10px; padding:20px; }
+.report-form h2{ font-family:var(--font-display); font-weight:400; font-size:1.3rem; margin:0; }
+.report-item{ font-size:12px; color:var(--label2); margin:0; font-variant-numeric:tabular-nums; }
+.report-form label{ font-size:14px; font-weight:500; }
+.report-form textarea{ font:inherit; font-size:15px; padding:10px 12px; border-radius:12px; border:1px solid var(--sep); background:var(--bg); color:var(--label); resize:vertical; }
+.report-help{ font-size:12.5px; color:var(--label2); margin:0; line-height:1.45; }
+.report-actions{ display:flex; flex-wrap:wrap; gap:8px; }
+.report-status{ font-size:13px; color:var(--label2); margin:0; min-height:1em; }
+.opt-exp-tag{ display:inline-block; font-size:11px; font-weight:700; padding:1px 7px; border-radius:20px; margin-right:4px; background:var(--fill); color:var(--label); }
+.opt-exp.is-correct .opt-exp-tag{ background:color-mix(in srgb, var(--green,#34c759) 18%, transparent); color:color-mix(in srgb, var(--green,#34c759) 60%, var(--label)); }
+.opt-exp.is-chosen-wrong .opt-exp-tag{ background:color-mix(in srgb, var(--red,#ff3b30) 14%, transparent); color:color-mix(in srgb, var(--red,#ff3b30) 60%, var(--label)); }
+.report-dialog{ margin:auto; }
