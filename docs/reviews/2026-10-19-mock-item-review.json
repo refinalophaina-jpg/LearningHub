@@ -619,8 +619,9 @@
       ],
       "task": "Integrate case findings to choose the best action",
       "action": "Revised stem and/or options, rationales and evidence traceability",
-      "questionSha256": "023d0a7422016d90b545e799135953fe6802aa9e78c4a4318079d5588cac6765",
-      "difficulty": "Applied analysis/calculation; uncalibrated"
+      "questionSha256": "273cd8f6489a6e69d6ecabc13b289fd4f60980ad0a2d01cfed613d94d56fa4f6",
+      "difficulty": "Applied analysis/calculation; uncalibrated",
+      "revised": "2026-10-21 independent answer-key verification: valganciclovir stem clarified to the treatment (induction) schedule; explanation and per-option rationales rewritten. See 2026-10-21-answer-key-verification.md."
     },
     {
       "id": "AD-MOCK-018",
@@ -830,8 +831,9 @@
       ],
       "task": "Integrate case findings to choose the best action",
       "action": "Revised stem and/or options, rationales and evidence traceability",
-      "questionSha256": "4ed3c195a245721fce04c085c7be73b83472c42fc73fd520faa7b5ff565d20ae",
-      "difficulty": "Foundational safety/application; uncalibrated"
+      "questionSha256": "b6ee4352064607426505ebac1bf902eca8e6306de6318cc057e974e36ac394c8",
+      "difficulty": "Foundational safety/application; uncalibrated",
+      "revised": "2026-10-21 independent answer-key verification: key kept (stem dated Oct 2026); Updated since 2024 note on the 2025 clozapine REMS removal; outdated registry language removed. See 2026-10-21-answer-key-verification.md."
     },
     {
       "id": "AD-MOCK-037",
@@ -940,8 +942,9 @@
       ],
       "task": "Integrate case findings to choose the best action",
       "action": "Revised stem and/or options, rationales and evidence traceability",
-      "questionSha256": "e6a4eefaaed45189a19ee093fbc2770524744cf81f93862b1e5814e9ae895c7a",
-      "difficulty": "Applied analysis/calculation; uncalibrated"
+      "questionSha256": "f2244ec06be4a08d4d3a9833d719fb20dadfff7dbb898e48d37045a8e87109a8",
+      "difficulty": "Applied analysis/calculation; uncalibrated",
+      "revised": "2026-10-21: recategorized from Pediatrics to Infectious diseases (cefazolin after amoxicillin anaphylaxis is a drug-allergy item); question content unchanged."
     },
     {
       "id": "AD-MOCK-047",

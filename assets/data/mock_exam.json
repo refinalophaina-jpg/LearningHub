@@ -763,9 +763,9 @@
   "topic": "Infectious diseases",
   "exp": "Adult treatment/induction dosing at CrCl 25–39 is 450 mg daily; maintenance/prevention dosing is different. Transplant CMV disease use also requires specialist judgment.",
   "optsExp": [
-   "This is the usual treatment/induction dose with normal renal function and would overexpose this patient.",
-   "This is the renal-adjusted maintenance/prevention schedule at this CrCl, not the treatment/induction column.",
-   "This corresponds to the treatment/induction column for CrCl 40–59.",
+   "900 mg twice daily is the induction dose for CrCl 60 mL/min or more; at CrCl 32 mL/min it would markedly overexpose the patient to ganciclovir and its myelosuppression.",
+   "450 mg every other day is the maintenance/prevention schedule for CrCl 25-39 mL/min (and the induction schedule for CrCl 10-24 mL/min), so it underdoses treatment of active CMV disease at this CrCl.",
+   "450 mg twice daily is the induction schedule for CrCl 40-59 mL/min; at CrCl 32 mL/min it is double the labeled induction dose.",
    "Adult treatment/induction dosing at CrCl 25–39 is 450 mg daily; maintenance/prevention dosing is different. Transplant CMV disease use also requires specialist judgment."
   ],
   "sources": [
@@ -1649,10 +1649,10 @@
   "topic": "Psychiatry",
   "exp": "FDA removed the REMS effective June 13, 2025; severe neutropenia risk and recommended ANC monitoring persist. The boxed warning for severe neutropenia remains, and prescribers should keep monitoring ANC at the frequencies in the prescribing information. Updated since 2024: under 2024 rules, dispensing required REMS verification of an acceptable ANC; FDA stopped requiring REMS participation in February 2025 and eliminated the REMS on June 13, 2025 (FDA Drug Safety Communication, 2025).",
   "optsExp": [
-   "Removal of a dispensing system does not remove biologic risk or label monitoring.",
-   "FDA removed the REMS effective June 13, 2025; severe neutropenia risk and recommended ANC monitoring persist.",
-   "This applies the retired administrative program after its removal.",
-   "REMS removal did not withdraw clozapine from clinical use."
+   "Removing the REMS ended the administrative dispensing requirement, not the risk; severe neutropenia remains a boxed warning and the label still directs ANC monitoring.",
+   "FDA removed the REMS effective June 13, 2025; severe neutropenia risk and recommended ANC monitoring persist. The boxed warning for severe neutropenia remains, and prescribers should keep monitoring ANC at the frequencies in the prescribing information. Updated since 2024: under 2024 rules, dispensing required REMS verification of an acceptable ANC; FDA stopped requiring REMS participation in February 2025 and eliminated the REMS on June 13, 2025 (FDA Drug Safety Communication, 2025).",
+   "This applies the retired REMS dispensing requirement; after June 13, 2025, there is no REMS authorization to obtain, so an acceptable ANC under the label is sufficient.",
+   "REMS removal was an administrative change that did not withdraw clozapine's approval; a patient stable on clozapine with an acceptable ANC can continue it."
   ],
   "sources": [
    {

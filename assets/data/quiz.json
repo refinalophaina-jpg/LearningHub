@@ -14,10 +14,10 @@
   "domain": "Area 1",
   "ref": "Vol 1, Ch 1: Acute Care Cardiology",
   "opts_exp": [
-   "A. 75 mg is a maintenance dose and does not provide the requested loading regimen.",
-   "B. Correct. Ticagrelor 180 mg is an appropriate PCI loading regimen; prior TIA excludes prasugrel.",
-   "C. Prasugrel is contraindicated in patients with a prior stroke or TIA.",
-   "D. Vorapaxar is a PAR-1 antagonist, not a P2Y12 inhibitor or an acute PCI loading choice."
+   "75 mg is clopidogrel's maintenance dose; without a load its onset is slow and inadequate for primary PCI, where the clopidogrel loading dose is 600 mg.",
+   "Ticagrelor 180 mg is an appropriate P2Y12 loading dose for PCI in ACS (then 90 mg twice daily with aspirin 81 mg), and unlike prasugrel it is not contraindicated by a prior TIA.",
+   "Although 60 mg is the correct prasugrel loading dose, the Effient label contraindicates prasugrel (boxed warning) in patients with a prior TIA or stroke.",
+   "Vorapaxar is a PAR-1 antagonist, not a P2Y12 inhibitor; it has no loading dose, is not used for acute PCI loading, and is contraindicated after stroke, TIA, or intracranial hemorrhage."
   ],
   "reviewNote": "Targeted correction 2026-10-19; full chapter review pending."
  },
@@ -1649,10 +1649,10 @@
   "domain": "Area 2",
   "ref": "Vol 2, Ch 3: Pharmacokinetics",
   "opts_exp": [
-   "A. Dangerous - interaction magnitude too large.",
-   "B. CORRECT - Safest approach for short-course antibiotics.",
-   "C. Insufficient mitigation; interaction too large.",
-   "D. Azithromycin has less CYP3A4 inhibition but clarithromycin often preferred clinically."
+   "Clarithromycin is a strong CYP3A4 inhibitor that raises simvastatin acid exposure about 10-fold; continuing the statin markedly increases the risk of myopathy and rhabdomyolysis.",
+   "The simvastatin label contraindicates coadministration with clarithromycin and directs suspending simvastatin for the duration of the course, which is simple and safe for a short antibiotic course.",
+   "Dose reduction is not an acceptable mitigation because the combination is contraindicated at any simvastatin dose, including 10 mg.",
+   "Erythromycin is also a CYP3A4 inhibitor and is likewise contraindicated with simvastatin; if a macrolide alternative is needed, azithromycin is the one that does not meaningfully inhibit CYP3A4."
   ]
  },
  {
@@ -1922,10 +1922,10 @@
   "domain": "Area 2",
   "ref": "Vol 1, Ch 3: Anticoagulation",
   "opts_exp": [
-   "A. Significant renal clearance component.",
-   "B. Some dose adjustment but insufficient mitigation.",
-   "C. CORRECT - ESRD significantly increases bleeding risk with dual antiplatelet therapy.",
-   "D. Doubling dose inappropriate."
+   "The prasugrel label requires no dose adjustment for renal impairment, including ESRD (active-metabolite exposure is actually about 40-50% lower), although clinical experience is limited and bleeding should be monitored.",
+   "No renal dose reduction is labeled for prasugrel; the only dose-reduction consideration is a 5 mg maintenance dose when body weight is under 60 kg.",
+   "Renal impairment is not a contraindication; prasugrel is contraindicated only in active pathological bleeding and prior TIA or stroke, so switching agents on the basis of CrCl alone is not required.",
+   "There is no basis for increasing the dose in ESRD; a higher dose would only add bleeding risk on top of uremic platelet dysfunction."
   ]
  },
  {
@@ -2027,10 +2027,10 @@
   "domain": "Area 3",
   "ref": "Vol 2, Ch 10: Biostatistics",
   "opts_exp": [
-   "A. 30 would be the NNT if ARR were 3.3%. That is an error — NNT = 1/ARR = 1/0.03 = 33, not 30.",
-   "B. NNT of 10 would require ARR = 10%. This is too optimistic given the 3% ARR stated.",
-   "C. CORRECT. NNT = 1/ARR = 1/0.03 = 33.3, rounded to 33. This is a cornerstone BCPS calculation. Always calculate NNT from ARR, not RRR. Low NNT (closer to 1) = more effective drug.",
-   "D. 3 is the ARR percentage itself, not the NNT. Confusing ARR with NNT is a common error."
+   "30 does not follow from NNT = 1/ARR; it treats the 30% RRR as if it were a patient count, whereas 1/0.03 = 33.3, rounded up to 34.",
+   "An NNT of 10 would require an ARR of 10%; with the stated ARR of 3%, there is no valid derivation of 10.",
+   "NNT = 1/ARR = 1/0.03 = 33.3, rounded up to 34 because NNT is always rounded up to the next whole patient, so about 34 patients must be treated for 5 years to prevent one event.",
+   "3 is roughly 1/RRR (1/0.30 = 3.3); NNT must be calculated from the absolute, not the relative, risk reduction."
   ]
  },
  {
@@ -2153,10 +2153,10 @@
   "domain": "Area 3",
   "ref": "Vol 2, Ch 11: Study Designs",
   "opts_exp": [
-   "A. While case-control studies typically use OR (not RR) as their effect measure, this is a methodological feature, not the main limitation regarding causality. The key issue is temporality.",
-   "B. CORRECT. Case-control studies look backward from outcome to exposure, making it difficult to confirm the temporal sequence (exposure must precede disease). Recall bias (cases remember exposures differently than controls) further limits causal inference. Cohort studies follow exposure → outcome prospectively and better establish causality.",
-   "C. OR 3.0 (tripled odds) is clinically meaningful for a risk factor. The magnitude is not the limitation — study design for causal inference is.",
-   "D. CI 2.1–4.3 is fairly tight and excludes 1.0, indicating a precise, statistically significant result. The CI width is not the concern here."
+   "This is false: case-control designs are the most efficient way to study rare diseases, because they start from cases that already exist.",
+   "Case-control studies identify cases and controls first and then assess past exposure, often by recall, so the temporal sequence (smoking before cancer) is harder to confirm and recall bias can distort exposure data; prospective cohort studies establish temporality better.",
+   "An OR of 3.0 represents a tripling of odds, which is a strong association; the magnitude of effect is not the limitation on causal inference here.",
+   "A 95% CI of 2.1-4.3 is reasonably narrow and excludes 1.0, so the result is precise and statistically significant; CI width is not the concern."
   ]
  },
  {
@@ -2342,10 +2342,10 @@
   "domain": "Area 3",
   "ref": "Vol 2, Ch 11: Study Designs",
   "opts_exp": [
-   "A. Selection bias occurs at the point of allocation (who gets into which arm). Differential dropout is a post-randomization issue — attrition bias.",
-   "B. CORRECT. Differential dropout (30% treatment vs. 5% placebo) is the defining scenario for attrition bias. If those dropping from treatment were sicker, the remaining treatment group appears healthier; if dropping due to toxicity, the group is depleted of those who tolerated the drug. Both scenarios distort the true comparative estimate.",
-   "C. Confounding occurs when a third variable is associated with both exposure and outcome. Random allocation controls for confounding at baseline; differential dropout during the trial is attrition bias.",
-   "D. Hawthorne effect is when participants change behavior because they know they're being observed — this would affect both arms similarly, not cause differential dropout."
+   "Selection bias at enrollment and allocation is controlled by randomization and arises before treatment begins, not from losses after randomization.",
+   "Differential dropout (30% vs 5%) is the defining scenario for attrition bias; those leaving the treatment arm often do so because of adverse effects or lack of effect, so the remaining groups are no longer comparable, and the direction of bias depends on who dropped out and how missing data were handled.",
+   "Confounding by a third variable linked to exposure and outcome is balanced at baseline by randomization; post-randomization losses produce attrition bias, not confounding.",
+   "The Hawthorne effect is a behavior change from being observed; it affects both arms similarly and does not explain unequal dropout rates."
   ]
  },
  {
@@ -2426,10 +2426,10 @@
   "domain": "Area 3",
   "ref": "Vol 2, Ch 1: Healthcare Systems",
   "opts_exp": [
-   "A. Physician signature for each dose is not the ISMP HAM standard. CPOE with built-in clinical decision support alerts is the technology-based safeguard. Double-checking is the primary procedural control.",
-   "B. CORRECT. ISMP HAM program elements: (1) Independent double-checks (second clinician verifies dose, route, patient ID independently), (2) Standardized concentrations (e.g., standardized heparin drip concentrations to reduce calculation errors), (3) Warning labels and CPOE alerts, (4) Staff education. The goal is error prevention through system-level controls, not solely individual vigilance.",
-   "C. Removal from floor stock is recommended for the MOST dangerous agents (concentrated KCl, hypertonic saline, neuromuscular blockers) but not feasible for all HAMs (e.g., insulin must be accessible on floors).",
-   "D. Pharmacist presence at every administration is not feasible or required. Independent double-checks typically involve two nurses or a nurse and pharmacist for high-risk situations."
+   "A physician signature for each dose is not an ISMP recommendation and is not feasible; ISMP favors system-level safeguards such as standardization, alerts, and forcing functions.",
+   "ISMP recommends layered strategies for high-alert medications, including standardized concentrations, order sets and storage, warning labels and CPOE or pump alerts, limited access, and independent double-checks used selectively for the highest-risk steps.",
+   "ISMP does not recommend a blanket ban on unit stock; it targets restriction at specific agents such as concentrated potassium chloride and neuromuscular blockers, while drugs like insulin must remain accessible.",
+   "Having a pharmacist present for every high-alert administration is neither an ISMP recommendation nor feasible; independent double-checks are reserved for selected high-risk steps."
   ]
  },
  {
@@ -2468,10 +2468,10 @@
   "domain": "Area 3",
   "ref": "Vol 2, Ch 1: Healthcare Systems",
   "opts_exp": [
-   "A. Wrong drug error involves administering a completely different medication than intended. Here the right drug (methotrexate) was given, but at the wrong frequency. Drug name confusion is a separate category.",
-   "B. CORRECT. This is a wrong frequency error, a subtype of wrong dose error. Methotrexate weekly-to-daily errors are so common and devastating that ISMP, FDA, and The Joint Commission have issued repeated safety alerts. Safeguards include: explicit 'once weekly' labeling, CPOE daily-dose hard stops, pharmacist verification of frequency, patient counseling.",
-   "C. Wrong patient error occurs when the correct drug is given to the incorrect patient. This error involves correct patient, wrong frequency.",
-   "D. Transcription error involves incorrect copying of an order. If the original order said weekly but transcribed as daily, this would be transcription error. If the order said weekly and was correctly transcribed but administered daily, it's an administration error."
+   "A wrong drug error involves giving a different medication than ordered; here the correct drug, methotrexate, was given.",
+   "Giving 15 mg daily instead of once weekly is a wrong frequency (wrong dose regimen) error, one of the most notorious and potentially fatal methotrexate errors, causing mucositis, bone marrow suppression, and death.",
+   "A wrong patient error means the drug was given to the wrong person; this patient was the intended recipient.",
+   "The MAR correctly read 'once weekly', so the order was not miscopied; the error occurred at administration, not transcription."
   ]
  },
  {
@@ -2531,10 +2531,10 @@
   "domain": "Area 3",
   "ref": "Vol 2, Ch 1: Healthcare Systems",
   "opts_exp": [
-   "A. Biosimilars are NOT molecularly identical to the reference product. Biologic drugs are complex proteins (antibodies, hormones) produced in living cells — exact replication is impossible. 'Highly similar' with 'no clinically meaningful differences' is the FDA standard.",
-   "B. CORRECT. The FDA Biosimilar pathway (351(k)) requires structural characterization, animal data, clinical PK/PD studies, and sometimes clinical immunogenicity data. The standard is 'highly similar' — same mechanism, same safety/efficacy profile. Interchangeability (additional switching studies showing no increased risk from alternating between biosimilar and reference) allows pharmacist substitution.",
-   "C. Biosimilars do NOT require new superiority trials. They require comparative studies showing no clinically meaningful differences from the reference product. Superiority would make it a new drug, not a biosimilar.",
-   "D. Interchangeable biosimilars CAN be substituted by pharmacists without prescriber notification in many states (similar to generic substitution). Non-interchangeable biosimilars may require prescriber communication. State law varies."
+   "Biosimilars are not molecularly identical to the reference product; biologics are complex proteins made in living cells that cannot be exactly replicated, unlike chemically identical small-molecule generics.",
+   "Under the BPCI Act, a biosimilar must be highly similar to the reference biologic, with no clinically meaningful differences in safety, purity, and potency; minor differences in clinically inactive components are allowed.",
+   "Biosimilar approval relies on analytical, PK/PD and, when needed, comparative clinical studies showing equivalence, not new phase III trials demonstrating superiority.",
+   "Only biosimilars that FDA designates as interchangeable may be substituted at the pharmacy without the prescriber's intervention, and substitution remains subject to state law."
   ]
  },
  {
@@ -2657,10 +2657,10 @@
   "domain": "Area 3",
   "ref": "Vol 2, Ch 1: Healthcare Systems",
   "opts_exp": [
-   "A. Standard NDA/BLA review: 10-12 months review period, no special development guidance. Appropriate for drugs without urgent unmet need.",
-   "B. CORRECT. Breakthrough Therapy Designation offers the most intensive FDA support: frequent meetings with senior FDA staff, rolling review (submit completed sections as they're finished rather than waiting for entire NDA), and eligibility for Priority Review (6-month review). For the patient, this can reduce approval timelines by years. Examples: venetoclax in CLL, pembrolizumab in multiple cancers.",
-   "C. Priority Review designation reduces FDA review time from 12 to 6 months — granted for drugs offering significant improvement over available therapy. Breakthrough Therapy builds on Priority Review and adds more development guidance.",
-   "D. Fast Track facilitates development and accelerates review of drugs for serious conditions but without the intensive guidance/interaction that Breakthrough Therapy provides. Fast Track provides rolling review; BTD provides rolling review plus intensive FDA guidance."
+   "Standard Review is not an expedited program; it carries a 10-month review goal and provides no special development guidance.",
+   "Breakthrough Therapy Designation requires preliminary clinical evidence of substantial improvement over available therapy for a serious condition and provides all Fast Track features plus intensive guidance on efficient development from phase 1 and senior FDA management involvement (FDASIA 2012).",
+   "Priority Review is assigned at NDA/BLA submission and shortens the review goal from 10 to 6 months; it does not provide guidance during drug development.",
+   "Fast Track requires only nonclinical or clinical data showing potential to address an unmet need and offers frequent meetings and rolling review, but not the intensive development guidance that defines Breakthrough Therapy."
   ]
  },
  {
@@ -2720,10 +2720,10 @@
   "domain": "Area 3",
   "ref": "Vol 2, Ch 11: Study Designs",
   "opts_exp": [
-   "A. Internal validity refers to the study correctly measuring what it claims within the study itself — absence of bias and confounding. A study can have high internal validity but limited external validity (e.g., highly selected RCT population vs. real-world patients).",
-   "B. CORRECT. External validity (generalizability) is whether results apply beyond the study sample. Factors limiting generalizability: narrow inclusion/exclusion criteria, academic center settings, specific demographics not representative of clinical practice. Checking whether your patient matches the trial population is a key critical appraisal step.",
-   "C. Construct validity assesses whether a measurement tool accurately measures the theoretical concept it is supposed to measure (more relevant to scale development and instrument validation).",
-   "D. Face validity is a superficial assessment of whether an instrument 'looks' like it measures what it's supposed to — a weak form of validity used in early instrument development."
+   "Internal validity is whether the study measured its effect correctly within its own sample, free of bias and confounding; it does not address applicability to other patients.",
+   "External validity (generalizability) is the extent to which results apply to patients outside the study population; the narrow age range, exclusion of CKD and CVD, and academic settings limit applicability to older, multimorbid clinic patients.",
+   "Construct validity concerns whether a measurement instrument truly measures the theoretical concept it targets, which is relevant to scale development, not applying trial results.",
+   "Face validity is a superficial judgment of whether an instrument appears to measure what it intends; it is a weak form of validity used in early instrument development."
   ]
  },
  {
@@ -2783,10 +2783,10 @@
   "domain": "Area 3",
   "ref": "Vol 2, Ch 10: Biostatistics",
   "opts_exp": [
-   "A. CORRECT. ARR = 8%-5% = 3%. RRR = 3%/8% = 0.375 = 37.5%. NNT = 1/0.03 = 33.3 ≈ 33. Mastering these three interrelated calculations is essential for BCPS. RRR is always larger than ARR (looks more impressive); NNT provides the clearest clinical perspective.",
-   "B. RRR of 62.5% is incorrect. 62.5% = 5/8 × 100, which is the survival rate of the treated group, not the RRR. RRR = ARR/control rate = 3/8 = 37.5%.",
-   "C. ARR of 5% would mean NNT=20, but ARR = difference in rates (8%-5%=3%), not the treatment event rate (5%) alone.",
-   "D. RRR and ARR are switched. RRR=37.5% (much larger), ARR=3% (the actual difference). NNT of 3 would require ARR=33%."
+   "ARR = 8% - 5% = 3%; RRR = 3%/8% = 37.5%; NNT = 1/0.03 = 33.3, rounded up to 34.",
+   "62.5% is the relative risk (5%/8%), not the relative risk reduction; RRR = 1 - 0.625 = 37.5%.",
+   "This uses the treatment event rate (5%) as the ARR, giving NNT 20; the ARR is the difference between rates, 8% - 5% = 3%.",
+   "This swaps ARR and RRR; the ARR is 3% and the RRR 37.5%, and an NNT of 3 would require an ARR of about 33%."
   ]
  },
  {
@@ -2846,10 +2846,10 @@
   "domain": "Area 1",
   "ref": "Vol 2, Ch 9: Pediatrics",
   "opts_exp": [
-   "A. 2.5 mg/kg every 8 hours is traditional multiple daily dosing. In premature neonates, the Q8H interval leads to accumulation because renal elimination is immature. Extended-interval dosing is now preferred in most neonatal protocols.",
-   "B. CORRECT. For premature neonates (≤30 weeks PMA), extended-interval gentamicin 5 mg/kg every 48 hours allows drug to accumulate high peak (concentration-dependent killing) then fully clear before next dose (minimizing nephrotoxicity/ototoxicity). Always monitor trough levels and consider therapeutic drug monitoring.",
-   "C. 4 mg/kg Q24H is used in more mature neonates (>34 weeks PMA/full-term). At 30 weeks PMA, Q24H is too frequent — drug will accumulate because immature GFR cannot clear it in 24 hours.",
-   "D. 7 mg/kg extended-interval is the adult dosing protocol (Hartford nomogram). The dose is too high for neonates whose Vd differs significantly from adults; use neonatal-specific protocols."
+   "2.5 mg/kg every 8 hours is traditional adult dosing; the frequent interval leads to accumulation and toxicity given the very immature renal function of a 27-week neonate.",
+   "With a PMA of about 27.5 weeks (29 weeks or less) and a PNA of 4 days (0-7 days), neonatal tables (NeoFax/Lexicomp) give extended-interval gentamicin 5 mg/kg every 48 hours, which accounts for the large Vd and low GFR; confirm with drug levels.",
+   "4 mg/kg every 24 hours is used at PMA 35 weeks or more, or PMA 30-34 weeks with PNA 8 days or more; for this infant the 24-hour interval is too short and drug would accumulate.",
+   "7 mg/kg extended-interval dosing is an adult protocol (for example, the Hartford nomogram) and is not used in neonates; neonatal-specific dosing is required."
   ]
  },
  {
@@ -2972,10 +2972,10 @@
   "domain": "Area 1",
   "ref": "Vol 1, Ch 9: Neurology",
   "opts_exp": [
-   "A. Ergotamine was a pre-triptan migraine treatment but is largely obsolete due to inferior efficacy, poor tolerability (nausea, vomiting), and vasoconstriction risk. Contraindicated with uncontrolled hypertension and cardiovascular disease. Not first-line.",
-   "B. CORRECT. Sumatriptan (and other triptans) are first-line specific acute migraine therapy for moderate-to-severe attacks. Controlled hypertension on beta-blocker is not a contraindication. Triptans ARE contraindicated in uncontrolled hypertension, coronary artery disease, hemiplegic migraine, and basilar migraine. Beta-blockers (propranolol, timolol) are actually used for migraine prophylaxis.",
-   "C. Opioids (including tramadol) are specifically discouraged in migraine treatment due to high risk of medication overuse headache (MOH/rebound headache), inferior efficacy vs. triptans, and addiction potential. They are reserved only for situations where all other options are contraindicated.",
-   "D. Acetaminophen 1000 mg may help mild migraine but is insufficient as monotherapy for moderate-to-severe migraine. NSAIDs ± antiemetics or triptans are preferred for moderate-to-severe attacks."
+   "Ergotamine has largely been replaced by triptans; it is less effective, poorly tolerated (nausea, vomiting), and causes greater vasoconstriction.",
+   "Triptans such as sumatriptan are first-line specific therapy for moderate-to-severe migraine or attacks unresponsive to nonspecific analgesics (AHS 2021); well-controlled hypertension without CAD is not a contraindication, and sumatriptan has no significant beta-blocker interaction.",
+   "Opioids such as tramadol are discouraged for migraine because of medication-overuse headache, dependence, and inferior efficacy compared with triptans.",
+   "Acetaminophen alone is insufficient for a moderate-to-severe attack in a patient whose attacks have already failed OTC analgesics."
   ]
  },
  {
@@ -3036,10 +3036,10 @@
   "domain": "Area 1",
   "ref": "Vol 1, Ch 8: Psychiatry",
   "opts_exp": [
-   "A. Continuing clozapine while ANC = 400 is extremely dangerous and violates REMS requirements. Agranulocytosis leaves the patient severely immunocompromised; continuing clozapine with active infection and ANC <500 can be fatal.",
-   "B. Dose reduction does not reverse agranulocytosis. Clozapine-induced agranulocytosis is idiosyncratic and not dose-dependent in most cases. A 50% dose reduction still exposes the patient to clozapine while severely immunocompromised.",
-   "C. CORRECT. ANC <500 cells/mm³ = severe clozapine-induced agranulocytosis → mandatory immediate permanent discontinuation per FDA REMS. No rechallenge allowed. The patient's name is permanently flagged in the CLOZAPINE REMS registry. Treat neutropenia supportively (G-CSF if severe). This is one of the highest-yield BCPS patient safety topics.",
-   "D. Rechallenge after ANC normalization is CONTRAINDICATED if severe agranulocytosis occurred (ANC <500). Mild-to-moderate neutropenia (ANC 500-1499) may allow rechallenge under certain protocols with hematology guidance, but severe agranulocytosis requires permanent discontinuation per FDA mandates."
+   "Continuing clozapine at an ANC of 400 cells/mm3 is dangerous; empiric antibiotics are needed for the febrile neutropenia, but clozapine must be interrupted immediately.",
+   "Dose reduction does not address clozapine-induced severe neutropenia, which is not reliably dose-related; the label requires interruption at ANC below 500 cells/mm3.",
+   "ANC below 500 cells/mm3 is severe neutropenia; the clozapine label directs immediate interruption, hematology consultation, and daily ANC until 1000 or more, with no rechallenge unless the prescriber judges benefits outweigh risks, plus prompt evaluation and empiric antibiotics for the fever.",
+   "A routine planned rechallenge after ANC recovery is not recommended after suspected clozapine-induced severe neutropenia; rechallenge is reserved for exceptional cases where benefit is judged to outweigh risk."
   ]
  },
  {
@@ -3143,10 +3143,10 @@
   "domain": "Area 1",
   "ref": "Vol 1, Ch 7: Fluids, Electrolytes, and Nutrition",
   "opts_exp": [
-   "A. Free water restriction is appropriate for mild chronic hyponatremia in SIADH with no severe symptoms. For comatose patients with Na 118, restriction alone is far too slow — it could take days to weeks to correct, and the patient needs immediate intervention to prevent brainstem herniation.",
-   "B. CORRECT. 3% NaCl is first-line for severe symptomatic hyponatremia (seizures, coma, herniation signs). Initial rate: 1-2 mEq/L/hour to reverse acute cerebral edema. Then limit correction to ≤6-8 mEq/L in first 24h to prevent ODS. Formula: change in serum Na per liter = (Na of infusate - serum Na)/(TBW + 1). Use measured sodium to guide real-time corrections.",
-   "C. Normal saline (154 mEq/L Na) is often less concentrated than the urine of patients with SIADH and can paradoxically worsen hyponatremia. Even if not worsening, normal saline is far too dilute to rapidly correct severe hyponatremia.",
-   "D. Oral sodium tablets are for mild, asymptomatic chronic hyponatremia in ambulatory patients. A comatose patient cannot take oral medications and needs IV therapy for rapid correction."
+   "Fluid restriction suits mild or chronic hyponatremia (for example, SIADH) without severe symptoms; it acts over days and is far too slow for a comatose patient with possible cerebral edema.",
+   "Severe symptoms such as coma call for immediate 3% saline, 100 mL over 10 minutes repeated up to 3 times total (US expert panel 2013), to raise sodium 4-6 mEq/L quickly, keeping total correction under 10 mEq/L in 24 hours (8 mEq/L in those at high risk of osmotic demyelination).",
+   "Normal saline is too dilute to correct severe hyponatremia quickly and can worsen it in SIADH when urine osmolality is high.",
+   "Oral salt tablets act too slowly for severe symptomatic hyponatremia, and a comatose patient cannot safely take oral medication."
   ]
  },
  {
@@ -3227,10 +3227,10 @@
   "domain": "Area 1",
   "ref": "Vol 1, Ch 3: Anticoagulation",
   "opts_exp": [
-   "A. Continuing full-dose warfarin through surgery would pose unacceptable bleeding risk. INR must be normalized before invasive procedures. Only truly minor procedures (dental extractions, cataract surgery, skin procedures) may be performed on anticoagulation with specific precautions.",
-   "B. LMWH bridging was previously standard practice for all patients with AF at high stroke risk, but the BRIDGE trial definitively showed it does not reduce stroke/thromboembolism while significantly increasing bleeding. Bridging is now reserved for mechanical heart valves or very high-risk VTE (recent PE/DVT, antiphospholipid syndrome).",
-   "C. CORRECT. Per BRIDGE trial and ACC/AHA AF guidelines: For AF patients undergoing elective surgery, stop warfarin 5 days pre-op, check INR day before surgery (want <1.5), do NOT bridge routinely. Resume warfarin 12-24 hours post-op when bleeding risk allows. This strategy balances stroke risk against perioperative bleeding risk.",
-   "D. DOACs (rivaroxaban, apixaban) are increasingly used in AF, but switching from warfarin TO a DOAC right before surgery adds complexity. If already on DOAC, hold 1-2 days pre-op (24-48 hours for low bleeding risk, 48-72 hours for high bleeding risk procedures). Perioperative anticoagulation strategies should be pre-planned, not changed immediately pre-op."
+   "Continuing full-dose warfarin through major orthopedic surgery poses an unacceptable bleeding risk; the INR should be below 1.5 at surgery.",
+   "Routine LMWH bridging is not recommended: in BRIDGE, bridging did not reduce arterial thromboembolism and roughly tripled major bleeding; bridging is reserved for very high risk patients such as those with a mechanical valve, recent stroke or TIA, or CHA2DS2-VASc of 7 or more.",
+   "Per BRIDGE and the CHEST 2022 perioperative guideline, stop warfarin 5 days before surgery, confirm INR below 1.5 the day before, do not bridge routinely in AF without very high risk features, and resume warfarin 12-24 hours after surgery once hemostasis is secured.",
+   "Rivaroxaban 10 mg daily is a VTE-prophylaxis dose, not a stroke-prevention dose for AF, and switching anticoagulants just before surgery adds complexity without benefit."
   ]
  },
  {
@@ -3248,10 +3248,10 @@
   "domain": "Area 1",
   "ref": "Vol 1, Ch 1: Acute Care Cardiology",
   "opts_exp": [
-   "A. Clopidogrel monotherapy is inferior to DAPT for stent thrombosis prevention. While clopidogrel alone is used in patients with true aspirin contraindication after thorough assessment, for STEMI where PCI is planned, desensitization to allow DAPT is preferred if feasible. This does not represent the best available option.",
-   "B. CORRECT. In STEMI with aspirin urticaria (not anaphylaxis), rapid aspirin desensitization (1-3 hour graded oral or IV protocol) allows full-dose aspirin use for DAPT post-PCI. Aspirin + P2Y12 inhibitor (DAPT) significantly reduces stent thrombosis (0.5-1% with DAPT vs 2-3% without aspirin). Desensitization is strongly preferred over aspirin omission in STEMI/PCI.",
-   "C. Ticagrelor monotherapy (without aspirin) has been studied in post-ACS settings (TWILIGHT, TICO trials) but these are trials of de-escalation AFTER initial DAPT, not aspirin omission from the start. For acute STEMI, initial DAPT is standard; ticagrelor alone from the outset is not the recommended approach.",
-   "D. Proceeding without any antiplatelet therapy in STEMI would result in catastrophic stent thrombosis rates. Antiplatelet therapy is fundamental to PCI and STEMI management."
+   "Long-term clopidogrel monotherapy is only a fallback when aspirin truly cannot be given; after STEMI it carries higher ischemic and stent thrombosis risk than DAPT, and urticaria is a reaction amenable to desensitization.",
+   "For a non-anaphylactic aspirin reaction such as urticaria, rapid oral aspirin desensitization is safe and permits long-term DAPT; load a P2Y12 inhibitor and proceed to PCI without delay, complete desensitization around the procedure, then continue daily aspirin without interruption.",
+   "Ticagrelor monotherapy from day 1 has not been studied in STEMI; aspirin-free strategies such as TWILIGHT dropped aspirin only after an initial period of DAPT.",
+   "Proceeding to PCI with no antiplatelet therapy is unacceptable because it exposes the patient to a high risk of stent thrombosis and recurrent infarction."
   ]
  },
  {
@@ -3290,10 +3290,10 @@
   "domain": "Area 1",
   "ref": "Vol 1, Ch 4: Infectious Diseases I",
   "opts_exp": [
-   "A. Cephalexin PO is appropriate for mild, non-purulent cellulitis managed outpatient. This hospitalized patient with SIRS criteria and diabetes requires IV therapy — oral antibiotics cannot achieve adequate tissue concentrations in severe infection.",
-   "B. CORRECT. IDSA SSTI Guidelines: Severe non-purulent cellulitis (SIRS, hospitalization required) → vancomycin IV for empiric MRSA coverage. Vancomycin targets both MSSA and MRSA. In diabetics, consider broader coverage if necrotizing fasciitis, gas in tissue, or clinical deterioration suggests polymicrobial infection.",
-   "C. Ampicillin-sulbactam provides excellent Gram-positive (streptococcal) and anaerobic coverage but lacks MRSA activity. It would be appropriate if MRSA is not a concern (e.g., mild to moderate infection in a younger, immunocompetent patient). In a hospitalized diabetic with SIRS, MRSA coverage is warranted.",
-   "D. Clindamycin is oral and lacks sufficient bioavailability for hospitalized patients with SIRS. Additionally, clindamycin resistance in CA-MRSA can be high (15-30%), and inducible clindamycin resistance (D-zone test) must be checked before use. Not appropriate as IV alternative for severe SSTI."
+   "Oral cephalexin is for mild outpatient nonpurulent cellulitis and lacks MRSA activity; this hospitalized patient with SIRS and prior MRSA infection needs IV MRSA coverage.",
+   "The IDSA SSTI guideline recommends vancomycin (or another agent active against MRSA and streptococci) for nonpurulent cellulitis with SIRS or prior MRSA infection, both of which this patient has.",
+   "Ampicillin-sulbactam covers streptococci and MSSA but not MRSA, which is required given SIRS and prior MRSA infection.",
+   "Oral clindamycin is an option for mild outpatient cellulitis, not for a hospitalized patient with SIRS, and clindamycin resistance among MRSA and streptococci is variable."
   ]
  },
  {
@@ -3332,10 +3332,10 @@
   "domain": "Area 1",
   "ref": "Vol 2, Ch 6: Nephrology",
   "opts_exp": [
-   "A. Calcium carbonate is effective and inexpensive, but excess calcium in CKD contributes to hypercalcemia, suppresses PTH too much (adynamic bone), and promotes vascular calcification. KDIGO limits total calcium intake from binders to <1500 mg elemental calcium/day. With PTH 450 and Stage 4 CKD, a calcium binder risks worsening the situation.",
-   "B. Aluminum hydroxide is highly effective at binding phosphate but causes aluminum toxicity with long-term use (dialysis encephalopathy, adynamic bone disease, microcytic anemia). It is contraindicated for chronic use in CKD. Short-term (4-week) use for severe hyperphosphatemia only, then switch.",
-   "C. CORRECT. Sevelamer carbonate is a polymeric, non-calcium, non-aluminum binder that chelates phosphate in the GI tract. Benefits: no calcium loading (no hypercalcemia risk), no aluminum toxicity, reduces LDL-C, reduces vascular calcification. Must be taken WITH meals to be effective. Side effects: GI (constipation, nausea), large pill burden. KDIGO preferred agent when calcium loading is a concern.",
-   "D. Magnesium-based antacids/binders can cause hypermagnesemia in CKD patients (impaired Mg excretion), leading to neuromuscular toxicity, cardiac arrhythmias, and respiratory depression. Not appropriate for chronic phosphate binding in CKD."
+   "Calcium carbonate adds calcium load in a patient with high-normal calcium (10.2 mg/dL) and coronary calcification; KDIGO 2017 suggests restricting calcium-based binders in CKD G3a-G5D.",
+   "Aluminum hydroxide causes aluminum toxicity (encephalopathy, osteomalacia, anemia) with chronic use and should be limited to short courses, never long-term therapy.",
+   "With high-normal calcium and vascular calcification, KDIGO 2017 favors a calcium-free binder; sevelamer carbonate is non-calcium and non-aluminum, slowed coronary calcification progression versus calcium binders, and lowers LDL-C (its use in non-dialysis CKD 4 is off-label but guideline-consistent).",
+   "Magnesium hydroxide is not an appropriate long-term phosphate binder and risks hypermagnesemia because magnesium excretion is impaired in CKD."
   ]
  },
  {
@@ -3353,10 +3353,10 @@
   "domain": "Area 1",
   "ref": "Vol 2, Ch 8: Pulmonology & Vaccinations",
   "opts_exp": [
-   "A. ICS addition (triple therapy: ICS/LABA/LAMA) is recommended for patients with ≥2 exacerbations/year OR blood eosinophils ≥300 cells/μL. With only 1 exacerbation on LABA monotherapy, the preferred step-up per GOLD 2023 is to LABA/LAMA first, not immediate ICS addition. ICS also increases pneumonia risk in COPD.",
-   "B. CORRECT. GOLD 2023 recommends LABA/LAMA as first intensification from LABA or LAMA monotherapy. FLAME trial: indacaterol/glycopyrronium (LABA/LAMA) reduced exacerbation rate 11% more than fluticasone/salmeterol (ICS/LABA). Preferred when eosinophil count <300 cells/μL. Examples: umeclidinium/vilanterol (Anoro), tiotropium/olodaterol (Stiolto), glycopyrrolate/formoterol (Bevespi).",
-   "C. Switching from LABA to SABA-only therapy would be a massive step down and is completely contrary to evidence-based COPD management. Maintenance bronchodilators reduce exacerbations; removing them increases risk. SABAs are for acute relief, not maintenance.",
-   "D. Theophylline is a third-line option in COPD with bronchodilator and anti-inflammatory effects but has a narrow therapeutic index, multiple drug interactions, and inferior efficacy vs. inhaled bronchodilators. GOLD guidelines do not recommend theophylline as a step-up from LABA in modern COPD management."
+   "GOLD no longer encourages adding ICS to a LABA alone (since 2023), and with blood eosinophils of 150 cells/microL (below 300) ICS adds pneumonia risk with little exacerbation benefit.",
+   "Per the GOLD 2024 follow-up algorithm, a patient with exacerbations on LABA monotherapy and eosinophils below 300 cells/microL should escalate to LABA + LAMA, which improves lung function and symptoms and reduces exacerbations; in FLAME it reduced exacerbations versus LABA/ICS.",
+   "Replacing maintenance LABA with as-needed SABA alone is a step down that undertreats a symptomatic patient with GOLD grade 3 airflow obstruction (FEV1 48%).",
+   "Theophylline has a narrow therapeutic index, many drug interactions, and minimal benefit, so it is not an evidence-based step-up from LABA."
   ]
  },
  {
@@ -3606,10 +3606,10 @@
   "domain": "Area 2",
   "ref": "Vol 2, Ch 3: Pharmacokinetics",
   "opts_exp": [
-   "A. Total phenytoin 8 mg/L is below the standard therapeutic range of 10-20 mg/L — but this ONLY applies to patients with normal albumin and renal function. In hypoalbuminemia + uremia, the free fraction is much higher than expected, making total levels unreliable.",
-   "B. Increasing the dose based on a total level in a patient with hypoalbuminemia AND renal failure risks toxicity. The free phenytoin could already be therapeutic or supratherapeutic (free range: 1-2 mg/L). Always correct for binding changes before dose adjustments.",
-   "C. CORRECT. For combined hypoalbuminemia + renal failure: use uremia correction formula: Corrected total = 8 / (0.1 × 2.1 + 0.1) = 8 / 0.31 = 25.8 mg/L (well above therapeutic range). This suggests the free phenytoin is likely toxic or supratherapeutic. Direct free phenytoin level measurement is the gold standard. Do NOT increase dose.",
-   "D. Uremia INCREASES (not decreases) free phenytoin fraction by: (1) decreased albumin production, (2) competition of uremic acids for protein binding sites. This RAISES free drug levels, not lowers them. Uremia = more free phenytoin per given total level."
+   "8 mg/L is below the 10-20 mg/L total range, and in any case a total level cannot be taken at face value when hypoalbuminemia and uremia have raised the free fraction.",
+   "Increasing the dose based on a low total level risks toxicity, because the free (active) phenytoin concentration may already be therapeutic or higher.",
+   "Hypoalbuminemia and uremia both raise the free fraction of phenytoin; the Sheiner-Tozer correction gives 8/(0.2 x 2.1 + 0.1) = 8/0.52 = 15.4 mg/L (revised 0.275 coefficient: 8/0.678 = 11.8 mg/L), both therapeutic, and a measured free level (target 1-2 mg/L) is the most accurate approach.",
+   "Uremia reduces phenytoin protein binding and raises, not lowers, the free fraction for a given total concentration."
   ]
  },
  {
@@ -3733,10 +3733,10 @@
   "domain": "Area 2",
   "ref": "Vol 1, Ch 4: Infectious Diseases I",
   "opts_exp": [
-   "A. Negative IgE testing AND negative skin testing argues AGAINST true IgE-mediated penicillin allergy. The maculopapular rash is likely a T-cell delayed reaction or viral exanthem (especially common with amoxicillin in EBV). Patient should NOT be permanently labeled 'PCN allergic' without further evaluation.",
-   "B. CORRECT. Negative penicillin skin testing (benzylpenicilloyl polylysine = major determinant; minor determinant mixture) has >97% NPV for IgE-mediated hypersensitivity. These patients can receive penicillins with low risk. De-labeling PCN allergy improves antibiotic stewardship and outcomes (patients with PCN allergy label have worse outcomes from suboptimal antibiotic selection). Oral amoxicillin challenge can be done after negative skin testing.",
-   "C. The context about EBV is important — amoxicillin causes a maculopapular rash in ~80% of patients with infectious mononucleosis (EBV). This is NOT an allergic reaction but a virus-drug interaction. This patient's negative skin test supports this interpretation, but the safest approach is to note the negative testing result as described in option B.",
-   "D. Negative penicillin skin testing confirms low IgE-mediated reaction risk for penicillins (and by cross-reactivity, cephalosporins). It does NOT guarantee no reaction to all antibiotics — reactions to macrolides, sulfonamides, or other antibiotic classes are entirely separate."
+   "Negative major and minor determinant skin testing argues against IgE-mediated penicillin allergy, so a permanent avoidance label is not justified.",
+   "Penicillin skin testing has a negative predictive value above 95% for IgE-mediated allergy, but it does not assess delayed T-cell reactions such as this day-10 rash; per the 2022 AAAAI/ACAAI practice parameter, an observed oral amoxicillin challenge confirms tolerance and allows de-labeling.",
+   "Although amoxicillin rash is common during EBV infection, nothing in this history suggests concurrent mononucleosis; the rash occurred during treatment for sinusitis.",
+   "A negative penicillin skin test addresses only IgE-mediated penicillin allergy and says nothing about reactions to unrelated antibiotics."
   ]
  },
  {
@@ -3880,10 +3880,10 @@
   "domain": "Area 2",
   "ref": "Vol 1, Ch 1: Acute Care Cardiology",
   "opts_exp": [
-   "A. Repeating adenosine 6 mg before the standard dose escalation to 12 mg is not evidence-based. However, the more important issue is that adenosine is not expected to terminate atrial flutter — so repeating the same dose is doubly inappropriate.",
-   "B. While escalating adenosine to 12 mg is the standard protocol for SVT that didn't respond to 6 mg, atrial flutter typically won't respond to adenosine. Adenosine can be diagnostically useful (reveals flutter waves by slowing AV conduction) but not therapeutic for flutter termination.",
-   "C. Amiodarone can slow ventricular rate in atrial flutter through AV nodal blockade and may have some effect on atrial flutter rates, but it is not the first-choice agent. Diltiazem or beta-blockers are first-line for acute ventricular rate control in atrial flutter.",
-   "D. CORRECT. Atrial flutter is a macro-reentrant circuit in the right atrium around the tricuspid annulus — adenosine does NOT terminate it. Adenosine's mechanism (brief AV block) may slow ventricular rate temporarily to reveal flutter waves (diagnostic), but rate control requires AV nodal blockers (diltiazem IV, metoprolol IV). Definitive treatment: cardioversion (preferred) or catheter ablation (cavotricuspid isthmus ablation is curative)."
+   "Repeating adenosine at 6 mg will reproduce the same transient AV block; adenosine does not terminate atrial flutter because the circuit does not require the AV node.",
+   "Escalating to 12 mg is appropriate for AV-node-dependent SVT that fails 6 mg, but atrial flutter is a macro-reentrant atrial circuit, so a larger adenosine dose will again only slow the rate briefly.",
+   "Amiodarone is reserved for rate control when beta-blockers and nondihydropyridine calcium channel blockers are contraindicated or ineffective (for example, decompensated HF); it is not first-line in a stable patient.",
+   "Adenosine unmasked flutter waves, confirming atrial flutter, which it cannot terminate; for a stable patient with rapid ventricular response, guidelines (2015 ACC/AHA/HRS SVT, Class I; 2023 AF guideline) recommend rate control with IV diltiazem or a beta-blocker, with rhythm control considered later."
   ]
  },
  {
@@ -3943,10 +3943,10 @@
   "domain": "Area 2",
   "ref": "Vol 2, Ch 8: Pulmonology & Vaccinations",
   "opts_exp": [
-   "A. CORRECT. Despite the apparent dose difference (5 mcg vs 18 mcg nominal dose), Respimat 5 mcg (2 inhalations of 2.5 mcg) delivers equivalent lung deposition to HandiHaler 18 mcg due to the superior delivery efficiency of soft mist vs dry powder inhaler technology. The TIOSPIR trial confirmed equivalent clinical outcomes. Respimat 5 mcg/day is the approved equivalent.",
-   "B. Respimat 5 mcg nominal dose is lower in MCG printed on the label, but NOT lower in terms of actual lung drug delivery due to higher deposition efficiency. The clinical equivalence is established by pharmacokinetic and outcomes trial data.",
-   "C. The nominal doses are NOT identical (5 mcg vs 18 mcg) but the lung-deposited doses are comparable. The patient's family member is correct that the printed mcg amounts differ — the explanation requires understanding lung deposition efficiency, not just label doses.",
-   "D. Respimat 5 mcg is the FDA-approved dose equivalent to HandiHaler 18 mcg — it does NOT require dose reduction. The 5 mcg Respimat dose was selected specifically to match HandiHaler exposure."
+   "Respimat 2 inhalations of 2.5 mcg once daily (5 mcg) delivers a much larger fraction of the emitted dose to the lungs than the HandiHaler, so 5 mcg gives lung exposure comparable to HandiHaler 18 mcg, and TIOSPIR showed similar mortality and exacerbation outcomes.",
+   "Comparing nominal micrograms across different devices is invalid, and Respimat is dosed once daily; taking 2 inhalations twice daily would double the approved dose.",
+   "The nominal doses differ (5 mcg for Respimat vs 18 mcg for HandiHaler); clinical equivalence comes from differences in lung delivery, not identical doses.",
+   "The arithmetic is wrong: 2 x 2.5 mcg = 5 mcg, not 10 mcg, and the 5 mcg dose is the approved COPD dose requiring no reduction."
   ]
  },
  {
@@ -3964,10 +3964,10 @@
   "domain": "Area 2",
   "ref": "Vol 1, Ch 8: Psychiatry",
   "opts_exp": [
-   "A. Sertraline INHIBITS (does not induce) CYP2D6 at higher doses. Induction would decrease bupropion levels. The actual direction is inhibition → increased bupropion levels.",
-   "B. CORRECT. Sertraline (especially ≥150 mg/day) is a moderate CYP2D6 inhibitor. Bupropion is a CYP2D6 substrate (and itself a potent CYP2D6 inhibitor). Co-administration may increase bupropion/metabolite levels, raising seizure risk. Additionally, bupropion inhibits the CYP2D6 metabolism of sertraline (bidirectional interaction). Monitor for bupropion toxicity and seizure risk. Avoid in patients with seizure history.",
-   "C. Bupropion primarily inhibits CYP2D6 — it is not a significant CYP3A4 inducer. CYP3A4 is a major metabolic pathway for many drugs but not the primary concern with bupropion interactions.",
-   "D. There is a clinically relevant pharmacokinetic interaction (CYP2D6 bidirectional interaction) between sertraline and bupropion. The interaction is generally manageable but should be recognized, especially at higher doses of sertraline where CYP2D6 inhibition is more pronounced."
+   "Sertraline is not a CYP2D6 inducer (it is a mild-to-moderate inhibitor), and bupropion is not primarily a CYP2D6 substrate, so this mechanism does not apply.",
+   "Bupropion and its metabolites inhibit CYP2D6, and the bupropion label lists sertraline among CYP2D6-metabolized drugs whose exposure may increase; the rise is usually modest because sertraline uses several CYP pathways, but monitor for serotonergic and GI adverse effects.",
+   "Bupropion does not induce CYP3A4; its relevant pharmacokinetic effect is CYP2D6 inhibition.",
+   "This is a common misconception: bupropion is metabolized mainly by CYP2B6 and is not a CYP2D6 substrate, so sertraline's CYP2D6 inhibition does not markedly raise bupropion levels."
   ]
  },
  {
@@ -4006,10 +4006,10 @@
   "domain": "Area 2",
   "ref": "Vol 1, Ch 4: Infectious Diseases I",
   "opts_exp": [
-   "A. Oral metronidazole is no longer first-line for CDI per IDSA 2017/2021 guidelines. While historical treatment, studies showed inferior outcomes and higher recurrence rates compared to vancomycin. Metronidazole may still be used if vancomycin and fidaxomicin are unavailable or cost-prohibitive.",
-   "B. Oral vancomycin 125 mg QID × 10 days is an acceptable first-line option for non-severe CDI and was the IDSA 2017 recommendation. However, IDSA 2021 update promotes fidaxomicin as the preferred agent due to lower recurrence rates (30% relative reduction vs. vancomycin) and more targeted microbiome disruption.",
-   "C. CORRECT. IDSA/SHEA 2021: Initial non-severe CDI → fidaxomicin 200 mg BID × 10 days (preferred, particularly to reduce recurrence) OR vancomycin 125 mg QID × 10 days (acceptable alternative). Both are oral agents active in the colon. Fidaxomicin's narrow spectrum spares Bacteroidetes (preserving colonization resistance), reducing CDI recurrence by ~50% vs. vancomycin in clinical trials.",
-   "D. IV antibiotics for CDI are NOT indicated in standard non-severe CDI. CDI requires luminal drug delivery (oral route). IV metronidazole is used ONLY for severe complicated CDI (ileus, toxic megacolon) when the oral route is not functional, added to oral vancomycin."
+   "Oral metronidazole was inferior to vancomycin in randomized trials and, since the 2017 IDSA/SHEA guideline, is reserved for non-severe CDI only when vancomycin and fidaxomicin are unavailable.",
+   "Oral vancomycin 125 mg QID for 10 days remains an acceptable alternative for an initial episode, but the 2021 focused update prefers fidaxomicin because of lower recurrence.",
+   "The 2021 IDSA/SHEA focused update prefers fidaxomicin 200 mg PO BID for 10 days for an initial CDI episode because it lowers recurrence versus vancomycin; this episode is non-severe (WBC under 15,000 and creatinine under 1.5 mg/dL).",
+   "IV vancomycin does not reach the colonic lumen, and IV metronidazole is used only as an adjunct to oral vancomycin in fulminant CDI, not for non-severe disease."
   ]
  },
  {
@@ -4069,10 +4069,10 @@
   "domain": "Area 2",
   "ref": "Vol 1, Ch 2: Chronic Care Cardiology",
   "opts_exp": [
-   "A. ACE inhibitors (PEP-CHF with perindopril, CHARM-Preserved with candesartan) did NOT show mortality benefit in HFpEF. Symptomatic improvement may occur. ACEi remains appropriate for hypertension management in HFpEF comorbidities but has no HFpEF-specific mortality indication.",
-   "B. Beta-blockers have not demonstrated mortality benefit in HFpEF trials (Beta-blockers in Diastolic Heart Failure = negative). They are used for rate control in AF complicating HFpEF and for comorbidities but not for HFpEF-specific mortality reduction.",
-   "C. CORRECT. EMPEROR-Preserved (empagliflozin 10 mg daily): 21% reduction in composite CV death/HF hospitalization in HFpEF (EF ≥40%). DELIVER (dapagliflozin 10 mg daily): similar benefit in HFpEF/HFmrEF. SGLT-2 inhibitors are now guideline-recommended (ACC/AHA 2022 HF guidelines, Class 2a) for HFpEF. They work through: glucosuria (volume reduction), natriuresis, anti-inflammatory, cardioprotective signaling.",
-   "D. TOPCAT (spironolactone in HFpEF): primary endpoint negative in overall analysis. Significant controversy about patient enrollment (Americas vs. Russia/Georgia subgroups had very different event rates suggesting enrollment irregularities in certain regions). ACC/AHA gives spironolactone Class 2b recommendation for HFpEF based on Americas subgroup data, but evidence is weaker than SGLT-2 inhibitors."
+   "ACE inhibitors have not improved outcomes in HFpEF randomized trials (for example, PEP-CHF with perindopril); they may be used for comorbid hypertension but lack an HFpEF outcome recommendation.",
+   "Beta-blockers have not improved outcomes in HFpEF randomized trials and are used only for other indications such as AF rate control or prior MI.",
+   "In EMPEROR-Preserved, empagliflozin reduced the composite of CV death or HF hospitalization (about 21% relative reduction, driven mainly by fewer HF hospitalizations), and the 2022 AHA/ACC/HFSA guideline gives SGLT-2 inhibitors a Class 2a recommendation in HFpEF.",
+   "Spironolactone missed its primary endpoint in TOPCAT, with possible benefit only in the Americas subgroup, and carries a weaker Class 2b recommendation in HFpEF."
   ]
  },
  {
@@ -4133,10 +4133,10 @@
   "domain": "Area 2",
   "ref": "Vol 2, Ch 3: Pharmacokinetics",
   "opts_exp": [
-   "A. Day 1 peak = single dose peak. Subsequent doses add to residual drug from prior doses. By Day 5 (≥5 half-lives), steady state is reached and peak is ~2x Day 1 peak when τ = t½.",
-   "B. CORRECT. When dosing interval (τ) equals the half-life (t½ = 24h, τ = 24h): Accumulation factor R = 1/(1 - e^(-kτ)) = 1/(1-0.5) = 2.0. Steady-state peak ≈ 2 × Day 1 peak. After 5 half-lives (5 days), accumulation is 97% complete: ~1.94× single-dose peak. Loading dose = maintenance dose × R to achieve immediate SS levels.",
-   "C. Each dose doesn't halve — drug accumulates to a new equilibrium. If concentration halved with each dose, no accumulation would occur. The 50% remaining from each dose adds to the next dose, resulting in accumulation until intake = elimination.",
-   "D. While true that absolute concentrations require F, Vd, and dose, the question asks about RELATIVE accumulation (SS vs. first dose), which can be answered with half-life and dosing interval alone using the accumulation factor R = 1/(1-e^(-kτ))."
+   "Accumulation occurs whenever the dosing interval is not much longer than the half-life; with tau equal to t1/2, half of each dose remains when the next is given.",
+   "With tau = t1/2 = 24 h, e^(-k tau) = 0.5, so after the 5th dose the ratio is (1 - 0.5^5)/(1 - 0.5) = 0.96875/0.5 = 1.94, about 97% of the steady-state accumulation factor of 1/(1 - 0.5) = 2.",
+   "This confuses the decline of a single dose over one half-life with repeated dosing; with repeated doses, residual drug adds to each new dose and the peak rises.",
+   "F and Vd cancel out of the ratio; they are needed for an absolute concentration, but fold accumulation depends only on k and tau."
   ]
  },
  {
@@ -4217,10 +4217,10 @@
   "domain": "Area 2",
   "ref": "Vol 2, Ch 6: Nephrology",
   "opts_exp": [
-   "A. SGLT-2 inhibitors are NOT contraindicated at eGFR <60. The thresholds vary by agent and indication. For glycemic benefit: most require eGFR ≥45. For cardiorenal protection (CKD, HF): lower thresholds apply. Blanket contraindication at eGFR <60 is incorrect and outdated.",
-   "B. This is partially correct — glucose-lowering efficacy decreases as GFR declines (less glucose filtering = less glucosuria), but renoprotective and cardiological benefits persist at lower eGFR values. However, the answer oversimplifies the current landscape.",
-   "C. CORRECT. DAPA-CKD trial: dapagliflozin 10 mg daily in CKD (eGFR 25-75 mL/min, albuminuria UACR ≥200 mg/g) — reduced composite of ≥50% eGFR decline/ESRD/CV death/renal death by 39% vs. placebo, regardless of T2DM status. FDA approved dapagliflozin for CKD in 2021. At eGFR 42, this patient is within the approved range (≥25) for CKD renoprotection with dapagliflozin.",
-   "D. This is completely incorrect. SGLT-2 inhibitors are now guideline-recommended in CKD precisely BECAUSE of benefits at low eGFR values. Stopping them at any level of renal impairment contradicts current KDIGO and ADA/KDOQI guidelines."
+   "SGLT-2 inhibitors are not contraindicated below eGFR 60; KDIGO 2022 recommends an SGLT-2 inhibitor for patients with T2DM and CKD with eGFR 20 or more.",
+   "Empagliflozin (initiation at eGFR 20 or more, EMPA-KIDNEY) is not the only option; dapagliflozin may be initiated at eGFR 25 or more and canagliflozin at eGFR 30 or more (CREDENCE).",
+   "DAPA-CKD showed dapagliflozin reduced kidney failure, sustained eGFR decline, and renal or CV death in patients with eGFR 25-75 and albuminuria with or without T2DM; the label allows CKD initiation at eGFR 25 or more, though it is not recommended for glycemic control below eGFR 45, so A1C lowering at eGFR 42 is modest.",
+   "SGLT-2 inhibitors are specifically recommended in CKD for kidney and CV protection; per KDIGO, therapy may be continued even below eGFR 20 until dialysis."
   ]
  },
  {
@@ -4238,10 +4238,10 @@
   "domain": "Area 2",
   "ref": "Vol 1, Ch 4: Infectious Diseases I",
   "opts_exp": [
-   "A. DVT is possible but would not typically cause bilateral symmetric calf pain 2 days into a short course antibiotic with this specific drug combination context. DVT is usually unilateral. The fluoroquinolone + corticosteroid tendinopathy risk is the more clinically relevant answer given the drug combination.",
-   "B. CORRECT. Fluoroquinolone-associated tendinopathy: tendinitis typically in Achilles tendon (bilateral possible), also quadriceps, rotator cuff. FDA Black Box Warning added 2008. Risk factors: age >60, concurrent corticosteroids, renal failure, solid organ transplant. Pathophysiology: FQ → matrix metalloproteinase → collagen degradation in tendons. Stop FQ immediately, rest, ice, consider alternative antibiotic.",
-   "C. Corticosteroids can cause hypokalemia (mineralocorticoid effects), and hypokalemia causes muscle cramps/weakness. However, this would be a diffuse muscle issue, not specifically bilateral calf tenderness/stiffness suggesting tendinopathy. The drug combination of FQ + steroid is the classic teaching point here.",
-   "D. Fluoroquinolone peripheral neuropathy is a real adverse effect (FDA Black Box Warning 2013 added, along with BBW for CNS effects and tendinopathy) presenting as tingling/numbness/pain in hands and feet — not specifically calf muscle stiffness/pain. Tendinopathy is the more likely explanation for the symmetric calf pain in this context."
+   "DVT usually causes unilateral calf swelling and pain. This patient has bilateral pain, swelling, and tenderness localized over both Achilles tendons, which points to tendinopathy rather than venous thrombosis.",
+   "Fluoroquinolones carry a boxed warning for tendinitis and tendon rupture, most often of the Achilles tendon and sometimes bilateral, and the risk is higher with age over 60 and concurrent corticosteroids, both present here. Stop ciprofloxacin, rest the tendons, and switch to a non-fluoroquinolone antibiotic.",
+   "Corticosteroid-related hypokalemia causes diffuse muscle weakness or cramps, not focal swelling and tenderness over both Achilles tendons that worsens with walking.",
+   "Fluoroquinolone peripheral neuropathy is a real boxed-warning effect, but it presents as burning, tingling, or numbness in a stocking-glove distribution, not localized tendon swelling and tenderness."
   ]
  },
  {
@@ -4406,10 +4406,10 @@
   "domain": "Area 2",
   "ref": "Vol 2, Ch 3: Pharmacokinetics",
   "opts_exp": [
-   "A. 3.2 mg/L at 6 hours post-dose is well above the minimum. The Hartford nomogram was developed from large datasets showing that levels plotted within specific zones predict appropriate elimination and toxicity avoidance.",
-   "B. CORRECT. Hartford nomogram: draw serum level 6-14 hours post-infusion of 7 mg/kg tobramycin/gentamicin. Level at 6 hours = 3.2 mg/L → Q24H zone. If level fell in Q36H or Q48H zone, those intervals would be used instead. Q24H dosing is appropriate. Provides adequate peak (concentration-dependent killing) and drug-free trough (<1 mg/L — minimizes adaptive resistance and nephrotoxicity/ototoxicity).",
-   "C. 3.2 mg/L at 6 hours is NOT a toxic level by Hartford nomogram interpretation. The nomogram plots eliminate the need to separately interpret toxic/non-toxic thresholds — the zone determines the dosing interval.",
-   "D. The entire purpose of the Hartford nomogram is to use a SINGLE serum level drawn at the appropriate time window (6-14 hours) to guide interval selection. This is by design the method used for extended-interval aminoglycoside dosing."
+   "A measurable level at 6 hours is expected after a 7 mg/kg dose, and 3.2 mg/L is not below detection. On the Hartford nomogram a low random level reflects efficient clearance, not underdosing.",
+   "A single level drawn 6-14 hours after the start of a 7 mg/kg dose is plotted on the Hartford nomogram, and the zone sets the interval. At 6 hours, 3.2 mg/L lies well below the q24h/q36h line, so it falls in the q24h zone and q24h dosing is appropriate.",
+   "The nomogram adjusts the dosing interval to allow a drug-free period; random levels are not judged against a toxic peak cutoff, and 3.2 mg/L at 6 hours reflects normal clearance with CrCl 80 mL/min.",
+   "The Hartford nomogram was designed to be used with a single random level drawn 6-14 hours after the start of the infusion to select the dosing interval."
   ]
  },
  {
@@ -4490,10 +4490,10 @@
   "domain": "Area 2",
   "ref": "Vol 2, Ch 3: Pharmacokinetics",
   "opts_exp": [
-   "A. Total daily morphine alone cannot determine fentanyl patch dose without going through the proper equianalgesic conversion steps (PO→IV morphine equivalents, then to fentanyl). Also, 25-50% dose reduction for incomplete cross-tolerance is required when rotating opioids.",
-   "B. CORRECT. Standard opioid rotation: (1) Calculate total daily oral morphine (30 mg Q4H × 6 = 180 mg); (2) Convert to IV morphine using 3:1 PO:IV ratio = 60 mg IV/day; (3) Fentanyl conversion: 100 mcg/h fentanyl ≈ 4 mg/h IV morphine (96 mg/day IV). So 60 mg/day IV morphine → 60/4 × 100/24 ≈ 25-37.5 mcg/h fentanyl patch; (4) Reduce 25-50% for cross-tolerance; (5) Choose closest available patch (25 mcg/h); (6) Continue oral breakthrough opioid.",
-   "C. Transdermal fentanyl (Duragesic) is widely used and evidence-based for cancer pain requiring around-the-clock opioid therapy. It provides stable blood levels (steady state at 12-17 hours) after application. It is inappropriate ONLY in opioid-naive patients (high risk of respiratory depression) or patients with rapidly fluctuating opioid needs.",
-   "D. 1 mcg/h fentanyl per 1 mg daily oral morphine is an oversimplification and would result in underdosing. The actual conversion ratio varies but commonly approximated: fentanyl patch mcg/h ≈ total daily oral morphine (mg) ÷ 2, then select the nearest patch strength."
+   "A 12 mcg/h patch is far too low for 180 mg/day of oral morphine and would cause uncontrolled pain and withdrawal. Serum fentanyl also rises slowly over 12-24 hours, not within 1 hour, so stopping morphine with no breakthrough coverage is unsafe.",
+   "Total daily oral morphine is 30 mg × 6 = 180 mg/day, which meets the opioid-tolerance requirement, and the Duragesic label table places 135-224 mg/day at 50 mcg/h. The table is already conservative, so no extra cross-tolerance reduction is needed; provide short-acting opioid for breakthrough pain and do not titrate sooner than 3 days.",
+   "Transdermal fentanyl is widely used for stable, chronic cancer pain in opioid-tolerant patients like this one; it is avoided in opioid-naive patients and those with rapidly changing opioid needs.",
+   "A 1:1 conversion gives 180 mcg/h, about 3.6 times the labeled 50 mcg/h starting dose (180 ÷ 50 = 3.6), and risks fatal respiratory depression."
   ]
  },
  {
@@ -4532,10 +4532,10 @@
   "domain": "Area 2",
   "ref": "Vol 2, Ch 3: Pharmacokinetics",
   "opts_exp": [
-   "A. T>MIC >40-50% describes TIME-DEPENDENT antibiotics (beta-lactams: penicillins, cephalosporins, carbapenems; also macrolides and linezolid). Not the target for concentration-dependent antibiotics. Confusing these two PD categories is a common BCPS exam error.",
-   "B. CORRECT. Concentration-dependent antibiotics (aminoglycosides) have PD target of Peak/MIC ≥10-12. This drives extended-interval dosing (7 mg/kg Q24H to achieve high peaks). Fluoroquinolones are also concentration-dependent, but their primary PD target is AUC/MIC ≥30-50 (depending on pathogen). Both categories use HIGH peak concentrations relative to MIC.",
-   "C. AUC/MIC is the PD target for vancomycin (AUC/MIC 400-600) and fluoroquinolones — sometimes called 'mixed/exposure-dependent.' This is NOT the classic concentration-dependent (Peak/MIC) target. Confusing AUC/MIC with Peak/MIC is a common mistake.",
-   "D. Having trough above MIC would apply to time-dependent bactericidal killing, but even there the actual target is percentage of time ABOVE MIC, not simply 'trough above MIC.' And this is not the concentration-dependent target at all."
+   "Time above MIC is the target for time-dependent agents such as beta-lactams (about 40% for carbapenems, 50% for penicillins, 60-70% for cephalosporins), not for aminoglycosides.",
+   "Aminoglycosides show concentration-dependent killing and a prolonged post-antibiotic effect, so a Cmax/MIC of about 8-10 or higher predicts clinical response (Moore 1987). This is the basis for high-dose, extended-interval dosing.",
+   "Continuous infusion with low peaks is a beta-lactam strategy. For an aminoglycoside it would lower the peak/MIC ratio and remove the drug-free period that limits adaptive resistance and nephrotoxicity.",
+   "Keeping the trough above the MIC is not an aminoglycoside target. Troughs are kept low, ideally drug-free, to reduce nephrotoxicity and ototoxicity."
   ]
  },
  {
@@ -4680,10 +4680,10 @@
   "domain": "Area 2",
   "ref": "Vol 1, Ch 5: Infectious Diseases II",
   "opts_exp": [
-   "A. Raltegravir (RAL) was first INSTI approved and remains effective, but BID dosing and lower resistance barrier vs. dolutegravir make it a less preferred option in current DHHS guidelines. It is an alternative, not preferred.",
-   "B. CORRECT. Dolutegravir (DTG) 50 mg QD + TAF/FTC (or ABC/3TC with HLA-B*5701 testing) is a preferred regimen per DHHS guidelines. DTG advantages: high barrier to resistance (no resistance mutations yet in treatment-naive patients), QD dosing, no pharmacokinetic booster needed, excellent efficacy, good tolerability (though weight gain is noted), few drug interactions vs. boosted regimens. Bictegravir (BIC, in Biktarvy) is a newer INSTI with similar or superior resistance barrier, also preferred.",
-   "C. Elvitegravir/cobicistat (Stribild, Genvoya) is effective but requires cobicistat (pharmacokinetic booster = CYP3A4 inhibitor) → multiple drug-drug interactions. DHHS guidelines now list cobicistat-boosted elvitegravir as alternative, not preferred, due to drug interaction burden.",
-   "D. INSTIs are NOT equivalent. Resistance barrier: bictegravir ≥ dolutegravir >> elvitegravir > raltegravir. Dosing: dolutegravir/bictegravir = QD; raltegravir = BID (except HD formulation). Drug interactions vary significantly (cobicistat-boosted elvitegravir >> dolutegravir ≈ bictegravir). Selection is based on clinical and pharmacological considerations, not cost alone."
+   "Raltegravir needs twice-daily dosing in this regimen and has a lower barrier to resistance than dolutegravir; DHHS removed it from recommended initial regimens in 2024.",
+   "DHHS (September 2024) recommends dolutegravir plus TAF or TDF plus FTC or 3TC as an initial regimen for most people with HIV. Dolutegravir has a high barrier to resistance, once-daily dosing, and no need for a booster, which suits a patient with a CD4 count of 45 cells/μL who should start ART promptly.",
+   "Elvitegravir requires cobicistat boosting, a strong CYP3A4 inhibitor with many drug interactions, and DHHS removed it from recommended initial regimens in 2024.",
+   "INSTIs are not interchangeable; they differ in barrier to resistance, dosing frequency, need for boosting, and drug interactions, so cost alone should not drive the choice."
   ]
  },
  {
@@ -4744,10 +4744,10 @@
   "domain": "Area 2",
   "ref": "Vol 1, Ch 3: Anticoagulation",
   "opts_exp": [
-   "A. Warfarin is CONTRAINDICATED in acute HIT. Warfarin depletes protein C and protein S (natural anticoagulants) faster than procoagulant factors (II, VII, IX, X), creating a transient hypercoagulable state that can cause venous limb gangrene. Start warfarin only AFTER platelet recovery (>150K) and while maintaining therapeutic DTI anticoagulation.",
-   "B. CORRECT. Argatroban (or bivalirudin) is first-line for HIT with thrombosis (HITT). Argatroban: hepatically metabolized, dosed by aPTT (1.5-3× normal), preferred in renal failure. Bivalirudin: renally cleared, dosed by aPTT, preferred if hepatic impairment. Both are non-heparin direct thrombin inhibitors without cross-reactivity to HIT antibodies. Continue until platelet recovery, then can bridge to warfarin or DOAC (rivaroxaban/apixaban have accumulating evidence for HIT).",
-   "C. LMWHs (enoxaparin, dalteparin) CROSS-REACT with HIT antibodies in ~25-50% of cases. LMWH is CONTRAINDICATED in confirmed HIT due to cross-reactivity risk.",
-   "D. Fondaparinux (synthetic pentasaccharide factor Xa inhibitor) has very low HIT antibody cross-reactivity and is sometimes used as an alternative in HIT, but it is NOT the first-line FDA-approved treatment for HIT with thrombosis. Argatroban and bivalirudin have FDA approval for HIT treatment; fondaparinux is sometimes used off-label."
+   "Starting warfarin in acute HIT depletes protein C before thrombin generation falls and can cause venous limb gangrene. Start warfarin only after the platelet count recovers to at least 150,000/mm3, with at least 5 days of overlap with a parenteral agent.",
+   "Argatroban is a direct thrombin inhibitor that does not cross-react with HIT antibodies. It is hepatically cleared, so it needs no renal adjustment at CrCl 22 mL/min with normal liver function, and it is titrated to an aPTT of 1.5-3 times baseline.",
+   "LMWH cross-reacts extensively with HIT antibodies and is contraindicated in confirmed HIT.",
+   "Fondaparinux rarely cross-reacts with HIT antibodies and is reasonable when renal function is adequate, but it is renally eliminated and contraindicated at CrCl below 30 mL/min, so it is not appropriate at CrCl 22."
   ]
  },
  {
@@ -4807,10 +4807,10 @@
   "domain": "Area 2",
   "ref": "Vol 2, Ch 3: Pharmacokinetics",
   "opts_exp": [
-   "A. Leflunomide switch (not add) is a reasonable alternative if MTX is intolerant, but switching alone (rather than adding a biologic) is typically reserved for intolerance rather than inadequate response. ACR guidelines prefer adding a biologic/tsDMARD to background MTX for inadequate responders.",
-   "B. CORRECT. ACR 2021: MTX inadequate response → add biologic (TNFi or non-TNFi) or tsDMARD (JAK inhibitor) to MTX. TNFi + MTX combination has superior efficacy vs. either alone (MTX reduces TNFi immunogenicity/antibody formation). Abatacept, sarilumab, tocilizumab are alternatives. ALL require TB and hepatitis B pre-screening.",
-   "C. Maximum MTX dose for RA is typically 25 mg/week (some centers go to 30 mg parenterally). If already at 20 mg with inadequate response, modest dose increase could be tried briefly, but at 6 months of adequate MTX dosing, this is less likely to achieve ACR50/70 response. Adding a biologic is the evidence-based strategy.",
-   "D. Triple DMARD (MTX + HCQ + SSZ) is an ACR guideline-accepted alternative to biologic therapy and may be preferred in patients who cannot access or afford biologics. It is a reasonable option, especially in high-to-moderate cardiovascular risk patients where JAK inhibitors have caution signals. However, biologics remain preferred per most current guidelines for inadequate MTX response."
+   "Switching from methotrexate to leflunomide after an inadequate response is not preferred; ACR 2021 favors adding a biologic or targeted synthetic DMARD to background methotrexate.",
+   "ACR 2021 conditionally recommends adding a bDMARD or tsDMARD for patients not at target on maximally tolerated methotrexate. A TNF inhibitor plus methotrexate is the most studied option, with abatacept, IL-6 inhibitors, or rituximab as alternatives.",
+   "Methotrexate 25 mg/week is the usual maximum, and she is already on a maximal subcutaneous dose; 40 mg/week adds hepatic, marrow, and GI toxicity with little added benefit.",
+   "Triple conventional DMARD therapy is an option, but ACR 2021 conditionally recommends adding a biologic or tsDMARD over triple therapy for patients with an inadequate response to methotrexate."
   ]
  },
  {
@@ -4933,10 +4933,10 @@
   "domain": "Area 3",
   "ref": "Vol 2, Ch 1: Healthcare Systems",
   "opts_exp": [
-   "A. The $50,000/QALY threshold is largely outdated and based on older analyses (hemodialysis cost-effectiveness). Most modern US pharmacoeconomic analyses use $100,000-$150,000/QALY as the WTP threshold. At $85,000/QALY, the drug would be below the commonly used US threshold.",
-   "B. CORRECT. US WTP threshold: commonly $100,000-$150,000/QALY. An ICER of $85,000/QALY falls below this, suggesting the drug provides good value relative to societal willingness to pay. P&T committees and formulary managers use WTP thresholds to contextualize ICERs. Note: the threshold is not absolute — other factors (disease severity, unmet need, patient subgroup) influence formulary decisions.",
-   "C. The ICER definition includes a comparator by definition (Incremental = vs. comparator). The ICER of $85,000/QALY is already stated for comparison to a relevant comparator. Knowing the comparator is important for context but doesn't prevent interpretation of the provided ICER vs. WTP threshold.",
-   "D. ICERs are a fundamental tool in health technology assessment (HTA) and formulary decision-making worldwide. They are used by P&T committees, payer formulary committees, and policy makers to evaluate the value of new drugs. ICERs ARE valid and important for formulary decisions."
+   "An ICER of $85,000/QALY is below, not above, the stated $100,000-$150,000/QALY range. It would exceed only the outdated $50,000/QALY figure, which is no longer the usual US benchmark.",
+   "The ICER is the incremental cost divided by the incremental QALYs versus a comparator, and $85,000/QALY falls below the $100,000-$150,000/QALY range used by ICER in the US. The drug is therefore likely cost-effective, although budget impact and clinical factors still enter the formulary decision.",
+   "An ICER is by definition calculated against a comparator, and the stem states it is versus current standard therapy, so it can be interpreted.",
+   "ICERs are a standard input to value-based formulary and health technology assessment decisions, used alongside budget impact, equity, and clinical considerations."
   ]
  },
  {
@@ -4997,10 +4997,10 @@
   "domain": "Area 3",
   "ref": "Vol 2, Ch 1: Healthcare Systems",
   "opts_exp": [
-   "A. Oral hypoglycemics are important medications with hypoglycemia risk, but a 10-fold dosing error with metformin would cause GI effects; glipizide error risks hypoglycemia. While significant, these are not ranked above concentrated electrolytes for immediate lethality of errors.",
-   "B. CORRECT. Concentrated electrolytes (undiluted potassium chloride, concentrated NaHCO3, concentrated NaCl 23.4%) are at the TOP of ISMP High-Alert Medications list. Undiluted KCl IV = cardiac arrest. 23.4% hypertonic saline given too rapidly = fatal osmotic demyelination or cerebral hemorrhage. ISMP mandates: remove concentrated electrolytes from patient care unit floor stock, require pharmacy preparation of diluted solutions, double-nurse check for administration.",
-   "C. Anticoagulants (heparin, warfarin, DOACs) are also ISMP high-alert medications with significant harm potential from dosing errors. However, concentrated electrolytes have been specifically highlighted as causing the most rapid, irreversible, fatal events from single-administration errors.",
-   "D. Antihypertensives are generally not on the ISMP high-alert list (with some exceptions like parenteral antihypertensives in hypertensive emergency). A 10-fold error with oral amlodipine or lisinopril could cause severe hypotension but less immediately catastrophic than concentrated electrolytes."
+   "Metformin is not an ISMP high-alert medication, and although oral sulfonylureas such as glipizide are, they are oral tablets with no concentrated vials to remove from units, so this strategy does not apply.",
+   "Concentrated electrolytes such as potassium chloride concentrate and hypertonic sodium chloride are ISMP high-alert medications; undiluted IV potassium has caused fatal cardiac arrest, and hypertonic saline errors cause severe hypernatremia or osmotic demyelination. The Joint Commission's 2003 National Patient Safety Goals required removing them from patient care units, and ISMP recommends premixed products and pharmacy-only preparation.",
+   "Anticoagulants are high-alert medications, but their main safeguards are standardized concentrations, weight-based protocols, and monitoring, not removal of concentrated vials from units.",
+   "Oral amlodipine and lisinopril are not on the ISMP high-alert list, and replacing concentrated vials with premixed products does not apply to oral tablets."
   ]
  },
  {
@@ -5081,10 +5081,10 @@
   "domain": "Area 3",
   "ref": "Vol 2, Ch 1: Healthcare Systems",
   "opts_exp": [
-   "A. Relying on human vigilance (re-reading) without system changes is an unreliable safety strategy. Human factors research shows that attention-based interventions fail under stress, fatigue, and cognitive load. This does not prevent the systemic error.",
-   "B. Disciplinary action without system change is a punitive approach that doesn't prevent the underlying error. RCA specifically looks for SYSTEM failures, not individual blame. A just culture approach addresses systemic issues while holding individuals accountable for egregious violations (not for systems errors). Firing/disciplining alone does not prevent the next error.",
-   "C. CORRECT. High-reliability system interventions for methotrexate safety: (1) CPOE CDS alert for methotrexate doses > weekly frequency or above weight-based thresholds; (2) Mandatory prescriber justification override for daily dosing; (3) Independent pharmacist double-check for all oncology/methotrexate orders; (4) Standardize ordering (weekly-dose only protocols). ISMP highest-leverage interventions are system redesigns using technology and workflow changes, not individual vigilance.",
-   "D. Passive reminder signs have the lowest impact in the hierarchy of error prevention. Signs may be briefly effective but are quickly ignored (habituation). They are useful supplements but not the primary intervention for high-alert medication errors."
+   "Asking the nurse to reread the order relies on memory and vigilance, which fail under workload and fatigue; it is a weak intervention that does not change the system that allowed a 10-fold error.",
+   "Discipline goes against just-culture principles, discourages error reporting, and leaves the underlying system flaw in place, so it does not prevent recurrence.",
+   "Forcing functions and clinical decision support, such as hard-stop dose limits, a weekly default frequency, a required indication, and pharmacist verification, are the high-leverage system fixes in the ISMP Targeted Medication Safety Best Practices. They would intercept a 150 mg weekly order before it reaches the patient.",
+   "A reminder sign is among the weakest interventions in the error-prevention hierarchy; staff habituate to it quickly, and it does nothing to stop an incorrect order from being entered or dispensed."
   ]
  },
  {
@@ -5208,10 +5208,10 @@
   "domain": "Area 3",
   "ref": "Vol 2, Ch 8: Pulmonology & Vaccinations",
   "opts_exp": [
-   "A. PCV13 (Prevnar 13) has been replaced by PCV15 (Vaxneuvance) and PCV20 (Prevnar 20) in ACIP 2021 adult recommendations. PCV13 alone is no longer the standard recommendation for new adult immunizations. Existing recipients of PCV13 follow modified schedules.",
-   "B. PPSV23 (Pneumovax 23) is not given annually — it is given once (or twice for high-risk groups with a dose at <65 then a repeat at ≥65). Annual pneumococcal vaccine is not recommended; annual influenza vaccine is different.",
-   "C. CORRECT. ACIP 2023: Adults ≥65 years who have not yet had pneumococcal vaccine → PCV20 alone (1 dose, covers 20 serotypes, no further pneumococcal vaccine needed) OR PCV15 (1 dose) + PPSV23 (≥1 year later; 8 weeks if immunocompromised). PCV20 is preferred for simplicity. Series covers most pneumococcal disease-causing serotypes.",
-   "D. Prior PPSV23 at <65 does not preclude further pneumococcal vaccination. Adults who received PPSV23 before age 65 and are now ≥65 should receive one dose of a higher-valency PCV (PCV15 or PCV20) at least 1 year after PPSV23, to extend serotype coverage."
+   "PCV13 is no longer recommended for adults; ACIP replaced it with PCV15 and PCV20 in the 2021-2022 recommendations, and PCV21 was added in 2024.",
+   "PPSV23 alone is not recommended for this patient, and pneumococcal vaccines are never given annually like influenza vaccine.",
+   "For a pneumococcal-vaccine-naive adult aged 65 or older, ACIP recommends one dose of PCV20 or PCV21 alone, or PCV15 followed by PPSV23 at least 1 year later. ACIP does not designate any of these options as preferred.",
+   "This patient has never received a pneumococcal vaccine, and even adults who received only PPSV23 should still receive a PCV (PCV20, PCV21, or PCV15) at least 1 year later."
   ]
  },
  {
@@ -5250,10 +5250,10 @@
   "domain": "Area 3",
   "ref": "Vol 2, Ch 1: Healthcare Systems",
   "opts_exp": [
-   "A. 503A pharmacies require patient-specific prescriptions for most compounds (except office use exemption for limited quantities). They cannot produce commercial-scale quantities. Commercial manufacturing requires NDA/ANDA with FDA approval.",
-   "B. CORRECT. 503B outsourcing facilities (created by DQSA 2013): can produce large quantities of compounded drugs for sale to healthcare facilities WITHOUT patient-specific prescriptions, but must register with FDA, meet current Good Manufacturing Practice (cGMP) standards, submit adverse event reports, and undergo FDA inspection. They are held to higher standards than 503A pharmacies. Sterile compounding by 503B facilities addressed the 2012 NECC fungal meningitis outbreak trigger (64 deaths from contaminated sterile compounds).",
-   "C. After the 2012 New England Compounding Center (NECC) meningitis outbreak (contaminated sterile compounding, 753 infections, 64 deaths), FDA authority over compounding was expanded via DQSA 2013. Both FDA (for 503B) and state boards (for 503A) now share oversight depending on the compounding type.",
-   "D. Compounded products are NOT equivalent to FDA-approved drugs. They lack rigorous FDA evaluation of safety, efficacy, and manufacturing quality. Sterile compounding carries significant infection risk if not done in ISO-classified cleanrooms. Compounded products may have different stability, potency, and sterility profiles than FDA-approved products."
+   "Section 503A compounding requires patient-specific prescriptions and may not mimic commercial manufacturing, including limits on compounding copies of commercially available drugs.",
+   "Under the Drug Quality and Security Act (2013), 503B outsourcing facilities may compound without patient-specific prescriptions for supply to healthcare facilities. They must register with FDA, comply with cGMP, undergo risk-based FDA inspection, and report their products to FDA.",
+   "FDA has oversight of both pathways. 503A pharmacies are regulated mainly by state boards of pharmacy, but FDA retains authority to inspect them and act against violations, and 503B facilities are directly FDA-registered and inspected.",
+   "Compounded products are not FDA-approved and have not been reviewed for safety, efficacy, or quality the way approved drugs have, so they cannot be assumed equivalent."
   ],
   "reviewNote": "Targeted correction 2026-10-19; full chapter review pending."
  },
@@ -5294,10 +5294,10 @@
   "domain": "Area 3",
   "ref": "Vol 2, Ch 1: Healthcare Systems",
   "opts_exp": [
-   "A. Six Sigma is an internal quality improvement methodology (DMAIC: Define, Measure, Analyze, Improve, Control) focused on process improvement through statistical analysis to reduce defects. It is an organizational tool, not an external accountability program.",
-   "B. CORRECT. CMS star ratings, Hospital Compare, HCAHPS, and Value-Based Purchasing tie quality measurement to transparency and reimbursement. Public reporting increases accountability; P4P provides financial incentives for quality improvement. Speak Up empowers patients to actively participate in their safety. These external accountability mechanisms have been associated with improvements in specific quality measures.",
-   "C. FMEA (Failure Mode and Effects Analysis) is a prospective, proactive risk assessment tool used BEFORE a failure occurs to identify potential failure modes and implement preventive strategies. It is an internal safety improvement tool, not a public reporting/P4P initiative.",
-   "D. Root cause analysis (RCA) is a retrospective analysis of adverse events/sentinel events to identify contributing system factors after an event. It is an internal quality improvement tool mandated by TJC for sentinel events, not a P4P or public reporting program."
+   "Six Sigma is an internal process-improvement method (DMAIC) that an organization uses on its own processes, not an external payment or public reporting program.",
+   "CMS Star Ratings on Care Compare are public reporting, and Hospital Value-Based Purchasing is pay-for-performance that adjusts Medicare payments based on quality, safety, patient experience (HCAHPS), and efficiency measures. Both drive improvement through transparency and financial incentives.",
+   "FMEA is a prospective risk assessment that looks for ways a process could fail before harm occurs; it is an internal safety tool, not pay-for-performance or public reporting.",
+   "Root cause analysis is a retrospective review of a sentinel or adverse event to find system causes; it is an internal tool, not pay-for-performance or public reporting."
   ]
  },
  {
@@ -5357,10 +5357,10 @@
   "domain": "Area 3",
   "ref": "Vol 2, Ch 12: Drug Information",
   "opts_exp": [
-   "A. Schedule II prescriptions are NOT valid for 1 year. They expire 30 days from the date written under federal law. One year is the validity period for Schedule III-V prescriptions in some states, not Schedule II.",
-   "B. CORRECT. Federal DEA: Schedule II controlled substance prescriptions must be filled within 30 days from written date. A 45-day-old Schedule II prescription cannot be filled under federal law. The prescribing physician would need to write a new prescription. Note: in LTCF (long-term care facilities) and hospice settings, partial fills of Schedule II are permitted with the remainder dispensed within 60 days.",
-   "C. Schedule III-IV prescriptions are valid for 6 months (not 30 days). The 30-day limit is specifically for Schedule II, which has the strictest controls. Schedule II has NO refills and must be filled within 30 days.",
-   "D. Federal law limits Schedule II to 30 days, not 90 days. 90 days is sometimes referenced for Schedule III/IV allowable refill supply, or as an emergency dispensing limit. The standard validity period for Schedule II is 30 days."
+   "Federal law sets no 1-year validity period for Schedule II prescriptions; there is no specific federal expiration at all, and any limit comes from state law.",
+   "This is a common misconception. Federal law sets no time limit on the original fill; the 30-day window applies to CARA 2016 partial fills, where remaining portions must be filled within 30 days of issue.",
+   "The 6-month, 5-refill limit applies to Schedule III-IV prescriptions (21 CFR 1306.22), not Schedule II prescriptions, which cannot be refilled.",
+   "Per 21 CFR 1306 and the DEA Pharmacist's Manual, there is no specific federal limit on how long after issue a Schedule II prescription may be filled. Many states impose limits (for example, 30, 60, or 90 days), and the pharmacist's corresponding responsibility (21 CFR 1306.04) requires confirming a legitimate medical purpose, with a 45-day delay as one factor to weigh."
   ]
  },
  {
@@ -5378,10 +5378,10 @@
   "domain": "Area 1",
   "ref": "Vol 2, Ch 7: Geriatrics",
   "opts_exp": [
-   "A. Indefinite bisphosphonate therapy increases rare but serious risks: osteonecrosis of the jaw (ONJ), atypical subtrochanteric femur fractures (AFFs). After 3-5 years, reassessment of fracture risk is warranted to determine if a holiday is appropriate.",
-   "B. CORRECT. ASBMR drug holiday recommendation: after 3-5 years oral bisphosphonate or 3 years IV zoledronic acid — reassess fracture risk. Lower-risk: consider 2-3 year holiday (residual bone-bound drug maintains protection). Higher-risk: continue treatment or switch to non-bisphosphonate agent (denosumab, romosozumab, teriparatide). Rebound fracture risk is a concern when stopping denosumab (not bisphosphonates).",
-   "C. 1 year is far too short — bisphosphonates need 2-3+ years to show significant fracture reduction. No guideline recommends a mandatory 1-year stop.",
-   "D. Drug holiday concept applies to BOTH oral and IV bisphosphonates. The duration of action varies (IV zoledronic acid holiday after 3 years; oral after 5 years), but holidays are applicable to both formulations."
+   "Indefinite therapy raises the cumulative risk of atypical femoral fracture and osteonecrosis of the jaw without proven added benefit in a lower-risk patient like this one.",
+   "ASBMR recommends reassessing fracture risk after 5 years of oral or 3 years of IV therapy, and the Endocrine Society suggests 3-5 years. She has no fractures and a hip T-score of -2.2 (above -2.5), so she is lower risk and a holiday of about 2-5 years is reasonable, with reassessment every 1-2 years.",
+   "Fracture reduction with bisphosphonates was shown over 3-5 years of therapy, and no guideline limits use to 1 year.",
+   "Drug holidays apply to both oral and IV bisphosphonates; the reassessment point is about 5 years for oral agents and 3 years for IV zoledronic acid."
   ]
  },
  {
@@ -5420,10 +5420,10 @@
   "domain": "Area 2",
   "ref": "Vol 2, Ch 3: Pharmacokinetics",
   "opts_exp": [
-   "A. IV and oral morphine are NOT equipotent. The oral:IV ratio for morphine is 3:1 (oral morphine is 1/3 as potent as IV morphine due to first-pass metabolism). Additionally, oxycodone and morphine are not the same drug — oxycodone is approximately 1.5x as potent as oral morphine.",
-   "B. CORRECT. Conversion: IV morphine 8 mg/day → oral morphine equivalent: 8 × 3 = 24 mg/day oral morphine. Oral morphine 24 mg → oral oxycodone: 24 / 1.5 = 16 mg/day. Apply 25% reduction for cross-tolerance: 16 × 0.75 = 12 mg/day oxycodone as conservative starting dose. In clinical practice, oxycodone 10-15 mg/day in divided doses (5 mg Q8H or Q6H) would be reasonable starting point.",
-   "C. 40 mg/day oxycodone would represent over-conversion — approximately IV morphine 20 mg/day equivalent. This would be an unsafe starting dose for a patient on 8 mg IV morphine/day.",
-   "D. 4 mg/day oral oxycodone would be significant underdosing. Patients would have undertreated pain and potentially withdrawal symptoms. This represents less than a quarter of the correctly calculated equianalgesic dose."
+   "A milligram-for-milligram switch ignores the 1:3 IV-to-oral morphine ratio and the 1.5:1 morphine-to-oxycodone ratio; 8 mg is only half of the 16 mg equianalgesic dose.",
+   "IV morphine 8 mg/day × 3 = 24 mg/day oral morphine, and 24 ÷ 1.5 = 16 mg/day oral oxycodone. When starting, reduce by 25-50% for incomplete cross-tolerance (16 × 0.75 = 12 mg/day) in divided doses, with breakthrough doses and titration.",
+   "40 mg/day is 2.5 times the 16 mg equianalgesic dose (40 ÷ 16 = 2.5) and risks oversedation and respiratory depression.",
+   "4 mg/day is one quarter of the 16 mg equianalgesic dose (4 ÷ 16 = 0.25) and would leave pain undertreated and risk opioid withdrawal."
   ]
  },
  {
@@ -5884,10 +5884,10 @@
   "domain": "Area 1",
   "ref": "Vol 2 Pharmacokinetics; Vol 1 ID; SIDP Extended Infusion Guidelines",
   "opts_exp": [
-   "A. Cmax/MIC ≥ 10 is the PK/PD target for aminoglycosides (concentration-dependent killers). Beta-lactams do not exhibit concentration-dependent killing — above 4× MIC, no additional killing occurs.",
-   "B. This correctly identifies fT>MIC ≥ 40% as the target but states 'standard 3-hour infusion' as if that is different from extended infusion. For carbapenems, a 3-hour infusion IS an extended infusion (standard is 30 min). Slightly imprecise wording makes this less accurate than C.",
-   "C. CORRECT. Free drug fT>MIC ≥ 40% (some references 40–50%) is the PD target for meropenem. Extended 3-hr infusion significantly increases fT>MIC compared to 30-min infusion, particularly at MIC = 2 mcg/mL (susceptibility breakpoint). This is pharmacodynamically critical for borderline isolates.",
-   "D. AUC0-24/MIC ≥ 125 is the target for fluoroquinolones (AUC-dependent killers). Meropenem and all beta-lactams are time-dependent — AUC/MIC ratio is not the primary PD target."
+   "Cmax/MIC of 10 or more is the target for concentration-dependent aminoglycosides. Meropenem is time-dependent, so a higher peak from a short infusion adds little killing.",
+   "The fT>MIC target is right, but infusion duration directly changes how long free drug stays above the MIC; that is the whole rationale for extended infusion, so a 30-minute infusion is not preferred here.",
+   "Carbapenems are time-dependent with a target of about 40% fT>MIC. At an MIC of 2 mcg/mL, the CLSI susceptible breakpoint for P. aeruginosa, 30-minute infusions may miss the target, and a 3-hour infusion prolongs time above MIC and raises the probability of target attainment.",
+   "AUC0-24/MIC of 125 or more is a fluoroquinolone target; it is not the primary pharmacodynamic index for meropenem or other beta-lactams."
   ]
  },
  {
@@ -5926,10 +5926,10 @@
   "domain": "Area 1",
   "ref": "Vol 2 Pharmacokinetics; SCCM ECMO Pharmacokinetics Review",
   "opts_exp": [
-   "A. ECMO does not primarily increase hepatic first-pass metabolism; furthermore, IV vancomycin has no first-pass metabolism. ECMO may affect hepatic blood flow but this is not the primary mechanism for vancomycin underdosing.",
-   "B. CORRECT. ECMO circuit sequesters drugs by adsorption to circuit materials. For vancomycin, circuit binding increases apparent Vd from ~0.7 L/kg to >1 L/kg in some patients. Supplemental loading dose (re-loading) should be given, followed by increased maintenance doses with AUC-guided monitoring. Early circuit saturation (first 24–48 hrs) is when sequestration is greatest.",
-   "C. ECMO does not cause hypercatabolism of vancomycin; clearance is dependent on renal function which is typically impaired (not increased) in post-cardiac surgery ECMO patients.",
-   "D. Peritoneal dialysis has no role in this scenario. Vancomycin toxicity from competition with metabolites is not a recognized mechanism of subtherapeutic levels."
+   "IV vancomycin has no first-pass metabolism and is not hepatically cleared, so changes in hepatic blood flow do not explain the low AUC.",
+   "ECMO priming volume, hemodilution, capillary leak, and fluid overload expand vancomycin's volume of distribution; because vancomycin is hydrophilic with low-to-moderate protein binding, circuit adsorption plays only a minor role. Per the 2020 vancomycin consensus guideline, give a loading dose (20-35 mg/kg actual body weight), increase the maintenance dose, and titrate with Bayesian AUC monitoring to 400-600 mg·h/L.",
+   "Free hemoglobin released by hemolysis does not bind or inactivate vancomycin; this is not a recognized mechanism.",
+   "No ECMO-related metabolites compete for vancomycin binding, and dialysis would remove vancomycin and lower exposure further."
   ]
  },
  {
@@ -5969,10 +5969,10 @@
   "domain": "Area 1",
   "ref": "Vol 1 Anticoagulation; ASH 2018 HIT Guidelines",
   "opts_exp": [
-   "A. Warfarin initiation in acute HIT is contraindicated. Warfarin depletes Protein C and S rapidly (short half-life) before it depletes factor II, creating a transient hypercoagulable state that can cause venous limb gangrene. Only start warfarin after platelets recover to >150,000.",
-   "B. CORRECT. Argatroban 2 mcg/kg/min (reduce to 0.5–1.2 mcg/kg/min in hepatic failure) immediately replaces heparin. Monitor aPTT q4-6h, target 1.5–3× baseline (50–90 sec). Avoid warfarin until platelets normalize. Fondaparinux is an alternative but limited data; argatroban is the most guideline-endorsed choice.",
-   "C. LMWH is CONTRAINDICATED in HIT. PF4-heparin complex antibodies cross-react with LMWH >50% of the time, perpetuating thrombocytopenia and thrombosis.",
-   "D. Continuing or reducing heparin in probable/confirmed HIT is contraindicated — every additional unit of heparin risks catastrophic thrombosis. Heparin must be stopped immediately."
+   "Warfarin started in acute HIT depletes protein C before thrombin generation falls and can cause venous limb gangrene, and a 10 mg dose makes this more likely. Start warfarin only after platelets recover to at least 150,000/mm3, with at least 5 days of overlap.",
+   "Her 4T score is 2 + 2 + 1 + 0 = 5, an intermediate probability, so ASH 2018 calls for stopping all heparin, starting a therapeutic non-heparin anticoagulant, and sending a PF4/heparin immunoassay. With normal hepatic function, argatroban at the labeled 2 mcg/kg/min titrated to an aPTT of 1.5-3 times baseline is appropriate, and warfarin waits until platelets reach at least 150,000/mm3.",
+   "Enoxaparin cross-reacts extensively with HIT antibodies; the rare cross-reactivity applies to fondaparinux, a synthetic pentasaccharide that is not an LMWH.",
+   "Any continued heparin exposure, even at a reduced dose, keeps generating HIT antibody complexes and fuels thrombosis, and waiting 24 hours delays needed anticoagulation."
   ]
  },
  {
@@ -6032,10 +6032,10 @@
   "domain": "Area 2",
   "ref": "Vol 2 Drug Information; ACG H. pylori Guidelines 2017; CPIC CYP2C19 Guidelines",
   "opts_exp": [
-   "A. While clarithromycin resistance is a factor, the CYP2C19*17 finding is directly clinically actionable. Ultra-rapid metabolizers cannot maintain adequate intragastric pH on standard PPI doses — this is a known, evidence-based pharmacogenomic interaction that affects H. pylori eradication rates.",
-   "B. CORRECT. Vonoprazan is not metabolized by CYP2C19 and provides consistent, potent acid suppression (superior to PPIs in CYP2C19 ultra-rapid metabolizers). Alternatively, esomeprazole 40 mg BID or rabeprazole (less CYP2C19-dependent) are preferred over omeprazole in extensive/ultra-rapid metabolizers. ACG/CPIC recommend PGx-guided PPI selection when available.",
-   "C. Clarithromycin TID (three times daily) doesn't address the acid suppression problem from rapid PPI metabolism. Additionally, if the first-line clarithromycin regimen failed, clarithromycin resistance is suspected — increasing the dose without susceptibility testing is not appropriate.",
-   "D. Ranitidine (H2 antagonist) is inferior to PPIs for H. pylori eradication and is not recommended as PPI substitute. Additionally, ranitidine was withdrawn from market (NDMA contamination) and is no longer available."
+   "This ignores the actionable genotype. Clarithromycin resistance may coexist, but standard-dose omeprazole gives poor acid control in a CYP2C19 *17/*17 ultrarapid metabolizer and lowers eradication rates.",
+   "CPIC 2020 recommends increasing the starting daily PPI dose by 100% in ultrarapid metabolizers being treated for H. pylori, and vonoprazan, metabolized mainly by CYP3A4, suppresses acid potently regardless of CYP2C19 genotype. ACG 2024 advises avoiding repeat clarithromycin after a clarithromycin-based failure, with bismuth quadruple therapy as the usual salvage regimen.",
+   "Higher-dose clarithromycin does not overcome resistance or fix inadequate acid suppression, and ACG 2024 advises against repeating clarithromycin after failure unless susceptibility is confirmed.",
+   "H2-receptor antagonists are inferior to PPIs in H. pylori eradication regimens, and ranitidine was withdrawn from the US market in 2020."
   ]
  },
  {
@@ -6096,10 +6096,10 @@
   "domain": "Area 3",
   "ref": "Vol 2 Healthcare Systems; ISPOR Guidelines; PARADIGM-HF economic analyses",
   "opts_exp": [
-   "A. This calculates annualized cost per event prevented: $7,020/year ÷ (1/NNT per year). ARR at 27 months = 1/21 ≈ 4.76%; annualized ARR ≈ 4.76/2.25 = 2.1%/year. $7,020 ÷ 0.021 ≈ $334,000/event/year. The $146,000 figure requires different ARR — this option mixes up the math. While conceptually sound, the arithmetic doesn't match the given data.",
-   "B. QALY-based ICER is more rigorous, but NNT-based cost per event is a valid and commonly used pharmacoeconomic tool for P&T decisions. Saying it 'cannot be calculated' is incorrect.",
-   "C. $7,200 ÷ 21 = $343 makes no clinical sense — divides the annual cost of just the new drug (without netting the comparator cost) by NNT. This is not a recognized pharmacoeconomic calculation.",
-   "D. CORRECT. Cost per event prevented = incremental cost per patient × NNT = $7,020 × 21 = $147,420. This is the total incremental acquisition cost to prevent one composite CV event over the trial duration. Whether this is cost-effective depends on the threshold and QALY value assigned to preventing that event. Published analyses suggest this is near or below the $150,000/QALY threshold."
+   "$7,020 ÷ 0.047 = about $149,000 counts only 1 year of drug cost, even though the 4.7% ARR accrued over a median 2.25 years, so it underestimates the cost per event prevented.",
+   "An ICER can be expressed in natural units such as cost per event prevented; a QALY estimate is needed only for a cost-utility analysis.",
+   "$7,200 ÷ 22 = about $327 divides by the NNT instead of multiplying and uses the total drug cost rather than the incremental cost over enalapril.",
+   "Incremental cost per patient over the trial period is $7,020 × 2.25 years = $15,795, and multiplying by the NNT of 22 gives $347,490, or about $347,000 per event prevented. This figure counts drug acquisition cost only and ignores offsets from avoided hospitalizations."
   ]
  },
  {
@@ -6117,10 +6117,10 @@
   "domain": "Area 3",
   "ref": "Vol 2 Healthcare Systems; FDA BPCIA; NABP Model State Pharmacy Act",
   "opts_exp": [
-   "A. 'Any FDA-approved biosimilar' cannot be automatically substituted — only 'interchangeable' designated biosimilars can. Standard biosimilar approval (without interchangeable designation) requires prescriber involvement for switching.",
-   "B. CORRECT. Only FDA-interchangeable biosimilars are eligible for automatic pharmacy substitution. State laws govern the notification requirements — typically pharmacist must notify prescriber within 5 business days (varies by state) and document the substitution in the dispensing record. Patient must also be informed.",
-   "C. Overly restrictive — interchangeable biosimilars CAN be automatically substituted at pharmacy level (analogous to generic substitution) under applicable state law. A new prescription is not required.",
-   "D. Biosimilar substitution is NOT the same as generic drug substitution. Generics are chemically identical small molecules with FDA bioequivalence. Biologics are complex proteins — structural differences may have clinical implications. The interchangeable designation with switching studies is an additional FDA standard beyond basic biosimilar approval."
+   "A biosimilar without interchangeable designation cannot be substituted at the pharmacy without prescriber authorization.",
+   "Under the BPCIA, only a biosimilar that FDA has designated interchangeable may be substituted without prescriber intervention, and only where state law allows. Most states require the pharmacist to notify the prescriber within a set time (often 5 business days, varying by state) and to document the product dispensed.",
+   "This is too restrictive; an interchangeable biosimilar can be substituted without a new prescription where state law permits.",
+   "Biologics are not generic equivalents and do not follow the small-molecule bioequivalence and generic substitution framework; substitution is limited to interchangeable products under state biosimilar laws."
   ]
  },
  {
@@ -6138,10 +6138,10 @@
   "domain": "Area 1",
   "ref": "Vol 1 ID; IDSA/ATS CAP Guidelines 2019",
   "opts_exp": [
-   "A. Azithromycin monotherapy is only guideline-recommended for outpatient CAP (mild, no comorbidities or risk factors). Hospitalized patients require combination or fluoroquinolone therapy.",
-   "B. Levofloxacin is acceptable for non-ICU CAP and the renal adjustment is correctly described. However, with increasing fluoroquinolone resistance and risks (QT prolongation, tendinopathy, CNS), ceftriaxone + azithromycin is often preferred as first-line combination therapy.",
-   "C. Ampicillin-sulbactam + azithromycin is a guideline-acceptable combination for non-ICU CAP. However, amp-sulbactam requires renal dose adjustment in CrCl <30 (this patient has CrCl 32, borderline) and has a narrower spectrum. Ceftriaxone is preferred over amp-sulbactam for most non-pseudomonal CAP.",
-   "D. CORRECT. Ceftriaxone 1–2g IV daily + azithromycin 500 mg IV daily is the IDSA/ATS guideline-preferred combination for hospitalized non-ICU CAP. No renal adjustment required for either drug. Covers typical (S. pneumoniae) and atypical organisms (Legionella, Mycoplasma, Chlamydophila)."
+   "Macrolide monotherapy is reserved for selected outpatients with CAP and is not appropriate for a hospitalized patient with diabetes and CKD.",
+   "The levofloxacin dose is correctly adjusted for CrCl 32 mL/min, but a fluoroquinolone should be avoided after a prior fluoroquinolone-associated tendon rupture (FDA boxed warning), and an equally guideline-supported non-fluoroquinolone regimen is available.",
+   "ATS/IDSA 2019 recommends against empiric anti-MRSA and antipseudomonal coverage without locally validated risk factors, and he has none (no prior isolation, no hospitalization or IV antibiotics in 90 days). Vancomycin would also add nephrotoxicity risk in CKD 3b.",
+   "For non-severe inpatient CAP without MRSA or P. aeruginosa risk factors, ATS/IDSA 2019 strongly recommends a beta-lactam plus a macrolide. Ceftriaxone plus azithromycin needs no renal adjustment, covers typical and atypical pathogens, and avoids a fluoroquinolone in this patient."
   ]
  },
  {
@@ -6159,10 +6159,10 @@
   "domain": "Area 1",
   "ref": "Vol 1 Psychiatry; Clozapine REMS Program; Drug Interactions Reference",
   "opts_exp": [
-   "A. CORRECT. Polycyclic aromatic hydrocarbons (PAH) in cigarette smoke — NOT nicotine itself — induce CYP1A2, dramatically increasing clozapine clearance. With a level of 180 (therapeutic ≥350), a dose increase of 33–50% is warranted. Monitor levels weekly after each adjustment. If patient stops smoking again, dose must be reduced to prevent toxic levels (seizures, agranulocytosis at supratherapeutic doses).",
-   "B. Nicotine does not directly block dopamine receptors. Tobacco's effect is pharmacokinetic (CYP1A2 induction), not pharmacodynamic. Switching to olanzapine is not warranted — clozapine is typically used for treatment-resistant schizophrenia.",
-   "C. P-glycoprotein induction by tobacco is not a clinically significant mechanism for clozapine. The primary interaction is CYP1A2 induction, not P-gp-mediated efflux.",
-   "D. CYP3A4 is a minor metabolic pathway for clozapine. Tobacco smoke primarily induces CYP1A2. Adding fluvoxamine (a potent CYP1A2 AND CYP3A4 inhibitor) can boost clozapine levels and is used clinically in some cases, but is not first-line management — dose adjustment is preferred."
+   "Clozapine is cleared mainly by CYP1A2, and polycyclic aromatic hydrocarbons in tobacco smoke (not nicotine) induce CYP1A2, lowering clozapine levels by roughly 30-50%. Increase the dose stepwise (smokers often need about 1.5 times the nonsmoking dose) with weekly levels toward at least 350 ng/mL, and reduce the dose if he stops smoking.",
+   "Nicotine does not block dopamine receptors in a way that negates clozapine; this is a pharmacokinetic problem, and switching to olanzapine would give up clozapine's efficacy in treatment-resistant schizophrenia.",
+   "P-glycoprotein induction in the gut is not the mechanism; the interaction is hepatic CYP1A2 induction by tobacco smoke.",
+   "The enzyme induced by smoking is CYP1A2, not CYP3A4, and fluvoxamine is a strong CYP1A2 inhibitor rather than a CYP3A4-targeted strategy; fluvoxamine augmentation is a specialist option, not first-line here."
   ]
  },
  {
@@ -6201,10 +6201,10 @@
   "domain": "Area 1",
   "ref": "Vol 1 Oncology; CPIC CYP2D6 Tamoxifen Guideline 2018",
   "opts_exp": [
-   "A. Paroxetine does not INDUCE CYP2D6 — it INHIBITS it. Inhibition reduces (not increases) tamoxifen activation to endoxifen.",
-   "B. CORRECT. Paroxetine phenocopies CYP2D6 poor metabolizer status, reducing endoxifen levels by up to 75%. CPIC recommends avoiding paroxetine and fluoxetine with tamoxifen. Use citalopram, escitalopram, or venlafaxine (weak CYP2D6 inhibitors) as preferred antidepressants in this setting.",
-   "C. QTc prolongation is a concern with tamoxifen (via hERG blockade), but paroxetine's primary pharmacokinetic interaction is CYP2D6 inhibition, not CYP3A4 competition or direct QTc effects.",
-   "D. Paroxetine does not alter estrogen receptor sensitivity. Its interaction is pharmacokinetic (metabolic enzyme inhibition), not pharmacodynamic."
+   "Paroxetine inhibits CYP2D6; it is not an inducer. The interaction lowers active metabolite concentrations rather than causing tamoxifen toxicity.",
+   "Paroxetine is a strong CYP2D6 inhibitor that turns a normal metabolizer into a functional poor metabolizer and lowered endoxifen concentrations by about 64% (Stearns 2003), which may reduce tamoxifen efficacy. CPIC 2018 and NCCN advise avoiding strong and moderate CYP2D6 inhibitors, so venlafaxine (minimal CYP2D6 inhibition) is preferred, with escitalopram or citalopram as alternatives.",
+   "The clinically important interaction is CYP2D6 inhibition reducing endoxifen formation, not CYP3A4 competition or additive QTc prolongation.",
+   "Paroxetine does not change estrogen receptor sensitivity; its interaction with tamoxifen is pharmacokinetic."
   ]
  },
  {
@@ -6222,10 +6222,10 @@
   "domain": "Area 1",
   "ref": "Vol 1 ID; IDSA/SHEA CDI Guidelines 2021",
   "opts_exp": [
-   "A. Metronidazole is no longer first-line for ANY severity CDI per 2021 IDSA/SHEA guidelines. Additionally, Child-Pugh C liver disease significantly impairs metronidazole metabolism, risking neurotoxic accumulation (worsening HE).",
-   "B. CORRECT. Oral vancomycin 125 mg QID is first-line per current IDSA/SHEA CDI guidelines and is the safest choice in hepatic dysfunction. Systemic absorption is negligible from intact gut, so liver function is irrelevant to drug clearance/safety. Treat for 10 days standard duration.",
-   "C. Fidaxomicin 200 mg BID is an acceptable alternative for CDI but is more expensive. For initial non-severe CDI in a standard patient it is guideline-endorsed; however, oral vancomycin is more cost-effective and equally guideline-preferred. Fidaxomicin may have advantages for recurrent CDI (superior sustained clinical cure rates).",
-   "D. IV metronidazole has no role in CDI where oral therapy is feasible — metronidazole distributes systemically via IV but reaches the colon at subtherapeutic concentrations compared to oral delivery. Reserve IV for ileus/toxic megacolon preventing oral administration."
+   "Metronidazole is no longer first-line for CDI of any severity per IDSA/SHEA 2021. It is also hepatically cleared, the label advises a 50% dose reduction in Child-Pugh C, and accumulation can cause neurotoxicity that may mimic or worsen hepatic encephalopathy.",
+   "IDSA/SHEA 2021 recommends fidaxomicin or oral vancomycin 125 mg QID for 10 days for an initial CDI episode, and oral vancomycin is the only guideline-recommended agent offered. It is minimally absorbed and needs no hepatic adjustment, which suits Child-Pugh C cirrhosis.",
+   "Rifaximin is indicated for hepatic encephalopathy but is not recommended for an initial CDI episode; its only CDI role is as an adjunct after vancomycin for recurrent disease.",
+   "IV metronidazole is used only as an adjunct to oral or rectal vancomycin in fulminant CDI, and it carries the same hepatic and neurotoxicity concerns in this patient."
   ]
  },
  {
@@ -6243,10 +6243,10 @@
   "domain": "Area 1",
   "ref": "Vol 1 Acute Care Cardiology; ACC/AHA HF Guidelines 2022",
   "opts_exp": [
-   "A. Stopping carvedilol alone risks rebound tachycardia and worsening HF. Reducing sacubitril/valsartan to 24/26 mg alone doesn't address K 5.9 or the carvedilol contribution to hypotension.",
-   "B. Stopping spironolactone addresses the hyperkalemia, and reducing sacubitril/valsartan is appropriate. However, continuing carvedilol without dose reduction during MAP 55 may not adequately address the hemodynamic compromise. More comprehensive management needed.",
-   "C. CORRECT. When MAP <65 with hemodynamic compromise, temporarily holding all contributing vasodilatory/neurohormonal agents is appropriate while optimizing fluid status and addressing hyperkalemia. Beta-blockers should be reduced/held (not abruptly discontinued) in acute decompensation per guidelines. Restart when euvolemic and MAP normalized (>65), beginning at lower doses.",
-   "D. Midodrine is an alpha-agonist used for orthostatic hypotension; it is occasionally used off-label in cardiorenal syndrome but is not guideline-recommended for acute decompensated HF hypotension and does not address the hyperkalemia."
+   "This leaves spironolactone running with a potassium of 5.9 mEq/L and keeps a vasodilating ARNI going at a MAP of 55, so it does not fully address either problem.",
+   "Stopping spironolactone treats the hyperkalemia, but continuing full-dose sacubitril/valsartan and carvedilol with a MAP of 55 and HR of 56 will sustain the symptomatic hypotension and bradycardia.",
+   "He has symptomatic hypotension (MAP 55) with relative bradycardia, and a potassium of 5.9 mEq/L exceeds the 5.5 threshold for holding an MRA, so temporarily holding all three agents is appropriate; perfusion is preserved, so inotropes are not needed. Once MAP is above 65, restart the beta-blocker and ARNI at low doses and add the MRA back when potassium is below 5.0.",
+   "Midodrine treats the low blood pressure with a vasopressor while leaving the causative drugs and the hyperkalemia unaddressed, and it has no role in HFrEF GDMT."
   ]
  },
  {
@@ -6391,10 +6391,10 @@
   "domain": "Area 3",
   "ref": "Vol 2 Healthcare Systems; IDSA/SHEA ASP Guidelines 2016",
   "opts_exp": [
-   "A. Reducing broad-spectrum antibiotics should PROTECT against C. difficile, not promote it. ASP-mediated microbiome changes that increase CDI risk would be paradoxical and are not a recognized mechanism of ASP programs.",
-   "B. This is self-contradictory — if broad-spectrum use decreased 30% overall, ASP did not increase broad-spectrum use. The CDI increase must have another explanation.",
-   "C. CORRECT. Paradoxical CDI rate increase during ASP implementation most likely reflects concurrent factors: strain outbreak (hypervirulent ribotype 027), IPC compliance changes, or denominator/surveillance artifact. Investigate before attributing to ASP. Strain typing is essential to determine outbreak presence.",
-   "D. CDI rate increases are NOT an expected short-term consequence of ASP. Any increase warrants immediate investigation. ASPs are specifically designed to reduce CDI by decreasing high-risk antibiotic exposure (clindamycin, fluoroquinolones, cephalosporins)."
+   "Less antibiotic exposure does not disrupt the microbiome more, and the claim that it caused CDI in all patients is absolute and implausible.",
+   "This contradicts the measured 30% fall in broad-spectrum antibiotic use, so it cannot explain the CDI increase.",
+   "Antibiotic exposure is the main modifiable CDI risk factor, so a 30% drop in broad-spectrum use should lower CDI, not raise it. A concurrent outside factor is more likely, such as a switch to stand-alone NAAT/PCR that detects colonization, a ribotype 027 outbreak, or lapses in hand hygiene, contact precautions, or sporicidal cleaning, and it should be investigated.",
+   "Stewardship programs do not reliably cause transient CDI increases, and any unexplained rise needs investigation of testing, infection prevention, and strain typing."
   ]
  },
  {
@@ -6433,10 +6433,10 @@
   "domain": "Area 1",
   "ref": "Vol 1 Infectious Diseases; Part 3: Red Flags & Killer Foils (High-Yield Med Reviews)",
   "opts_exp": [
-   "A. WRONG. No epinephrine — this is not anaphylaxis. Anaphylaxis requires urticaria, angioedema, bronchospasm, or hemodynamic compromise. This patient has none of these. Epinephrine for a non-allergic drug rash is harmful and inappropriate.",
-   "B. CORRECT. The rash is a well-known, non-immunologic reaction to aminopenicillins (amoxicillin/ampicillin) in the setting of EBV mononucleosis. It is NOT a true drug allergy. Stop amoxicillin, confirm EBV diagnosis. Patient should not be labeled as penicillin-allergic (important to prevent unnecessary avoidance of beta-lactams in the future).",
-   "C. Switching to azithromycin is inappropriate — this is not a penicillin allergy. Azithromycin would not treat EBV (viral illness). Additionally, azithromycin has poor coverage for GABHS strep compared to beta-lactams.",
-   "D. Continuing amoxicillin will not worsen harm but is unnecessary (treating a viral illness with antibiotics). Steroids are occasionally used for severe mononucleosis (airway obstruction, severe thrombocytopenia) but are not indicated for the rash and should not be given to mask a drug reaction without clarifying the diagnosis."
+   "There are no signs of anaphylaxis (no urticaria, angioedema, wheezing, hypotension, or GI symptoms), so epinephrine is not indicated.",
+   "Posterior cervical and posterior auricular adenopathy, marked fatigue, and LUQ tenderness point to EBV mononucleosis, and the aminopenicillin rash in EBV is a transient, non-IgE-mediated reaction. Stop amoxicillin, confirm with a heterophile antibody test, avoid a penicillin-allergy label, and advise no contact sports for at least 3-4 weeks because of splenic rupture risk.",
+   "There is no true penicillin allergy, and an antibiotic does not treat viral mononucleosis; switching would also reinforce an incorrect allergy label.",
+   "Continuing amoxicillin prolongs the rash and treats a viral illness with an antibiotic, and corticosteroids are not indicated for this rash."
   ]
  },
  {
@@ -6475,10 +6475,10 @@
   "domain": "Area 1",
   "ref": "Vol 1 HF/Vol 2 Endocrine; EMPEROR-Reduced; DAPA-HF; ACC/AHA 2022 HF Guidelines",
   "opts_exp": [
-   "A. Spironolactone has HFrEF mortality benefit (RALES trial) but is relatively contraindicated with K 4.8 mEq/L + CKD3b — risk of dangerous hyperkalemia. This is not the most comprehensive intervention given the multi-system risk profile.",
-   "B. GLP-1 receptor agonists have proven benefit in T2DM with established ASCVD (liraglutide LEADER, semaglutide SUSTAIN-6) but NOT in HFrEF specifically (and may increase heart rate, worsen HF). CKD3b affects some GLP-1 dosing but is not the primary concern here.",
-   "C. CORRECT. SGLT2 inhibitors are uniquely positioned to address all four conditions simultaneously: T2DM (glycemic control), HFrEF (CV death/HHF reduction — dapagliflozin, empagliflozin are FDA-approved), CKD progression (eGFR protection), and cardiovascular risk. eGFR 38 is above HF and CKD indication thresholds. This is the single most impactful addition for this patient.",
-   "D. Increasing lisinopril to maximum dose may provide incremental BP and RAS benefit but does not address HFrEF evidence-based mortality reduction as comprehensively as adding an SGLT2i. ACE inhibitor titration is appropriate but is not the most comprehensive intervention when SGLT2i is not yet on board."
+   "Spironolactone is reasonable HFrEF therapy (eGFR above 30 and K below 5.0), but it does nothing for glycemia or CKD progression, and a potassium of 4.8 with CKD 3b carries real hyperkalemia risk, so it is less comprehensive.",
+   "GLP-1 receptor agonists have no proven benefit in HFrEF (FIGHT was neutral with a trend toward harm), and metformin does not need to be stopped at eGFR 38 at its reduced dose (limit 1,000 mg/day at eGFR 30-44).",
+   "An SGLT2 inhibitor reduces CV death or HF hospitalization in HFrEF (DAPA-HF, EMPEROR-Reduced), slows CKD progression (DAPA-CKD, EMPA-KIDNEY), and adds modest glucose lowering. eGFR 38 is above the initiation thresholds (empagliflozin 20 or higher, dapagliflozin 25 or higher), and AHA/ACC/HFSA 2022, KDIGO 2022, and ADA 2024 all recommend it.",
+   "Uptitrating lisinopril is reasonable but addresses only RAS blockade and does not add the heart failure, renal, and metabolic benefits of an SGLT2 inhibitor."
   ]
  },
  {
@@ -6517,10 +6517,10 @@
   "domain": "Area 1",
   "ref": "Vol 2 Endocrine; ACR Manual on Contrast Media 2020",
   "opts_exp": [
-   "A. INCORRECT. Current ACR guidance does NOT require universal pre-procedure metformin hold for all patients. Only eGFR <30 or AKI require pre-procedure withholding. For eGFR 30-60, hold AT time of contrast and for 48h post-procedure — no mandatory pre-hold needed.",
-   "B. CORRECT. ACR 2020 guidance: eGFR ≥30 = no required pre-procedure metformin hold. At time of contrast with eGFR 35 (CKD3b): hold metformin at the time of contrast administration and for 48 hours afterward, then reassess renal function before restarting. This balances glycemic management with lactic acidosis prevention. Both components of this statement — 'no pre-hold required' AND '48h post-hold with eGFR 35' — are correct and consistent with ACR guidance.",
-   "C. Metformin is contraindicated at eGFR <30 in the US (FDA black box warning: use not recommended when eGFR <30). However, eGFR 35 is above this threshold, so metformin CAN be used. Also, contrast does not require permanent discontinuation — only temporary hold.",
-   "D. The mechanism is not direct nephrotoxicity causing immediate renal failure. CIN from contrast causes delayed GFR reduction (peak creatinine 48-72h post-contrast), which reduces metformin clearance, leading to metformin accumulation and potential lactic acidosis. The interaction is pharmacokinetic (impaired clearance), not a direct toxic interaction."
+   "This reflects older guidance. ACR no longer requires a universal hold, and patients with eGFR 30 or above and no AKI can continue metformin.",
+   "Under the ACR Manual on Contrast Media (2023), patients with no AKI and eGFR 30 or above need not stop metformin before or after IV iodinated contrast; holding at the time of contrast and for 48 hours is reserved for AKI, eGFR below 30, or arterial catheterization with a high chance of renal artery emboli. With a stable eGFR of 35 and no AKI, she can continue metformin.",
+   "Metformin is contraindicated at eGFR below 30 per the FDA label, but nothing requires permanent discontinuation before contrast, and her eGFR of 35 is above that threshold.",
+   "Contrast does not cause lactic acidosis directly; the risk is indirect, because contrast-associated AKI can reduce metformin clearance and lead to accumulation."
   ]
  },
  {
@@ -6810,10 +6810,10 @@
   "domain": "Area 2",
   "ref": "ACCP 2024 Vol 2, Pulmonology; GOLD 2024 Report; IMPACT trial",
   "opts_exp": [
-   "A. Roflumilast may be considered with FEV1 <50% and chronic bronchitis, especially prior hospitalization; chronic bronchitis is not established here.",
-   "B. Correct. Ongoing exacerbations on LABA/LAMA plus this eosinophil count support adding ICS. Assess inhaler technique, adherence, and pneumonia risk.",
-   "C. Chronic azithromycin is a selected add-on strategy rather than replacement of maintenance bronchodilators.",
-   "D. The stem supports ICS addition; it does not establish the chronic bronchitis phenotype needed to select roflumilast."
+   "GOLD reserves roflumilast for patients with FEV1 below 50% and chronic bronchitis, mainly when eosinophils are below 100 cells/µL. Chronic bronchitis is not described here, and an eosinophil count of 420 favors ICS.",
+   "GOLD 2024 recommends escalating to LABA/LAMA/ICS for patients who keep exacerbating on LABA/LAMA with eosinophils of 100 cells/µL or more, with the greatest benefit at 300 or more; he has 420. IMPACT and ETHOS showed fewer moderate or severe exacerbations with triple therapy, and ETHOS showed lower all-cause mortality with full-dose budesonide.",
+   "Azithromycin is an add-on option, mainly for former smokers with eosinophils below 100, not a replacement for bronchodilators; switching would remove his LABA/LAMA.",
+   "Only ICS escalation is supported by this patient's eosinophil count; the chronic bronchitis phenotype needed for roflumilast is not established."
   ],
   "reviewNote": "Targeted correction 2026-10-19; full chapter review pending."
  },
