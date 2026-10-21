@@ -85,7 +85,7 @@
 </nav>
 
 <main id="mainContent" tabindex="-1">
-<div class="edition-notice"><span><strong>2024 study foundation</strong> · Content review in progress</span><button onclick="switchSection('sources')">Sources &amp; review status <span aria-hidden="true">&#8594;</span></button></div>
+<div class="edition-notice"><span><strong>2024 study foundation</strong> · Content review in progress</span><button onclick="switchSection('sources')">Sources<span class="hide-sm"> &amp; review status</span> <span aria-hidden="true">&#8594;</span></button></div>
 <div id="restoreNotice" class="restore-notice" role="status" hidden><p>Your saved progress is restored.</p><button class="text-action" onclick="BCPS_undoFileRestore()">Undo restore</button><button class="text-action" onclick="BCPS_dismissRestoreNotice()">Dismiss</button></div>
 <!-- VISUAL PHARMA SECTION -->
 <!-- ═══════════════════════════════════════════════════════════════════════════════
@@ -127,67 +127,55 @@
   <div style="padding:24px 20px;">
 
     <!-- Feature cards -->
-    <h3 style="font-size:16px; font-weight:700; margin:0 0 16px; text-transform:uppercase; letter-spacing:0.5px; color:var(--label2);">Study tools</h3>
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(140px, 1fr)); gap:12px; margin-bottom:28px;">
-
-      <div class="home-tool-card" style="--chip-c:var(--sec-quiz);" onclick="switchSection('quiz')">
-        <div class="icon-chip lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.4a2.6 2.6 0 0 1 4.6 1.6c0 1.6-2.1 2-2.1 3.2"/><path d="M12 17h.01"/></svg></div>
-        <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Quiz</div>
-        <div style="font-size:12px; color:var(--label2);">449 questions</div>
-      </div>
-
-      <div class="home-tool-card" style="--chip-c:var(--sec-cards);" onclick="switchSection('flash')">
-        <div class="icon-chip lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="13" height="13" rx="2"/><path d="M8 7V5.5A2 2 0 0 1 10 3.5h9a2 2 0 0 1 2 2V15a2 2 0 0 1-2 2h-1.5"/></svg></div>
-        <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Flashcards</div>
-        <div style="font-size:12px; color:var(--label2);">206 cards · SM-2</div>
-      </div>
-
-      <div class="home-tool-card" style="--chip-c:var(--sec-drugs);" onclick="switchSection('concepts')">
-        <div class="icon-chip lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="8.5" width="19" height="7" rx="3.5"/><path d="M12 8.7v6.6"/></svg></div>
-        <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Drug Reference</div>
-        <div style="font-size:12px; color:var(--label2);">80 monographs</div>
-      </div>
-
-      <div class="home-tool-card" style="--chip-c:var(--sec-mock);" onclick="switchSection('accp')">
-        <div class="icon-chip lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4.5" width="12" height="16.5" rx="2"/><path d="M9 4.5V3.5h6v1"/><path d="M9 10h6M9 13.5h6M9 17h4"/></svg></div>
-        <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Mock Exam</div>
-        <div style="font-size:12px; color:var(--label2);">Timed, exam conditions</div>
-      </div>
-
-      <div class="home-tool-card" style="--chip-c:var(--sec-study);" onclick="switchSection('study')">
-        <div class="icon-chip lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M6 19h13"/></svg></div>
-        <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Study Guide</div>
-        <div style="font-size:12px; color:var(--label2);">22 chapters</div>
-      </div>
-
-      <div class="home-tool-card" style="--chip-c:var(--sec-glossary);" onclick="switchSection('glossary')">
-        <div class="icon-chip lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-2-1.2-5-1.2-7 0v12c2-1.2 5-1.2 7 0 2-1.2 5-1.2 7 0V6c-2-1.2-5-1.2-7 0z"/><path d="M12 6v12"/></svg></div>
-        <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Glossary</div>
-        <div style="font-size:12px; color:var(--label2);">543 terms</div>
-      </div>
-
-      <div class="home-tool-card" style="--chip-c:var(--sec-evidence);" onclick="switchSection('evidence')">
-        <div class="icon-chip lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 12 4l9 5"/><path d="M5.5 9.5v8M12 9.5v8M18.5 9.5v8"/><path d="M3.5 20.5h17"/></svg></div>
-        <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Evidence</div>
-        <div style="font-size:12px; color:var(--label2);">101 landmark trials</div>
-      </div>
-
-      <div class="home-tool-card" style="--chip-c:var(--sec-visuals);" onclick="switchSection('visuals')">
-        <div class="icon-chip lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3v6l-4.7 7.6A2 2 0 0 0 7 20h10a2 2 0 0 0 1.7-3.4L14 9V3"/><path d="M8 15h8"/></svg></div>
-        <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Visuals</div>
-        <div style="font-size:12px; color:var(--label2);">Diagrams &amp; pathways</div>
-      </div>
-
-      <div class="home-tool-card" style="--chip-c:var(--sec-exam);" onclick="switchSection('exampsych')">
-        <div class="icon-chip lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4"/></svg></div>
-        <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Exam Psychology</div>
-        <div style="font-size:12px; color:var(--label2);">Pacing &amp; strategy</div>
-      </div>
-
+    <h2 class="home-h2">Practice</h2>
+    <div class="home-core-grid">
+      <button type="button" class="home-tool-card" style="--chip-c:var(--sec-quiz);" onclick="switchSection('quiz')">
+        <span class="icon-chip lg" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.4a2.6 2.6 0 0 1 4.6 1.6c0 1.6-2.1 2-2.1 3.2"/><path d="M12 17h.01"/></svg></span>
+        <span class="home-tool-title">Quiz</span>
+        <span class="home-tool-sub">449 questions</span>
+      </button>
+      <button type="button" class="home-tool-card" style="--chip-c:var(--sec-cards);" onclick="switchSection('flash')">
+        <span class="icon-chip lg" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="13" height="13" rx="2"/><path d="M8 7V5.5A2 2 0 0 1 10 3.5h9a2 2 0 0 1 2 2V15a2 2 0 0 1-2 2h-1.5"/></svg></span>
+        <span class="home-tool-title">Flashcards</span>
+        <span class="home-tool-sub">206 cards · SM-2</span>
+      </button>
+      <button type="button" class="home-tool-card" style="--chip-c:var(--sec-mock);" onclick="switchSection('accp')">
+        <span class="icon-chip lg" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4.5" width="12" height="16.5" rx="2"/><path d="M9 4.5V3.5h6v1"/><path d="M9 10h6M9 13.5h6M9 17h4"/></svg></span>
+        <span class="home-tool-title">Mock Exam</span>
+        <span class="home-tool-sub">Timed, exam conditions</span>
+      </button>
+      <button type="button" class="home-tool-card" style="--chip-c:var(--sec-study);" onclick="switchSection('study')">
+        <span class="icon-chip lg" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M6 19h13"/></svg></span>
+        <span class="home-tool-title">Study Guide</span>
+        <span class="home-tool-sub">22 chapters</span>
+      </button>
+    </div>
+    <h2 class="home-h2">Reference</h2>
+    <div class="home-ref-grid">
+      <button type="button" class="home-ref-card" style="--chip-c:var(--sec-drugs);" onclick="switchSection('concepts')">
+        <span class="icon-chip sm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="8.5" width="19" height="7" rx="3.5"/><path d="M12 8.7v6.6"/></svg></span>
+        <span><span class="home-tool-title">Drug Reference</span><span class="home-tool-sub">80 monographs</span></span>
+      </button>
+      <button type="button" class="home-ref-card" style="--chip-c:var(--sec-glossary);" onclick="switchSection('glossary')">
+        <span class="icon-chip sm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-2-1.2-5-1.2-7 0v12c2-1.2 5-1.2 7 0 2-1.2 5-1.2 7 0V6c-2-1.2-5-1.2-7 0z"/><path d="M12 6v12"/></svg></span>
+        <span><span class="home-tool-title">Glossary</span><span class="home-tool-sub">543 terms</span></span>
+      </button>
+      <button type="button" class="home-ref-card" style="--chip-c:var(--sec-evidence);" onclick="switchSection('evidence')">
+        <span class="icon-chip sm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 12 4l9 5"/><path d="M5.5 9.5v8M12 9.5v8M18.5 9.5v8"/><path d="M3.5 20.5h17"/></svg></span>
+        <span><span class="home-tool-title">Evidence</span><span class="home-tool-sub">101 landmark trials</span></span>
+      </button>
+      <button type="button" class="home-ref-card" style="--chip-c:var(--sec-visuals);" onclick="switchSection('visuals')">
+        <span class="icon-chip sm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3v6l-4.7 7.6A2 2 0 0 0 7 20h10a2 2 0 0 0 1.7-3.4L14 9V3"/><path d="M8 15h8"/></svg></span>
+        <span><span class="home-tool-title">Visuals</span><span class="home-tool-sub">Diagrams &amp; pathways</span></span>
+      </button>
+      <button type="button" class="home-ref-card" style="--chip-c:var(--sec-exam);" onclick="switchSection('exampsych')">
+        <span class="icon-chip sm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4"/></svg></span>
+        <span><span class="home-tool-title">Exam Psychology</span><span class="home-tool-sub">Pacing &amp; strategy</span></span>
+      </button>
     </div>
 
     <!-- Key features -->
-    <h3 style="font-size:16px; font-weight:700; margin:0 0 16px; text-transform:uppercase; letter-spacing:0.5px; color:var(--label2);">Built for the exam</h3>
+    <h2 class="home-h2">Built for the exam</h2>
     <div style="background:var(--primary-light); border-radius:12px; padding:16px; margin-bottom:28px;">
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; font-size:14px;">
         <div>
@@ -461,8 +449,8 @@
     <div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-evidence);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 12 4l9 5"/><path d="M5.5 9.5v8M12 9.5v8M18.5 9.5v8"/><path d="M3.5 20.5h17"/></svg></span><h2>Evidence-Based References</h2></div>
     <p>120+ landmark trials &amp; guidelines across all 13 BCPS chapters</p>
   </div>
-  <div class="ev-filter-bar">
-    <input class="ev-search" id="evSearch" placeholder="Search trials, drugs, outcomes…" oninput="filterEvidence(this.value)">
+  <input class="ev-search ev-search-row" id="evSearch" placeholder="Search trials, drugs, outcomes…" aria-label="Search trials, drugs, outcomes" oninput="filterEvidence(this.value)">
+  <div class="ev-filter-bar chip-scroll" role="group" aria-label="Filter trials by area">
     <button class="ev-filter-btn active" onclick="setEvFilter('all',this)">All</button>
     <button class="ev-filter-btn" onclick="setEvFilter('Cardiology',this)">Cardiology</button>
     <button class="ev-filter-btn" onclick="setEvFilter('Anticoagulation',this)">Anticoag</button>
@@ -506,18 +494,18 @@
 
     <div class="ep-card">
       <div class="ep-card-header">
-        <div class="ep-card-title">⏱️ Timing Mastery Calculator</div>
+        <div class="ep-card-title">Timing mastery calculator</div>
         <div class="ep-card-subtitle">Plan your exam pacing strategy</div>
       </div>
       <div class="ep-card-body">
         <div class="timing-calc">
-          <div class="timing-row"><span>Total exam questions</span><input id="tq" class="timing-input" type="number" value="185" oninput="calcTiming()"></div>
-          <div class="timing-row"><span>Total exam time (min)</span><input id="tt" class="timing-input" type="number" value="250" oninput="calcTiming()"></div>
+          <div class="timing-row"><span>Total exam questions</span><input id="tq" class="timing-input" type="number" value="150" oninput="calcTiming()"></div>
+          <div class="timing-row"><span>Total exam time (min)</span><input id="tt" class="timing-input" type="number" value="225" oninput="calcTiming()"></div>
           <div class="timing-row"><span>Target skip buffer (%)</span><input id="tb" class="timing-input" type="number" value="10" oninput="calcTiming()"></div>
-          <div class="timing-row"><span id="tResult1">⏱️ Time per question</span><span id="tVal1" style="font-weight:700;color:#0284c7">1:21</span></div>
-          <div class="timing-row"><span id="tResult2">🔖 Check-in at Q50</span><span id="tVal2" style="font-weight:700;color:#0284c7">—</span></div>
-          <div class="timing-row"><span id="tResult3">🔖 Check-in at Q100</span><span id="tVal3" style="font-weight:700;color:#0284c7">—</span></div>
-          <div class="timing-row"><span>🎯 Reserve for review (min)</span><span id="tVal4" style="color:#0284c7">—</span></div>
+          <div class="timing-row"><span id="tResult1">Time per question</span><span id="tVal1" class="timing-val">1:21</span></div>
+          <div class="timing-row"><span id="tResult2">Check-in at Q50</span><span id="tVal2" class="timing-val">—</span></div>
+          <div class="timing-row"><span id="tResult3">Check-in at Q100</span><span id="tVal3" class="timing-val">—</span></div>
+          <div class="timing-row"><span>Reserve for review (min)</span><span id="tVal4" class="timing-val">—</span></div>
         </div>
         <div style="margin-top:0.75rem;font-size:0.8rem;color:#475569;line-height:1.6">
           <strong>Strategy:</strong> If behind pace at Q50 checkpoint, increase speed on straightforward questions. Never spend &gt;3 min on any single question — mark and return.
@@ -531,11 +519,11 @@
         <div class="ep-card-subtitle">How to dissect a BCPS question in 3 steps</div>
       </div>
       <div class="ep-card-body">
-        <div class="ep-tip"><span class="ep-tip-icon">1️⃣</span><span><strong>Read the LAST sentence first.</strong> The actual question is always there. This primes your brain to read the stem for the RIGHT information instead of everything.</span></div>
-        <div class="ep-tip"><span class="ep-tip-icon">2️⃣</span><span><strong>Extract the 3 key facts</strong> while reading: Patient profile (age/organ function), Current medications, The clinical problem. These 3 facts drive 90% of BCPS answer choices.</span></div>
-        <div class="ep-tip"><span class="ep-tip-icon">3️⃣</span><span><strong>Eliminate before selecting.</strong> Remove clearly wrong options first. If 2 choices remain and you are unsure, choose the more specific or guideline-supported option — BCPS tests guidelines, not instinct.</span></div>
-        <div class="ep-tip"><span class="ep-tip-icon">🚩</span><span><strong>Red flag words:</strong> "EXCEPT" / "NOT" / "MOST appropriate" / "LEAST likely" — circle these. One mismatch = wrong answer even if you know the content.</span></div>
-        <div class="ep-tip"><span class="ep-tip-icon">🎯</span><span><strong>Distractor patterns:</strong> BCPS loves plausible-sounding options with wrong doses, wrong indications, or missing contraindications. The "almost right" answer is always the hardest distractor.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>Read the LAST sentence first.</strong> The actual question is always there. This primes your brain to read the stem for the RIGHT information instead of everything.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>Extract the 3 key facts</strong> while reading: Patient profile (age/organ function), Current medications, The clinical problem. These 3 facts drive 90% of BCPS answer choices.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>Eliminate before selecting.</strong> Remove clearly wrong options first. If 2 choices remain and you are unsure, choose the more specific or guideline-supported option — BCPS tests guidelines, not instinct.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>Red flag words:</strong> "EXCEPT" / "NOT" / "MOST appropriate" / "LEAST likely" — circle these. One mismatch = wrong answer even if you know the content.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>Distractor patterns:</strong> BCPS loves plausible-sounding options with wrong doses, wrong indications, or missing contraindications. The "almost right" answer is always the hardest distractor.</span></div>
       </div>
     </div>
 
@@ -545,11 +533,11 @@
         <div class="ep-card-subtitle">Recognize the errors that cause exam failure</div>
       </div>
       <div class="ep-card-body">
-        <div class="ep-tip"><span class="ep-tip-icon">🎭</span><span><strong>Anchoring Bias:</strong> Your first impression anchors you to one diagnosis/drug. Always re-read the question after choosing — does your answer actually answer what was asked?</span></div>
-        <div class="ep-tip"><span class="ep-tip-icon">🔁</span><span><strong>Availability Heuristic:</strong> Choosing the condition you just studied feels right but may not match the question. Rely on the specific patient facts, not recent study material.</span></div>
-        <div class="ep-tip"><span class="ep-tip-icon">✔️</span><span><strong>Premature Closure:</strong> Stop evaluating too early. Even if Option A sounds right, read ALL four options — Option D may be more specific or more complete.</span></div>
-        <div class="ep-tip"><span class="ep-tip-icon">📐</span><span><strong>Base Rate Neglect:</strong> For BCPS, prevalence matters. If a question involves a patient on multiple medications, the most common drug interaction is usually the right answer, not the rare one.</span></div>
-        <div class="ep-tip"><span class="ep-tip-icon">🔄</span><span><strong>Changing Answers:</strong> Research shows: change answers only when you have a CLEAR reason. A vague "feeling" is not a reason. First instincts are correct ~60% of the time.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>Anchoring Bias:</strong> Your first impression anchors you to one diagnosis/drug. Always re-read the question after choosing — does your answer actually answer what was asked?</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>Availability Heuristic:</strong> Choosing the condition you just studied feels right but may not match the question. Rely on the specific patient facts, not recent study material.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>Premature Closure:</strong> Stop evaluating too early. Even if Option A sounds right, read ALL four options — Option D may be more specific or more complete.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>Base Rate Neglect:</strong> For BCPS, prevalence matters. If a question involves a patient on multiple medications, the most common drug interaction is usually the right answer, not the rare one.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>Changing Answers:</strong> Research shows: change answers only when you have a CLEAR reason. A vague "feeling" is not a reason. First instincts are correct ~60% of the time.</span></div>
       </div>
     </div>
 
@@ -572,11 +560,11 @@
         <div class="ep-card-subtitle">Performance psychology for exam day</div>
       </div>
       <div class="ep-card-body">
-        <div class="ep-tip"><span class="ep-tip-icon">😴</span><span><strong>Sleep is non-negotiable.</strong> REM sleep consolidates pharmacology memory into retrieval pathways. Pulling an all-nighter costs 20–30% cognitive performance — not worth it for any amount of last-minute review.</span></div>
-        <div class="ep-tip"><span class="ep-tip-icon">🥗</span><span><strong>Glucose management:</strong> Complex carbs + protein before the exam sustains glucose more reliably than simple sugars. Avoid caffeine overdose — mild anxiety amplification is useful; panic is not.</span></div>
-        <div class="ep-tip"><span class="ep-tip-icon">🌬️</span><span><strong>4-7-8 Breathing:</strong> When stuck on a hard question — inhale 4 sec, hold 7, exhale 8. This activates parasympathetic response, lowers cortisol, restores prefrontal function within 60 seconds.</span></div>
-        <div class="ep-tip"><span class="ep-tip-icon">🎯</span><span><strong>Confidence calibration:</strong> Don't aim for certainty on every question. You need ~73% correct to pass. Some questions are experimental and uncounted. Release the need to be perfect on every stem.</span></div>
-        <div class="ep-tip"><span class="ep-tip-icon">🔋</span><span><strong>Energy scheduling:</strong> Peak cognitive function typically occurs 2-3 hours after waking. If possible, schedule review/practice at your exam time to train your circadian rhythm.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>Sleep is non-negotiable.</strong> REM sleep consolidates pharmacology memory into retrieval pathways. Pulling an all-nighter costs 20–30% cognitive performance — not worth it for any amount of last-minute review.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>Glucose management:</strong> Complex carbs + protein before the exam sustains glucose more reliably than simple sugars. Avoid caffeine overdose — mild anxiety amplification is useful; panic is not.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>4-7-8 Breathing:</strong> When stuck on a hard question — inhale 4 sec, hold 7, exhale 8. This activates parasympathetic response, lowers cortisol, restores prefrontal function within 60 seconds.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>Confidence calibration:</strong> Don't aim for certainty on every question. You need ~73% correct to pass. Some questions are experimental and uncounted. Release the need to be perfect on every stem.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>Energy scheduling:</strong> Peak cognitive function typically occurs 2-3 hours after waking. If possible, schedule review/practice at your exam time to train your circadian rhythm.</span></div>
       </div>
     </div>
 
@@ -586,11 +574,11 @@
         <div class="ep-card-subtitle">Maximize points per study hour</div>
       </div>
       <div class="ep-card-body">
-        <div class="ep-tip"><span class="ep-tip-icon">📊</span><span><strong>Area 1 (36%):</strong> Highest yield per hour. Focus on: acute care cardiology, ID, critical care PK. These topics overlap frequently — one drug (vancomycin) may appear in 3-4 different contexts.</span></div>
-        <div class="ep-tip"><span class="ep-tip-icon">📊</span><span><strong>Area 2 (36%):</strong> Biostatistics is high-yield per study hour — mastering 8 statistical concepts covers ~10-15 questions. Drug interactions and pharmacogenomics are high-frequency topics.</span></div>
-        <div class="ep-tip"><span class="ep-tip-icon">📊</span><span><strong>Area 3 (28%):</strong> Regulatory questions are rules-based — memorizable and reliable. DEA schedules, REMS programs, ISMP lists, and FDA approval pathways are excellent low-effort, high-return topics.</span></div>
-        <div class="ep-tip"><span class="ep-tip-icon">⚖️</span><span><strong>Time allocation model:</strong> If studying 200 total hours: ~72 hrs Area 1 (36%), ~72 hrs Area 2, ~56 hrs Area 3. Within each area, weight topics by: frequency in BCPS prep materials + personal weakness.</span></div>
-        <div class="ep-tip"><span class="ep-tip-icon">🔄</span><span><strong>Spaced repetition beats massed practice</strong> for pharmacology memory. 5 exposures over 5 weeks &gt; 5 exposures in 1 day. Use the flashcard SR system in this hub starting 6-8 weeks before the exam.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>Area 1 (36%):</strong> Highest yield per hour. Focus on: acute care cardiology, ID, critical care PK. These topics overlap frequently — one drug (vancomycin) may appear in 3-4 different contexts.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>Area 2 (36%):</strong> Biostatistics is high-yield per study hour — mastering 8 statistical concepts covers ~10-15 questions. Drug interactions and pharmacogenomics are high-frequency topics.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>Area 3 (28%):</strong> Regulatory questions are rules-based — memorizable and reliable. DEA schedules, REMS programs, ISMP lists, and FDA approval pathways are excellent low-effort, high-return topics.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>Time allocation model:</strong> If studying 200 total hours: ~72 hrs Area 1 (36%), ~72 hrs Area 2, ~56 hrs Area 3. Within each area, weight topics by: frequency in BCPS prep materials + personal weakness.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>Spaced repetition beats massed practice</strong> for pharmacology memory. 5 exposures over 5 weeks &gt; 5 exposures in 1 day. Use the flashcard SR system in this hub starting 6-8 weeks before the exam.</span></div>
       </div>
     </div>
 
@@ -633,12 +621,12 @@
       <div class="ep-card-header"><div class="ep-card-title">🏗️ How BPS Constructs Board Questions</div>
       <div class="ep-card-subtitle">The item-writing philosophy behind every BCPS question</div></div>
       <div class="ep-card-body">
-        <div class="ep-tip"><span class="ep-tip-icon">📊</span><span><strong>Bloom's Taxonomy Applied:</strong> BPS deliberately tests at Level 3+ (Application) and Level 4 (Analysis), NOT recall. A question is never just "What is the dose of X?" — it is always "Given this patient with these constraints, which option is most appropriate?" Memorizing facts is necessary but not sufficient.</span></div>
-        <div class="ep-tip"><span class="ep-tip-icon">🔬</span><span><strong>Clinical Vignette Format:</strong> Every stem is a patient scenario for a reason — it tests your ability to integrate pharmacotherapy into real clinical decision-making. The patient's renal function, weight, allergies, and comorbidities are NEVER distractors — they are always clinically relevant to the correct answer.</span></div>
-        <div class="ep-tip"><span class="ep-tip-icon">🎯</span><span><strong>Best Answer vs. Correct Answer:</strong> BPS uses "most appropriate" because multiple options may be technically correct. The key discriminator is: which answer reflects current guideline recommendations, is safest for this specific patient, and is most evidence-based? This is why you must know WHY the guideline recommends what it does.</span></div>
-        <div class="ep-tip"><span class="ep-tip-icon">⚖️</span><span><strong>Distractor Construction:</strong> BPS item writers deliberately create plausible wrong answers that are: (1) correct for a different patient population, (2) outdated guideline recommendations, (3) correct drugs for the wrong indication, (4) correct indication but wrong dose/interval. Recognizing these distractor types is a skill.</span></div>
-        <div class="ep-tip"><span class="ep-tip-icon">📋</span><span><strong>Content Blueprint:</strong> Area 1 (Patient Care Specialty) = 36%, Area 2 (Therapeutics & Management) = 36%, Area 3 (Systems & Evidence) = 28%. Within those domains, questions are weighted by clinical prevalence and patient safety impact — high-alert medications, monitoring parameters, and drug interactions appear disproportionately often.</span></div>
-        <div class="ep-tip"><span class="ep-tip-icon">🔄</span><span><strong>Angoff Standard Setting:</strong> Pass scores are set by a panel of expert pharmacists estimating what percentage of minimally competent candidates would answer each question correctly. This means: some questions are DESIGNED to be answered by ~55% of candidates, others by 85%. Don't let a hard question demoralize you — it's likely designed to separate the top 15%.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>Bloom's Taxonomy Applied:</strong> BPS deliberately tests at Level 3+ (Application) and Level 4 (Analysis), NOT recall. A question is never just "What is the dose of X?" — it is always "Given this patient with these constraints, which option is most appropriate?" Memorizing facts is necessary but not sufficient.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>Clinical Vignette Format:</strong> Every stem is a patient scenario for a reason — it tests your ability to integrate pharmacotherapy into real clinical decision-making. The patient's renal function, weight, allergies, and comorbidities are NEVER distractors — they are always clinically relevant to the correct answer.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>Best Answer vs. Correct Answer:</strong> BPS uses "most appropriate" because multiple options may be technically correct. The key discriminator is: which answer reflects current guideline recommendations, is safest for this specific patient, and is most evidence-based? This is why you must know WHY the guideline recommends what it does.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>Distractor Construction:</strong> BPS item writers deliberately create plausible wrong answers that are: (1) correct for a different patient population, (2) outdated guideline recommendations, (3) correct drugs for the wrong indication, (4) correct indication but wrong dose/interval. Recognizing these distractor types is a skill.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>Content Blueprint:</strong> Area 1 (Patient Care Specialty) = 36%, Area 2 (Therapeutics & Management) = 36%, Area 3 (Systems & Evidence) = 28%. Within those domains, questions are weighted by clinical prevalence and patient safety impact — high-alert medications, monitoring parameters, and drug interactions appear disproportionately often.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>Angoff Standard Setting:</strong> Pass scores are set by a panel of expert pharmacists estimating what percentage of minimally competent candidates would answer each question correctly. This means: some questions are DESIGNED to be answered by ~55% of candidates, others by 85%. Don't let a hard question demoralize you — it's likely designed to separate the top 15%.</span></div>
       </div>
     </div>
 
@@ -671,10 +659,10 @@
       <div class="ep-card-header"><div class="ep-card-title">📈 BPS Biostatistics: The Mental Model</div>
       <div class="ep-card-subtitle">The specific framework BPS uses to test statistics and EBM</div></div>
       <div class="ep-card-body">
-        <div class="ep-tip"><span class="ep-tip-icon">🔑</span><span><strong>The BPS Stats Question Template:</strong> "A trial reports [RR/OR/ARR/NNT] of [X] with 95% CI [Y-Z]. Which interpretation is correct?" — BPS tests 3 things simultaneously: (1) Can you interpret the statistic? (2) Does the CI cross the null? (3) Is this clinically meaningful? You must answer all three to select the right option.</span></div>
-        <div class="ep-tip"><span class="ep-tip-icon">🚩</span><span><strong>The CI Null-Crossing Rule:</strong> For ratios (RR, OR, HR), statistical significance = CI does NOT cross 1.0. For differences (ARR, MD), CI does NOT cross 0. This is testable without a p-value. BPS will give you a CI and test whether you know the null without saying "is p &lt; 0.05?"</span></div>
-        <div class="ep-tip"><span class="ep-tip-icon">📉</span><span><strong>RRR vs. ARR Trap:</strong> BPS commonly presents RRR (always larger, more impressive-sounding) to test if you can identify the misleading framing. RRR = 40% sounds great; ARR = 0.5%, NNT = 200 sounds less impressive. The correct answer usually asks which measure best reflects clinical impact — always ARR or NNT.</span></div>
-        <div class="ep-tip"><span class="ep-tip-icon">🎓</span><span><strong>Study Design Hierarchy on BCPS:</strong> RCT &gt; Cohort &gt; Case-Control &gt; Cross-sectional &gt; Case series. BPS tests: (1) Which study design can prove causation? (Only RCT), (2) Which is best for rare diseases? (Case-control), (3) Which cannot calculate incidence? (Case-control — use OR not RR). These distinctions are high-yield.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>The BPS Stats Question Template:</strong> "A trial reports [RR/OR/ARR/NNT] of [X] with 95% CI [Y-Z]. Which interpretation is correct?" — BPS tests 3 things simultaneously: (1) Can you interpret the statistic? (2) Does the CI cross the null? (3) Is this clinically meaningful? You must answer all three to select the right option.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>The CI Null-Crossing Rule:</strong> For ratios (RR, OR, HR), statistical significance = CI does NOT cross 1.0. For differences (ARR, MD), CI does NOT cross 0. This is testable without a p-value. BPS will give you a CI and test whether you know the null without saying "is p &lt; 0.05?"</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>RRR vs. ARR Trap:</strong> BPS commonly presents RRR (always larger, more impressive-sounding) to test if you can identify the misleading framing. RRR = 40% sounds great; ARR = 0.5%, NNT = 200 sounds less impressive. The correct answer usually asks which measure best reflects clinical impact — always ARR or NNT.</span></div>
+        <div class="ep-tip"><span class="ep-tip-icon" aria-hidden="true"></span><span><strong>Study Design Hierarchy on BCPS:</strong> RCT &gt; Cohort &gt; Case-Control &gt; Cross-sectional &gt; Case series. BPS tests: (1) Which study design can prove causation? (Only RCT), (2) Which is best for rare diseases? (Case-control), (3) Which cannot calculate incidence? (Case-control — use OR not RR). These distinctions are high-yield.</span></div>
         <div style="background:linear-gradient(135deg,#E8F3FF,#F5EEFF);border-radius:12px;padding:14px;margin-top:10px">
           <div style="font-weight:700;margin-bottom:8px;font-size:0.88rem">⚡ The 60-Second Biostat Framework (memorize this)</div>
           <div style="font-size:0.8rem;line-height:1.7">
@@ -1457,7 +1445,7 @@
       <option value="all">All Topics</option>
     </select>
     <div class="quiz-actions">
-      <button class="btn btn-primary" onclick="loadQuestion()">Next question</button>
+      <button class="btn btn-secondary" onclick="loadQuestion()">New question</button>
       <button class="btn btn-secondary" onclick="resetScore()">Reset score</button>
       <button class="btn btn-secondary" id="reviewMissedBtn" onclick="toggleReviewMissed()" style="display:none">Review missed</button>
     </div>
@@ -1473,13 +1461,13 @@
     <div class="sr-stat"><span class="sr-stat-val due-now" id="srDueToday">0</span><span class="sr-stat-lbl">Due Today</span></div>
     <div class="sr-stat"><span class="sr-stat-val" id="srNewCount">0</span><span class="sr-stat-lbl">New</span></div>
     <div class="sr-stat"><span class="sr-stat-val" id="srTotal">206</span><span class="sr-stat-lbl">Total</span></div>
-    <div class="sr-stat"><span class="sr-stat-val streak" id="srStreak">0&#128293;</span><span class="sr-stat-lbl">Day Streak</span></div>
+    <div class="sr-stat"><span class="sr-stat-val streak" id="srStreak">0</span><span class="sr-stat-lbl">Day Streak</span></div>
     <div class="sr-stat"><span class="sr-stat-val" id="srRetention">--%</span><span class="sr-stat-lbl">Retention</span></div>
   </div>
   <!-- Mode tabs -->
   <div class="fc-mode-tabs">
-    <button class="fc-mode-tab active" onclick="switchFcMode('study')">&#127344; Study</button>
-    <button class="fc-mode-tab" onclick="switchFcMode('cloze')">&#9998; Cloze</button>
+    <button class="fc-mode-tab active" onclick="switchFcMode('study')">Study</button>
+    <button class="fc-mode-tab" onclick="switchFcMode('cloze')">Cloze</button>
   </div>
 
   <!-- STUDY MODE -->
@@ -1495,7 +1483,7 @@
         <option value="review">Review Only</option>
       </select>
       <button class="btn btn-secondary" onclick="shuffleFlash()">Shuffle</button>
-      <button class="btn btn-secondary" onclick="resetSR()" title="Clear all SR progress">&#9851; Reset SR</button>
+      <button class="btn btn-secondary" onclick="resetSR()" title="Clear all spaced-repetition progress">Reset schedule</button>
     </div>
     <div id="fcCounter" class="fc-counter"></div>
     <div class="sr-progress"><div class="sr-progress-fill" id="srProgressFill" style="width:0%"></div></div>
@@ -1544,15 +1532,15 @@
 <!-- CONCEPT CONNECTOR -->
 <div id="concepts" class="section">
   <div class="drug-wrap">
-    <div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-drugs);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="8.5" width="19" height="7" rx="3.5"/><path d="M12 8.7v6.6"/></svg></span><h2 style="margin-top: 0;">Drugs Reference Database</h2></div>
-    <p>Comprehensive BCPS-level drug reference with clinical details, dosing, interactions, and pearls.</p>
+    <div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-drugs);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="8.5" width="19" height="7" rx="3.5"/><path d="M12 8.7v6.6"/></svg></span><h2>Drug Reference</h2></div>
+    <p class="section-subtitle">Comprehensive BCPS-level drug reference with clinical details, dosing, interactions, and pearls.</p>
     <div class="drug-search-row" style="position: sticky; top: 60px; z-index: 100; background: var(--bg1); padding: 12px; border-radius: 8px; border-bottom: 1px solid var(--divider); margin-bottom: 16px;">
       <div style="display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; align-items: center;">
         <input type="text" id="drugSearch" placeholder="Search by name, brand, class, MOA, or indication..." style="flex: 1; min-width: 250px; padding: 8px 12px; border: 1px solid var(--divider); border-radius: 4px; background: var(--bg2);" />
         <button id="drugExpandAll" style="padding: 8px 16px; background: var(--primary); color: var(--on-primary); border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">Expand All</button>
         <button id="drugCollapseAll" style="padding: 8px 16px; background: var(--fill); color: var(--label); border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">Collapse All</button>
       </div>
-      <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+      <div class="drug-area-row chip-scroll" role="group" aria-label="Filter drugs by area">
         <button class="drug-area-btn" data-area="ALL" style="padding: 6px 12px; background: var(--primary); color: var(--on-primary); border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">ALL</button>
         <button class="drug-area-btn" data-area="Cardiovascular" style="padding: 6px 12px; background: #D62246; color: white; border: none; border-radius: 4px; cursor: pointer;">Cardiovascular</button>
         <button class="drug-area-btn" data-area="Infectious Disease" style="padding: 6px 12px; background: #06A77D; color: white; border: none; border-radius: 4px; cursor: pointer;">Infectious Disease</button>
@@ -1584,7 +1572,7 @@
   </div>
 
 <div class="section-header glo-section-header">
-  <div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-glossary);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-2-1.2-5-1.2-7 0v12c2-1.2 5-1.2 7 0 2-1.2 5-1.2 7 0V6c-2-1.2-5-1.2-7 0z"/><path d="M12 6v12"/></svg></span><div class="section-title">Medical &amp; Pharmacology Glossary</div></div>
+  <div class="section-title-row"><span class="icon-chip md" style="--chip-c:var(--sec-glossary);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-2-1.2-5-1.2-7 0v12c2-1.2 5-1.2 7 0 2-1.2 5-1.2 7 0V6c-2-1.2-5-1.2-7 0z"/><path d="M12 6v12"/></svg></span><h2>Medical &amp; Pharmacology Glossary</h2></div>
   <div class="section-subtitle">543 terms — Biostatistics, Pharmacokinetics, Clinical Pharmacology, Cardiovascular, ID, Critical Care & more</div>
 </div>
 
@@ -1593,7 +1581,7 @@
     <input type="text" id="gloSearch" class="glo-search" placeholder="Search terms, definitions, abbreviations..." oninput="gloFilter()" onkeyup="gloFilter()" autocomplete="off" spellcheck="false">
     <span id="gloCount" class="glo-count">Loading...</span>
   </div>
-  <div class="glo-filters" id="gloFilters">
+  <div class="glo-filters chip-scroll" id="gloFilters" role="group" aria-label="Filter terms by category">
     <button class="glo-filter-btn active" onclick="gloSetCat(this,'ALL')">All</button>
     <button class="glo-filter-btn" onclick="gloSetCat(this,'Biostatistics')">Biostats</button>
     <button class="glo-filter-btn" onclick="gloSetCat(this,'PK/PD')">PK/PD</button>

@@ -321,6 +321,12 @@ function answerQuestion(btn, chosen, correct, card, optsExp) {
     expDiv.innerHTML += html;
   }
   expDiv.classList.add('show');
+  if (!card.querySelector('.next-question-btn')) {
+    const nb = document.createElement('button');
+    nb.type = 'button'; nb.className = 'btn btn-primary next-question-btn'; nb.textContent = 'Next question';
+    nb.onclick = () => { loadQuestion(); const qc = document.getElementById('questionContainer'); if (qc) qc.scrollIntoView({block:'start'}); };
+    expDiv.after(nb);
+  }
 }
 
 function updateScore() {
@@ -480,14 +486,17 @@ function updateSrStats() {
   document.getElementById('srDueToday').textContent = due;
   document.getElementById('srNewCount').textContent = newCount;
   document.getElementById('srTotal').textContent = total;
-  document.getElementById('srStreak').textContent = streak + (streak > 0 ? '🔥' : '');
+  document.getElementById('srStreak').textContent = streak;
   const srRetEl = document.getElementById('srRetention') || document.getElementById('srRet'); if(srRetEl) srRetEl.textContent = ret;
   document.getElementById('srRetention').textContent = ret;
   // update nav badge
-  const navBtn = document.querySelectorAll('nav button')[2];
-  const existing = navBtn.querySelector('.due-badge');
-  if (existing) existing.remove();
-  if (due > 0) { const b = document.createElement('span'); b.className='due-badge'; b.textContent=due; navBtn.appendChild(b); }
+  const navBtn = document.getElementById('tab-flash');
+  const owed = Math.max(0, due - newCount);
+  if (navBtn) {
+    const existing = navBtn.querySelector('.due-badge');
+    if (existing) existing.remove();
+    if (owed > 0) { const b = document.createElement('span'); b.className='due-badge'; b.textContent = owed > 99 ? '99+' : owed; b.setAttribute('aria-label', owed + ' flashcard reviews due'); navBtn.appendChild(b); }
+  }
 }
 
 // ── Filter & Deck Building ────────────────────────────────────────────────
@@ -533,7 +542,7 @@ function showCard() {
   document.getElementById('srProgressFill').style.width = pct + '%';
   // Status label
   const s = srState[c._id];
-  const statusTxt = !s ? '🆕 New' : isDue(c._id) ? '🔄 Due' : '✅ Scheduled';
+  const statusTxt = !s ? 'New' : isDue(c._id) ? 'Due' : 'Scheduled';
   document.getElementById('fcCounter').textContent = `Card ${fcIndex+1} of ${total} · ${statusTxt}`;
   // Render front — detect cloze
   const frontEl = document.getElementById('fcFront');
@@ -553,7 +562,8 @@ function showCard() {
   if (fc) fc.classList.remove('flipped');
   fcFlipped = false;
   hideSrBtns();
-  document.getElementById('fcHint').textContent = c.front && c.front.includes('[[') ? 'Tap blanks or click to flip' : 'Click to flip';
+  const _touch = window.matchMedia && matchMedia('(hover: none)').matches;
+  document.getElementById('fcHint').textContent = c.front && c.front.includes('[[') ? (_touch ? 'Tap blanks, then tap the card to flip' : 'Click blanks, then click the card to flip') : (_touch ? 'Tap to flip' : 'Click to flip');
 }
 
 function fcClickHandler(e) {
@@ -2208,8 +2218,8 @@ function answerEpDrill(i) {
 function nextEpDrill() { epIdx++; showEpDrill(); }
 
 function calcTiming() {
-  const tq=parseInt(document.getElementById('tq').value)||185;
-  const tt=parseInt(document.getElementById('tt').value)||250;
+  const tq=parseInt(document.getElementById('tq').value)||150;
+  const tt=parseInt(document.getElementById('tt').value)||225;
   const tb=parseInt(document.getElementById('tb').value)||10;
   const perQ=(tt*60/tq);
   const mins=Math.floor(perQ/60), secs=Math.floor(perQ%60);
@@ -2487,9 +2497,11 @@ function drugRender() {
       transform: ${isExpanded ? 'rotate(180deg)' : 'rotate(0deg)'};
       color: var(--primary);
     `;
-    chevronEl.textContent = '▼';
+    chevronEl.className = 'drug-chevron'; chevronEl.setAttribute('aria-hidden','true');
+    chevronEl.innerHTML = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>';
 
-    headerEl.appendChild(badgeEl);
+    badgeEl.removeAttribute('style'); badgeEl.className = 'drug-area-chip'; badgeEl.style.setProperty('--chip-c', areaColor);
+    nameEl.prepend(badgeEl);
     headerEl.appendChild(nameEl);
     headerEl.appendChild(chevronEl);
 
