@@ -1568,3 +1568,19 @@ body.dark-mode{ --primary-on-tint:var(--primary); }
 .opt-exp.is-correct .opt-exp-tag{ background:color-mix(in srgb, var(--green,#34c759) 18%, transparent); color:color-mix(in srgb, var(--green,#34c759) 60%, var(--label)); }
 .opt-exp.is-chosen-wrong .opt-exp-tag{ background:color-mix(in srgb, var(--red,#ff3b30) 14%, transparent); color:color-mix(in srgb, var(--red,#ff3b30) 60%, var(--label)); }
 .report-dialog{ margin:auto; }
+
+/* Newer guidance callouts: the book's answer stays primary; later changes are unmistakable. */
+.update-note{ display:block; margin:8px 0 4px; padding:8px 10px; border-radius:10px; font-size:0.86em; line-height:1.45;
+  background:color-mix(in srgb, var(--purple) 9%, var(--card)); color:var(--label); border:1px solid color-mix(in srgb, var(--purple) 22%, transparent); }
+.update-note-tag{ display:inline-block; font-size:11px; font-weight:700; letter-spacing:.02em; padding:1px 8px; margin-right:6px; border-radius:20px;
+  background:color-mix(in srgb, var(--purple) 16%, transparent); color:color-mix(in srgb, var(--purple) 78%, var(--label)); vertical-align:1px; }
+.edition-link{ border:0; background:none; padding:0; font:inherit; color:var(--primary-on-tint); text-decoration:underline; text-underline-offset:3px; cursor:pointer; }
+.updates-legend{ display:grid; gap:6px; margin:4px 0 18px; }
+.updates-legend .update-note{ margin:0; }
+.updates-domain{ font-family:var(--font-display); font-weight:400; font-size:1.2rem; margin:22px 0 10px; color:var(--label); }
+.updates-count{ font-family:var(--font-body); font-size:12px; color:var(--label2); font-weight:500; }
+.update-item{ background:var(--card); border:1px solid var(--divider,var(--sep)); border-radius:12px; padding:12px 14px; margin-bottom:10px; }
+.update-item-meta{ display:flex; align-items:center; gap:8px; font-size:12px; color:var(--label2); margin-bottom:6px; font-variant-numeric:tabular-nums; }
+.update-item-change{ font-size:14.5px; line-height:1.5; margin:0 0 6px; color:var(--label); }
+.update-item-impact{ font-size:13.5px; line-height:1.5; margin:0 0 6px; color:var(--label); }
+.update-item-source{ font-size:12.5px; margin:0; } .update-item-source a{ color:var(--primary-on-tint); text-underline-offset:3px; overflow-wrap:anywhere; }

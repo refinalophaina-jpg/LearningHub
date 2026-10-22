@@ -85,7 +85,7 @@
 </nav>
 
 <main id="mainContent" tabindex="-1">
-<div class="edition-notice"><span><strong>2024 study foundation</strong> · Content review in progress</span><button onclick="switchSection('sources')">Sources<span class="hide-sm"> &amp; review status</span> <span aria-hidden="true">&#8594;</span></button></div>
+<div class="edition-notice"><span><strong>2024 study foundation</strong> · <button class="edition-link" onclick="switchSection('updates')">What's changed since</button></span><button onclick="switchSection('sources')">Sources<span class="hide-sm"> &amp; review status</span> <span aria-hidden="true">&#8594;</span></button></div>
 <div id="restoreNotice" class="restore-notice" role="status" hidden><p>Your saved progress is restored.</p><button class="text-action" onclick="BCPS_undoFileRestore()">Undo restore</button><button class="text-action" onclick="BCPS_dismissRestoreNotice()">Dismiss</button></div>
 <!-- VISUAL PHARMA SECTION -->
 <!-- ═══════════════════════════════════════════════════════════════════════════════
@@ -273,6 +273,11 @@
       <span class="icon-chip md" style="--chip-c:var(--sec-glossary);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-2-1.2-5-1.2-7 0v12c2-1.2 5-1.2 7 0 2-1.2 5-1.2 7 0V6c-2-1.2-5-1.2-7 0z"/><path d="M12 6v12"/></svg></span>
       <span class="more-hub-title">Glossary</span>
       <span class="more-hub-desc">Board terms with plain-language definitions and instant search.</span>
+    </button>
+    <button class="more-hub-card" style="--chip-c:var(--sec-evidence);" onclick="switchSection('updates')">
+      <span class="icon-chip md"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="4"/></svg></span>
+      <span class="more-hub-title">What's changed since the 2024 book</span>
+      <span class="more-hub-desc">Every newer guideline, approval, withdrawal, and label change that the exam may test.</span>
     </button>
     <button class="more-hub-card" style="--chip-c:var(--terracotta-ink);" onclick="switchSection('sources')">
       <span class="icon-chip md"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 12h7M9 16h7"/></svg></span>
@@ -1648,6 +1653,13 @@
 </div>
 
 
+<section id="updates" class="section updates-section" aria-labelledby="updatesTitle">
+  <div class="more-subnav"><button class="more-back" onclick="switchSection('more')">&#8592; More</button></div>
+  <div class="section-header"><h2 id="updatesTitle">What's changed since the 2024 book</h2><p>The study material teaches the 2024 course. These later changes may appear on the exam; each is also flagged inside the related questions, cards, and entries.</p></div>
+  <div class="updates-legend"><span class="update-note"><span class="update-note-tag">Newer guidance</span> a change published after the 2024 course</span><span class="update-note"><span class="update-note-tag">Label differs</span> current FDA labeling disagrees with the book</span></div>
+  <div id="updatesList" class="updates-list"></div>
+</section>
+
 <section id="sources" class="section sources-section" aria-labelledby="sourcesTitle">
   <div class="more-subnav"><button class="more-back" onclick="switchSection('more')">&#8592; More</button></div>
   <div class="section-header"><h2 id="sourcesTitle">Sources &amp; review status</h2><p>Know the foundation, the date, and the limits of each study aid.</p></div>
@@ -1715,6 +1727,7 @@
   <script src="mock-engine.js"></script>
   <script src="mock-exam.js"></script>
   <script src="report.js"></script>
+  <script src="updates.js"></script>
   <script src="release-ui.js"></script>
   <script src="backup-files.js"></script>
 </body>

@@ -158,7 +158,7 @@ const quizData = JSON.parse(({textContent: JSON.stringify(window.__quizData)}).t
 const flashData = JSON.parse(({textContent: JSON.stringify(window.__flashData)}).textContent);
 
 // ── NAVIGATION ────────────────────────────────────────────────────────────
-const MORE_SUBS = ['exampsych', 'visuals', 'evidence', 'glossary', 'sources'];
+const MORE_SUBS = ['exampsych', 'visuals', 'evidence', 'glossary', 'sources', 'updates'];
 function switchSection(id) {
   try{window.dispatchEvent(new CustomEvent("bcps:tab",{detail:id}));}catch(e){}
   document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
