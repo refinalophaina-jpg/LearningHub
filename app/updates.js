@@ -11,25 +11,25 @@
   const ANY = new RegExp('(' + MARKERS.map(m => m.text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') + ')');
   const SKIP = new Set(['SCRIPT', 'STYLE', 'TEXTAREA', 'INPUT', 'OPTION']);
 
+  // A text node may carry several notes; each marker starts its own callout.
   function wrapTextNode(node) {
     const text = node.nodeValue;
-    const m = ANY.exec(text);
-    if (!m) return;
-    const marker = MARKERS.find(x => x.text === m[1]);
-    const start = m.index;
-    const before = text.slice(0, start);
-    const note = text.slice(start + marker.text.length).trim();
-    const span = document.createElement('span');
-    span.className = 'update-note';
-    span.setAttribute('role', 'note');
-    const tag = document.createElement('span');
-    tag.className = 'update-note-tag';
-    tag.textContent = marker.label;
-    span.appendChild(tag);
-    span.appendChild(document.createTextNode(' ' + note));
+    const parts = text.split(ANY);
+    if (parts.length < 3) return;
     const parent = node.parentNode;
-    if (before.trim()) parent.insertBefore(document.createTextNode(before), node);
-    parent.insertBefore(span, node);
+    if (parts[0].trim()) parent.insertBefore(document.createTextNode(parts[0]), node);
+    for (let i = 1; i < parts.length; i += 2) {
+      const marker = MARKERS.find(x => x.text === parts[i]);
+      const span = document.createElement('span');
+      span.className = 'update-note';
+      span.setAttribute('role', 'note');
+      const tag = document.createElement('span');
+      tag.className = 'update-note-tag';
+      tag.textContent = marker.label;
+      span.appendChild(tag);
+      span.appendChild(document.createTextNode(' ' + parts[i + 1].trim()));
+      parent.insertBefore(span, node);
+    }
     parent.removeChild(node);
   }
 
