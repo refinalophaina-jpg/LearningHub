@@ -72,7 +72,7 @@ test('progress backup includes revision-aware spaced review, confidence, history
 test('source UI is reachable and makes review limits explicit', () => {
   const html=read('app/index.html');
   assert.equal((html.match(/name="viewport"/g)||[]).length,1);
-  assert.match(html,/id="sources"/);assert.match(html,/Full content review is still in progress/);
+  assert.match(html,/id="sources"/);assert.match(html,/What has not been reviewed/);assert.match(html,/None of this replaces a pharmacist’s sign-off/);
   assert.match(read('app/app.js'),/'glossary', 'sources'/);
   assert.ok(!fs.existsSync('assets/data/accp.json'));
   assert.ok(!fs.existsSync('2024_BCPS_Prep_Volume_1_Combined.pdf'));

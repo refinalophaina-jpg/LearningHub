@@ -479,10 +479,10 @@
   "category": "1. Infectious diseases",
   "domain": "Area 1",
   "topic": "Infectious diseases",
-  "exp": "The specified severe-CAP framework supports a beta-lactam plus a macrolide or respiratory fluoroquinolone; the stem supplies no resistant-pathogen indication.",
+  "exp": "The specified severe-CAP framework supports a beta-lactam plus a macrolide or respiratory fluoroquinolone; the stem supplies no resistant-pathogen indication. Updated after the 2024 course: the 2025 ATS CAP guideline update conditionally recommends systemic corticosteroids such as hydrocortisone for inpatients with severe CAP, not influenza pneumonia, and recommends against them in nonsevere CAP; the 2019 ATS/IDSA guideline did not recommend routine steroids, and IDSA did not endorse the update.",
   "optsExp": [
    "Respiratory fluoroquinolone monotherapy is a nonsevere inpatient option, not the recommended severe-CAP regimen in this framework.",
-   "The specified severe-CAP framework supports a beta-lactam plus a macrolide or respiratory fluoroquinolone; the stem supplies no resistant-pathogen indication.",
+   "The specified severe-CAP framework supports a beta-lactam plus a macrolide or respiratory fluoroquinolone; the stem supplies no resistant-pathogen indication. Updated after the 2024 course: the 2025 ATS CAP guideline update conditionally recommends systemic corticosteroids such as hydrocortisone for inpatients with severe CAP, not influenza pneumonia, and recommends against them in nonsevere CAP; the 2019 ATS/IDSA guideline did not recommend routine steroids, and IDSA did not endorse the update.",
    "This alternative is better supported in nonsevere CAP; the question explicitly asks for the 2019 severe-CAP recommendation.",
    "This adds unindicated resistant-pathogen coverage and omits reliable atypical coverage."
   ],
@@ -859,11 +859,11 @@
   "category": "1. Critical care",
   "domain": "Area 1",
   "topic": "Critical care",
-  "exp": "The 2026 Surviving Sepsis Campaign recommends norepinephrine first line; titrate and reassess perfusion.",
+  "exp": "The 2026 Surviving Sepsis Campaign recommends norepinephrine first line; titrate and reassess perfusion. Updated after the 2024 course: the 2026 Surviving Sepsis Campaign guideline cited here was published in March 2026, after the book, which teaches the 2021 version; norepinephrine is first line in both, but 2026 strengthens epinephrine and suggests MAP 60-65 mm Hg for patients 65 or older.",
   "optsExp": [
    "Epinephrine may have a later role; norepinephrine is preferred initially in this presentation.",
    "Dopamine has a less favorable arrhythmia profile and is not preferred here.",
-   "The 2026 Surviving Sepsis Campaign recommends norepinephrine first line; titrate and reassess perfusion.",
+   "The 2026 Surviving Sepsis Campaign recommends norepinephrine first line; titrate and reassess perfusion. Updated after the 2024 course: the 2026 Surviving Sepsis Campaign guideline cited here was published in March 2026, after the book, which teaches the 2021 version; norepinephrine is first line in both, but 2026 strengthens epinephrine and suggests MAP 60-65 mm Hg for patients 65 or older.",
    "Vasopressin is generally an adjunct when norepinephrine is insufficient rather than the initial sole agent."
   ],
   "sources": [
@@ -1043,12 +1043,12 @@
   "category": "1. Endocrinology",
   "domain": "Area 1",
   "topic": "Endocrinology",
-  "exp": "Ketonemia plus metabolic acidosis can establish DKA despite glucose 168. Dextrose permits insulin-mediated ketone clearance without hypoglycemia.",
+  "exp": "Ketonemia plus metabolic acidosis can establish DKA despite glucose 168. Dextrose permits insulin-mediated ketone clearance without hypoglycemia. Updated after the 2024 course: the 2024 ADA/EASD/JBDS/AACE/DTS hyperglycemic crises consensus counts any history of diabetes as the glucose criterion and uses beta-hydroxybutyrate of 3.0 mmol/L or more, and DKA resolves at beta-hydroxybutyrate below 0.6 plus pH 7.3 or more or bicarbonate 18 or more.",
   "optsExp": [
    "The degree of acidosis and SGLT2 exposure warrants urgent DKA management and monitoring.",
    "Bicarbonate is not a substitute for insulin/fluids and is not routinely recommended at pH 7.24.",
    "Waiting for marked hyperglycemia leaves ongoing ketogenesis untreated.",
-   "Ketonemia plus metabolic acidosis can establish DKA despite glucose 168. Dextrose permits insulin-mediated ketone clearance without hypoglycemia."
+   "Ketonemia plus metabolic acidosis can establish DKA despite glucose 168. Dextrose permits insulin-mediated ketone clearance without hypoglycemia. Updated after the 2024 course: the 2024 ADA/EASD/JBDS/AACE/DTS hyperglycemic crises consensus counts any history of diabetes as the glucose criterion and uses beta-hydroxybutyrate of 3.0 mmol/L or more, and DKA resolves at beta-hydroxybutyrate below 0.6 plus pH 7.3 or more or bicarbonate 18 or more."
   ],
   "sources": [
    {
@@ -1273,10 +1273,10 @@
   "category": "1. Nephrology",
   "domain": "Area 1",
   "topic": "Nephrology",
-  "exp": "Dual ACE inhibitor/ARB therapy increases AKI/hyperkalemia risk and is not recommended; an eligible SGLT2 inhibitor may offer outcome benefit.",
+  "exp": "Dual ACE inhibitor/ARB therapy increases AKI/hyperkalemia risk and is not recommended; an eligible SGLT2 inhibitor may offer outcome benefit. Updated after the 2024 course: the ADA Standards of Care 2025, released December 2024, list an SGLT2i or a GLP-1 RA as kidney-protective options for T2D with CKD; the advice to avoid dual RAAS blockade is unchanged.",
   "optsExp": [
    "Intermittent same-day overlap does not provide an evidence-based safety solution.",
-   "Dual ACE inhibitor/ARB therapy increases AKI/hyperkalemia risk and is not recommended; an eligible SGLT2 inhibitor may offer outcome benefit.",
+   "Dual ACE inhibitor/ARB therapy increases AKI/hyperkalemia risk and is not recommended; an eligible SGLT2 inhibitor may offer outcome benefit. Updated after the 2024 course: the ADA Standards of Care 2025, released December 2024, list an SGLT2i or a GLP-1 RA as kidney-protective options for T2D with CKD; the advice to avoid dual RAAS blockade is unchanged.",
    "Combining RAAS blockers is not a safer alternative and is particularly problematic in diabetes.",
    "Surrogate reduction does not outweigh the established harms of dual blockade."
   ],
@@ -1509,12 +1509,12 @@
   "category": "1. Neurology",
   "domain": "Area 1",
   "topic": "Neurology",
-  "exp": "Predictable end-of-dose wearing off supports smoothing levodopa delivery; monitor dyskinesia, orthostasis and overall exposure.",
+  "exp": "Predictable end-of-dose wearing off supports smoothing levodopa delivery; monitor dyskinesia, orthostasis and overall exposure. Current FDA labeling differs: since March 2026 all carbidopa/levodopa products warn of vitamin B6 deficiency and related seizures, mainly at levodopa doses above 1,000 mg/day; check B6 at baseline and periodically and supplement if low.",
   "optsExp": [
    "Abrupt withdrawal risks severe deterioration and hyperpyrexia/confusion syndromes.",
    "The diary describes trough wearing off without peak-dose dyskinesia.",
    "Dopamine antagonism can worsen parkinsonism; it is not a treatment for wearing off.",
-   "Predictable end-of-dose wearing off supports smoothing levodopa delivery; monitor dyskinesia, orthostasis and overall exposure."
+   "Predictable end-of-dose wearing off supports smoothing levodopa delivery; monitor dyskinesia, orthostasis and overall exposure. Current FDA labeling differs: since March 2026 all carbidopa/levodopa products warn of vitamin B6 deficiency and related seizures, mainly at levodopa doses above 1,000 mg/day; check B6 at baseline and periodically and supplement if low."
   ],
   "sources": [
    {
@@ -1555,9 +1555,9 @@
   "category": "1. Neurology",
   "domain": "Area 1",
   "topic": "Neurology",
-  "exp": "Recent anticoagulant exposure affects IV thrombolysis assessment but should not by itself exclude evaluation for mechanical thrombectomy.",
+  "exp": "Recent anticoagulant exposure affects IV thrombolysis assessment but should not by itself exclude evaluation for mechanical thrombectomy. Updated after the 2024 course: andexanet alfa, brand Andexxa, was withdrawn from the US market in December 2025 after the FDA concluded its thromboembolic risks outweigh its benefits; 4F-PCC is now the US option for life-threatening apixaban or rivaroxaban bleeding.",
   "optsExp": [
-   "Recent anticoagulant exposure affects IV thrombolysis assessment but should not by itself exclude evaluation for mechanical thrombectomy.",
+   "Recent anticoagulant exposure affects IV thrombolysis assessment but should not by itself exclude evaluation for mechanical thrombectomy. Updated after the 2024 course: andexanet alfa, brand Andexxa, was withdrawn from the US market in December 2025 after the FDA concluded its thromboembolic risks outweigh its benefits; 4F-PCC is now the US option for life-threatening apixaban or rivaroxaban bleeding.",
    "Routine reversal solely to permit thrombectomy is not an established prerequisite; the stroke team assesses the full case.",
    "The two procedures have different eligibility and bleeding considerations.",
    "Waiting can forfeit a time-sensitive thrombectomy opportunity."
@@ -2436,10 +2436,10 @@
   "category": "1. Pain and geriatrics",
   "domain": "Area 1",
   "topic": "Pain and geriatrics",
-  "exp": "Anticholinergic burden can worsen delirium; chronic benzodiazepines require individualized management because abrupt withdrawal can also cause delirium/seizures.",
+  "exp": "Anticholinergic burden can worsen delirium; chronic benzodiazepines require individualized management because abrupt withdrawal can also cause delirium/seizures. Updated after the 2024 course: the March 2025 ASAM-led joint guideline on benzodiazepine tapering, published in JGIM in June 2025, advises slow patient-centered tapers that usually start with 5-10% dose reductions every 2-4 weeks and generally do not exceed 25% every 2 weeks; older adults on long-term benzodiazepines are prime taper candidates.",
   "optsExp": [
    "This ignores benzodiazepine dependence/withdrawal and individual indications.",
-   "Anticholinergic burden can worsen delirium; chronic benzodiazepines require individualized management because abrupt withdrawal can also cause delirium/seizures.",
+   "Anticholinergic burden can worsen delirium; chronic benzodiazepines require individualized management because abrupt withdrawal can also cause delirium/seizures. Updated after the 2024 course: the March 2025 ASAM-led joint guideline on benzodiazepine tapering, published in JGIM in June 2025, advises slow patient-centered tapers that usually start with 5-10% dose reductions every 2-4 weeks and generally do not exceed 25% every 2 weeks; older adults on long-term benzodiazepines are prime taper candidates.",
    "Sedating the behavior does not treat the cause and can worsen delirium outside specific indications.",
    "Doxylamine is also strongly anticholinergic."
   ],
@@ -3968,11 +3968,11 @@
   "category": "2. Optimization",
   "domain": "Area 2",
   "topic": "Optimization",
-  "exp": "Apparent resistance can reflect measurement or nonadherence from cost. Verify a sustainable regimen before escalation as true resistance.",
+  "exp": "Apparent resistance can reflect measurement or nonadherence from cost. Verify a sustainable regimen before escalation as true resistance. Updated after the 2024 course: the August 2025 AHA/ACC high blood pressure guideline replaces the 2017 guideline and recommends screening every patient with resistant hypertension for primary aldosteronism with the aldosterone/renin ratio, regardless of potassium.",
   "optsExp": [
    "A medication list does not prove access or use.",
    "This can increase burden without establishing that the prescribed three-drug regimen is actually delivered.",
-   "Apparent resistance can reflect measurement or nonadherence from cost. Verify a sustainable regimen before escalation as true resistance.",
+   "Apparent resistance can reflect measurement or nonadherence from cost. Verify a sustainable regimen before escalation as true resistance. Updated after the 2024 course: the August 2025 AHA/ACC high blood pressure guideline replaces the 2017 guideline and recommends screening every patient with resistant hypertension for primary aldosteronism with the aldosterone/renin ratio, regardless of potassium.",
    "Prescription count does not establish adherence or exclude white-coat effect."
   ],
   "sources": [
@@ -4014,10 +4014,10 @@
   "category": "2. Optimization",
   "domain": "Area 2",
   "topic": "Optimization",
-  "exp": "The 2025 joint guideline recommends patient-centered gradual reductions with adjustment to response; consolidation and psychosocial support can help.",
+  "exp": "The 2025 joint guideline recommends patient-centered gradual reductions with adjustment to response; consolidation and psychosocial support can help. Updated after the 2024 course: the 2025 joint guideline cited here postdates the book, which only refers readers to deprescribing.org; it suggests starting with 5-10% reductions every 2-4 weeks and generally no more than 25% every 2 weeks.",
   "optsExp": [
    "Anticholinergic sedation adds fall/cognitive risk and does not manage benzodiazepine withdrawal.",
-   "The 2025 joint guideline recommends patient-centered gradual reductions with adjustment to response; consolidation and psychosocial support can help.",
+   "The 2025 joint guideline recommends patient-centered gradual reductions with adjustment to response; consolidation and psychosocial support can help. Updated after the 2024 course: the 2025 joint guideline cited here postdates the book, which only refers readers to deprescribing.org; it suggests starting with 5-10% reductions every 2-4 weeks and generally no more than 25% every 2 weeks.",
    "This pace is much faster than usual guidance and ignores individual response.",
    "Abrupt discontinuation after dependence risks serious withdrawal, including seizures."
   ],
@@ -4141,7 +4141,7 @@
  {
   "id": "AD-MOCK-090",
   "num": 90,
-  "stem": "A nonpregnant adult with E. coli pyelonephritis and bacteremia is stable after three days of effective IV ceftriaxone. No obstruction, abscess, prostatitis or major immunocompromise is present. A suitable susceptible oral agent is available. Under the 2025 IDSA framework, which plan is best supported?",
+  "stem": "A nonpregnant adult with E. coli pyelonephritis and bacteremia is stable after three days of effective IV ceftriaxone. No obstruction, abscess, prostatitis or major immunocompromise is present. The isolate is susceptible to ciprofloxacin, and oral ciprofloxacin 500 mg twice daily is planned. Which plan is best supported?",
   "choices": [
    "Stop after three days because fever resolved",
    "Restart a fourteen-day course when oral treatment begins",
@@ -4152,11 +4152,11 @@
   "category": "2. Optimization",
   "domain": "Area 2",
   "topic": "Optimization",
-  "exp": "Eligible improving bacteremic cUTI patients can transition to an effective systemic oral agent; count days from the first effective therapy, not the route change.",
+  "exp": "Eligible improving bacteremic cUTI patients can transition to an effective systemic oral agent; count days from the first effective therapy, not the route change. Ciprofloxacin for complicated UTI runs 7 days in the 2024 course. Updated after the 2024 course: the July 2025 IDSA complicated UTI guideline supports about 7 total days for patients who improve promptly, including those with bacteremia, counted from the first effective dose.",
   "optsExp": [
    "Clinical improvement alone does not support this abbreviated bacteremic course.",
    "Changing route does not reset the effective-treatment clock.",
-   "Eligible improving bacteremic cUTI patients can transition to an effective systemic oral agent; count days from the first effective therapy, not the route change.",
+   "Eligible improving bacteremic cUTI patients can transition to an effective systemic oral agent; count days from the first effective therapy, not the route change. Ciprofloxacin for complicated UTI runs 7 days in the 2024 course. Updated after the 2024 course: the July 2025 IDSA complicated UTI guideline supports about 7 total days for patients who improve promptly, including those with bacteremia, counted from the first effective dose.",
    "Bacteremia alone does not preclude an eligible oral transition or a shorter total course."
   ],
   "sources": [
@@ -6188,12 +6188,12 @@
   "category": "Professional Practice",
   "domain": "Area 3",
   "topic": "Preventive care",
-  "exp": "These factors increase overdose risk; naloxone education and coordinated medication assessment are appropriate.",
+  "exp": "These factors increase overdose risk; naloxone education and coordinated medication assessment are appropriate. Updated after the 2024 course: July 2025 FDA class-wide opioid labeling strengthens warnings on combining opioids with benzodiazepines, gabapentinoids and other CNS depressants and on abrupt discontinuation.",
   "optsExp": [
    "Abrupt withdrawal can be dangerous; coordinate an individualized approach.",
    "Naloxone is an emergency intervention and does not remove the need for assistance/monitoring.",
    "A single awake reading does not remove future nocturnal/combined depressant risk.",
-   "These factors increase overdose risk; naloxone education and coordinated medication assessment are appropriate."
+   "These factors increase overdose risk; naloxone education and coordinated medication assessment are appropriate. Updated after the 2024 course: July 2025 FDA class-wide opioid labeling strengthens warnings on combining opioids with benzodiazepines, gabapentinoids and other CNS depressants and on abrupt discontinuation."
   ],
   "sources": [
    {
@@ -6906,9 +6906,9 @@
   "category": "Professional Practice",
   "domain": "Area 3",
   "topic": "Emergency preparedness",
-  "exp": "Consistent criteria and communication reduce ad hoc inequity; include pharmacy, clinicians and ethics expertise when appropriate.",
+  "exp": "Consistent criteria and communication reduce ad hoc inequity; include pharmacy, clinicians and ethics expertise when appropriate. Updated after the 2024 course: Hurricane Helene closed Baxter's North Cove plant in September 2024 and caused a national IV fluid shortage, managed with conservation, IV push instead of piggyback, IV-to-PO conversion, expiry extensions and temporary importation; FDA declared the 0.9% sodium chloride shortage over in August 2025.",
   "optsExp": [
-   "Consistent criteria and communication reduce ad hoc inequity; include pharmacy, clinicians and ethics expertise when appropriate.",
+   "Consistent criteria and communication reduce ad hoc inequity; include pharmacy, clinicians and ethics expertise when appropriate. Updated after the 2024 course: Hurricane Helene closed Baxter's North Cove plant in September 2024 and caused a national IV fluid shortage, managed with conservation, IV push instead of piggyback, IV-to-PO conversion, expiry extensions and temporary importation; FDA declared the 0.9% sodium chloride shortage over in August 2025.",
    "Personal connections are not defensible clinical allocation criteria.",
    "First-come access can ignore clinical priority and inequities.",
    "Inconsistent hidden rules impair fairness and continuity."

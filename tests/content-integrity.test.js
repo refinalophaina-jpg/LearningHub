@@ -61,3 +61,17 @@ test('lithium targets match the 2024 chapter everywhere', () => {
     assert.doesNotMatch(s, /maintenance[^.;]{0,20}0\.(4|6)\s*[-–]\s*0\.8|0\.4\s*[-–]\s*1(\.0)?\s*(mEq\/L\s*)?maintenance/i, 'lithium maintenance range: ' + s.slice(0, 120));
   }
 });
+
+test('later changes use the two note markers the site renders as callouts', () => {
+  const corpus = ['quiz.json', 'flash.json', 'glo_terms.json', 'drug_db.json', 'evidencedata.json', 'mock_exam.json', 'epdrills.json']
+    .map(f => fs.readFileSync('assets/data/' + f, 'utf8')).join('\n') + fs.readFileSync('app/index.html', 'utf8');
+  assert.doesNotMatch(corpus, /Updated since 2024:|Recent change —/, 'legacy note format would render as plain text');
+  const updates = load('updates.json');
+  assert.ok(updates.length > 0, 'the changes page needs entries');
+  assert.deepEqual(dupes(updates.map(u => u.id)), [], 'duplicate change ids');
+  updates.forEach(u => {
+    for (const k of ['domain', 'date', 'change', 'practice_impact', 'source']) assert.ok(u[k] && String(u[k]).trim(), u.id + ' needs ' + k);
+    assert.match(u.date, /^20\d\d-\d\d$/, u.id + ' date');
+    assert.match(u.url, /^https:\/\//, u.id + ' needs a source link');
+  });
+});

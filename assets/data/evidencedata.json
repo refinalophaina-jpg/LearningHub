@@ -157,7 +157,7 @@
   "design": "RCT, double-blind",
   "endpoint": "CV death or HF hospitalization",
   "finding": "Empagliflozin reduced composite endpoint 21% (HR 0.79, p<0.001) in HFpEF/HFmrEF. First positive pharmacotherapy trial in HFpEF. Driven mainly by HF hospitalizations.",
-  "impact": "First drug to show significant benefit in HFpEF. DELIVER (dapagliflozin, 2022) confirmed class effect. SGLT2i now recommended across full HF spectrum — HFrEF, HFmrEF, and HFpEF.",
+  "impact": "First drug to show significant benefit in HFpEF. DELIVER (dapagliflozin, 2022) confirmed class effect. SGLT2i now recommended across full HF spectrum — HFrEF, HFmrEF, and HFpEF. Updated after the 2024 course: the July 2026 ACC HFpEF expert consensus decision pathway makes an SGLT2 inhibitor plus finerenone the foundational therapy, prefers finerenone over spironolactone, adds semaglutide or tirzepatide for BMI 30 or higher, and discourages routine beta-blockers without angina or AF.",
   "tags": [
    "HFpEF",
    "SGLT2i",
@@ -178,7 +178,7 @@
   "design": "RCT, double-blind",
   "endpoint": "CV death, worsening HF, or urgent HF visit",
   "finding": "Dapagliflozin reduced primary endpoint 18% (HR 0.82, p<0.001) in HFpEF/HFmrEF (EF>40%). Benefit in recently-hospitalized patients. Combined SGLT2i HFpEF meta-analysis NNT ~30.",
-  "impact": "Confirmed dual SGLT2i class effect in HFpEF. Both empagliflozin and dapagliflozin FDA-approved for HFpEF. Practical pearl: can be initiated in hospital for HF and continued after discharge.",
+  "impact": "Confirmed dual SGLT2i class effect in HFpEF. Both empagliflozin and dapagliflozin FDA-approved for HFpEF. Practical pearl: can be initiated in hospital for HF and continued after discharge. Updated after the 2024 course: the July 2026 ACC HFpEF expert consensus decision pathway makes an SGLT2 inhibitor plus finerenone the foundational therapy, prefers finerenone over spironolactone, adds semaglutide or tirzepatide for BMI 30 or higher, and discourages routine beta-blockers without angina or AF.",
   "tags": [
    "HFpEF",
    "SGLT2i",
@@ -219,7 +219,7 @@
   "design": "RCT, double-blind",
   "endpoint": "CV death, cardiac arrest, HF hospitalization",
   "finding": "Hyperkalemia roughly doubled (18.7% vs 9.1%, ~2x).",
-  "impact": "No Class I indication for MRA in HFpEF. However, consider MRA for HFpEF with diuretic need. Eplerenone post-MI HF data (EPHESUS 2003): reduces mortality in HFrEF post-MI. Avoid in CrCl <30 or K+ >5.",
+  "impact": "No Class I indication for MRA in HFpEF. However, consider MRA for HFpEF with diuretic need. Eplerenone post-MI HF data (EPHESUS 2003): reduces mortality in HFrEF post-MI. Avoid in CrCl <30 or K+ >5. Updated after the 2024 course: in July 2025 the FDA approved finerenone, the nonsteroidal MRA Kerendia, for HF with LVEF of 40% or higher based on FINEARTS-HF, making it the first MRA approved for HFmrEF and HFpEF; monitor potassium and eGFR. Updated after the 2024 course: the July 2026 ACC HFpEF expert consensus decision pathway makes an SGLT2 inhibitor plus finerenone the foundational therapy, prefers finerenone over spironolactone, adds semaglutide or tirzepatide for BMI 30 or higher, and discourages routine beta-blockers without angina or AF.",
   "tags": [
    "HFpEF",
    "MRA",
@@ -261,7 +261,7 @@
   "design": "RCT, double-blind",
   "endpoint": "CV death, MI, stroke at 12 months",
   "finding": "Ticagrelor reduced primary endpoint 16% (9.8% vs 11.7%, HR 0.84, p<0.001). CV mortality reduced 21%. All-cause mortality reduced 22%. Non-CABG major bleeding higher with ticagrelor.",
-  "impact": "Ticagrelor preferred P2Y12 for ACS (NSTEMI/STEMI regardless of management). Critical pearl: avoid aspirin >100mg/day with ticagrelor (PLATO Americas subgroup — higher aspirin doses attenuate ticagrelor benefit). Dyspnea in 14% — typically transient, not bronchospasm.",
+  "impact": "Ticagrelor preferred P2Y12 for ACS (NSTEMI/STEMI regardless of management). Critical pearl: avoid aspirin >100mg/day with ticagrelor (PLATO Americas subgroup — higher aspirin doses attenuate ticagrelor benefit). Dyspnea in 14% — typically transient, not bronchospasm. Updated after the 2024 course: the February 2025 ACC/AHA/ACEP/NAEMSP/SCAI ACS guideline, which replaces the 2013 STEMI and 2014 NSTE-ACS guidelines, prefers ticagrelor or prasugrel over clopidogrel for ACS patients undergoing PCI and allows ticagrelor monotherapy after at least 1 month of DAPT.",
   "tags": [
    "ACS",
    "Ticagrelor",
@@ -283,7 +283,7 @@
   "design": "RCT, double-blind",
   "endpoint": "CV death, MI, stroke at 15 months",
   "finding": "Prasugrel reduced primary endpoint 19% (9.9% vs 12.1%, HR 0.81, p<0.001) but significantly more major bleeding (2.4% vs 1.8%). Net harm in prior CVA/TIA, age ≥75, weight <60kg subgroups.",
-  "impact": "Prasugrel for ACS with PCI (anatomy must be known). Absolute contraindication: prior CVA/TIA. Reduce to 5mg/day if age ≥75 or weight <60kg. Faster, more consistent P2Y12 inhibition than clopidogrel (not affected by CYP2C19 polymorphisms).",
+  "impact": "Prasugrel for ACS with PCI (anatomy must be known). Absolute contraindication: prior CVA/TIA. Reduce to 5mg/day if age ≥75 or weight <60kg. Faster, more consistent P2Y12 inhibition than clopidogrel (not affected by CYP2C19 polymorphisms). Updated after the 2024 course: the February 2025 ACC/AHA/ACEP/NAEMSP/SCAI ACS guideline, which replaces the 2013 STEMI and 2014 NSTE-ACS guidelines, prefers ticagrelor or prasugrel over clopidogrel for ACS patients undergoing PCI and allows ticagrelor monotherapy after at least 1 month of DAPT.",
   "tags": [
    "ACS",
    "Prasugrel",
@@ -349,7 +349,7 @@
   "design": "RCT, double-blind",
   "endpoint": "Stroke or systemic embolism",
   "finding": "noninferior to warfarin (per-protocol 1.7% vs 2.2%/yr, HR 0.79; ITT 2.1% vs 2.4%/yr, HR 0.88; p<0.001 NI)",
-  "impact": "Rivaroxaban once-daily advantage for adherence. CRITICAL Pearl: must take 20mg WITH EVENING MEAL (food increases bioavailability from 66% to ~100%). Reduce to 15mg/day if CrCl 15-50. Reversal: andexanet alfa. CYP3A4/P-gp interactions.",
+  "impact": "Rivaroxaban once-daily advantage for adherence. CRITICAL Pearl: must take 20mg WITH EVENING MEAL (food increases bioavailability from 66% to ~100%). Reduce to 15mg/day if CrCl 15-50. Reversal: andexanet alfa. CYP3A4/P-gp interactions. Updated after the 2024 course: andexanet alfa, brand Andexxa, was withdrawn from the US market in December 2025 after the FDA concluded its thromboembolic risks outweigh its benefits; 4F-PCC is now the US option for life-threatening apixaban or rivaroxaban bleeding.",
   "tags": [
    "AFib",
    "Rivaroxaban",
@@ -371,7 +371,7 @@
   "design": "RCT, double-blind",
   "endpoint": "Stroke or systemic embolism",
   "finding": "stroke/embolism 21% reduction (1.27% vs 1.60%/yr, HR 0.79; p<0.001 noninferiority, p=0.01 superiority)",
-  "impact": "Only DOAC superior to warfarin in all 3 key outcomes (efficacy, safety, mortality). Use 2.5mg BID if ≥2 of: age ≥80, weight ≤60kg, SCr ≥1.5. Least renal dependence (27% renal excretion). Reversal: andexanet alfa.",
+  "impact": "Only DOAC superior to warfarin in all 3 key outcomes (efficacy, safety, mortality). Use 2.5mg BID if ≥2 of: age ≥80, weight ≤60kg, SCr ≥1.5. Least renal dependence (27% renal excretion). Reversal: andexanet alfa. Updated after the 2024 course: andexanet alfa, brand Andexxa, was withdrawn from the US market in December 2025 after the FDA concluded its thromboembolic risks outweigh its benefits; 4F-PCC is now the US option for life-threatening apixaban or rivaroxaban bleeding.",
   "tags": [
    "AFib",
    "Apixaban",
@@ -416,7 +416,7 @@
   "design": "RCT, open-label (stopped early for harm)",
   "endpoint": "30-day mortality for gram-negative bacteremia",
   "finding": "Pip-tazo definitive therapy → significantly higher 30-day mortality vs meropenem (12.3% vs 3.7%, RR 3.4, p=0.001). Stopped early for harm.",
-  "impact": "\"MERINO effect\" — pip-tazo must NOT be used as definitive therapy for ESBL or cephalosporin-resistant bacteremia even if susceptible in vitro (inoculum effect makes in vitro susceptibility misleading). Meropenem or ertapenem preferred. Exception: ESBL UTI (lower inoculum) may tolerate pip-tazo.",
+  "impact": "\"MERINO effect\" — pip-tazo must NOT be used as definitive therapy for ESBL or cephalosporin-resistant bacteremia even if susceptible in vitro (inoculum effect makes in vitro susceptibility misleading). Meropenem or ertapenem preferred. Exception: ESBL UTI (lower inoculum) may tolerate pip-tazo. Updated after the 2024 course: the July 2026 IDSA AMR guidance formally lists piperacillin-tazobactam as an alternative for ESBL-E urinary tract infection while keeping carbapenems preferred for ESBL-E bacteremia and other invasive infection.",
   "tags": [
    "ESBL",
    "Bacteremia",
@@ -591,7 +591,7 @@
   "design": "Both RCT, double-blind",
   "endpoint": "Mortality at 90 days",
   "finding": "ACURASYS (2010): NMB reduced 90-day adjusted mortality (HR 0.68). ROSE (2019): Early NMB showed NO mortality benefit vs light sedation control (42.5% vs 42.8%). Key difference: ROSE used lighter sedation in controls.",
-  "impact": "NMB for ARDS is NOT routinely recommended (ROSE). Consider NMB (cisatracurium 37.5 mg/hr) for: severe hypoxia (P/F <150) refractory to optimization, severe ventilator dyssynchrony, or prone positioning facilitation. Duration <48h. Monitor train-of-four.",
+  "impact": "NMB for ARDS is NOT routinely recommended (ROSE). Consider NMB (cisatracurium 37.5 mg/hr) for: severe hypoxia (P/F <150) refractory to optimization, severe ventilator dyssynchrony, or prone positioning facilitation. Duration <48h. Monitor train-of-four. Updated after the 2024 course: the January 2024 ATS ARDS guideline conditionally suggests neuromuscular blockade in early severe ARDS and, with the SCCM focused update, conditionally recommends systemic corticosteroids for ARDS.",
   "tags": [
    "ARDS",
    "Neuromuscular blockade",
@@ -658,7 +658,7 @@
   "design": "RCT, open-label (blinded endpoint)",
   "endpoint": "Oxford Handicap Score 0-2 at 6 months",
   "finding": "No significant difference in good functional outcome at 6 months (37% vs 35%). More early deaths (11% vs 7%) offset by later functional benefit. Trend to benefit within 4.5h window.",
-  "impact": "Expanded tPA to older adults (no upper age limit) and 3-4.5h window (ECASS-3). WAKE-UP trial (2018): DWI-FLAIR mismatch on MRI identifies patients with unknown onset (wake-up stroke) who benefit from tPA. Current: alteplase up to 4.5h, tenecteplase emerging as simpler alternative.",
+  "impact": "Expanded tPA to older adults (no upper age limit) and 3-4.5h window (ECASS-3). WAKE-UP trial (2018): DWI-FLAIR mismatch on MRI identifies patients with unknown onset (wake-up stroke) who benefit from tPA. Current: alteplase up to 4.5h, tenecteplase emerging as simpler alternative. Updated after the 2024 course: tenecteplase is no longer just emerging; the FDA approved it for acute ischemic stroke in March 2025, based on AcT, at 0.25 mg/kg, max 25 mg, as a single bolus. Updated after the 2024 course: the January 2026 AHA/ASA acute ischemic stroke guideline allows IV thrombolysis up to 9 hours in selected patients with advanced imaging mismatch and treats tenecteplase as equivalent to alteplase within 4.5 hours.",
   "tags": [
    "Stroke",
    "tPA",
@@ -795,7 +795,7 @@
   "design": "RCT, double-blind",
   "endpoint": "3-point MACE",
   "finding": "Liraglutide reduced MACE 13% (HR 0.87, p=0.01). CV death reduced 22%. All-cause mortality reduced 15%. HF neutral (unlike SGLT2i). Weight loss 2.3kg. Slowed renal progression.",
-  "impact": "Established GLP-1 RA (liraglutide first, then semaglutide SUSTAIN-6) for T2DM + ASCVD. Primary benefit: MACE reduction (anti-atherosclerotic effect, slower onset than SGLT2i). Choose GLP-1 RA when ASCVD predominates; SGLT2i when HF or CKD predominates.",
+  "impact": "Established GLP-1 RA (liraglutide first, then semaglutide SUSTAIN-6) for T2DM + ASCVD. Primary benefit: MACE reduction (anti-atherosclerotic effect, slower onset than SGLT2i). Choose GLP-1 RA when ASCVD predominates; SGLT2i when HF or CKD predominates. Updated after the 2024 course: in October 2025 the FDA approved oral semaglutide, brand Rybelsus, 7 or 14 mg to reduce MACE in adults with type 2 diabetes at high CV risk, based on SOUL, making it the first oral GLP-1 RA with a CV outcomes indication. Updated after the 2024 course: the ADA Standards of Care 2025, released December 2024, also recommend a GLP-1 RA for T2D with CKD and for symptomatic HFpEF with obesity, so CKD or HFpEF no longer points only to an SGLT2i. Updated after the 2024 course: in January 2025 the FDA approved semaglutide for kidney outcomes in T2D with CKD based on FLOW, so CKD no longer points only to an SGLT2i.",
   "tags": [
    "T2DM",
    "GLP-1 RA",
@@ -839,7 +839,7 @@
   "design": "RCT, double-blind",
   "endpoint": ">50% eGFR decline, ESKD, or renal/CV death",
   "finding": "Dapagliflozin reduced primary endpoint 39% (HR 0.61, p<0.001) across eGFR 25-75. Benefit consistent regardless of diabetes status (key novel finding). AKI events reduced 27%.",
-  "impact": "Extended nephroprotection beyond diabetic CKD — IgA nephropathy, FSGS, and other proteinuric CKD benefit. KDIGO 2022: SGLT2i for ALL CKD if eGFR ≥20 + UACR ≥200. Initial eGFR decline expected (hemodynamic) — do not discontinue for this alone.",
+  "impact": "Extended nephroprotection beyond diabetic CKD — IgA nephropathy, FSGS, and other proteinuric CKD benefit. KDIGO 2022 (diabetes and CKD): SGLT2i for T2D with CKD when eGFR ≥20. Initial eGFR decline expected (hemodynamic) — do not discontinue for this alone. Updated after the 2024 course: KDIGO 2024 extends SGLT2i to CKD without diabetes when eGFR ≥20 with UACR ≥200 mg/g or heart failure.",
   "tags": [
    "CKD",
    "SGLT2i",
@@ -882,7 +882,7 @@
   "design": "RCT, double-blind (stopped early)",
   "endpoint": "MI, ACS, stroke, HF, CV death",
   "finding": "More AKI (~1.7x; serious AKI/acute renal failure 4.1% vs 2.5%, HR ~1.66) and syncope in intensive group.",
-  "impact": "Drove 2017 ACC/AHA guidelines to define hypertension as ≥130/80 (was ≥140/90). Target SBP <130 for high-risk non-DM adults. Note: SPRINT used automated unattended office BP — corresponds to ~5-7 mmHg lower than standard clinic measurement. Adjust targets accordingly.",
+  "impact": "Drove 2017 ACC/AHA guidelines to define hypertension as ≥130/80 (was ≥140/90). Target SBP <130 for high-risk non-DM adults. Note: SPRINT used automated unattended office BP — corresponds to ~5-7 mmHg lower than standard clinic measurement. Adjust targets accordingly. Updated after the 2024 course: the August 2025 AHA/ACC high blood pressure guideline keeps the 2017 categories and the <130/80 goal and encourages an SBP below 120 mm Hg when tolerated in high-risk patients.",
   "tags": [
    "Hypertension",
    "SPRINT",
@@ -1033,7 +1033,7 @@
   "design": "Single-arm prospective cohort",
   "endpoint": "Percent change in anti-Xa activity; hemostatic efficacy at 12h",
   "finding": "Reduced anti-Xa activity 92% (apixaban) and 97% (rivaroxaban) within 2 minutes. Good/excellent hemostasis in 82% at 12 hours.",
-  "impact": "Only approved specific reversal for apixaban and rivaroxaban. High dose for rivaroxaban >8h or apixaban; low dose otherwise. Thrombotic risk ~10% in first 30 days.",
+  "impact": "Only approved specific reversal for apixaban and rivaroxaban. High dose for rivaroxaban >8h or apixaban; low dose otherwise. Thrombotic risk ~10% in first 30 days. Updated after the 2024 course: andexanet alfa, brand Andexxa, was withdrawn from the US market in December 2025 after the FDA concluded its thromboembolic risks outweigh its benefits; 4F-PCC is now the US option for life-threatening apixaban or rivaroxaban bleeding.",
   "tags": [
    "Reversal",
    "Andexanet",
@@ -1098,7 +1098,7 @@
   "design": "RCT, double-blind, placebo-controlled",
   "endpoint": "Kidney failure, eGFR decline ≥40%, renal death; CV composite",
   "finding": "Finerenone reduced primary kidney composite 18% (HR 0.82, 95% CI 0.73–0.93) and CV composite 14% vs placebo in T2DM CKD.",
-  "impact": "Established finerenone (nonsteroidal MRA) as 5th pillar for diabetic CKD on top of ACEi/ARB, SGLT2i, GLP-1. Less hyperkalemia than spironolactone.",
+  "impact": "Established finerenone (nonsteroidal MRA) as 5th pillar for diabetic CKD on top of ACEi/ARB, SGLT2i, GLP-1. Less hyperkalemia than spironolactone. Updated after the 2024 course: in July 2025 the FDA approved finerenone, brand Kerendia, to reduce CV death and HF events in adults with HF and LVEF of 40% or higher, based on FINEARTS-HF; it is no longer only a CKD-in-type 2 diabetes drug. Updated after the 2024 course: in January 2025 the FDA approved semaglutide, Ozempic, to reduce eGFR decline, kidney failure, and CV death in T2D with CKD based on FLOW, making it the first GLP-1 RA with a kidney outcome indication alongside SGLT2 inhibitors and finerenone.",
   "tags": [
    "CKD",
    "Diabetes",
@@ -1120,7 +1120,7 @@
   "design": "RCT, double-blind",
   "endpoint": "CV death, non-fatal MI, non-fatal stroke, HF hospitalization",
   "finding": "Finerenone reduced CV composite 13% (HR 0.87, 95% CI 0.76–0.98) vs placebo. Consistent with FIDELIO-DKD (pooled FIDELITY analysis: 14% CV risk reduction).",
-  "impact": "Together FIDELIO + FIGARO = FIDELITY: 13,026 patients confirm finerenone benefits in CV+kidney outcomes. Now included in ADA and KDIGO guidelines.",
+  "impact": "Together FIDELIO + FIGARO = FIDELITY: 13,026 patients confirm finerenone benefits in CV+kidney outcomes. Now included in ADA and KDIGO guidelines. Updated after the 2024 course: in July 2025 the FDA approved finerenone, brand Kerendia, to reduce CV death and HF events in adults with HF and LVEF of 40% or higher, based on FINEARTS-HF; it is no longer only a CKD-in-type 2 diabetes drug.",
   "tags": [
    "CKD",
    "CV outcomes",
@@ -1185,7 +1185,7 @@
   "design": "RCT, double-blind",
   "endpoint": "Death/CV event; transfusion rate; ESRD",
   "finding": "Darbepoetin targeting Hgb ~13 g/dL increased stroke risk (101 vs 53 events, HR 1.92, p<0.001) with no benefit on CV events or ESRD vs transfusion-triggered approach.",
-  "impact": "Established AGAINST targeting normal hemoglobin with ESAs. Target Hgb 10–11.5 g/dL in CKD. KDIGO: avoid Hgb >11.5 in CKD not on dialysis. Correction: ESAs for sx anemia, Hgb <10.",
+  "impact": "Established AGAINST targeting normal hemoglobin with ESAs. Target Hgb 10–11.5 g/dL in CKD. KDIGO: avoid Hgb >11.5 in CKD not on dialysis. Correction: ESAs for sx anemia, Hgb <10. Updated after the 2024 course: KDIGO 2026, published January 2026, keeps an ESA first line, adds HIF-PHIs such as daprodustat or vadadustat as alternatives for patients who prefer oral therapy or cannot use an ESA, with US approval only in dialysis, prefers IV iron in hemodialysis, and says not to use an ESA to maintain Hb ≥11.5 g/dL.",
   "tags": [
    "CKD",
    "Anemia",
@@ -1228,7 +1228,7 @@
   "design": "Systematic review + expert panel",
   "endpoint": "eGFR-based staging, drug therapy thresholds",
   "finding": "Recommend SGLT2i (empagliflozin, dapagliflozin) in all CKD eGFR ≥20 with or without T2DM. Finerenone in T2DM CKD + albuminuria despite max RAAS. ACEi/ARB first-line.",
-  "impact": "Comprehensive staging (G1-G5, A1-A3), dosing cutoffs for major drug classes, referral triggers, and CKD-mineral bone disorder management. Core BCPS reference.",
+  "impact": "Comprehensive staging (G1-G5, A1-A3), dosing cutoffs for major drug classes, referral triggers, and CKD-mineral bone disorder management. Core BCPS reference. Updated after the 2024 course: this March 2024 KDIGO guideline post-dates the book; it recommends SGLT2i at eGFR ≥20 with UACR ≥200 mg/g or HF regardless of diabetes, suggests it at eGFR 20-45 with lower albuminuria, and adds cystatin C for dosing when creatinine is unreliable.",
   "tags": [
    "Guidelines",
    "KDIGO",
@@ -1272,7 +1272,7 @@
   "design": "RCT, double-blind, 3 years",
   "endpoint": "All-cause mortality; exacerbations; health status",
   "finding": "Combination ICS/LABA reduced exacerbations 25% vs placebo. Mortality benefit did not meet pre-specified significance (p=0.052). Increased pneumonia with ICS (19.6% vs 12.3%).",
-  "impact": "Established ICS/LABA for severe COPD. ICS-associated pneumonia risk real and dose-dependent. Budesonide/formoterol associated with less pneumonia than fluticasone in some trials.",
+  "impact": "Established ICS/LABA for severe COPD. ICS-associated pneumonia risk real and dose-dependent. Budesonide/formoterol associated with less pneumonia than fluticasone in some trials. Updated after the 2024 course: GOLD 2025, released November 2024, removes ICS/LABA as an initial COPD treatment option altogether; if an ICS is indicated, it is given as LABA+LAMA+ICS.",
   "tags": [
    "COPD",
    "ICS",
@@ -1294,7 +1294,7 @@
   "design": "RCT, double-blind",
   "endpoint": "Moderate-severe exacerbations; spirometry; mortality",
   "finding": "Reduced all-cause mortality 28% vs LAMA/LABA (HR 0.72, 95% CI 0.53-0.99; p=0.042).",
-  "impact": "Triple therapy superior to dual in high-risk COPD (≥2 exacerbations/yr or ≥1 hospitalization). Now GOLD E recommendation. ICS component for eosinophils >300 cells/μL most benefit.",
+  "impact": "Triple therapy superior to dual in high-risk COPD (≥2 exacerbations/yr or ≥1 hospitalization). Now GOLD E recommendation. ICS component for eosinophils >300 cells/μL most benefit. Updated after the 2024 course: GOLD 2026, released November 2025, defines group E as ≥1 moderate or severe exacerbation in the prior year; the book uses ≥2 moderate or ≥1 leading to hospitalization.",
   "tags": [
    "COPD",
    "Triple therapy",
@@ -1316,7 +1316,7 @@
   "design": "Two RCTs, double-blind",
   "endpoint": "Exacerbation rate; OCS dose reduction",
   "finding": "MENSA: mepolizumab reduced exacerbations 47-53% vs placebo. SIRIUS: reduced OCS dose by median 50% (vs 0% placebo). Blood eos ≥150 cells/μL at start or ≥300 in prior year.",
-  "impact": "Established anti-IL-5 biologics for severe eosinophilic asthma. Threshold: blood eos ≥150 cells/μL. Monthly SQ injection. Other anti-IL-5s: reslizumab (IV), benralizumab (anti-IL-5Rα).",
+  "impact": "Established anti-IL-5 biologics for severe eosinophilic asthma. Threshold: blood eos ≥150 cells/μL. Monthly SQ injection. Other anti-IL-5s: reslizumab (IV), benralizumab (anti-IL-5Rα). Updated after the 2024 course: in May 2025 the FDA also approved mepolizumab 100 mg SC every 4 weeks as add-on maintenance for eosinophilic COPD, with a label threshold of eosinophils ≥150. Updated after the 2024 course: the FDA approved depemokimab, Exdensur, a twice-yearly SC anti-IL-5 antibody, in December 2025 as add-on maintenance for severe eosinophilic asthma in patients ≥12 years, and GINA 2026 lists it among the biologics.",
   "tags": [
    "Asthma",
    "Biologic",
@@ -1338,7 +1338,7 @@
   "design": "RCT, double-blind",
   "endpoint": "Annualized severe exacerbation rate; FEV1; OCS use",
   "finding": "reduced severe exacerbations 47.7% (eos ≥300 cells/μL subgroup: 65.8%) and improved pre-bronchodilator FEV1 by 0.14 L vs placebo (0.32 L absolute vs 0.18 L placebo at wk 12; ~0.21 L placebo-adjusted in the eos ≥300 subgroup)",
-  "impact": "Dupilumab (anti-IL-4Rα = blocks IL-4 and IL-13) approved for moderate-severe uncontrolled asthma. Also approved for OCS-dependent asthma, atopic dermatitis, CRSwNP. Q2W SQ.",
+  "impact": "Dupilumab (anti-IL-4Rα = blocks IL-4 and IL-13) approved for moderate-severe uncontrolled asthma. Also approved for OCS-dependent asthma, atopic dermatitis, CRSwNP. Q2W SQ. Updated after the 2024 course: in September 2024 the FDA also approved dupilumab 300 mg SC every 2 weeks as add-on maintenance for COPD with an eosinophilic phenotype, the first COPD biologic.",
   "tags": [
    "Asthma",
    "Biologic",
@@ -1360,7 +1360,7 @@
   "design": "Two phase III RCTs (INPULSIS-1, -2)",
   "endpoint": "Annual rate of FVC decline; acute exacerbations; survival",
   "finding": "Nintedanib reduced FVC decline 50% (−114.7 mL/yr vs −223.5 mL/yr, p<0.001). Time to first acute exacerbation improved in INPULSIS-2. Main AE: diarrhea 62%.",
-  "impact": "One of two approved antifibrotic agents for IPF (other: pirfenidone). Reduces disease progression but does not cure IPF. Liver function monitoring required. Start early in course.",
+  "impact": "One of two approved antifibrotic agents for IPF (other: pirfenidone). Reduces disease progression but does not cure IPF. Liver function monitoring required. Start early in course. Updated after the 2024 course: the FDA approved nerandomilast, Jascayd, an oral PDE4B inhibitor given 18 mg BID, for IPF in October 2025, so there are now three antifibrotics: pirfenidone, nintedanib, and nerandomilast.",
   "tags": [
    "IPF",
    "Nintedanib",
@@ -1381,7 +1381,7 @@
   "design": "Annual update",
   "endpoint": "Symptom-based ABCD assessment + exacerbation history",
   "finding": "GOLD A → a bronchodilator (short- or long-acting); GOLD B → LABA+LAMA dual bronchodilator; assessment framework is ABE (not ABCD)",
-  "impact": "Foundation of COPD pharmacotherapy decisions on BCPS. GOLD B changed: ALL Grade B should start dual bronchodilator. ICS only in E group or eos >300. Step-up if uncontrolled.",
+  "impact": "Foundation of COPD pharmacotherapy decisions on BCPS. GOLD B changed: ALL Grade B should start dual bronchodilator. ICS only in E group or eos >300. Step-up if uncontrolled. Updated after the 2024 course: GOLD 2025, released November 2024, adds ensifentrine for persistent dyspnea on LABA+LAMA, adds dupilumab for patients still exacerbating on LABA+LAMA+ICS with chronic bronchitis and eosinophils ≥300, and drops ICS/LABA as an initial COPD option. Updated after the 2024 course: GOLD 2026, released November 2025, places a patient in group E after even one moderate or severe exacerbation, versus ≥2 moderate or ≥1 hospitalized in the book, and adds mepolizumab after dupilumab as a biologic for eosinophilic COPD on triple therapy. It also lowers the RSV vaccine age for COPD patients to ≥50.",
   "tags": [
    "Guidelines",
    "GOLD",
@@ -1404,7 +1404,7 @@
   "design": "Expert panel + systematic review",
   "endpoint": "Treatment recommendations by severity and site of care",
   "finding": "Outpatient: amoxicillin 1g TID (healthy) or combo beta-lactam + macrolide (comorbidities). Inpatient: beta-lactam + macrolide or respiratory FQ. ICU: beta-lactam + azithromycin + antipseudomonal if risk.",
-  "impact": "Dropped requirement for blood cultures in non-ICU CAP. De-emphasized atypical coverage in outpatient low-risk. Duration: 5 days if clinical improvement (not 7-10). Core BCPS reference.",
+  "impact": "Dropped requirement for blood cultures in non-ICU CAP. De-emphasized atypical coverage in outpatient low-risk. Duration: 5 days if clinical improvement (not 7-10). Core BCPS reference. Updated after the 2024 course: the 2025 ATS CAP guideline update conditionally recommends systemic corticosteroids such as hydrocortisone for inpatients with severe CAP, not influenza pneumonia, and recommends against them in nonsevere CAP; the 2019 ATS/IDSA guideline did not recommend routine steroids, and IDSA did not endorse the update.",
   "tags": [
    "CAP",
    "Pneumonia",
@@ -1426,7 +1426,7 @@
   "design": "Systematic review + expert panel",
   "endpoint": "Cure, recurrence prevention, severity classification",
   "finding": "Fidaxomicin preferred over vancomycin for initial nonsevere CDI (10-day course). Vancomycin acceptable if cost prohibits fidaxomicin. Bezlotoxumab for first recurrence prevention in high-risk. AVOID metronidazole for most CDI.",
-  "impact": "Bezlotoxumab was a monoclonal antibody option for recurrence prevention but was discontinued by Merck (effective Jan 31, 2025) and is no longer available in the US; FDA-approved live biotherapeutics (fecal microbiota products Rebyota, Vowst) are now used for recurrent CDI prevention.",
+  "impact": "Bezlotoxumab was a monoclonal antibody option for recurrence prevention but was discontinued by Merck (effective Jan 31, 2025) and is no longer available in the US; FDA-approved live biotherapeutics (fecal microbiota products Rebyota, Vowst) are now used for recurrent CDI prevention. Updated after the 2024 course: bezlotoxumab, Zinplava, which the 2021 IDSA/SHEA focused update suggested for recurrence prevention, was discontinued in the US in January 2025.",
   "tags": [
    "CDI",
    "C. diff",
@@ -1470,7 +1470,7 @@
   "design": "Expert panel + meta-analyses",
   "endpoint": "Hour-1 and Hour-6 bundle; 30-day mortality",
   "finding": "1-hour bundle: blood cultures, antibiotics within 1h of sepsis recognition, 30 mL/kg crystalloid if hypoperfusion, vasopressors if MAP <65. Norepinephrine first-line vasopressor. Hydrocortisone for refractory shock.",
-  "impact": "Crystalloid resuscitation guided by dynamic measures, capillary refill time, and lactate clearance (SSC 2021 does not recommend CVP/ScvO2 as targets).",
+  "impact": "Crystalloid resuscitation guided by dynamic measures, capillary refill time, and lactate clearance (SSC 2021 does not recommend CVP/ScvO2 as targets). Updated after the 2024 course: the March 2026 Surviving Sepsis Campaign guideline replaces this 2021 version: 30 mL/kg is dosed by ideal or adjusted weight if BMI is over 30, balanced crystalloids are upgraded, albumin is limited to select cases, diuretic-led fluid removal is added, MAP 60-65 is suggested at age 65 or older, and routine vitamin C is suggested against. Updated after the 2024 course: the March 2026 Surviving Sepsis Campaign guideline keeps antibiotics within 1 hour for definite or probable sepsis and for any shock, but allows up to 3 hours of rapid assessment for possible sepsis without shock, and suggests against routine empiric antifungals.",
   "tags": [
    "Sepsis",
    "Septic shock",
@@ -1557,7 +1557,7 @@
   "design": "Multi-step effectiveness study (NIMH)",
   "endpoint": "Remission rate at each treatment step; relapse after remission",
   "finding": "Theoretical cumulative remission ~67% (original report), though independent reanalysis (Pigott et al.) estimated actual cumulative remission closer to ~35%; relapse rates high across steps.",
-  "impact": "Real-world evidence for treatment-resistant depression. Most patients do not achieve remission with first SSRI. Augmentation strategies (bupropion, lithium, thyroid) evidence-based. Try 2-3 agents before declaring TRD.",
+  "impact": "Real-world evidence for treatment-resistant depression. Most patients do not achieve remission with first SSRI. Augmentation strategies (bupropion, lithium, thyroid) evidence-based. Try 2-3 agents before declaring TRD. Updated after the 2024 course: in January 2025 the FDA approved esketamine nasal spray, Spravato, as monotherapy for treatment-resistant depression in adults; the book teaches it only with an oral antidepressant, and the REMS with in-clinic dosing and 2-hour observation is unchanged.",
   "tags": [
    "MDD",
    "SSRI",
@@ -1623,7 +1623,7 @@
   "design": "FDA REMS program",
   "endpoint": "Absolute neutrophil count (ANC) monitoring thresholds",
   "finding": "ANC weekly for first 6 months, then every 2 weeks for months 6-12, then monthly (every 4 weeks) after 12 months of continuous therapy.",
-  "impact": "Clozapine only antipsychotic with evidence for treatment-resistant schizophrenia and schizophrenia suicidality. REMS required for prescribing and dispensing. ANC monitoring mandatory. Seizure risk dose-dependent.",
+  "impact": "Clozapine only antipsychotic with evidence for treatment-resistant schizophrenia and schizophrenia suicidality. REMS required for prescribing and dispensing. ANC monitoring mandatory. Seizure risk dose-dependent. Updated after the 2024 course: the FDA stopped requiring Clozapine REMS participation in February 2025 and removed the REMS effective June 13, 2025, so enrollment and ANC reporting before dispensing are no longer required; the severe neutropenia boxed warning and the labeled ANC monitoring schedule remain.",
   "tags": [
    "Clozapine",
    "REMS",
@@ -1755,7 +1755,7 @@
   "design": "Meta-analysis + expert panel",
   "endpoint": "Eradication rates by regimen and resistance pattern",
   "finding": "Clarithromycin resistance >15%: use bismuth quadruple (PPI + bismuth + metronidazole + tetracycline) x14 days (>90% eradication). Clarithromycin triple therapy only if local resistance <15%.",
-  "impact": "Test-and-treat for H. pylori in patients <60 years without alarm features; endoscopy (EGD) if ≥60 years or alarm symptoms.",
+  "impact": "Test-and-treat for H. pylori in patients <60 years without alarm features; endoscopy (EGD) if ≥60 years or alarm symptoms. Updated after the 2024 course: the September 2024 ACG H. pylori guideline replaces the 2017 version: optimized 14-day bismuth quadruple therapy is the only strong first-line choice, clarithromycin triple therapy is used only with proven susceptibility, and test of cure is advised for everyone treated.",
   "tags": [
    "H. pylori",
    "PPI",
@@ -1932,7 +1932,7 @@
   "design": "Expert panel consensus",
   "endpoint": "Medications to avoid or use with caution in ≥65 years",
   "finding": "Avoid: first-generation antihistamines (diphenhydramine), TCAs, benzodiazepines, nonbenzodiazepine hypnotics (Z-drugs), anticholinergic drugs, meperidine, PPIs (>8 weeks), sliding-scale insulin. With caution: SNRIs, anticonvulsants.",
-  "impact": "Anticholinergic burden linked to delirium, falls, cognitive decline. Benzodiazepines: 2-3x fall risk. NSAIDs: GI/renal/CV risk. Alternative: acetaminophen for pain. Deprescribing as important as prescribing.",
+  "impact": "Anticholinergic burden linked to delirium, falls, cognitive decline. Benzodiazepines: 2-3x fall risk. NSAIDs: GI/renal/CV risk. Alternative: acetaminophen for pain. Deprescribing as important as prescribing. Updated after the 2024 course: in July 2025 the AGS published an Alternatives List with safer drug and nondrug options for selected Beers medications; the 2023 Beers Criteria themselves remain the current edition. Updated after the 2024 course: the March 2025 ASAM-led joint guideline on benzodiazepine tapering, published in JGIM in June 2025, advises slow patient-centered tapers that usually start with 5-10% dose reductions every 2-4 weeks and generally do not exceed 25% every 2 weeks; older adults on long-term benzodiazepines are prime candidates.",
   "tags": [
    "Geriatrics",
    "Beers Criteria",
@@ -2020,7 +2020,7 @@
   "design": "Systematic review + expert consensus",
   "endpoint": "Appropriate use, dosing, monitoring, and tapering of opioids for chronic pain",
   "finding": "The 2022 update removed fixed dosage thresholds/ceilings that the 2016 guideline had set; it advises caution and careful reassessment when considering doses in the ≥50 MME/day range and greater caution at higher doses, but emphasizes individualized clinical judgment rather than a hard 90 MME limit.",
-  "impact": "Co-prescribe naloxone for ≥50 MME/day or concurrent benzodiazepine use. Buprenorphine preferred for chronic pain with opioid use disorder. Taper no faster than 10% per week. Avoid abrupt discontinuation.",
+  "impact": "Co-prescribe naloxone for ≥50 MME/day or concurrent benzodiazepine use. Buprenorphine preferred for chronic pain with opioid use disorder. Taper no faster than 10% per week. Avoid abrupt discontinuation. Updated after the 2024 course: July 2025 FDA class-wide opioid labeling stresses that risk rises with higher doses and persists over time, limits ER/LA opioids to when IR opioids are inadequate, and strengthens warnings on abrupt discontinuation and on co-use with gabapentinoids, benzodiazepines and other CNS depressants.",
   "tags": [
    "Opioids",
    "Chronic pain",
@@ -2043,7 +2043,7 @@
   "design": "Federal guidelines + meta-analyses",
   "endpoint": "Reduction in illicit opioid use; retention in treatment; overdose mortality",
   "finding": "Buprenorphine/naloxone reduces opioid use and mortality 50-75%. Methadone equivalent efficacy. Start buprenorphine in mild-moderate withdrawal (COWS ≥8-12). No upper dose limit established if tolerated.",
-  "impact": "MOUD (medication for OUD) dramatically reduces overdose deaths. X-waiver eliminated in US (2023) — any DEA-licensed provider can prescribe buprenorphine. Naloxone add-on prevents IV misuse. Precipitated withdrawal risk if used too early.",
+  "impact": "MOUD (medication for OUD) dramatically reduces overdose deaths. X-waiver eliminated in US (2023) — any DEA-licensed provider can prescribe buprenorphine. Naloxone add-on prevents IV misuse. Precipitated withdrawal risk if used too early. Updated after the 2024 course: February 2025 Sublocade labeling allows starting the monthly buprenorphine injection after a single tolerated transmucosal buprenorphine dose and 1 hour of observation, instead of at least 7 days of transmucosal therapy, and adds thigh, buttock and upper-arm injection sites. Updated after the 2024 course: a January 2025 DEA final rule allows buprenorphine for OUD to be started by telemedicine, including audio-only, for an initial 6-month supply, and the broader telemedicine controlled-substance flexibilities run through December 31, 2026.",
   "tags": [
    "OUD",
    "Buprenorphine",
@@ -2156,7 +2156,7 @@
   "design": "Expert consensus + systematic review of RCT reporting",
   "endpoint": "Checklist for transparent reporting of RCTs",
   "finding": "25-item checklist for reporting RCTs: title/abstract, intro, methods (randomization, blinding, allocation concealment), results (participant flow, baseline, outcomes), discussion.",
-  "impact": "CONSORT: gold standard for evaluating RCT reporting quality. Look for: proper randomization, concealment, ITT analysis, blinding. Absent concealment → overestimation of treatment effect (up to 40%). Key BCPS biostatistics concept.",
+  "impact": "CONSORT: gold standard for evaluating RCT reporting quality. Look for: proper randomization, concealment, ITT analysis, blinding. Absent concealment → overestimation of treatment effect (up to 40%). Key BCPS biostatistics concept. Updated after the 2024 course: CONSORT 2025, published April 2025, replaces CONSORT 2010 with a 30-item checklist that adds an open science section on registration, protocol and analysis plan access, and data sharing, and integrates harms reporting; the book teaches the 25-item 2010 checklist.",
   "tags": [
    "RCT",
    "CONSORT",

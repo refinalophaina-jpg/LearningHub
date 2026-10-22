@@ -2,7 +2,7 @@
  {
   "topic": "Cardiology",
   "front": "HFrEF 4 pillars of mortality-reducing therapy",
-  "back": "1) ACEi/ARB or ARNI (sacubitril/valsartan preferred)\n2) Beta-blocker (carvedilol, metoprolol succinate, bisoprolol ONLY)\n3) MRA (spironolactone or eplerenone)\n4) SGLT2i (dapagliflozin or empagliflozin)\nAll 4 reduce mortality in HFrEF."
+  "back": "1) ACEi/ARB or ARNI (sacubitril/valsartan preferred)\n2) Beta-blocker (carvedilol, metoprolol succinate, bisoprolol ONLY)\n3) MRA (spironolactone or eplerenone)\n4) SGLT2i (dapagliflozin or empagliflozin)\nAll 4 reduce mortality in HFrEF.\nUpdated after the 2024 course: the March 2024 ACC HFrEF expert consensus decision pathway names ARNI, beta-blocker, SGLT2 inhibitor and MRA as the four pillars, prefers starting sacubitril/valsartan over an ACE inhibitor or ARB, and advises starting all four quickly in no fixed order, reaching target doses within about 3 months."
  },
  {
   "topic": "Cardiology",
@@ -17,7 +17,7 @@
  {
   "topic": "Cardiology",
   "front": "P2Y12 inhibitor comparison",
-  "back": "Clopidogrel: prodrug (CYP2C19), variable response, cheapest\nTicagrelor: reversible, faster onset, preferred in ACS, causes dyspnea (~14%)\nPrasugrel: most potent; CONTRAINDICATED in prior stroke/TIA; generally not recommended age >=75; reduce to 5 mg daily if wt <60kg\nTicagrelor (or prasugrel if PCI) preferred over clopidogrel for ACS; clopidogrel used when others contraindicated"
+  "back": "Clopidogrel: prodrug (CYP2C19), variable response, cheapest\nTicagrelor: reversible, faster onset, preferred in ACS, causes dyspnea (~14%)\nPrasugrel: most potent; CONTRAINDICATED in prior stroke/TIA; generally not recommended age >=75; reduce to 5 mg daily if wt <60kg\nTicagrelor (or prasugrel if PCI) preferred over clopidogrel for ACS; clopidogrel used when others contraindicated\nUpdated after the 2024 course: the February 2025 ACC/AHA/ACEP/NAEMSP/SCAI ACS guideline prefers ticagrelor or prasugrel over clopidogrel for ACS with PCI; clopidogrel stays the preferred P2Y12 inhibitor when oral anticoagulation is needed, with aspirin stopped 1-4 weeks after PCI."
  },
  {
   "topic": "Cardiology",
@@ -32,12 +32,12 @@
  {
   "topic": "Cardiology",
   "front": "Warfarin reversal by clinical scenario",
-  "back": "INR 4.5-10, no bleeding: Hold 1-2 doses; routine vitamin K NOT recommended\nINR >10, no bleeding: Hold + vitamin K 2.5-5mg PO\nMinor bleeding: Vitamin K 2.5-5mg PO\nMajor bleeding: 4F-PCC + IV Vitamin K 10mg\nDabigatran reversal: Idarucizumab (Praxbind) 5g IV\nFactor Xa inhibitor reversal: Andexanet alfa (Andexxa)"
+  "back": "INR 4.5-10, no bleeding: Hold 1-2 doses; routine vitamin K NOT recommended\nINR >10, no bleeding: Hold + vitamin K 2.5-5mg PO\nMinor bleeding: Vitamin K 2.5-5mg PO\nMajor bleeding: 4F-PCC + IV Vitamin K 10mg\nDabigatran reversal: Idarucizumab (Praxbind) 5g IV\nFactor Xa inhibitor reversal: Andexanet alfa (Andexxa)\nUpdated after the 2024 course: andexanet alfa, brand Andexxa, was withdrawn from the US market in December 2025 after the FDA concluded its thromboembolic risks outweigh its benefits; 4F-PCC is now the US option for life-threatening apixaban or rivaroxaban bleeding."
  },
  {
   "topic": "Cardiology",
   "front": "Statin intensity classification",
-  "back": "High-intensity (LDL-C down >=50%): atorvastatin 40-80, rosuvastatin 20-40\nModerate (30-49%): e.g., atorvastatin 10-20, rosuvastatin 5-10, simvastatin 20-40, pravastatin 40-80\nLow (<30%): e.g., simvastatin 10, pravastatin 10-20\nHigh-intensity indicated: clinical ASCVD, LDL>=190; DM age 40-75 = moderate-intensity by default, escalate to high-intensity if 10-yr ASCVD risk >=20% or multiple risk factors"
+  "back": "High-intensity (LDL-C down >=50%): atorvastatin 40-80, rosuvastatin 20-40\nModerate (30-49%): e.g., atorvastatin 10-20, rosuvastatin 5-10, simvastatin 20-40, pravastatin 40-80\nLow (<30%): e.g., simvastatin 10, pravastatin 10-20\nHigh-intensity indicated: clinical ASCVD, LDL>=190; DM age 40-75 = moderate-intensity by default, escalate to high-intensity if 10-yr ASCVD risk >=20% or multiple risk factors\nUpdated after the 2024 course: the March 2026 ACC/AHA dyslipidemia guideline replaces the 2018 guideline with LDL-C goals of below 55 mg/dL for very high-risk ASCVD, below 70 for other ASCVD and high-risk primary prevention, and below 100 for borderline or intermediate risk, using PREVENT for risk and one-time Lp(a) testing in all adults."
  },
  {
   "topic": "Cardiology",
@@ -47,17 +47,17 @@
  {
   "topic": "Cardiology",
   "front": "Vasopressor hierarchy in septic shock",
-  "back": "1st line: Norepinephrine (alpha1 > beta1)\n2nd line: Add vasopressin 0.03-0.04 units/min (NE-sparing)\n3rd line: Epinephrine (causes hyperglycemia + lactic acidosis)\nDopamine: only in highly selected pts (low tachyarrhythmia risk, bradycardia) -- more arrhythmias vs NE (SOAP II)\nInotrope for low CO: Dobutamine\nPure alpha: Phenylephrine (avoid in low cardiac output)"
+  "back": "1st line: Norepinephrine (alpha1 > beta1)\n2nd line: Add vasopressin 0.03-0.04 units/min (NE-sparing)\n3rd line: Epinephrine (causes hyperglycemia + lactic acidosis)\nDopamine: only in highly selected pts (low tachyarrhythmia risk, bradycardia) -- more arrhythmias vs NE (SOAP II)\nInotrope for low CO: Dobutamine\nPure alpha: Phenylephrine (avoid in low cardiac output)\nUpdated after the 2024 course: the March 2026 Surviving Sepsis Campaign guideline keeps norepinephrine first line, makes vasopressin or angiotensin II the usual second agent, and strengthens the role of epinephrine."
  },
  {
   "topic": "Cardiology",
   "front": "HFpEF vs HFrEF treatment differences",
-  "back": "HFrEF (EF<=40%): ACEi/ARB/ARNI + BB + MRA + SGLT2i = mortality benefit\nHFpEF (EF>=50%): SGLT2i primary Rx (EMPEROR-Preserved, DELIVER); diuretics for congestion; no proven mortality benefit from ACEi/BB/MRA\nBoth benefit from: SGLT2i, diuretics for congestion\nAvoid in HFrEF: verapamil/diltiazem (negative inotropes), NSAIDs, thiazolidinediones"
+  "back": "HFrEF (EF<=40%): ACEi/ARB/ARNI + BB + MRA + SGLT2i = mortality benefit\nHFpEF (EF>=50%): SGLT2i primary Rx (EMPEROR-Preserved, DELIVER); diuretics for congestion; no proven mortality benefit from ACEi/BB/MRA\nBoth benefit from: SGLT2i, diuretics for congestion\nAvoid in HFrEF: verapamil/diltiazem (negative inotropes), NSAIDs, thiazolidinediones\nUpdated after the 2024 course: in July 2025 the FDA approved finerenone, brand Kerendia, to reduce CV death and HF events in adults with HF and LVEF of 40% or higher, based on FINEARTS-HF; it is no longer only a CKD-in-type 2 diabetes drug.\nUpdated after the 2024 course: the July 2026 ACC HFpEF expert consensus decision pathway makes an SGLT2 inhibitor plus finerenone the foundational therapy, prefers finerenone over spironolactone, adds semaglutide or tirzepatide for BMI 30 or higher, and discourages routine beta-blockers without angina or AF."
  },
  {
   "topic": "Cardiology",
   "front": "ACC/AHA HTN first-line agents by indication",
-  "back": "CKD + proteinuria: ACEi or ARB\nDM: any first-line class (thiazide, ACEi/ARB, CCB); ACEi or ARB if albuminuria\nHF: ACEi/ARB/ARNI + BB + diuretics\nAfter MI: ACEi/ARB + BB\nBlack patients without compelling indications: thiazide or CCB (ACEi less effective as monotherapy)\nGoal: <130/80 for most adults per 2017 ACC/AHA"
+  "back": "CKD + proteinuria: ACEi or ARB\nDM: any first-line class (thiazide, ACEi/ARB, CCB); ACEi or ARB if albuminuria\nHF: ACEi/ARB/ARNI + BB + diuretics\nAfter MI: ACEi/ARB + BB\nBlack patients without compelling indications: thiazide or CCB (ACEi less effective as monotherapy)\nGoal: <130/80 for most adults per 2017 ACC/AHA\nUpdated after the 2024 course: the August 2025 AHA/ACC high blood pressure guideline keeps the 2017 categories and <130/80 goal, but starts drugs in stage 1 using a PREVENT 10-year CVD risk of 7.5% or higher instead of the Pooled Cohort Equations and prefers a single-pill combination for stage 2."
  },
  {
   "topic": "Cardiology",
@@ -72,7 +72,7 @@
  {
   "topic": "Cardiology",
   "front": "DAPT duration after coronary stent placement",
-  "back": "ACS (STEMI/NSTEMI) + DES: minimum 12 months (aspirin + ticagrelor/clopidogrel/prasugrel)\nStable CAD + DES: 6 months minimum\nStable CAD + BMS: 1 month minimum\nHigh bleeding risk: can shorten to 3-6 months with newer DES generation\nAfter DAPT: aspirin indefinitely\nTicagrelor extension to 3 years (PEGASUS): prior MI + high ischemic risk"
+  "back": "ACS (STEMI/NSTEMI) + DES: minimum 12 months (aspirin + ticagrelor/clopidogrel/prasugrel)\nStable CAD + DES: 6 months minimum\nStable CAD + BMS: 1 month minimum\nHigh bleeding risk: can shorten to 3-6 months with newer DES generation\nAfter DAPT: aspirin indefinitely\nTicagrelor extension to 3 years (PEGASUS): prior MI + high ischemic risk\nUpdated after the 2024 course: the February 2025 ACC/AHA/ACEP/NAEMSP/SCAI ACS guideline keeps at least 12 months of DAPT as the default but endorses stopping aspirin and continuing ticagrelor monotherapy after at least 1 month of tolerated DAPT to reduce bleeding."
  },
  {
   "topic": "Anticoagulation",
@@ -92,17 +92,17 @@
  {
   "topic": "Anticoagulation",
   "front": "DOAC mechanisms and key properties",
-  "back": "Dabigatran: direct thrombin inhibitor; 80% renal; specific reversal agent is idarucizumab (Xa inhibitors have their own specific agent, andexanet alfa); requires capsule form integrity"
+  "back": "Dabigatran: direct thrombin inhibitor; 80% renal; specific reversal agent is idarucizumab (Xa inhibitors have their own specific agent, andexanet alfa); requires capsule form integrity\nUpdated after the 2024 course: andexanet alfa, brand Andexxa, was withdrawn from the US market in December 2025 after an FDA safety communication on thromboembolic risk; 4F-PCC is now the US option for factor Xa inhibitor bleeding, and idarucizumab remains the answer for dabigatran."
  },
  {
   "topic": "Infectious Diseases",
   "front": "CAP treatment by setting (ATS/IDSA 2019)",
-  "back": "Outpatient (no comorbidities): Amoxicillin 1g TID OR doxycycline 100mg BID\nOutpatient (comorbidities): Amox-clav + macrolide OR resp FQ\nInpatient non-ICU: Beta-lactam + macrolide OR respiratory FQ\nICU: Beta-lactam + azithromycin OR beta-lactam + FQ; add anti-pseudomonal if risk factors; add vancomycin if MRSA risk"
+  "back": "Outpatient (no comorbidities): Amoxicillin 1g TID OR doxycycline 100mg BID\nOutpatient (comorbidities): Amox-clav + macrolide OR resp FQ\nInpatient non-ICU: Beta-lactam + macrolide OR respiratory FQ\nICU: Beta-lactam + azithromycin OR beta-lactam + FQ; add anti-pseudomonal if risk factors; add vancomycin if MRSA risk\nUpdated after the 2024 course: the 2025 ATS CAP guideline update conditionally recommends systemic corticosteroids such as hydrocortisone for inpatients with severe CAP, not influenza pneumonia, and recommends against them in nonsevere CAP; the 2019 ATS/IDSA guideline did not recommend routine steroids, and IDSA did not endorse the update."
  },
  {
   "topic": "Infectious Diseases",
   "front": "Sepsis-3 definitions and qSOFA",
-  "back": "Sepsis: organ dysfunction (SOFA >=2) from infection\nSeptic shock: vasopressors needed + lactate >2 despite fluids\nqSOFA (prognostic; SSC 2021 recommends AGAINST using it alone as a screening tool): altered mentation + RR >=22 + SBP <=100 (2/3 = high risk)\n1-hour bundle: lactate, cultures, abx, 30mL/kg fluids, vasopressors if needed"
+  "back": "Sepsis: organ dysfunction (SOFA >=2) from infection\nSeptic shock: vasopressors needed + lactate >2 despite fluids\nqSOFA (prognostic; SSC 2021 recommends AGAINST using it alone as a screening tool): altered mentation + RR >=22 + SBP <=100 (2/3 = high risk)\n1-hour bundle: lactate, cultures, abx, 30mL/kg fluids, vasopressors if needed\nUpdated after the 2024 course: the March 2026 Surviving Sepsis Campaign guideline keeps 30 mL/kg crystalloid but doses it by ideal or adjusted body weight when BMI is over 30, prefers balanced crystalloids except in TBI, and suggests diuretic-led fluid removal after stabilization.\nUpdated after the 2024 course: the March 2026 Surviving Sepsis Campaign guideline keeps antibiotics within 1 hour for definite or probable sepsis and for any shock, but allows up to 3 hours of rapid assessment for possible sepsis without shock, and suggests against routine empiric antifungals."
  },
  {
   "topic": "Infectious Diseases",
@@ -187,17 +187,17 @@
  {
   "topic": "Endocrine",
   "front": "ADA diabetes drug selection by comorbidity",
-  "back": "ASCVD or high CV risk: GLP-1 RA (semaglutide, liraglutide) OR SGLT2i with CV benefit\nHF: SGLT2i (dapagliflozin, empagliflozin)\nCKD with albuminuria: SGLT2i + finerenone\nWeight loss priority: GLP-1 RA (semaglutide most) or SGLT2i\nHypoglycemia risk: avoid sulfonylureas; use DPP-4i, GLP-1 RA, SGLT2i\nCost-sensitive: metformin + sulfonylurea"
+  "back": "ASCVD or high CV risk: GLP-1 RA (semaglutide, liraglutide) OR SGLT2i with CV benefit\nHF: SGLT2i (dapagliflozin, empagliflozin)\nCKD with albuminuria: SGLT2i + finerenone\nWeight loss priority: GLP-1 RA (semaglutide most) or SGLT2i\nHypoglycemia risk: avoid sulfonylureas; use DPP-4i, GLP-1 RA, SGLT2i\nCost-sensitive: metformin + sulfonylurea\nUpdated after the 2024 course: the ADA Standards of Care 2025, released December 2024, add a GLP-1 RA for T2D with symptomatic HFpEF and obesity, an SGLT2i or GLP-1 RA for T2D with CKD, and a GLP-1 RA or dual GIP/GLP-1 RA for T2D with MASLD/MASH.\nUpdated after the 2024 course: the ADA Standards of Care 2026, released December 2025, recommend a GLP-1 RA for T2D with ASCVD or CKD, including eGFR below 30, and CGM from diagnosis for anyone on insulin or other hypoglycemia-causing therapy.\nUpdated after the 2024 course: in January 2025 the FDA approved semaglutide, Ozempic, to reduce eGFR decline, kidney failure, and CV death in T2D with CKD based on FLOW, making it the first GLP-1 RA with a kidney outcome indication alongside SGLT2 inhibitors and finerenone."
  },
  {
   "topic": "Endocrine",
   "front": "SGLT2 inhibitor adverse effects",
-  "back": "Volume depletion + orthostatic hypotension; euglycemic DKA risk perioperatively -- per FDA, discontinue at least 3 days (canagliflozin/dapagliflozin/empagliflozin) or 4 days (ertugliflozin) before scheduled surgery"
+  "back": "Volume depletion + orthostatic hypotension; euglycemic DKA risk perioperatively -- stop 3–5 days before surgery; labels say at least 3 days (canagliflozin/dapagliflozin/empagliflozin) or 4 days (ertugliflozin) before scheduled surgery\nUpdated after the 2024 course: the September 2024 ACC/AHA perioperative guideline advises holding SGLT2 inhibitors 3–4 days before surgery."
  },
  {
   "topic": "Endocrine",
   "front": "GLP-1 receptor agonist comparison",
-  "back": "CV benefit proven: liraglutide (LEADER), semaglutide SC (SUSTAIN-6), dulaglutide (REWIND), albiglutide\nWeight loss: semaglutide > liraglutide > dulaglutide > exenatide\nFrequency: exenatide BID; liraglutide daily; semaglutide/dulaglutide weekly\nAdverse effects: nausea/vomiting (most common; dose-related; titrate slowly), pancreatitis (rare)\nContraindications: personal/family history MTC or MEN2; pregnancy"
+  "back": "CV benefit proven: liraglutide (LEADER), semaglutide SC (SUSTAIN-6), dulaglutide (REWIND), albiglutide\nWeight loss: semaglutide > liraglutide > dulaglutide > exenatide\nFrequency: exenatide BID; liraglutide daily; semaglutide/dulaglutide weekly\nAdverse effects: nausea/vomiting (most common; dose-related; titrate slowly), pancreatitis (rare)\nContraindications: personal/family history MTC or MEN2; pregnancy\nUpdated after the 2024 course: in October 2025 the FDA approved oral semaglutide, brand Rybelsus, 7 or 14 mg to reduce MACE in adults with type 2 diabetes at high CV risk, based on SOUL, making it the first oral GLP-1 RA with a CV outcomes indication.\nUpdated after the 2024 course: in January 2025 the FDA approved semaglutide, Ozempic, to reduce eGFR decline, kidney failure, and CV death in T2D with CKD based on FLOW, making it the first GLP-1 RA with a kidney outcome indication alongside SGLT2 inhibitors and finerenone."
  },
  {
   "topic": "Endocrine",
@@ -217,7 +217,7 @@
  {
   "topic": "Endocrine",
   "front": "Corticosteroid stress dosing for surgery",
-  "back": "Minor stress (local anesthesia, minor procedure): double home dose on day of procedure only\nModerate stress (knee replacement, open cholecystectomy): hydrocortisone 50mg IV at induction, then 25mg IV q8h x 24h, then home dose (ESE/ES 2024: any surgery under general/regional anesthesia gets the major-stress regimen)\nMajor stress (cardiac surgery, septic shock): hydrocortisone 100mg IV at induction/immediately, then 200mg/24h infusion (or 50mg IV q6h); taper (double oral dose x 48h) when stable\nNote: do NOT delay stress dosing for testing in suspected adrenal crisis"
+  "back": "Minor stress (local anesthesia, minor procedure): double home dose on day of procedure only\nModerate stress (knee replacement, open cholecystectomy): hydrocortisone 50mg IV at induction, then 25mg IV q8h x 24h, then home dose (ESE/ES 2024: any surgery under general/regional anesthesia gets the major-stress regimen)\nMajor stress (cardiac surgery, septic shock): hydrocortisone 100mg IV at induction/immediately, then 200mg/24h infusion (or 50mg IV q6h); taper (double oral dose x 48h) when stable\nNote: do NOT delay stress dosing for testing in suspected adrenal crisis\nUpdated after the 2024 course: the May 2024 ESE/Endocrine Society guideline on glucocorticoid-induced adrenal insufficiency gives the major-stress regimen of hydrocortisone 100 mg IV at induction then 200 mg per 24 hours for any surgery under general or regional anesthesia; the tiered regimen above is the book teaching."
  },
  {
   "topic": "Endocrine",
@@ -252,12 +252,12 @@
  {
   "topic": "Pulmonology",
   "front": "Asthma stepwise therapy",
-  "back": "Step 1: SABA PRN\nStep 2: Daily low-dose ICS + SABA PRN (or PRN concomitant ICS + SABA)\nStep 3: Low-dose ICS-formoterol SMART (preferred); alt low-dose ICS + LABA or medium-dose ICS\nStep 4: Medium-dose ICS-formoterol SMART (preferred); alt medium-dose ICS + LABA\nStep 5: Medium-high dose ICS-LABA + LAMA; consider biologics\nStep 6: High-dose ICS-LABA + oral corticosteroids; consider biologics\nLABA ALONE contraindicated in asthma (increased asthma-related mortality risk)"
+  "back": "Step 1: SABA PRN\nStep 2: Daily low-dose ICS + SABA PRN (or PRN concomitant ICS + SABA)\nStep 3: Low-dose ICS-formoterol SMART (preferred); alt low-dose ICS + LABA or medium-dose ICS\nStep 4: Medium-dose ICS-formoterol SMART (preferred); alt medium-dose ICS + LABA\nStep 5: Medium-high dose ICS-LABA + LAMA; consider biologics\nStep 6: High-dose ICS-LABA + oral corticosteroids; consider biologics\nLABA ALONE contraindicated in asthma (increased asthma-related mortality risk)\nUpdated after the 2024 course: GINA 2025, released May 2025, limits high-dose ICS-LABA to 3-6 months and makes Track 2 Step 4 medium-dose rather than medium-high-dose ICS-LABA; NAEPP steps are unchanged.\nUpdated after the 2024 course: GINA 2026, released May 2026, drops SABA-alone treatment at every step for ages ≥6; if ICS-formoterol is not used, the reliever is as-needed ICS-SABA such as albuterol-budesonide. The book and NAEPP 2020 still list SABA PRN at Step 1."
  },
  {
   "topic": "Pulmonology",
   "front": "COPD GOLD groups and initial treatment",
-  "back": "Group A: a bronchodilator (long-acting preferred unless symptoms very occasional)\nGroup B: LAMA + LABA (single inhaler preferred)\nGroup E: LAMA + LABA; consider adding ICS if eos >=300 (follow-up: add ICS if exacerbations on LABA+LAMA and eos >=100)\nAdd roflumilast (PDE4 inhibitor) for FEV1 <50% + chronic bronchitis + >=2 exacerbations\nICS monotherapy NOT appropriate for COPD"
+  "back": "Group A: a bronchodilator (long-acting preferred unless symptoms very occasional)\nGroup B: LAMA + LABA (single inhaler preferred)\nGroup E: LAMA + LABA; consider adding ICS if eos >=300 (follow-up: add ICS if exacerbations on LABA+LAMA and eos >=100)\nAdd roflumilast (PDE4 inhibitor) for FEV1 <50% + chronic bronchitis + >=2 exacerbations\nICS monotherapy NOT appropriate for COPD\nUpdated after the 2024 course: GOLD 2025, released November 2024, adds ensifentrine for persistent dyspnea on LABA+LAMA, adds dupilumab for patients still exacerbating on LABA+LAMA+ICS with chronic bronchitis and eosinophils ≥300, and drops ICS/LABA as an initial COPD option.\nUpdated after the 2024 course: GOLD 2026, released November 2025, places a patient in group E after even one moderate or severe exacerbation, versus ≥2 moderate or ≥1 hospitalized in the book, and adds mepolizumab after dupilumab as a biologic for eosinophilic COPD on triple therapy."
  },
  {
   "topic": "Pulmonology",
@@ -292,7 +292,7 @@
  {
   "topic": "Neurology",
   "front": "Ischemic stroke: IV tPA eligibility",
-  "back": "Window: ischemic stroke within 4.5 hours of onset (or last known well)\nKey inclusion: measurable neurologic deficit; adult patients\nKey exclusions: hemorrhage on CT, anticoagulants (INR >1.7 or DOAC), platelet <100k, glucose <50 (treat first; >400 no longer an exclusion), SBP >185/DBP >110 (treat first), intracranial/spinal surgery, significant head trauma, or ischemic stroke <3 months (major non-CNS surgery <14 days: relative)\nExtended 3-4.5h: former ECASS III exclusions (age >80, NIHSS >25, prior stroke + DM, oral anticoagulant) are no longer absolute -- AHA 2019: reasonable for age >80 and prior stroke + DM\nGoal: door-to-needle <60 minutes"
+  "back": "Window: ischemic stroke within 4.5 hours of onset (or last known well)\nKey inclusion: measurable neurologic deficit; adult patients\nKey exclusions: hemorrhage on CT, anticoagulants (INR >1.7 or DOAC), platelet <100k, glucose <50 (treat first; >400 no longer an exclusion), SBP >185/DBP >110 (treat first), intracranial/spinal surgery, significant head trauma, or ischemic stroke <3 months (major non-CNS surgery <14 days: relative)\nExtended 3-4.5h: former ECASS III exclusions (age >80, NIHSS >25, prior stroke + DM, oral anticoagulant) are no longer absolute -- AHA 2019: reasonable for age >80 and prior stroke + DM\nGoal: door-to-needle <60 minutes\nUpdated after the 2024 course: the January 2026 AHA/ASA acute ischemic stroke guideline replaces the 2019 guideline; it treats disabling deficits regardless of NIHSS, does not recommend IV thrombolysis for minor non-disabling stroke, using aspirin plus clopidogrel instead, allows thrombolysis up to 9 hours in selected imaging-mismatch patients, and accepts tenecteplase as equivalent to alteplase."
  },
  {
   "topic": "Neurology",
@@ -302,7 +302,7 @@
  {
   "topic": "Neurology",
   "front": "Parkinson disease pharmacotherapy",
-  "back": "First-line for motor symptoms: carbidopa/levodopa (most effective)\nInitial therapy in YOUNG patients (<65): dopamine agonists (pramipexole, ropinirole) to delay levodopa motor fluctuations\nLevodopa complications: wearing-off, ON-OFF fluctuations, dyskinesias (reduce dose; add amantadine for dyskinesias)\nAVOID anticholinergics in elderly (trihexyphenidyl, benztropine) -- cognitive side effects\nMAO-B inhibitors (selegiline, rasagiline): mild symptomatic benefit; possible neuroprotective effect"
+  "back": "First-line for motor symptoms: carbidopa/levodopa (most effective)\nInitial therapy in YOUNG patients (<65): dopamine agonists (pramipexole, ropinirole) to delay levodopa motor fluctuations\nLevodopa complications: wearing-off, ON-OFF fluctuations, dyskinesias (reduce dose; add amantadine for dyskinesias)\nAVOID anticholinergics in elderly (trihexyphenidyl, benztropine) -- cognitive side effects\nMAO-B inhibitors (selegiline, rasagiline): mild symptomatic benefit; possible neuroprotective effect\nCurrent FDA labeling differs: since March 2026 all carbidopa/levodopa products warn of vitamin B6 deficiency and related seizures, mainly at levodopa doses above 1,000 mg/day; check B6 at baseline and periodically and supplement if low."
  },
  {
   "topic": "Gastroenterology",
@@ -312,7 +312,7 @@
  {
   "topic": "Gastroenterology",
   "front": "IBD: Crohn vs UC treatment approach",
-  "back": "UC (mild-moderate): 5-ASA oral + rectal (mesalamine)\nUC (moderate-severe): corticosteroids (induction); azathioprine/6-MP or biologics (maintenance)\nCrohn (mild-moderate): budesonide (ileocolonic), 5-ASA NOT recommended (mesalamine ineffective; sulfasalazine only for mild colonic disease), metronidazole (perianal)\nCrohn (moderate-severe): corticosteroids, then azathioprine/6-MP + anti-TNF (infliximab, adalimumab)\nBiologics: anti-TNF, vedolizumab (gut-selective), ustekinumab (IL-12/23)\nCheck TPMT before azathioprine/6-MP"
+  "back": "UC (mild-moderate): 5-ASA oral + rectal (mesalamine)\nUC (moderate-severe): corticosteroids (induction); azathioprine/6-MP or biologics (maintenance)\nCrohn (mild-moderate): budesonide (ileocolonic), 5-ASA NOT recommended (mesalamine ineffective; sulfasalazine only for mild colonic disease), metronidazole (perianal)\nCrohn (moderate-severe): corticosteroids, then azathioprine/6-MP + anti-TNF (infliximab, adalimumab)\nBiologics: anti-TNF, vedolizumab (gut-selective), ustekinumab (IL-12/23)\nCheck TPMT before azathioprine/6-MP\nUpdated after the 2024 course: the June 2025 ACG ulcerative colitis and Crohn disease guidelines replace the 2019 and 2018 versions, position advanced therapies such as IL-23 inhibitors, JAK inhibitors and S1P modulators early for moderate-to-severe disease, and use treat-to-target goals with fecal calprotectin monitoring."
  },
  {
   "topic": "Gastroenterology",
@@ -322,12 +322,12 @@
  {
   "topic": "Geriatrics",
   "front": "Beers Criteria most important PIMs in elderly",
-  "back": "HIGH ANTICHOLINERGIC BURDEN: diphenhydramine, oxybutynin, amitriptyline, hydroxyzine, chlorpheniramine -- delirium, falls, urinary retention\nBENZODIAZEPINES (all): falls, cognitive impairment, dependence\nNSAIDs: GI bleed, AKI, fluid retention -- use acetaminophen instead\nSULFONYLUREAS (all, as first- or second-line; glyburide/glimepiride highest risk) -- prolonged hypoglycemia\nDIGOXIN >0.125mg/day: toxicity; narrow TI in elderly\nANTIPSYCHOTICS (first- AND second-gen): avoid for behavioral symptoms of dementia/delirium -- increased stroke and mortality"
+  "back": "HIGH ANTICHOLINERGIC BURDEN: diphenhydramine, oxybutynin, amitriptyline, hydroxyzine, chlorpheniramine -- delirium, falls, urinary retention\nBENZODIAZEPINES (all): falls, cognitive impairment, dependence\nNSAIDs: GI bleed, AKI, fluid retention -- use acetaminophen instead\nSULFONYLUREAS (all, as first- or second-line; glyburide/glimepiride highest risk) -- prolonged hypoglycemia\nDIGOXIN >0.125mg/day: toxicity; narrow TI in elderly\nANTIPSYCHOTICS (first- AND second-gen): avoid for behavioral symptoms of dementia/delirium -- increased stroke and mortality\nUpdated after the 2024 course: in July 2025 the AGS published an Alternatives List with safer drug and nondrug options for selected Beers medications; the 2023 Beers Criteria themselves remain the current edition."
  },
  {
   "topic": "Geriatrics",
   "front": "Pharmacologic fall prevention in elderly",
-  "back": "DEPRESCRIBE/MINIMIZE:\n- Benzodiazepines (highest risk)\n- Sedative-hypnotics (zolpidem, eszopiclone)\n- Anticholinergics\n- Antipsychotics\n- Opioids\n- Alpha-1 blockers (orthostatic hypotension)\n- Antiepileptics\nALTERNATIVES:\n- Sleep: melatonin, trazodone\n- Anxiety: SSRIs, SNRIs\nVitamin D: correct deficiency only; USPSTF recommends AGAINST routine vitamin D to prevent falls in community-dwelling older adults (2018; reaffirmed in 2024 draft)"
+  "back": "DEPRESCRIBE/MINIMIZE:\n- Benzodiazepines (highest risk)\n- Sedative-hypnotics (zolpidem, eszopiclone)\n- Anticholinergics\n- Antipsychotics\n- Opioids\n- Alpha-1 blockers (orthostatic hypotension)\n- Antiepileptics\nALTERNATIVES:\n- Sleep: melatonin, trazodone\n- Anxiety: SSRIs, SNRIs\nVitamin D: correct deficiency only; USPSTF recommends AGAINST routine vitamin D to prevent falls in community-dwelling older adults (2018; reaffirmed in 2024 draft)\nUpdated after the 2024 course: the June 2024 Endocrine Society vitamin D guideline advises against routine 25-hydroxyvitamin D testing in the general population and suggests empiric supplementation above the DRI without testing for adults older than 75.\nUpdated after the 2024 course: in July 2025 the AGS published an Alternatives List with safer drug and nondrug options for selected Beers medications; the 2023 Beers Criteria themselves remain the current edition.\nUpdated after the 2024 course: the March 2025 ASAM-led joint guideline on benzodiazepine tapering, published in JGIM in June 2025, advises slow patient-centered tapers that usually start with 5-10% dose reductions every 2-4 weeks and generally do not exceed 25% every 2 weeks; do not stop abruptly in an older adult on long-term use."
  },
  {
   "topic": "Biostatistics",
@@ -397,7 +397,7 @@
  {
   "topic": "Infectious Diseases",
   "front": "Common UTI pathogens and treatment",
-  "back": "Most common: E. coli (80%), Klebsiella, Staphylococcus saprophyticus (young women)\nUncomplicated UTI: nitrofurantoin 100mg ER BID x 5 days OR TMP-SMX DS BID x 3 days\nAVOID: fluoroquinolones for uncomplicated (resistance stewardship)\nComplicated UTI/pyelonephritis: FQ (cipro/levo) x 5-7 days OR ceftriaxone IV\nCatheter-associated UTI (CAUTI): treat only if symptomatic; remove/replace catheter; avoid prophylactic antibiotics"
+  "back": "Most common: E. coli (80%), Klebsiella, Staphylococcus saprophyticus (young women)\nUncomplicated UTI: nitrofurantoin 100mg ER BID x 5 days OR TMP-SMX DS BID x 3 days\nAVOID: fluoroquinolones for uncomplicated (resistance stewardship)\nComplicated UTI/pyelonephritis: FQ (cipro/levo) x 5-7 days OR ceftriaxone IV\nCatheter-associated UTI (CAUTI): treat only if symptomatic; remove/replace catheter; avoid prophylactic antibiotics\nUpdated after the 2024 course: the July 2025 IDSA complicated UTI guideline recommends about 7 total days for patients who improve, including those with gram-negative bacteremia, with early switch to an active oral agent, and 10 to 14 days only for suspected acute bacterial prostatitis.\nUpdated after the 2024 course: sulopenem etzadroxil/probenecid, Orlynvah, approved October 2024, and gepotidacin, Blujepa, approved March 2025, are new oral options for uncomplicated UTI reserved for resistant infection or limited alternatives; nitrofurantoin, TMP-SMX and fosfomycin remain first line."
  },
  {
   "topic": "Infectious Diseases",
@@ -412,7 +412,7 @@
  {
   "topic": "Infectious Diseases",
   "front": "Viral hepatitis treatment overview",
-  "back": "Hepatitis B: tenofovir alafenamide (TAF) or entecavir (first-line); pegylated interferon (finite duration, selected patients)\nGoal HBV: HBsAg loss, HBV DNA undetectable\nHepatitis C: direct-acting antivirals (DAAs) -- pan-genotypic glecaprevir/pibrentasvir 8 weeks (treatment-naive, with or without compensated cirrhosis) OR sofosbuvir/velpatasvir 12 weeks\nSVR12 = cure (>95% with DAAs)\nHep A/E: supportive only\nHIV/HBV co-infection: include HBV-active antiretrovirals (TAF/FTC or TDF/FTC) in HIV regimen"
+  "back": "Hepatitis B: tenofovir alafenamide (TAF) or entecavir (first-line); pegylated interferon (finite duration, selected patients)\nGoal HBV: HBsAg loss, HBV DNA undetectable\nHepatitis C: direct-acting antivirals (DAAs) -- pan-genotypic glecaprevir/pibrentasvir 8 weeks (treatment-naive, with or without compensated cirrhosis) OR sofosbuvir/velpatasvir 12 weeks\nSVR12 = cure (>95% with DAAs)\nHep A/E: supportive only\nHIV/HBV co-infection: include HBV-active antiretrovirals (TAF/FTC or TDF/FTC) in HIV regimen\nUpdated after the 2024 course: the November 2025 AASLD/IDSA hepatitis B guideline broadens treatment eligibility, including immune-tolerant patients older than 40, advises stopping nucleoside analog therapy only after HBsAg loss, and recommends TDF or TAF from week 28 of pregnancy when HBV DNA exceeds 200,000 IU/mL."
  },
  {
   "topic": "Pharmacokinetics",
@@ -437,12 +437,12 @@
  {
   "topic": "Endocrine",
   "front": "Insulin types and duration of action",
-  "back": "Rapid-acting (onset 15 min; peak 1-2h; duration 3-5h): lispro, aspart, glulisine (take with meals)\nShort-acting regular (onset 30-60 min; peak 2-4h; duration 6-8h): can be used IV in DKA\nIntermediate (NPH): onset 2-4h; peak 4-10h; duration 10-16h\nLong-acting (basal; flat profile, 24h): glargine (U-100, U-300), detemir, degludec (U-100, U-200)\nUltra-long: insulin degludec (42 hours)\nInsulin glargine U-300 vs U-100: more concentrated; cannot mix; less nocturnal hypoglycemia"
+  "back": "Rapid-acting (onset 15 min; peak 1-2h; duration 3-5h): lispro, aspart, glulisine (take with meals)\nShort-acting regular (onset 30-60 min; peak 2-4h; duration 6-8h): can be used IV in DKA\nIntermediate (NPH): onset 2-4h; peak 4-10h; duration 10-16h\nLong-acting (basal; flat profile, 24h): glargine (U-100, U-300), detemir, degludec (U-100, U-200)\nUltra-long: insulin degludec (42 hours)\nInsulin glargine U-300 vs U-100: more concentrated; cannot mix; less nocturnal hypoglycemia\nUpdated after the 2024 course: in March 2026 the FDA approved insulin icodec, Awiqli 700 units/mL, the first once-weekly basal insulin, for adults with T2D only; it is given on the same day each week and is not approved for T1D in the US."
  },
  {
   "topic": "Endocrine",
   "front": "Thyroid cancer and amiodarone thyroid effects",
-  "back": "Papillary thyroid cancer (most common; best prognosis): treatment = surgery + RAI + levothyroxine suppression\nAnaplastic (most aggressive): chemotherapy + radiation; poor prognosis\nMedullary (MTC): associated with MEN2; RET proto-oncogene mutation; calcitonin biomarker; GLP-1 RAs CONTRAINDICATED with MTC history\nAmiodarone: high iodine content (37%); blocks T4 to T3 conversion; causes both hypo and hyperthyroidism; half-life 58 days"
+  "back": "Papillary thyroid cancer (most common; best prognosis): treatment = surgery + RAI + levothyroxine suppression\nAnaplastic (most aggressive): chemotherapy + radiation; poor prognosis\nMedullary (MTC): associated with MEN2; RET proto-oncogene mutation; calcitonin biomarker; GLP-1 RAs CONTRAINDICATED with MTC history\nAmiodarone: high iodine content (37%); blocks T4 to T3 conversion; causes both hypo and hyperthyroidism; half-life 58 days\nUpdated after the 2024 course: the October 2025 ATA differentiated thyroid cancer guideline replaces the 2015 version, uses four-tier recurrence risk stratification that tailors RAI and TSH-suppression intensity, and recommends molecular testing for RAI-refractory disease."
  },
  {
   "topic": "Endocrine",
@@ -472,7 +472,7 @@
  {
   "topic": "Critical Care",
   "front": "ARDS: Berlin definition and management",
-  "back": "Berlin definition (2012):\n- Timing: within 1 week of clinical insult\n- Bilateral infiltrates (not fully explained by effusions, collapse)\n- PaO2/FiO2 <300 with PEEP >=5\nSeverity: Mild 200-300, Moderate 100-200, Severe <100\nManagement: ARDSNet protocol (TV 6 mL/kg IBW, Pplat <=30)\nProne positioning: >16h/day for severe ARDS (PROSEVA trial)\nNeuromuscular blockade: controversial; used for severe ARDS with ventilator dyssynchrony"
+  "back": "Berlin definition (2012):\n- Timing: within 1 week of clinical insult\n- Bilateral infiltrates (not fully explained by effusions, collapse)\n- PaO2/FiO2 <300 with PEEP >=5\nSeverity: Mild 200-300, Moderate 100-200, Severe <100\nManagement: ARDSNet protocol (TV 6 mL/kg IBW, Pplat <=30)\nProne positioning: >16h/day for severe ARDS (PROSEVA trial)\nNeuromuscular blockade: controversial; used for severe ARDS with ventilator dyssynchrony\nUpdated after the 2024 course: the January 2024 ATS ARDS guideline and SCCM focused update conditionally recommend systemic corticosteroids for ARDS, and ATS conditionally suggests neuromuscular blockade in early severe ARDS and recommends against prolonged recruitment maneuvers."
  },
  {
   "topic": "Critical Care",
@@ -482,7 +482,7 @@
  {
   "topic": "Critical Care",
   "front": "ICU sedation and analgesia (PADIS guidelines)",
-  "back": "dexmedetomidine reduces duration vs midazolam (SEDCOM)"
+  "back": "dexmedetomidine reduces duration vs midazolam (SEDCOM)\nUpdated after the 2024 course: the March 2025 SCCM PADIS focused update suggests dexmedetomidine over propofol for ventilated adults when light sedation or less delirium is the priority, and conditionally recommends melatonin for sleep and enhanced mobilization."
  },
  {
   "topic": "Critical Care",
@@ -507,7 +507,7 @@
  {
   "topic": "Psychiatry",
   "front": "Substance use disorder pharmacotherapy",
-  "back": "ALCOHOL USE DISORDER:\n- Detox: benzodiazepines (CIWA protocol)\n- Maintenance: naltrexone (reduces cravings; opioid antagonist), acamprosate (maintains abstinence; eases protracted post-acute withdrawal; start after detox -- not for acute withdrawal), disulfiram (aversion; monitor compliance)\nOPIOID USE DISORDER:\n- Methadone (daily observed; opioid agonist; QT monitoring)\n- Buprenorphine/naloxone (Suboxone; partial agonist; office-based)\n- Naltrexone XR (Vivitrol; monthly injection; require full opioid detox first)\nNICOTINE: varenicline (most effective), bupropion SR, NRT (patch, gum, lozenge)"
+  "back": "ALCOHOL USE DISORDER:\n- Detox: benzodiazepines (CIWA protocol)\n- Maintenance: naltrexone (reduces cravings; opioid antagonist), acamprosate (maintains abstinence; eases protracted post-acute withdrawal; start after detox -- not for acute withdrawal), disulfiram (aversion; monitor compliance)\nOPIOID USE DISORDER:\n- Methadone (daily observed; opioid agonist; QT monitoring)\n- Buprenorphine/naloxone (Suboxone; partial agonist; office-based)\n- Naltrexone XR (Vivitrol; monthly injection; require full opioid detox first)\nNICOTINE: varenicline (most effective), bupropion SR, NRT (patch, gum, lozenge)\nUpdated after the 2024 course: buprenorphine for OUD no longer has to start in an office; a January 2025 DEA final rule allows telemedicine initiation, including audio-only, for an initial 6-month supply, with added requirements after that."
  },
  {
   "topic": "Psychiatry",
@@ -537,7 +537,7 @@
  {
   "topic": "Pediatrics",
   "front": "RSV prophylaxis in infants",
-  "back": "Palivizumab (monoclonal antibody): monthly IM injections during RSV season (November-March)\nIndications (AAP 2014): premature infants (<29 weeks) in first year; hemodynamically significant CHD; CLD (BPD) requiring treatment in first 2 years; immunocompromised\nDo NOT give if: otherwise healthy infants >28 weeks without CHD/CLD\nNirsevimab (Beyfortus 2023): single dose; newer; broader indication for ALL infants <8 months entering first RSV season (has largely replaced palivizumab for most indications)\nDuration: palivizumab given up to 5 doses; nirsevimab is single dose\nUpdated after the 2024 course: clesrovimab (Enflonsia), a single-dose long-acting RSV monoclonal antibody, was FDA-approved and ACIP-recommended in June 2025 as an alternative to nirsevimab (FDA/ACIP 2025)."
+  "back": "Palivizumab (monoclonal antibody): monthly IM injections during RSV season (November-March)\nIndications (AAP 2014): premature infants (<29 weeks) in first year; hemodynamically significant CHD; CLD (BPD) requiring treatment in first 2 years; immunocompromised\nDo NOT give if: otherwise healthy infants >28 weeks without CHD/CLD\nNirsevimab (Beyfortus 2023): single dose; newer; broader indication for ALL infants <8 months entering first RSV season (has largely replaced palivizumab for most indications)\nDuration: palivizumab given up to 5 doses; nirsevimab is single dose\nUpdated after the 2024 course: clesrovimab (Enflonsia), a single-dose long-acting RSV monoclonal antibody, was FDA-approved and ACIP-recommended in June 2025 as an alternative to nirsevimab (FDA/ACIP 2025).\nUpdated after the 2024 course: the June 2025 ACIP clesrovimab recommendation is among the post-June 11, 2025 ACIP votes stayed by a federal court in March 2026; the FDA approval is unaffected.\nUpdated after the 2024 course: Sobi discontinued palivizumab, Synagis, in the US effective December 31, 2025, so it is no longer an available answer; high-risk children entering a second RSV season receive nirsevimab 200 mg.\nUpdated after the 2024 course: a January 2026 CDC childhood schedule, issued without an ACIP vote, moved infant RSV immunization from routine to risk-based use, but a federal court stayed it in March 2026, so routine nirsevimab or maternal vaccination for eligible infants remains the operative answer and AAP policy."
  },
  {
   "topic": "Pediatrics",
@@ -587,7 +587,7 @@
  {
   "topic": "Infectious Diseases",
   "front": "Drug-resistant bacteria: key organisms and treatment",
-  "back": "MRSA: vancomycin (AUC-guided) OR daptomycin (bacteremia) OR linezolid (pneumonia/SSTI)\nVRE: linezolid OR daptomycin\nESBL-producing organisms: carbapenems (definitive); avoid cephalosporins/pip-tazo\nCarbapenem-resistant Enterobacteriaceae (CRE): ceftazidime-avibactam, meropenem-vaborbactam, colistin (last resort)\nPseudomonas aeruginosa MDR: ceftolozane-tazobactam, ceftazidime-avibactam, colistin"
+  "back": "MRSA: vancomycin (AUC-guided) OR daptomycin (bacteremia) OR linezolid (pneumonia/SSTI)\nVRE: linezolid OR daptomycin\nESBL-producing organisms: carbapenems (definitive); avoid cephalosporins/pip-tazo\nCarbapenem-resistant Enterobacteriaceae (CRE): ceftazidime-avibactam, meropenem-vaborbactam, colistin (last resort)\nPseudomonas aeruginosa MDR: ceftolozane-tazobactam, ceftazidime-avibactam, colistin\nUpdated after the 2024 course: the August 2024 IDSA AMR guidance, which the book predates and which was itself replaced in July 2026, prefers newer beta-lactam agents over polymyxins for CRE and DTR Pseudomonas and makes sulbactam-durlobactam plus a carbapenem preferred for CRAB; uncomplicated ESBL-E cystitis is treated with nitrofurantoin or TMP-SMX rather than a carbapenem.\nUpdated after the 2024 course: the July 2026 IDSA AMR guidance allows piperacillin-tazobactam as an alternative for ESBL-E urinary tract infection, not invasive disease, and names aztreonam-avibactam or cefiderocol as preferred for NDM-producing CRE.\nUpdated after the 2024 course: aztreonam-avibactam, Emblaveo, was FDA-approved in February 2025 and is an option for metallo-beta-lactamase, NDM, producing CRE, which ceftazidime-avibactam and meropenem-vaborbactam do not cover."
  },
  {
   "topic": "Infectious Diseases",
@@ -612,7 +612,7 @@
  {
   "topic": "Endocrine",
   "front": "Contraception: hormonal options and medical considerations",
-  "back": "Combined OCP (estrogen + progestin): highly effective; AVOID in: active DVT/PE, ischemic stroke, MI, migraines with aura, uncontrolled HTN, breast cancer, age >=35 + smoking >=15 cigarettes/day (<15/day = MEC 3) (WHO/CDC MEC 4 = absolutely avoid)\nProgestin-only pills (POPs): safe in breastfeeding, HTN, migraines with aura\nLevonorgestrel IUD (Mirena): excellent efficacy; reduces menstrual bleeding\nCopper IUD: non-hormonal; most effective EC (insert within 5 days); may increase menstrual flow\nDepo-Provera (medroxyprogesterone IM): every 13 weeks; delays return of fertility; bone density loss with long-term use"
+  "back": "Combined OCP (estrogen + progestin): highly effective; AVOID in: active DVT/PE, ischemic stroke, MI, migraines with aura, uncontrolled HTN, breast cancer, age >=35 + smoking >=15 cigarettes/day (<15/day = MEC 3) (WHO/CDC MEC 4 = absolutely avoid)\nProgestin-only pills (POPs): safe in breastfeeding, HTN, migraines with aura\nLevonorgestrel IUD (Mirena): excellent efficacy; reduces menstrual bleeding\nCopper IUD: non-hormonal; most effective EC (insert within 5 days); may increase menstrual flow\nDepo-Provera (medroxyprogesterone IM): every 13 weeks; delays return of fertility; bone density loss with long-term use\nUpdated after the 2024 course: CDC published the U.S. MEC 2024 and SPR 2024 in August 2024, replacing the 2016 editions the book cites; they add CKD categories and revise categories for postpartum and breastfeeding, obesity, sickle cell disease, and HIV, so check the 2024 tables."
  },
  {
   "topic": "Endocrine",
@@ -642,7 +642,7 @@
  {
   "topic": "Pulmonology",
   "front": "Obstructive sleep apnea (OSA) and drug interactions",
-  "back": "CPAP: first-line treatment for moderate-severe OSA\nDrugs that worsen OSA: benzodiazepines, opioids, muscle relaxants, alcohol\nDrugs that can help: avoid sedatives; weight loss medications may help\nPost-surgery risk: opioids in OSA patients increase respiratory depression risk; use non-opioid analgesics when possible\nModafinil/armodafinil: for residual sleepiness after optimal CPAP use\nSolriamfetol: selective dopamine/NE reuptake inhibitor for OSA-associated sleepiness"
+  "back": "CPAP: first-line treatment for moderate-severe OSA\nDrugs that worsen OSA: benzodiazepines, opioids, muscle relaxants, alcohol\nDrugs that can help: avoid sedatives; weight loss medications may help\nPost-surgery risk: opioids in OSA patients increase respiratory depression risk; use non-opioid analgesics when possible\nModafinil/armodafinil: for residual sleepiness after optimal CPAP use\nSolriamfetol: selective dopamine/NE reuptake inhibitor for OSA-associated sleepiness\nUpdated after the 2024 course: in December 2024 the FDA approved tirzepatide, Zepbound, for moderate-to-severe OSA in adults with obesity based on SURMOUNT-OSA, the first drug approved for OSA, used alongside CPAP."
  },
  {
   "topic": "Gastroenterology",
@@ -652,7 +652,7 @@
  {
   "topic": "Gastroenterology",
   "front": "Inflammatory bowel disease: biologics",
-  "back": "Anti-TNF agents: infliximab (IV), adalimumab (SQ), certolizumab pegol, golimumab\n- Check: LTBI (IGRA/TST), HBsAg before starting (risk reactivation)\nVedolizumab (gut-selective alpha4beta7 integrin blocker): preferred in elderly/immunocompromised (no systemic immunosuppression)\nUstekinumab (IL-12/23 blocker): effective for Crohn; moderate immunosuppression\nTofacitinib (JAK inhibitor): UC; AVOID in patients with CV risk or thromboembolic history\nRisankizumab/mirikizumab (IL-23 p19): newer agents for UC and Crohn"
+  "back": "Anti-TNF agents: infliximab (IV), adalimumab (SQ), certolizumab pegol, golimumab\n- Check: LTBI (IGRA/TST), HBsAg before starting (risk reactivation)\nVedolizumab (gut-selective alpha4beta7 integrin blocker): preferred in elderly/immunocompromised (no systemic immunosuppression)\nUstekinumab (IL-12/23 blocker): effective for Crohn; moderate immunosuppression\nTofacitinib (JAK inhibitor): UC; AVOID in patients with CV risk or thromboembolic history\nRisankizumab/mirikizumab (IL-23 p19): newer agents for UC and Crohn\nUpdated after the 2024 course: the June 2025 ACG ulcerative colitis and Crohn disease guidelines place IL-23 inhibitors such as risankizumab, mirikizumab and guselkumab, JAK inhibitors such as upadacitinib and tofacitinib, and S1P modulators such as ozanimod and etrasimod among early options for moderate-to-severe disease, with treat-to-target monitoring."
  },
  {
   "topic": "Geriatrics",
@@ -667,12 +667,12 @@
  {
   "topic": "Psychiatry",
   "front": "Attention deficit hyperactivity disorder (ADHD) pharmacotherapy",
-  "back": "STIMULANTS (first-line):\n- Methylphenidate (Ritalin, Concerta): dopamine/NE reuptake inhibitor; immediate vs extended release\n- Amphetamines (Adderall, Vyvanse): dopamine/NE releaser + reuptake inhibitor; Vyvanse = prodrug (lower abuse potential)\nNON-STIMULANTS (second-line):\n- Atomoxetine (Strattera): selective NE reuptake inhibitor; no abuse potential; delayed onset\n- Clonidine/guanfacine ER: alpha-2 agonists; useful for tics + ADHD or when stimulants CI\nMonitor: cardiovascular effects (HR, BP); growth velocity in children"
+  "back": "STIMULANTS (first-line):\n- Methylphenidate (Ritalin, Concerta): dopamine/NE reuptake inhibitor; immediate vs extended release\n- Amphetamines (Adderall, Vyvanse): dopamine/NE releaser + reuptake inhibitor; Vyvanse = prodrug (lower abuse potential)\nNON-STIMULANTS (second-line):\n- Atomoxetine (Strattera): selective NE reuptake inhibitor; no abuse potential; delayed onset\n- Clonidine/guanfacine ER: alpha-2 agonists; useful for tics + ADHD or when stimulants CI\nMonitor: cardiovascular effects (HR, BP); growth velocity in children\nCurrent FDA labeling differs: since June 2025 all extended-release amphetamine and methylphenidate products carry a Limitation of Use stating they are not recommended for children younger than 6 because of higher exposure and clinically significant weight loss; for ages 4-5 use behavioral therapy first and, if medication is needed, immediate-release methylphenidate, and monitor weight."
  },
  {
   "topic": "Psychiatry",
   "front": "Benzodiazepine withdrawal management",
-  "back": "Tapering required to avoid withdrawal (seizures, death)\nWithdrawal symptoms: anxiety, tremor, sweating, insomnia, seizures, delirium (can be fatal)\nManagement:\n- Taper long-acting BZD (chlordiazepoxide, diazepam) even if patient was on short-acting\n- Phenobarbital: alternative for severe dependence\n- CIWA (Clinical Institute Withdrawal Assessment): score-based protocol for symptom-triggered dosing\nAlcohol withdrawal similarly treated (BZDs cross-reactive)\nAvoid abrupt discontinuation after chronic use (>2-4 weeks at any dose)"
+  "back": "Tapering required to avoid withdrawal (seizures, death)\nWithdrawal symptoms: anxiety, tremor, sweating, insomnia, seizures, delirium (can be fatal)\nManagement:\n- Taper long-acting BZD (chlordiazepoxide, diazepam) even if patient was on short-acting\n- Phenobarbital: alternative for severe dependence\n- CIWA (Clinical Institute Withdrawal Assessment): score-based protocol for symptom-triggered dosing\nAlcohol withdrawal similarly treated (BZDs cross-reactive)\nAvoid abrupt discontinuation after chronic use (>2-4 weeks at any dose)\nUpdated after the 2024 course: the March 2025 ASAM-led joint guideline on benzodiazepine tapering, published in JGIM in June 2025, advises slow patient-centered tapers that usually start with 5-10% dose reductions every 2-4 weeks and generally do not exceed 25% every 2 weeks, with pauses as needed and no abrupt stop after long-term use."
  },
  {
   "topic": "Neurology",
@@ -692,7 +692,7 @@
  {
   "topic": "Oncology",
   "front": "Targeted cancer therapy: key mechanisms",
-  "back": "Imatinib (Gleevec): BCR-ABL tyrosine kinase inhibitor; CML and GIST\nTrastuzumab (Herceptin): anti-HER2 monoclonal antibody; HER2+ breast/gastric cancer; cardiotoxic (EF monitoring)\nRituximab: anti-CD20; B-cell lymphoma/leukemia; reactivates HBV (screen HBsAg first)\nBevacizumab: anti-VEGF; inhibits angiogenesis; risk of hemorrhage and wound healing\nPembrolizumab/nivolumab: PD-1/PD-L1 checkpoint inhibitors; immune-related adverse effects (irAEs): pneumonitis, colitis, endocrinopathies\nEGFR inhibitors (erlotinib, gefitinib): NSCLC with EGFR mutations; acneiform rash (sign of efficacy)"
+  "back": "Imatinib (Gleevec): BCR-ABL tyrosine kinase inhibitor; CML and GIST\nTrastuzumab (Herceptin): anti-HER2 monoclonal antibody; HER2+ breast/gastric cancer; cardiotoxic (EF monitoring)\nRituximab: anti-CD20; B-cell lymphoma/leukemia; reactivates HBV (screen HBsAg first)\nBevacizumab: anti-VEGF; inhibits angiogenesis; risk of hemorrhage and wound healing\nPembrolizumab/nivolumab: PD-1/PD-L1 checkpoint inhibitors; immune-related adverse effects (irAEs): pneumonitis, colitis, endocrinopathies\nEGFR inhibitors (erlotinib, gefitinib): NSCLC with EGFR mutations; acneiform rash (sign of efficacy)\nUpdated after the 2024 course: the ADA Standards of Care 2026, released December 2025, add a section on glycemic management during cancer therapy, including immune checkpoint inhibitor-induced diabetes, which needs insulin rather than corticosteroids."
  },
  {
   "topic": "Oncology",
@@ -896,12 +896,12 @@
  },
  {
   "front": "GOLD COPD classification: FEV₁/FVC <0.70 post-bronchodilator confirms obstruction. GOLD 1=FEV₁≥[[80%]], GOLD 2=50-79%, GOLD 3=30-49%, GOLD 4=[[<30%]] predicted.",
-  "back": "Groups A/B/E (GOLD 2023 merged former C and D into group E) incorporate symptoms (CAT, mMRC) and exacerbation history. Group E (≥2 moderate exacerbations or ≥1 leading to hospitalization/year) = start LABA+LAMA; add ICS if blood eosinophils ≥300 (triple therapy) ± roflumilast ± azithromycin.",
+  "back": "Groups A/B/E (GOLD 2023 merged former C and D into group E) incorporate symptoms (CAT, mMRC) and exacerbation history. Group E (≥2 moderate exacerbations or ≥1 leading to hospitalization/year) = start LABA+LAMA; add ICS if blood eosinophils ≥300 (triple therapy) ± roflumilast ± azithromycin.\nUpdated after the 2024 course: GOLD 2026, released November 2025, defines group E as ≥1 moderate or severe exacerbation in the prior year; the book uses ≥2 moderate or ≥1 leading to hospitalization.",
   "topic": "Pulmonology"
  },
  {
   "front": "AHA/ACC heart failure: HFrEF defined as EF ≤[[40%]]. HFmrEF = EF 41-49%. HFpEF = EF ≥[[50%]]. Only [[HFrEF]] has clear mortality-reducing pharmacotherapy (4 pillars).",
-  "back": "HFrEF therapies with mortality benefit: ACEi/ARB/ARNI + beta-blocker + MRA + SGLT2i. HFpEF: diuretics for congestion, SGLT2i (empagliflozin/dapagliflozin) show some benefit. HFmrEF: extrapolate from HFrEF data; growing evidence for GDMT.",
+  "back": "HFrEF therapies with mortality benefit: ACEi/ARB/ARNI + beta-blocker + MRA + SGLT2i. HFpEF: diuretics for congestion, SGLT2i (empagliflozin/dapagliflozin) show some benefit. HFmrEF: extrapolate from HFrEF data; growing evidence for GDMT.\nUpdated after the 2024 course: in July 2025 the FDA approved finerenone, brand Kerendia, to reduce CV death and HF events in adults with HF and LVEF of 40% or higher, based on FINEARTS-HF; it is no longer only a CKD-in-type 2 diabetes drug.\nUpdated after the 2024 course: the July 2026 ACC HFpEF expert consensus decision pathway makes an SGLT2 inhibitor plus finerenone the foundational therapy, prefers finerenone over spironolactone, adds semaglutide or tirzepatide for BMI 30 or higher, and discourages routine beta-blockers without angina or AF.",
   "topic": "Cardiology"
  },
  {
@@ -971,7 +971,7 @@
  },
  {
   "front": "SOFA score ≥[[2]] points from baseline indicates [[organ dysfunction]] in suspected infection (Sepsis-3 definition). qSOFA (bedside) = altered consciousness + RR ≥22 + SBP ≤[[100 mmHg]].",
-  "back": "Sepsis-3 (2016): Sepsis = life-threatening organ dysfunction from dysregulated host response to infection (SOFA ≥2). Septic shock = sepsis + vasopressor requirement + lactate >2 mmol/L (mortality >40%). Old SIRS criteria removed from definition. Bundle: blood cultures, lactate, broad-spectrum antibiotics within 1h, 30mL/kg crystalloid.",
+  "back": "Sepsis-3 (2016): Sepsis = life-threatening organ dysfunction from dysregulated host response to infection (SOFA ≥2). Septic shock = sepsis + vasopressor requirement + lactate >2 mmol/L (mortality >40%). Old SIRS criteria removed from definition. Bundle: blood cultures, lactate, broad-spectrum antibiotics within 1h, 30mL/kg crystalloid.\nUpdated after the 2024 course: the March 2026 Surviving Sepsis Campaign guideline keeps antibiotics within 1 hour for definite or probable sepsis and for any shock, but allows up to 3 hours of rapid assessment for possible sepsis without shock, and suggests against routine empiric antifungals.",
   "topic": "Critical Care"
  },
  {

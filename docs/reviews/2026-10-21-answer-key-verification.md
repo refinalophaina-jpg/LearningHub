@@ -1,5 +1,7 @@
 # Independent answer-key verification — October 21, 2026
 
+> Superseded in part by `2026-10-22-reference-and-updates-review.md`: items that followed post-2024 guidance (including Q036, Q041, Q087, Q094 and AD-MOCK-036) were returned to the 2024 course teaching, and "Updated since 2024" notes now use the `Updated after the 2024 course:` marker.
+
 ## Method
 1. **Blind pass.** Six independent reviewers answered all 599 practice questions (449 quiz + 150 mock) from the stem and options only, without seeing the stored key or explanation. Calculations were recomputed; defects were flagged.
 2. **Comparison.** Blind answers were compared with the stored keys programmatically.

@@ -552,8 +552,9 @@
       ],
       "task": "Integrate case findings to choose the best action",
       "action": "Revised stem and/or options, rationales and evidence traceability",
-      "questionSha256": "1eef06cdf633295aaa00a4a1d8ffe206c411dcc764941fb432415685c7a80f57",
-      "difficulty": "Applied analysis/calculation; uncalibrated"
+      "questionSha256": "8833947db2a7742e48ed0b02934f898deb203304a4eb369686b2a861334dfba0",
+      "difficulty": "Applied analysis/calculation; uncalibrated",
+      "revised": "2026-10-22: added an Updated after the 2024 course note for a later guideline or label change; the keyed answer is unchanged."
     },
     {
       "id": "AD-MOCK-012",
@@ -643,8 +644,9 @@
       ],
       "task": "Integrate case findings to choose the best action",
       "action": "Revised stem and/or options, rationales and evidence traceability",
-      "questionSha256": "096210b507de9c512212aae291a735fccbc6740c280e5821608581b5b940d59b",
-      "difficulty": "Applied analysis/calculation; uncalibrated"
+      "questionSha256": "8cecf1c3573d3241ce739015839fbf5468ed5604e9311bf5a9582e957f67707a",
+      "difficulty": "Applied analysis/calculation; uncalibrated",
+      "revised": "2026-10-22: added an Updated after the 2024 course note for a later guideline or label change; the keyed answer is unchanged."
     },
     {
       "id": "AD-MOCK-020",
@@ -687,8 +689,9 @@
       ],
       "task": "Integrate case findings to choose the best action",
       "action": "Revised stem and/or options, rationales and evidence traceability",
-      "questionSha256": "21fa3a8608b675135e647d30b64f7b7678d8310775e77282cf5d76854da4dddc",
-      "difficulty": "Applied analysis/calculation; uncalibrated"
+      "questionSha256": "bb84ca25efe6098fe77fcbea5cb302b6e34317342154c4b907251c0498ab0185",
+      "difficulty": "Applied analysis/calculation; uncalibrated",
+      "revised": "2026-10-22: added an Updated after the 2024 course note for a later guideline or label change; the keyed answer is unchanged."
     },
     {
       "id": "AD-MOCK-024",
@@ -742,8 +745,9 @@
       ],
       "task": "Integrate case findings to choose the best action",
       "action": "Revised stem and/or options, rationales and evidence traceability",
-      "questionSha256": "74272da085da04e248089ecac4fc6ee0c7ca9bb64593dde246e08922a085207b",
-      "difficulty": "Foundational safety/application; uncalibrated"
+      "questionSha256": "410ed276ab8816b9bed67915f744ed830ff3f8ef6d6599f5856b2fda16a59e6c",
+      "difficulty": "Foundational safety/application; uncalibrated",
+      "revised": "2026-10-22: added an Updated after the 2024 course note for a later guideline or label change; the keyed answer is unchanged."
     },
     {
       "id": "AD-MOCK-029",
@@ -798,8 +802,9 @@
       ],
       "task": "Integrate case findings to choose the best action",
       "action": "Revised stem and/or options, rationales and evidence traceability",
-      "questionSha256": "fb40274eacd4b3ceb2701db7bdf738baa055f2c02c06e068b67f6ef924864c35",
-      "difficulty": "Applied analysis/calculation; uncalibrated"
+      "questionSha256": "cb441133fd98807ddff5272d6232261f8dcce51e106f6d89fefd89bedfc32446",
+      "difficulty": "Applied analysis/calculation; uncalibrated",
+      "revised": "2026-10-22: added an Updated after the 2024 course note for a later guideline or label change; the keyed answer is unchanged."
     },
     {
       "id": "AD-MOCK-034",
@@ -809,8 +814,9 @@
       ],
       "task": "Integrate case findings to choose the best action",
       "action": "Revised stem and/or options, rationales and evidence traceability",
-      "questionSha256": "3b2992a55c2c65ba2f695ff820402a8a01c5edb2b0d40788927d42ad07571384",
-      "difficulty": "Applied analysis/calculation; uncalibrated"
+      "questionSha256": "2f2975148f3d5e888f1f123f3c04a3fcfb13f3567957e067ed79e0de983d3afd",
+      "difficulty": "Applied analysis/calculation; uncalibrated",
+      "revised": "2026-10-22: added an Updated after the 2024 course note for a later guideline or label change; the keyed answer is unchanged."
     },
     {
       "id": "AD-MOCK-035",
@@ -1022,8 +1028,9 @@
       ],
       "task": "Integrate case findings to choose the best action",
       "action": "Revised stem and/or options, rationales and evidence traceability",
-      "questionSha256": "65c459f1667513a56b3ea5396933b79a5863cc72f8446156707fe69e879ad252",
-      "difficulty": "Applied analysis/calculation; uncalibrated"
+      "questionSha256": "fa7c3b1f1ca1ab30295addd810c1e378d62634ed5d6212b6b7a7280e3b722440",
+      "difficulty": "Applied analysis/calculation; uncalibrated",
+      "revised": "2026-10-22: added an Updated after the 2024 course note for a later guideline or label change; the keyed answer is unchanged."
     },
     {
       "id": "AD-MOCK-054",
@@ -1385,8 +1392,9 @@
       ],
       "task": "Integrate case findings to choose the best action",
       "action": "Revised stem and/or options, rationales and evidence traceability",
-      "questionSha256": "fdbbe067b984ebe90d694f79b099d8996a7b908dd33f167056e4b2db359ee29b",
-      "difficulty": "Applied analysis/calculation; uncalibrated"
+      "questionSha256": "fe244e52789b333fbea1248f9162fa8e7c98805d87d9b72a8d097592585d2a07",
+      "difficulty": "Applied analysis/calculation; uncalibrated",
+      "revised": "2026-10-22: added an Updated after the 2024 course note for a later guideline or label change; the keyed answer is unchanged."
     },
     {
       "id": "AD-MOCK-087",
@@ -1396,8 +1404,9 @@
       ],
       "task": "Integrate case findings to choose the best action",
       "action": "Revised stem and/or options, rationales and evidence traceability",
-      "questionSha256": "0e24b4f928dc4b127872fa09ed3bc0f7e9ea32929db373280d28592c7293e4d7",
-      "difficulty": "Applied analysis/calculation; uncalibrated"
+      "questionSha256": "3c482a1ca0f1a99a0b9effd0e0bf812e242f515b5caf2fa6c0aeafd69d936f6f",
+      "difficulty": "Applied analysis/calculation; uncalibrated",
+      "revised": "2026-10-22: added an Updated after the 2024 course note for a later guideline or label change; the keyed answer is unchanged."
     },
     {
       "id": "AD-MOCK-088",
@@ -1429,8 +1438,9 @@
       ],
       "task": "Integrate case findings to choose the best action",
       "action": "Revised stem and/or options, rationales and evidence traceability",
-      "questionSha256": "9a736a1c8bb98905d91e97a50af5387c79bfed0e4f52922752e278843c4f9519",
-      "difficulty": "Applied analysis/calculation; uncalibrated"
+      "questionSha256": "adf57cb2d371d6f57f22be48ab09af45a26a56c03b547d87bb3d5c2a2406f451",
+      "difficulty": "Applied analysis/calculation; uncalibrated",
+      "revised": "2026-10-22: stem names oral ciprofloxacin so the 7-day course matches the 2024 course; the 2025 IDSA cUTI guideline is kept as an Updated after the 2024 course note."
     },
     {
       "id": "AD-MOCK-091",
@@ -1907,8 +1917,9 @@
       ],
       "task": "Combine risk identification with overdose prevention",
       "action": "Revised stem and/or options, rationales and evidence traceability",
-      "questionSha256": "c7d82e9c069174efdf5a7f4e57cb47fc3862f4324723116f3339761fa96b2440",
-      "difficulty": "Applied analysis/calculation; uncalibrated"
+      "questionSha256": "6da860800e36a6696442d855cb973a451cd397edf56992e56889d3f6b785c6e1",
+      "difficulty": "Applied analysis/calculation; uncalibrated",
+      "revised": "2026-10-22: added an Updated after the 2024 course note for a later guideline or label change; the keyed answer is unchanged."
     },
     {
       "id": "AD-MOCK-134",
@@ -2074,8 +2085,9 @@
       ],
       "task": "Choose an equitable shortage-management process",
       "action": "Revised stem and/or options, rationales and evidence traceability",
-      "questionSha256": "aa262707cf12c9946f325ca7e7001ce8ea5171d78e98b8e2783f78f16ce78f96",
-      "difficulty": "Applied analysis/calculation; uncalibrated"
+      "questionSha256": "311c019a1a92f54f0f7af0388d36ae71b4ee6fc2992be757f72d0236daf1b904",
+      "difficulty": "Applied analysis/calculation; uncalibrated",
+      "revised": "2026-10-22: added an Updated after the 2024 course note for a later guideline or label change; the keyed answer is unchanged."
     },
     {
       "id": "AD-MOCK-149",
