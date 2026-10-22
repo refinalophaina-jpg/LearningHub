@@ -1581,13 +1581,12 @@ function drawCOPD() {
   const fs = n => Math.max(8, w*n);
   // Title
   ctx.fillStyle='#0f172a'; ctx.font='bold '+fs(0.022)+'px sans-serif'; ctx.textAlign='center';
-  ctx.fillText('COPD Therapy: GOLD Groups & Bronchodilator Targets', w/2, 20);
+  ctx.fillText('COPD Initial Therapy: GOLD 2023 A/B/E Groups', w/2, 20);
   // GOLD groups table
   const groups = [
-    {grp:'Group A', desc:'Low symptoms, low exac risk', rx:'Short-acting BD (SABA or SAMA) PRN', col:'#22c55e'},
-    {grp:'Group B', desc:'High symptoms, low exac risk', rx:'Long-acting BD (LABA or LAMA)', col:'#3b82f6'},
-    {grp:'Group C', desc:'Low symptoms, high exac risk', rx:'LAMA preferred', col:'#f59e0b'},
-    {grp:'Group D', desc:'High symptoms, high exac risk', rx:'LAMA + LABA; add ICS if eos ≥300', col:'#ef4444'},
+    {grp:'Group A', desc:'CAT <10; 0-1 exacerbation, no hospitalization', rx:'A bronchodilator (short- or long-acting)', col:'#22c55e'},
+    {grp:'Group B', desc:'CAT ≥10; 0-1 exacerbation, no hospitalization', rx:'LABA + LAMA', col:'#3b82f6'},
+    {grp:'Group E', desc:'≥2 exacerbations or ≥1 hospitalization', rx:'LABA + LAMA; consider + ICS if eos ≥300', col:'#ef4444'},
   ];
   const rowH=(h-100)/groups.length, startY=40;
   groups.forEach((g,i) => {
