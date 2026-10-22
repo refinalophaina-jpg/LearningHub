@@ -1,9 +1,10 @@
 /* Report a problem with a study item. The site is static, so a report is
-   assembled on the device: copy it to send to the owner, or open a pre-filled
-   public GitHub issue. Nothing is uploaded unless the reader chooses to. */
+   assembled on the device: email it to the reviewer, copy it, or open a
+   pre-filled public GitHub issue. Nothing is sent unless the reader chooses to. */
 (function () {
   'use strict';
   const ISSUE_URL = 'https://github.com/refinalophaina-jpg/LearningHub/issues/new';
+  const EMAIL = 'AyialoPharmD@gmail.com';
   const strip = h => String(h == null ? '' : h).replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
   let dlg, current;
 
@@ -42,14 +43,21 @@
       '<p class="report-item" id="reportItem"></p>' +
       '<label for="reportNote">What looks wrong? Include the source if you have one.</label>' +
       '<textarea id="reportNote" rows="4" placeholder="e.g. Option C is also correct per the 2024 IDSA guideline"></textarea>' +
-      '<p class="report-help">Copy the report to send it to the site owner, or open a public GitHub issue (requires a GitHub account).</p>' +
+      '<p class="report-help">Email opens your mail app with the report filled in, addressed to <span class="report-email">' + EMAIL + '</span>. No mail app? Copy the report and send it there. A public GitHub issue also works if you have an account.</p>' +
       '<div class="report-actions">' +
-      '<button type="button" class="btn btn-primary" id="reportCopy">Copy report</button>' +
+      '<button type="button" class="btn btn-primary" id="reportEmail">Email report</button>' +
+      '<button type="button" class="btn btn-secondary" id="reportCopy">Copy report</button>' +
       '<button type="button" class="btn btn-secondary" id="reportIssue">Open GitHub issue</button>' +
       '<button type="submit" class="btn btn-secondary" value="close">Close</button>' +
       '</div><p class="report-status" id="reportStatus" role="status"></p></form>';
     document.body.appendChild(dlg);
     dlg.querySelector('#reportCopy').addEventListener('click', copy);
+    dlg.querySelector('#reportEmail').addEventListener('click', () => {
+      // Mail clients truncate long mailto links; keep the body well under 2,000 characters.
+      const body = reportText(dlg.querySelector('#reportNote').value).slice(0, 1800);
+      window.location.href = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent('BCPS Hub report: ' + current.kind + ' ' + current.id) + '&body=' + encodeURIComponent(body);
+      dlg.querySelector('#reportStatus').textContent = 'If no email opened, copy the report and send it to ' + EMAIL + '.';
+    });
     dlg.querySelector('#reportIssue').addEventListener('click', () => {
       const body = reportText(dlg.querySelector('#reportNote').value).slice(0, 6000);
       const url = ISSUE_URL + '?title=' + encodeURIComponent('Content issue: ' + current.kind + ' ' + current.id) + '&body=' + encodeURIComponent(body);
@@ -62,7 +70,7 @@
     const status = dlg.querySelector('#reportStatus');
     try {
       await navigator.clipboard.writeText(text);
-      status.textContent = 'Report copied. Paste it into a message to the site owner.';
+      status.textContent = 'Report copied. Paste it into an email to ' + EMAIL + '.';
     } catch (_) {
       const ta = dlg.querySelector('#reportNote');
       ta.value = text; ta.select();
