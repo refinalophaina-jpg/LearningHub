@@ -1585,3 +1585,4 @@ body.dark-mode{ --primary-on-tint:var(--primary); }
 .update-item-impact{ font-size:13.5px; line-height:1.5; margin:0 0 6px; color:var(--label); }
 .update-item-source{ font-size:12.5px; margin:0; } .update-item-source a{ color:var(--primary-on-tint); text-underline-offset:3px; overflow-wrap:anywhere; }
 .media-update-notice{ font-size:13.5px; line-height:1.5; color:var(--label2); margin:0 0 14px; }
+.updates-intro{ font-size:14px; line-height:1.55; color:var(--label2); margin:0 0 14px; max-width:68ch; }

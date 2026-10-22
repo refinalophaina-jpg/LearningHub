@@ -1,1 +1,1021 @@
-[]
+[
+ {
+  "id": "acs-guideline-2025",
+  "domain": "Cardiology",
+  "date": "2025-02",
+  "change": "The 2025 ACC/AHA/ACEP/NAEMSP/SCAI ACS guideline replaces the 2013 STEMI and 2014 NSTE-ACS guidelines with one unified guideline. Ticagrelor or prasugrel is preferred over clopidogrel for ACS patients undergoing PCI. After at least 1 month of tolerated DAPT, switching to ticagrelor monotherapy (stopping aspirin) is recommended as an option to reduce bleeding.",
+  "practice_impact": "Know that the default is DAPT for at least 12 months unless bleeding risk is high. Ticagrelor or prasugrel is preferred over clopidogrel with PCI. Aspirin-free ticagrelor monotherapy at 1 month or more after PCI is guideline-endorsed. For patients who need oral anticoagulation, stop aspirin 1-4 weeks after PCI and continue a P2Y12 inhibitor, preferably clopidogrel. Give a PPI to patients at GI bleeding risk.",
+  "source": "AHA/ACC, 2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the Management of Patients With Acute Coronary Syndromes (Circulation/JACC), 2025",
+  "url": "https://professional.heart.org/en/science-news/2025-guideline-for-the-management-of-patients-with-acute-coronary-syndromes/top-things-to-know"
+ },
+ {
+  "id": "hypertension-guideline-2025",
+  "domain": "Cardiology",
+  "date": "2025-08",
+  "change": "The 2025 AHA/ACC multisociety high blood pressure guideline replaces the 2017 guideline. It keeps the 2017 BP categories and the <130/80 mm Hg goal. It replaces the Pooled Cohort Equations with the PREVENT risk equations, using a 10-year CVD risk threshold of 7.5%. It prefers single-pill combinations of two first-line agents for stage 2 hypertension. It recommends (Class 1) screening for primary aldosteronism in all patients with resistant hypertension, regardless of potassium.",
+  "practice_impact": "Treatment target is <130/80 for most adults, with an SBP <120 encouraged when tolerated in high-risk patients. Stage 1 hypertension (130-139/80-89) is treated with drugs right away if the patient has diabetes, CKD, or PREVENT 10-year CVD risk of 7.5% or higher. Lower-risk patients get drugs after 3-6 months of failed lifestyle changes. Stage 2 should start with a two-drug single-pill combination. Patients with resistant hypertension should be screened for primary aldosteronism with the aldosterone/renin ratio. Most drugs other than MRAs can continue during screening.",
+  "source": "AHA/ACC et al., 2025 Guideline for the Prevention, Detection, Evaluation and Management of High Blood Pressure in Adults (Hypertension/Circulation/JACC), 2025",
+  "url": "https://www.ahajournals.org/doi/10.1161/HYP.0000000000000249"
+ },
+ {
+  "id": "finerenone-hfmref-hfpef",
+  "domain": "Cardiology",
+  "date": "2025-07",
+  "change": "In July 2025 the FDA approved finerenone (Kerendia) to reduce CV death, HF hospitalization, and urgent HF visits in adults with HF and LVEF ≥40%, based on FINEARTS-HF. Finerenone was previously approved only for CKD with type 2 diabetes. It is the first MRA FDA-approved for HFmrEF/HFpEF.",
+  "practice_impact": "Finerenone now has an HF indication for LVEF ≥40%. Monitor potassium and eGFR: hyperkalemia occurred in 9.7% vs 4.2% on placebo. Do not limit your answer to its CKD-in-T2D indication.",
+  "source": "Bayer / FDA approval announcement, Kerendia (finerenone) for HF with LVEF ≥40%, 2025",
+  "url": "https://www.bayer.com/media/en-us/us-fda-approves-finerenone-for-new-indication-in-patients-with-heart-failure-with-left-ventricular-ejection-fraction-of--40/"
+ },
+ {
+  "id": "hfpef-ecdp-2026",
+  "domain": "Cardiology",
+  "date": "2026-07",
+  "change": "The 2026 ACC Expert Consensus Decision Pathway on HFpEF replaces the 2023 version. Foundational therapy is an SGLT2 inhibitor plus a nonsteroidal MRA, with finerenone as the MRA of choice over spironolactone. A GLP-1 RA or dual GIP/GLP-1 agonist (semaglutide or tirzepatide) is recommended for patients with obesity (BMI ≥30). Routine beta-blocker use is discouraged unless the patient has angina or needs AF rate control.",
+  "practice_impact": "HFpEF therapy now goes beyond 'SGLT2i plus diuretics, consider spironolactone'. Use an SGLT2i plus finerenone. Add semaglutide or tirzepatide when obesity is present. Avoid routine beta-blockers in HFpEF without a separate indication. The 2022 AHA/ACC/HFSA HF guideline has not been formally replaced.",
+  "source": "ACC, Management of HFpEF: 2026 ACC Expert Consensus Decision Pathway (JACC), 2026",
+  "url": "https://www.tctmd.com/news/finerenone-boosted-glp-1s-emphasized-updated-acc-consensus-hfpef"
+ },
+ {
+  "id": "hfref-ecdp-2024",
+  "domain": "Cardiology",
+  "date": "2024-03",
+  "change": "The 2024 ACC ECDP for HFrEF treatment updates the 2021 pathway. It names four GDMT pillars: ARNI, evidence-based beta-blocker, SGLT2 inhibitor, and MRA. It prefers starting with sacubitril/valsartan over an ACE inhibitor or ARB. It advises reaching target or maximally tolerated doses quickly, ideally within about 3 months, with no mandatory order of initiation (supported by STRONG-HF).",
+  "practice_impact": "Start an ARNI first-line rather than an ACEi or ARB. Start the four pillars rapidly, with no fixed order.",
+  "source": "ACC, 2024 ACC Expert Consensus Decision Pathway for Treatment of HFrEF (JACC), 2024",
+  "url": "https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2024/03/06/19/22/2024-acc-expert-consensus-hfref"
+ },
+ {
+  "id": "dyslipidemia-guideline-2026",
+  "domain": "Cardiology",
+  "date": "2026-03",
+  "change": "The 2026 ACC/AHA multisociety dyslipidemia guideline replaces the 2018 cholesterol guideline. It reintroduces explicit LDL-C goals. For clinical ASCVD the goal is <55 mg/dL if very high risk and <70 mg/dL otherwise. Primary prevention uses PREVENT-ASCVD 10-year risk: <100 mg/dL for borderline or intermediate risk (3% to <10%) and <70 mg/dL for high risk (≥10%), with matching non-HDL-C goals. It recommends universal one-time Lp(a) testing in adults and expands apoB use.",
+  "practice_impact": "Replace the 2018 'statin intensity plus LDL thresholds of 70 or 190, no targets' framework with treat-to-target goals: <55 for very high-risk ASCVD, <70 for other ASCVD and for high-risk primary prevention, <100 for borderline or intermediate risk. Risk is estimated with PREVENT, not the Pooled Cohort Equations. Measure Lp(a) once in every adult. Escalation agents to know: ezetimibe, PCSK9 mAbs, inclisiran, bempedoic acid.",
+  "source": "ACC/AHA/Multisociety, 2026 Guideline on the Management of Dyslipidemia (Circulation/JACC), 2026",
+  "url": "https://www.lipid.org/nla/2026-accahamultisociety-dyslipidemia-guideline-released"
+ },
+ {
+  "id": "andexanet-withdrawal",
+  "domain": "Cardiology",
+  "date": "2025-12",
+  "change": "On December 18, 2025 the FDA issued a safety communication concluding that the risks of andexanet alfa (Andexxa) outweigh its benefits, citing excess thromboembolic events and deaths (ANNEXA-I: thrombosis 14.6% vs 6.9%). AstraZeneca withdrew the BLA, and the product is no longer made or sold in the US as of about December 22, 2025.",
+  "practice_impact": "Andexanet is no longer an available US answer for reversing apixaban or rivaroxaban. Use four-factor PCC (Kcentra, Balfaxar), with aPCC (FEIBA) as an alternative, for life-threatening factor Xa inhibitor bleeding. Idarucizumab remains the answer for dabigatran.",
+  "source": "FDA, Update on the Safety of Andexxa (coagulation factor Xa recombinant, inactivated-zhzo): FDA Safety Communication, 2025",
+  "url": "https://www.fda.gov/safety/medical-product-safety-information/update-safety-andexxa-astrazeneca-fda-safety-communication"
+ },
+ {
+  "id": "inclisiran-monotherapy",
+  "domain": "Cardiology",
+  "date": "2025-07",
+  "change": "On July 31, 2025 the FDA updated the inclisiran (Leqvio) label to allow use as monotherapy or first-line therapy, as an adjunct to diet and exercise, for LDL-C lowering in hypercholesterolemia. The requirement to use it on top of a statin was removed.",
+  "practice_impact": "Inclisiran (284 mg SC at day 0, month 3, then every 6 months, given by a provider) is no longer restricted to add-on use with a maximally tolerated statin. The label does not yet include a CV outcomes indication.",
+  "source": "Novartis press release on FDA approval of Leqvio label update, 2025",
+  "url": "https://www.novartis.com/us-en/news/media-releases/novartis-twice-yearly-leqvio-inclisiran-receives-fda-approval-new-indication-enabling-first-line-use",
+  "kind": "label"
+ },
+ {
+  "id": "perioperative-guideline-2024",
+  "domain": "Cardiology",
+  "date": "2024-09",
+  "change": "The 2024 ACC/AHA multisociety guideline on perioperative CV management for noncardiac surgery replaces the 2014 guideline. It advises stopping SGLT2 inhibitors 3-4 days before surgery to reduce perioperative ketoacidosis risk. It updates recommendations on continuing beta-blockers, statins, and RAAS inhibitors and on perioperative anticoagulation management.",
+  "practice_impact": "Hold SGLT2 inhibitors 3-4 days before elective surgery: 3 days for canagliflozin, dapagliflozin, and empagliflozin, 4 days for ertugliflozin per the label. The guideline did not settle whether to hold GLP-1 RAs; that question was addressed separately by anesthesia societies.",
+  "source": "ACC/AHA, 2024 Guideline for Perioperative Cardiovascular Management for Noncardiac Surgery, 2024",
+  "url": "https://www.acc.org/Latest-in-Cardiology/Articles/2024/09/24/13/19/ACC-AHA-Release-New-Perioperative-Guideline-For-Patients-Undergoing-Noncardiac-Surgery"
+ },
+ {
+  "id": "oral-semaglutide-cv-indication",
+  "domain": "Cardiology",
+  "date": "2025-10",
+  "change": "In October 2025 the FDA approved oral semaglutide (Rybelsus) 7 or 14 mg to reduce MACE in adults with type 2 diabetes at high CV risk, including those without a prior CV event, based on SOUL (14% MACE reduction). It is the first oral GLP-1 RA with a CV outcomes indication.",
+  "practice_impact": "Oral semaglutide is now a CV-benefit GLP-1 RA choice, alongside injectable semaglutide, liraglutide, and dulaglutide, for T2D with ASCVD or high risk.",
+  "source": "Novo Nordisk press release on FDA approval (Rybelsus CV risk reduction, SOUL), 2025",
+  "url": "https://www.biospace.com/press-releases/fda-approves-novo-nordisks-oral-semaglutide-for-cardiovascular-cv-risk-reduction-in-adults-with-type-2-diabetes-who-are-at-high-risk-including-those-who-have-not-had-a-prior-cv-event"
+ },
+ {
+  "id": "attr-cm-new-therapies",
+  "domain": "Cardiology",
+  "date": "2025-03",
+  "change": "Two new ATTR cardiomyopathy therapies joined tafamidis. Acoramidis (Attruby), an oral TTR stabilizer, was approved in November 2024 to reduce CV death and CV hospitalization. Vutrisiran (Amvuttra), an SC siRNA TTR silencer, was approved for ATTR-CM in March 2025 (HELIOS-B).",
+  "practice_impact": "ATTR-CM options are now tafamidis (Vyndaqel/Vyndamax), acoramidis, and vutrisiran. Know the mechanisms: stabilizers vs. an RNA silencer. Vutrisiran is given SC every 3 months and requires vitamin A supplementation.",
+  "source": "ACC FDA Update: Acoramidis approved for ATTR-CM (2024); FDA approval of vutrisiran for ATTR-CM (2025)",
+  "url": "https://www.acc.org/Latest-in-Cardiology/Articles/2024/11/26/15/02/fda-update-acoramidis-approved-to-reduce-cv-death-hospitalization-in-patients-with-attr-cm"
+ },
+ {
+  "id": "apoc3-fcs-agents",
+  "domain": "Cardiology",
+  "date": "2025-11",
+  "change": "The FDA approved the first apoC-III-directed therapies as adjuncts to diet to lower triglycerides in adults with familial chylomicronemia syndrome (FCS). Olezarsen (Tryngolza), an antisense oligonucleotide given monthly, was approved in December 2024. Plozasiran (Redemplo), an siRNA given every 3 months, was approved in November 2025.",
+  "practice_impact": "For FCS, apoC-III inhibitors are now FDA-approved options; fibrates, omega-3s, and statins work poorly in FCS. Know the drug names and mechanisms.",
+  "source": "FDA, FDA approves drug to reduce triglycerides in adults with familial chylomicronemia syndrome (2024); Arrowhead/FDA plozasiran approval (2025)",
+  "url": "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-drug-reduce-triglycerides-adults-familial-chylomicronemia-syndrome"
+ },
+ {
+  "id": "olezarsen-severe-htg",
+  "domain": "Cardiology",
+  "date": "2026-06",
+  "change": "In June 2026 the FDA expanded olezarsen (Tryngolza) to adults with severe hypertriglyceridemia (sHTG), not only FCS, to lower triglycerides and reduce acute pancreatitis risk (CORE and CORE2 trials). It is the first agent shown to reduce acute pancreatitis events in sHTG.",
+  "practice_impact": "For sHTG (TG ≥500 mg/dL) with pancreatitis risk, olezarsen is now an FDA-approved option that lowers pancreatitis risk, beyond fibrates and icosapent ethyl or omega-3s. Consider checking liver enzymes at baseline.",
+  "source": "AGA / Ionis, FDA approves olezarsen to reduce acute pancreatitis risk in severe hypertriglyceridemia, 2026",
+  "url": "https://news.gastro.org/issues/2026/june-2026/fda-approves-olezarsen-to-reduce-acute-pancreatitis-risk-in-severehypertriglyceridemia/"
+ },
+ {
+  "id": "aficamten-ohcm",
+  "domain": "Cardiology",
+  "date": "2025-12",
+  "change": "On December 19, 2025 the FDA approved aficamten (Myqorzo), the second cardiac myosin inhibitor after mavacamten, for symptomatic obstructive HCM. It carries a boxed warning for heart failure, and echocardiographic monitoring is required.",
+  "practice_impact": "For obstructive HCM refractory to beta-blockers or non-DHP CCBs, the cardiac myosin inhibitors are mavacamten and aficamten. Both require LVEF monitoring for systolic dysfunction or HF.",
+  "source": "FDA, FDA approves drug to improve functional capacity and symptoms in adults with rare inherited heart condition, 2025",
+  "url": "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-drug-improve-functional-capacity-and-symptoms-adults-rare-inherited-heart-condition"
+ },
+ {
+  "id": "baxdrostat-hypertension",
+  "domain": "Cardiology",
+  "date": "2026-05",
+  "change": "On May 18, 2026 the FDA approved baxdrostat (Baxfendy), the first aldosterone synthase inhibitor, as add-on therapy for adults with hypertension uncontrolled on other antihypertensives (BaxHTN trial: SBP about 9-10 mm Hg lower than placebo).",
+  "practice_impact": "There is now a new drug class for uncontrolled or resistant hypertension. Monitor potassium and sodium because of hyperkalemia and hyponatremia risk. Spironolactone remains the guideline-preferred fourth-line agent; baxdrostat has BP data but no CV outcome data.",
+  "source": "ACC FDA Update: Agency approves baxdrostat to treat adults with HTN, 2026",
+  "url": "https://www.acc.org/Latest-in-Cardiology/Articles/2026/05/19/15/49/FDA-Update-Agency-Approves-Baxdrostat-to-Treat-Adults-With-HTN"
+ },
+ {
+  "id": "idsa-amr-guidance-2024",
+  "domain": "Infectious Diseases",
+  "date": "2024-08",
+  "change": "IDSA updated its guidance on antimicrobial-resistant gram-negative infections (ESBL-E, AmpC-E, CRE, DTR-P. aeruginosa, CRAB, S. maltophilia), replacing the 2023 version.",
+  "practice_impact": "Use the 2024 IDSA AMR guidance tables, now superseded by the 2026 version. For uncomplicated ESBL-E cystitis, nitrofurantoin or TMP-SMX is preferred and fluoroquinolones or carbapenems are reserved. Carbapenems are preferred for invasive ESBL-E. Newer beta-lactam/beta-lactamase inhibitor combinations are reserved for CRE and DTR-PA.",
+  "source": "IDSA, 2024 Guidance on the Treatment of Antimicrobial Resistant Gram-Negative Infections (Clin Infect Dis), 2024",
+  "url": "https://www.healio.com/news/infectious-disease/20240917/idsa-updates-guidance-on-resistant-gramnegative-infections"
+ },
+ {
+  "id": "idsa-amr-guidance-2026",
+  "domain": "Infectious Diseases",
+  "date": "2026-07",
+  "change": "IDSA published 2026 AMR gram-negative guidance on July 30, 2026, replacing the 2024 version. Every question was revised, and uUTI/cUTI definitions now match the 2025 IDSA cUTI guideline. Piperacillin-tazobactam is now an alternative option for ESBL-E UTI; the panel no longer suggests against it. For NDM-producing Enterobacterales, preferred options include aztreonam-avibactam and cefiderocol. Sulbactam-durlobactam remains preferred for CRAB.",
+  "practice_impact": "Update ESBL-E UTI answers: pip-tazo is an acceptable alternative for UTI but not for invasive ESBL infection. Metallo-beta-lactamase (NDM) CRE: aztreonam-avibactam (Emblaveo) or cefiderocol. Check the full 2026 tables for other organism-specific changes.",
+  "source": "IDSA, IDSA 2026 Guidance on the Treatment of Antimicrobial Resistant Gram-Negative Infections, 2026",
+  "url": "https://www.idsociety.org/practice-guideline/amr-guidance/"
+ },
+ {
+  "id": "idsa-cuti-guideline-2025",
+  "domain": "Infectious Diseases",
+  "date": "2025-07",
+  "change": "IDSA published its first complicated UTI guideline on July 17, 2025, covering men and women, inpatients and outpatients. For empiric therapy in sepsis it favors 3rd/4th-generation cephalosporins, carbapenems, pip-tazo, or fluoroquinolones. It encourages early IV-to-oral switch to an active oral agent. It recommends 7 days total for improving patients, including those with gram-negative bacteremia. Nitrofurantoin and oral fosfomycin are generally not appropriate for cUTI.",
+  "practice_impact": "Use short-course therapy for cUTI and pyelonephritis: about 7 days in responders instead of 10-14. Longer courses are reserved for suspected acute bacterial prostatitis, 10-14 days. Switch to oral therapy early. Avoid nitrofurantoin and fosfomycin for upper-tract or systemic infection.",
+  "source": "IDSA, 2025 Clinical Practice Guideline on Management and Treatment of Complicated Urinary Tract Infections (Trautner et al., Clin Infect Dis), 2025",
+  "url": "https://www.contagionlive.com/view/idsa-releases-clinical-guidelines-for-treatment-of-complicated-urinary-tract-infections"
+ },
+ {
+  "id": "ats-cap-2025-steroids",
+  "domain": "Infectious Diseases",
+  "date": "2025-07",
+  "change": "The 2025 ATS CAP clinical practice guideline update conditionally recommends systemic corticosteroids for adult inpatients with severe CAP (not influenza pneumonia), a change from the 2019 ATS/IDSA guideline, which advised against routine steroids. It strongly recommends against corticosteroids in nonsevere CAP. IDSA did not endorse the update.",
+  "practice_impact": "For severe CAP, e.g. ICU or meeting severe criteria, hydrocortisone-based steroids as in CAPE-COD are now suggested. Do not give them to influenza pneumonia or nonsevere CAP. Expect exam items to test 'severe CAP + steroids = yes; nonsevere = no'.",
+  "source": "American Thoracic Society, 2025 Update to Clinical Practice Guidelines for Diagnosis and Management of CAP (Am J Respir Crit Care Med, doi 10.1164/rccm.202507-1692ST), 2025",
+  "url": "https://contagionlive.com/view/2025-american-thoracic-society-clinical-practice-guideline-updates-for-the-diagnosis-and-management-of-community-acquired-pneumonia"
+ },
+ {
+  "id": "aztreonam-avibactam-approval",
+  "domain": "Infectious Diseases",
+  "date": "2025-02",
+  "change": "On February 7, 2025 the FDA approved aztreonam-avibactam (Emblaveo), with metronidazole, for complicated intra-abdominal infection in adults with limited or no treatment options. It is the first fixed-dose monobactam/beta-lactamase inhibitor combination in the US.",
+  "practice_impact": "Aztreonam-avibactam covers metallo-beta-lactamase (NDM, VIM, IMP) producing Enterobacterales. It replaces the older practice of combining ceftazidime-avibactam with aztreonam. Know that it has no anaerobic coverage, hence the metronidazole.",
+  "source": "AbbVie press release, U.S. FDA Approves EMBLAVEO (aztreonam and avibactam), 2025",
+  "url": "https://news.abbvie.com/2025-02-07-U-S-FDA-Approves-EMBLAVEO-TM-aztreonam-and-avibactam-for-the-Treatment-of-Adults-With-Complicated-Intra-Abdominal-Infections-With-Limited-or-No-Treatment-Options"
+ },
+ {
+  "id": "new-oral-uuti-agents",
+  "domain": "Infectious Diseases",
+  "date": "2025-03",
+  "change": "Two new oral agents were approved for uncomplicated UTI. Sulopenem etzadroxil/probenecid (Orlynvah) was approved in October 2024 for adult women with limited or no alternative oral options; it is the first oral penem. Gepotidacin (Blujepa) was approved in March 2025; it is a first-in-class triazaacenaphthylene topoisomerase inhibitor, noninferior or superior to nitrofurantoin in EAGLE-2/3, for women and adolescents ≥12 years and ≥40 kg.",
+  "practice_impact": "Know these as stewardship-reserved options for resistant uUTI, not first line; nitrofurantoin, TMP-SMX, and fosfomycin remain first line. Gepotidacin warnings: QTc prolongation and acetylcholinesterase inhibition. Sulopenem is not for cUTI.",
+  "source": "FDA, FDA approves new treatment for uUTI in adult women who have limited or no alternative oral antibiotic options (2024); GSK/FDA gepotidacin approval (2025)",
+  "url": "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-new-treatment-uncomplicated-urinary-tract-infections-adult-women-who-have-limited-or-no"
+ },
+ {
+  "id": "oral-gonorrhea-agents",
+  "domain": "Infectious Diseases",
+  "date": "2025-12",
+  "change": "In December 2025 the FDA approved two oral agents for uncomplicated urogenital gonorrhea in patients ≥12 years: gepotidacin (Blujepa) on December 11 and zoliflodacin (Nuzolvence) on December 12. They are the first new gonorrhea antibiotics in decades. Gepotidacin is for patients with few or no other options.",
+  "practice_impact": "Ceftriaxone 500 mg IM remains the CDC-recommended first-line treatment. The oral options are for cephalosporin allergy or resistance, or when injection is not feasible. Zoliflodacin carries embryo-fetal toxicity and fertility cautions.",
+  "source": "FDA press announcement, FDA Approves Two Oral Therapies to Treat Gonorrhea, 2025",
+  "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-two-oral-therapies-treat-gonorrhea"
+ },
+ {
+  "id": "doxy-pep-cdc-2024",
+  "domain": "Infectious Diseases",
+  "date": "2024-06",
+  "change": "CDC issued its first doxycycline post-exposure prophylaxis (doxy-PEP) guidelines in June 2024. CDC recommends that clinicians offer, through shared decision-making, doxycycline 200 mg taken once within 72 hours of condomless oral, anal, or vaginal sex. The recommendation covers MSM and transgender women who had a bacterial STI (syphilis, gonorrhea, or chlamydia) in the past 12 months.",
+  "practice_impact": "Doxy-PEP regimen is doxycycline 200 mg within 72 hours, maximum 200 mg per 24 hours, in the defined population. Test for STIs every 3-6 months. It is not recommended for cisgender women, where the trial showed no benefit.",
+  "source": "CDC, Clinical Guidelines for the Use of Doxycycline Postexposure Prophylaxis for Bacterial STI Prevention (MMWR), 2024",
+  "url": "https://www.cidrap.umn.edu/antimicrobial-stewardship/cdc-recommends-doxy-pep-high-risk-groups-stem-sexually-transmitted"
+ },
+ {
+  "id": "lenacapavir-prep",
+  "domain": "Infectious Diseases",
+  "date": "2025-09",
+  "change": "The FDA approved lenacapavir (Yeztugo) on June 18, 2025 as twice-yearly SC HIV PrEP for adults and adolescents ≥35 kg (PURPOSE 1/2). In September 2025 CDC issued a strong recommendation, amending the 2021 PrEP guideline, to offer injectable lenacapavir PrEP to people who would benefit from PrEP.",
+  "practice_impact": "PrEP options are now daily oral F/TDF or F/TAF, cabotegravir LA every 2 months, and lenacapavir SC every 6 months, which requires an oral loading phase at initiation. HIV testing is required at initiation and at each 6-month injection.",
+  "source": "CDC MMWR, Clinical Recommendation for the Use of Injectable Lenacapavir as HIV PrEP — United States, 2025",
+  "url": "https://www.cdc.gov/mmwr/volumes/74/wr/mm7435a1.htm"
+ },
+ {
+  "id": "dhhs-art-guidelines-2026",
+  "domain": "Infectious Diseases",
+  "date": "2026-09",
+  "change": "The September 30, 2026 HHS adult/adolescent ARV guideline update makes four main changes. Dolutegravir/lamivudine is recommended as an initial two-drug regimen regardless of baseline viral load (DOLCE), though not as a switch with historical M184V. Boosted darunavir plus 3TC or FTC is added as a two-drug option in certain scenarios. Doravirine/islatravir is added as an optimization (switch) option. The DDI tables are removed in favor of the Liverpool HIV interaction checker.",
+  "practice_impact": "The prior DTG/3TC exclusion for baseline HIV RNA >500,000 copies/mL in initial therapy is removed, but HBV coinfection and unavailable genotype or HBV results still matter. Islatravir regimens are contraindicated as the only HBV-active therapy. Bictegravir/lenacapavir (Bixlenvo) is not yet incorporated.",
+  "source": "HHS Panel on Antiretroviral Guidelines for Adults and Adolescents, Guidelines update (September 2026), via HIV.gov",
+  "url": "https://www.hiv.gov/blog/updates-to-the-guidelines-for-the-use-of-antiretroviral-agents-in-adults-and-adolescents-with-hiv-093026"
+ },
+ {
+  "id": "bictegravir-lenacapavir-approval",
+  "domain": "Infectious Diseases",
+  "date": "2026-08",
+  "change": "On August 27, 2026 the FDA approved Bixlenvo (bictegravir 75 mg/lenacapavir 50 mg), a once-daily single-tablet complete regimen for virologically suppressed adults (HIV RNA <50 copies/mL) without resistance to either component, including those on complex multi-tablet regimens. It requires a 2-day Sunlenca initiation.",
+  "practice_impact": "This is a new switch option for suppressed patients on complex regimens. It is not for treatment-naive patients and is not yet in HHS guidelines.",
+  "source": "Gilead press release, U.S. FDA Approves Gilead's Bixlenvo, 2026",
+  "url": "https://gilead.com/news/news-details/2026/u-s--fda-approves-gileads-bixlenvo-a-new-once-daily-single-tablet-option-for-virologically-suppressed-adults-with-hiv-including-those-on-complex-regimens"
+ },
+ {
+  "id": "bezlotoxumab-discontinued",
+  "domain": "Infectious Diseases",
+  "date": "2025-01",
+  "change": "Merck discontinued bezlotoxumab (Zinplava) in the US in January 2025. It was the sole supplier, and the 2021 IDSA/SHEA C. difficile focused update had suggested it as an adjunct for recurrent CDI.",
+  "practice_impact": "Bezlotoxumab is no longer an available answer for preventing CDI recurrence. Use fidaxomicin (preferred), vancomycin tapered-pulsed regimens, or microbiome therapeutics: Rebyota (rectal) and Vowst (oral), or FMT. No newer IDSA/SHEA CDI guideline was identified.",
+  "source": "ASHP Drug Shortages, Bezlotoxumab discontinuation detail, 2025",
+  "url": "https://www.ashp.org/Drug-Shortages/Current-Shortages/Drug-Shortage-Detail.aspx?id=1130"
+ },
+ {
+  "id": "pcv-adults-50",
+  "domain": "Infectious Diseases (Vaccines)",
+  "date": "2024-10",
+  "change": "In October 2024 ACIP lowered the age for routine pneumococcal conjugate vaccination from ≥65 to ≥50 years. It recommends a single PCV dose (PCV20, PCV21, or PCV15 followed by PPSV23) for all PCV-naive adults ≥50, as published in MMWR in January 2025. The risk-based recommendation for ages 19-49 is unchanged. This recommendation predates the June 2025 ACIP reconstitution and remains in effect.",
+  "practice_impact": "Every adult aged 50 or older who has not had a PCV should get one: PCV20 (Prevnar 20) or PCV21 (Capvaxive, licensed June 2024) alone, or PCV15 followed by PPSV23. The old 'age 65' answer is outdated.",
+  "source": "CDC MMWR, Expanded Recommendations for Use of Pneumococcal Conjugate Vaccines Among Adults Aged ≥50 Years: ACIP, 2025",
+  "url": "https://www.cdc.gov/mmwr/volumes/74/wr/mm7401a1.htm"
+ },
+ {
+  "id": "rsv-vaccine-older-adults",
+  "domain": "Infectious Diseases (Vaccines)",
+  "date": "2025-04",
+  "change": "Adult RSV vaccination moved from shared clinical decision-making for ages ≥60 to risk- and age-based recommendations. In June 2024 the recommendation became all adults ≥75 plus adults 60-74 at increased risk. In April 2025 ACIP extended it to adults 50-59 at increased risk, and CDC adopted it before the June 2025 ACIP reconstitution, so it is not affected by the 2026 court stay. Only a single lifetime dose is recommended (not annual). Arexvy, Abrysvo, and mResvia are all acceptable for ages ≥50.",
+  "practice_impact": "One RSV vaccine dose is recommended for all adults ≥75 and for adults 50-74 with risk conditions: chronic heart or lung disease, diabetes with end-organ damage, CKD, immunocompromise, nursing home residence, and similar. Do not revaccinate. The prior 'age ≥60 with shared decision-making' answer is outdated.",
+  "source": "CDC, RSV Vaccine Guidance for Adults, 2025",
+  "url": "https://www.cdc.gov/rsv/hcp/vaccine-clinical-guidance/adults.html"
+ },
+ {
+  "id": "covid-vaccine-2025-2026",
+  "domain": "Infectious Diseases (Vaccines)",
+  "date": "2025-10",
+  "change": "In August 2025 the FDA narrowed approval of 2025-26 COVID-19 vaccines to adults ≥65 and to younger people with at least one high-risk condition, and ended the remaining EUAs. ACIP (September 2025, adopted by CDC October 6, 2025) moved COVID-19 vaccination for all persons ≥6 months from routine to individual-based (shared clinical) decision-making. A federal court stayed all ACIP votes after June 11, 2025 on March 16, 2026. The May 2025 HHS change for children and pregnancy (SCDM for children, no guidance for pregnancy) remains in effect.",
+  "practice_impact": "Know the FDA labeled populations: ≥65, or high-risk ages 6 months to 64 depending on product. The CDC recommendation status is in litigation. AAP, ACOG, and IDSA continue to recommend broader vaccination. Check the current CDC schedule before answering exam-style questions about universal COVID vaccination.",
+  "source": "Congressional Research Service, Changes to CDC Vaccine Recommendations in 2025 and 2026 (IN12684, updated July 29, 2026); FDA 2025-26 approvals",
+  "url": "https://www.congress.gov/crs-product/IN12684"
+ },
+ {
+  "id": "influenza-thimerosal-free",
+  "domain": "Infectious Diseases (Vaccines)",
+  "date": "2025-07",
+  "change": "In June 2025 ACIP reaffirmed routine annual influenza vaccination for everyone ≥6 months. It also voted that children, pregnant people, and adults receive only single-dose, thimerosal-free influenza vaccines, which HHS adopted July 23, 2025. This vote is among the post-June 11, 2025 ACIP actions stayed by federal court order on March 16, 2026.",
+  "practice_impact": "Universal annual flu vaccination for ages ≥6 months is unchanged. Thimerosal-containing multidose vials are effectively phased out of US supply; about 96% of 2024-25 doses were already thimerosal-free. Note that the recommendation's legal status is currently stayed.",
+  "source": "Congressional Research Service IN12684 (2026); HHS adoption of ACIP thimerosal recommendation (2025)",
+  "url": "https://www.congress.gov/crs-product/IN12684"
+ },
+ {
+  "id": "flumist-self-administration",
+  "domain": "Infectious Diseases (Vaccines)",
+  "date": "2024-09",
+  "change": "On September 20, 2024 the FDA approved FluMist (LAIV) for self-administration or caregiver administration at home. It is the first influenza vaccine approved for use without a health care provider. A prescription and an online pharmacist-reviewed screening are required. Adults 18-49 may self-administer, and adults may give it to children 2-17.",
+  "practice_impact": "LAIV can now be dispensed for home use after pharmacist screening. LAIV contraindications are unchanged: immunocompromise, pregnancy, ages 2-4 with asthma or wheezing, and recent influenza antivirals.",
+  "source": "FDA approval of FluMist self/caregiver administration, 2024 (reported by HealthDay/STAT)",
+  "url": "https://statnews.com/2024/09/20/fda-approves-at-home-flu-vaccine-nasal-spray/"
+ },
+ {
+  "id": "menabcwy-penmenvy",
+  "domain": "Infectious Diseases (Vaccines)",
+  "date": "2025-04",
+  "change": "The FDA approved GSK's pentavalent MenABCWY vaccine (Penmenvy) on February 14, 2025 for ages 10-25, the second after Pfizer's Penbraya. In April 2025 ACIP recommended that MenABCWY may be used when both MenACWY and MenB are indicated at the same visit, and CDC adopted the recommendation before the June 2025 reconstitution.",
+  "practice_impact": "MenABCWY (Penbraya or Penmenvy) can replace separate MenACWY and MenB injections when both are due, for example at age 16 with shared decision-making for MenB, or for high-risk patients ≥10 such as those with asplenia or complement deficiency or on eculizumab. Match the MenB component brand for subsequent doses: Penbraya with Trumenba, Penmenvy with Bexsero.",
+  "source": "Congressional Research Service IN12684 (April 2025 ACIP actions); FDA approval of Penmenvy, 2025",
+  "url": "https://www.congress.gov/crs-product/IN12684"
+ },
+ {
+  "id": "us-vaccine-recommendations-legal-status-2026",
+  "domain": "Infectious Diseases (Vaccines)",
+  "date": "2026-03",
+  "change": "On March 16, 2026, in AAP v. Kennedy, a federal court stayed the January 2026 HHS childhood schedule, the appointments of the HHS-appointed ACIP members, and all ACIP votes after June 11, 2025. Childhood and adult schedules mostly revert to the January 2025 versions, plus the April 2025 ACIP recommendations and the May 2025 COVID changes. The government appealed. A May 29, 2026 Executive Order (14407) and a revised ACIP charter signal further changes.",
+  "practice_impact": "For exam and study purposes, flag every 2025-26 federal vaccine change as legally contested. Know the pre-June-2025 recommendations, such as the universal hepatitis B birth dose and routine COVID/flu/RSV-infant recommendations, as well as the newer changes. AAP and ACOG publish their own schedules that keep the prior routine recommendations.",
+  "source": "Congressional Research Service, Changes to CDC Vaccine Recommendations in 2025 and 2026 (IN12684), updated July 29, 2026",
+  "url": "https://www.congress.gov/crs-product/IN12684"
+ },
+ {
+  "id": "childhood-schedule-2026",
+  "domain": "Pediatrics",
+  "date": "2026-01",
+  "change": "On January 5, 2026 CDC issued a revised childhood immunization schedule without an ACIP vote. Routine universal recommendations were cut from 17-18 diseases to 11, and several vaccines (RSV immunization, hepatitis A, hepatitis B, influenza, COVID-19, meningococcal) moved to risk-based or shared clinical decision-making categories. The schedule was stayed by federal court on March 16, 2026, so it currently has no effect. AAP maintains routine recommendations for 18 diseases.",
+  "practice_impact": "The pre-2026 routine childhood schedule is the operative federal schedule while the stay holds. Be aware of the contested 2026 schedule and the AAP's separate schedule. Do not teach the reduced schedule as settled standard of care.",
+  "source": "Congressional Research Service, The 2026 Childhood Immunization Schedule (R48982) and IN12684, 2026",
+  "url": "https://www.everycrsreport.com/reports/R48982.html"
+ },
+ {
+  "id": "hepb-birth-dose-scdm",
+  "domain": "Pediatrics",
+  "date": "2025-12",
+  "change": "On December 5, 2025 ACIP voted 8-3 to replace the universal hepatitis B birth dose for infants of HBsAg-negative mothers with individual-based (shared) decision-making. Infants not receiving the birth dose would get a first dose no earlier than 2 months, and post-series antibody testing would guide later doses. CDC adopted the change in mid-December 2025. Infants of HBsAg-positive or unknown-status mothers still receive HepB vaccine plus HBIG at birth. The change is stayed by court order as of March 16, 2026.",
+  "practice_impact": "The universal hepatitis B birth dose (within 24 hours) is the standard under the current court stay and remains AAP policy. Infants of HBsAg-positive mothers must receive HepB vaccine plus HBIG within 12 hours, which is unchanged.",
+  "source": "HHS press release on ACIP individual-based decision-making for HepB birth dose (2025); CRS IN12684 (2026)",
+  "url": "https://www.hhs.gov/press-room/acip-recommends-individual-based-decision-making-hepatitis-b-vaccine-birth-dose-infants-born-women-test-negative-virus.html"
+ },
+ {
+  "id": "mmrv-under-4",
+  "domain": "Pediatrics",
+  "date": "2025-09",
+  "change": "In September 2025 ACIP voted to recommend against combined MMRV for children <4 years because febrile seizure risk is about doubled. Separate MMR and varicella vaccines are recommended for the first dose; MMRV remains an option at ages 4-6. VFC coverage of MMRV for <4 years was removed. This vote is stayed by court order as of March 16, 2026.",
+  "practice_impact": "The answer is consistent with long-standing CDC preference: separate MMR and varicella vaccines are preferred for the first dose at 12-47 months unless the parent prefers MMRV, because of febrile seizure risk. Note that the 2025 vote made this a recommendation against MMRV, and that vote is now stayed.",
+  "source": "Congressional Research Service IN12684 (September 18-19, 2025 ACIP actions), 2026",
+  "url": "https://www.congress.gov/crs-product/IN12684"
+ },
+ {
+  "id": "clesrovimab-rsv-infants",
+  "domain": "Pediatrics",
+  "date": "2025-06",
+  "change": "On June 9, 2025 the FDA approved clesrovimab (Enflonsia), a second long-acting RSV monoclonal antibody for infants born during or entering their first RSV season. It is given as a single 105 mg IM dose regardless of weight. In June 2025 ACIP recommended it, with no preference versus nirsevimab, but that vote is among those stayed by court order in March 2026. The nirsevimab recommendation remains in effect.",
+  "practice_impact": "Infant RSV prevention options are maternal Abrysvo at 32-36 weeks, nirsevimab (Beyfortus, weight-based 50 or 100 mg; 200 mg in a second season for high-risk children), or clesrovimab (105 mg fixed dose, first season only). Infants protected by maternal vaccination generally do not need a monoclonal antibody.",
+  "source": "Merck press release, U.S. FDA Approves Merck's ENFLONSIA (clesrovimab-cfor), 2025; CRS IN12684 (2026)",
+  "url": "https://www.merck.com/news/u-s-fda-approves-mercks-enflonsia-clesrovimab-cfor-for-prevention-of-respiratory-syncytial-virus-rsv-lower-respiratory-tract-disease-in-infants-born-during-or-entering-their-fir/"
+ },
+ {
+  "id": "palivizumab-discontinued",
+  "domain": "Pediatrics",
+  "date": "2025-12",
+  "change": "Sobi voluntarily discontinued palivizumab (Synagis) in the US effective December 31, 2025, for all indications including prematurity, BPD/CLD, and hemodynamically significant CHD. Payers have moved to nirsevimab and clesrovimab as preferred agents. AAP no longer routinely recommends palivizumab.",
+  "practice_impact": "Palivizumab monthly dosing (15 mg/kg IM) is no longer an available US answer for RSV prophylaxis. High-risk infants and children in their second season get nirsevimab 200 mg.",
+  "source": "Sobi market discontinuation notice (via Arizona AHCCCS), 2025; MedlinePlus palivizumab monograph",
+  "url": "https://test.azahcccs.gov/shared/Downloads/PP29408_SYNAGIS_MarketAccess_Discontinuation_AnnouncementEmail.pdf"
+ },
+ {
+  "id": "ssc-2026-resuscitation",
+  "domain": "Critical Care",
+  "date": "2026-03",
+  "change": "The 2026 Surviving Sepsis Campaign adult guidelines, published March 23, 2026, replace the 2021 version with 129 statements, 46 of them new. 30 mL/kg crystalloid is retained, using ideal or adjusted body weight if BMI >30, with dynamic assessment guiding further fluids. Balanced crystalloids over saline is upgraded to moderate certainty, except in TBI, and albumin is downgraded to select situations. Active fluid removal after resuscitation is newly suggested, with diuretics first. Norepinephrine remains first line, epinephrine's role is strengthened, and vasopressin or angiotensin II is the usual second agent. A new MAP target of 60-65 mm Hg is suggested for patients ≥65 years.",
+  "practice_impact": "For septic shock patients ≥65, target MAP 60-65 rather than higher. Prefer balanced crystalloids such as LR or Plasma-Lyte. Deresuscitate with diuretics after stabilization. Suggestions against routine use now cover vitamin C, IVIG, polymyxin B hemoperfusion, vitamin D, and probiotics. Methylene blue lacks a graded recommendation.",
+  "source": "SCCM/ESICM, Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026 (Crit Care Med / Intensive Care Med), 2026",
+  "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026"
+ },
+ {
+  "id": "ssc-2026-antimicrobials",
+  "domain": "Critical Care",
+  "date": "2026-03",
+  "change": "SSC 2026 antimicrobial changes: antibiotics within 1 hour for definite or probable sepsis, and for possible sepsis with shock. For possible sepsis without shock, a rapid assessment of up to 3 hours is allowed. Prehospital antibiotics are newly suggested only for probable sepsis with hypotension and expected transport over 1 hour. New conditional recommendations cover when to use anti-anaerobic coverage. Empiric antifungal therapy is suggested against except in selected high-risk patients. Stewardship and de-escalation are emphasized throughout.",
+  "practice_impact": "Know the 1-hour versus 3-hour timing framework, the avoidance of routine empiric antifungals and unnecessary anaerobic coverage, and de-escalation once cultures result.",
+  "source": "SCCM/ESICM, Surviving Sepsis Campaign 2026 adult guidelines; SCCM Podcast 565 key updates, 2026",
+  "url": "https://sccm.org/communications/sccm-podcast/sccm-podcast-all-episodes/sccmpod-565-ccm-key-updates-for-the-2026-adult-surviving-sepsis-campaign-guidelines"
+ },
+ {
+  "id": "stress-ulcer-prophylaxis-2024",
+  "domain": "Critical Care",
+  "date": "2024-08",
+  "change": "The 2024 SCCM/ASHP guideline on preventing stress-related GI bleeding (Crit Care Med 2024;52(8)) replaces the 1999 ASHP guideline. It recommends a PPI or H2RA at low-dose regimens for critically ill adults with risk factors such as coagulopathy, shock, chronic liver disease, and possibly neurocritical illness. PPIs and H2RAs are given equal standing, IV or enteral. Prophylaxis should be stopped when critical illness or the risk factors resolve.",
+  "practice_impact": "PPI and H2RA are both acceptable. Mechanical ventilation alone is not specifically endorsed as an indication. Discontinue SUP at ICU discharge or when risk factors resolve to avoid inappropriate continuation.",
+  "source": "SCCM/ASHP, Guideline for the Prevention of Stress-Related Gastrointestinal Bleeding in Critically Ill Adults (Crit Care Med), 2024",
+  "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/sccm-ashp-guideline-prevention-of-ugib"
+ },
+ {
+  "id": "padis-focused-update-2025",
+  "domain": "Critical Care",
+  "date": "2025-03",
+  "change": "The 2025 SCCM PADIS focused update covers anxiety (new), agitation/sedation, delirium, immobility, and sleep. It conditionally recommends dexmedetomidine over propofol for sedation of mechanically ventilated adults when light sedation or reduced delirium is the priority (moderate certainty). It conditionally recommends enhanced mobilization/rehabilitation and melatonin. It makes no recommendation on benzodiazepines for anxiety or on antipsychotics for delirium.",
+  "practice_impact": "Dexmedetomidine is suggested over propofol for light sedation and delirium-reduction goals. Melatonin is suggested for sleep. Avoid benzodiazepines as first-line sedatives, which is unchanged. Note that the 2025 A2B trial reached a different conclusion.",
+  "source": "SCCM, 2025 Focused Update to the PADIS Guidelines (Crit Care Med), 2025",
+  "url": "https://sccm.org/clinical-resources/guidelines/guidelines/focused-update-padis-guideline"
+ },
+ {
+  "id": "ards-corticosteroids-2024",
+  "domain": "Critical Care",
+  "date": "2024-01",
+  "change": "The ATS ARDS guideline update (approved late 2023, published in AJRCCM January 2024) and the SCCM 2024 focused update on corticosteroids (sepsis, ARDS, CAP; January 2024) both conditionally recommend systemic corticosteroids for adults with ARDS, with moderate certainty. ATS also addresses VV-ECMO, neuromuscular blockade, PEEP, and recruitment maneuvers, recommending against prolonged recruitment maneuvers.",
+  "practice_impact": "Corticosteroids are now suggested for ARDS; the specific agent and dose are not standardized, and dexamethasone (DEXA-ARDS) or methylprednisolone regimens are typical.",
+  "source": "ATS, An Update on Management of Adult Patients with ARDS: An Official ATS Clinical Practice Guideline (AJRCCM), 2024; SCCM Focused Update on Corticosteroids (Crit Care Med), 2024",
+  "url": "https://guidelinecentral.com/guideline/3352814"
+ },
+ {
+  "id": "ada-standards-2025",
+  "domain": "Endocrinology",
+  "date": "2024-12",
+  "change": "The ADA Standards of Care 2025 (released December 2024) add new recommendations. A GLP-1 RA or dual GIP/GLP-1 RA is recommended for T2D with MASLD/MASH. A GLP-1 RA is recommended in T2D with symptomatic HFpEF and obesity. An SGLT2i or GLP-1 RA is recommended in T2D with CKD. CGM use is expanded to adults with T2D on non-insulin glucose-lowering agents. Screening for presymptomatic T1D is addressed. Separately, in December 2024 the ADA issued a guidance statement (Diabetes Care) recommending against non-FDA-approved compounded incretin products.",
+  "practice_impact": "Know the expanded CGM indications, GLP-1 RA use for MASH and HFpEF with obesity, and SGLT2i or GLP-1 RA use for CKD. Recommend FDA-approved GLP-1 products over compounded versions.",
+  "source": "American Diabetes Association, Standards of Care in Diabetes—2025: Summary of Revisions (Diabetes Care 48:Suppl 1, doi 10.2337/dc25-SREV), 2024",
+  "url": "https://www.guidelinecentral.com/insights/diabetes-standards-of-care-2025-guidelines-spotlight/"
+ },
+ {
+  "id": "ada-standards-2026",
+  "domain": "Endocrinology",
+  "date": "2025-12",
+  "change": "The ADA Standards of Care 2026 (released December 8, 2025) make several changes. CGM is recommended at diagnosis or any time after for anyone on insulin, on hypoglycemia-causing non-insulin therapy, or on any regimen where CGM aids management. AID systems should be offered to all adults with T1D or T2D using insulin (Level A for T2D), and pump/AID prerequisites such as C-peptide, autoantibodies, and insulin duration are removed. GLP-1 RA or GIP/GLP-1 RA is recommended for MASLD/MASH, and GLP-1 RA for T2D with ASCVD or CKD, including eGFR <30. New sections address glycemic management during cancer therapy, including immune checkpoint inhibitor hyperglycemia, and dose individualization of obesity medications.",
+  "practice_impact": "Recommend CGM early and broadly. Offer AID in insulin-treated T2D. GLP-1 RAs can be used in advanced CKD. Recognize checkpoint inhibitor-induced diabetes.",
+  "source": "American Diabetes Association, Standards of Care in Diabetes—2026: Summary of Revisions (Diabetes Care 49:Suppl 1, doi 10.2337/dc26-SREV), 2025",
+  "url": "https://www.healio.com/news/endocrinology/20251208/glycemic-management-with-cancer-therapy-cgm-use-among-2026-ada-standards-of-care-updates"
+ },
+ {
+  "id": "hyperglycemic-crises-consensus-2024",
+  "domain": "Endocrinology",
+  "date": "2024-06",
+  "change": "The 2024 ADA/EASD/JBDS/AACE/DTS consensus on hyperglycemic crises in adults redefines DKA with three criteria. D: glucose ≥200 mg/dL (previously 250) or any history of diabetes, so euglycemic DKA is captured. K: beta-hydroxybutyrate ≥3.0 mmol/L or urine ketones ≥2+. A: pH <7.3 and/or bicarbonate <18 mmol/L. Resolution requires BHB <0.6 mmol/L plus venous pH ≥7.3 or bicarbonate ≥18. Insulin is titrated to keep glucose around 200 mg/dL until resolution.",
+  "practice_impact": "Use the new DKA diagnostic thresholds and BHB-based resolution criteria. The anion gap is no longer the resolution criterion. Recognize SGLT2i-associated euglycemic DKA. Check potassium before insulin, which is unchanged.",
+  "source": "ADA/EASD/JBDS/AACE/DTS, Hyperglycemic Crises in Adults With Diabetes: A Consensus Report (Diabetes Care 2024;47(8); Diabetologia), 2024",
+  "url": "https://consultqd.clevelandclinic.org/hyperglycemic-crises-in-adults-the-2024-consensus-report"
+ },
+ {
+  "id": "tirzepatide-osa",
+  "domain": "Endocrinology",
+  "date": "2024-12",
+  "change": "On December 20, 2024 the FDA approved tirzepatide (Zepbound) for moderate-to-severe obstructive sleep apnea in adults with obesity (SURMOUNT-OSA). It is the first drug approved for OSA.",
+  "practice_impact": "Tirzepatide is an OSA treatment option in adults with obesity, alongside CPAP. Know the new obesity-drug indications: CV risk reduction (Wegovy), OSA (Zepbound), MASH (Wegovy), and CKD in T2D (Ozempic).",
+  "source": "Eli Lilly / FDA approval of Zepbound for OSA, 2024",
+  "url": "https://www.aspconline.org/news/fda-approves-zepbound-tirzepatide-"
+ },
+ {
+  "id": "oral-semaglutide-obesity",
+  "domain": "Endocrinology",
+  "date": "2025-12",
+  "change": "On December 22, 2025 the FDA approved the Wegovy pill (oral semaglutide 25 mg once daily) for chronic weight management and MACE risk reduction in adults with obesity, or overweight with a comorbidity (OASIS 4: about 16.6% weight loss). It is the first oral GLP-1 RA for obesity.",
+  "practice_impact": "There is now an oral obesity GLP-1 option. Like Rybelsus, it must be taken fasting with a small sip of water and food delayed afterward. Do not confuse the 25 mg obesity dose with Rybelsus 3, 7, or 14 mg for T2D.",
+  "source": "Novo Nordisk / FDA approval of Wegovy pill (oral semaglutide 25 mg), 2025",
+  "url": "https://epocrates.com/online/article/fda-approves-oral-wegovy-pill-for-weight-loss"
+ },
+ {
+  "id": "orforglipron-obesity",
+  "domain": "Endocrinology",
+  "date": "2026-04",
+  "change": "On April 1, 2026 the FDA approved orforglipron (Foundayo, Eli Lilly), a once-daily oral small-molecule non-peptide GLP-1 RA, for chronic weight management in adults with obesity, or overweight with a comorbidity (ATTAIN-1: up to about 12% weight loss at 36 mg). It has no food or water timing restrictions.",
+  "practice_impact": "This adds a second oral GLP-1 obesity option. Unlike oral semaglutide, it has no fasting administration requirements. GI adverse effects are the main tolerability issue.",
+  "source": "FDA approval of orforglipron (Foundayo), 2026 (Healio/Pharmacy Times coverage)",
+  "url": "https://www.healio.com/news/endocrinology/20260401/fda-approves-orforglipron-an-oral-glp1-for-adults-with-obesity"
+ },
+ {
+  "id": "insulin-icodec-approval",
+  "domain": "Endocrinology",
+  "date": "2026-03",
+  "change": "On March 26, 2026 the FDA approved insulin icodec (Awiqli, 700 units/mL), the first once-weekly basal insulin, for glycemic control in adults with type 2 diabetes (ONWARDS program). It is not approved for type 1 diabetes in the US.",
+  "practice_impact": "A once-weekly basal insulin option now exists for T2D. Know the U-700 concentration, weekly dosing on the same day, and the hypoglycemia risk.",
+  "source": "Novo Nordisk / FDA approval of Awiqli (insulin icodec-abae), 2026",
+  "url": "https://www.drugtopics.com/view/fda-approves-first-weekly-basal-insulin-for-adults-with-type-2-diabetes"
+ },
+ {
+  "id": "gc-induced-adrenal-insufficiency-2024",
+  "domain": "Endocrinology",
+  "date": "2024-05",
+  "change": "The first joint ESE/Endocrine Society guideline on glucocorticoid-induced adrenal insufficiency (May 2024) addresses tapering. Tapering can be faster within the supraphysiologic range and slower once doses are near physiologic (about 4-6 mg/day prednisone equivalent). Routine HPA-axis testing is not recommended while patients are on supraphysiologic doses. Patients at risk need stress-dose education and sick-day rules. Glucocorticoid withdrawal syndrome is distinguished from adrenal insufficiency.",
+  "practice_impact": "Know the taper approach, when to check a morning cortisol (near physiologic dose), stress dosing for illness and surgery, and that all glucocorticoid routes (inhaled, intra-articular, topical) can suppress the HPA axis.",
+  "source": "European Society of Endocrinology/Endocrine Society, Joint Guideline: Diagnosis and Therapy of Glucocorticoid-Induced Adrenal Insufficiency (JCEM/EJE), 2024",
+  "url": "https://www.endocrine.org/clinical-practice-guidelines/glucocorticoid-induced-adrenal-insufficiency"
+ },
+ {
+  "id": "vitamin-d-guideline-2024",
+  "domain": "Endocrinology",
+  "date": "2024-06",
+  "change": "The 2024 Endocrine Society guideline 'Vitamin D for the Prevention of Disease' replaces the 2011 guideline. It suggests against routine 25(OH)D testing in the general population without established indications. It suggests empiric vitamin D supplementation above the DRI, without testing, for children and adolescents 1-18, adults >75, pregnant people, and adults with high-risk prediabetes. Healthy adults <75 do not need supplementation above the DRI.",
+  "practice_impact": "Do not routinely screen 25(OH)D levels or target specific levels in healthy patients. Use empiric supplementation only for the listed groups. The guideline does not apply to patients with established indications such as osteoporosis or malabsorption.",
+  "source": "Endocrine Society, Vitamin D for the Prevention of Disease: An Endocrine Society Clinical Practice Guideline (JCEM, PMID 38828931), 2024",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/38828931/"
+ },
+ {
+  "id": "ata-dtc-guideline-2025",
+  "domain": "Endocrinology",
+  "date": "2025-10",
+  "change": "The 2025 ATA guideline for adults with differentiated thyroid cancer replaces the 2015 guideline and no longer covers thyroid nodules. It introduces the DATA framework and moves from three-tier to four-tier recurrence risk stratification, splitting intermediate into low-intermediate and intermediate-high. It clarifies RAI use and SPECT/CT imaging, and recommends molecular testing for RAI-refractory disease.",
+  "practice_impact": "Know the four-tier risk categories that drive RAI and TSH-suppression intensity, and that molecular testing guides kinase inhibitor or redifferentiation therapy in RAI-refractory disease. The levothyroxine TSH-suppression concept remains, but targets are risk-tailored.",
+  "source": "American Thyroid Association, 2025 Management Guidelines for Adult Patients with Differentiated Thyroid Cancer (Thyroid; PMID 41173539), 2025",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/41173539/"
+ },
+ {
+  "id": "kdigo-ckd-2024",
+  "domain": "Nephrology",
+  "date": "2024-03",
+  "change": "The KDIGO 2024 CKD evaluation and management guideline replaces the 2012 guideline. It recommends race-free eGFR equations and adding cystatin C (eGFRcr-cys) when creatinine-based eGFR is less accurate or decisions such as drug dosing depend on it. SGLT2 inhibitors are recommended broadly for CKD regardless of diabetes when eGFR ≥20 and either UACR ≥200 mg/g or HF is present, and suggested for eGFR 20-45 with lower albuminuria. It addresses nonsteroidal MRA use in T2D with albuminuria and medication management, including drug dosing by eGFR.",
+  "practice_impact": "Use CKD-EPI 2021 race-free equations. Use cystatin C for dosing decisions when creatinine is unreliable, as in sarcopenia, amputation, or extremes of body size. Start SGLT2i down to eGFR 20 and continue until dialysis.",
+  "source": "KDIGO, KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of CKD (Kidney Int), 2024",
+  "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12158546/"
+ },
+ {
+  "id": "semaglutide-ckd-t2d",
+  "domain": "Nephrology",
+  "date": "2025-01",
+  "change": "On January 28, 2025 the FDA approved semaglutide (Ozempic) to reduce the risk of sustained eGFR decline, kidney failure, and CV death in adults with T2D and CKD, based on FLOW (24% relative risk reduction). It is the first GLP-1 RA with a kidney-outcome indication.",
+  "practice_impact": "In T2D with CKD, semaglutide joins SGLT2 inhibitors and finerenone as an organ-protective therapy with kidney outcome data.",
+  "source": "FDA approval of Ozempic for CKD in T2D (FLOW), 2025",
+  "url": "https://www.patientcareonline.com/view/fda-approves-new-indication-for-semaglutide-ozempic-to-lower-kidney-risks-in-type-2-diabetes-ckd"
+ },
+ {
+  "id": "kdigo-anemia-2026",
+  "domain": "Nephrology",
+  "date": "2026-01",
+  "change": "The KDIGO 2026 anemia in CKD guideline (Kidney Int 2026;109(1S)) replaces the 2012 guideline. Iron therapy is guided by TSAT and ferritin, with IV iron preferred in hemodialysis and oral or IV iron by preference in non-dialysis CKD. An ESA rather than a HIF-PHI is suggested first line, with HIF-PHIs as alternatives for patients who prefer oral therapy, are ESA-intolerant, or lack refrigeration, and to be avoided with active malignancy or recent CV or thrombotic events. ESAs should not be used to maintain Hb ≥11.5 g/dL.",
+  "practice_impact": "ESA is first line; HIF-PHIs such as vadadustat are second-line alternatives; US HIF-PHI approvals are limited to dialysis-dependent CKD. Use IV iron for HD patients. Do not target Hb ≥11.5 with an ESA. Correct reversible causes first.",
+  "source": "KDIGO, KDIGO 2026 Clinical Practice Guideline for the Management of Anemia in CKD, 2026",
+  "url": "https://kdigo.org/kdigo-announces-publication-of-anemia-in-ckd-guideline/"
+ },
+ {
+  "id": "gold-2025",
+  "domain": "Pulmonary",
+  "date": "2024-11",
+  "change": "GOLD 2025 adds ensifentrine as an option for patients with persistent dyspnea on LABA+LAMA. It adds dupilumab as add-on therapy for patients on triple therapy with exacerbations, chronic bronchitis, and blood eosinophils ≥300. ICS/LABA is removed as an initial treatment option, and the COVID-19 chapter is removed.",
+  "practice_impact": "COPD follow-up algorithm: for dyspnea on LABA+LAMA, consider ensifentrine. For exacerbations on LABA+LAMA+ICS with eosinophils ≥300 and chronic bronchitis, consider dupilumab. Do not start ICS/LABA alone.",
+  "source": "GOLD, 2025 GOLD Report Key Changes, 2024",
+  "url": "https://goldcopd.org/wp-content/uploads/2024/11/KEY-CHANGES-GOLD-2025-11Nov2024.pdf"
+ },
+ {
+  "id": "gold-2026",
+  "domain": "Pulmonary",
+  "date": "2025-11",
+  "change": "GOLD 2026 makes four main changes. Even one moderate or severe exacerbation before maintenance therapy now places a patient in group E and should prompt consideration of escalation (previously ≥2 moderate exacerbations). Mepolizumab is added after dupilumab as a biologic option, with both carrying Level A evidence for reducing exacerbations. RSV vaccination is recommended from age ≥50 rather than ≥60, with Tdap and zoster also recommended. A joint GOLD/GLI spirometry interpretation statement and an underdiagnosis screening algorithm are added.",
+  "practice_impact": "The new group E criterion is ≥1 moderate or severe exacerbation. Biologics for eosinophilic COPD on triple therapy are dupilumab (eosinophils ≥300, chronic bronchitis) and mepolizumab (FDA label eosinophils ≥150). Recommend RSV vaccine for COPD patients aged ≥50.",
+  "source": "GOLD, GOLD Report 2026 Key Changes Summary, 2025",
+  "url": "https://goldcopd.org/wp-content/uploads/2025/11/KEY-CHANGES-GOLD-2026-10Nov2025.pdf"
+ },
+ {
+  "id": "ensifentrine-copd",
+  "domain": "Pulmonary",
+  "date": "2024-06",
+  "change": "On June 26, 2024 the FDA approved ensifentrine (Ohtuvayre), a nebulized dual PDE3/PDE4 inhibitor, for maintenance treatment of COPD in adults. It is the first inhaled COPD drug with a novel mechanism in over 20 years.",
+  "practice_impact": "Know ensifentrine's mechanism (bronchodilator plus nonsteroidal anti-inflammatory), its nebulized twice-daily administration, and its GOLD placement as an add-on for dyspnea on LABA+LAMA.",
+  "source": "FDA approval of Ohtuvayre (ensifentrine), 2024 (Healio/Drug Topics coverage)",
+  "url": "https://www.healio.com/news/pulmonology/20240627/fda-approves-ohtuvayre-as-maintenance-treatment-for-copd"
+ },
+ {
+  "id": "copd-biologics-approvals",
+  "domain": "Pulmonary",
+  "date": "2025-05",
+  "change": "The FDA approved the first biologics for COPD: dupilumab (Dupixent) in September 2024 and mepolizumab (Nucala) in May 2025. Both are approved as add-on maintenance treatment for adults with inadequately controlled COPD and an eosinophilic phenotype. Dupilumab trials used eosinophils ≥300; the mepolizumab label uses eosinophils ≥150.",
+  "practice_impact": "Know the dosing: dupilumab 300 mg SC every 2 weeks, mepolizumab 100 mg SC every 4 weeks. They are add-on therapy after triple inhaled therapy, not substitutes for it.",
+  "source": "FDA approvals of Dupixent (2024) and Nucala (2025) for COPD (BioSpace coverage)",
+  "url": "https://www.biospace.com/fda/gsk-wins-copd-expansion-for-nucala-after-fda-delay"
+ },
+ {
+  "id": "gina-2024",
+  "domain": "Pulmonary",
+  "date": "2024-05",
+  "change": "GINA 2024 (May 2024) lowers the symptom thresholds for starting treatment at Steps 1-2 versus Step 3. It clarifies starting at Step 3 for low lung function and Step 4 after a recent exacerbation. It reinforces that no adult or adolescent should receive SABA-only therapy, and that ICS-formoterol as AIR or MART (Track 1) remains preferred.",
+  "practice_impact": "Every adolescent and adult with asthma needs ICS-containing therapy. Track 1 (as-needed or maintenance-and-reliever ICS-formoterol) is preferred over SABA-reliever Track 2.",
+  "source": "Global Initiative for Asthma, GINA 2024 Strategy Report, 2024",
+  "url": "https://ginasthma.org/wp-content/uploads/2024/05/GINA-2024-Strategy-Report-24_05_22_WMS.pdf"
+ },
+ {
+  "id": "gina-2025",
+  "domain": "Pulmonary",
+  "date": "2025-05",
+  "change": "GINA 2025 makes several changes. Asthma can now be diagnosed in children ≤5 years, with explicit guidance. Track 2 Step 4 changes from medium-high to medium-dose ICS-LABA, with any high-dose ICS-LABA limited to 3-6 months. Nebulized magnesium is no longer recommended, and fenoterol is listed as not recommended. The O2 saturation target for children is ≥94%. Type 2 biomarker (eosinophils, FeNO) guidance is consolidated, and an extreme-weather section is added. The November 2025 minor update corrects the nebulized salbutamol dose for children ≤5 to 2.5 mg.",
+  "practice_impact": "Limit high-dose ICS duration. Do not use nebulized magnesium. Aim for SpO2 ≥94% in children during exacerbations. The pediatric (≤5 years) nebulized albuterol exacerbation dose is 2.5 mg.",
+  "source": "Global Initiative for Asthma, GINA 2025 Strategy Report (and November 2025 update), 2025",
+  "url": "https://ginasthma.org/minor-update-to-gina-2025-report-and-good-news-about-access-to-gina-resources/"
+ },
+ {
+  "id": "gina-2026",
+  "domain": "Pulmonary",
+  "date": "2026-05",
+  "change": "GINA 2026 (May 2026) makes three main changes. Track 2 Step 1 becomes anti-inflammatory reliever (AIR)-only therapy with ICS-SABA (fixed-dose albuterol-budesonide or separate inhalers) as needed, eliminating SABA-alone use, supported by BATURA. SABA-only treatment is dropped for children 6-11, and ICS-formoterol is added for mild exacerbations at age ≥6. New acute-care flowcharts and simplified AIR/MART dosing are added, and depemokimab is added to the biologic options.",
+  "practice_impact": "SABA monotherapy is no longer acceptable at any step for ages ≥6. If not using ICS-formoterol (Track 1), use as-needed albuterol-budesonide (Airsupra) or SABA taken with ICS. Pediatric (6-11) options now include ICS-formoterol reliever.",
+  "source": "Global Initiative for Asthma, GINA 2026 Strategy Report, 2026",
+  "url": "https://ginasthma.org/wp-content/uploads/2026/05/GINA-2026-Strategy-Report-WMS.pdf"
+ },
+ {
+  "id": "depemokimab-asthma",
+  "domain": "Pulmonary",
+  "date": "2025-12",
+  "change": "On December 16, 2025 the FDA approved depemokimab (Exdensur), an ultra-long-acting anti-IL-5 mAb given SC twice yearly, as add-on maintenance for severe asthma with an eosinophilic phenotype in patients ≥12 years (SWIFT-1/2).",
+  "practice_impact": "This adds a twice-yearly biologic to the severe eosinophilic asthma options: mepolizumab, reslizumab, benralizumab, dupilumab, tezepelumab, and depemokimab.",
+  "source": "GSK press release, Exdensur (depemokimab) approved by US FDA for severe asthma, 2025",
+  "url": "https://businesswire.com/news/home/20251216764904/en/Exdensur-depemokimab-approved-by-US-FDA-for-the-treatment-of-severe-asthma"
+ },
+ {
+  "id": "brensocatib-bronchiectasis",
+  "domain": "Pulmonary",
+  "date": "2025-08",
+  "change": "On August 12, 2025 the FDA approved brensocatib (Brinsupri), an oral once-daily DPP1 inhibitor, as the first treatment for non-cystic fibrosis bronchiectasis in patients ≥12 years (ASPEN: about 20% fewer exacerbations).",
+  "practice_impact": "Brensocatib is the first approved disease-specific therapy for NCFB. It works by reducing neutrophil serine protease activity. Know its mechanism and indication.",
+  "source": "Insmed press release, FDA Approves BRINSUPRI (brensocatib), 2025",
+  "url": "https://www.biospace.com/press-releases/fda-approves-brinsupri-brensocatib-as-the-first-and-only-treatment-for-non-cystic-fibrosis-bronchiectasis-a-serious-chronic-lung-disease"
+ },
+ {
+  "id": "nerandomilast-ipf",
+  "domain": "Pulmonary",
+  "date": "2025-10",
+  "change": "In October 2025 the FDA approved nerandomilast (Jascayd), an oral PDE4B inhibitor at 18 mg BID, for IPF. It is the first new IPF drug in more than a decade, slowing FVC decline in FIBRONEER-IPF.",
+  "practice_impact": "IPF antifibrotic options are now pirfenidone, nintedanib, and nerandomilast. Do not reduce the dose to 9 mg BID in patients taking pirfenidone. Watch for diarrhea, weight loss, and depression.",
+  "source": "FDA, FDA approves drug to treat idiopathic pulmonary fibrosis, 2025",
+  "url": "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-drug-treat-idiopathic-pulmonary-fibrosis"
+ },
+ {
+  "id": "tenecteplase-ais-approval",
+  "domain": "Neurology",
+  "date": "2025-03",
+  "change": "On March 3, 2025 the FDA approved tenecteplase (TNKase) for acute ischemic stroke in adults, based on AcT. It is a single 5-second IV bolus (0.25 mg/kg, max 25 mg) versus a 1-hour alteplase infusion. It was previously approved only for STEMI.",
+  "practice_impact": "Tenecteplase is now an FDA-approved stroke thrombolytic. Use the stroke dose of 0.25 mg/kg (max 25 mg), not the higher weight-tiered STEMI dosing; dosing errors are a key exam point.",
+  "source": "Genentech / FDA approval of TNKase for acute ischemic stroke, 2025",
+  "url": "https://www.tctmd.com/news/fda-approves-tenecteplase-acute-ischemic-stroke"
+ },
+ {
+  "id": "ais-guideline-2026",
+  "domain": "Neurology",
+  "date": "2026-01",
+  "change": "The 2026 AHA/ASA guideline for early management of acute ischemic stroke (January 26, 2026) replaces the 2019 guideline. Tenecteplase is equivalent to alteplase for IVT within 4.5 hours. IVT can be extended up to 9 hours in selected patients with advanced imaging mismatch. Patients with disabling deficits are treated regardless of NIHSS, and IVT is not recommended for non-disabling minor stroke, where DAPT is preferred. Adjunctive argatroban or eptifibatide with IVT is not recommended. Post-IVT/EVT SBP <140 is not better than <180 and may harm after EVT. The glucose target is 140-180 mg/dL. The guideline also adds mobile stroke units and the first pediatric recommendations.",
+  "practice_impact": "Choose TNK or alteplase. Keep BP ≤180/105 after reperfusion and avoid intensive SBP <140 lowering after EVT. Use DAPT (aspirin plus clopidogrel) for minor non-disabling stroke instead of lysis. Target glucose 140-180 mg/dL.",
+  "source": "AHA/ASA, 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (Stroke), 2026",
+  "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke/top-things-to-know"
+ },
+ {
+  "id": "stroke-primary-prevention-2024",
+  "domain": "Neurology",
+  "date": "2024-10",
+  "change": "The 2024 AHA/ASA guideline for primary prevention of stroke replaces the 2014 guideline. It aligns with Life's Essential 8 and adds sex-specific recommendations covering pregnancy complications, menopause, and hormonal contraception. It updates guidance on BP targets, lipid lowering, GLP-1 RAs for patients with diabetes and CV risk, antithrombotics including aspirin's limited role, and colchicine.",
+  "practice_impact": "For stroke prevention questions, use the 2024 guideline rather than 2014. Aspirin for primary prevention is limited. GLP-1 RAs reduce stroke risk in patients with T2D and CV risk. Women with a history of hypertensive pregnancy disorders have increased risk.",
+  "source": "AHA/ASA, 2024 Guideline for the Primary Prevention of Stroke (Stroke 2024;55:e344-e424), 2024",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/39429201/"
+ },
+ {
+  "id": "ahs-cgrp-first-line-2024",
+  "domain": "Neurology",
+  "date": "2024-03",
+  "change": "The American Headache Society's 2024 position statement makes CGRP-targeting therapies first-line options for migraine prevention: erenumab, fremanezumab, galcanezumab, eptinezumab, rimegepant, and atogepant. Patients no longer have to fail two or more traditional preventives first.",
+  "practice_impact": "CGRP mAbs or gepants can be started first line for migraine prevention.",
+  "source": "American Headache Society, Calcitonin gene-related peptide-targeting therapies are a first-line option for the prevention of migraine (Headache 2024;64:333-341)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/38466028/"
+ },
+ {
+  "id": "asm-pregnancy-guideline-2024",
+  "domain": "Neurology",
+  "date": "2024-05",
+  "change": "The 2024 AAN/AES/SMFM practice guideline on teratogenic, perinatal, and neurodevelopmental outcomes of in-utero antiseizure medication exposure updates the 2009 guideline. It ranks ASM risks for major congenital malformations and neurodevelopmental effects, with valproate highest risk and lamotrigine, levetiracetam, and oxcarbazepine lowest. It recommends optimizing ASM choice and dose before conception and folic acid supplementation.",
+  "practice_impact": "For people of childbearing potential with epilepsy, avoid valproate. Topiramate, phenobarbital, and phenytoin also carry higher risk. Prefer lamotrigine or levetiracetam. Monitor lamotrigine levels in pregnancy because clearance increases.",
+  "source": "AAN/AES/SMFM, Practice Guideline: Teratogenesis, Perinatal, and Neurodevelopmental Outcomes After In Utero Exposure to Antiseizure Medication (Neurology), 2024",
+  "url": "https://www.aan.com/Guidelines/Home/ByTopic?topicId=23"
+ },
+ {
+  "id": "mcdonald-criteria-2024",
+  "domain": "Neurology",
+  "date": "2025-09",
+  "change": "The 2024 revisions of the McDonald criteria for MS were published in Lancet Neurology in September 2025, the first update since 2017. The optic nerve is added as a fifth dissemination-in-space region. Kappa free light chain index is accepted as an alternative to oligoclonal bands. Central vein sign and paramagnetic rim lesions are supportive markers. Diagnosis is possible in select asymptomatic (radiologically isolated) cases, and one framework covers relapsing and progressive MS.",
+  "practice_impact": "Earlier MS diagnosis means earlier DMT initiation. Know the new diagnostic elements at a high level. The pharmacotherapy, DMT selection, is unchanged by the criteria.",
+  "source": "International Advisory Committee on Clinical Trials in MS (ECTRIMS/NMSS), 2024 McDonald criteria (Montalban et al., Lancet Neurol 2025;24(10):850-865)",
+  "url": "https://ectrims.eu/press/revisions-to-mcdonald-diagnostic-criteria-for-multiple-sclerosis-published/"
+ },
+ {
+  "id": "donanemab-approval-and-titration",
+  "domain": "Neurology",
+  "date": "2025-07",
+  "change": "Donanemab (Kisunla) received traditional FDA approval on July 2, 2024 for early symptomatic Alzheimer's disease with confirmed amyloid, given IV monthly, with stopping allowed once plaque is cleared. On July 9, 2025 the label was updated with a modified titration that shifts one vial from dose 1 to dose 3, reducing ARIA-E by about 41% at 24 weeks with similar amyloid clearance. The ARIA boxed warning remains.",
+  "practice_impact": "Anti-amyloid options are lecanemab and donanemab; aducanumab was discontinued in 2024. Requirements: amyloid confirmation, baseline and periodic MRI for ARIA, and APOE4 testing (homozygotes have the highest ARIA risk). Use the new donanemab titration schedule.",
+  "source": "Eli Lilly press release, FDA approves updated label for Kisunla with new dosing, 2025; FDA approval of Kisunla, 2024",
+  "url": "https://www.neurologylive.com/view/fda-approves-updated-label-alzheimer-therapy-donanemab-lower-aria-e-risk"
+ },
+ {
+  "id": "lecanemab-subcutaneous",
+  "domain": "Neurology",
+  "date": "2026-07",
+  "change": "Lecanemab SC autoinjector (Leqembi Iqlik) was approved August 29, 2025 for weekly 360 mg maintenance after 18 months of IV therapy, with fewer systemic reactions than IV. On July 13, 2026 it was also approved for SC initiation at 500 mg weekly, given as two 250 mg injections. Patients may switch between IV and SC routes.",
+  "practice_impact": "Lecanemab no longer requires IV infusion. SC dosing: initiation 500 mg weekly; maintenance after 18 months 360 mg weekly SC or 10 mg/kg IV every 4 weeks. ARIA MRI monitoring still applies.",
+  "source": "Eisai/Biogen press release, FDA approves LEQEMBI IQLIK as an initiation dose, 2026; FDA maintenance approval, 2025",
+  "url": "https://www.biospace.com/press-releases/fda-approves-leqembi-iqlik-lecanemab-irmb-subcutaneous-injection-as-an-initiation-dose-for-early-alzheimers-disease"
+ },
+ {
+  "id": "carbidopa-levodopa-b6",
+  "domain": "Neurology",
+  "date": "2026-03",
+  "change": "On March 20, 2026 the FDA required a new warning for all carbidopa/levodopa products: vitamin B6 deficiency and B6-deficiency-associated seizures, based on 14 seizure cases at daily levodopa doses >1,000 mg, including 2 deaths. Prescribers should check B6 at baseline and periodically and supplement as needed.",
+  "practice_impact": "Monitor pyridoxine in patients on high-dose levodopa, especially enteral suspension or SC infusion (foscarbidopa/foslevodopa). Supplement B6 when deficient; the old teaching to avoid B6 with levodopa applied to levodopa without carbidopa.",
+  "source": "FDA Drug Safety Communication, FDA Is Requiring Warning about Vitamin B6 Deficiency and Associated Seizures for Carbidopa/Levodopa Products, 2026",
+  "url": "https://www.fda.gov/drugs/drug-safety-communications/fda-requiring-warning-about-vitamin-b6-deficiency-and-associated-seizures-drug-products-containing",
+  "kind": "label"
+ },
+ {
+  "id": "clozapine-rems-eliminated",
+  "domain": "Psychiatry",
+  "date": "2025-06",
+  "change": "The FDA stopped expecting participation in the clozapine REMS on February 24, 2025 and formally removed it effective June 13, 2025. Prescribers, pharmacies, and patients no longer enroll or report ANC results before dispensing. The severe neutropenia boxed warning, the labeled ANC monitoring schedule, and the Medication Guide remain.",
+  "practice_impact": "Pharmacies can dispense clozapine without REMS ANC verification. Clinicians must still monitor ANC per the label: weekly for 6 months, every 2 weeks for months 6-12, then monthly, with lower thresholds for benign ethnic neutropenia. Answers citing 'REMS enrollment required' are outdated.",
+  "source": "FDA, FDA Removes Risk Evaluation and Mitigation Strategy (REMS) Program for the Antipsychotic Drug Clozapine, 2025",
+  "url": "https://www.fda.gov/drugs/drug-safety-communications/fda-removes-risk-evaluation-and-mitigation-strategy-rems-program-antipsychotic-drug-clozapine"
+ },
+ {
+  "id": "xanomeline-trospium",
+  "domain": "Psychiatry",
+  "date": "2024-09",
+  "change": "On September 26, 2024 the FDA approved xanomeline-trospium (Cobenfy) for schizophrenia in adults. It is the first antipsychotic without D2 receptor blockade: an M1/M4 muscarinic agonist with a peripherally restricted antagonist to limit cholinergic adverse effects.",
+  "practice_impact": "Know the mechanism, BID dosing taken at least 1 hour before or 2 hours after meals, and its profile: low weight gain, EPS, and prolactin elevation, but GI and anticholinergic adverse effects (nausea, constipation, urinary retention). Contraindications include urinary retention, moderate or severe hepatic impairment, gastric retention, and narrow-angle glaucoma.",
+  "source": "FDA approval of Cobenfy (xanomeline and trospium chloride), 2024 (Psychiatric News / Pharmacy Times)",
+  "url": "https://alert.psychnews.org/2024/09/fda-approves-cobenfy-antipsychotic-with.html"
+ },
+ {
+  "id": "benzodiazepine-tapering-guideline-2025",
+  "domain": "Psychiatry",
+  "date": "2025-06",
+  "change": "The Joint Clinical Practice Guideline on Benzodiazepine Tapering, led by ASAM with endorsing organizations including AAFP, AAN, ACOG, and AGS, was released March 2025 and published in JGIM in June 2025. It addresses when BZD risks outweigh benefits and recommends slow, patient-centered tapers, generally starting with 5-10% dose reductions every 2-4 weeks and adjusting to response through shared decision-making. Reductions should generally not exceed 25% every 2 weeks. Abrupt discontinuation after long-term use is to be avoided.",
+  "practice_impact": "Taper BZDs slowly: 5-10% every 2-4 weeks, with pauses as needed. Do not stop abruptly. Consider adjuncts such as CBT for insomnia or anxiety. Older adults on long-term BZDs (Beers) are prime taper candidates.",
+  "source": "ASAM et al., Joint Clinical Practice Guideline on Benzodiazepine Tapering: Considerations When Risks Outweigh Benefits (J Gen Intern Med), 2025",
+  "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12463801/"
+ },
+ {
+  "id": "er-stimulants-under-6",
+  "domain": "Psychiatry",
+  "date": "2025-06",
+  "change": "In June 2025 the FDA required a Limitation of Use statement on all extended-release ADHD stimulants (amphetamine and methylphenidate). These products are not recommended for children <6 years because of higher drug exposure and clinically significant weight loss (≥10% drop in CDC weight percentile), so benefits may not outweigh risks. Clinicians should monitor weight.",
+  "practice_impact": "For preschool ADHD (ages 4-5), use behavioral therapy first. If medication is needed, use immediate-release methylphenidate rather than ER stimulants. Monitor weight and growth.",
+  "source": "FDA Drug Safety Communication on ER stimulants and weight loss in children <6 (2025), via Psychiatric Times",
+  "url": "https://www.psychiatrictimes.com/view/fda-requires-new-label-warning-of-weight-loss-risk-in-pediatric-patients-taking-extended-release-stimulants-for-adhd",
+  "kind": "label"
+ },
+ {
+  "id": "esketamine-monotherapy",
+  "domain": "Psychiatry",
+  "date": "2025-01",
+  "change": "On January 21, 2025 the FDA approved esketamine nasal spray (Spravato) as monotherapy for adults with MDD and inadequate response to ≥2 oral antidepressants (treatment-resistant depression). It was previously approved only with an oral antidepressant. The REMS (in-clinic administration and 2-hour monitoring) remains.",
+  "practice_impact": "Esketamine no longer requires a concomitant oral antidepressant for TRD. REMS requirements are unchanged: certified setting, BP monitoring, and observation for sedation and dissociation.",
+  "source": "Johnson & Johnson press release, SPRAVATO approved in the U.S. as the first and only monotherapy for adults with TRD, 2025",
+  "url": "https://jnj.com/media-center/press-releases/spravato-esketamine-approved-in-the-u-s-as-the-first-and-only-monotherapy-for-adults-with-treatment-resistant-depression"
+ },
+ {
+  "id": "lumateperone-adjunct-mdd",
+  "domain": "Psychiatry",
+  "date": "2025-11",
+  "change": "On November 6, 2025 the FDA approved lumateperone (Caplyta) as adjunctive therapy to antidepressants for MDD in adults, its fourth indication after schizophrenia and bipolar I/II depression. It has a favorable metabolic profile in trials.",
+  "practice_impact": "Antipsychotics approved for adjunctive MDD treatment are now aripiprazole, brexpiprazole, quetiapine XR, cariprazine, and lumateperone. The class boxed warnings (dementia mortality, suicidality in young people) apply.",
+  "source": "FDA approval of Caplyta for adjunctive MDD treatment, 2025 (Psychiatric Times)",
+  "url": "https://www.psychiatrictimes.com/view/fda-approves-caplyta-for-adjunctive-treatment-of-major-depressive-disorder"
+ },
+ {
+  "id": "acg-h-pylori-2024",
+  "domain": "Gastroenterology/Hepatology",
+  "date": "2024-09",
+  "change": "The 2024 ACG H. pylori guideline replaces the 2017 guideline. Optimized bismuth quadruple therapy for 14 days (PPI BID, bismuth, metronidazole, tetracycline; doxycycline not to be substituted) is the only strong first-line recommendation for treatment-naive patients. Vonoprazan-amoxicillin dual therapy and rifabutin triple therapy are conditional first-line alternatives. Clarithromycin triple therapy is no longer recommended unless clarithromycin susceptibility is proven. Rifabutin triple therapy is the salvage option after bismuth quadruple therapy.",
+  "practice_impact": "First line is 14-day bismuth quadruple therapy. Do not choose PPI-clarithromycin-amoxicillin empirically. Vonoprazan-based dual therapy is an alternative. Use test-of-cure for all patients.",
+  "source": "American College of Gastroenterology, ACG Clinical Guideline: Treatment of Helicobacter pylori Infection (Chey et al., Am J Gastroenterol; PMID 39626064), 2024",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/39626064/"
+ },
+ {
+  "id": "semaglutide-mash-approval",
+  "domain": "Gastroenterology/Hepatology",
+  "date": "2025-08",
+  "change": "On August 15, 2025 the FDA granted accelerated approval to semaglutide 2.4 mg (Wegovy) for adults with noncirrhotic MASH with moderate-to-advanced fibrosis (F2-F3), based on ESSENCE part 1 (fibrosis improvement 36.8% vs 22.4%). It is the second MASH drug after resmetirom. AASLD issued semaglutide-for-MASH practice guidance in Hepatology in November 2025.",
+  "practice_impact": "MASH with F2-F3 fibrosis has two approved options: resmetirom (Rezdiffra) and semaglutide 2.4 mg. Both are for noncirrhotic disease only. Use noninvasive tests (VCTE, MRE, ELF) for selection and to monitor response at about 72 weeks for semaglutide. Lifestyle change remains the cornerstone.",
+  "source": "AACE news on FDA approval of Wegovy for noncirrhotic MASH (2025); AASLD semaglutide practice guidance update (Hepatology), 2025",
+  "url": "https://www.aace.com/in-the-news/fda-approves-wegovy-certain-adults-noncirrhotic-mash"
+ },
+ {
+  "id": "resmetirom-approval",
+  "domain": "Gastroenterology/Hepatology",
+  "date": "2024-03",
+  "change": "On March 14, 2024 the FDA granted accelerated approval to resmetirom (Rezdiffra), an oral THR-beta agonist and the first MASH drug, for adults with noncirrhotic MASH with F2-F3 fibrosis, with diet and exercise. Liver biopsy is not required.",
+  "practice_impact": "Know the mechanism (THR-beta agonist), the indication (F2-F3, not cirrhosis), weight-based dosing (80 or 100 mg daily), the CYP2C8 interactions (statin dose limits, avoid gemfibrozil), and the hepatotoxicity and gallbladder warnings.",
+  "source": "Madrigal Pharmaceuticals / FDA accelerated approval of Rezdiffra, 2024",
+  "url": "https://drugtopics.com/view/fda-approves-resmetirom-as-first-ever-treatment-for-mash"
+ },
+ {
+  "id": "obeticholic-acid-withdrawal",
+  "domain": "Gastroenterology/Hepatology",
+  "date": "2025-09",
+  "change": "On September 11, 2025, at FDA request, Intercept voluntarily withdrew obeticholic acid (Ocaliva) for PBC from the US market because of serious liver injury risk, and the FDA placed a clinical hold on OCA trials. The drug was not sold after November 14, 2025.",
+  "practice_impact": "Second-line PBC therapy after UDCA is now a PPAR agonist, elafibranor (Iqirvo) or seladelpar (Livdelzi), both granted accelerated approval in 2024. Fibrates are used off-label. Obeticholic acid is no longer an available answer.",
+  "source": "Intercept / FDA, voluntary withdrawal of Ocaliva from the US market (Managed Healthcare Executive), 2025",
+  "url": "https://www.managedhealthcareexecutive.com/view/intercept-withdraws-ocaliva-from-market-after-fda-raises-safety-concerns"
+ },
+ {
+  "id": "pbc-ppar-agonists",
+  "domain": "Gastroenterology/Hepatology",
+  "date": "2024-08",
+  "change": "The FDA granted accelerated approval to two PPAR agonists for PBC with inadequate response to, or intolerance of, UDCA: elafibranor (Iqirvo, PPAR alpha/delta) on June 10, 2024 and seladelpar (Livdelzi, PPAR delta) on August 14, 2024. Seladelpar also improved pruritus.",
+  "practice_impact": "Know these as the current second-line PBC agents, used with UDCA or alone if UDCA is not tolerated. Seladelpar is not recommended in decompensated cirrhosis.",
+  "source": "FDA accelerated approvals of elafibranor and seladelpar for PBC, 2024",
+  "url": "https://www.consultantlive.com/view/fda-grants-accelerated-approval-to-seladelpar-livdelzi-for-primary-biliary-cholangitis"
+ },
+ {
+  "id": "acg-ibd-guidelines-2025",
+  "domain": "Gastroenterology/Hepatology",
+  "date": "2025-06",
+  "change": "The ACG published updated guidelines for ulcerative colitis (Rubin et al.) and Crohn's disease (Lichtenstein et al.) in Am J Gastroenterol in June 2025, replacing the 2019 UC and 2018 CD versions. They emphasize treat-to-target goals (endoscopic improvement, fecal calprotectin monitoring) and incorporate newer advanced therapies: IL-23 inhibitors (risankizumab, mirikizumab, guselkumab), JAK inhibitors (upadacitinib, tofacitinib), and S1P modulators (ozanimod, etrasimod). For acute severe UC unresponsive to IV steroids by day 3, rescue with infliximab or cyclosporine is recommended. Infliximab is combined with a thiopurine for induction.",
+  "practice_impact": "Use the 2025 ACG IBD guidelines. Monitor with calprotectin. Advanced therapies, including IL-23 agents, are positioned early for moderate-to-severe disease. Ileal-release budesonide 9 mg is used for mild-moderate ileocecal CD.",
+  "source": "American College of Gastroenterology, ACG Clinical Guidelines: Ulcerative Colitis in Adults (2025) and Management of Crohn's Disease in Adults (2025), Am J Gastroenterol 120(6)",
+  "url": "https://gi.org/journals-publications/ebgi/zhai_dalal_sep2025/"
+ },
+ {
+  "id": "aasld-hbv-guideline-2025",
+  "domain": "Gastroenterology/Hepatology",
+  "date": "2025-11",
+  "change": "The 2025 AASLD/IDSA chronic hepatitis B practice guideline (Hepatology, November 2025) expands treatment eligibility. Immune-tolerant patients are treated if age >40 or with inflammation or fibrosis, and others through shared decision-making. Earlier therapy is favored for high viral load. It strongly recommends TDF or TAF from gestational week 28 for pregnant people with HBV DNA >200,000 IU/mL regardless of HBeAg status. Stopping NA therapy is recommended only after HBsAg loss.",
+  "practice_impact": "Treatment candidacy for HBV is broader than before. For perinatal prevention, start TDF or TAF at about 28 weeks if HBV DNA >200,000 IU/mL. Do not stop entecavir, TDF, or TAF before HBsAg loss.",
+  "source": "AASLD/IDSA, 2025 Practice Guideline on Chronic Hepatitis B (Hepatology), 2025",
+  "url": "https://www.worldgastroenterology.org/publications/e-wgn/e-wgn-expert-point-of-view-articles-collection/aasldidsa-2025-practice-guideline-on-chronic-hepatitis-b-key-updates-and-clinical-implications"
+ },
+ {
+  "id": "asco-wbc-growth-factors-2026",
+  "domain": "Oncology Supportive Care",
+  "date": "2026-02",
+  "change": "The ASCO WBC growth factor guideline update (JCO, February 25, 2026) replaces the 2015 version. Primary G-CSF prophylaxis is recommended when febrile neutropenia risk is about 20% or higher, unless an equally effective regimen not requiring CSF is available. It may be considered for regimens with <20% risk in patients at high risk from age, comorbidity, or disease factors. Eflapegrastim joins the preferred options, along with biosimilars. Mobilization guidance includes plerixafor and motixafortide.",
+  "practice_impact": "Use the ≥20% FN risk threshold for primary prophylaxis, adjusting for patient risk factors in the 10-20% range. Options are filgrastim (including biosimilars and tbo-filgrastim), pegfilgrastim (including biosimilars and on-body injector), and eflapegrastim; choose by context, convenience, and cost.",
+  "source": "ASCO, WBC Growth Factors: ASCO Guideline Update (J Clin Oncol, doi 10.1200/JCO-25-02938), 2026",
+  "url": "https://ascopost.com/issues/march-25-2026/a-decade-of-research-leads-to-new-guidance-on-using-colony-stimulating-factors-in-anticancer-treatment"
+ },
+ {
+  "id": "suzetrigine-acute-pain",
+  "domain": "Pain/Opioids",
+  "date": "2025-01",
+  "change": "On January 30, 2025 the FDA approved suzetrigine (Journavx) 50 mg tablets for moderate-to-severe acute pain in adults. It is a first-in-class, non-opioid, selective NaV1.8 sodium channel inhibitor acting on peripheral nociceptors, and the first new analgesic class in over 20 years.",
+  "practice_impact": "Suzetrigine is a non-opioid option for acute pain. Know its mechanism. It is contraindicated with strong CYP3A inhibitors, and moderate inhibitors need dose adjustment. Avoid grapefruit. It may reduce hormonal contraceptive efficacy.",
+  "source": "FDA approval of Journavx (suzetrigine), 2025 (NBC News / Practical Neurology coverage)",
+  "url": "https://www.nbcnews.com/health/health-news/fda-approves-new-type-nonopioid-painkiller-acute-pain-rcna189871"
+ },
+ {
+  "id": "opioid-labeling-2025",
+  "domain": "Pain/Opioids",
+  "date": "2025-07",
+  "change": "On July 31, 2025 the FDA required class-wide safety labeling changes for all opioid analgesics (implemented December 2025). Labels must emphasize that risks of misuse, OUD, overdose, and death rise with higher doses and persist with long-term use. The phrase 'extended treatment period' is removed. ER/LA opioids are limited to when other options, including IR opioids, are inadequate. Warnings are strengthened on abrupt discontinuation and on co-use with CNS depressants, including gabapentinoids. Opioid-induced esophageal dysfunction and toxic leukoencephalopathy after overdose are added.",
+  "practice_impact": "Know the risk language: no evidence of long-term efficacy, and risk persists over time. Use ER/LA opioids only after IR fails. Taper gradually. Avoid combining with gabapentin or pregabalin and benzodiazepines when possible.",
+  "source": "FDA press announcement, FDA Requires Major Changes to Opioid Pain Medication Labeling to Emphasize Risks, 2025",
+  "url": "https://www.fda.gov/news-events/press-announcements/fda-requires-major-changes-opioid-pain-medication-labeling-emphasize-risks",
+  "kind": "label"
+ },
+ {
+  "id": "sublocade-rapid-initiation",
+  "domain": "Pain/Opioids",
+  "date": "2025-02",
+  "change": "On February 24, 2025 the FDA approved Sublocade (buprenorphine ER SC) label changes. Rapid initiation is now allowed after a single transmucosal buprenorphine dose and 1-hour observation, rather than ≥7 days of transmucosal buprenorphine. Injection sites expand beyond the abdomen to the thigh, buttock, and back of the upper arm.",
+  "practice_impact": "Long-acting injectable buprenorphine can be started the same day after one tolerated sublingual dose.",
+  "source": "Indivior press release, FDA approval of label changes for SUBLOCADE, 2025",
+  "url": "https://www.indivior.com/latest/news/2025/indivior-announces-fda-approval-of-label-changes-for-sublocade-injection",
+  "kind": "label"
+ },
+ {
+  "id": "us-mec-spr-2024",
+  "domain": "Women's Health",
+  "date": "2024-08",
+  "change": "CDC published the U.S. MEC 2024 and U.S. SPR 2024 (MMWR, August 8, 2024), replacing the 2016 editions. They add recommendations for chronic kidney disease. They revise recommendations for breastfeeding and postpartum, obesity, sickle cell disease, HIV and HIV risk, and other conditions. They add newer methods: new COCs (e.g., drospirenone/estetrol), patches, vaginal rings, and extended-duration LNG-IUDs. SPR updates cover IUD placement pain management and bleeding irregularities with implants and IUDs.",
+  "practice_impact": "Use the 2024 MEC category tables, for example new CKD categories and revised postpartum and breastfeeding CHC categories, and the 2024 SPR. CDC website access was briefly interrupted in 2025, and the documents were restored by court order with a disclaimer.",
+  "source": "CDC, U.S. Medical Eligibility Criteria for Contraceptive Use, 2024 (MMWR Recomm Rep 2024;73(4)) and U.S. SPR 2024",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/39106314/"
+ },
+ {
+  "id": "mht-boxed-warning-removal",
+  "domain": "Women's Health",
+  "date": "2025-11",
+  "change": "On November 10, 2025 HHS/FDA announced removal of the boxed warnings for cardiovascular disease, breast cancer, and probable dementia from menopausal hormone therapy labels, covering more than 20 products. The boxed warning for endometrial cancer with unopposed systemic estrogen is retained. Labeling for the first six products was approved by February 2026, and other labels are being updated.",
+  "practice_impact": "Labeling now reflects the 'timing hypothesis': favorable benefit/risk when started before age 60 or within 10 years of menopause. Women with a uterus still need a progestogen with systemic estrogen. Absolute contraindications, such as history of breast cancer or VTE, still apply. The change is contested by some groups.",
+  "source": "HHS/FDA announcement on menopausal hormone therapy labeling (Contemporary OB/GYN, Managed Healthcare Executive), 2025-2026",
+  "url": "https://www.contemporaryobgyn.net/view/fda-initiates-removal-of-boxed-warnings-from-hormone-therapy-for-menopause",
+  "kind": "label"
+ },
+ {
+  "id": "fezolinetant-boxed-warning",
+  "domain": "Women's Health",
+  "date": "2024-12",
+  "change": "On December 16, 2024 the FDA added a boxed warning for rare serious liver injury to fezolinetant (Veozah), following a September 2024 safety communication. LFTs are required at baseline, monthly for the first 2 months, then at months 3, 6, and 9. Stop the drug if signs or symptoms of liver injury appear.",
+  "practice_impact": "For fezolinetant, know the hepatotoxicity boxed warning and the LFT monitoring schedule. Contraindicated in cirrhosis and with CYP1A2 inhibitors.",
+  "source": "FDA Drug Safety Communication, FDA adds warning about rare occurrence of serious liver injury with Veozah (fezolinetant), 2024",
+  "url": "https://www.fda.gov/drugs/drug-safety-communications/fda-adds-warning-about-rare-occurrence-serious-liver-injury-use-veozah-fezolinetant-hot-flashes-due",
+  "kind": "label"
+ },
+ {
+  "id": "elinzanetant-vms",
+  "domain": "Women's Health",
+  "date": "2025-10",
+  "change": "On October 24, 2025 the FDA approved elinzanetant (Lynkuet), a dual NK1/NK3 receptor antagonist given 120 mg at bedtime, for moderate-to-severe menopausal vasomotor symptoms (OASIS 1-3). It is the second nonhormonal neurokinin antagonist after fezolinetant.",
+  "practice_impact": "Nonhormonal VMS options now include fezolinetant, elinzanetant, and paroxetine 7.5 mg. Elinzanetant causes somnolence (dosed at bedtime) and is contraindicated in pregnancy.",
+  "source": "Bayer / FDA approval of Lynkuet (elinzanetant), 2025 (Contemporary OB/GYN)",
+  "url": "https://www.contemporaryobgyn.net/view/fda-approves-elinzanetant-lynkuet-for-vasomotor-menopausal-symptoms"
+ },
+ {
+  "id": "acetaminophen-pregnancy-label",
+  "domain": "FDA Safety Communications",
+  "date": "2025-09",
+  "change": "On September 22, 2025 the FDA initiated an acetaminophen label change to reflect a possible association between prolonged prenatal exposure and neurodevelopmental disorders (autism, ADHD), while stating that causality is not established. The same day it moved to approve leucovorin calcium for cerebral folate deficiency. ACOG and AAP issued statements maintaining that acetaminophen remains appropriate for pain and fever in pregnancy.",
+  "practice_impact": "Acetaminophen remains the preferred analgesic and antipyretic in pregnancy at the lowest effective dose for the shortest duration; NSAIDs carry risks after about 20 weeks. Expect counseling questions on this contested label change.",
+  "source": "FDA announcement on acetaminophen labeling and leucovorin (HCPLive / Contemporary OB/GYN coverage), 2025",
+  "url": "https://www.hcplive.com/view/fda-initiates-acetaminophen-label-change-leucovorin-approval-for-cerebral-folate-deficiency",
+  "kind": "label"
+ },
+ {
+  "id": "beers-alternatives-list-2025",
+  "domain": "Geriatrics",
+  "date": "2025-07",
+  "change": "On July 23, 2025 AGS released, in JAGS, an evidence-based Alternatives List companion to the 2023 AGS Beers Criteria. It gives safer pharmacologic and nonpharmacologic alternatives to selected potentially inappropriate medications. The core Beers Criteria remain the 2023 edition; no full update was identified as of October 2026.",
+  "practice_impact": "The 2023 Beers Criteria remain current. Examples: avoid aspirin for primary prevention, prefer apixaban over rivaroxaban or warfarin, avoid sulfonylureas, and list SGLT2i cautions. Use the 2025 Alternatives List for 'what to use instead' questions.",
+  "source": "American Geriatrics Society, Alternative Treatments to Selected Medications in the 2023 AGS Beers Criteria (J Am Geriatr Soc, doi 10.1111/jgs.19500), 2025",
+  "url": "https://www.americangeriatrics.org/media-center/news/ags-releases-new-beers-criteriar-alternatives-list-support-safer-prescribing"
+ },
+ {
+  "id": "consort-2025",
+  "domain": "Biostatistics/Research",
+  "date": "2025-04",
+  "change": "CONSORT 2025 replaces CONSORT 2010 and was published simultaneously in BMJ, JAMA, Lancet, Nature Medicine, and PLOS Medicine. It has a 30-item checklist: 7 new items, 3 revised, and 1 deleted. Items from key extensions (harms, outcomes, non-pharmacologic) are integrated, and a new Open Science section covers registration, protocol and SAP access, data sharing, funding, and conflicts.",
+  "practice_impact": "Cite CONSORT 2025, not 2010, for RCT reporting. Expect questions on its new open-science items, such as trial registration, protocol and statistical analysis plan availability, and data sharing statements, and on harms reporting.",
+  "source": "Hopewell S et al., CONSORT 2025 statement: updated guideline for reporting randomised trials (BMJ/JAMA/Lancet), 2025",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11996237/"
+ },
+ {
+  "id": "spirit-2025",
+  "domain": "Biostatistics/Research",
+  "date": "2025-04",
+  "change": "SPIRIT 2025 updates the 2013 trial-protocol guideline. It has a 34-item checklist: 2 new items, 5 revised, and 5 deleted or merged, plus a new Open Science section. It places more emphasis on harms assessment, intervention description, and patient and public involvement, and was published alongside CONSORT 2025.",
+  "practice_impact": "Cite SPIRIT 2025 for trial protocol content. Know that SPIRIT covers protocols and CONSORT covers results reporting.",
+  "source": "Chan AW et al., SPIRIT 2025 statement: updated guideline for protocols of randomised trials (BMJ/JAMA/Lancet), 2025",
+  "url": "https://www.ndorms.ox.ac.uk/publication/2119622"
+ },
+ {
+  "id": "dea-telemedicine-flexibilities-2026",
+  "domain": "Healthcare Systems/Law",
+  "date": "2026-01",
+  "change": "DEA and HHS issued a fourth temporary extension of COVID-era telemedicine flexibilities, effective January 1 through December 31, 2026. DEA-registered practitioners may prescribe Schedule II-V controlled substances via telemedicine without a prior in-person evaluation. The January 2025 proposed special-registration rule is not finalized. A separate final rule (January 2025) permits buprenorphine for OUD via telemedicine, including audio-only, for an initial 6-month supply with subsequent requirements.",
+  "practice_impact": "Through 2026, a Ryan Haight in-person exam is not required for telemedicine controlled-substance prescriptions, including stimulants for ADHD. Watch for a permanent rule. Buprenorphine telemedicine has its own final rule.",
+  "source": "DEA/HHS Fourth Temporary Extension of COVID-19 Telemedicine Flexibilities (Federal Register), via Holland & Knight analysis, 2026",
+  "url": "https://hklaw.com/en/insights/publications/2026/01/dea-and-hhs-extend-telemedicine-prescribing-flexibilities-through-2026"
+ },
+ {
+  "id": "biosimilar-interchangeability-guidance",
+  "domain": "Healthcare Systems/Law",
+  "date": "2025-10",
+  "change": "In June 2024 the FDA issued draft guidance that switching studies are generally no longer needed to demonstrate interchangeability. On October 29, 2025 it issued draft guidance that comparative efficacy studies are generally not needed to demonstrate biosimilarity, relying on analytical, PK, and immunogenicity data. Together these narrow the practical distinction between biosimilar and interchangeable products. Both remain draft.",
+  "practice_impact": "Interchangeability (pharmacy-level substitution under state law) no longer generally requires switching studies under FDA's current thinking. Know the definitions: biosimilar = no clinically meaningful differences; interchangeable = may be substituted without prescriber intervention; Purple Book.",
+  "source": "FDA draft guidances on interchangeability (2024) and biosimilarity/comparative efficacy studies (2025), via Jones Day analysis",
+  "url": "https://www.jonesday.com/en/insights/2025/12/fda-biosimilar-playbook-merging-biosimilarity-with-interchangeability"
+ },
+ {
+  "id": "glp1-shortage-resolution-compounding",
+  "domain": "Healthcare Systems/Law",
+  "date": "2025-02",
+  "change": "The FDA declared the tirzepatide shortage resolved on December 19, 2024, with enforcement discretion ending February 18, 2025 for 503A pharmacies and March 19, 2025 for 503B facilities. It declared the semaglutide shortage resolved in February 2025, with discretion ending April 22, 2025 for 503A and May 22, 2025 for 503B. Copies of these products essentially can no longer be compounded under the shortage exception. Courts upheld the FDA.",
+  "practice_impact": "Compounded semaglutide and tirzepatide copies are no longer permissible absent a documented patient-specific clinical need. The ADA's December 2024 statement also recommends against non-FDA-approved compounded incretins. This is relevant to compounding law (503A vs 503B) questions.",
+  "source": "FDA declaratory orders on tirzepatide and semaglutide shortage resolution, 2024-2025 (McDermott Will & Emery analysis)",
+  "url": "https://www.mwe.com/?p=311415"
+ },
+ {
+  "id": "iv-fluid-shortage-2024",
+  "domain": "Healthcare Systems/Law",
+  "date": "2025-08",
+  "change": "Hurricane Helene (September 2024) shut Baxter's North Cove, NC plant, which supplies about 60% of US IV fluids, causing a national IV fluid shortage. Responses included FDA-authorized expiry extensions and temporary importation. The FDA declared the 0.9% sodium chloride IV shortage over on August 8, 2025, while some other IV fluids remained constrained.",
+  "practice_impact": "Know shortage-management strategies: IV-to-PO conversion, IV push instead of piggyback, conservation, and allocation committees. This is a case example for drug shortage and emergency preparedness questions.",
+  "source": "American Hospital Association, FDA announces end to IV saline solution shortage, 2025",
+  "url": "https://www.aha.org/news/headline/2025-08-11-fda-announces-end-iv-saline-solution-shortage"
+ },
+ {
+  "id": "medicare-drug-price-negotiation-2026",
+  "domain": "Healthcare Systems/Law",
+  "date": "2026-01",
+  "change": "Under the Inflation Reduction Act, the first Medicare-negotiated maximum fair prices for 10 Part D drugs took effect January 1, 2026, with discounts of 38-79% off list price. The drugs include apixaban (Eliquis), rivaroxaban (Xarelto), sacubitril/valsartan (Entresto), empagliflozin (Jardiance), dapagliflozin (Farxiga), sitagliptin (Januvia), etanercept (Enbrel), ustekinumab (Stelara), ibrutinib (Imbruvica), and NovoLog/Fiasp. Fifteen more drugs, including semaglutide, take effect in 2027. The Part D out-of-pocket cap is $2,000 for 2025, indexed thereafter.",
+  "practice_impact": "Know that IRA negotiation is in effect and the Part D out-of-pocket cap exists. These are relevant to healthcare systems and access questions.",
+  "source": "CMS, Medicare Drug Price Negotiation Program: Negotiated Prices for Initial Price Applicability Year 2026 (fact sheet), 2024",
+  "url": "https://www.cms.gov/newsroom/fact-sheets/medicare-drug-price-negotiation-program-negotiated-prices-initial-price-applicability-year-2026"
+ },
+ {
+  "id": "oral-phenylephrine-proposed-removal",
+  "domain": "Healthcare Systems/Law",
+  "date": "2024-11",
+  "change": "On November 8, 2024 the FDA issued a proposed order to remove oral phenylephrine from the OTC nasal decongestant monograph because it is not effective at oral doses. No final order was confirmed as of October 2026, so products may still be marketed.",
+  "practice_impact": "Oral phenylephrine is ineffective as a decongestant. Recommend pseudoephedrine (behind-the-counter, CMEA limits) or intranasal decongestants or steroids instead. Intranasal phenylephrine is unaffected.",
+  "source": "FDA press announcement, FDA Proposes Ending Use of Oral Phenylephrine as OTC Monograph Nasal Decongestant Active Ingredient, 2024",
+  "url": "https://www.fda.gov/news-events/press-announcements/fda-proposes-ending-use-oral-phenylephrine-otc-monograph-nasal-decongestant-active-ingredient-after"
+ },
+ {
+  "id": "glp1-suicidality-warning-removed",
+  "domain": "FDA Safety Communications",
+  "date": "2026-01",
+  "change": "On January 13, 2026 the FDA requested removal of the suicidal behavior and ideation warning from the weight-management GLP-1 RA labels (Saxenda, Wegovy, Zepbound). A meta-analysis of 91 trials with about 108,000 participants and claims data showed no increased risk. This aligns the weight-management labels with the diabetes GLP-1 labels.",
+  "practice_impact": "Suicidality monitoring is no longer a labeled warning for GLP-1 obesity products. General depression screening remains good practice.",
+  "source": "FDA, FDA Requests Removal of Suicidal Behavior and Ideation Warning from GLP-1 RA Medications, 2026",
+  "url": "https://www.americanpharmaceuticalreview.com/1315-News/623645-FDA-Requests-Removal-of-Suicidal-Behavior-and-Ideation-Warning-from-Glucagon-Like-Peptide-1-Receptor-Agonist-GLP-1-RA-Medications/",
+  "kind": "label"
+ },
+ {
+  "id": "testosterone-labeling-2025",
+  "domain": "FDA Safety Communications",
+  "date": "2025-02",
+  "change": "On February 28, 2025 the FDA announced class-wide testosterone labeling changes based on TRAVERSE, which found no increase in MACE. It recommended adding TRAVERSE results and removing the boxed warning language on adverse CV outcomes, while keeping the Limitation of Use for age-related hypogonadism. It required BP-increase warnings for all products, including product-specific ABPM data.",
+  "practice_impact": "Testosterone replacement in true hypogonadism is not linked to increased MACE (TRAVERSE). Monitor BP, hematocrit, and PSA. The secondary-exposure boxed warning for gels remains.",
+  "source": "FDA, FDA Issues Class-Wide Labeling Changes for Testosterone Products, 2025",
+  "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-issues-class-wide-labeling-changes-testosterone-products",
+  "kind": "label"
+ },
+ {
+  "id": "car-t-rems-eliminated",
+  "domain": "FDA Safety Communications",
+  "date": "2025-06",
+  "change": "On June 27, 2025 the FDA eliminated the REMS for all approved autologous CD19- and BCMA-directed CAR-T therapies: Abecma, Breyanzi, Carvykti, Kymriah, Tecartus, and Yescarta. Site certification and the tocilizumab on-hand requirement were removed. The post-infusion proximity period was shortened from 4 to 2 weeks, and the driving restriction from 8 to 2 weeks.",
+  "practice_impact": "CAR-T products no longer require REMS certification. CRS and ICANS management with tocilizumab and steroids remains essential. Patients now stay near the center for 2 weeks and avoid driving for 2 weeks.",
+  "source": "FDA action eliminating REMS for autologous CAR T-cell immunotherapies, 2025 (AABB / RAPS coverage)",
+  "url": "https://www.aabb.org/news-resources/news/article/2025/06/30/fda-eliminates-rems-for-approved-car-t-cell-therapies"
+ },
+ {
+  "id": "voxelotor-withdrawal",
+  "domain": "FDA Safety Communications",
+  "date": "2024-09",
+  "change": "On September 25-26, 2024 Pfizer voluntarily withdrew voxelotor (Oxbryta) for sickle cell disease from all markets after postmarketing data showed more vaso-occlusive crises and deaths versus placebo. The FDA advised clinicians to stop prescribing it.",
+  "practice_impact": "Voxelotor is no longer an available SCD answer. Remaining options are hydroxyurea (first line), L-glutamine, crizanlizumab, transfusion, and gene therapies (exa-cel, lovo-cel).",
+  "source": "FDA / Pfizer voluntary withdrawal of Oxbryta (voxelotor), 2024 (Epocrates coverage)",
+  "url": "https://epocrates.com/online/article/oxbryta-voxelotor-to-be-withdrawn-from-market-due-to-safety-concerns"
+ },
+ {
+  "id": "cetirizine-withdrawal-pruritus",
+  "domain": "FDA Safety Communications",
+  "date": "2025-05",
+  "change": "On May 16, 2025 the FDA issued a Drug Safety Communication warning of rare but severe pruritus after stopping long-term daily cetirizine or levocetirizine. Onset is typically within 1-5 days in patients who used the drug for months to years. The FDA added the warning to prescription labeling and plans OTC Drug Facts updates.",
+  "practice_impact": "Counsel patients on chronic daily cetirizine or levocetirizine about rebound pruritus on discontinuation. Symptoms may resolve on restarting; consider a gradual taper.",
+  "source": "FDA Drug Safety Communication, FDA requires warning about rare but severe itching after stopping long-term use of cetirizine or levocetirizine, 2025",
+  "url": "https://www.fda.gov/drugs/drug-safety-communications/fda-requires-warning-about-rare-severe-itching-after-stopping-long-term-use-oral-allergy-medicines",
+  "kind": "label"
+ }
+]
