@@ -12,12 +12,12 @@
  {
   "topic": "Cardiology",
   "front": "ACS: STEMI vs NSTEMI reperfusion strategy",
-  "back": "STEMI: emergent PCI (door-to-balloon <90 min) or thrombolytics if PCI unavailable (<120 min door-to-device)\nNSTEMI/UA: risk-stratify; early invasive if high-risk (GRACE >140, dynamic ECG, elevated troponin)"
+  "back": "STEMI: emergent PCI (door-to-balloon <90 min) or thrombolytics (door-to-needle <30 min) if PCI cannot be achieved within 120 min of first medical contact\nNSTEMI/UA: risk-stratify; early invasive if high-risk (GRACE >140, dynamic ECG, elevated troponin)"
  },
  {
   "topic": "Cardiology",
   "front": "P2Y12 inhibitor comparison",
-  "back": "Clopidogrel: prodrug (CYP2C19), variable response, cheapest\nTicagrelor: reversible, faster onset, preferred in ACS, causes dyspnea (10%)\nPrasugrel: most potent; CONTRAINDICATED in prior stroke/TIA, age >75, wt <60kg\nTicagrelor preferred for ACS; clopidogrel used when others contraindicated"
+  "back": "Clopidogrel: prodrug (CYP2C19), variable response, cheapest\nTicagrelor: reversible, faster onset, preferred in ACS, causes dyspnea (~14%)\nPrasugrel: most potent; CONTRAINDICATED in prior stroke/TIA; generally not recommended age >=75; reduce to 5 mg daily if wt <60kg\nTicagrelor (or prasugrel if PCI) preferred over clopidogrel for ACS; clopidogrel used when others contraindicated"
  },
  {
   "topic": "Cardiology",
@@ -32,32 +32,32 @@
  {
   "topic": "Cardiology",
   "front": "Warfarin reversal by clinical scenario",
-  "back": "INR 5-10, no bleeding: Hold 1-2 doses +/- vitamin K 1-2.5mg PO\nMinor bleeding: Vitamin K 2.5-5mg PO\nMajor bleeding: 4F-PCC + IV Vitamin K 10mg\nDabigatran reversal: Idarucizumab (Praxbind) 5g IV\nFactor Xa inhibitor reversal: Andexanet alfa (Andexxa)"
+  "back": "INR 4.5-10, no bleeding: Hold 1-2 doses; routine vitamin K NOT recommended\nINR >10, no bleeding: Hold + vitamin K 2.5-5mg PO\nMinor bleeding: Vitamin K 2.5-5mg PO\nMajor bleeding: 4F-PCC + IV Vitamin K 10mg\nDabigatran reversal: Idarucizumab (Praxbind) 5g IV\nFactor Xa inhibitor reversal: Andexanet alfa (Andexxa)"
  },
  {
   "topic": "Cardiology",
   "front": "Statin intensity classification",
-  "back": "High-intensity indicated: clinical ASCVD, LDL>=190; DM age 40-75 = moderate-intensity by default, escalate to high-intensity if 10-yr ASCVD risk >=20% or multiple risk factors"
+  "back": "High-intensity (LDL-C down >=50%): atorvastatin 40-80, rosuvastatin 20-40\nModerate (30-49%): e.g., atorvastatin 10-20, rosuvastatin 5-10, simvastatin 20-40, pravastatin 40-80\nLow (<30%): e.g., simvastatin 10, pravastatin 10-20\nHigh-intensity indicated: clinical ASCVD, LDL>=190; DM age 40-75 = moderate-intensity by default, escalate to high-intensity if 10-yr ASCVD risk >=20% or multiple risk factors"
  },
  {
   "topic": "Cardiology",
   "front": "Amiodarone major toxicities (PTCH)",
-  "back": "P = Pulmonary toxicity (ground-glass CTs, decreased DLCO) -- #1 killer\nT = Thyroid dysfunction (both hypo AND hyperthyroidism)\nC = Corneal microdeposits (reversible) + blue-gray skin + CYP interactions\nH = Hepatotoxicity (LFTs)\nAlso: peripheral neuropathy, photosensitivity, QT prolongation\nMonitor: PFTs, TFTs, LFTs, CXR annually"
+  "back": "P = Pulmonary toxicity (ground-glass CTs, decreased DLCO) -- #1 killer\nT = Thyroid dysfunction (both hypo AND hyperthyroidism)\nC = Corneal microdeposits (reversible) + blue-gray skin + CYP interactions\nH = Hepatotoxicity (LFTs)\nAlso: peripheral neuropathy, photosensitivity, QT prolongation\nMonitor: baseline PFTs + CXR (CXR annually); TFTs and LFTs baseline and q6 months; eye exam if visual symptoms"
  },
  {
   "topic": "Cardiology",
   "front": "Vasopressor hierarchy in septic shock",
-  "back": "1st line: Norepinephrine (alpha1 > beta1)\n2nd line: Add vasopressin 0.03-0.04 units/min (NE-sparing)\n3rd line: Epinephrine (causes hyperglycemia + lactic acidosis)\nAlternative 1st: Dopamine (more arrhythmias vs NE; avoid if tachycardic)\nInotrope for low CO: Dobutamine\nPure alpha: Phenylephrine (avoid in low cardiac output)"
+  "back": "1st line: Norepinephrine (alpha1 > beta1)\n2nd line: Add vasopressin 0.03-0.04 units/min (NE-sparing)\n3rd line: Epinephrine (causes hyperglycemia + lactic acidosis)\nDopamine: only in highly selected pts (low tachyarrhythmia risk, bradycardia) -- more arrhythmias vs NE (SOAP II)\nInotrope for low CO: Dobutamine\nPure alpha: Phenylephrine (avoid in low cardiac output)"
  },
  {
   "topic": "Cardiology",
   "front": "HFpEF vs HFrEF treatment differences",
-  "back": "HFrEF (EF<40%): ACEi/ARB/ARNI + BB + MRA + SGLT2i = mortality benefit\nHFpEF (EF>=50%): SGLT2i primary Rx (EMPEROR-Preserved, DELIVER); diuretics for congestion; no proven mortality benefit from ACEi/BB/MRA\nBoth benefit from: SGLT2i, diuretics for congestion\nAvoid in HFrEF: verapamil/diltiazem (negative inotropes), NSAIDs, thiazolidinediones"
+  "back": "HFrEF (EF<=40%): ACEi/ARB/ARNI + BB + MRA + SGLT2i = mortality benefit\nHFpEF (EF>=50%): SGLT2i primary Rx (EMPEROR-Preserved, DELIVER); diuretics for congestion; no proven mortality benefit from ACEi/BB/MRA\nBoth benefit from: SGLT2i, diuretics for congestion\nAvoid in HFrEF: verapamil/diltiazem (negative inotropes), NSAIDs, thiazolidinediones"
  },
  {
   "topic": "Cardiology",
   "front": "ACC/AHA HTN first-line agents by indication",
-  "back": "CKD + proteinuria: ACEi or ARB\nDM: ACEi or ARB (renal protection) + SGLT2i\nHF: ACEi/ARB/ARNI + BB + diuretics\nAfter MI: ACEi/ARB + BB\nBlack patients without compelling indications: thiazide or CCB (ACEi less effective as monotherapy)\nGoal: <130/80 for most adults per 2017 ACC/AHA"
+  "back": "CKD + proteinuria: ACEi or ARB\nDM: any first-line class (thiazide, ACEi/ARB, CCB); ACEi or ARB if albuminuria\nHF: ACEi/ARB/ARNI + BB + diuretics\nAfter MI: ACEi/ARB + BB\nBlack patients without compelling indications: thiazide or CCB (ACEi less effective as monotherapy)\nGoal: <130/80 for most adults per 2017 ACC/AHA"
  },
  {
   "topic": "Cardiology",
@@ -87,7 +87,7 @@
  {
   "topic": "Anticoagulation",
   "front": "LMWH vs UFH key differences",
-  "back": "LMWH: predictable PK; weight-based; no routine monitoring (check anti-Xa if obese/renal); preferred cancer-associated VTE; renally cleared (reduce dose CrCl <30)\nUFH: aPTT monitoring required; titratable; preferred in renal failure; immediately reversible (protamine)\nProtamine reversal: UFH fully; LMWH ~60-80%\nAnti-Xa monitoring: both LMWH and UFH (preferred over aPTT in some centers)"
+  "back": "LMWH: predictable PK; weight-based; no routine monitoring (check anti-Xa if obese/renal); option for cancer-associated VTE (CHEST 2021 prefers apixaban/edoxaban/rivaroxaban over LMWH); renally cleared (reduce dose CrCl <30)\nUFH: aPTT monitoring required; titratable; preferred in renal failure; immediately reversible (protamine)\nProtamine reversal: UFH fully; LMWH ~60-80%\nAnti-Xa monitoring: both LMWH and UFH (preferred over aPTT in some centers)"
  },
  {
   "topic": "Anticoagulation",
@@ -102,7 +102,7 @@
  {
   "topic": "Infectious Diseases",
   "front": "Sepsis-3 definitions and qSOFA",
-  "back": "Sepsis: organ dysfunction (SOFA >=2) from infection\nSeptic shock: vasopressors needed + lactate >2 despite fluids\nqSOFA (screening, not diagnosis): altered mentation + RR >=22 + SBP <=100 (2/3 = high risk)\n1-hour bundle: lactate, cultures, abx, 30mL/kg fluids, vasopressors if needed"
+  "back": "Sepsis: organ dysfunction (SOFA >=2) from infection\nSeptic shock: vasopressors needed + lactate >2 despite fluids\nqSOFA (prognostic; SSC 2021 recommends AGAINST using it alone as a screening tool): altered mentation + RR >=22 + SBP <=100 (2/3 = high risk)\n1-hour bundle: lactate, cultures, abx, 30mL/kg fluids, vasopressors if needed"
  },
  {
   "topic": "Infectious Diseases",
@@ -112,7 +112,7 @@
  {
   "topic": "Infectious Diseases",
   "front": "Empiric MRSA coverage indications",
-  "back": "Prior MRSA infection/colonization\nCavitary or necrotizing pneumonia\nIV drug use\nPreceding influenza\nSevere CAP with septic shock\nRecent hospitalization + prior antibiotics\nAgents: vancomycin (AUC 400-600 mg*h/L) or linezolid (600mg q12h)"
+  "back": "Prior MRSA infection/colonization\nCavitary or necrotizing pneumonia\nIV drug use\nPreceding influenza\nRecent hospitalization + IV antibiotics within 90 days (with locally validated risk factors)\nNote: severe CAP/septic shock ALONE is not an indication (ATS/IDSA 2019)\nAgents: vancomycin (AUC 400-600 mg*h/L) or linezolid (600mg q12h)"
  },
  {
   "topic": "Infectious Diseases",
@@ -122,7 +122,7 @@
  {
   "topic": "Infectious Diseases",
   "front": "HIV: opportunistic infection prophylaxis thresholds",
-  "back": "CD4 <200: TMP-SMX DS daily (PCP prophylaxis; also covers Toxo and some bacteria)\nCD4 <100 (+ Toxo IgG+): TMP-SMX covers Toxoplasma (no additional drug needed if already on TMP-SMX)\nCD4 <50: Azithromycin 1200mg weekly (MAC prophylaxis) or clarithromycin\nDiscontinue prophylaxis: PCP/Toxo when CD4 >200 x 3 months; MAC when CD4 >100 x 3 months on ART"
+  "back": "CD4 <200: TMP-SMX DS daily (PCP prophylaxis; also covers Toxo and some bacteria)\nCD4 <100 (+ Toxo IgG+): TMP-SMX covers Toxoplasma (no additional drug needed if already on TMP-SMX)\nCD4 <50: MAC prophylaxis NOT recommended if ART started immediately; azithromycin 1200mg weekly (or clarithromycin) only if not on fully suppressive ART\nDiscontinue prophylaxis: PCP/Toxo when CD4 >200 x 3 months; MAC when CD4 >100 x 3 months on ART"
  },
  {
   "topic": "Infectious Diseases",
@@ -137,7 +137,7 @@
  {
   "topic": "Infectious Diseases",
   "front": "Empiric meningitis antibiotics by age",
-  "back": "Neonates: Ampicillin + cefotaxime (covers GBS, Listeria, Gram-negatives)\n1-3 months: Ampicillin + cefotaxime\n3 months to 50 years: Ceftriaxone + vancomycin\n>50 or immunocompromised: Ceftriaxone + vancomycin + ampicillin (Listeria)\nDexamethasone 0.15 mg/kg q6h x 4 days (give BEFORE or WITH first antibiotic dose; most benefit for S. pneumoniae)"
+  "back": "Neonates: Ampicillin + cefotaxime (covers GBS, Listeria, Gram-negatives)\n1-3 months: Vancomycin + cefotaxime or ceftriaxone (many add ampicillin for Listeria/enterococcus)\n3 months to 50 years: Ceftriaxone + vancomycin\n>50 or immunocompromised: Ceftriaxone + vancomycin + ampicillin (Listeria)\nDexamethasone 0.15 mg/kg q6h x 4 days (give BEFORE or WITH first antibiotic dose; most benefit for S. pneumoniae)"
  },
  {
   "topic": "Infectious Diseases",
@@ -147,7 +147,7 @@
  {
   "topic": "Pharmacokinetics",
   "front": "Cockcroft-Gault and weight selection",
-  "back": "CrCl = [(140-age) x weight / (72 x SCr)] x 0.85 if female\nWeight: IBW if TBW < IBW (use TBW)\nIBW if TBW > IBW and not obese\nAdjBW (= IBW + 0.4 x [TBW - IBW]) if obese (TBW > 30% above IBW)\nIBW male = 50 + 2.3 x (ht inches - 60)\nIBW female = 45.5 + 2.3 x (ht inches - 60)"
+  "back": "CrCl = [(140-age) x weight / (72 x SCr)] x 0.85 if female\nWeight: TBW if TBW < IBW\nIBW if TBW > IBW and not obese\nAdjBW (= IBW + 0.4 x [TBW - IBW]) if obese (TBW > 30% above IBW)\nIBW male = 50 + 2.3 x (ht inches - 60)\nIBW female = 45.5 + 2.3 x (ht inches - 60)"
  },
  {
   "topic": "Pharmacokinetics",
@@ -157,7 +157,7 @@
  {
   "topic": "Pharmacokinetics",
   "front": "Vancomycin 2020 AUC-guided dosing",
-  "back": "Target: AUC/MIC 400-600 mg*h/L (MRSA MIC <=1 mg/L)\nInitial dose: 15-20 mg/kg actual body weight q8-12h\nDo NOT use trough-only monitoring (unreliable)\nMonitoring: 2-point sampling (peak 1-2h after infusion end + trough) for Bayesian AUC\nDo NOT use if MRSA MIC >2 (inadequate AUC achievable)\nObesity: use IBW + 0.4(TBW-IBW) for initial dose estimation"
+  "back": "Target: AUC/MIC 400-600 mg*h/L (MRSA MIC <=1 mg/L)\nInitial dose: 15-20 mg/kg actual body weight q8-12h\nDo NOT use trough-only targets (15-20 mg/L) -- more nephrotoxicity\nMonitoring: Bayesian software preferred (1-2 levels; a trough alone is acceptable); alternative: 2-point sampling (peak 1-2h after infusion end + trough) with first-order equations\nIf MRSA MIC >1 mg/L (BMD), AUC target unlikely achievable -- consider alternative agent\nObesity: loading dose 20-25 mg/kg ACTUAL body weight (max 3,000 mg); initial maintenance <=4,500 mg/day, then AUC-guided"
  },
  {
   "topic": "Pharmacokinetics",
@@ -167,7 +167,7 @@
  {
   "topic": "Pharmacokinetics",
   "front": "Key CYP450 drug interactions",
-  "back": "STRONG INDUCERS (decrease levels): Rifampin, phenytoin, carbamazepine, phenobarbital, St. John's Wort\nSTRONG INHIBITORS (increase levels): Azole antifungals, clarithromycin, ritonavir, amiodarone, grapefruit juice\nClopidogrel prodrug activation inhibited by: omeprazole, esomeprazole (CYP2C19 inhibitors) -- reduce antiplatelet effect\nStatins + CYP3A4 inhibitors: myopathy risk (simvastatin most affected; pravastatin safest)"
+  "back": "STRONG INDUCERS (decrease levels): Rifampin, phenytoin, carbamazepine, phenobarbital, St. John's Wort\nSTRONG CYP3A4 INHIBITORS (increase levels): ketoconazole, itraconazole, voriconazole, posaconazole, clarithromycin, ritonavir/cobicistat (moderate: fluconazole, diltiazem, verapamil, grapefruit juice; amiodarone weak 3A4 but inhibits 2C9/2D6/P-gp)\nClopidogrel prodrug activation inhibited by: omeprazole, esomeprazole (CYP2C19 inhibitors) -- reduce antiplatelet effect\nStatins + CYP3A4 inhibitors: myopathy risk (simvastatin most affected; pravastatin safest)"
  },
  {
   "topic": "Pharmacokinetics",
@@ -177,7 +177,7 @@
  {
   "topic": "Pharmacokinetics",
   "front": "First-order vs zero-order kinetics",
-  "back": "First-order: rate proportional to concentration; constant FRACTION eliminated; linear PK; most drugs\nZero-order: constant AMOUNT eliminated (saturable enzymes); nonlinear PK; dose changes cause disproportionate level changes\nZero-order examples: phenytoin, ethanol, aspirin (high doses), warfarin at supratherapeutic levels\nClinical implications: small phenytoin dose increases can cause toxicity"
+  "back": "First-order: rate proportional to concentration; constant FRACTION eliminated; linear PK; most drugs\nZero-order: constant AMOUNT eliminated (saturable enzymes); nonlinear PK; dose changes cause disproportionate level changes\nZero-order examples: phenytoin, ethanol, aspirin (high doses), theophylline (at high concentrations)\nClinical implications: small phenytoin dose increases can cause toxicity"
  },
  {
   "topic": "Pharmacokinetics",
@@ -202,7 +202,7 @@
  {
   "topic": "Endocrine",
   "front": "DKA management key steps",
-  "back": "1. Fluids: 0.9% NaCl 1L/h initially; switch to 0.45% NaCl with dextrose when glucose <250\n2. Potassium: replace to >=3.5 BEFORE starting insulin; add 20-40 mEq/L to fluids if K+ 3.5-5.5\n3. Insulin: 0.1 unit/kg/h regular (hold until K+ >=3.5)\n4. DKA resolution: glucose <200, bicarb >=15, pH >=7.3, anion gap normal\n5. Bicarb: only if pH <6.9 (controversial)\n6. Transition to SQ insulin 1-2h before stopping infusion"
+  "back": "1. Fluids: 0.45%-0.9% NaCl (based on serum sodium); change to D5 with 0.45% NaCl when glucose <200\n2. Potassium: if K+ <3.3, hold insulin and give 20-30 mEq/h until corrected; if K+ 3.3-5.3, add 20-30 mEq/L to fluids; if K+ >=5.3, hold and monitor\n3. Insulin: regular 0.1 unit/kg IV bolus, then 0.1 unit/kg/h (or 0.14 unit/kg/h with no bolus); reduce to 0.02-0.05 unit/kg/h at glucose 200 and keep 150-200 until DKA resolves\n4. DKA resolution: glucose <200 AND at least 2 of: venous pH >7.3, bicarb >=15, anion gap <=12\n5. Bicarb: only if pH <6.9\n6. Transition to SQ insulin 1-2h before stopping infusion\nUpdated after the 2024 course: the 2024 ADA/EASD/JBDS/AACE/DTS hyperglycemic crises consensus adds dextrose at glucose <250, starts insulin once K+ >=3.5, defines resolution as ketones <0.6 mmol/L plus pH >=7.3 or bicarbonate >=18 without using the anion gap, and gives bicarbonate only if pH <7.0 (Umpierrez et al., Diabetes Care, 2024)."
  },
  {
   "topic": "Endocrine",
@@ -212,17 +212,17 @@
  {
   "topic": "Endocrine",
   "front": "Thyroid function tests interpretation",
-  "back": "Primary hypothyroidism: HIGH TSH, LOW free T4\nPrimary hyperthyroidism: LOW TSH, HIGH free T4\nSecondary hypothyroidism (pituitary): LOW TSH, LOW free T4\nSubclinical hypothyroidism: HIGH TSH, NORMAL free T4\nSick euthyroid (NTI): low T3, low-normal T4, low/normal TSH (do NOT treat; reassess after illness)\nAmiodarone: increases T4, decreases T3 conversion (can obscure interpretation)"
+  "back": "Primary hypothyroidism: HIGH TSH, LOW free T4\nPrimary hyperthyroidism: LOW TSH, HIGH free T4\nSecondary hypothyroidism (pituitary): LOW or inappropriately NORMAL TSH, LOW free T4 (monitor with free T4)\nSubclinical hypothyroidism: HIGH TSH, NORMAL free T4\nSick euthyroid (NTI): low T3, low-normal T4, low/normal TSH (do NOT treat; reassess after illness)\nAmiodarone: increases T4, decreases T3 conversion (can obscure interpretation)"
  },
  {
   "topic": "Endocrine",
   "front": "Corticosteroid stress dosing for surgery",
-  "back": "Minor stress (local anesthesia, minor procedure): double home dose on day of procedure only\nModerate stress (knee replacement, open cholecystectomy): hydrocortisone 25-50mg IV day of surgery; taper to home dose over 1-2 days\nMajor stress (cardiac surgery, septic shock): hydrocortisone 50-100mg q6-8h; taper when hemodynamically stable\nNote: do NOT delay stress dosing for testing in suspected adrenal crisis"
+  "back": "Minor stress (local anesthesia, minor procedure): double home dose on day of procedure only\nModerate stress (knee replacement, open cholecystectomy): hydrocortisone 50mg IV at induction, then 25mg IV q8h x 24h, then home dose (ESE/ES 2024: any surgery under general/regional anesthesia gets the major-stress regimen)\nMajor stress (cardiac surgery, septic shock): hydrocortisone 100mg IV at induction/immediately, then 200mg/24h infusion (or 50mg IV q6h); taper (double oral dose x 48h) when stable\nNote: do NOT delay stress dosing for testing in suspected adrenal crisis"
  },
  {
   "topic": "Endocrine",
   "front": "Osteoporosis treatment: bisphosphonates and alternatives",
-  "back": "Oral bisphosphonates: alendronate 70mg weekly, risedronate 35mg weekly (must remain upright 30-60 min after; avoid CrCl <30-35)\nIV zoledronic acid 5mg annually (avoid CrCl <35)\nDenosumab (RANKL inhibitor): renally safe; give q6 months; rebound fractures if stopped abruptly\nTeriparatide/abaloparatide (anabolic): used for severe/treatment-failure cases; max 2 years\nAtypical femoral fractures: rare complication of >5 years of bisphosphonate; drug holiday after 5 years in low-risk patients"
+  "back": "Oral bisphosphonates: alendronate 70mg weekly, risedronate 35mg weekly (must remain upright 30-60 min after; avoid CrCl <30-35)\nIV zoledronic acid 5mg annually (avoid CrCl <35)\nDenosumab (RANKL inhibitor): not renally cleared but BBW (2024) severe hypocalcemia in advanced CKD/dialysis; give q6 months; rebound fractures if stopped abruptly\nTeriparatide/abaloparatide (anabolic): used for very high risk/treatment-failure cases; limit to 2 years (osteosarcoma in rats), then follow with an antiresorptive\nAtypical femoral fractures: rare complication of >5 years of bisphosphonate; drug holiday after 5 years of oral (3 years of IV) therapy in low-risk patients\nCurrent FDA labeling differs: the Forteo label (revised 2020) removed the 2-year lifetime limit for teriparatide, allowing longer use if fracture risk stays high, while abaloparatide keeps its 2-year cap (FDA labeling)."
  },
  {
   "topic": "Nephrology",
@@ -252,22 +252,22 @@
  {
   "topic": "Pulmonology",
   "front": "Asthma stepwise therapy",
-  "back": "Step 1: SABA PRN\nStep 2: Low-dose ICS + SABA PRN\nStep 3: Low-dose ICS + LABA OR medium-dose ICS\nStep 4: Medium-dose ICS + LABA\nStep 5: High-dose ICS + LABA +/- LAMA (tiotropium)\nStep 6: Step 5 + oral corticosteroids\nLABA ALONE contraindicated in asthma (increased asthma-related mortality risk)"
+  "back": "Step 1: SABA PRN\nStep 2: Daily low-dose ICS + SABA PRN (or PRN concomitant ICS + SABA)\nStep 3: Low-dose ICS-formoterol SMART (preferred); alt low-dose ICS + LABA or medium-dose ICS\nStep 4: Medium-dose ICS-formoterol SMART (preferred); alt medium-dose ICS + LABA\nStep 5: Medium-high dose ICS-LABA + LAMA; consider biologics\nStep 6: High-dose ICS-LABA + oral corticosteroids; consider biologics\nLABA ALONE contraindicated in asthma (increased asthma-related mortality risk)"
  },
  {
   "topic": "Pulmonology",
   "front": "COPD GOLD groups and initial treatment",
-  "back": "Group A: bronchodilator PRN (SABA or SAMA)\nGroup B: LAMA or LABA preferred (add second if very symptomatic)\nGroup E: LAMA + LABA; add ICS if eos >=300 OR >=2 exacerbations on dual therapy\nAdd roflumilast (PDE4 inhibitor) for FEV1 <50% + chronic bronchitis + >=2 exacerbations\nICS monotherapy NOT appropriate for COPD"
+  "back": "Group A: a bronchodilator (long-acting preferred unless symptoms very occasional)\nGroup B: LAMA + LABA (single inhaler preferred)\nGroup E: LAMA + LABA; consider adding ICS if eos >=300 (follow-up: add ICS if exacerbations on LABA+LAMA and eos >=100)\nAdd roflumilast (PDE4 inhibitor) for FEV1 <50% + chronic bronchitis + >=2 exacerbations\nICS monotherapy NOT appropriate for COPD"
  },
  {
   "topic": "Pulmonology",
   "front": "COPD exacerbation management",
-  "back": "Bronchodilators: SABA + ipratropium nebulized\nSteroids: prednisone 40mg daily x 5 days (REDUCE trial)\nAntibiotics (if 2/3 Anthonisen criteria: dyspnea + sputum volume + purulence):\n- Mild/moderate: azithromycin or doxycycline\n- Severe/hospitalized: respiratory FQ or amox-clav\nOxygen: target SpO2 88-92% (avoid hyperoxia)\nNIV (BiPAP): if pH <7.35 and PaCO2 elevated (reduces intubation risk)"
+  "back": "Bronchodilators: SABA + ipratropium nebulized\nSteroids: prednisone 40mg daily x 5 days (REDUCE trial)\nAntibiotics (if all 3 Anthonisen criteria, or 2 of 3 when one is sputum purulence, or mechanical ventilation):\n- Mild/moderate: azithromycin or doxycycline\n- Severe/hospitalized: respiratory FQ or amox-clav\nOxygen: target SpO2 88-92% (avoid hyperoxia)\nNIV (BiPAP): if pH <7.35 and PaCO2 elevated (reduces intubation risk)"
  },
  {
   "topic": "Pulmonology",
   "front": "Adult immunization key vaccines and ages",
-  "back": "Age >=50: single PCV dose (PCV20 or PCV21/Capvaxive alone, OR PCV15 then PPSV23 >=1 year later) -- ACIP lowered age from 65 to 50 (Oct 2024); RSV vaccine: routine for all adults >=75, and 60-74 at increased risk (ACIP 2024)"
+  "back": "Age >=65: single PCV dose (PCV20 alone, OR PCV15 then PPSV23 >=1 year later); adults 19-64 with risk conditions get the same; RSV vaccine: single dose for adults >=60 using shared clinical decision-making (weigh chronic lung or heart disease, immunosuppression, long-term care residence), given before RSV season. Updated after the 2024 course: ACIP added PCV21 (June 2024), made RSV vaccination routine for adults >=75 and 60-74 at increased risk (June 2024; extended to 50-59 at increased risk in April 2025), and lowered the routine pneumococcal age from 65 to 50 (October 2024) (ACIP, 2024-2025)."
  },
  {
   "topic": "Psychiatry",
@@ -292,7 +292,7 @@
  {
   "topic": "Neurology",
   "front": "Ischemic stroke: IV tPA eligibility",
-  "back": "Window: ischemic stroke within 4.5 hours of onset (or last known well)\nKey inclusion: measurable neurologic deficit; adult patients\nKey exclusions: hemorrhage on CT, anticoagulants (INR >1.7 or DOAC), platelet <100k, glucose <50 or >400, SBP >185/DBP >110 (treat first), recent major surgery <3 months\nExtended 3-4.5h: additional exclusions (age >80, NIHSS >25, prior stroke + DM)\nGoal: door-to-needle <60 minutes"
+  "back": "Window: ischemic stroke within 4.5 hours of onset (or last known well)\nKey inclusion: measurable neurologic deficit; adult patients\nKey exclusions: hemorrhage on CT, anticoagulants (INR >1.7 or DOAC), platelet <100k, glucose <50 (treat first; >400 no longer an exclusion), SBP >185/DBP >110 (treat first), intracranial/spinal surgery, significant head trauma, or ischemic stroke <3 months (major non-CNS surgery <14 days: relative)\nExtended 3-4.5h: former ECASS III exclusions (age >80, NIHSS >25, prior stroke + DM, oral anticoagulant) are no longer absolute -- AHA 2019: reasonable for age >80 and prior stroke + DM\nGoal: door-to-needle <60 minutes"
  },
  {
   "topic": "Neurology",
@@ -307,32 +307,32 @@
  {
   "topic": "Gastroenterology",
   "front": "H. pylori eradication regimens",
-  "back": "PREFERRED:\nClarithromycin triple (if local resistance <15% and no prior macrolide): PPI + clarithromycin + amoxicillin x 14 days\nBismuth quadruple (PCN allergy or macrolide resistance): PPI + bismuth + metronidazole + tetracycline x 14 days\n\nCONFIRM ERADICATION: urea breath test or stool antigen >=4 weeks after therapy\n(Turn off PPI for 2 weeks before testing)"
+  "back": "FIRST-LINE OPTIONS (ACG 2017, per 2024 course):\nClarithromycin triple: PPI + clarithromycin + amoxicillin (or metronidazole) x 14 days; avoid if local clarithromycin resistance >15% or prior macrolide exposure\nBismuth quadruple: PPI + bismuth + metronidazole + tetracycline x 10-14 days (choose if high clarithromycin resistance or prior macrolide; also PCN allergy)\nConcomitant (PPI + clarithromycin + amoxicillin + metronidazole x 10-14 days): alternative\nVonoprazan dual/triple packs: FDA-approved 2022, not yet in guidelines\nSalvage: bismuth quadruple x 14 days or levofloxacin triple x 10 days\n\nCONFIRM ERADICATION: urea breath test or stool antigen >=4 weeks after therapy\n(Turn off PPI for 2 weeks before testing)\nUpdated after the 2024 course: the ACG 2024 guideline makes bismuth quadruple therapy for 14 days the preferred treatment-naive regimen, reserves clarithromycin triple for proven susceptibility, and adds rifabutin triple and vonoprazan-amoxicillin dual as alternatives (Chey et al., Am J Gastroenterol, 2024)."
  },
  {
   "topic": "Gastroenterology",
   "front": "IBD: Crohn vs UC treatment approach",
-  "back": "UC (mild-moderate): 5-ASA oral + rectal (mesalamine)\nUC (moderate-severe): corticosteroids (induction); azathioprine/6-MP or biologics (maintenance)\nCrohn (mild-moderate): budesonide (ileocolonic), 5-ASA (some benefit), metronidazole (perianal)\nCrohn (moderate-severe): corticosteroids, then azathioprine/6-MP + anti-TNF (infliximab, adalimumab)\nBiologics: anti-TNF, vedolizumab (gut-selective), ustekinumab (IL-12/23)\nCheck TPMT before azathioprine/6-MP"
+  "back": "UC (mild-moderate): 5-ASA oral + rectal (mesalamine)\nUC (moderate-severe): corticosteroids (induction); azathioprine/6-MP or biologics (maintenance)\nCrohn (mild-moderate): budesonide (ileocolonic), 5-ASA NOT recommended (mesalamine ineffective; sulfasalazine only for mild colonic disease), metronidazole (perianal)\nCrohn (moderate-severe): corticosteroids, then azathioprine/6-MP + anti-TNF (infliximab, adalimumab)\nBiologics: anti-TNF, vedolizumab (gut-selective), ustekinumab (IL-12/23)\nCheck TPMT before azathioprine/6-MP"
  },
  {
   "topic": "Gastroenterology",
   "front": "Hepatic encephalopathy management",
-  "back": "ACUTE: lactulose 30-45mL q1h until 2-3 soft bowel movements per day (traps NH3 as NH4+)\nSECONDARY PREVENTION: rifaximin 550mg BID + lactulose (reduce recurrence by ~57%)\nPrecipitants to address: GI bleed, infection, constipation, electrolyte disturbance, medications (BZDs, opioids, diuretics), dietary protein excess\nZinc supplementation: adjunctive\nAVOID: benzodiazepines (worsen HE), nephrotoxic drugs"
+  "back": "ACUTE: lactulose 30-45mL q1h until 2-3 soft bowel movements per day (traps NH3 as NH4+)\nSECONDARY PREVENTION: rifaximin 550mg BID + lactulose (reduce recurrence by ~57%)\nPrecipitants to address: GI bleed, infection, constipation, electrolyte disturbance, medications (BZDs, opioids, diuretics); do NOT restrict dietary protein (1.2-1.5 g/kg/day)\nZinc supplementation: adjunctive\nAVOID: benzodiazepines (worsen HE), nephrotoxic drugs"
  },
  {
   "topic": "Geriatrics",
   "front": "Beers Criteria most important PIMs in elderly",
-  "back": "HIGH ANTICHOLINERGIC BURDEN: diphenhydramine, oxybutynin, amitriptyline, hydroxyzine, chlorpheniramine -- delirium, falls, urinary retention\nBENZODIAZEPINES (all): falls, cognitive impairment, dependence\nNSAIDs: GI bleed, AKI, fluid retention -- use acetaminophen instead\nLONG-ACTING SULFONYLUREAS: glyburide -- prolonged hypoglycemia\nDIGOXIN >0.125mg/day: toxicity; narrow TI in elderly\nANTIPSYCHOTICS (first-gen): EPS, QT prolongation"
+  "back": "HIGH ANTICHOLINERGIC BURDEN: diphenhydramine, oxybutynin, amitriptyline, hydroxyzine, chlorpheniramine -- delirium, falls, urinary retention\nBENZODIAZEPINES (all): falls, cognitive impairment, dependence\nNSAIDs: GI bleed, AKI, fluid retention -- use acetaminophen instead\nSULFONYLUREAS (all, as first- or second-line; glyburide/glimepiride highest risk) -- prolonged hypoglycemia\nDIGOXIN >0.125mg/day: toxicity; narrow TI in elderly\nANTIPSYCHOTICS (first- AND second-gen): avoid for behavioral symptoms of dementia/delirium -- increased stroke and mortality"
  },
  {
   "topic": "Geriatrics",
   "front": "Pharmacologic fall prevention in elderly",
-  "back": "DEPRESCRIBE/MINIMIZE:\n- Benzodiazepines (highest risk)\n- Sedative-hypnotics (zolpidem, eszopiclone)\n- Anticholinergics\n- Antipsychotics\n- Opioids\n- Alpha-1 blockers (orthostatic hypotension)\n- Antiepileptics\nALTERNATIVES:\n- Sleep: melatonin, trazodone\n- Anxiety: SSRIs, SNRIs\nVitamin D 800-2000 IU/day (reduces falls + fractures)"
+  "back": "DEPRESCRIBE/MINIMIZE:\n- Benzodiazepines (highest risk)\n- Sedative-hypnotics (zolpidem, eszopiclone)\n- Anticholinergics\n- Antipsychotics\n- Opioids\n- Alpha-1 blockers (orthostatic hypotension)\n- Antiepileptics\nALTERNATIVES:\n- Sleep: melatonin, trazodone\n- Anxiety: SSRIs, SNRIs\nVitamin D: correct deficiency only; USPSTF recommends AGAINST routine vitamin D to prevent falls in community-dwelling older adults (2018; reaffirmed in 2024 draft)"
  },
  {
   "topic": "Biostatistics",
   "front": "Sensitivity vs specificity clinical use",
-  "back": "Sensitivity (SN-N-out): proportion of true positives correctly detected\n- High = rules out if NEGATIVE (snout)\n- Use for SCREENING (HIV Ab test, troponin series)\nSpecificity (SP-P-in): proportion of true negatives correctly identified\n- High = rules in if POSITIVE (spin)\n- Use for CONFIRMATION (RIBA for HCV, Western blot for HIV)\nPPV/NPV depend on disease prevalence in that population"
+  "back": "Sensitivity (SN-N-out): proportion of true positives correctly detected\n- High = rules out if NEGATIVE (snout)\n- Use for SCREENING (HIV Ab test, troponin series)\nSpecificity (SP-P-in): proportion of true negatives correctly identified\n- High = rules in if POSITIVE (spin)\n- Use for CONFIRMATION (HIV-1/HIV-2 differentiation immunoassay; HCV RNA after positive HCV antibody)\nPPV/NPV depend on disease prevalence in that population"
  },
  {
   "topic": "Biostatistics",
@@ -342,7 +342,7 @@
  {
   "topic": "Biostatistics",
   "front": "Study design: when to use RR vs OR",
-  "back": "RCT and cohort studies: use RELATIVE RISK (RR)\nCase-control studies: use ODDS RATIO (OR) (cannot calculate incidence rates in case-control)\nOR approximates RR when disease is rare (<10%)\nOR always overestimates RR if outcome is common\nHazard Ratio (HR): time-to-event outcomes in survival analysis (RCTs with censoring)\nIncidence Rate Ratio (IRR): Poisson regression for count outcomes"
+  "back": "RCT and cohort studies: use RELATIVE RISK (RR)\nCase-control studies: use ODDS RATIO (OR) (cannot calculate incidence rates in case-control)\nOR approximates RR when disease is rare (<10%)\nOR exaggerates RR (lies farther from 1) if outcome is common\nHazard Ratio (HR): time-to-event outcomes in survival analysis (RCTs with censoring)\nIncidence Rate Ratio (IRR): Poisson regression for count outcomes"
  },
  {
   "topic": "Biostatistics",
@@ -357,12 +357,12 @@
  {
   "topic": "Healthcare Systems",
   "front": "Medication reconciliation at care transitions",
-  "back": "Process: comparing current medication list to all orders; identifying discrepancies\nHigh-risk transitions: admission, ICU transfer, discharge to SNF/home\nMost errors occur at DISCHARGE (unintentional omissions most common)\nBest-possible medication history (BPMH): use multiple sources (patient, caregiver, pharmacy, PCP records)\nPharmacist-led reconciliation reduces ADEs by 15-30%\nTJC requirement: medication reconciliation required at all care transitions"
+  "back": "Process: comparing current medication list to all orders; identifying discrepancies\nHigh-risk transitions: admission, ICU transfer, discharge to SNF/home\nMost errors occur at DISCHARGE (unintentional omissions most common)\nBest-possible medication history (BPMH): use multiple sources (patient, caregiver, pharmacy, PCP records)\nPharmacist-led reconciliation reduces discrepancies, ADE-related hospital revisits, and readmissions\nTJC requirement: medication reconciliation required at all care transitions"
  },
  {
   "topic": "Healthcare Systems",
   "front": "FDA REMS programs: examples",
-  "back": "CLOZAPINE: FDA removed the Clozapine REMS effective June 13, 2025 (no REMS Dispense Authorization or ANC reporting needed to dispense); ANC monitoring per prescribing information is still recommended for severe neutropenia/agranulocytosis risk [⚑ Recent change — Jun 2025. BPS tests guidelines ~6–12 months old and excludes rapidly-evolving changes, so your exam may still expect the prior standard. FDA removed the Clozapine REMS June 2025; ANC monitoring per the label still applies, but the exam may still describe a REMS.]"
+  "back": "CLOZAPINE REMS (as of 2024): prescribers and pharmacies certified; ANC monitoring for severe neutropenia/agranulocytosis, with ANC verified (REMS Dispense Authorization) before dispensing. Updated after the 2024 course: FDA eliminated the Clozapine REMS effective June 13, 2025, though ANC monitoring per the label is still recommended (FDA, 2025)."
  },
  {
   "topic": "Cardiology",
@@ -372,7 +372,7 @@
  {
   "topic": "Cardiology",
   "front": "Digoxin: uses, monitoring, and toxicity",
-  "back": "Uses: rate control in AFib; HF symptom relief (no mortality benefit; reduces hospitalizations)\nTherapeutic range: 0.5-0.9 ng/mL in HF (lower is better; toxicity >2 ng/mL)\nRenal clearance: reduce dose in CKD; hold in AKI\nToxicity: N/V, yellow-green vision (xanthopsia), bradycardia, heart block, any arrhythmia\nElectrolytes: hypokalemia, hypomagnesemia increase toxicity risk\nReversal: Digibind (digoxin-specific antibody fragments) for life-threatening toxicity"
+  "back": "Uses: rate control in AFib; HF symptom relief (no mortality benefit; reduces hospitalizations)\nTherapeutic range: 0.5-0.9 ng/mL in HF (lower is better; toxicity >2 ng/mL)\nRenal clearance: reduce dose in CKD; hold in AKI\nToxicity: N/V, yellow-green vision (xanthopsia), bradycardia, heart block, any arrhythmia\nElectrolytes: hypokalemia, hypomagnesemia increase toxicity risk\nReversal: DigiFab (digoxin immune Fab; Digibind discontinued) for life-threatening toxicity"
  },
  {
   "topic": "Cardiology",
@@ -382,7 +382,7 @@
  {
   "topic": "Cardiology",
   "front": "Direct renin inhibitor and neprilysin inhibitor",
-  "back": "Aliskiren (direct renin inhibitor): rarely used; combined with ACEi or ARB CONTRAINDICATED in diabetics and CrCl <60\nSacubitril (neprilysin inhibitor): blocks neprilysin (prevents BNP/ANP breakdown); always combined with valsartan (ARNI)\nNeprilysin also degrades bradykinin: thus ARNI + ACEi = angioedema risk\nARNI reduces hospitalization and mortality in HFrEF more than enalapril (PARADIGM-HF)\nARNI also benefits HFpEF (PARAGON-HF; reduced hospitalizations in subgroup)"
+  "back": "Aliskiren (direct renin inhibitor): rarely used; combined with ACEi or ARB CONTRAINDICATED in diabetics; avoid the combination if GFR <60\nSacubitril (neprilysin inhibitor): blocks neprilysin (prevents BNP/ANP breakdown); always combined with valsartan (ARNI)\nNeprilysin also degrades bradykinin: thus ARNI + ACEi = angioedema risk\nARNI reduces hospitalization and mortality in HFrEF more than enalapril (PARADIGM-HF)\nHFpEF: PARAGON-HF missed its primary endpoint; possible benefit at lower-end EF (<=57%) and in women -- AHA 2022 Class 2b"
  },
  {
   "topic": "Cardiology",
@@ -392,7 +392,7 @@
  {
   "topic": "Infectious Diseases",
   "front": "Fungal infection treatment summary",
-  "back": "Oropharyngeal candidiasis: fluconazole 200mg x 7-14 days OR nystatin swish-and-swallow\nEsophageal candidiasis: fluconazole 200-400mg x 14-21 days (nystatin NOT effective)\nCandidemia: echinocandin first-line x 14 days after last positive blood culture\nInvasive Aspergillosis: voriconazole (first-line) OR isavuconazole\nCryptococcal meningitis: AmB + flucytosine x 2 weeks induction, then fluconazole"
+  "back": "Oropharyngeal candidiasis: fluconazole 200mg x 7-14 days OR nystatin swish-and-swallow\nEsophageal candidiasis: fluconazole 200-400mg x 14-21 days (nystatin NOT effective)\nCandidemia: echinocandin first-line x 14 days after first negative blood culture (documented clearance) and symptom resolution\nInvasive Aspergillosis: voriconazole (first-line) OR isavuconazole\nCryptococcal meningitis: AmB + flucytosine x 2 weeks induction, then fluconazole"
  },
  {
   "topic": "Infectious Diseases",
@@ -407,12 +407,12 @@
  {
   "topic": "Infectious Diseases",
   "front": "Tick-borne illness: treatment",
-  "back": "Lyme disease early: doxycycline 100mg BID x 10-21 days (also prevents co-infections)\nLyme disseminated/neuro/cardiac: doxycycline or IV ceftriaxone\nRocky Mountain Spotted Fever (RMSF): doxycycline is drug of choice (even in children -- rash plus fever, treat empirically)\nEhrlichiosis/Anaplasmosis: doxycycline\nBabesiosis: atovaquone + azithromycin (mild-moderate); clindamycin + quinine (severe)\nDoxycycline: covers all major tick-borne illnesses except babesiosis"
+  "back": "Lyme disease early (erythema migrans): doxycycline 100mg BID x 10 days (amoxicillin or cefuroxime x 14 days) (also prevents co-infections)\nLyme disseminated/neuro/cardiac: doxycycline or IV ceftriaxone\nRocky Mountain Spotted Fever (RMSF): doxycycline is drug of choice (even in children -- rash plus fever, treat empirically)\nEhrlichiosis/Anaplasmosis: doxycycline\nBabesiosis: atovaquone + azithromycin preferred for mild-moderate AND severe (IV azithromycin if severe); clindamycin + quinine alternative\nDoxycycline: covers all major tick-borne illnesses except babesiosis"
  },
  {
   "topic": "Infectious Diseases",
   "front": "Viral hepatitis treatment overview",
-  "back": "Hepatitis B: tenofovir alafenamide (TAF) or entecavir (first-line); pegylated interferon (finite duration, selected patients)\nGoal HBV: HBsAg loss, HBV DNA undetectable\nHepatitis C: direct-acting antivirals (DAAs) -- pan-genotypic glecaprevir/pibrentasvir 8 weeks (no cirrhosis) OR sofosbuvir/velpatasvir 12 weeks\nSVR12 = cure (>95% with DAAs)\nHep A/E: supportive only\nHIV/HBV co-infection: include HBV-active antiretrovirals (TAF/FTC or TDF/FTC) in HIV regimen"
+  "back": "Hepatitis B: tenofovir alafenamide (TAF) or entecavir (first-line); pegylated interferon (finite duration, selected patients)\nGoal HBV: HBsAg loss, HBV DNA undetectable\nHepatitis C: direct-acting antivirals (DAAs) -- pan-genotypic glecaprevir/pibrentasvir 8 weeks (treatment-naive, with or without compensated cirrhosis) OR sofosbuvir/velpatasvir 12 weeks\nSVR12 = cure (>95% with DAAs)\nHep A/E: supportive only\nHIV/HBV co-infection: include HBV-active antiretrovirals (TAF/FTC or TDF/FTC) in HIV regimen"
  },
  {
   "topic": "Pharmacokinetics",
@@ -447,12 +447,12 @@
  {
   "topic": "Endocrine",
   "front": "Hyperparathyroidism vs hypoparathyroidism",
-  "back": "Hyperparathyroidism: high PTH + high calcium + low phosphate\nCauses: primary (adenoma most common); secondary (CKD, vit D deficiency); tertiary (autonomous after secondary)\nHypercalcemia sx: 'bones, stones, groans, moans' (bone pain, kidney stones, constipation, depression)\nHypoparathyroidism: low PTH + low calcium + high phosphate\nCauses: post-surgical, autoimmune\nTreatment: IV calcium gluconate (acute) or calcium carbonate + active vitamin D (calcitriol)"
+  "back": "Primary hyperparathyroidism: high PTH + high calcium + low phosphate (secondary: high PTH with low/normal calcium; phosphate high in CKD)\nCauses: primary (adenoma most common); secondary (CKD, vit D deficiency); tertiary (autonomous after secondary)\nHypercalcemia sx: 'bones, stones, groans, moans' (bone pain, kidney stones, constipation, depression)\nHypoparathyroidism: low PTH + low calcium + high phosphate\nCauses: post-surgical, autoimmune\nTreatment: IV calcium gluconate (acute) or calcium carbonate + active vitamin D (calcitriol)"
  },
  {
   "topic": "Endocrine",
   "front": "Polycystic ovary syndrome (PCOS) pharmacotherapy",
-  "back": "Primary treatment: lifestyle modification (weight loss improves insulin sensitivity and ovulation)\nMenstrual irregularity/hirsutism: combined oral contraceptives (first-line)\nInsulin resistance/metabolic: metformin\nFertility: clomiphene citrate (first-line for ovulation induction), letrozole (preferred per some guidelines)\nAnti-androgens (for hirsutism): spironolactone (use with OCP for contraception)\nExcess androgens: finasteride (5-alpha reductase inhibitor) -- second-line for hirsutism"
+  "back": "Primary treatment: lifestyle modification (weight loss improves insulin sensitivity and ovulation)\nMenstrual irregularity/hirsutism: combined oral contraceptives (first-line)\nInsulin resistance/metabolic: metformin\nFertility: letrozole (first-line for ovulation induction; higher live birth rate), clomiphene citrate (alternative)\nAnti-androgens (for hirsutism): spironolactone (use with OCP for contraception)\nExcess androgens: finasteride (5-alpha reductase inhibitor) -- second-line for hirsutism"
  },
  {
   "topic": "Nephrology",
@@ -467,7 +467,7 @@
  {
   "topic": "Nephrology",
   "front": "Contrast-induced nephropathy prevention",
-  "back": "Definition: SCr increase >=0.5 mg/dL or >=25% within 48-72h after contrast\nHigh-risk: pre-existing CKD (eGFR <60), DM, dehydration, high contrast volume\nPrevention:\n1. IV hydration: 0.9% NaCl 1 mL/kg/h 6-12h pre/post\n2. Use iso-osmolar or low-osmolar contrast\n3. Minimize contrast volume\n4. Hold nephrotoxins (NSAIDs, metformin if eGFR 30-60 for 48h post)\n5. N-acetylcysteine: controversial; low risk; often given 600mg BID around procedure"
+  "back": "Definition: SCr increase >=0.5 mg/dL or >=25% within 48-72h after contrast\nHigh-risk: eGFR <30 (highest risk; ACR/NKF 2020), AKI, eGFR 30-44 (intermediate), DM, dehydration, high contrast volume\nPrevention:\n1. IV hydration: 0.9% NaCl 1 mL/kg/h 6-12h pre/post\n2. Use iso-osmolar or low-osmolar contrast\n3. Minimize contrast volume\n4. Hold nephrotoxins (NSAIDs, metformin if eGFR 30-60 for 48h post)\n5. N-acetylcysteine: NOT recommended (PRESERVE 2018: no benefit; bicarbonate no better than saline)"
  },
  {
   "topic": "Critical Care",
@@ -477,7 +477,7 @@
  {
   "topic": "Critical Care",
   "front": "Transfusion thresholds and blood products",
-  "back": "pRBC transfusion threshold:\n- Stable non-cardiac ICU: Hgb <7 g/dL (TRICC, TRISS trials)\n- Cardiac surgery, ACS, HF: Hgb <8-9 g/dL (liberal threshold)\n- Massive transfusion: 1:1:1 ratio (pRBC:FFP:platelets)\nFFP: warfarin reversal with bleeding, massive transfusion, Factor V/X deficiency\nPlatelets: <10k (prophylaxis), <50k with bleeding/pre-procedure, <100k with CNS bleeding\nCryoprecipitate: fibrinogen <100 mg/dL, von Willebrand disease, hemophilia A"
+  "back": "pRBC transfusion threshold:\n- Stable non-cardiac ICU: Hgb <7 g/dL (TRICC, TRISS trials)\n- Cardiac surgery: Hgb <7.5 g/dL; preexisting CVD/orthopedic surgery: Hgb <8 g/dL; ACS: higher threshold (~8-10; MINT 2023)\n- Massive transfusion: 1:1:1 ratio (pRBC:FFP:platelets)\nFFP: warfarin reversal with bleeding only if 4F-PCC unavailable, massive transfusion, Factor V/X deficiency\nPlatelets: <10k (prophylaxis), <50k with bleeding/pre-procedure, <100k with CNS bleeding\nCryoprecipitate: fibrinogen <100 mg/dL; von Willebrand disease/hemophilia A only if factor concentrates unavailable"
  },
  {
   "topic": "Critical Care",
@@ -487,7 +487,7 @@
  {
   "topic": "Critical Care",
   "front": "Nutrition in critically ill patients",
-  "back": "Central PN: avoid unless EN not feasible after 7 days (increases infection risk)"
+  "back": "Central PN: in low nutrition risk pts, avoid unless EN not feasible after 7 days (increases infection risk); high risk/severely malnourished -> start PN as soon as possible if EN not feasible"
  },
  {
   "topic": "Geriatrics",
@@ -507,17 +507,17 @@
  {
   "topic": "Psychiatry",
   "front": "Substance use disorder pharmacotherapy",
-  "back": "ALCOHOL USE DISORDER:\n- Detox: benzodiazepines (CIWA protocol)\n- Maintenance: naltrexone (reduces cravings; opioid antagonist), acamprosate (reduces withdrawal symptoms), disulfiram (aversion; monitor compliance)\nOPIOID USE DISORDER:\n- Methadone (daily observed; opioid agonist; QT monitoring)\n- Buprenorphine/naloxone (Suboxone; partial agonist; office-based)\n- Naltrexone XR (Vivitrol; monthly injection; require full opioid detox first)\nNICOTINE: varenicline (most effective), bupropion SR, NRT (patch, gum, lozenge)"
+  "back": "ALCOHOL USE DISORDER:\n- Detox: benzodiazepines (CIWA protocol)\n- Maintenance: naltrexone (reduces cravings; opioid antagonist), acamprosate (maintains abstinence; eases protracted post-acute withdrawal; start after detox -- not for acute withdrawal), disulfiram (aversion; monitor compliance)\nOPIOID USE DISORDER:\n- Methadone (daily observed; opioid agonist; QT monitoring)\n- Buprenorphine/naloxone (Suboxone; partial agonist; office-based)\n- Naltrexone XR (Vivitrol; monthly injection; require full opioid detox first)\nNICOTINE: varenicline (most effective), bupropion SR, NRT (patch, gum, lozenge)"
  },
  {
   "topic": "Psychiatry",
   "front": "Clozapine: indications and monitoring",
-  "back": "Black box warnings: AGRANULOCYTOSIS/SEVERE NEUTROPENIA (ANC monitoring still recommended per prescribing information; FDA eliminated the mandatory Clozapine REMS program effective June 2025), SEIZURES, MYOCARDITIS, ORTHOSTASIS [⚑ Recent change — Jun 2025. BPS tests guidelines ~6–12 months old and excludes rapidly-evolving changes, so your exam may still expect the prior standard. FDA removed the Clozapine REMS June 2025; ANC monitoring per the label still applies, but the exam may still describe a REMS.]"
+  "back": "Black box warnings: AGRANULOCYTOSIS/SEVERE NEUTROPENIA (ANC monitoring required; dispensed through the Clozapine REMS as of 2024), SEIZURES, MYOCARDITIS/CARDIOMYOPATHY/MITRAL VALVE INCOMPETENCE, ORTHOSTASIS/BRADYCARDIA/SYNCOPE, INCREASED MORTALITY IN ELDERLY PATIENTS WITH DEMENTIA-RELATED PSYCHOSIS. Updated after the 2024 course: FDA eliminated the Clozapine REMS effective June 13, 2025, though ANC monitoring per the label is still recommended (FDA, 2025)."
  },
  {
   "topic": "Oncology",
   "front": "Chemotherapy-induced nausea and vomiting (CINV) management",
-  "back": "HIGH emetogenic chemotherapy (cisplatin, doxorubicin/cyclophosphamide): triple antiemetic: 5-HT3 antagonist + dexamethasone + NK1 antagonist (aprepitant or fosaprepitant)\nAdd olanzapine 10mg as 4th agent for highly refractory CINV\nMODERATE emetogenic (carbo, irinotecan): 5-HT3 antagonist + dexamethasone\nLOW/MINIMAL emetogenic: prochlorperazine or metoclopramide PRN\nDelayed CINV (>24h post chemo): dexamethasone, aprepitant\nAnticipatory CINV (conditioned response): lorazepam, behavioral therapy"
+  "back": "HIGH emetogenic chemotherapy (cisplatin, doxorubicin/cyclophosphamide): 4-drug regimen: 5-HT3 antagonist + dexamethasone + NK1 antagonist (aprepitant or fosaprepitant) + olanzapine\nOlanzapine 10mg (5mg may be considered if sedation concern) is part of UPFRONT prophylaxis for high emetic risk, not reserved for refractory CINV\nMODERATE emetogenic (oxaliplatin, irinotecan): 5-HT3 antagonist + dexamethasone; carboplatin AUC >=4: add NK1 antagonist (3-drug)\nLOW/MINIMAL emetogenic: prochlorperazine or metoclopramide PRN\nDelayed CINV (>24h post chemo): dexamethasone, aprepitant\nAnticipatory CINV (conditioned response): lorazepam, behavioral therapy"
  },
  {
   "topic": "Oncology",
@@ -537,12 +537,12 @@
  {
   "topic": "Pediatrics",
   "front": "RSV prophylaxis in infants",
-  "back": "Palivizumab (monoclonal antibody): monthly IM injections during RSV season (November-March)\nIndications (AAP 2014): premature infants (<29 weeks) in first year; hemodynamically significant CHD; CLD (BPD) requiring treatment in first 2 years; immunocompromised\nDo NOT give if: otherwise healthy infants >28 weeks without CHD/CLD\nNirsevimab (Beyfortus 2023): single dose; newer; broader indication for ALL infants <8 months entering first RSV season (has largely replaced palivizumab for most indications)\nDuration: palivizumab given up to 5 doses; nirsevimab is single dose"
+  "back": "Palivizumab (monoclonal antibody): monthly IM injections during RSV season (November-March)\nIndications (AAP 2014): premature infants (<29 weeks) in first year; hemodynamically significant CHD; CLD (BPD) requiring treatment in first 2 years; immunocompromised\nDo NOT give if: otherwise healthy infants >28 weeks without CHD/CLD\nNirsevimab (Beyfortus 2023): single dose; newer; broader indication for ALL infants <8 months entering first RSV season (has largely replaced palivizumab for most indications)\nDuration: palivizumab given up to 5 doses; nirsevimab is single dose\nUpdated after the 2024 course: clesrovimab (Enflonsia), a single-dose long-acting RSV monoclonal antibody, was FDA-approved and ACIP-recommended in June 2025 as an alternative to nirsevimab (FDA/ACIP 2025)."
  },
  {
   "topic": "Pediatrics",
   "front": "Otitis media: diagnosis and treatment",
-  "back": "Diagnosis: middle ear effusion + acute onset of symptoms (ear pain, fever, bulging membrane)\nAOME (acute otitis media): requires antibiotic in <2 years or severe cases\nWatchful waiting: >=2 years with non-severe AOM (use pain management; prescribe antibiotics only if no improvement in 48-72h)\nFirst-line: amoxicillin 80-90 mg/kg/day divided BID (high dose overcomes resistant S. pneumoniae)\nPenicillin allergy: azithromycin (3-day course) or cefdinir\nTreatment failure: amoxicillin-clavulanate (covers beta-lactamase producing H. influenzae and M. catarrhalis)"
+  "back": "Diagnosis: middle ear effusion + acute onset of symptoms (ear pain, fever, bulging membrane)\nAOM (acute otitis media): antibiotics required for <6 months, severe AOM (otalgia >48h or temp >=39C), bilateral AOM at 6-23 months, or otorrhea\nWatchful waiting option: non-severe unilateral AOM at 6-23 months, or non-severe AOM (uni/bilateral) at >=2 years (use pain management; prescribe antibiotics only if no improvement in 48-72h)\nFirst-line: amoxicillin 80-90 mg/kg/day divided BID (high dose overcomes resistant S. pneumoniae)\nPenicillin allergy (non-type I): cefdinir, cefuroxime, cefpodoxime, or ceftriaxone (azithromycin/macrolides not recommended - poor efficacy vs resistant S. pneumoniae/H. influenzae)\nTreatment failure: amoxicillin-clavulanate (covers beta-lactamase producing H. influenzae and M. catarrhalis)"
  },
  {
   "topic": "Biostatistics",
@@ -562,7 +562,7 @@
  {
   "topic": "Cardiology",
   "front": "Stable angina: anti-ischemic pharmacotherapy",
-  "back": "Beta-blockers: first-line for symptom control (reduce HR and O2 demand)\nCCBs: second-line if beta-blocker CI; also for vasospastic/Prinzmetal angina\nLong-acting nitrates: as-needed or scheduled for exertional angina\nRanolazine: add-on for refractory angina (late Na current blocker; no hemodynamic effects)\nIvabradine: used if beta-blocker CI (pure HR reduction)\nRevascularization: for persistent symptoms or high-risk anatomy"
+  "back": "Beta-blockers OR CCBs: either is first-line for symptom control (2023 AHA/ACC; BB reduces HR and O2 demand)\nCCBs: also preferred for vasospastic/Prinzmetal angina\nLong-acting nitrates: scheduled with a 10-14h nitrate-free interval (SL nitroglycerin is the as-needed agent for acute angina)\nRanolazine: add-on for refractory angina (late Na current blocker; no hemodynamic effects)\nIvabradine: not FDA-approved for angina; adding it to antianginal therapy in CCD with normal LVEF is potentially harmful (2023 AHA/ACC; SIGNIFY)\nRevascularization: for persistent symptoms or high-risk anatomy"
  },
  {
   "topic": "Cardiology",
@@ -612,7 +612,7 @@
  {
   "topic": "Endocrine",
   "front": "Contraception: hormonal options and medical considerations",
-  "back": "Combined OCP (estrogen + progestin): highly effective; AVOID in: active DVT/PE, ischemic stroke, MI, migraines with aura, uncontrolled HTN, breast cancer, age >35 + smoking (WHO 4 = absolutely avoid)\nProgestin-only pills (POPs): safe in breastfeeding, HTN, migraines with aura\nLevonorgestrel IUD (Mirena): excellent efficacy; reduces menstrual bleeding\nCopper IUD: non-hormonal; most effective EC (insert within 5 days); may increase menstrual flow\nDepo-Provera (medroxyprogesterone IM): every 13 weeks; delays return of fertility; bone density loss with long-term use"
+  "back": "Combined OCP (estrogen + progestin): highly effective; AVOID in: active DVT/PE, ischemic stroke, MI, migraines with aura, uncontrolled HTN, breast cancer, age >=35 + smoking >=15 cigarettes/day (<15/day = MEC 3) (WHO/CDC MEC 4 = absolutely avoid)\nProgestin-only pills (POPs): safe in breastfeeding, HTN, migraines with aura\nLevonorgestrel IUD (Mirena): excellent efficacy; reduces menstrual bleeding\nCopper IUD: non-hormonal; most effective EC (insert within 5 days); may increase menstrual flow\nDepo-Provera (medroxyprogesterone IM): every 13 weeks; delays return of fertility; bone density loss with long-term use"
  },
  {
   "topic": "Endocrine",
@@ -657,7 +657,7 @@
  {
   "topic": "Geriatrics",
   "front": "Urinary incontinence: types and pharmacotherapy",
-  "back": "STRESS (leakage with cough/sneeze): pelvic floor exercises (Kegel); alpha-agonists (pseudoephedrine off-label); avoid oxybutynin\nURGE (OAB -- sudden urge): mirabegron (beta-3 agonist; preferred in elderly; less cognitive effects) OR oxybutynin/tolterodine (avoid extended-release oxybutynin in elderly -- high anticholinergic burden)\nOVERFLOW (retention): alpha-blockers (tamsulosin) for BPH; cholinergics (bethanechol)\nFUNCTIONAL: address underlying cause (mobility, access)\nAVOID: oxybutynin IR in elderly (Beers Criteria; high anticholinergic burden)"
+  "back": "STRESS (leakage with cough/sneeze): pelvic floor exercises (Kegel); alpha-agonists (pseudoephedrine off-label); avoid oxybutynin\nURGE (OAB -- sudden urge): mirabegron (beta-3 agonist; preferred in elderly; less cognitive effects) OR oxybutynin/tolterodine (avoid oral oxybutynin, IR or ER, in elderly -- high anticholinergic burden)\nOVERFLOW (retention): alpha-blockers (tamsulosin) for BPH; cholinergics (bethanechol)\nFUNCTIONAL: address underlying cause (mobility, access)\nAVOID: oral oxybutynin (IR and ER) in elderly (Beers Criteria; strongly anticholinergic, IR worst)"
  },
  {
   "topic": "Geriatrics",
@@ -677,7 +677,7 @@
  {
   "topic": "Neurology",
   "front": "Multiple sclerosis: disease-modifying therapies",
-  "back": "Low-moderate efficacy (first-line): interferon beta (1a, 1b), glatiramer acetate\nModerate efficacy: dimethyl fumarate (oral), teriflunomide (oral), fingolimod (oral)\nHigh efficacy (for aggressive MS): natalizumab (IV; JC virus test before -- PML risk), ocrelizumab (anti-CD20; IV), siponimod, alemtuzumab\nAcute relapse: IV methylprednisolone 1g daily x 3-5 days (speeds recovery, not long-term outcome)\nProgressive MS: ocrelizumab (primary progressive MS; first approved for this)"
+  "back": "Low-moderate efficacy (first-line): interferon beta (1a, 1b), glatiramer acetate\nModerate efficacy: dimethyl fumarate (oral), teriflunomide (oral), fingolimod/siponimod (oral S1P modulators)\nHigh efficacy (for aggressive MS): natalizumab (IV; JC virus test before -- PML risk), ocrelizumab (anti-CD20; IV), ofatumumab (anti-CD20; SC), alemtuzumab\nAcute relapse: IV methylprednisolone 1g daily x 3-5 days (speeds recovery, not long-term outcome)\nProgressive MS: ocrelizumab (primary progressive MS; first approved for this)"
  },
  {
   "topic": "Neurology",
@@ -712,7 +712,7 @@
  {
   "topic": "Healthcare Systems",
   "front": "Pharmacoeconomics: cost-effectiveness analysis",
-  "back": "Cost-effectiveness analysis (CEA): compares cost per unit of health outcome (e.g., cost per QALY)\nQALY (Quality-Adjusted Life Year): 1 QALY = 1 year in perfect health; used to compare interventions\nICER (Incremental Cost-Effectiveness Ratio): (cost of new - cost of old) / (effect of new - effect of old)\nThreshold: <$50,000-$100,000/QALY generally considered cost-effective in US\nCost-benefit analysis: converts health outcomes to dollar value\nCost-minimization: compares costs when two therapies have equal efficacy (e.g., generic vs brand)"
+  "back": "Cost-effectiveness analysis (CEA): compares cost per unit of health outcome in natural units (e.g., cost per life-year gained or case prevented); cost per QALY = cost-utility analysis (CUA)\nQALY (Quality-Adjusted Life Year): 1 QALY = 1 year in perfect health; used to compare interventions\nICER (Incremental Cost-Effectiveness Ratio): (cost of new - cost of old) / (effect of new - effect of old)\nThreshold: <$50,000-$100,000/QALY generally considered cost-effective in US\nCost-benefit analysis: converts health outcomes to dollar value\nCost-minimization: compares costs when two therapies have equal efficacy (e.g., generic vs brand)"
  },
  {
   "topic": "Biostatistics",
@@ -732,7 +732,7 @@
  {
   "topic": "Cardiology",
   "front": "BNP and NT-proBNP in heart failure",
-  "back": "BNP (B-type natriuretic peptide): released from ventricles in response to pressure/volume overload\nBNP <100 pg/mL: HF unlikely; BNP >500 pg/mL: HF likely\nBNP 100-500 pg/mL: grey zone (consider other causes: sepsis, PE, renal failure)\nNT-proBNP: age-adjusted thresholds:\n- Age <50: >450 pg/mL\n- Age 50-75: >900 pg/mL\n- Age >75: >1800 pg/mL\nNeprilysin (sacubitril) degrades BNP: BNP elevated on ARNI; use NT-proBNP to monitor HF status instead"
+  "back": "BNP (B-type natriuretic peptide): released from ventricles in response to pressure/volume overload\nBNP <100 pg/mL: HF unlikely; BNP >500 pg/mL: HF likely\nBNP 100-500 pg/mL: grey zone (consider other causes: sepsis, PE, renal failure)\nNT-proBNP: age-adjusted thresholds:\n- Age <50: >450 pg/mL\n- Age 50-75: >900 pg/mL\n- Age >75: >1800 pg/mL\nNeprilysin degrades BNP; sacubitril inhibits neprilysin, so BNP is elevated on ARNI; use NT-proBNP to monitor HF status instead"
  },
  {
   "topic": "Nephrology",
@@ -747,7 +747,7 @@
  {
   "topic": "Pharmacokinetics",
   "front": "Elimination half-life and steady-state concepts",
-  "back": "Steady-state: achieved after 4-5 half-lives (independent of dose or dosing interval)\nSteady-state concentration proportional to dose/CL (not to Vd)\nIncreasing dose frequency: narrows the peak-trough fluctuation (same average Css)\nDecreasing dose frequency: widens fluctuation (same average Css)\nLoading dose bypasses the wait for steady state\nIf CL changes (renal/hepatic dysfunction): Css changes proportionally; t1/2 and time to new steady state also change"
+  "back": "Steady-state: achieved after 4-5 half-lives (independent of dose or dosing interval)\nSteady-state concentration proportional to dose/CL (not to Vd)\nIncreasing dose frequency: narrows the peak-trough fluctuation (same average Css)\nDecreasing dose frequency: widens fluctuation (same average Css)\nLoading dose bypasses the wait for steady state\nIf CL changes (renal/hepatic dysfunction): Css changes inversely (Css proportional to 1/CL); t1/2 and time to new steady state also change"
  },
  {
   "topic": "BPS Strategy",
@@ -757,7 +757,7 @@
  {
   "topic": "BPS Strategy",
   "front": "BPS Exam Knowledge Split",
-  "back": "80% Tacit knowledge = application of facts to real clinical scenarios\n20% Explicit knowledge = memorized facts\n90% Content = Patient care & translation of evidence into practice\n10% Content = Specialty advancement\nTiming: 60-70 seconds per question average\nFormat: Multiple-choice, single best answer only (no select-all-that-apply)\nMindset: Only well-established standards of practice are tested — not emerging or debated data"
+  "back": "80% Tacit knowledge = application of facts to real clinical scenarios\n20% Explicit knowledge = memorized facts\n72% Content = Patient care (Domain 1 Patient Care Specialty Areas 36% + Domain 2 Therapeutics and Patient Management 36%)\n28% Content = Professional Practice (Quality of Care 12.8%, Evidence-Based Practice 7.2%, Practice Management 8.0%)\nTiming: ~90 seconds per question average (150 items [125 scored + 25 pretest] in 225 minutes)\nFormat: Multiple-choice, single best answer only (no select-all-that-apply)\nMindset: Only well-established standards of practice are tested — not emerging or debated data"
  },
  {
   "topic": "BPS Strategy",
@@ -777,7 +777,7 @@
  {
   "topic": "BPS Strategy",
   "front": "Red Flag Drugs — Clozapine",
-  "back": "Trigger: See clozapine → expect agranulocytosis question\n• Mandatory ANC monitoring via REMS program\n  - Baseline ANC ≥1500/mm³ before starting\n  - Weekly monitoring for 6 months, then every 2 weeks, then monthly\n  - ANC <500 = stop immediately\n• Other toxicities: Metabolic syndrome (weight gain, diabetes, dyslipidemia), Myocarditis (highest risk first month), Seizures (dose-related)\n• Clinical use: ONLY for treatment-resistant schizophrenia (failed ≥2 antipsychotics)\n• Most effective antipsychotic for reducing suicidality [⚑ Recent change — Jun 2025. BPS tests guidelines ~6–12 months old and excludes rapidly-evolving changes, so your exam may still expect the prior standard. FDA removed the Clozapine REMS June 2025; ANC monitoring per the label still applies, but the exam may still describe a REMS.]"
+  "back": "Trigger: See clozapine → expect agranulocytosis question\n• Mandatory ANC monitoring via REMS program\n  - Baseline ANC ≥1500/mm³ before starting\n  - Weekly monitoring for 6 months, then every 2 weeks, then monthly\n  - ANC <500 = stop immediately\n• Other toxicities: Metabolic syndrome (weight gain, diabetes, dyslipidemia), Myocarditis (highest risk first month), Seizures (dose-related)\n• Clinical use: treatment-resistant schizophrenia (failed ≥2 antipsychotics) AND reducing suicidal behavior in schizophrenia/schizoaffective disorder\n• Most effective antipsychotic for reducing suicidality Updated after the 2024 course: FDA removed the Clozapine REMS June 2025; ANC monitoring per the label still applies, but the exam may still describe a REMS."
  },
  {
   "topic": "BPS Strategy",
@@ -807,7 +807,7 @@
  {
   "topic": "BPS Strategy",
   "front": "General Exam Day Tactics",
-  "back": "• 70 seconds per question average — bank time on easy questions\n• Never leave blank — 25% random chance; eliminate 1-2 → 50-75%\n• If you must qualify your answer, it is likely wrong\n• Longer answer options often correct (writers add qualifying language for clarity)\n• Trust first instinct — don't change unless clear reason exists\n• Maintain the mindset: only well-established guidelines tested, not controversial/emerging data\n• Formulate your own answer BEFORE reading options (anti-distractor strategy)\n• When panicking: go back to core concept — not a trick question"
+  "back": "• ~90 seconds per question average (150 items in 225 min) — bank time on easy questions\n• Never leave blank — 25% random chance; eliminate 1-2 → 50-75%\n• If you must qualify your answer, it is likely wrong\n• Longer answer options often correct (writers add qualifying language for clarity)\n• Trust first instinct — don't change unless clear reason exists\n• Maintain the mindset: only well-established guidelines tested, not controversial/emerging data\n• Formulate your own answer BEFORE reading options (anti-distractor strategy)\n• When panicking: go back to core concept — not a trick question"
  },
  {
   "front": "Vancomycin target AUC/MIC ratio for MRSA infections is [[400–600 mg·h/L]] (not trough alone per 2020 consensus).",
@@ -881,7 +881,7 @@
  },
  {
   "front": "Andexanet alfa reverses [[Factor Xa inhibitors]] (rivaroxaban, apixaban, edoxaban). It works as a [[recombinant modified Factor Xa decoy]] that sequesters Xa inhibitors.",
-  "back": "Andexanet alfa (AndexXa): modified recombinant human Factor Xa without enzymatic activity. Acts as decoy to bind and sequester Xa inhibitors. FDA approved for life-threatening bleeding with rivaroxaban/apixaban. Very expensive. 4F-PCC is an alternative.",
+  "back": "Andexanet alfa (AndexXa): modified recombinant human Factor Xa without enzymatic activity. Acts as decoy to bind and sequester Xa inhibitors. FDA approved for life-threatening bleeding with rivaroxaban/apixaban. Very expensive. 4F-PCC is an alternative.\nUpdated after the 2024 course: Andexxa was withdrawn from the US market in December 2025 (FDA: thromboembolic risks outweigh benefits; ANNEXA-I); 4F-PCC is the remaining US option.",
   "topic": "Anticoagulation"
  },
  {
@@ -910,23 +910,23 @@
   "topic": "Cardiology"
  },
  {
-  "front": "Fluoroquinolones black box warning: [[tendinitis/tendon rupture]] (especially Achilles), [[peripheral neuropathy]], and [[aortic dissection/rupture]]. These risks are highest in elderly and [[corticosteroid users]].",
-  "back": "FDA 2016 BBW update for fluoroquinolones includes: tendinitis/tendon rupture, peripheral neuropathy, CNS effects, QT prolongation, and aortic aneurysm/dissection. Use reserved for serious infections where benefit outweighs risk. Collagen degradation is the proposed mechanism for tendon/aortic effects.",
+  "front": "Fluoroquinolones black box warning: [[tendinitis/tendon rupture]] (especially Achilles), [[peripheral neuropathy]], and [[CNS effects]] (plus myasthenia gravis exacerbation). Tendon rupture risk is highest in elderly and [[corticosteroid users]].",
+  "back": "FDA 2016 BBW update for fluoroquinolones includes: tendinitis/tendon rupture, peripheral neuropathy, CNS effects, and myasthenia gravis exacerbation (reserve for uncomplicated UTI, acute sinusitis, acute bronchitis only if no alternatives). QT prolongation, dysglycemia, and aortic aneurysm/dissection (2018) are Warnings, NOT boxed. Use reserved for serious infections where benefit outweighs risk. Collagen degradation is the proposed mechanism for tendon/aortic effects.",
   "topic": "Infectious Diseases"
  },
  {
-  "front": "[[agranulocytosis/severe neutropenia]] (boxed warning; the Clozapine REMS was eliminated by FDA in 2025, but ANC monitoring per the prescribing information is still recommended)",
-  "back": "Clozapine REMS: ANC monitored weekly x6 months → every 2 weeks x6 months → monthly thereafter. Discontinue if ANC <1,000. Maximum dose associated with seizure risk ~600mg/day. Titrate slowly to minimize myocarditis risk. Used only for treatment-resistant schizophrenia and suicidality reduction. [⚑ Recent change — Jun 2025. BPS tests guidelines ~6–12 months old and excludes rapidly-evolving changes, so your exam may still expect the prior standard. FDA removed the Clozapine REMS June 2025; ANC monitoring per the label still applies, but the exam may still describe a REMS.]",
+  "front": "Clozapine's hematologic boxed warning requiring ANC monitoring: [[agranulocytosis/severe neutropenia]] (boxed warning; the Clozapine REMS was eliminated by FDA in 2025, but ANC monitoring per the prescribing information is still recommended)",
+  "back": "Clozapine REMS: ANC monitored weekly x6 months → every 2 weeks x6 months → monthly thereafter. Interrupt therapy if ANC <1,000 (moderate neutropenia); discontinue if ANC <500 (severe). Maximum dose associated with seizure risk ~600mg/day. Titrate slowly to minimize myocarditis risk. Used only for treatment-resistant schizophrenia and suicidality reduction. Updated after the 2024 course: FDA removed the Clozapine REMS June 2025; ANC monitoring per the label still applies, but the exam may still describe a REMS.",
   "topic": "Psychiatry"
  },
  {
-  "front": "Amiodarone black box warnings: [[pulmonary toxicity]] (most serious, 5-10%), [[hepatotoxicity]], and [[proarrhythmia (especially TdP)]]. Requires periodic [[chest X-ray, LFTs, PFTs, thyroid function tests]].",
+  "front": "Amiodarone black box warnings: [[pulmonary toxicity]] (most serious, 5-10%), [[hepatotoxicity]], and [[proarrhythmia (worsened arrhythmia, heart block/bradycardia)]]. Requires periodic [[chest X-ray, LFTs, PFTs, thyroid function tests]].",
   "back": "Amiodarone: Class III antiarrhythmic. PFTs + DLCO at baseline, then annually. LFTs every 6 months. TFTs every 3-6 months (both hypothyroidism and hyperthyroidism occur in 5-20%). Long t½ means ADRs persist long after discontinuation. Corneal microdeposits in nearly all patients (usually asymptomatic).",
   "topic": "Cardiology"
  },
  {
-  "front": "In a 2x2 contingency table, the Number Needed to Treat (NNT) = [[1 / Absolute Risk Reduction (ARR)]]. If drug reduces events from 10% to 7%, ARR = [[3%]], NNT = [[33]].",
-  "back": "ARR = Control rate − Treatment rate = 10% − 7% = 3% = 0.03. NNT = 1/ARR = 1/0.03 = 33. Interpret as: need to treat 33 patients to prevent 1 event. Also: RRR = ARR/Control rate = 3%/10% = 30%. Both NNT and ARR depend on baseline risk (population-specific), while RRR does not.",
+  "front": "In a 2x2 contingency table, the Number Needed to Treat (NNT) = [[1 / Absolute Risk Reduction (ARR)]]. If drug reduces events from 10% to 7%, ARR = [[3%]], NNT = [[34]].",
+  "back": "ARR = Control rate − Treatment rate = 10% − 7% = 3% = 0.03. NNT = 1/ARR = 1/0.03 = 33.3, rounded UP to 34. Interpret as: need to treat 34 patients to prevent 1 event. Also: RRR = ARR/Control rate = 3%/10% = 30%. Both NNT and ARR depend on baseline risk (population-specific), while RRR does not.",
   "topic": "Biostatistics"
  },
  {
@@ -946,11 +946,11 @@
  },
  {
   "front": "Digoxin toxicity signs: [[bradycardia, AV block, visual changes (yellow-green halos)]], and GI symptoms. Antidote: [[digoxin-specific antibody Fab fragments (DigiFab/Digibind)]].",
-  "back": "Digoxin: narrow therapeutic index (0.5-0.9 ng/mL for HFrEF; 0.8-2 ng/mL for AF rate control). Toxicity enhanced by hypokalemia (share K+ binding site on Na+/K+-ATPase). Digoxin Fab fragments: each vial binds ~0.5 mg digoxin. Dose based on estimated total body load or empirically (10 vials acute; 5 vials chronic toxicity).",
+  "back": "Digoxin: narrow therapeutic index (0.5-0.9 ng/mL for HFrEF; 0.8-2 ng/mL for AF rate control). Toxicity enhanced by hypokalemia (share K+ binding site on Na+/K+-ATPase). Digoxin Fab fragments: each vial binds ~0.5 mg digoxin. Dose based on estimated total body load or empirically (10 vials acute ingestion of unknown amount; 6 vials for chronic toxicity in adults).",
   "topic": "Critical Care"
  },
  {
-  "front": "Opioid overdose: naloxone dose is [[0.4 mg IV/IM/intranasal]] initially (can repeat q2-3 min). In fentanyl overdose, may need [[multiple higher doses]] (2-4mg) due to high potency. Duration of naloxone is [[30-90 min]] — shorter than most opioids.",
+  "front": "Opioid overdose: naloxone dose is [[0.4 mg IV/IM/SC]] initially (intranasal 4 mg; can repeat q2-3 min). In fentanyl overdose, may need [[multiple higher doses]] (2-4mg) due to high potency. Duration of naloxone is [[30-90 min]] — shorter than most opioids.",
   "back": "Naloxone (Narcan): pure mu-opioid antagonist. Shorter duration than most opioids → re-dosing or infusion needed. Infusion: 2/3 of effective bolus dose per hour. Intranasal 4mg acceptable for bystander use. Caution in opioid-dependent patients: precipitates acute withdrawal.",
   "topic": "Critical Care"
  },
@@ -970,7 +970,7 @@
   "topic": "Infectious Diseases"
  },
  {
-  "front": "SOFA score >[[2]] points from baseline indicates [[organ dysfunction]] in suspected infection (Sepsis-3 definition). qSOFA (bedside) = altered consciousness + RR ≥22 + SBP ≤[[100 mmHg]].",
+  "front": "SOFA score ≥[[2]] points from baseline indicates [[organ dysfunction]] in suspected infection (Sepsis-3 definition). qSOFA (bedside) = altered consciousness + RR ≥22 + SBP ≤[[100 mmHg]].",
   "back": "Sepsis-3 (2016): Sepsis = life-threatening organ dysfunction from dysregulated host response to infection (SOFA ≥2). Septic shock = sepsis + vasopressor requirement + lactate >2 mmol/L (mortality >40%). Old SIRS criteria removed from definition. Bundle: blood cultures, lactate, broad-spectrum antibiotics within 1h, 30mL/kg crystalloid.",
   "topic": "Critical Care"
  },
@@ -985,7 +985,7 @@
   "topic": "Psychiatry"
  },
  {
-  "front": "Methotrexate monitoring: CBC weekly for [[1 month]], then every [[1-2 months]] at steady state. Also monitor [[LFTs, BMP, and chest X-ray]]. Folate [[1 mg daily]] reduces GI toxicity and mucositis without reducing efficacy.",
+  "front": "Methotrexate (low-dose) monitoring: CBC, LFTs, and SCr every [[2-4 weeks]] for the first 3 months, then every [[8-12 weeks]] for months 3-6, then every 12 weeks. Also obtain baseline [[hepatitis B/C serologies and chest X-ray]]. Folate [[1 mg daily]] reduces GI toxicity and mucositis without reducing efficacy.",
   "back": "MTX (low-dose for RA/IBD): Hepatotoxicity (cumulative), pulmonary toxicity (MTX pneumonitis), myelosuppression. Folic acid 1mg/day or folinic acid (leucovorin) reduces toxicity. Leucovorin rescue for high-dose MTX toxicity. Avoid alcohol (additive hepatotoxicity). Withhold MTX if SCr rises significantly.",
   "topic": "Drug Information"
  },
@@ -995,7 +995,7 @@
   "topic": "Pharmacokinetics"
  },
  {
-  "front": "≈ [[1.55]] (meaning steady-state Cmax is ~1.55× single-dose Cmax)",
+  "front": "Accumulation ratio for a drug with t½ = 8 h dosed every 12 h: R = 1/(1 − e^(−kτ)) ≈ [[1.55]] (ratio of steady-state Cmax to single-dose Cmax)",
   "back": "Accumulation ratio R = 1 / (1 − e^(−ke × τ)). With t½=8h and τ=12h: ke=0.693/8=0.0866 hr⁻¹; e^(−0.0866×12) = e^(−1.04) = 0.354; R = 1/(1−0.354) = 1/(0.646) ≈ 1.55. This means significant accumulation occurs at q12h dosing with 8h half-life.",
   "topic": "Pharmacokinetics"
  },
@@ -1005,7 +1005,7 @@
   "topic": "Pharmacology"
  },
  {
-  "front": "Prasugrel is CONTRAINDICATED in: prior [[stroke/TIA]], age >[[75]] years (relative), and weight <[[60 kg]] (relative). It offers the most potent and predictable platelet inhibition of oral P2Y12 inhibitors.",
+  "front": "Prasugrel is CONTRAINDICATED in: prior [[stroke/TIA]], age ≥[[75]] years (relative), and weight <[[60 kg]] (relative). It offers the most potent and predictable platelet inhibition of oral P2Y12 inhibitors.",
   "back": "Prasugrel (Effient): active metabolite formed via CYP enzymes (unlike clopidogrel, less susceptible to CYP2C19 polymorphism). TRITON-TIMI 38: superior to clopidogrel in ACS/PCI patients but with higher bleeding. No CYP2C19 variability concern. Absolute CI: prior stroke/TIA (net harm). Relative CI: age >75, weight <60kg.",
   "topic": "Cardiology"
  },
@@ -1016,7 +1016,7 @@
  },
  {
   "front": "Dofetilide requires in-hospital initiation for [[≥3 days]] due to QTc monitoring for [[Torsades de Pointes (TdP)]] risk. It is eliminated [[renally]] (80%), requiring dose reduction for CrCl <60 mL/min and is CONTRAINDICATED with CrCl <[[20 mL/min]].",
-  "back": "Dofetilide (Tikosyn): Class III antiarrhythmic. Pure IKr (hERG) channel blocker → QT prolongation → TdP risk (dose-related). REMS program: prescribers must be trained. Dose: based on CrCl and baseline QTc. Contraindicated: CrCl <20, baseline QTc >440ms (>500ms in bundle branch block), concurrent drugs that prolong QT.",
+  "back": "Dofetilide (Tikosyn): Class III antiarrhythmic. Pure IKr (hERG) channel blocker → QT prolongation → TdP risk (dose-related). Former REMS (prescriber/pharmacy enrollment) was eliminated by FDA in 2016; labeled 3-day in-hospital initiation still required. Dose: based on CrCl and baseline QTc. Contraindicated: CrCl <20, baseline QTc >440ms (>500ms in bundle branch block), concurrent drugs that prolong QT.",
   "topic": "Cardiology"
  },
  {
@@ -1025,7 +1025,7 @@
   "topic": "Cardiology"
  },
  {
-  "front": "RALES trial: spironolactone [[25mg daily]] reduced mortality by [[30%]] in severe HFrEF (EF <35%, NYHA III-IV) already on ACEi + loop diuretic. Main risks: [[hyperkalemia + gynecomastia]].",
+  "front": "RALES trial: spironolactone [[25mg daily]] reduced mortality by [[30%]] in severe HFrEF (EF ≤35%, NYHA III-IV) already on ACEi + loop diuretic. Main risks: [[hyperkalemia + gynecomastia]].",
   "back": "RALES (NEJM 1999): spironolactone vs placebo in severe HFrEF on standard therapy. 30% RRR in all-cause mortality, 35% RRR in HF hospitalization. Stopped early for benefit. Follow-up EPHESUS trial: eplerenone in post-MI LV dysfunction. EMPHASIS-HF: eplerenone in NYHA II HFrEF. Eplerenone preferred when gynecomastia occurs.",
   "topic": "Cardiology"
  }

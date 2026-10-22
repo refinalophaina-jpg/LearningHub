@@ -831,9 +831,9 @@
       ],
       "task": "Integrate case findings to choose the best action",
       "action": "Revised stem and/or options, rationales and evidence traceability",
-      "questionSha256": "b6ee4352064607426505ebac1bf902eca8e6306de6318cc057e974e36ac394c8",
+      "questionSha256": "22e7202f05691cead76953857161cd49efa837fe0d79e7b08655a06cf8cc9fbc",
       "difficulty": "Foundational safety/application; uncalibrated",
-      "revised": "2026-10-21 independent answer-key verification: key kept (stem dated Oct 2026); Updated since 2024 note on the 2025 clozapine REMS removal; outdated registry language removed. See 2026-10-21-answer-key-verification.md."
+      "revised": "2026-10-22: brought back in line with the 2024 course chapter; the newer guidance is kept as an Updated after the 2024 course note."
     },
     {
       "id": "AD-MOCK-037",

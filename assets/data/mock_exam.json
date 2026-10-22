@@ -1636,23 +1636,23 @@
  {
   "id": "AD-MOCK-036",
   "num": 36,
-  "stem": "In October 2026, a patient stable on clozapine cannot find their old REMS dispensing authorization. ANC is available and acceptable under the current label. Which administrative/clinical distinction should guide the pharmacist?",
+  "stem": "A patient stable on clozapine transfers to your pharmacy. The patient's current ANC is acceptable under the clozapine monitoring table, but the pharmacy cannot confirm the patient's REMS enrollment or dispensing authorization. Which administrative/clinical distinction should guide the pharmacist?",
   "choices": [
-   "No further ANC assessment is needed after removal of the REMS",
-   "No REMS authorization; continue label-directed ANC monitoring",
-   "Dispensing still requires REMS authorization even if the ANC is acceptable",
-   "Clozapine must be replaced because REMS removal withdrew its approval"
+   "No further ANC assessment is needed once the ANC is in the acceptable range",
+   "An acceptable ANC alone is sufficient; dispense without REMS verification",
+   "Dispensing requires REMS registration and a submitted ANC even if the ANC is acceptable",
+   "Clozapine must be replaced with another antipsychotic because REMS enrollment is missing"
   ],
-  "correctIdx": 1,
+  "correctIdx": 2,
   "category": "1. Psychiatry",
   "domain": "Area 1",
   "topic": "Psychiatry",
-  "exp": "FDA removed the REMS effective June 13, 2025; severe neutropenia risk and recommended ANC monitoring persist. The boxed warning for severe neutropenia remains, and prescribers should keep monitoring ANC at the frequencies in the prescribing information. Updated since 2024: under 2024 rules, dispensing required REMS verification of an acceptable ANC; FDA stopped requiring REMS participation in February 2025 and eliminated the REMS on June 13, 2025 (FDA Drug Safety Communication, 2025).",
+  "exp": "Because of the risk of severe neutropenia, all patients receiving clozapine must be registered in the centrally managed Clozapine REMS program, prescribers and pharmacies must also be registered, and ANC results must be submitted to the national registry before clozapine can be dispensed. An acceptable ANC does not replace REMS verification, so the pharmacist should confirm or complete enrollment and ANC reporting before dispensing. ANC monitoring continues at the labeled interval (weekly for 6 months, every 2 weeks for 6-12 months, then monthly), and a missing enrollment is an administrative problem to resolve, not a reason to switch a stable patient to another drug. Updated after the 2024 course: FDA stopped requiring REMS participation in February 2025 and eliminated the Clozapine REMS on June 13, 2025, while the boxed warning and labeled ANC monitoring remain (FDA Drug Safety Communication, 2025).",
   "optsExp": [
-   "Removing the REMS ended the administrative dispensing requirement, not the risk; severe neutropenia remains a boxed warning and the label still directs ANC monitoring.",
-   "FDA removed the REMS effective June 13, 2025; severe neutropenia risk and recommended ANC monitoring persist. The boxed warning for severe neutropenia remains, and prescribers should keep monitoring ANC at the frequencies in the prescribing information. Updated since 2024: under 2024 rules, dispensing required REMS verification of an acceptable ANC; FDA stopped requiring REMS participation in February 2025 and eliminated the REMS on June 13, 2025 (FDA Drug Safety Communication, 2025).",
-   "This applies the retired REMS dispensing requirement; after June 13, 2025, there is no REMS authorization to obtain, so an acceptable ANC under the label is sufficient.",
-   "REMS removal was an administrative change that did not withdraw clozapine's approval; a patient stable on clozapine with an acceptable ANC can continue it."
+   "An acceptable ANC does not end monitoring; ANC is checked at the labeled interval (weekly, then every 2 weeks, then monthly) throughout therapy.",
+   "Under the Clozapine REMS, an acceptable ANC is necessary but not sufficient; the patient, prescriber, and pharmacy must be registered and the ANC submitted before dispensing.",
+   "Because of the risk of severe neutropenia, all patients receiving clozapine must be registered in the centrally managed Clozapine REMS program, prescribers and pharmacies must also be registered, and ANC results must be submitted to the national registry before clozapine can be dispensed. An acceptable ANC does not replace REMS verification, so the pharmacist should confirm or complete enrollment and ANC reporting before dispensing. ANC monitoring continues at the labeled interval (weekly for 6 months, every 2 weeks for 6-12 months, then monthly), and a missing enrollment is an administrative problem to resolve, not a reason to switch a stable patient to another drug. Updated after the 2024 course: FDA stopped requiring REMS participation in February 2025 and eliminated the Clozapine REMS on June 13, 2025, while the boxed warning and labeled ANC monitoring remain (FDA Drug Safety Communication, 2025).",
+   "Missing REMS enrollment is an administrative issue to resolve by registering the patient; it is not a reason to switch a stable patient to another antipsychotic."
   ],
   "sources": [
    {
