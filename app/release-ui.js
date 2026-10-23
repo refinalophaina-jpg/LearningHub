@@ -14,8 +14,20 @@
       current ? button.setAttribute('aria-current', 'page') : button.removeAttribute('aria-current');
     });
   }
+  // Each section is a history entry, so the browser's Back and Forward move
+  // between sections instead of leaving the site. Home keeps the bare URL.
+  const sectionIds = new Set([...document.querySelectorAll('.section[id]')].map(s => s.id));
+  const urlFor = id => id === 'home' ? location.pathname + location.search : '#' + id;
+  let fromHistory = false;
   const baseSwitch = window.switchSection;
   window.switchSection = function (id) {
+    const current = history.state && history.state.section;
+    if (!fromHistory && sectionIds.has(id) && current !== id) {
+      try {
+        history.replaceState(Object.assign({}, history.state, { y: window.scrollY }), '');
+        history.pushState({ section: id, y: 0 }, '', urlFor(id));
+      } catch (_) { /* history unavailable (sandboxed frame): sections still switch */ }
+    }
     baseSwitch(id);
     updateNavigation();
     const section = document.getElementById(id);
@@ -25,6 +37,17 @@
     heading.focus({ preventScroll: true });
     window.scrollTo({ top: 0, behavior: 'instant' });
   };
+  function showFromHistory(id, y) {
+    document.querySelectorAll('dialog[open]').forEach(d => d.close());
+    if (document.getElementById('spotlightOverlay').classList.contains('open')) window.closeSpotlight();
+    fromHistory = true;
+    try { window.switchSection(id); } finally { fromHistory = false; }
+    if (y) window.scrollTo({ top: y, behavior: 'instant' });
+  }
+  window.addEventListener('popstate', event => {
+    const id = (event.state && event.state.section) || location.hash.slice(1) || 'home';
+    if (sectionIds.has(id)) showFromHistory(id, event.state && event.state.y);
+  });
   compact.addEventListener('change', updateNavigation);
   secondary.forEach(id => {
     const tab = document.getElementById('tab-' + id);
@@ -70,4 +93,14 @@
   });
   document.getElementById('importCodeMsg').setAttribute('role', 'status');
   updateNavigation();
+  // Open the section named in the URL (a shared or reloaded link), and mark the first entry.
+  const start = location.hash.slice(1);
+  try {
+    if (sectionIds.has(start) && start !== 'home') {
+      history.replaceState({ section: start, y: 0 }, '', '#' + start);
+      showFromHistory(start, 0);
+    } else if (!history.state || !history.state.section) {
+      history.replaceState({ section: 'home', y: 0 }, '', start && !sectionIds.has(start) ? location.href : urlFor('home'));
+    }
+  } catch (_) { /* no history API: the page still works without Back support */ }
 })();

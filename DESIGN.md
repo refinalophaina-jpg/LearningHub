@@ -139,7 +139,7 @@ Eleven muted-jewel hues, one per section, held to similar saturation and lightne
 
 ## Layout
 
-Single-column, mobile-first flow inside a 20px page gutter, with a sticky translucent header (56px) and a fixed bottom bar (five primary tabs at phone widths; nine on larger screens) (72px + safe-area). Content is organized as stacked cards on the paper; grids appear only where items are genuinely equivalent (home tool cards at `minmax(140px,1fr)`, More hub 2-col ≥600px, quiz filters 2-col mobile / 3-col ≥640px, visuals 2-col ≥640px with aligned card heads). Rhythm: 8px between siblings, 12–14px between cards, 16px card padding, 24–28px between sections. The primary content of a screen sits above the fold on a 420px phone; stat strips stay compact single rows. Reference material beyond the core loop lives one tap deeper in the More hub rather than widening the tab bar.
+Single-column, mobile-first flow inside a 20px page gutter, with a sticky translucent header (56px) and a fixed bottom bar at phone and tablet widths (five primary tabs at ≤600px, nine up to 899px; 72px + safe-area) that becomes a sticky top row under the header at ≥900px. Content is organized as stacked cards on the paper; grids appear only where items are genuinely equivalent (home tool cards at `minmax(140px,1fr)`, More hub 2-col ≥600px, quiz filters 2-col mobile / 3-col ≥640px, visuals 2-col ≥640px with aligned card heads). Rhythm: 8px between siblings, 12–14px between cards, 16px card padding, 24–28px between sections. The primary content of a screen sits above the fold on a 420px phone; stat strips stay compact single rows. Reference material beyond the core loop lives one tap deeper in the More hub rather than widening the tab bar.
 
 ## Elevation & Depth
 
@@ -182,7 +182,7 @@ Soft rectangles everywhere: 12px for controls, 14–16px for cards, 18–20px fo
 - **Focus:** fill deepens; `:focus-visible` adds the global 2px terracotta outline.
 
 ### Navigation
-- **Bottom tab bar:** fixed, frosted (blur + 92% paper), five tabs at ≤600px (Home, Study, Quiz, Cards, More) and nine on larger screens. The phone More hub contains Drug reference, Timed practice, Podcasts, and Slides. Each tab's SVG icon permanently carries its section hue at 72% opacity; the active tab gets a 15% tinted chip behind the icon and a 600-weight label in its hue. Labels 11px.
+- **Tab bar:** below 900px a fixed, frosted bottom bar (blur + 92% paper), five tabs at ≤600px (Home, Study, Quiz, Cards, More) and nine above. At ≥900px the same nine tabs become a solid sticky row under the header, icon and 13.5px label side by side, active tab on a 13% tint of its hue. Every section is a browser history entry (`#quiz`, `#flash`…), so Back and Forward move between sections and links open the named section. The phone More hub contains Drug reference, Timed practice, Podcasts, and Slides. Each tab's SVG icon permanently carries its section hue at 72% opacity; the active tab gets a 15% tinted chip behind the icon and a 600-weight label in its hue. Labels 11px.
 - **Header:** sticky, frosted, brand mark + serif wordmark + Search pill; circular theme toggle (stroke moon/sun) floats at top-right.
 - **More sub-nav:** pill row ("← More" + four sub-tabs) repeated atop each reference section; active pill fills with its section tint.
 
