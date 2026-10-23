@@ -31,6 +31,16 @@ All 150 mock items and all 600 option explanations received an AI-assisted evide
 
 The mock v2 uses separate session/result keys; v1 records remain intact in backups and are never regraded against changed choices.
 
+### Updating content without breaking saved progress
+
+Progress lives in each reader's browser (localStorage on bcps.ainadara.com) and survives every deploy, but it is keyed by item position and fixed storage keys. `tests/progress-compat.test.js` enforces the rules:
+
+- Every quiz item and flashcard carries a fixed `id` (`Q000`…, `F000`…) equal to its position. Fix an item by editing it in place; add new items only at the end; never delete, reorder, or insert mid-list. Mock items keep their `AD-MOCK-###` ids.
+- Do not rename a `bcps_*` storage key; if a format must change, add a new key and migrate from the old one, and keep the old key in the backup format.
+- A reader's own flashcards are keyed `u0`, `u1`… so adding built-in cards never shifts them; schedules saved under the old `c206+` ids migrate automatically on load, including from older backup files.
+- Keep the domain. A different hostname is a different browser store, and progress would not follow.
+- Before a release that touches storage, run `.audit-src/upgrade-check.js <folder with the currently deployed files>`: it builds progress on the deployed version and confirms the new build keeps it.
+
 ## Deployment
 
 The canonical site is [bcps.ainadara.com](https://bcps.ainadara.com). Cloudflare Worker static assets serve only `app/`; `wrangler.toml` binds that custom domain. Build first, then deploy with this repository’s explicit config (`wrangler deploy --config ./wrangler.toml`). The `app/_headers` file requests fresh validation for un-hashed assets. No private review files are part of the deployment.

@@ -1,5 +1,6 @@
 [
  {
+  "id": "Q000",
   "q": "A patient with STEMI is undergoing PCI and has a documented prior TIA. Which listed oral antiplatelet loading regimen is appropriate, assuming no other contraindications?",
   "opts": [
    "A. Clopidogrel 75 mg without a loading dose",
@@ -22,6 +23,7 @@
   "reviewNote": "Targeted correction 2026-10-19; full chapter review pending."
  },
  {
+  "id": "Q001",
   "q": "A 58-year-old woman with HFrEF (EF 30%) is already on metoprolol succinate and enalapril. Her NYHA class remains II. Which additional therapy has proven mortality benefit?",
   "opts": [
    "A. Amlodipine",
@@ -38,6 +40,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q002",
   "q": "A patient with HFrEF (EF 25%) is on optimal medical therapy. The ARNI sacubitril/valsartan is being considered. The patient takes lisinopril 10mg daily. What is the required washout period before switching to sacubitril/valsartan?",
   "opts": [
    "A. 12 hours",
@@ -54,6 +57,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q003",
   "q": "A 70-year-old man with stable angina has CCS class II symptoms on aspirin and a beta-blocker. His LDL is 105 mg/dL. His 10-year ASCVD risk is 22%. What is the most appropriate lipid-lowering strategy?",
   "opts": [
    "A. Moderate-intensity statin",
@@ -70,6 +74,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q004",
   "q": "A patient with AFib and CHA2DS2-VASc score of 3 (HTN, age 68, DM) is started on rivaroxaban 20mg daily. Six months later, her CrCl drops to 38 mL/min. What action is needed?",
   "opts": [
    "A. No change, continue 20mg daily",
@@ -86,6 +91,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q005",
   "q": "A 55-year-old man with HTN, DM, and a recent TIA (3 weeks ago) is in AFib. His CHA2DS2-VASc score is 4. He needs anticoagulation. Which of the following antithrombotic agents is contraindicated in this patient?",
   "opts": [
    "A. Apixaban",
@@ -102,6 +108,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q006",
   "q": "A patient on warfarin for mechanical heart valve has an INR of 7.2 with no active bleeding. Which management is most appropriate?",
   "opts": [
    "A. Hold warfarin 1-2 doses, recheck INR",
@@ -118,6 +125,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q007",
   "q": "A 72-year-old woman with HTN has a blood pressure of 158/92 mmHg on lisinopril 10 mg daily (a submaximal dose). She also has stage 3 CKD (eGFR 42 mL/min/1.73 m2) with albuminuria (urine albumin-creatinine ratio 450 mg/g); K+ is 4.6 mEq/L. What is the best next step?",
   "opts": [
    "A. Add amlodipine",
@@ -134,6 +142,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q008",
   "q": "A patient in the ICU develops new atrial fibrillation with rapid ventricular response (HR 145 bpm) and BP 88/60 mmHg. What is the first-line treatment?",
   "opts": [
    "A. IV diltiazem",
@@ -150,6 +159,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q009",
   "q": "A patient is started on sacubitril/valsartan for HFrEF. Two weeks later she develops angioedema. What is the most appropriate management?",
   "opts": [
    "A. Reduce dose and observe",
@@ -166,6 +176,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q010",
   "q": "A 45-year-old man with no comorbidities presents with community-acquired pneumonia. He is treated as an outpatient. His chest X-ray shows a left lower lobe infiltrate. He has no drug allergies. What is the preferred treatment?",
   "opts": [
    "A. Azithromycin 500mg day 1, then 250mg days 2-5",
@@ -182,6 +193,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q011",
   "q": "A hospitalized patient develops C. difficile infection (CDI) with WBC 18k, creatinine 1.9 (baseline 0.9), and 8 loose stools/day. Stool toxin PCR is positive. How should this be classified and treated?",
   "opts": [
    "A. Non-severe CDI: oral metronidazole",
@@ -198,6 +210,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q012",
   "q": "A patient with MRSA bacteremia is on vancomycin. Day 3 blood cultures remain positive. Vancomycin MIC is 2 mg/L. What is the most appropriate change?",
   "opts": [
    "A. Increase vancomycin dose to achieve trough 20-25",
@@ -214,6 +227,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q013",
   "q": "A 28-year-old woman with no prior antibiotic exposure presents with uncomplicated UTI (dysuria, frequency, no fever). She has a sulfa allergy (rash). What is the best first-line treatment?",
   "opts": [
    "A. TMP-SMX DS BID x 3 days",
@@ -230,6 +244,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q014",
   "q": "A patient with community-acquired pneumonia requiring ICU admission has no obvious risk factors for Pseudomonas. Which antibiotic regimen is recommended?",
   "opts": [
    "A. Azithromycin monotherapy",
@@ -246,6 +261,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q015",
   "q": "A patient with bacterial meningitis has Gram-positive diplococci on CSF Gram stain. She is started on empiric ceftriaxone and vancomycin. Culture later confirms S. pneumoniae with a penicillin MIC of 0.12 mcg/mL (resistant by the meningitis breakpoint) and a ceftriaxone MIC of 0.25 mcg/mL (susceptible). What is the best definitive therapy?",
   "opts": [
    "A. Continue vancomycin alone",
@@ -262,6 +278,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q016",
   "q": "A patient with HIV (CD4 count 45) develops fever, headache, and altered mental status. India ink stain of CSF is positive. What is the treatment of choice for acute induction?",
   "opts": [
    "A. Fluconazole 800mg daily",
@@ -278,6 +295,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q017",
   "q": "A patient with septic shock is started on empiric antibiotics. Blood cultures return Enterococcus faecalis (VSE) in 2/2 bottles. Which antibiotic is most appropriate for definitive therapy?",
   "opts": [
    "A. Vancomycin",
@@ -294,6 +312,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q018",
   "q": "A 35-year-old man is diagnosed with latent TB infection (positive IGRA, negative CXR, no symptoms). He has no prior TB treatment. What is the preferred preventive therapy?",
   "opts": [
    "A. INH 300mg daily x 9 months",
@@ -310,6 +329,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q019",
   "q": "A patient hospitalized for 8 days, mechanically ventilated for the last 5 days, develops new fever, purulent tracheal secretions, worsening oxygenation, and a new CXR infiltrate. His endotracheal aspirate grows Pseudomonas aeruginosa; susceptibilities are pending. Which antibiotic combination is appropriate empiric therapy for this VAP while susceptibilities are pending?",
   "opts": [
    "A. Ceftriaxone + metronidazole",
@@ -326,6 +346,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q020",
   "q": "A 65-year-old diabetic patient has a foot ulcer probing to bone. MRI confirms osteomyelitis, and a bone biopsy grows MRSA. No surgical resection of infected bone is planned. The typical total duration of antibiotic therapy (IV and/or highly bioavailable oral) is:",
   "opts": [
    "A. 7-10 days",
@@ -342,6 +363,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q021",
   "q": "A patient with Candida albicans fungemia (bloodstream infection) is hemodynamically stable. Which antifungal is preferred for initial treatment?",
   "opts": [
    "A. Fluconazole 800mg load then 400mg daily",
@@ -358,6 +380,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q022",
   "q": "A patient in septic shock requires vasopressor therapy. Norepinephrine 0.25 mcg/kg/min is running. His MAP is 58 mmHg (target >65). What is the most appropriate next step?",
   "opts": [
    "A. Add dopamine",
@@ -374,6 +397,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q023",
   "q": "A mechanically ventilated patient has ARDS (PaO2/FiO2 = 140, bilateral infiltrates, PCWP normal). Current settings: TV 8 mL/kg IBW, FiO2 0.7, PEEP 8. Plateau pressure is 34 cmH2O. What change is indicated?",
   "opts": [
    "A. Decrease PEEP to 5",
@@ -390,6 +414,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q024",
   "q": "A patient in the ICU on mechanical ventilation has a CAM-ICU positive assessment. He is agitated (RASS +2) and pulling at his ETT. He is currently on fentanyl infusion. What is the first-line pharmacologic approach for ICU delirium management?",
   "opts": [
    "A. Lorazepam infusion",
@@ -406,6 +431,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q025",
   "q": "An ICU patient develops fever (38.9°C, up from 37.0°C), chills, and rigors 2 hours after starting a red blood cell transfusion. Blood pressure, heart rate, and oxygen saturation are unchanged from baseline, and there is no urticaria or wheeze. ABO compatibility was verified, the direct antiglobulin test is negative, hemoglobin has not dropped, and there is no hemoglobinuria. What is the most likely reaction?",
   "opts": [
    "A. Acute hemolytic transfusion reaction",
@@ -422,6 +448,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q026",
   "q": "A 68-year-old man weighs 110 kg (IBW 72 kg) and has a SCr of 1.4 mg/dL. What is the most accurate weight to use for Cockcroft-Gault in an obese patient?",
   "opts": [
    "A. Actual body weight (110 kg)",
@@ -438,6 +465,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q027",
   "q": "A patient receives vancomycin 1500mg q12h. A pre-dose (trough) level at steady state is 12 mcg/mL. A peak drawn 1 hour after infusion end is 32 mcg/mL. The team will use these two levels to guide dosing. Which approach does the 2020 vancomycin consensus guideline endorse for estimating the AUC?",
   "opts": [
    "A. Use the trough level alone as a surrogate for AUC",
@@ -454,6 +482,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q028",
   "q": "A patient with a seizure disorder is on phenytoin 300mg daily. Her albumin is 2.2 g/dL (normal 4.0). Her measured phenytoin level is 8 mcg/mL. What is the corrected (true free equivalent) phenytoin level?",
   "opts": [
    "A. 8 mcg/mL — no correction needed",
@@ -470,6 +499,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q029",
   "q": "A drug has a volume of distribution (Vd) of 70L and a clearance (CL) of 5 L/h. What is the approximate half-life?",
   "opts": [
    "A. 4.8 hours",
@@ -486,6 +516,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q030",
   "q": "An aminoglycoside (gentamicin) is dosed using extended-interval dosing (once daily). Which PK/PD target is most important for efficacy?",
   "opts": [
    "A. Time above MIC (T>MIC)",
@@ -502,6 +533,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q031",
   "q": "A patient requires a loading dose of amiodarone IV for new-onset AFib. The desired plasma concentration (Cp) is 2 mcg/mL, Vd is 60 L/kg, weight is 70 kg, and bioavailability is 1 (IV). What is the calculated total loading dose?",
   "opts": [
    "A. 140 mg",
@@ -518,6 +550,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q032",
   "q": "A 58-year-old man with T2DM, HTN, and a recent MI (6 months ago) has A1c 8.4% on metformin 1000mg BID. His eGFR is 68 mL/min/1.73m2. Which add-on therapy is most appropriate?",
   "opts": [
    "A. Glipizide 5mg daily",
@@ -534,6 +567,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q033",
   "q": "A 72-year-old patient with T2DM, heart failure with reduced ejection fraction (EF 35%), and eGFR 55 mL/min is on metformin and linagliptin. What is the best evidence-based add-on therapy?",
   "opts": [
    "A. Glargine insulin",
@@ -550,6 +584,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q034",
   "q": "A patient is brought to the ER with blood glucose of 620 mg/dL, serum osmolality 345 mOsm/kg, altered mental status, and no ketonemia. Arterial pH is 7.38. What is the diagnosis and initial IV fluid of choice?",
   "opts": [
    "A. DKA; 0.9% NaCl",
@@ -566,6 +601,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q035",
   "q": "A patient on amiodarone for 2 years presents with fatigue, weight gain, cold intolerance, and constipation. TSH is 15 mIU/L (normal 0.4-4.0). Free T4 is low. What is the diagnosis and treatment?",
   "opts": [
    "A. Amiodarone-induced thyrotoxicosis; methimazole",
@@ -582,6 +618,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q036",
   "q": "A patient with type 1 DM is admitted for DKA. Initial K+ is 3.2 mEq/L. When should insulin be started?",
   "opts": [
    "A. Immediately with the first bag of IV fluids",
@@ -603,6 +640,7 @@
   ]
  },
  {
+  "id": "Q037",
   "q": "On routine outpatient labs, a 55-year-old woman with CKD stage 4 (eGFR 22) has K+ 5.8 mEq/L, confirmed on a nonhemolyzed repeat sample. Her ECG shows no changes, and she is asymptomatic. Which treatment is most appropriate to start?",
   "opts": [
    "A. Emergent dialysis",
@@ -619,6 +657,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q038",
   "q": "A patient with ESRD on hemodialysis has AFib. Anticoagulation is needed (CHA2DS2-VASc = 4). Which DOAC has the most data supporting use in dialysis patients?",
   "opts": [
    "A. Rivaroxaban 15mg daily",
@@ -635,6 +674,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q039",
   "q": "A patient presents with AKI (SCr rising from 0.9 to 2.8 mg/dL over 48 hours) after starting ibuprofen for knee pain. Urine sodium is <20 mEq/L, urine osmolality is >500 mOsm/kg, and fractional excretion of sodium (FeNa) is 0.4%. What type of AKI is this?",
   "opts": [
    "A. Intrinsic AKI (acute tubular necrosis)",
@@ -651,6 +691,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q040",
   "q": "A patient with CKD stage 3b and diabetes has urine ACR of 800 mg/g. Current meds include metformin and lisinopril. What additional therapy has evidence to reduce progression of diabetic kidney disease?",
   "opts": [
    "A. Amlodipine",
@@ -667,6 +708,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q041",
   "q": "A 52-year-old woman is diagnosed with H. pylori-positive peptic ulcer disease. She has no penicillin allergy and has not received prior clarithromycin or other macrolides. Local clarithromycin resistance exceeds 15%, and no susceptibility testing was performed. Which regimen is recommended as first-line?",
   "opts": [
    "A. Bismuth quadruple therapy x 14 days",
@@ -683,6 +725,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q042",
   "q": "A patient with cirrhosis develops confusion, asterixis, and elevated ammonia. He has been taking lactulose 20 g (30 mL) once daily and reports one formed stool per day. Infection, GI bleeding, and electrolyte disturbances have been excluded. His current medications include propranolol 20mg BID, furosemide 40mg daily, and spironolactone 100mg daily. What is the most appropriate treatment for acute hepatic encephalopathy?",
   "opts": [
    "A. Increase lactulose dose to achieve 2-3 soft stools/day",
@@ -699,6 +742,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q043",
   "q": "A patient with IBD (Crohn's disease) is on infliximab maintenance therapy. He develops fever, productive cough, and night sweats. Chest X-ray shows an upper lobe cavitary lesion. What is the most likely diagnosis and required action before infliximab continuation?",
   "opts": [
    "A. CAP from S. pneumoniae; continue infliximab",
@@ -715,6 +759,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q044",
   "q": "A 45-year-old woman with moderate persistent asthma (NAEPP Step 3) has symptoms most days of the week despite low-dose ICS. What is the preferred Step 3 regimen upgrade?",
   "opts": [
    "A. Add oral prednisone 10mg daily",
@@ -731,6 +776,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q045",
   "q": "A 68-year-old man with COPD GOLD Group E (mMRC dyspnea 3, 2 exacerbations last year, blood eosinophils 150 cells/mcL) is on a LABA. What is the most appropriate intensification?",
   "opts": [
    "A. Add ICS",
@@ -747,6 +793,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q046",
   "q": "A 35-year-old man with major depressive disorder (MDD) is started on sertraline 50mg daily. After 4 weeks, he reports minimal improvement. What is the most appropriate next step?",
   "opts": [
    "A. Discontinue sertraline and start bupropion",
@@ -763,6 +810,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q047",
   "q": "A patient with bipolar I disorder, currently in a depressive episode, is asking about medication options. He has never tried any mood stabilizers. Which medication has the best evidence for bipolar depression?",
   "opts": [
    "A. Sertraline monotherapy",
@@ -779,6 +827,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q048",
   "q": "A 25-year-old woman with epilepsy and focal seizures is on levetiracetam 1000mg BID. She reports persistent irritability and mood changes attributed to levetiracetam, and her neurologist plans to transition her to a different antiseizure medication. Which agent is most appropriate?",
   "opts": [
    "A. Valproic acid",
@@ -795,6 +844,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q049",
   "q": "A 72-year-old man with Parkinson disease has tremor, rigidity, and bradykinesia. He is ready to start pharmacotherapy. Which is the most appropriate first-line agent for motor symptoms in a non-demented elderly patient?",
   "opts": [
    "A. Trihexyphenidyl (anticholinergic)",
@@ -811,6 +861,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q050",
   "q": "A patient develops neuroleptic malignant syndrome (NMS) after starting haloperidol. Which clinical features define NMS?",
   "opts": [
    "A. Hyperthermia, diaphoresis, hypertension, and mydriasis",
@@ -827,6 +878,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q051",
   "q": "An 82-year-old woman is admitted with confusion. Her medication list includes diphenhydramine 25mg nightly, oxybutynin 5mg TID, and amitriptyline 25mg nightly. Which of these medications is most likely contributing to her confusion?",
   "opts": [
    "A. All three are on the Beers Criteria and each contributes",
@@ -843,6 +895,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q052",
   "q": "Before an annual osteoporosis infusion, a pharmacist calculates a Cockcroft–Gault CrCl of 28 mL/min. Which listed treatment is specifically contraindicated below CrCl 35 mL/min?",
   "opts": [
    "A. Calcium supplementation when clinically indicated",
@@ -865,6 +918,7 @@
   "reviewNote": "Targeted correction 2026-10-19; full chapter review pending."
  },
  {
+  "id": "Q053",
   "q": "A patient undergoing chemotherapy with cisplatin and doxorubicin develops nausea and vomiting starting 1 hour after infusion and lasting 24 hours. Which antiemetic regimen is most appropriate?",
   "opts": [
    "A. Ondansetron 8mg IV + dexamethasone 12mg",
@@ -881,6 +935,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q054",
   "q": "A patient with cancer develops tumor lysis syndrome (TLS) 24 hours after starting chemotherapy. Labs show K+ 6.8, phosphate 8.2, Ca 6.9, uric acid 12.4, creatinine 3.1. Which agent most rapidly lowers the existing plasma uric acid?",
   "opts": [
    "A. Allopurinol",
@@ -897,6 +952,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q055",
   "q": "A new anticoagulant is tested in an RCT. The stroke rate in the treatment group is 1.5% vs 3.0% in the placebo group. What is the Number Needed to Treat (NNT)?",
   "opts": [
    "A. 15",
@@ -913,6 +969,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q056",
   "q": "A study reports a hazard ratio (HR) of 0.72 (95% CI: 0.58-0.89) for cardiovascular death with a new drug vs placebo. How should this be interpreted?",
   "opts": [
    "A. The drug increases CV death risk by 28%",
@@ -929,6 +986,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q057",
   "q": "A pharmacist reviews a case-control study examining the association between proton pump inhibitors and C. difficile infection. The odds ratio is 1.8 (95% CI 1.2-2.7). What does this mean?",
   "opts": [
    "A. PPI users have 80% higher odds of CDI; this is a relative risk",
@@ -945,6 +1003,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q058",
   "q": "A meta-analysis funnel plot shows significant asymmetry, with studies skewed toward positive results. What type of bias does this suggest?",
   "opts": [
    "A. Confounding bias",
@@ -961,6 +1020,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q059",
   "q": "A prospective cohort study follows 10,000 statin users and 10,000 non-users for 10 years. The incidence of MI is 3% in statin users and 5% in non-users. What is the relative risk?",
   "opts": [
    "A. 0.40",
@@ -977,6 +1037,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q060",
   "q": "A randomized controlled trial has an intention-to-treat (ITT) analysis. A patient in the treatment arm discontinues therapy at week 4 but continues to be followed and outcomes are recorded. How is this patient's data handled in ITT analysis?",
   "opts": [
    "A. Excluded from the analysis",
@@ -993,6 +1054,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q061",
   "q": "A pharmacist identifies that a patient is prescribed warfarin and is self-medicating with St. John's Wort for depression. What is the clinical significance of this interaction?",
   "opts": [
    "A. St. John's Wort inhibits warfarin metabolism, increasing bleeding risk",
@@ -1009,6 +1071,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q062",
   "q": "A medical information request asks about the dose of intravenous immune globulin (IVIG) for immune thrombocytopenia (ITP). After a quick check of tertiary references, the pharmacist wants to critically appraise the original clinical trial data supporting the recommended dose. Which type of resource provides this?",
   "opts": [
    "A. Lexi-Comp or Micromedex (tertiary database)",
@@ -1025,6 +1088,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q063",
   "q": "A pharmacist wants to evaluate a newly approved drug using the highest level of evidence for safety in a large population. Which study design is most appropriate post-market?",
   "opts": [
    "A. Case report",
@@ -1041,6 +1105,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q064",
   "q": "A 55-year-old male smoker has LDL 190 mg/dL, no ASCVD, 10-year risk 8%. On high-intensity statin, LDL is still 145 mg/dL. What is the next best step?",
   "opts": [
    "A. Add niacin",
@@ -1057,6 +1122,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q065",
   "q": "A 48-year-old woman with HTN on HCTZ 25 mg daily has BP 146/90 mmHg (goal <130/80), K+ 3.0 mEq/L, and fasting glucose 118 mg/dL (96 mg/dL before HCTZ). Renal function is normal, a plasma aldosterone/renin ratio drawn last month was normal, and she takes no other medications. Which single change best addresses both her uncontrolled BP and her hypokalemia?",
   "opts": [
    "A. Stop HCTZ, switch to amlodipine",
@@ -1073,6 +1139,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q066",
   "q": "A patient with HFpEF (EF 55%) presents with fluid overload. Which therapy has shown the strongest outcome benefit specifically in HFpEF?",
   "opts": [
    "A. Sacubitril/valsartan",
@@ -1089,6 +1156,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q067",
   "q": "A patient with first provoked DVT (caused by prolonged immobility) completed 3 months of anticoagulation. What is the recommended duration at this point?",
   "opts": [
    "A. 3 months total is sufficient -- stop now",
@@ -1105,6 +1173,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q068",
   "q": "A patient on amiodarone develops progressive dyspnea, dry cough, and CT shows diffuse ground-glass opacities. DLCO is decreased. Most likely cause?",
   "opts": [
    "A. New congestive heart failure",
@@ -1121,6 +1190,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q069",
   "q": "After DES stent placement for STEMI, how long should dual antiplatelet therapy (DAPT) be continued?",
   "opts": [
    "A. 1 month",
@@ -1137,6 +1207,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q070",
   "q": "A 30-year-old pregnant woman (32 weeks) has asymptomatic bacteriuria with >100,000 CFU/mL E. coli. Management?",
   "opts": [
    "A. No treatment required",
@@ -1153,6 +1224,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q071",
   "q": "An HIV-positive patient has CD4 count of 180. Which prophylactic regimen should be initiated?",
   "opts": [
    "A. Fluconazole for Candida prophylaxis",
@@ -1169,6 +1241,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q072",
   "q": "An HIV patient (CD4 45) has a cavitary lung lesion; BAL fungal culture grows Cryptococcus neoformans, serum cryptococcal antigen is positive, and lumbar puncture shows a positive CSF cryptococcal antigen with an opening pressure of 28 cm H2O. Preferred induction therapy?",
   "opts": [
    "A. Fluconazole 800mg daily",
@@ -1185,6 +1258,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q073",
   "q": "A patient with penicillin allergy (anaphylaxis) needs treatment for primary syphilis. Best alternative?",
   "opts": [
    "A. Ceftriaxone 1g IM x 10 days",
@@ -1201,6 +1275,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q074",
   "q": "A drug has half-life of 6 hours. A 1000mg IV dose is given. How much remains after 18 hours?",
   "opts": [
    "A. 500mg",
@@ -1217,6 +1292,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q075",
   "q": "Rifampin is added to phenytoin therapy. What happens to phenytoin levels?",
   "opts": [
    "A. Increase - rifampin inhibits CYP2C9",
@@ -1233,6 +1309,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q076",
   "q": "A patient on empagliflozin for T2DM with established cardiovascular disease reports a mild vaginal yeast infection that resolved with an OTC topical antifungal. What counseling is appropriate?",
   "opts": [
    "A. Stop empagliflozin",
@@ -1249,6 +1326,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q077",
   "q": "A patient with type 2 DM starts GLP-1 agonist therapy (semaglutide). Which adverse effect most commonly causes discontinuation?",
   "opts": [
    "A. Hypoglycemia",
@@ -1265,6 +1343,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q078",
   "q": "A patient with adrenal insufficiency on hydrocortisone needs stress dosing for moderate surgery (knee replacement). Appropriate regimen?",
   "opts": [
    "A. No change; continue home doses",
@@ -1281,6 +1360,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q079",
   "q": "A patient with CKD stage 4 (eGFR 22) has a serum bicarbonate of 16 mEq/L on repeated measurements. Which intervention is most appropriate to manage this finding?",
   "opts": [
    "A. Oral sodium bicarbonate, titrated to raise bicarbonate without exceeding the upper limit of normal",
@@ -1297,6 +1377,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q080",
   "q": "A patient with SIADH has serum sodium 122 mEq/L with confusion. Which treatment is most appropriate?",
   "opts": [
    "A. 3% NaCl at 1-2 mL/kg/h",
@@ -1313,6 +1394,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q081",
   "q": "A malnourished alcoholic starts enteral nutrition. On day 2, phosphate drops to 0.8 mg/dL and he develops respiratory failure and weakness. What syndrome is this?",
   "opts": [
    "A. Hypomagnesemia",
@@ -1329,6 +1411,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q082",
   "q": "A patient with generalized tonic-clonic seizures refractory to levetiracetam is started on valproic acid. She is of childbearing age. What counseling is essential?",
   "opts": [
    "A. Take with food to avoid nausea",
@@ -1345,6 +1428,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q083",
   "q": "A 68-year-old man with Alzheimer disease has taken donepezil 10 mg daily for 18 months and tolerates it well. His cognition and daily function have declined, and his MMSE is now 14/30 (moderate disease). Which change in pharmacotherapy is most appropriate?",
   "opts": [
    "A. Stop donepezil and start memantine 10 mg BID",
@@ -1361,6 +1445,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q084",
   "q": "A patient has a first episode of major depressive disorder. After successful treatment with an antidepressant, how long should therapy be continued after full remission?",
   "opts": [
    "A. 1 month, then discontinue",
@@ -1377,6 +1462,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q085",
   "q": "An ICU patient develops torsades de pointes (TdP) with QTc 540ms. He is on haloperidol and azithromycin. K+ is 3.1, Mg2+ is 1.2. What is the first-line treatment?",
   "opts": [
    "A. Amiodarone 150mg IV",
@@ -1393,6 +1479,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q086",
   "q": "A 22-year-old woman requests emergency contraception after unprotected sex 36 hours ago. She has no contraindications. Which is the most effective option?",
   "opts": [
    "A. Plan B (levonorgestrel) 1.5mg",
@@ -1409,6 +1496,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q087",
   "q": "A patient with HIV is starting antiretroviral therapy. Her CD4 is 380 and HIV RNA is 45,000 copies/mL. She has no resistance mutations, is HBV negative, and tests HLA-B*5701 positive. Which regimen is preferred first-line?",
   "opts": [
    "A. Zidovudine + lamivudine + efavirenz",
@@ -1430,6 +1518,7 @@
   ]
  },
  {
+  "id": "Q088",
   "q": "A 2-year-old child (weight 12kg) is diagnosed with acute otitis media (AOM). He has severe otalgia for more than 48 hours, and antibiotic treatment has been selected. He has no penicillin allergy and has not received antibiotics in the past 30 days. Which treatment is preferred?",
   "opts": [
    "A. Amoxicillin 40mg/kg/day divided BID",
@@ -1447,6 +1536,7 @@
   "reviewNote": "Targeted correction 2026-10-19; full chapter review pending."
  },
  {
+  "id": "Q089",
   "q": "A 6-month-old (weight 7 kg) develops RSV bronchiolitis with SpO2 87% on room air. Which treatment is indicated?",
   "opts": [
    "A. Albuterol nebulization q4h",
@@ -1463,6 +1553,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q090",
   "q": "A 58-year-old with acute myeloid leukemia is hospitalized for induction chemotherapy. On day 10 he develops a temperature of 38.5 C with ANC 50 cells/mm3; neutropenia is expected to last more than 7 days. He is hemodynamically stable, with no catheter-site, skin, or pulmonary findings and no history of MRSA. Which empiric antibiotic is most appropriate?",
   "opts": [
    "A. Oral ciprofloxacin + amoxicillin-clavulanate (low-risk)",
@@ -1479,6 +1570,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q091",
   "q": "A patient with breast cancer is about to begin a new myelosuppressive chemotherapy regimen. According to ASCO and NCCN guidelines, which regimen-associated febrile neutropenia risk warrants primary G-CSF prophylaxis regardless of patient-specific risk factors?",
   "opts": [
    "A. When febrile neutropenia risk is >10%",
@@ -1495,6 +1587,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q092",
   "q": "A pharmacist participates in a quality improvement project using a Plan-Do-Study-Act (PDSA) cycle to reduce medication errors. Which step involves analyzing the results of the intervention?",
   "opts": [
    "A. Plan",
@@ -1511,6 +1604,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q093",
   "q": "A hospital wants to measure the percentage of patients with community-acquired pneumonia who received appropriate antibiotics within 4 hours of arrival. This is an example of which type of quality measure?",
   "opts": [
    "A. Outcome measure",
@@ -1527,6 +1621,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q094",
   "q": "A 72-year-old woman with COPD receives her annual influenza vaccine in October 2024. She has never received a pneumococcal, zoster, or RSV vaccine. Which additional vaccine(s) are appropriate to give at this visit?",
   "opts": [
    "A. Pneumococcal vaccine (PCV20 or PCV21 alone, or PCV15 followed by PPSV23)",
@@ -1548,6 +1643,7 @@
   ]
  },
  {
+  "id": "Q095",
   "q": "A 78-year-old woman with atrial fibrillation is on warfarin. Her CHA2DS2-VASc is 5. She asks about bleeding risk. Which tool quantifies bleeding risk in AFib patients on anticoagulation?",
   "opts": [
    "A. CURB-65",
@@ -1565,6 +1661,7 @@
   "reviewNote": "Targeted correction 2026-10-19; full chapter review pending."
  },
  {
+  "id": "Q096",
   "q": "A patient with COPD exacerbation is hospitalized. He requires systemic corticosteroids. What is the recommended duration?",
   "opts": [
    "A. 3 days",
@@ -1581,6 +1678,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q097",
   "q": "An 82-year-old woman on multiple medications falls. A comprehensive medication review is performed. Which medication class is most strongly associated with fall risk in the elderly?",
   "opts": [
    "A. ACE inhibitors",
@@ -1597,6 +1695,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q098",
   "q": "A patient with moderate-severe plaque psoriasis is started on methotrexate 15mg weekly. Which monitoring is required?",
   "opts": [
    "A. Monthly CBC and LFTs; annual liver biopsy after cumulative dose 1.5g",
@@ -1613,6 +1712,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q099",
   "q": "A 55-year-old man has hypertension and is started on lisinopril. Two weeks later he calls complaining of a persistent dry cough. What is the most appropriate next step?",
   "opts": [
    "A. Add benzonatate for cough suppression",
@@ -1629,6 +1729,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q100",
   "q": "55yo M on warfarin (INR 2.4) started fluconazole for Candida UTI. Day 3 INR 6.8. Mechanism?",
   "opts": [
    "A. Albumin displacement",
@@ -1650,6 +1751,7 @@
   ]
  },
  {
+  "id": "Q101",
   "q": "Patient on simvastatin 40mg prescribed clarithromycin. Most appropriate action?",
   "opts": [
    "A. Continue simvastatin at same dose; safe",
@@ -1671,6 +1773,7 @@
   ]
  },
  {
+  "id": "Q102",
   "q": "Patient on clopidogrel post-PCI prescribed omeprazole for GI. Problem?",
   "opts": [
    "A. Omeprazole induces CYP2C19, increasing activation",
@@ -1692,6 +1795,7 @@
   ]
  },
  {
+  "id": "Q103",
   "q": "Patient on tacrolimus post-kidney transplant started on voriconazole for fungal. Tacrolimus levels 4× above goal day 3. Mechanism?",
   "opts": [
    "A. Voriconazole induces P-glycoprotein, increasing efflux",
@@ -1713,6 +1817,7 @@
   ]
  },
  {
+  "id": "Q104",
   "q": "Patient on methadone maintenance started on rifampin for TB. Most likely consequence?",
   "opts": [
    "A. Increased methadone levels, respiratory depression risk",
@@ -1734,6 +1839,7 @@
   ]
  },
  {
+  "id": "Q105",
   "q": "Patient on lithium for bipolar develops AKI, given high-dose ibuprofen. Lithium level 2.8 (prev 0.9). Primary mechanism?",
   "opts": [
    "A. Ibuprofen directly inhibits lithium renal tubular secretion",
@@ -1755,6 +1861,7 @@
   ]
  },
  {
+  "id": "Q106",
   "q": "Patient on carbamazepine for epilepsy started on oral contraceptives. Appropriate counseling?",
   "opts": [
    "A. Carbamazepine has no effect on contraceptive hormones",
@@ -1776,6 +1883,7 @@
   ]
  },
  {
+  "id": "Q107",
   "q": "68yo M on digoxin 0.125mg daily started on amiodarone for AFib. Most critical monitoring?",
   "opts": [
    "A. Monitor LFTs weekly for hepatotoxicity",
@@ -1797,6 +1905,7 @@
   ]
  },
  {
+  "id": "Q108",
   "q": "Patient on phenytoin given stat IV diazepam for breakthrough seizures, then started on fluconazole for candidiasis. Most clinically significant concern?",
   "opts": [
    "A. Diazepam inhibits phenytoin metabolism, causing toxicity",
@@ -1818,6 +1927,7 @@
   ]
  },
  {
+  "id": "Q109",
   "q": "Which combination requires dose reduction of the substrate due to P-glycoprotein inhibition?",
   "opts": [
    "A. Metformin + rifampin",
@@ -1839,6 +1949,7 @@
   ]
  },
  {
+  "id": "Q110",
   "q": "Patient on fluoxetine for depression starts linezolid for MRSA infection. Key concern?",
   "opts": [
    "A. Fluoxetine induces CYP3A4, decreasing linezolid levels",
@@ -1860,6 +1971,7 @@
   ]
  },
  {
+  "id": "Q111",
   "q": "Patient on apixaban also taking strong CYP3A4/P-gp inhibitor ketoconazole. Effect?",
   "opts": [
    "A. No effect - apixaban renally eliminated",
@@ -1881,6 +1993,7 @@
   ]
  },
  {
+  "id": "Q112",
   "q": "Patient on doxycycline for Lyme disease also takes calcium supplement. Drug interaction?",
   "opts": [
    "A. Enhanced doxycycline absorption and efficacy",
@@ -1902,6 +2015,7 @@
   ]
  },
  {
+  "id": "Q113",
   "q": "Elderly patient on warfarin and amiodarone has INR 8.2, no active bleeding. Most appropriate action?",
   "opts": [
    "A. Continue warfarin; monitor INR closely",
@@ -1923,6 +2037,7 @@
   ]
  },
  {
+  "id": "Q114",
   "q": "Patient on prasugrel with CrCl 15 mL/min (ESRD). Dosing adjustment needed?",
   "opts": [
    "A. No adjustment - prasugrel not renally dependent",
@@ -1944,6 +2059,7 @@
   ]
  },
  {
+  "id": "Q115",
   "q": "Patient on stable warfarin begins eating large spinach salad daily. Expected effect on INR?",
   "opts": [
    "A. INR increases significantly",
@@ -1965,6 +2081,7 @@
   ]
  },
  {
+  "id": "Q116",
   "q": "Patient on dabigatran 110mg BID with CrCl 20 mL/min. Dosing appropriate?",
   "opts": [
    "A. Yes - CrCl not relevant for dabigatran",
@@ -1986,6 +2103,7 @@
   ]
  },
  {
+  "id": "Q117",
   "q": "Patient with AFib, CHA2DS2-VASc 6, no prior stroke. Anticoagulation recommendation?",
   "opts": [
    "A. Aspirin 81mg daily sufficient",
@@ -2007,6 +2125,7 @@
   ]
  },
  {
+  "id": "Q118",
   "q": "Patient on rivaroxaban 20mg daily for AFib. CrCl drops to 38 mL/min. Action?",
   "opts": [
    "A. Continue 20mg daily - no change needed",
@@ -2028,6 +2147,7 @@
   ]
  },
  {
+  "id": "Q119",
   "q": "A study reports ARR of 3% and RRR of 30% for a new drug vs placebo over 5 years. What is the NNT?",
   "opts": [
    "A. 30",
@@ -2049,6 +2169,7 @@
   ]
  },
  {
+  "id": "Q120",
   "q": "A meta-analysis of 12 RCTs shows a pooled OR of 0.72 (95% CI 0.65–0.80) for MI reduction with Drug X vs placebo. How should this be interpreted?",
   "opts": [
    "A. Drug X increases MI risk by 28%",
@@ -2070,6 +2191,7 @@
   ]
  },
  {
+  "id": "Q121",
   "q": "A trial reports p=0.04 for the primary endpoint. A critic argues the result is not clinically meaningful despite statistical significance. Which concept supports this argument?",
   "opts": [
    "A. Type I error",
@@ -2091,6 +2213,7 @@
   ]
  },
  {
+  "id": "Q122",
   "q": "In a survival analysis RCT, the hazard ratio (HR) for death is 0.78 (95% CI 0.62–0.97) for treatment vs placebo. What does this mean?",
   "opts": [
    "A. Treated patients die 22% later than placebo at fixed time points",
@@ -2112,6 +2235,7 @@
   ]
  },
  {
+  "id": "Q123",
   "q": "Sensitivity is 95% and specificity is 60% for a diagnostic test. Which statement is TRUE?",
   "opts": [
    "A. A positive test result rules in disease with 95% certainty",
@@ -2133,6 +2257,7 @@
   ]
  },
  {
+  "id": "Q124",
   "q": "A study enrolled 500 patients to detect a 5% absolute difference in primary endpoint (power 80%, alpha 0.05). The trial was stopped early after 200 patients when interim analysis showed p=0.03. What concern does this raise?",
   "opts": [
    "A. Type II error — insufficient power to detect the true effect",
@@ -2154,6 +2279,7 @@
   ]
  },
  {
+  "id": "Q125",
   "q": "A case-control study found that patients with lung cancer had 3× higher odds of being smokers than controls (OR=3.0, 95% CI 2.1–4.3). What is the study's limitation regarding causality?",
   "opts": [
    "A. Case-control studies cannot be used to study rare diseases",
@@ -2175,6 +2301,7 @@
   ]
  },
  {
+  "id": "Q126",
   "q": "A systematic review includes studies with significant heterogeneity (I²=82%). What does this indicate and how does it affect the meta-analysis?",
   "opts": [
    "A. I²=82% indicates most variance is due to chance; meta-analysis is reliable",
@@ -2196,6 +2323,7 @@
   ]
  },
  {
+  "id": "Q127",
   "q": "A pharmaceutical company funds an RCT comparing their new drug to placebo. The drug is not compared to existing standard-of-care therapy. This study design issue is best described as:",
   "opts": [
    "A. Selection bias",
@@ -2217,6 +2345,7 @@
   ]
  },
  {
+  "id": "Q128",
   "q": "A crossover trial evaluates Drug A then Drug B in the same patients. What is the primary concern unique to crossover designs?",
   "opts": [
    "A. Selection bias from non-random allocation",
@@ -2238,6 +2367,7 @@
   ]
  },
  {
+  "id": "Q129",
   "q": "An RCT uses intention-to-treat (ITT) analysis. 15% of patients in the treatment arm stopped the drug due to adverse effects and were analyzed as if they continued. What does this do to the estimated treatment effect?",
   "opts": [
    "A. Overestimates the benefit of the drug",
@@ -2259,6 +2389,7 @@
   ]
  },
  {
+  "id": "Q130",
   "q": "A study evaluating lung cancer screening with low-dose CT scan shows that screened patients survive longer after diagnosis than unscreened patients. Before concluding screening improves mortality, which bias must be ruled out?",
   "opts": [
    "A. Recall bias",
@@ -2280,6 +2411,7 @@
   ]
  },
  {
+  "id": "Q131",
   "q": "A clinical pharmacist is asked to evaluate a study claiming Drug A is 'non-inferior' to Drug B. The non-inferiority margin was set at delta=5%. The study result was a difference of -2% (95% CI -6% to +2%). What conclusion is appropriate?",
   "opts": [
    "A. Drug A is non-inferior because the point estimate is within the margin",
@@ -2301,6 +2433,7 @@
   ]
  },
  {
+  "id": "Q132",
   "q": "A pharmacoeconomic analysis reports an ICER of $85,000/QALY for a new biologic. How should this be interpreted for formulary consideration?",
   "opts": [
    "A. The drug costs $85,000 per patient per year",
@@ -2322,6 +2455,7 @@
   ]
  },
  {
+  "id": "Q133",
   "q": "Which study design is most appropriate to determine whether a new biomarker predicts 5-year cardiovascular mortality?",
   "opts": [
    "A. Randomized controlled trial",
@@ -2343,6 +2477,7 @@
   ]
  },
  {
+  "id": "Q134",
   "q": "In an RCT, 30% of subjects withdraw from the treatment arm and 5% withdraw from placebo. Results favor placebo. What bias is most likely?",
   "opts": [
    "A. Selection bias in how subjects were enrolled and allocated",
@@ -2364,6 +2499,7 @@
   ]
  },
  {
+  "id": "Q135",
   "q": "A database study reports that patients on Drug X had higher rates of MI compared to Drug Y (HR=1.45, p=0.02). A major concern is that physicians prescribed Drug X to sicker patients. This is best described as:",
   "opts": [
    "A. Information bias",
@@ -2385,6 +2521,7 @@
   ]
  },
  {
+  "id": "Q136",
   "q": "A pharmacist presents a journal club article showing Drug A reduces LDL by 20% more than Drug B (p<0.001). A colleague asks whether this translates to clinical benefit. What concept is most relevant?",
   "opts": [
    "A. The p-value is too significant — this is likely a Type I error",
@@ -2406,6 +2543,7 @@
   ]
  },
  {
+  "id": "Q137",
   "q": "A new drug is approved under the FDA's Accelerated Approval pathway based on improvement in a surrogate endpoint. What is required post-approval?",
   "opts": [
    "A. No additional studies required once approved",
@@ -2427,6 +2565,7 @@
   ]
  },
  {
+  "id": "Q138",
   "q": "A hospital pharmacy is implementing a High-Alert Medication (HAM) program. Which set of strategies does ISMP recommend for HAM management?",
   "opts": [
    "A. All HAMs require physician signature for each dose",
@@ -2448,6 +2587,7 @@
   ]
  },
  {
+  "id": "Q139",
   "q": "Which of the following best describes the role of a P&T (Pharmacy and Therapeutics) committee in a hospital?",
   "opts": [
    "A. Determines which physicians can prescribe controlled substances",
@@ -2469,6 +2609,7 @@
   ]
  },
  {
+  "id": "Q140",
   "q": "A prescriber orders oral methotrexate 15 mg once weekly for rheumatoid arthritis, and the order is transcribed correctly on the MAR as 'once weekly.' The nurse administers methotrexate 15 mg daily for 7 days. Which error type classification is this?",
   "opts": [
    "A. Wrong drug error",
@@ -2490,6 +2631,7 @@
   ]
  },
  {
+  "id": "Q141",
   "q": "A hospital implements bar-code medication administration (BCMA). Which error type does BCMA PRIMARILY prevent?",
   "opts": [
    "A. Wrong drug ordered by prescriber",
@@ -2511,6 +2653,7 @@
   ]
  },
  {
+  "id": "Q142",
   "q": "A pharmacist identifies that a prescriber has been ordering ibuprofen 800mg TID for all postoperative patients regardless of renal function, HF history, or GI risk. Which quality improvement approach should be initiated?",
   "opts": [
    "A. File a formal complaint with the medical board",
@@ -2532,6 +2675,7 @@
   ]
  },
  {
+  "id": "Q143",
   "q": "A new insulin product is approved under a Biosimilar pathway. Which statement about biosimilars is CORRECT?",
   "opts": [
    "A. Biosimilars are identical to the reference product at the molecular level",
@@ -2553,6 +2697,7 @@
   ]
  },
  {
+  "id": "Q144",
   "q": "A clinical pharmacist reviews medication orders for a 78-year-old patient and finds the following: diphenhydramine 25mg QHS for sleep, sertraline 50mg daily, amitriptyline 25mg nightly. Which tool identifies inappropriate medications in this elderly patient?",
   "opts": [
    "A. Naranjo Algorithm",
@@ -2574,6 +2719,7 @@
   ]
  },
  {
+  "id": "Q145",
   "q": "The Naranjo Algorithm is used to assess which of the following?",
   "opts": [
    "A. Drug-drug interaction severity",
@@ -2595,6 +2741,7 @@
   ]
  },
  {
+  "id": "Q146",
   "q": "A pharmacist is evaluating a drug information question. Which resource would be MOST appropriate as a first-line tertiary reference for drug interaction checking?",
   "opts": [
    "A. PubMed — search for primary literature on the interaction",
@@ -2616,6 +2763,7 @@
   ]
  },
  {
+  "id": "Q147",
   "q": "A pharmacy resident is asked to find the most current evidence on optimal antibiotic duration for community-acquired pneumonia. Which search approach is best?",
   "opts": [
    "A. Google search for 'CAP antibiotic duration'",
@@ -2637,6 +2785,7 @@
   ]
  },
  {
+  "id": "Q148",
   "q": "A drug information specialist categorizes a drug interaction as 'major severity.' What does this classification indicate?",
   "opts": [
    "A. The interaction is common but only causes mild side effects",
@@ -2658,6 +2807,7 @@
   ]
  },
  {
+  "id": "Q149",
   "q": "A sponsor has preliminary clinical evidence that its investigational drug for a serious condition may demonstrate substantial improvement over available therapy on a clinically significant endpoint. Which FDA expedited program is designed for this situation and provides intensive FDA guidance on efficient drug development starting as early as phase 1, in addition to all Fast Track features?",
   "opts": [
    "A. Standard Review (NDA/BLA)",
@@ -2679,6 +2829,7 @@
   ]
  },
  {
+  "id": "Q150",
   "q": "A pharmacist receives a question about whether a medication is safe during pregnancy. Which resource provides the best evidence-based pregnancy risk information?",
   "opts": [
    "A. Old FDA A/B/C/D/X category system on old package inserts",
@@ -2700,6 +2851,7 @@
   ]
  },
  {
+  "id": "Q151",
   "q": "A clinical pharmacist documents a suspected adverse drug reaction in the medical record and wants to report it to the FDA. Which reporting system should be used?",
   "opts": [
    "A. VAERS (Vaccine Adverse Event Reporting System)",
@@ -2721,6 +2873,7 @@
   ]
  },
  {
+  "id": "Q152",
   "q": "A trial of a new antidiabetic agent enrolled only adults aged 40-65 years without CKD or cardiovascular disease at academic medical centers. A clinic pharmacist asks whether the results apply to her older patients with multiple comorbidities. Which concept is she evaluating?",
   "opts": [
    "A. Internal validity",
@@ -2742,6 +2895,7 @@
   ]
  },
  {
+  "id": "Q153",
   "q": "A pharmacoeconomic analysis finds Drug A costs $5,000/year with effectiveness of 0.85 QALYs, while Drug B costs $8,000/year with effectiveness of 0.90 QALYs. What is the ICER of Drug B vs Drug A?",
   "opts": [
    "A. $3,000",
@@ -2763,6 +2917,7 @@
   ]
  },
  {
+  "id": "Q154",
   "q": "A clinical pharmacist performs a literature search and finds a meta-analysis with a funnel plot showing marked asymmetry. What does this suggest?",
   "opts": [
    "A. The studies included are high quality and representative",
@@ -2784,6 +2939,7 @@
   ]
  },
  {
+  "id": "Q155",
   "q": "A study compares outcome rates: event rate in control group = 8%, event rate in treatment group = 5%. Calculate the RRR, ARR, and NNT.",
   "opts": [
    "A. RRR=37.5%, ARR=3%, NNT=34",
@@ -2805,6 +2961,7 @@
   ]
  },
  {
+  "id": "Q156",
   "q": "A clinical pharmacist is asked about the difference between efficacy and effectiveness. Which statement is correct?",
   "opts": [
    "A. Efficacy and effectiveness are interchangeable terms",
@@ -2826,6 +2983,7 @@
   ]
  },
  {
+  "id": "Q157",
   "q": "A 4-year-old (20 kg) presents with otitis media. Amoxicillin high-dose is ordered. What is the appropriate dose?",
   "opts": [
    "A. 250 mg twice daily",
@@ -2847,6 +3005,7 @@
   ]
  },
  {
+  "id": "Q158",
   "q": "A neonate born at 27 weeks gestational age (birth weight 0.9 kg), now 4 days old, requires gentamicin for suspected early-onset sepsis. Which dosing approach is most appropriate?",
   "opts": [
    "A. 2.5 mg/kg every 8 hours (adult dosing)",
@@ -2868,6 +3027,7 @@
   ]
  },
  {
+  "id": "Q159",
   "q": "A 6-year-old with well-controlled asthma is on low-dose inhaled corticosteroid (ICS) monotherapy. During an acute exacerbation at school, which short-acting bronchodilator is first-line?",
   "opts": [
    "A. Ipratropium bromide MDI",
@@ -2889,6 +3049,7 @@
   ]
  },
  {
+  "id": "Q160",
   "q": "A 3-year-old with fever of 38.9°C (102°F) is brought to the ED. Parents ask about ibuprofen vs. acetaminophen. Which statement is correct?",
   "opts": [
    "A. Ibuprofen is contraindicated under age 6",
@@ -2910,6 +3071,7 @@
   ]
  },
  {
+  "id": "Q161",
   "q": "A 35-year-old with epilepsy controlled on phenytoin develops a new infection requiring fluconazole. What is the expected interaction?",
   "opts": [
    "A. Fluconazole decreases phenytoin levels through CYP2C9 induction",
@@ -2931,6 +3093,7 @@
   ]
  },
  {
+  "id": "Q162",
   "q": "A 68-year-old with Parkinson's disease is initiated on levodopa/carbidopa. Which dietary consideration is most important?",
   "opts": [
    "A. Avoid calcium-rich foods to prevent chelation",
@@ -2952,6 +3115,7 @@
   ]
  },
  {
+  "id": "Q163",
   "q": "A patient presents with status epilepticus. Lorazepam 0.1 mg/kg IV has been given twice without cessation of seizures. What is the next recommended step?",
   "opts": [
    "A. Repeat lorazepam 0.1 mg/kg IV a third time",
@@ -2973,6 +3137,7 @@
   ]
  },
  {
+  "id": "Q164",
   "q": "A 45-year-old woman presents with a moderate-to-severe acute migraine attack that did not respond to OTC analgesics in the past. She has no cardiac disease and has hypertension that is well controlled (BP 126/78 mm Hg) on a beta-blocker. Which acute treatment is most appropriate?",
   "opts": [
    "A. Ergotamine tartrate 2 mg PO",
@@ -2994,6 +3159,7 @@
   ]
  },
  {
+  "id": "Q165",
   "q": "A 28-year-old woman with bipolar I disorder is stabilized on lithium. She becomes pregnant. Which action is most appropriate regarding lithium management?",
   "opts": [
    "A. Immediately discontinue lithium — it is absolutely contraindicated in pregnancy",
@@ -3015,6 +3181,7 @@
   ]
  },
  {
+  "id": "Q166",
   "q": "Which long-acting injectable antipsychotic initiation statement is correct for an adult with normal renal function and established oral tolerability?",
   "opts": [
    "A. Risperidone microspheres (Risperdal Consta) require no oral overlap",
@@ -3037,6 +3204,7 @@
   "reviewNote": "Targeted correction 2026-10-19; full chapter review pending."
  },
  {
+  "id": "Q167",
   "q": "A patient on clozapine for treatment-resistant schizophrenia presents with new-onset fever, sore throat, and malaise at week 6 of therapy. ANC = 400 cells/mm³. What is the most appropriate management?",
   "opts": [
    "A. Continue clozapine and treat the infection empirically with antibiotics",
@@ -3058,6 +3226,7 @@
   ]
  },
  {
+  "id": "Q168",
   "q": "A 22-year-old with major depressive disorder (MDD) begins sertraline 50 mg daily. She returns 2 weeks later feeling 'more energetic but still depressed.' Her family reports she seems 'not herself.' She has been sleeping less and spending money impulsively. What is the most important consideration?",
   "opts": [
    "A. Increase sertraline to 100 mg — inadequate dose response",
@@ -3079,6 +3248,7 @@
   ]
  },
  {
+  "id": "Q169",
   "q": "A 24-year-old woman requests emergency contraception 48 hours after unprotected intercourse. She is otherwise healthy with a BMI of 22 kg/m². Which is the most effective option?",
   "opts": [
    "A. Combined oral contraceptive pill (Yuzpe method)",
@@ -3101,6 +3271,7 @@
   "reviewNote": "Targeted correction 2026-10-19; full chapter review pending."
  },
  {
+  "id": "Q170",
   "q": "A 19-year-old with gonorrhea is being treated. Which regimen reflects current CDC guidelines?",
   "opts": [
    "A. Ciprofloxacin 500 mg single dose PO",
@@ -3122,6 +3293,7 @@
   ]
  },
  {
+  "id": "Q171",
   "q": "A 32-year-old woman with HIV (CD4 350, VL undetectable on ART) asks about contraceptive options. She takes efavirenz. Which contraceptive method has a significant drug interaction with efavirenz?",
   "opts": [
    "A. Copper IUD",
@@ -3144,6 +3316,7 @@
   "reviewNote": "Targeted correction 2026-10-19; full chapter review pending."
  },
  {
+  "id": "Q172",
   "q": "A 60-year-old patient in the ICU has a serum sodium of 118 mEq/L and is comatose. Which is the most appropriate initial treatment?",
   "opts": [
    "A. Free water restriction to 1 L/day",
@@ -3165,6 +3338,7 @@
   ]
  },
  {
+  "id": "Q173",
   "q": "A patient on TPN has a serum phosphate of 0.4 mg/dL (normal 2.5-4.5) on day 3 of TPN initiation. The patient has lost 18 kg in the past 2 months. What is most likely occurring?",
   "opts": [
    "A. TPN phosphate content is insufficient — increase TPN phosphate additives",
@@ -3186,6 +3360,7 @@
   ]
  },
  {
+  "id": "Q174",
   "q": "A 72-year-old septic patient has been started on vasopressors. The MAP is 55 mmHg despite norepinephrine at 0.5 mcg/kg/min. What is the recommended adjunctive vasopressor to add?",
   "opts": [
    "A. Phenylephrine 100 mcg/min",
@@ -3207,6 +3382,7 @@
   ]
  },
  {
+  "id": "Q175",
   "q": "In a ventilated patient with ARDS (P/F ratio 120), which ventilator strategy is evidence-based to reduce mortality?",
   "opts": [
    "A. High tidal volume (12 mL/kg IBW) to ensure adequate oxygenation",
@@ -3228,6 +3404,7 @@
   ]
  },
  {
+  "id": "Q176",
   "q": "A 70-year-old woman with nonvalvular atrial fibrillation (CHA2DS2-VASc = 5, no prior stroke or TIA, no mechanical valve) is on warfarin with INR 2.8. She is scheduled for elective knee replacement surgery in 7 days. What is the recommended perioperative anticoagulation strategy?",
   "opts": [
    "A. Continue warfarin at full dose throughout surgery",
@@ -3249,6 +3426,7 @@
   ]
  },
  {
+  "id": "Q177",
   "q": "A 56-year-old presents with STEMI and is going for primary PCI. He reports hives (no angioedema, anaphylaxis, or asthma) after taking aspirin in the past. Which antiplatelet strategy is most appropriate?",
   "opts": [
    "A. Clopidogrel 600 mg loading dose, then long-term clopidogrel monotherapy without aspirin",
@@ -3270,6 +3448,7 @@
   ]
  },
  {
+  "id": "Q178",
   "q": "A patient with HFrEF (EF 30%) is on maximally tolerated ACE inhibitor and beta-blocker. His LVEF remains 30% and he has NYHA Class II symptoms. What additional therapy has demonstrated mortality benefit?",
   "opts": [
    "A. Digoxin 0.125 mg daily",
@@ -3291,6 +3470,7 @@
   ]
  },
  {
+  "id": "Q179",
   "q": "A 65-year-old with diabetes presents with nonpurulent cellulitis of the right leg. He meets SIRS criteria (T 38.9 C, HR 112, WBC 15,000) and is hospitalized; he had a culture-proven MRSA abscess 6 months ago. Blood cultures are drawn. Which empiric antibiotic choice is most appropriate?",
   "opts": [
    "A. Cephalexin 500 mg PO QID",
@@ -3312,6 +3492,7 @@
   ]
  },
  {
+  "id": "Q180",
   "q": "A 55-year-old returns from Southeast Asia with 5 days of fever, headache, and myalgias. Peripheral blood smear shows P. falciparum (parasitemia <1%, patient stable, able to take PO). Which treatment is recommended?",
   "opts": [
    "A. Chloroquine 1000 mg base PO single dose",
@@ -3333,6 +3514,7 @@
   ]
  },
  {
+  "id": "Q181",
   "q": "A 58-year-old with CKD stage 4 (eGFR 22 mL/min/1.73 m2, not on dialysis) has persistent hyperphosphatemia (serum phos 6.8 mg/dL) despite dietary phosphate restriction, serum calcium 10.2 mg/dL, coronary artery calcification on CT, and secondary hyperparathyroidism (PTH 450 pg/mL). Which phosphate binder is most appropriate?",
   "opts": [
    "A. Calcium carbonate 500 mg TID with meals",
@@ -3354,6 +3536,7 @@
   ]
  },
  {
+  "id": "Q182",
   "q": "A 62-year-old with COPD (FEV1/FVC 0.60, FEV1 48% predicted, 1 moderate exacerbation last year not requiring hospitalization, blood eosinophils 150 cells/microL) remains symptomatic on LABA monotherapy. Which medication change is evidence-based?",
   "opts": [
    "A. Add inhaled corticosteroid (ICS) immediately",
@@ -3375,6 +3558,7 @@
   ]
  },
  {
+  "id": "Q183",
   "q": "A 55-year-old with T2DM (A1c 8.2%) and established cardiovascular disease is on metformin monotherapy. What add-on therapy provides both glycemic control and proven cardiovascular mortality benefit?",
   "opts": [
    "A. Glipizide 5 mg daily (sulfonylurea)",
@@ -3396,6 +3580,7 @@
   ]
  },
  {
+  "id": "Q184",
   "q": "An 82-year-old with moderate dementia, chronic pain, and hypertension is being reviewed for medication optimization. Which medication on Beers Criteria is MOST inappropriate and should be deprescribed first?",
   "opts": [
    "A. Lisinopril 5 mg daily",
@@ -3417,6 +3602,7 @@
   ]
  },
  {
+  "id": "Q185",
   "q": "A 52-year-old with cirrhosis (Child-Pugh B) presents with 8 L abdominal ascites and no prior antibiotic exposure. He develops spontaneous bacterial peritonitis (SBP). Which antibiotic and adjunctive therapy is first-line?",
   "opts": [
    "A. Cefazolin IV + ciprofloxacin PO",
@@ -3438,6 +3624,7 @@
   ]
  },
  {
+  "id": "Q186",
   "q": "A patient undergoing highly emetogenic chemotherapy (HEC: cisplatin-based) is being set up on antiemetic prophylaxis. Which 4-drug regimen is preferred per ASCO/NCCN guidelines?",
   "opts": [
    "A. Ondansetron 8 mg PO + dexamethasone 8 mg PO",
@@ -3459,6 +3646,7 @@
   ]
  },
  {
+  "id": "Q187",
   "q": "A patient requires a loading dose of digoxin. The target serum concentration is 1 ng/mL. The Vd for digoxin is 7 L/kg and the patient weighs 70 kg. What loading dose is needed?",
   "opts": [
    "A. 0.125 mg",
@@ -3480,6 +3668,7 @@
   ]
  },
  {
+  "id": "Q188",
   "q": "A drug with linear first-order elimination has a half-life of 8 hours and is given every 8 hours. Approximately how long does it take to reach steady state?",
   "opts": [
    "A. 8 hours (1 half-life)",
@@ -3502,6 +3691,7 @@
   "reviewNote": "Targeted correction 2026-10-19; full chapter review pending."
  },
  {
+  "id": "Q189",
   "q": "A patient with severe renal failure (CrCl 8 mL/min) needs tobramycin for a serious Pseudomonas pneumonia. Normal Vd = 0.3 L/kg (weight 80 kg). How does renal failure affect tobramycin dosing?",
   "opts": [
    "A. Renal failure increases Vd, requiring higher doses",
@@ -3523,6 +3713,7 @@
   ]
  },
  {
+  "id": "Q190",
   "q": "Which pharmacokinetic parameter is best described as the volume needed to contain the total amount of drug in the body at the plasma concentration?",
   "opts": [
    "A. Clearance (CL)",
@@ -3544,6 +3735,7 @@
   ]
  },
  {
+  "id": "Q191",
   "q": "A patient receiving vancomycin for MRSA bacteremia has an AUC/MIC of 280 mg·h/L (target 400-600). The MIC of the isolate is 1 mg/L. The current dose is 1250 mg IV every 12 hours. What change is most appropriate?",
   "opts": [
    "A. Decrease dose — AUC is above target",
@@ -3565,6 +3757,7 @@
   ]
  },
  {
+  "id": "Q192",
   "q": "Vancomycin monitoring has shifted from trough-only to AUC-guided monitoring. What is the primary reason for this change?",
   "opts": [
    "A. Trough >15 mg/L was not associated with improved outcomes",
@@ -3586,6 +3779,7 @@
   ]
  },
  {
+  "id": "Q193",
   "q": "A patient requires gentamicin for synergy in Enterococcal endocarditis. The prescriber orders extended-interval dosing (7 mg/kg Q24h). Is this appropriate?",
   "opts": [
    "A. Yes — extended-interval dosing is preferred for all gentamicin uses",
@@ -3607,6 +3801,7 @@
   ]
  },
  {
+  "id": "Q194",
   "q": "A 45-year-old patient with hypoalbuminemia (albumin 2.1 g/dL) and renal failure (CrCl 15 mL/min) has a total phenytoin level of 8 mg/L. Is this therapeutic?",
   "opts": [
    "A. Yes — total phenytoin 8 mg/L is therapeutic (10-20 mg/L)",
@@ -3628,6 +3823,7 @@
   ]
  },
  {
+  "id": "Q195",
   "q": "A patient on lithium 900 mg BID (total 1800 mg/day) for bipolar disorder has lithium level 0.9 mEq/L (maintenance target 0.6–1.0 mEq/L). She is started on ibuprofen 600 mg TID for acute arthritis. What do you expect?",
   "opts": [
    "A. No interaction — NSAIDs do not affect lithium",
@@ -3649,6 +3845,7 @@
   ]
  },
  {
+  "id": "Q196",
   "q": "A patient on stable warfarin (INR 2.3) is prescribed trimethoprim-sulfamethoxazole (TMP-SMX) DS BID for a UTI. What do you expect 3-5 days later?",
   "opts": [
    "A. INR will decrease — sulfonamides induce CYP2C9",
@@ -3670,6 +3867,7 @@
   ]
  },
  {
+  "id": "Q197",
   "q": "A patient on warfarin (INR 2.8) is started on rifampin for tuberculosis. What warfarin management is needed?",
   "opts": [
    "A. Decrease warfarin dose — rifampin inhibits CYP2C9",
@@ -3691,6 +3889,7 @@
   ]
  },
  {
+  "id": "Q198",
   "q": "A patient develops a new prolonged QTc interval (500 ms) on the ECG. Which combination of medications is MOST likely responsible?",
   "opts": [
    "A. Atorvastatin + aspirin",
@@ -3713,6 +3912,7 @@
   "reviewNote": "Targeted correction 2026-10-19; full chapter review pending."
  },
  {
+  "id": "Q199",
   "q": "A 55-year-old HIV patient on antiretroviral therapy starts isoniazid (INH) for latent TB. Six weeks later he develops tingling and numbness in his feet. Which preventive measure should have been taken?",
   "opts": [
    "A. Prophylactic fluconazole to prevent INH-related fungal infections",
@@ -3734,6 +3934,7 @@
   ]
  },
  {
+  "id": "Q200",
   "q": "Three years ago, a patient developed a pruritic maculopapular rash (no blistering, mucosal involvement, fever, or organ involvement) on day 10 of amoxicillin-clavulanate for sinusitis. Penicillin skin testing (prick and intradermal, major and minor determinants) is now negative. What is the significance of this finding?",
   "opts": [
    "A. The patient has a true IgE-mediated penicillin allergy — never use penicillins again",
@@ -3755,6 +3956,7 @@
   ]
  },
  {
+  "id": "Q201",
   "q": "A patient with CrCl 25 mL/min needs metformin for T2DM. Per FDA guidance, what is the correct approach?",
   "opts": [
    "A. Metformin is safe at any stage of CKD",
@@ -3776,6 +3978,7 @@
   ]
  },
  {
+  "id": "Q202",
   "q": "A patient with CrCl 20 mL/min is prescribed enoxaparin 1 mg/kg SQ BID for ACS (treatment-dose). What is the required dose adjustment?",
   "opts": [
    "A. No adjustment needed — LMWH is not renally cleared",
@@ -3797,6 +4000,7 @@
   ]
  },
  {
+  "id": "Q203",
   "q": "Which hepatic scoring system is most commonly used to adjust drug doses in hepatic impairment?",
   "opts": [
    "A. MELD score (Model for End-Stage Liver Disease)",
@@ -3818,6 +4022,7 @@
   ]
  },
  {
+  "id": "Q204",
   "q": "A patient on tacrolimus for kidney transplant is started on voriconazole for invasive Aspergillus. What management is required?",
   "opts": [
    "A. No interaction — tacrolimus is not a CYP substrate",
@@ -3839,6 +4044,7 @@
   ]
  },
  {
+  "id": "Q205",
   "q": "A patient on warfarin is prescribed fluconazole for an oral Candida infection. The baseline INR is 2.5. On day 5 of fluconazole, the INR is 4.8 with no bleeding. What is the most appropriate action?",
   "opts": [
    "A. Discontinue warfarin permanently",
@@ -3860,6 +4066,7 @@
   ]
  },
  {
+  "id": "Q206",
   "q": "A patient is started on amiodarone for AF rate control. Which long-term monitoring is required?",
   "opts": [
    "A. Annual CBC and BMP",
@@ -3881,6 +4088,7 @@
   ]
  },
  {
+  "id": "Q207",
   "q": "A hemodynamically stable 68-year-old presents with a regular narrow-complex tachycardia at 150 bpm. After adenosine 6 mg rapid IV push, the ventricular rate slows transiently, revealing sawtooth flutter waves, and then returns to 150 bpm. Which is the most appropriate next step?",
   "opts": [
    "A. Repeat adenosine 6 mg IV push",
@@ -3902,6 +4110,7 @@
   ]
  },
  {
+  "id": "Q208",
   "q": "A type 1 diabetes patient uses insulin glargine 30 units at bedtime and insulin lispro (rapid-acting) with meals. On a sick day, she cannot eat. What insulin adjustments should be made?",
   "opts": [
    "A. Hold all insulin on sick days to prevent hypoglycemia",
@@ -3923,6 +4132,7 @@
   ]
  },
  {
+  "id": "Q209",
   "q": "A patient on dialysis (HD) is prescribed cefazolin for bacteremia. How should it be dosed?",
   "opts": [
    "A. 1 g IV every 8 hours — dialysis has no effect on beta-lactam clearance",
@@ -3944,6 +4154,7 @@
   ]
  },
  {
+  "id": "Q210",
   "q": "A COPD patient on tiotropium HandiHaler (18 mcg daily) is switched to tiotropium Respimat (soft mist inhaler, 2.5 mcg/actuation). The patient's family member notices that the instructions say '2 inhalations once daily' for Respimat. They ask if 2 inhalations of Respimat equals the HandiHaler dose. What is correct?",
   "opts": [
    "A. Respimat 2 inhalations (5 mcg) = HandiHaler 18 mcg — equipotent when accounting for delivery efficiency",
@@ -3965,6 +4176,7 @@
   ]
  },
  {
+  "id": "Q211",
   "q": "A 25-year-old with MDD is inadequately controlled on sertraline 200 mg/day. The psychiatrist plans to add bupropion XL for augmentation. Which pharmacokinetic interaction should be anticipated?",
   "opts": [
    "A. Sertraline induces CYP2D6, reducing bupropion levels",
@@ -3986,6 +4198,7 @@
   ]
  },
  {
+  "id": "Q212",
   "q": "A patient with complex partial seizures is well-controlled on valproic acid monotherapy. She is 28 years old and wants to get pregnant within the next year. What should be discussed?",
   "opts": [
    "A. Valproic acid is the safest AED in pregnancy — continue without change",
@@ -4007,6 +4220,7 @@
   ]
  },
  {
+  "id": "Q213",
   "q": "A 72-year-old is diagnosed with Clostridioides difficile infection (CDI), first episode, non-severe (WBC 12,000, creatinine 1.2 mg/dL). Which treatment is preferred per the IDSA/SHEA guideline?",
   "opts": [
    "A. Metronidazole 500 mg PO TID × 10-14 days",
@@ -4028,6 +4242,7 @@
   ]
  },
  {
+  "id": "Q214",
   "q": "A patient is started on rifampin, isoniazid, pyrazinamide, and ethambutol (RIPE) for active TB. Three months into treatment, he develops bilateral vision changes and loss of red-green color discrimination. Which medication is responsible and what action is needed?",
   "opts": [
    "A. Isoniazid — peripheral neuropathy affecting visual cortex; add pyridoxine",
@@ -4049,6 +4264,7 @@
   ]
  },
  {
+  "id": "Q215",
   "q": "A patient with HFrEF (EF 25%) is being started on sacubitril/valsartan (Entresto). He was previously on lisinopril 10 mg daily. What is the required washout period before starting sacubitril/valsartan?",
   "opts": [
    "A. No washout needed — sacubitril/valsartan can be started immediately after the last ACE inhibitor dose",
@@ -4070,6 +4286,7 @@
   ]
  },
  {
+  "id": "Q216",
   "q": "A patient with HFpEF (EF 58%) has fluid overload on exam. Which medication has been shown in a randomized trial to reduce the composite of cardiovascular death or HF hospitalization in HFpEF and carries a Class 2a recommendation in the 2022 AHA/ACC/HFSA heart failure guideline?",
   "opts": [
    "A. ACE inhibitor (enalapril)",
@@ -4091,6 +4308,7 @@
   ]
  },
  {
+  "id": "Q217",
   "q": "Simvastatin 80 mg is prescribed to a patient already taking amlodipine. What interaction concern exists?",
   "opts": [
    "A. Amlodipine induces CYP3A4, reducing simvastatin levels",
@@ -4112,6 +4330,7 @@
   ]
  },
  {
+  "id": "Q218",
   "q": "A patient taking carbamazepine wants long-acting contraception without hormones. Which option meets that preference and is unaffected by hepatic enzyme induction?",
   "opts": [
    "A. Combined oral contraceptive",
@@ -4134,6 +4353,7 @@
   "reviewNote": "Targeted correction 2026-10-19; full chapter review pending."
  },
  {
+  "id": "Q219",
   "q": "A drug with a 24-hour half-life (one-compartment, first-order elimination) is given as 100 mg by IV bolus once daily. Using the multiple-dose relationship Cmax,n = Cmax,1 × (1 − e^(−nkτ)) / (1 − e^(−kτ)), how does the peak concentration after the Day 5 dose compare with the peak after the first dose?",
   "opts": [
    "A. Equal to the first-dose peak (no accumulation)",
@@ -4155,6 +4375,7 @@
   ]
  },
  {
+  "id": "Q220",
   "q": "A patient receives their first dose of amphotericin B deoxycholate (conventional) for cryptococcal meningitis. Sixty minutes into the infusion, they develop rigors, fever, and hypotension. How should this be managed?",
   "opts": [
    "A. Permanently discontinue amphotericin B — severe infusion reaction indicates allergy",
@@ -4176,6 +4397,7 @@
   ]
  },
  {
+  "id": "Q221",
   "q": "A patient on methotrexate (MTX) for rheumatoid arthritis develops a non-productive cough and dyspnea. CXR shows bilateral interstitial infiltrates. LFTs are mildly elevated. What is the most likely diagnosis and appropriate action?",
   "opts": [
    "A. Community-acquired pneumonia — treat with azithromycin",
@@ -4197,6 +4419,7 @@
   ]
  },
  {
+  "id": "Q222",
   "q": "Before initiating a TNF-alpha inhibitor (adalimumab) for rheumatoid arthritis, which pre-treatment screening is mandatory?",
   "opts": [
    "A. No screening required — TNF inhibitors are safe to initiate immediately",
@@ -4218,6 +4441,7 @@
   ]
  },
  {
+  "id": "Q223",
   "q": "A patient with T2DM and CKD (eGFR 42 mL/min/1.73 m2, UACR 450 mg/g) wants to start an SGLT-2 inhibitor. Which statement is correct?",
   "opts": [
    "A. All SGLT-2 inhibitors are contraindicated in eGFR <60",
@@ -4239,6 +4463,7 @@
   ]
  },
  {
+  "id": "Q224",
   "q": "A 66-year-old woman starts ciprofloxacin for a urinary tract infection. Two days later she develops bilateral posterior heel pain, swelling, and tenderness over both Achilles tendons, worse with walking. She also takes oral prednisone for asthma. What is the most likely explanation?",
   "opts": [
    "A. DVT from prolonged sitting",
@@ -4260,6 +4485,7 @@
   ]
  },
  {
+  "id": "Q225",
   "q": "A 45-year-old female is prescribed isotretinoin for severe acne. Which counseling requirement is mandatory per FDA iPLEDGE REMS?",
   "opts": [
    "A. Monthly liver function tests during therapy",
@@ -4281,6 +4507,7 @@
   ]
  },
  {
+  "id": "Q226",
   "q": "A patient with HIV on efavirenz, tenofovir disoproxil fumarate, and emtricitabine starts a new antifungal. Which antifungal is most affected by efavirenz's enzyme induction?",
   "opts": [
    "A. Fluconazole — significantly reduced by efavirenz",
@@ -4302,6 +4529,7 @@
   ]
  },
  {
+  "id": "Q227",
   "q": "A patient with cancer is receiving cisplatin-based chemotherapy. Serum creatinine rises from 0.9 to 2.4 mg/dL over 3 days. Which preventive strategy is most important for future cycles?",
   "opts": [
    "A. Pre-treatment IV hydration with 1-2 L NS before and after cisplatin",
@@ -4323,6 +4551,7 @@
   ]
  },
  {
+  "id": "Q228",
   "q": "A 30-year-old presents with thyrotoxicosis (Graves' disease). She is started on methimazole. What is the BLACK BOX WARNING associated with propylthiouracil (PTU) that makes methimazole preferred for most patients?",
   "opts": [
    "A. PTU causes QT prolongation",
@@ -4344,6 +4573,7 @@
   ]
  },
  {
+  "id": "Q229",
   "q": "A patient on furosemide for heart failure develops gout. Which medication should be AVOIDED for gout treatment and why?",
   "opts": [
    "A. Colchicine — interaction with furosemide causing hyperkalemia",
@@ -4365,6 +4595,7 @@
   ]
  },
  {
+  "id": "Q230",
   "q": "A patient being treated for Pneumocystis jirovecii pneumonia (PCP) with TMP-SMX develops a rising creatinine and hyperkalemia. What is the mechanism of TMP-induced hyperkalemia?",
   "opts": [
    "A. TMP inhibits ACE, blocking aldosterone production",
@@ -4386,6 +4617,7 @@
   ]
  },
  {
+  "id": "Q231",
   "q": "A patient's vancomycin Bayesian AUC is estimated at 650 mg·h/L with a trough of 22 mg/L. Serum creatinine is rising (0.9 → 1.4 mg/dL). What action is most appropriate?",
   "opts": [
    "A. Continue current dose — AUC within range",
@@ -4407,6 +4639,7 @@
   ]
  },
  {
+  "id": "Q232",
   "q": "Tobramycin extended-interval dosing (Hartford nomogram, 7 mg/kg IV) is being used in a patient with CrCl 80 mL/min. A serum level drawn 6 hours after the start of the first infusion is 3.2 mg/L. What does this indicate?",
   "opts": [
    "A. Drug level is below detection — dose increase needed",
@@ -4428,6 +4661,7 @@
   ]
  },
  {
+  "id": "Q233",
   "q": "A patient with HFrEF is on carvedilol 25 mg BID and develops bradycardia (HR 42). The carvedilol is held. What is the expected recovery timeline?",
   "opts": [
    "A. HR will return to normal within 2 hours (short half-life drug)",
@@ -4449,6 +4683,7 @@
   ]
  },
  {
+  "id": "Q234",
   "q": "A patient with subtherapeutic digoxin levels (0.4 ng/mL; target 0.5-0.9 ng/mL for HF) has a serum potassium of 3.1 mEq/L. Is it safe to increase digoxin?",
   "opts": [
    "A. Yes — level is below target, increase dose",
@@ -4470,6 +4705,7 @@
   ]
  },
  {
+  "id": "Q235",
   "q": "Phenobarbital is added to an epilepsy patient's regimen who is already on valproic acid. What interaction occurs?",
   "opts": [
    "A. Phenobarbital decreases valproic acid levels by 50-75% through CYP induction",
@@ -4491,6 +4727,7 @@
   ]
  },
  {
+  "id": "Q236",
   "q": "A 65-year-old opioid-tolerant patient on morphine 30 mg PO Q4H around the clock for cancer pain requires conversion to transdermal fentanyl. What is the correct conversion process?",
   "opts": [
    "A. Apply a fentanyl 12 mcg/h patch and stop morphine immediately, because the patch reaches full effect within 1 hour",
@@ -4512,6 +4749,7 @@
   ]
  },
  {
+  "id": "Q237",
   "q": "A patient with chronic non-cancer pain on opioid therapy asks for dose escalation. Which criteria from PDMP (Prescription Drug Monitoring Program) review would raise the most concern?",
   "opts": [
    "A. Single prescriber for all opioids",
@@ -4533,6 +4771,7 @@
   ]
  },
  {
+  "id": "Q238",
   "q": "Which of the following correctly describes the primary pharmacodynamic target for extended-interval aminoglycoside dosing (a concentration-dependent antibiotic)?",
   "opts": [
    "A. Time above MIC (T>MIC) should be >40-50% of dosing interval",
@@ -4554,6 +4793,7 @@
   ]
  },
  {
+  "id": "Q239",
   "q": "A patient in VF/pulseless VT cardiac arrest has received 2 defibrillation attempts and 2 doses of epinephrine. Which antiarrhythmic drug is recommended next per ACLS?",
   "opts": [
    "A. Lidocaine 1.5 mg/kg IV first, then amiodarone if unsuccessful",
@@ -4575,6 +4815,7 @@
   ]
  },
  {
+  "id": "Q240",
   "q": "A 55-year-old patient in hypertensive emergency has BP 218/128 mmHg with new left ventricular failure (acute pulmonary edema). Which IV antihypertensive is most appropriate?",
   "opts": [
    "A. Labetalol IV — first-line for all hypertensive emergencies",
@@ -4596,6 +4837,7 @@
   ]
  },
  {
+  "id": "Q241",
   "q": "An adult has Candida glabrata candidemia and has not yet demonstrated bloodstream clearance. The fluconazole MIC is 32 mg/L. Which interpretation and initial treatment approach is best?",
   "opts": [
    "A. The isolate is fully susceptible to routine low-dose fluconazole",
@@ -4618,6 +4860,7 @@
   "reviewNote": "Targeted correction 2026-10-19; full chapter review pending."
  },
  {
+  "id": "Q242",
   "q": "A mechanically ventilated ICU patient receives propofol infusion at 80 mcg/kg/min for 5 days for sedation. New-onset metabolic acidosis develops with lactate 6 mmol/L, elevated triglycerides, and creatinine rise. What is the most likely diagnosis?",
   "opts": [
    "A. Septic shock — treat with broad-spectrum antibiotics",
@@ -4639,6 +4882,7 @@
   ]
  },
  {
+  "id": "Q243",
   "q": "A 26-year-old woman 10 weeks pregnant with a DVT is started on anticoagulation. Which agent is safest and most appropriate?",
   "opts": [
    "A. Warfarin — excellent for outpatient management, oral, well-tolerated",
@@ -4660,6 +4904,7 @@
   ]
  },
  {
+  "id": "Q244",
   "q": "A patient with COPD exacerbation is admitted and placed on prednisone 40 mg daily × 5 days. This is based on which key clinical trial evidence?",
   "opts": [
    "A. RECOVERY trial showing steroids reduce mortality in COPD exacerbations",
@@ -4681,6 +4926,7 @@
   ]
  },
  {
+  "id": "Q245",
   "q": "A patient with HIV (CD4 45 cells/μL, VL 85,000 copies/mL) is naive to ART. Per DHHS guidelines, which integrase strand transfer inhibitor (INSTI)-based regimen is preferred?",
   "opts": [
    "A. Raltegravir 400 mg BID + emtricitabine + tenofovir disoproxil fumarate",
@@ -4702,6 +4948,7 @@
   ]
  },
  {
+  "id": "Q246",
   "q": "Which antiviral directly inhibits CMV DNA polymerase without requiring UL97-mediated activation?",
   "opts": [
    "A. Ganciclovir",
@@ -4724,6 +4971,7 @@
   "reviewNote": "Targeted correction 2026-10-19; full chapter review pending."
  },
  {
+  "id": "Q247",
   "q": "A patient on insulin is found unresponsive with blood glucose of 32 mg/dL. No IV access is available. What is the most appropriate treatment?",
   "opts": [
    "A. Oral glucose gel applied to buccal mucosa",
@@ -4745,6 +4993,7 @@
   ]
  },
  {
+  "id": "Q248",
   "q": "A patient with heparin-induced thrombocytopenia (HIT), confirmed by a positive PF4/heparin antibody and a positive serotonin release assay, develops a DVT. His CrCl is 22 mL/min and hepatic function is normal. All heparin products have been stopped. Which anticoagulant is the treatment of choice?",
   "opts": [
    "A. Warfarin immediately — oral anticoagulation avoids all heparin products",
@@ -4766,6 +5015,7 @@
   ]
  },
  {
+  "id": "Q249",
   "q": "A patient on doxorubicin-based chemotherapy has received 450 mg/m² cumulative dose. An echocardiogram shows new LVEF reduction from 62% to 48%. What is most likely occurring and what action is needed?",
   "opts": [
    "A. Normal cardiac variation — continue doxorubicin without change",
@@ -4787,6 +5037,7 @@
   ]
  },
  {
+  "id": "Q250",
   "q": "A patient on mycophenolate mofetil (MMF, CellCept) for systemic lupus nephritis is co-prescribed ciprofloxacin for a UTI. What interaction should be monitored?",
   "opts": [
    "A. Ciprofloxacin inhibits CYP3A4, increasing MMF levels",
@@ -4808,6 +5059,7 @@
   ]
  },
  {
+  "id": "Q251",
   "q": "A patient with rheumatoid arthritis has been on subcutaneous methotrexate 25 mg/week (maximally tolerated dose) plus folic acid for 6 months and still has moderate disease activity (DAS28-ESR 4.6). What is the recommended next step per ACR guidelines?",
   "opts": [
    "A. Switch methotrexate to leflunomide 20 mg/day",
@@ -4829,6 +5081,7 @@
   ]
  },
  {
+  "id": "Q252",
   "q": "A patient on prednisone 60 mg/day for 3 months for COPD exacerbation management has it abruptly stopped. Why is this dangerous and what should be done instead?",
   "opts": [
    "A. Abrupt discontinuation is safe if the condition is resolved",
@@ -4850,6 +5103,7 @@
   ]
  },
  {
+  "id": "Q253",
   "q": "A 30-year-old woman on warfarin for antiphospholipid syndrome (APS) becomes pregnant. What is the most appropriate anticoagulation management?",
   "opts": [
    "A. Continue warfarin throughout pregnancy — APS requires warfarin-level anticoagulation",
@@ -4871,6 +5125,7 @@
   ]
  },
  {
+  "id": "Q254",
   "q": "A patient stabilized on lithium 900 mg BID (level 0.8 mEq/L) starts a thiazide diuretic (HCTZ 25 mg) for hypertension. What monitoring and management is required?",
   "opts": [
    "A. No interaction — diuretics and lithium are independent",
@@ -4892,6 +5147,7 @@
   ]
  },
  {
+  "id": "Q255",
   "q": "A patient receives IV iron (ferric carboxymaltose) for iron deficiency anemia. One week later she develops severe symptomatic hypophosphatemia (serum phosphate 1.2 mg/dL). What is the mechanism?",
   "opts": [
    "A. IV iron directly chelates phosphate in the bloodstream",
@@ -4913,6 +5169,7 @@
   ]
  },
  {
+  "id": "Q256",
   "q": "A hospital pharmacy director is reviewing a formulary to increase adherence to antibiotic stewardship. Which tool is MOST effective for reducing broad-spectrum antibiotic overuse?",
   "opts": [
    "A. Educational lectures to physicians once annually",
@@ -4934,6 +5191,7 @@
   ]
  },
  {
+  "id": "Q257",
   "q": "A pharmacist on the P&T committee is asked to evaluate a new drug for formulary inclusion. The cost-effectiveness analysis (CEA) versus current standard therapy shows an ICER of $85,000/QALY. Using the $100,000-$150,000/QALY willingness-to-pay range applied by the Institute for Clinical and Economic Review (ICER) in the US, how should this be interpreted?",
   "opts": [
    "A. Not cost-effective — exceeds the willingness-to-pay threshold",
@@ -4955,6 +5213,7 @@
   ]
  },
  {
+  "id": "Q258",
   "q": "A health system wants to implement a medication reconciliation process to prevent adverse drug events during care transitions. Which process description is most accurate?",
   "opts": [
    "A. Medication reconciliation means verifying all medications at the time of discharge only",
@@ -4977,6 +5236,7 @@
   "reviewNote": "Targeted correction 2026-10-19; full chapter review pending."
  },
  {
+  "id": "Q259",
   "q": "A community pharmacist notices a patient's new prescription for a medication she believes is used for an unusual purpose. The prescriber is unfamiliar to her. What is the pharmacist's professional obligation regarding this prescription?",
   "opts": [
    "A. Fill the prescription without question — prescription legality is the prescriber's responsibility",
@@ -4998,6 +5258,7 @@
   ]
  },
  {
+  "id": "Q260",
   "q": "Which ISMP high-alert medication category is the classic target of the safety strategy of removing concentrated vials from patient care units and replacing them with commercially premixed, ready-to-administer products?",
   "opts": [
    "A. Oral hypoglycemics (metformin, glipizide)",
@@ -5019,6 +5280,7 @@
   ]
  },
  {
+  "id": "Q261",
   "q": "A clinical pharmacist is searching for evidence on a newly approved drug with minimal published data. Which study design provides the strongest evidence for efficacy?",
   "opts": [
    "A. Case report series in a prominent journal",
@@ -5040,6 +5302,7 @@
   ]
  },
  {
+  "id": "Q262",
   "q": "A pharmacist performs a drug information search for a patient with a possible drug-induced fever. The most comprehensive drug information search should START with which resource?",
   "opts": [
    "A. Wikipedia",
@@ -5061,6 +5324,7 @@
   ]
  },
  {
+  "id": "Q263",
   "q": "A patient asks her pharmacist about a natural product she saw advertised: 'coenzyme Q10 for heart health.' She is on warfarin and atorvastatin. Which statement reflects evidence-based counseling?",
   "opts": [
    "A. CoQ10 is fully safe with all medications — no interactions",
@@ -5082,6 +5346,7 @@
   ]
  },
  {
+  "id": "Q264",
   "q": "A root cause analysis (RCA) is conducted after a patient received 10x the intended methotrexate weekly dose (150 mg instead of 15 mg). Which system-level intervention best prevents recurrence?",
   "opts": [
    "A. Require the nurse to reread the order before administration",
@@ -5103,6 +5368,7 @@
   ]
  },
  {
+  "id": "Q265",
   "q": "The FDA Risk Evaluation and Mitigation Strategy (REMS) program for isotretinoin (iPLEDGE) requires which action from the PHARMACY specifically?",
   "opts": [
    "A. Pharmacy may dispense isotretinoin without patient registration as long as prescriber is iPLEDGE enrolled",
@@ -5124,6 +5390,7 @@
   ]
  },
  {
+  "id": "Q266",
   "q": "A study comparing two cholesterol treatments reports a hazard ratio (HR) of 0.78 (95% CI: 0.69 to 0.88, p<0.001). Which interpretation is correct?",
   "opts": [
    "A. The treatment increases the rate of events by 22%",
@@ -5145,6 +5412,7 @@
   ]
  },
  {
+  "id": "Q267",
   "q": "In a clinical trial, 15 patients experience the primary endpoint in the treatment group (n=150) and 25 patients in the control group (n=150). Calculate the RRR and NNT.",
   "opts": [
    "A. RRR=10%, NNT=100",
@@ -5167,6 +5435,7 @@
   "reviewNote": "Targeted correction 2026-10-19; full chapter review pending."
  },
  {
+  "id": "Q268",
   "q": "A pharmacist is reviewing an observational study showing patients on drug A had 30% lower rates of MI than those on drug B. What is the primary reason this finding may NOT represent a true causal effect?",
   "opts": [
    "A. The sample size was too small",
@@ -5188,6 +5457,7 @@
   ]
  },
  {
+  "id": "Q269",
   "q": "A statistician reports that a new blood pressure drug reduced systolic BP by 5 mmHg (95% CI: 1-9 mmHg, p=0.01). The difference is statistically significant. A cardiologist states this is 'not clinically meaningful.' How should these two statements be reconciled?",
   "opts": [
    "A. The p-value being 0.01 confirms clinical significance — the cardiologist is wrong",
@@ -5209,6 +5479,7 @@
   ]
  },
  {
+  "id": "Q270",
   "q": "A 65-year-old with COPD has never received a pneumococcal vaccine. Which pneumococcal vaccination strategy does ACIP (2023-2024) recommend?",
   "opts": [
    "A. PCV13 only, once lifetime",
@@ -5230,6 +5501,7 @@
   ]
  },
  {
+  "id": "Q271",
   "q": "A pharmacist discovers that a colleague may be diverting controlled substances from the pharmacy. What is the appropriate first step?",
   "opts": [
    "A. Confront the colleague privately and give them a chance to explain",
@@ -5251,6 +5523,7 @@
   ]
  },
  {
+  "id": "Q272",
   "q": "A health-system pharmacy is deciding whether to compound a sterile preparation in-house under section 503A (traditional compounding) or to purchase it from a 503B outsourcing facility. Which statement about these compounding frameworks is correct?",
   "opts": [
    "A. 503A compounds can be commercially manufactured in unlimited quantities",
@@ -5273,6 +5546,7 @@
   "reviewNote": "Targeted correction 2026-10-19; full chapter review pending."
  },
  {
+  "id": "Q273",
   "q": "Which FDA pathway permits approval for a serious condition based on a surrogate endpoint reasonably likely to predict clinical benefit, with confirmatory evidence required?",
   "opts": [
    "A. Traditional approval based on an established surrogate",
@@ -5295,6 +5569,7 @@
   "reviewNote": "Targeted correction 2026-10-19; full chapter review pending."
  },
  {
+  "id": "Q274",
   "q": "CMS Hospital Star Ratings and the Hospital Value-Based Purchasing (VBP) program are examples of which type of quality improvement initiative?",
   "opts": [
    "A. Internal Six Sigma quality improvement projects",
@@ -5316,6 +5591,7 @@
   ]
  },
  {
+  "id": "Q275",
   "q": "A pharmacist notices that a clinical decision support (CDS) alert for a high-risk drug interaction is being overridden 94% of the time. What is the most likely explanation and recommended action?",
   "opts": [
    "A. The pharmacists and physicians have excellent knowledge — overrides indicate high competence",
@@ -5337,6 +5613,7 @@
   ]
  },
  {
+  "id": "Q276",
   "q": "Under federal law, which schedule of controlled substances requires no DEA prescription but limits retail sales quantities and requires purchaser ID logging?",
   "opts": [
    "A. Schedule II — requires written DEA Rx, no refills",
@@ -5358,6 +5635,7 @@
   ]
  },
  {
+  "id": "Q277",
   "q": "A patient presents a prescription for oxycodone/acetaminophen (Schedule II) that was written 45 days ago. Can it be filled?",
   "opts": [
    "A. Yes — under federal law, Schedule II prescriptions are valid for 1 year",
@@ -5379,6 +5657,7 @@
   ]
  },
  {
+  "id": "Q278",
   "q": "A 68-year-old woman with osteoporosis (baseline hip T-score -2.6, no prior fractures) has taken alendronate 70 mg weekly for 5 years. Her hip T-score is now -2.2 and she has had no fractures. Which statement about a bisphosphonate 'drug holiday' is correct?",
   "opts": [
    "A. Never — bisphosphonates must be continued indefinitely",
@@ -5400,6 +5679,7 @@
   ]
  },
  {
+  "id": "Q279",
   "q": "A 67-year-old man with CKD stage 3b (eGFR 38) and diabetes presents with a serum phosphate of 5.2 mg/dL and PTH of 180 pg/mL. Which intervention is most appropriate per KDIGO guidelines?",
   "opts": [
    "A. Start hemodialysis to remove phosphate",
@@ -5421,6 +5701,7 @@
   ]
  },
  {
+  "id": "Q280",
   "q": "A patient is being converted from IV morphine 8 mg/day to oral oxycodone. Using standard equianalgesic tables, what oral oxycodone dose is equivalent?",
   "opts": [
    "A. 8 mg oral oxycodone/day — same dose",
@@ -5442,6 +5723,7 @@
   ]
  },
  {
+  "id": "Q281",
   "q": "A patient on atorvastatin 40 mg/day starts clarithromycin for a respiratory tract infection. What interaction requires management?",
   "opts": [
    "A. No interaction — atorvastatin is not affected by macrolide antibiotics",
@@ -5463,6 +5745,7 @@
   ]
  },
  {
+  "id": "Q282",
   "q": "A 40-year-old woman with HIV is on dolutegravir/abacavir/lamivudine (Triumeq). She is started on rifampin for active TB. What ART modification is needed?",
   "opts": [
    "A. No change needed — dolutegravir is not affected by rifampin",
@@ -5484,6 +5767,7 @@
   ]
  },
  {
+  "id": "Q283",
   "q": "A patient develops suspected heparin-induced hyperkalemia. Which mechanism is responsible?",
   "opts": [
    "A. Heparin directly blocks renal potassium excretion channels",
@@ -5505,6 +5789,7 @@
   ]
  },
  {
+  "id": "Q284",
   "q": "A patient with NSCLC harboring an EGFR exon 19 deletion starts osimertinib. Three months later she develops cough and dyspnea. CT shows bilateral ground-glass opacities. What should be considered?",
   "opts": [
    "A. Pneumonia — treat with azithromycin",
@@ -5526,6 +5811,7 @@
   ]
  },
  {
+  "id": "Q285",
   "q": "A patient is prescribed semaglutide 0.5 mg SQ weekly (GLP-1 RA) for T2DM. She is also on warfarin. What interaction should be considered?",
   "opts": [
    "A. No pharmacokinetic interaction — monitor INR as clinically indicated anyway",
@@ -5547,6 +5833,7 @@
   ]
  },
  {
+  "id": "Q286",
   "q": "A patient on long-term corticosteroids (prednisone 20 mg/day) requires a procedure. Post-operatively, their blood pressure drops to 80/40 despite IV fluids. What is the most appropriate pharmacological intervention?",
   "opts": [
    "A. Additional IV fluid boluses are all that is needed",
@@ -5568,6 +5855,7 @@
   ]
  },
  {
+  "id": "Q287",
   "q": "A clinical pharmacist notices an electronic order for metformin for a patient with eGFR 22 mL/min. CDS did not fire an alert. What type of medication error does this represent?",
   "opts": [
    "A. Prescribing error — wrong drug for this patient's renal status; a near miss that should be caught by clinical pharmacist review",
@@ -5589,6 +5877,7 @@
   ]
  },
  {
+  "id": "Q288",
   "q": "A new drug is approved under FDA Breakthrough Therapy Designation. Which statement accurately describes this designation's benefits?",
   "opts": [
    "A. Breakthrough Therapy Designation means the drug has superior efficacy to all existing therapies",
@@ -5610,6 +5899,7 @@
   ]
  },
  {
+  "id": "Q289",
   "q": "A pharmacist performs prospective drug utilization review (ProDUR) and identifies that a patient has been prescribed both sertraline and tramadol. What is the primary concern?",
   "opts": [
    "A. Both cause QT prolongation — together the risk is additive",
@@ -5631,6 +5921,7 @@
   ]
  },
  {
+  "id": "Q290",
   "q": "An investigational drug is studied in a Phase 2 trial. What is the primary objective of Phase 2 clinical trials?",
   "opts": [
    "A. Establish drug safety in healthy volunteers — first in human",
@@ -5652,6 +5943,7 @@
   ]
  },
  {
+  "id": "Q291",
   "q": "A hospital implements a 'do not use' abbreviation policy. Which abbreviation on The Joint Commission's official 'Do Not Use' list is most commonly implicated in tenfold dosing errors?",
   "opts": [
    "A. SL (sublingual)",
@@ -5673,6 +5965,7 @@
   ]
  },
  {
+  "id": "Q292",
   "q": "A pharmacist is counseling a patient about opioid stewardship. Which patient statement best indicates understanding of safe opioid storage and disposal?",
   "opts": [
    "A. 'I will keep my extra pills in the bathroom medicine cabinet where they're easy to access'",
@@ -5694,6 +5987,7 @@
   ]
  },
  {
+  "id": "Q293",
   "q": "A clinical pharmacist is preparing a drug monograph for the P&T committee for a new SGLT-2 inhibitor. Which section is MOST important for the committee's formulary decision regarding a 'me-too' drug?",
   "opts": [
    "A. Pharmacokinetics section — showing half-life and protein binding",
@@ -5715,6 +6009,7 @@
   ]
  },
  {
+  "id": "Q294",
   "q": "A patient's chart shows she received alteplase (tPA) for acute ischemic stroke 2 hours ago. She now requires urgent surgery for a ruptured appendix. What is the primary pharmacological concern?",
   "opts": [
    "A. tPA has a 2-week washout period before any surgery",
@@ -5736,6 +6031,7 @@
   ]
  },
  {
+  "id": "Q295",
   "q": "Which statement about the NNT (number needed to treat) best reflects its use in clinical decision-making?",
   "opts": [
    "A. A smaller NNT always indicates the treatment should be chosen, regardless of side effects or cost",
@@ -5757,6 +6053,7 @@
   ]
  },
  {
+  "id": "Q296",
   "q": "An independent pharmacy discovers they have been dispensing a recalled medication (Class I recall — health hazard) to patients. What is the immediate responsibility?",
   "opts": [
    "A. Continue dispensing until current stock is exhausted — recall only applies to the manufacturer",
@@ -5779,6 +6076,7 @@
   "reviewNote": "Targeted correction 2026-10-19; full chapter review pending."
  },
  {
+  "id": "Q297",
   "q": "In evaluating a clinical trial for a new antibiotic, you note the primary endpoint is 'clinical cure at 7 days.' The confidence interval for the treatment difference is -4% to +6% with a non-inferiority margin of 10%. How should this be interpreted?",
   "opts": [
    "A. The drug is superior — the upper bound exceeds 0",
@@ -5800,6 +6098,7 @@
   ]
  },
  {
+  "id": "Q298",
   "q": "A pharmacist receives a prescription for oxycodone 5 mg #30 with 5 refills. Which statement is correct regarding this Schedule II controlled substance prescription?",
   "opts": [
    "A. The prescription is valid; Schedule II prescriptions may have up to 5 refills",
@@ -5821,6 +6120,7 @@
   ]
  },
  {
+  "id": "Q299",
   "q": "A clinical pharmacist is evaluating a new drug for formulary addition. The pivotal trial used a non-inferiority (NI) design with a pre-specified margin of -10%. The 95% CI for the difference (new drug minus comparator) was -6% to +2%. How should this result be interpreted?",
   "opts": [
    "A. Non-inferiority NOT established; lower bound exceeds the NI margin",
@@ -5842,6 +6142,7 @@
   ]
  },
  {
+  "id": "Q300",
   "q": "In a fictional steady-state PK calculation, an IV drug has total clearance fixed at 2 L/hour. Which total daily dose gives AUC24 = 500 mg·hour/L under linear kinetics?",
   "opts": [
    "A. 500 mg/day",
@@ -5864,6 +6165,7 @@
   "reviewNote": "Targeted correction 2026-10-19; full chapter review pending."
  },
  {
+  "id": "Q301",
   "q": "A patient in septic shock is on norepinephrine 0.3 mcg/kg/min, vasopressin 0.03 units/min, and hydrocortisone 50 mg IV q6h. Despite adequate fluid resuscitation (30 mL/kg crystalloid), MAP remains 58 mmHg with CI 1.8 L/min/m², CVP 14 mmHg, ScvO2 58%, and lactate 6 mmol/L. Echocardiogram shows EF 20% with dilated LV. Which hemodynamic intervention is the highest priority?",
   "opts": [
    "A. Add phenylephrine 1 mcg/kg/min to increase SVR",
@@ -5885,6 +6187,7 @@
   ]
  },
  {
+  "id": "Q302",
   "q": "A 55-year-old with P. aeruginosa bacteremia has the following susceptibility profile (CLSI M100, 2023 breakpoints): pip/tazo MIC 32 mcg/mL (I), cefepime MIC 8 mcg/mL (S), meropenem MIC 2 mcg/mL (S), tobramycin MIC 1 mcg/mL (S), ciprofloxacin MIC 0.5 mcg/mL (S). Patient has CrCl 60 mL/min. Extended infusion meropenem is ordered. What PK/PD target optimizes efficacy for meropenem against this isolate?",
   "opts": [
    "A. Maximize Cmax/MIC ratio ≥ 10:1 with a 30-minute infusion",
@@ -5906,6 +6209,7 @@
   ]
  },
  {
+  "id": "Q303",
   "q": "An intubated patient on fentanyl infusion at 100 mcg/hr develops acute-onset hyperthermia (40.1°C), agitation, diaphoresis, and myoclonus 4 hours after starting linezolid for VRE pneumonia. Fentanyl was started 2 days earlier. Which mechanism best explains this presentation?",
   "opts": [
    "A. Opioid-induced hyperalgesia from high-dose fentanyl",
@@ -5927,6 +6231,7 @@
   ]
  },
  {
+  "id": "Q304",
   "q": "A post-cardiac surgery patient on venoarterial ECMO develops methicillin-resistant S. aureus bacteremia. Despite vancomycin 1500 mg IV q12h, the Bayesian-estimated AUC24 is 300 mg·h/L (target 400-600, assuming MIC 1 mg/L), and renal function is stable. The ECMO circuit has been running for 48 hours. What best explains the subtherapeutic exposure, and what is the best corrective action?",
   "opts": [
    "A. Increased hepatic first-pass metabolism due to ECMO-induced hepatic blood flow redirection",
@@ -5948,6 +6253,7 @@
   ]
  },
  {
+  "id": "Q305",
   "q": "An adult is prescribed gentamicin 7 mg/kg using a validated Hartford extended-interval protocol. Which monitoring approach matches the nomogram’s intended use?",
   "opts": [
    "A. Plot an appropriately timed 6–14-hour concentration to select an interval according to the protocol",
@@ -5970,6 +6276,7 @@
   "reviewNote": "Targeted correction 2026-10-19; full chapter review pending."
  },
  {
+  "id": "Q306",
   "q": "A pharmacist is performing a prospective drug use evaluation of heparin infusions. A frail 78-year-old woman (5'2\", 48 kg; normal hepatic function) admitted for NSTEMI is started on weight-based IV heparin; she also received heparin during a cardiac catheterization 3 weeks ago. Her anti-Xa level 6 hours after the bolus is 0.6 IU/mL (target 0.3-0.7). Six hours later (about 12 hours into therapy), her platelet count falls from 220,000 to 88,000/mm3. 4T score: thrombocytopenia 2, timing 2 (fall within 1 day with heparin exposure in the past 30 days), thrombosis 1, other causes 0. What is the correct immediate management?",
   "opts": [
    "A. Discontinue heparin, start warfarin immediately at 10 mg/day",
@@ -5991,6 +6298,7 @@
   ]
  },
  {
+  "id": "Q307",
   "q": "A meta-analysis of 8 RCTs comparing Drug A vs. placebo for acute MI mortality reports RR 0.78 (95% CI 0.61–0.99, p=0.04) with I² = 72%. One large RCT (n=6,400) contributes 60% of the total weight. A funnel plot shows asymmetry with small studies plotting mostly on one side. Which is the most appropriate conclusion about the evidence?",
   "opts": [
    "A. Drug A significantly reduces MI mortality; strong evidence supports routine use",
@@ -6012,6 +6320,7 @@
   ]
  },
  {
+  "id": "Q308",
   "q": "A clinical pharmacist calculates an NNT of 25 for Drug B in preventing 30-day cardiovascular death (ARR = 4%). The drug costs $8,000/year and adds one year of therapy per patient treated. During budget impact analysis, what is the cost per event prevented (not cost-effectiveness — just direct acquisition cost calculation)?",
   "opts": [
    "A. $8,000 (one patient's annual drug cost)",
@@ -6033,6 +6342,7 @@
   ]
  },
  {
+  "id": "Q309",
   "q": "A patient has persistent H. pylori infection after first-line clarithromycin-based triple therapy (omeprazole 20 mg BID). Genotyping shows CYP2C19 *17/*17 (ultrarapid metabolizer). Which management best accounts for the pharmacogenomic findings?",
   "opts": [
    "A. Use omeprazole at standard dose 20 mg BID — the issue is clarithromycin resistance, not PPI metabolism",
@@ -6054,6 +6364,7 @@
   ]
  },
  {
+  "id": "Q310",
   "q": "A researcher reports that a new antibiotic reduced ICU-acquired infection rates compared to standard care: RR 0.72 (95% CI 0.56–0.91) in the per-protocol (PP) population, but RR 0.88 (95% CI 0.73–1.07) in the intention-to-treat (ITT) population. Which interpretation is most appropriate?",
   "opts": [
    "A. PP analysis is superior — it shows patients who actually took the drug, giving a purer efficacy signal",
@@ -6075,6 +6386,7 @@
   ]
  },
  {
+  "id": "Q311",
   "q": "A pharmacy director discovers that a nurse has been diverting hydromorphone from the Pyxis by removing vials labeled '4 mg/mL' and replacing them with similar-appearing morphine vials, then scanning the hydromorphone barcode during removal. This was discovered during a discrepancy audit showing 23 vials 'administered' but not documented in MAR over 6 weeks. Under DEA regulations, what is the reporting obligation and timeline?",
   "opts": [
    "A. Report to State Board of Pharmacy within 30 days using DEA Form 41",
@@ -6097,6 +6409,7 @@
   "reviewNote": "Targeted correction 2026-10-19; full chapter review pending."
  },
  {
+  "id": "Q312",
   "q": "A clinical pharmacist is evaluating a formulary request for sacubitril/valsartan (Entresto) for HFrEF. In PARADIGM-HF, the primary outcome (CV death or HF hospitalization) occurred in 21.8% vs 26.5% of patients over a median 27 months (ARR 4.7%; NNT = 1/0.047 = 21.3, rounded up to 22). The drug costs $7,200/year vs enalapril at $180/year (annual cost difference $7,020). Which calculation correctly estimates the incremental drug cost per primary-outcome event prevented over the trial period?",
   "opts": [
    "A. $7,020 (annual cost difference) ÷ 0.047 (ARR) = ~$149,000 per event prevented",
@@ -6118,6 +6431,7 @@
   ]
  },
  {
+  "id": "Q313",
   "q": "A health system pharmacy director is evaluating a biosimilar substitution policy for adalimumab biosimilars. Under FDA regulations and state pharmacy law, which statement correctly characterizes automatic substitution requirements?",
   "opts": [
    "A. Any FDA-approved biosimilar can be automatically substituted for the reference biologic without prescriber notification",
@@ -6139,6 +6453,7 @@
   ]
  },
  {
+  "id": "Q314",
   "q": "A 58-year-old man with DM2, hypertension, CKD stage 3b (CrCl 32 mL/min), and a prior fluoroquinolone-associated Achilles tendon rupture presents with community-acquired pneumonia requiring hospitalization. He is not in the ICU, has no prior respiratory isolation of MRSA or P. aeruginosa, and has not been hospitalized or received IV antibiotics in the past 90 days. Which antibiotic regimen is most appropriate?",
   "opts": [
    "A. Azithromycin 500 mg PO daily",
@@ -6160,6 +6475,7 @@
   ]
  },
  {
+  "id": "Q315",
   "q": "A patient with schizophrenia on clozapine 450 mg/day develops sudden worsening psychosis with clozapine level of 180 ng/mL (therapeutic range 350–600 ng/mL). Two weeks ago he started smoking 20 cigarettes/day after being smoke-free for 6 months. What is the mechanism and appropriate management?",
   "opts": [
    "A. Clozapine is metabolized mainly by CYP1A2; polycyclic aromatic hydrocarbons in tobacco smoke induce CYP1A2 and increase clozapine clearance — increase the clozapine dose gradually (smokers often need about 1.5 times the nonsmoking dose) and monitor plasma levels weekly",
@@ -6181,6 +6497,7 @@
   ]
  },
  {
+  "id": "Q316",
   "q": "A 45-year-old woman with lupus nephritis on mycophenolate mofetil (MMF) 1500 mg BID, hydroxychloroquine, and prednisone reports new onset diarrhea and subtherapeutic MMF levels despite compliance. She was recently started on cholestyramine for dyslipidemia. What is the mechanism of this interaction?",
   "opts": [
    "A. Cholestyramine chelates MMF in the GI tract, reducing absorption",
@@ -6202,6 +6519,7 @@
   ]
  },
  {
+  "id": "Q317",
   "q": "A patient with metastatic breast cancer on tamoxifen 20 mg/day also requires paroxetine for depression. Her oncologist notes concern. Which pharmacogenomic interaction should guide therapy?",
   "opts": [
    "A. Paroxetine is a CYP2D6 substrate and inducer, increasing tamoxifen levels to toxic range",
@@ -6223,6 +6541,7 @@
   ]
  },
  {
+  "id": "Q318",
   "q": "A 62-year-old patient with end-stage liver disease (MELD 24, Child-Pugh C) develops hepatic encephalopathy (HE) and is started on lactulose. He also requires treatment for a new diagnosis of C. difficile colitis (CDI). Which antibiotic therapy is most appropriate for his CDI given his hepatic dysfunction?",
   "opts": [
    "A. Oral metronidazole 500 mg TID × 10 days (first-line for mild CDI)",
@@ -6244,6 +6563,7 @@
   ]
  },
  {
+  "id": "Q319",
   "q": "A patient with systolic heart failure (EF 30%) on sacubitril/valsartan 97/103 mg BID, carvedilol 25 mg BID, and spironolactone 25 mg daily is hospitalized for acute decompensation. On day 3, he is euvolemic but remains hypotensive (BP 75/45 mmHg, MAP 55 mmHg) with lightheadedness on sitting up and HR 56 bpm. Extremities are warm, lactate is normal, and urine output is adequate. Serum potassium is 5.9 mEq/L. Which medication adjustment is the most appropriate next step?",
   "opts": [
    "A. Stop carvedilol, reduce sacubitril/valsartan to 24/26 mg BID",
@@ -6265,6 +6585,7 @@
   ]
  },
  {
+  "id": "Q320",
   "q": "A patient taking rivaroxaban presents with disabling acute ischemic stroke, and imaging confirms a treatable large-vessel occlusion. Which principle is correct?",
   "opts": [
    "A. Recent DOAC exposure automatically excludes mechanical thrombectomy",
@@ -6287,6 +6608,7 @@
   "reviewNote": "Targeted correction 2026-10-19; full chapter review pending."
  },
  {
+  "id": "Q321",
   "q": "A study reports a hazard ratio (HR) of 0.68 (95% CI 0.51–0.91) for time to first hospitalization with Drug C versus placebo over 36 months. Kaplan-Meier curves separate at 3 months and remain separated throughout. Which statement is most accurate about this finding?",
   "opts": [
    "A. Drug C reduces the absolute rate of hospitalization by 32%",
@@ -6308,6 +6630,7 @@
   ]
  },
  {
+  "id": "Q322",
   "q": "A clinical pharmacist reviews a crossover study of Drug D in 24 patients with migraine. Each patient received Drug D and placebo in random order with a 2-week washout period. The primary outcome is pain score (0–10) at 2 hours. Paired t-test: p=0.03. Mean difference = 1.8 points. What is the critical limitation that could invalidate this design?",
   "opts": [
    "A. Crossover design is not valid for migraine studies — only parallel-group RCTs are appropriate",
@@ -6329,6 +6652,7 @@
   ]
  },
  {
+  "id": "Q323",
   "q": "A pharmacist is reviewing a drug interaction between warfarin and a new herbal supplement containing St. John's Wort. The patient's INR dropped from 2.8 to 1.4. Which mechanism best explains the interaction?",
   "opts": [
    "A. St. John's Wort directly binds warfarin in the intestinal lumen, preventing absorption",
@@ -6350,6 +6674,7 @@
   ]
  },
  {
+  "id": "Q324",
   "q": "A hospital P&T committee is evaluating a new monoclonal antibody costing $45,000/infusion. The manufacturer's pharmacoeconomic model shows ICER of $85,000/QALY using a 3% discount rate and 10-year time horizon. An independent analysis using 5% discount rate and 5-year horizon calculates ICER of $142,000/QALY. Which explanation best accounts for the discordant ICERs?",
   "opts": [
    "A. Higher discount rate reduces the present value of future benefits more than costs, increasing ICER; shorter time horizon may not capture full long-term benefit accrual, further increasing ICER",
@@ -6371,6 +6696,7 @@
   ]
  },
  {
+  "id": "Q325",
   "q": "A pharmacy director performs root cause analysis after a patient received 10× the intended insulin dose from a computerized order system. The error chain included: ambiguous order (5 units written as '5U' misread as '50'), no independent double-check, and a CPOE alert overridden 3 times. Under a Just Culture framework, how should the nurse who overrode the alert three times be managed?",
   "opts": [
    "A. Immediate termination — three overrides of a safety alert is reckless behavior requiring punitive action",
@@ -6392,6 +6718,7 @@
   ]
  },
  {
+  "id": "Q326",
   "q": "A hospital implements a pharmacist-led antimicrobial stewardship program (ASP). Six months after implementation, broad-spectrum antibiotic use decreased by 30% (DDD/1000 patient-days) but C. difficile infection rates increased 12%. What is the most likely explanation?",
   "opts": [
    "A. ASP interventions disrupted the microbiome, directly causing C. difficile overgrowth in all patients",
@@ -6413,6 +6740,7 @@
   ]
  },
  {
+  "id": "Q327",
   "q": "During a formulary review, a P&T committee member argues that a drug should be approved because it received accelerated FDA approval. The clinical pharmacist member should clarify which of the following?",
   "opts": [
    "A. Accelerated approval means full Phase III data confirmed efficacy — the drug has rigorous clinical evidence",
@@ -6434,6 +6762,7 @@
   ]
  },
  {
+  "id": "Q328",
   "q": "A 19-year-old female college student presents with 4 days of progressive sore throat, fever (38.9°C), and fatigue. Exam reveals markedly enlarged tonsils with white exudates, posterior cervical and posterior auricular lymphadenopathy, and mild left upper quadrant discomfort on palpation. She has no known drug allergies. The on-call provider prescribes amoxicillin 500 mg TID. Two days later she develops a diffuse pruritic maculopapular rash over her trunk and extremities. She denies shortness of breath, tongue or lip swelling, wheezing, nausea, or vomiting. What is the most appropriate next step?",
   "opts": [
    "A. Administer epinephrine 0.3 mg IM and start diphenhydramine — anaphylaxis to amoxicillin",
@@ -6455,6 +6784,7 @@
   ]
  },
  {
+  "id": "Q329",
   "q": "A 74-year-old man with persistent atrial fibrillation is started on amiodarone 400 mg daily to maintain sinus rhythm. His current medications include warfarin 5 mg daily (INR 2.4 on last check 2 weeks ago), digoxin 0.125 mg daily (level 0.9 ng/mL), and atorvastatin 40 mg daily. What medication adjustments are most critical at this time?",
   "opts": [
    "A. No changes needed — amiodarone interactions are only clinically relevant at higher doses",
@@ -6476,6 +6806,7 @@
   ]
  },
  {
+  "id": "Q330",
   "q": "A 58-year-old man presents for routine follow-up. He has type 2 diabetes (A1c 7.8%), hypertension (BP 148/88), heart failure with reduced ejection fraction (EF 32%), and CKD stage 3b (eGFR 38 mL/min/1.73m²). His medications include metformin 500 mg BID (reduced last year for his eGFR), lisinopril 10 mg daily, carvedilol 12.5 mg BID, and furosemide 40 mg daily. His potassium is 4.8 mEq/L and serum creatinine is 2.1 mg/dL. He has no current urinary symptoms. Which medication change would MOST comprehensively address his cardiovascular-renal-metabolic risk?",
   "opts": [
    "A. Add spironolactone 25 mg daily for HFrEF (mortality benefit), recognizing K must be monitored closely given K 4.8 and CKD",
@@ -6497,6 +6828,7 @@
   ]
  },
  {
+  "id": "Q331",
   "q": "A randomized controlled trial of a new antihypertensive drug reports: Treatment group: 18% 5-year cardiovascular event rate. Placebo group: 24% 5-year cardiovascular event rate. Which of the following statements about this trial result is INCORRECT?",
   "opts": [
    "A. The absolute risk reduction (ARR) is 6% (24% - 18%)",
@@ -6518,6 +6850,7 @@
   ]
  },
  {
+  "id": "Q332",
   "q": "A 66-year-old woman with type 2 diabetes has taken metformin 500 mg BID for 4 years. Her CKD has progressed to stage 3b (stable eGFR 35 mL/min/1.73m²), and she has no acute illness. She now requires IV iodinated contrast for a CT scan. Which of the following statements regarding metformin management is correct AND consistent with current ACR (American College of Radiology) guidance?",
   "opts": [
    "A. Metformin must be stopped 48 hours before contrast and held for 48 hours after — this applies to all patients receiving iodinated contrast regardless of renal function",
@@ -6539,6 +6872,7 @@
   ]
  },
  {
+  "id": "Q333",
   "q": "A 72-kg man in septic shock (ICU day 3) has bacteremia with Pseudomonas aeruginosa that is resistant to all tested beta-lactams (including ceftolozane-tazobactam, ceftazidime-avibactam, and cefiderocol), aminoglycosides, and fluoroquinolones. The colistin MIC is 1 mg/L. His creatinine clearance is stable at 45 mL/min. Polymyxin B is unavailable at this institution, so the team selects IV colistimethate (CMS). Per the 2019 International Consensus Guidelines for the polymyxins, which regimen optimizes colistin PK/PD?",
   "opts": [
    "A. Colistimethate 2.5 mg/kg/day CBA divided q12h (labeled renal-adjusted dose) with no loading dose",
@@ -6555,6 +6889,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q334",
   "q": "A 58-year-old patient on ECMO (VA-ECMO for cardiogenic shock) requires vancomycin for MRSA bacteremia. Vancomycin is frequently sequestered in ECMO circuits. Which dosing strategy is most appropriate to achieve AUC/MIC 400–600 mg·h/L?",
   "opts": [
    "A. Standard weight-based dosing 15-20 mg/kg q8-12h without change",
@@ -6571,6 +6906,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q335",
   "q": "A patient with severe ARDS (P/F ratio 78) fails prone positioning and neuromuscular blockade. The intensivist considers veno-venous ECMO. Which medication dosing concern is MOST unique to VV-ECMO compared to standard ICU care?",
   "opts": [
    "A. Increased unbound fentanyl due to hypoalbuminemia",
@@ -6587,6 +6923,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q336",
   "q": "A patient with end-stage renal disease on intermittent HD (4-hour sessions, 3×/week, high-flux membrane) is receiving gentamicin for gram-negative bacteremia, dosed after each dialysis session. To quantify drug removal during dialysis, a gentamicin level drawn at the start of an HD session is 6 mg/L and a level drawn at the end of the 4-hour session is 3 mg/L (assume first-order elimination during HD and ignore post-dialysis rebound). What is the elimination rate constant (ke) during dialysis?",
   "opts": [
    "A. 0.058 hr⁻¹",
@@ -6603,6 +6940,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q337",
   "q": "A 70-year-old woman (50 kg, SCr 1.2 mg/dL) is on phenytoin 300 mg/day with a total level of 12 mg/L. She is started on valproic acid 500 mg BID. After 2 weeks, total phenytoin is 8 mg/L, but she develops phenytoin toxicity (nystagmus, ataxia). What best explains this paradox?",
   "opts": [
    "A. Valproic acid inhibits CYP2C9, increasing phenytoin free fraction despite lower total level",
@@ -6619,6 +6957,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q338",
   "q": "A patient requires continuous renal replacement therapy (CRRT) with a CVVHDF effluent rate of 2 L/hr (1 L/hr dialysate + 1 L/hr replacement fluid given post-filter; net ultrafiltration negligible). The sieving coefficient (SC) for meropenem is 0.9. Meropenem Vd = 0.25 L/kg (80 kg patient). What is the estimated meropenem clearance by CRRT?",
   "opts": [
    "A. 1.8 L/hr (30 mL/min)",
@@ -6635,6 +6974,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q339",
   "q": "A patient receives a two-compartment drug IV bolus. The plasma concentration vs time curve shows a biexponential decay: C(t) = 10e⁻⁰·⁶ᵗ + 4e⁻⁰·¹ᵗ (mg/L; t in hours). What is the AUC₀→∞?",
   "opts": [
    "A. 14 mg·h/L",
@@ -6651,6 +6991,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q340",
   "q": "A 35-year-old HIV-positive patient (CD4 210 cells/µL, VL 88,000 copies/mL) is starting ART. He has HLA-B*5701 positive result. Which ART component must be AVOIDED and why?",
   "opts": [
    "A. Tenofovir DF — risk of nephrotoxicity is HLA-linked",
@@ -6667,6 +7008,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q341",
   "q": "A 62-year-old liver transplant recipient on tacrolimus (trough 7 ng/mL) develops a Candida krusei fungemia. Which antifungal is most appropriate?",
   "opts": [
    "A. Fluconazole 800mg load then 400mg daily — broadest oral bioavailability",
@@ -6683,6 +7025,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q342",
   "q": "A patient is admitted to the ICU with septic shock from a urinary source and remains on norepinephrine. Serum albumin is 1.9 g/dL. Blood cultures grow ESBL-producing Klebsiella pneumoniae that is ceftriaxone-resistant, susceptible to ertapenem and meropenem (both MIC ≤0.5 mg/L), and susceptible to ceftazidime-avibactam. She received one dose of ceftriaxone in the ED. What is the most appropriate definitive treatment?",
   "opts": [
    "A. Continue ceftriaxone — she received it in the ED and is being resuscitated",
@@ -6699,6 +7042,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q343",
   "q": "A patient with HIV (CD4 45 cells/µL, on prophylaxis with TMP-SMX) develops cryptococcal meningitis confirmed by CSF India ink and cryptococcal antigen. LP opening pressure is 42 cmH₂O. Which initial treatment plan is MOST appropriate?",
   "opts": [
    "A. Fluconazole 800mg/day x2 weeks then 400mg/day consolidation",
@@ -6715,6 +7059,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q344",
   "q": "A 68-year-old man with HFrEF (EF 22%, NYHA class II-III), CKD Stage 3b (eGFR 32), and potassium 5.3 mEq/L is on sacubitril/valsartan 97/103 mg BID, metoprolol succinate 200 mg daily, and eplerenone 25 mg daily. He is in sinus rhythm with a resting HR of 62 bpm and BP of 108/70. His NT-proBNP is 4800 pg/mL. What next step optimizes guideline-directed therapy?",
   "opts": [
    "A. Add ivabradine — further reduces HF hospitalization in sinus rhythm",
@@ -6731,6 +7076,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q345",
   "q": "A patient undergoes PCI with a drug-eluting stent for NSTEMI and receives ticagrelor 90 mg BID + aspirin 81 mg. Six months post-PCI, she needs hip replacement surgery. Orthopedics and cardiology agree the surgery cannot be safely deferred (progressive femoral head collapse with loss of ambulation), and the surgeon cannot operate on full DAPT. What is the best perioperative antiplatelet plan?",
   "opts": [
    "A. Switch to clopidogrel 5 days pre-op (less bleeding, maintains P2Y12 inhibition)",
@@ -6747,6 +7093,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q346",
   "q": "A patient with mechanical mitral valve (bileaflet) is on warfarin (target INR 2.5-3.5). She develops INR 9.2 with minor bruising and gingival bleeding but no major hemorrhage. She had a supratherapeutic INR because her provider started clarithromycin. What is the most appropriate management?",
   "opts": [
    "A. Hold warfarin, administer vitamin K 10mg IV for rapid reversal",
@@ -6763,6 +7110,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q347",
   "q": "A 78-year-old male with AF and CrCl 19 mL/min (Cockcroft-Gault) is currently on apixaban 5mg BID. His cardiologist orders a renal panel: SCr 3.4 mg/dL, age 78, weight 62 kg. Which dose adjustment is correct per FDA labeling for apixaban?",
   "opts": [
    "A. No change needed — apixaban dose adjustment criteria use TWO of three (age ≥80, SCr ≥1.5, weight ≤60 kg)",
@@ -6779,6 +7127,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q348",
   "q": "A 52-year-old woman with T2DM and HFrEF (EF 35%) presents with A1c 9.2%. She is on metformin 1000mg BID, sitagliptin 100mg daily. eGFR is 52 mL/min/1.73m². What addition best addresses both glucose control AND her cardiovascular/HF risk?",
   "opts": [
    "A. Liraglutide 1.8mg SC daily — LEADER trial mortality benefit in T2DM + CVD",
@@ -6795,6 +7144,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q349",
   "q": "A patient with type 1 diabetes on insulin pump therapy presents with DKA (pH 7.18, glucose 520 mg/dL, bicarb 10 mEq/L, anion gap 28). Potassium is 3.2 mEq/L. What is the correct insulin and potassium management?",
   "opts": [
    "A. Start insulin drip immediately at 0.1 U/kg/hr; add KCl to fluids once K+ is below 5.3",
@@ -6816,6 +7166,7 @@
   ]
  },
  {
+  "id": "Q350",
   "q": "A 67-year-old with COPD (GOLD Group E — 3 exacerbations last year, CAT score 28, FEV₁ 38% predicted) is on LABA/LAMA (tiotropium + salmeterol). He also has an eosinophil count of 420 cells/µL. Which treatment modification is supported by evidence to reduce exacerbations?",
   "opts": [
    "A. Add roflumilast 500 mcg daily — PDE4 inhibitor reduces exacerbations in chronic bronchitis phenotype",
@@ -6838,6 +7189,7 @@
   "reviewNote": "Targeted correction 2026-10-19; full chapter review pending."
  },
  {
+  "id": "Q351",
   "q": "A 44-year-old woman is newly diagnosed with idiopathic pulmonary arterial hypertension (WHO Group 1, WHO FC III) and is treatment-naive. She has no cardiopulmonary comorbidities or contraindications. Her 6-minute walk distance is 380 m, NT-proBNP is 700 ng/L, and echocardiography shows a right atrial area of 20 cm² without pericardial effusion; she has no syncope. By the ESC/ERS 2022 risk assessment she is intermediate risk. What initial therapy is recommended for this risk level?",
   "opts": [
    "A. Sildenafil monotherapy — first-line for WHO FC III PAH",
@@ -6854,6 +7206,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q352",
   "q": "A 58-year-old woman with CKD Stage 4 (eGFR 28) and type 2 diabetes has albumin-to-creatinine ratio 1,800 mg/g on maximal ACE inhibitor therapy (lisinopril 40mg/day, K+ 4.8 mEq/L). She is not on an MRA or SGLT2 inhibitor. Blood pressure is 138/88 despite 3 antihypertensives. Which addition(s) to her regimen are best supported to slow CKD progression?",
   "opts": [
    "A. Spironolactone 25mg daily — MRA provides additional proteinuria reduction",
@@ -6870,6 +7223,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q353",
   "q": "A 28-year-old woman with bipolar I disorder becomes pregnant (6 weeks). She is on lithium 900mg/day (level 0.8 mEq/L) and lamotrigine 200mg/day. Which medication management is most appropriate given the teratogenicity profile?",
   "opts": [
    "A. Discontinue lithium immediately — Ebstein anomaly risk is absolute contraindication in pregnancy",
@@ -6886,6 +7240,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q354",
   "q": "A 32-year-old male with treatment-resistant schizophrenia has failed 3 adequate antipsychotic trials. Clozapine 300mg/day is initiated. Week 4 ANC is 1,200 cells/mm³ (down from 4,800 baseline). What is the appropriate action per REMS guidelines?",
   "opts": [
    "A. Continue clozapine — mild neutropenia; monitor ANC three times weekly until ≥1,500/mm³",
@@ -6902,6 +7257,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q355",
   "q": "A 34-year-old woman with relapsing-remitting MS (2 relapses/year, 5 new T2 lesions) is on interferon beta-1a and wants to switch to a higher-efficacy agent. She plans pregnancy in 2 years, strongly prefers an oral medication given as short courses rather than regular infusions, and wants no ongoing drug exposure when she tries to conceive. Which agent best fits her goals with an acceptable reproductive safety profile?",
   "opts": [
    "A. Natalizumab — high efficacy, but PML risk and must stop ≥3 months before conception",
@@ -6918,6 +7274,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q356",
   "q": "A 72-year-old male with acute ischemic stroke (NIHSS 18, large vessel occlusion) receives IV alteplase at 2.5 hours and undergoes thrombectomy at 4.8 hours. His blood pressure is 210/115 mmHg post-thrombolysis. What is the BP target and optimal agent?",
   "opts": [
    "A. Target <180/105 mmHg using IV labetalol or nicardipine; avoid excessive lowering",
@@ -6934,6 +7291,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q357",
   "q": "A 58-year-old woman with metastatic HER2-positive breast cancer progresses on pertuzumab + trastuzumab + docetaxel after 8 cycles. ECOG PS 1. What second-line therapy has the strongest overall survival evidence?",
   "opts": [
    "A. Lapatinib + capecitabine (EGF100151 trial)",
@@ -6950,6 +7308,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q358",
   "q": "A 65-year-old male receives CHOP-R (rituximab, cyclophosphamide, doxorubicin, vincristine, prednisone) for DLBCL. After cycle 2, he develops numbness and tingling in fingers/toes, bilateral foot drop. Vincristine-induced peripheral neuropathy (VIPN) is suspected. What management is appropriate?",
   "opts": [
    "A. Add gabapentin for symptomatic relief; continue vincristine at full dose",
@@ -6966,6 +7325,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q359",
   "q": "An 84-year-old male with moderate dementia, HTN, AF, CKD 3 (CrCl 38), and insomnia is brought by family who report new confusion. His medications include lisinopril, metoprolol, apixaban 2.5mg BID, diphenhydramine 50mg nightly (OTC), and donepezil 10mg. What is the most likely cause of his worsening confusion and appropriate change?",
   "opts": [
    "A. Donepezil causing cholinergic excess — reduce dose to 5mg",
@@ -6982,6 +7342,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q360",
   "q": "A 4-year-old child (18 kg) presents with acute status epilepticus. Seizure has been continuous for 8 minutes. IV access is unavailable. What is the first-line treatment?",
   "opts": [
    "A. Rectal diazepam 0.2 mg/kg — established non-IV option when IV access is unavailable",
@@ -6998,6 +7359,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q361",
   "q": "A 52-year-old man with cirrhosis (Child-Pugh B) and large ascites presents with spontaneous bacterial peritonitis (SBP) confirmed by PMN count >250/mm³ in peritoneal fluid. What is the correct treatment including prevention of hepatorenal syndrome?",
   "opts": [
    "A. Cefotaxime 2g IV q8h alone — adequate antibiotic coverage for SBP",
@@ -7014,6 +7376,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q362",
   "q": "A 44-year-old woman with Crohn's disease (perianal fistulizing, on azathioprine) has active disease despite 3 months of therapy. Infliximab is planned. Before initiation, which screening tests are MOST critical?",
   "opts": [
    "A. CBC with differential and LFTs only — monitor for azathioprine toxicity",
@@ -7030,6 +7393,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q363",
   "q": "A randomized trial of a new antibiotic vs placebo reports: OR 2.4 (95% CI 1.1–5.2, p=0.03) for clinical cure. An accompanying meta-analysis shows OR 1.8 (95% CI 0.92–3.5, p=0.09) for the same outcome across 5 trials (I² = 67%). How should you interpret these discordant results?",
   "opts": [
    "A. The individual trial is definitive; meta-analysis likely underpowered with high heterogeneity",
@@ -7046,6 +7410,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q364",
   "q": "A pharmacoeconomic analysis of a new hepatitis C drug claims: ICER = $42,000/QALY (base case). The report states the result is 'robust' based on a deterministic sensitivity analysis varying costs ±25%. A reviewer argues this is insufficient. What additional analysis is needed?",
   "opts": [
    "A. Budget impact analysis (BIA) — examines affordability at population level",
@@ -7062,6 +7427,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q365",
   "q": "A pharmacist receives a complex drug information question about a novel oncology agent. The tertiary databases (Micromedex, Lexicomp) have no data. The package insert mentions one phase I dose-escalation study (n=12). What is the appropriate evidence hierarchy approach?",
   "opts": [
    "A. Use the package insert data; it represents the most up-to-date manufacturer information",
@@ -7078,6 +7444,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q366",
   "q": "A hospital pharmacy is implementing a pharmacist-led antimicrobial stewardship program (ASP). The program wants to measure process and outcome metrics. Which metric pair BEST reflects both process and outcome?",
   "opts": [
    "A. Days of therapy (DOT)/1000 patient-days AND C. difficile incidence per 10,000 patient-days",
@@ -7094,6 +7461,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q367",
   "q": "A pharmacy director is evaluating a formulary request for a biosimilar to adalimumab. The biosimilar has an FDA designation as 'interchangeable.' What does interchangeable designation mean, and what authority does the pharmacist have?",
   "opts": [
    "A. Interchangeable means clinically equivalent; pharmacist may substitute without prescriber notification in all 50 states",
@@ -7110,6 +7478,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q368",
   "q": "A landmark trial is criticized because 28% of patients randomized to placebo crossed over to the active drug arm at week 8 due to disease progression. The primary endpoint (ITT analysis) showed HR=0.72 (p=0.04) favoring the drug. A per-protocol analysis shows HR=0.61 (p=0.001). How does crossover affect interpretation?",
   "opts": [
    "A. ITT analysis underestimates the true treatment effect because crossover dilutes the comparison",
@@ -7126,6 +7495,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q369",
   "q": "A non-inferiority trial compared oral sotalol with IV amiodarone for AF cardioversion using a non-inferiority margin of 10 percentage points. Cardioversion success was 66% with amiodarone and 62% with sotalol (absolute difference −4%; 95% CI for the difference −10% to +2%). What conclusion is correct?",
   "opts": [
    "A. Sotalol is non-inferior — the CI upper bound (+2%) is within the margin",
@@ -7142,6 +7512,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q370",
   "q": "A drug has a Ki of 2 nM at CYP3A4. At steady-state plasma concentrations of 50 nM, what is the expected fold-increase in exposure ([I]/Ki + 1) for a substrate where this is the sole clearance pathway?",
   "opts": [
    "A. 24-fold increase in AUC for the substrate",
@@ -7158,6 +7529,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q371",
   "q": "A 26-year-old woman is prescribed doxycycline 100mg BID for 7 days for Chlamydia infection. She is also on combined oral contraceptives (OCP). She asks whether the antibiotic affects OCP efficacy. What is the evidence-based counseling?",
   "opts": [
    "A. Yes, doxycycline significantly reduces OCP efficacy via gut flora disruption; use backup contraception during and 7 days after",
@@ -7174,6 +7546,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q372",
   "q": "A stable adult kidney transplant recipient has non-severe CMV disease, adequate oral absorption, and Cockcroft–Gault CrCl 38 mL/min. Which oral valganciclovir treatment dose follows adult renal dosing?",
   "opts": [
    "A. 900 mg twice daily",
@@ -7196,6 +7569,7 @@
   "reviewNote": "Targeted correction 2026-10-19; full chapter review pending."
  },
  {
+  "id": "Q373",
   "q": "A 68-year-old woman is on heparin infusion post-mechanical valve replacement. On day 7, platelet count drops from 220,000 to 54,000. 4T score is calculated: Thrombocytopenia >50% (2), timing day 5-10 (2), thrombosis none (0), other cause unlikely (1) = 5/8. What is the appropriate management?",
   "opts": [
    "A. Stop heparin, begin direct thrombin inhibitor (argatroban or bivalirudin); check HIT antibody (SRA or PF4-ELISA)",
@@ -7212,6 +7586,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q374",
   "q": "A 74-year-old man is admitted to ICU with cardiogenic shock (SBP 78 mmHg, CI 1.6 L/min/m², pulmonary capillary wedge pressure 26 mmHg, SVR 2200 dyn·sec/cm⁵) after anterior STEMI. He is on dopamine 10 mcg/kg/min. Which vasopressor/inotrope change is supported by evidence?",
   "opts": [
    "A. Add vasopressin 0.03 units/min to reduce dopamine dose",
@@ -7228,6 +7603,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q375",
   "q": "A 45-year-old alcoholic patient with liver cirrhosis presents with serum sodium 112 mEq/L. He is asymptomatic (no seizures, no altered mental status). Rate of sodium correction for asymptomatic severe hyponatremia is:",
   "opts": [
    "A. Correct at 1-2 mEq/L/hr until sodium is 130 mEq/L — prevent cerebral edema",
@@ -7244,6 +7620,7 @@
   "opts_exp": []
  },
  {
+  "id": "Q376",
   "q": "An IV drug follows linear kinetics. Clearance is 5 L/hour and the desired average steady-state concentration is 8 mg/L. What maintenance infusion rate produces that average concentration?",
   "opts": [
    "A. 1.6 mg/hour",
@@ -7271,6 +7648,7 @@
   }
  },
  {
+  "id": "Q377",
   "q": "A hypothetical drug has a volume of distribution of 30 L. For an IV bolus target of 6 mg/L, what loading dose is predicted before accounting for practical formulation limits?",
   "opts": [
    "A. 36 mg",
@@ -7298,6 +7676,7 @@
   }
  },
  {
+  "id": "Q378",
   "q": "A drug has first-order elimination and a 6-hour half-life. With no further doses, what fraction remains 18 hours after a dose?",
   "opts": [
    "A. 12.5%",
@@ -7325,6 +7704,7 @@
   }
  },
  {
+  "id": "Q379",
   "q": "In a randomized trial, a harmful event occurs in 18% of controls and 12% of treated participants over one year. What is the absolute risk reduction?",
   "opts": [
    "A. 150 percentage points",
@@ -7352,6 +7732,7 @@
   }
  },
  {
+  "id": "Q380",
   "q": "A one-year trial reports risks of 20% with control and 15% with treatment. What is the number needed to treat to prevent one event over that year?",
   "opts": [
    "A. 5",
@@ -7379,6 +7760,7 @@
   }
  },
  {
+  "id": "Q381",
   "q": "A superiority trial estimates a risk ratio of 0.82 with a 95% confidence interval of 0.66–1.03. Which interpretation is best?",
   "opts": [
    "A. The null value is excluded",
@@ -7406,6 +7788,7 @@
   }
  },
  {
+  "id": "Q382",
   "q": "Investigators randomly assign participants to two treatments, then analyze them in their assigned groups despite some crossovers. Which analysis principle is this?",
   "opts": [
    "A. Case-control sampling",
@@ -7433,6 +7816,7 @@
   }
  },
  {
+  "id": "Q383",
   "q": "A study identifies people with a rare adverse event and a comparison group without it, then examines prior drug exposure. Which design is described?",
   "opts": [
    "A. Single-patient case report",
@@ -7460,6 +7844,7 @@
   }
  },
  {
+  "id": "Q384",
   "q": "A randomized trial cannot blind participants, but the committee classifying outcomes does not know treatment assignments. Which bias is this committee blinding most directly intended to reduce?",
   "opts": [
    "A. Outcome assessment bias",
@@ -7487,6 +7872,7 @@
   }
  },
  {
+  "id": "Q385",
   "q": "Before dispensing prasugrel after PCI, a pharmacist discovers a documented prior transient ischemic attack. What is the most appropriate response?",
   "opts": [
    "A. Hold verification and contact the team about the contraindication",
@@ -7514,6 +7900,7 @@
   }
  },
  {
+  "id": "Q386",
   "q": "Which finding most directly distinguishes STEMI from an isolated laboratory diagnosis of myocardial injury?",
   "opts": [
    "A. A compatible acute ischemic presentation with diagnostic ST-segment elevation",
@@ -7541,6 +7928,7 @@
   }
  },
  {
+  "id": "Q387",
   "q": "A patient took sildenafil earlier today and now has ischemic chest discomfort. Which order warrants an immediate interaction check before administration?",
   "opts": [
    "A. Clopidogrel",
@@ -7568,6 +7956,7 @@
   }
  },
  {
+  "id": "Q388",
   "q": "Which beta-blocker has evidence supporting survival benefit in chronic HFrEF?",
   "opts": [
    "A. Metoprolol succinate extended release",
@@ -7595,6 +7984,7 @@
   }
  },
  {
+  "id": "Q389",
   "q": "A patient takes lisinopril and is to start sacubitril/valsartan. Which transition requirement is correct?",
   "opts": [
    "A. Separate the last ACE inhibitor dose and first ARNI dose by at least 36 hours",
@@ -7622,6 +8012,7 @@
   }
  },
  {
+  "id": "Q390",
   "q": "Which regimen is classified as high-intensity statin therapy?",
   "opts": [
    "A. Atorvastatin 80 mg daily",
@@ -7649,6 +8040,7 @@
   }
  },
  {
+  "id": "Q391",
   "q": "A patient with a mechanical mitral valve asks to replace warfarin with apixaban to avoid INR testing. Which response is best?",
   "opts": [
    "A. Alternate warfarin and apixaban on successive days",
@@ -7676,6 +8068,7 @@
   }
  },
  {
+  "id": "Q392",
   "q": "For nonvalvular AF, a patient is 83 years old, weighs 57 kg, and has serum creatinine 1.1 mg/dL. Assuming no other dosing modifiers, what apixaban dose follows the labeled age/weight/creatinine reduction rule?",
   "opts": [
    "A. 5 mg twice daily",
@@ -7703,6 +8096,7 @@
   }
  },
  {
+  "id": "Q393",
   "q": "A patient receiving heparin develops a new thrombosis and a platelet fall consistent with a high clinical probability of HIT. What is the appropriate immediate medication approach while confirmatory testing is arranged?",
   "opts": [
    "A. Stop all heparin and initiate an appropriate non-heparin anticoagulant if no contraindication",
@@ -7730,6 +8124,7 @@
   }
  },
  {
+  "id": "Q394",
   "q": "A patient has an uncomplicated lower urinary tract infection without fever or flank pain. Why would nitrofurantoin become inappropriate if pyelonephritis were instead suspected?",
   "opts": [
    "A. It treats only viruses",
@@ -7757,6 +8152,7 @@
   }
  },
  {
+  "id": "Q395",
   "q": "A patient with documented immediate anaphylaxis to penicillin needs an antibiotic. What information is most useful before assuming all beta-lactams are prohibited?",
   "opts": [
    "A. The wholesale cost of penicillin",
@@ -7784,6 +8180,7 @@
   }
  },
  {
+  "id": "Q396",
   "q": "Which prescribing action most directly supports antimicrobial stewardship after blood cultures identify a susceptible pathogen?",
   "opts": [
    "A. Continue all empiric agents indefinitely",
@@ -7811,6 +8208,7 @@
   }
  },
  {
+  "id": "Q397",
   "q": "A patient on a ritonavir-containing regimen starts a new prescription. Which process is essential?",
   "opts": [
    "A. Check for clinically important metabolic and transporter interactions",
@@ -7838,6 +8236,7 @@
   }
  },
  {
+  "id": "Q398",
   "q": "Why does daptomycin generally not serve as treatment for alveolar pneumonia?",
   "opts": [
    "A. It has no activity against gram-positive organisms",
@@ -7865,6 +8264,7 @@
   }
  },
  {
+  "id": "Q399",
   "q": "A patient taking an echinocandin for candidemia asks why the team is checking blood cultures again. Which answer is best?",
   "opts": [
    "A. To determine a vancomycin trough",
@@ -7892,6 +8292,7 @@
   }
  },
  {
+  "id": "Q400",
   "q": "A patient in septic shock remains hypotensive despite appropriate initial fluid assessment and resuscitation. Which vasopressor is generally first line?",
   "opts": [
    "A. Norepinephrine",
@@ -7919,6 +8320,7 @@
   }
  },
  {
+  "id": "Q401",
   "q": "During a continuous neuromuscular blocker infusion, which principle is essential?",
   "opts": [
    "A. Provide and assess adequate analgesia and sedation independently of paralysis",
@@ -7946,6 +8348,7 @@
   }
  },
  {
+  "id": "Q402",
   "q": "A hypotensive ventilated patient is receiving propofol. Which observation should trigger reassessment of the sedation plan?",
   "opts": [
    "A. An appropriately documented pain assessment",
@@ -7973,6 +8376,7 @@
   }
  },
  {
+  "id": "Q403",
   "q": "A serum potassium result is markedly elevated, but the specimen is reported as hemolyzed and the patient has no ECG changes. What is the best next step?",
   "opts": [
    "A. Diagnose chronic hypokalemia",
@@ -8000,6 +8404,7 @@
   }
  },
  {
+  "id": "Q404",
   "q": "A severely malnourished patient starts nutrition and develops a rapid fall in phosphate. Which complication should be considered?",
   "opts": [
    "A. Refeeding syndrome",
@@ -8027,6 +8432,7 @@
   }
  },
  {
+  "id": "Q405",
   "q": "An IV bag contains 40 mEq of potassium in 1000 mL. How many mEq are delivered in 250 mL?",
   "opts": [
    "A. 10 mEq",
@@ -8054,6 +8460,7 @@
   }
  },
  {
+  "id": "Q406",
   "q": "A patient taking lithium develops vomiting, poor intake, and a new NSAID prescription. What medication concern deserves prompt assessment?",
   "opts": [
    "A. A guaranteed need to double lithium",
@@ -8081,6 +8488,7 @@
   }
  },
  {
+  "id": "Q407",
   "q": "Which counseling point is correct for bupropion?",
   "opts": [
    "A. It is a monoamine oxidase inhibitor",
@@ -8108,6 +8516,7 @@
   }
  },
  {
+  "id": "Q408",
   "q": "Which distinction about clozapine safety programs and monitoring is most important?",
   "opts": [
    "A. Removal of REMS means neutropenia no longer occurs",
@@ -8135,6 +8544,7 @@
   }
  },
  {
+  "id": "Q409",
   "q": "A patient taking an enzyme-inducing antiseizure drug asks about a new oral contraceptive. What should the pharmacist evaluate?",
   "opts": [
    "A. A guaranteed increase in contraceptive effectiveness",
@@ -8162,6 +8572,7 @@
   }
  },
  {
+  "id": "Q410",
   "q": "A patient has low albumin and a total phenytoin concentration that appears subtherapeutic but has nystagmus and ataxia. Which assessment is best?",
   "opts": [
    "A. Assume the symptoms exclude phenytoin toxicity",
@@ -8189,6 +8600,7 @@
   }
  },
  {
+  "id": "Q411",
   "q": "A patient takes levodopa/carbidopa and asks why carbidopa is included. Which explanation is correct?",
   "opts": [
    "A. It is a replacement for levodopa",
@@ -8216,6 +8628,7 @@
   }
  },
  {
+  "id": "Q412",
   "q": "A patient taking a combined estrogen-containing contraceptive reports migraine with aura. What is the appropriate medication review concern?",
   "opts": [
    "A. Estrogen-associated stroke risk makes this method inappropriate",
@@ -8243,6 +8656,7 @@
   }
  },
  {
+  "id": "Q413",
   "q": "For symptomatic Graves disease requiring an antithyroid drug during the first trimester, which option is generally preferred?",
   "opts": [
    "A. Propylthiouracil",
@@ -8270,6 +8684,7 @@
   }
  },
  {
+  "id": "Q414",
   "q": "A patient asks whether condoms are still useful when a highly effective contraceptive method is used. Which response is best?",
   "opts": [
    "A. An IUD prevents every STI",
@@ -8297,6 +8712,7 @@
   }
  },
  {
+  "id": "Q415",
   "q": "A pharmacist identifies a near miss before a wrong drug reaches the patient. Which response best supports a learning system?",
   "opts": [
    "A. Wait until the same error causes injury",
@@ -8324,6 +8740,7 @@
   }
  },
  {
+  "id": "Q416",
   "q": "At discharge, two medication lists disagree about whether an ACE inhibitor was stopped for angioedema. Which action is best?",
   "opts": [
    "A. Choose the longer list automatically",
@@ -8351,6 +8768,7 @@
   }
  },
  {
+  "id": "Q417",
   "q": "An order says insulin 10 U, and the handwritten U could be read as a zero. Which prevention approach best addresses this risk?",
   "opts": [
    "A. Use U more often so staff learn it",
@@ -8378,6 +8796,7 @@
   }
  },
  {
+  "id": "Q418",
   "q": "A patient receiving vincristine reports new numbness and severe constipation. Which adverse-effect mechanism should be considered?",
   "opts": [
    "A. Only renal crystal obstruction",
@@ -8405,6 +8824,7 @@
   }
  },
  {
+  "id": "Q419",
   "q": "Before a regimen with substantial tumor lysis risk, what laboratory pattern is important to anticipate?",
   "opts": [
    "A. Permanent immunity to acute kidney injury",
@@ -8432,6 +8852,7 @@
   }
  },
  {
+  "id": "Q420",
   "q": "Why should live vaccines be reviewed carefully before use during intensive cytotoxic chemotherapy?",
   "opts": [
    "A. They may cause vaccine-associated infection in substantially immunocompromised patients",
@@ -8459,6 +8880,7 @@
   }
  },
  {
+  "id": "Q421",
   "q": "Lactulose is titrated for hepatic encephalopathy. Which outcome most directly guides routine dose titration while avoiding dehydration?",
   "opts": [
    "A. Profuse watery diarrhea at every dose",
@@ -8486,6 +8908,7 @@
   }
  },
  {
+  "id": "Q422",
   "q": "A patient takes oral iron and a proton pump inhibitor. What potential absorption issue deserves review if iron response is poor?",
   "opts": [
    "A. All oral iron is absorbed through the skin",
@@ -8513,6 +8936,7 @@
   }
  },
  {
+  "id": "Q423",
   "q": "Which mechanism explains why polyethylene glycol can treat constipation?",
   "opts": [
    "A. Direct opioid receptor agonism",
@@ -8540,6 +8964,7 @@
   }
  },
  {
+  "id": "Q424",
   "q": "An alert patient with diabetes has symptomatic hypoglycemia and can swallow safely. Which immediate approach is appropriate?",
   "opts": [
    "A. Give rapid-acting oral carbohydrate and recheck glucose promptly",
@@ -8567,6 +8992,7 @@
   }
  },
  {
+  "id": "Q425",
   "q": "Which feature distinguishes basal insulin from mealtime insulin in a typical basal-bolus regimen?",
   "opts": [
    "A. Basal insulin is only for immediate meal coverage",
@@ -8594,6 +9020,7 @@
   }
  },
  {
+  "id": "Q426",
   "q": "Why must an SGLT2 inhibitor be considered in the differential when a patient has anion-gap acidosis and ketosis despite glucose below typical DKA values?",
   "opts": [
    "A. They prevent all ketone production",
@@ -8621,6 +9048,7 @@
   }
  },
  {
+  "id": "Q427",
   "q": "A serum creatinine value is rising rapidly during AKI. Why should an automatically reported eGFR be interpreted cautiously for dosing?",
   "opts": [
    "A. A single eGFR determines all loading doses",
@@ -8648,6 +9076,7 @@
   }
  },
  {
+  "id": "Q428",
   "q": "A patient takes an ACE inhibitor and spironolactone. Which electrolyte especially requires monitoring?",
   "opts": [
    "A. Potassium",
@@ -8675,6 +9104,7 @@
   }
  },
  {
+  "id": "Q429",
   "q": "A patient is prescribed a phosphate binder for hyperphosphatemia in advanced CKD. When is administration generally most useful?",
   "opts": [
    "A. Only during an overnight fast",
@@ -8702,6 +9132,7 @@
   }
  },
  {
+  "id": "Q430",
   "q": "An older adult has new confusion and urinary retention after starting diphenhydramine for sleep. Which medication effect is most relevant?",
   "opts": [
    "A. A guaranteed bacterial infection",
@@ -8729,6 +9160,7 @@
   }
  },
  {
+  "id": "Q431",
   "q": "Which deprescribing approach is most appropriate for a long-term benzodiazepine when discontinuation is agreed upon?",
   "opts": [
    "A. Double the dose first without a reason",
@@ -8756,6 +9188,7 @@
   }
  },
  {
+  "id": "Q432",
   "q": "An older adult has fallen repeatedly while taking several sedating medications. What is the most useful medication action?",
   "opts": [
    "A. Review cumulative CNS effects and opportunities to reduce medication-related fall risk",
@@ -8783,6 +9216,7 @@
   }
  },
  {
+  "id": "Q433",
   "q": "A patient uses an inhaled corticosteroid. Which counseling point can reduce local adverse effects?",
   "opts": [
    "A. Swallow every mouthful of rinse water",
@@ -8810,6 +9244,7 @@
   }
  },
  {
+  "id": "Q434",
   "q": "Why is LABA monotherapy inappropriate in asthma?",
   "opts": [
    "A. It provides permanent remission",
@@ -8837,6 +9272,7 @@
   }
  },
  {
+  "id": "Q435",
   "q": "An adult has incomplete vaccine records. What should determine a catch-up plan?",
   "opts": [
    "A. Assume one vaccine replaces all others",
@@ -8864,6 +9300,7 @@
   }
  },
  {
+  "id": "Q436",
   "q": "A fictional dosing exercise specifies 12 mg/kg per dose for a child weighing 18 kg, below the stated maximum. What is the calculated dose?",
   "opts": [
    "A. 21.6 mg",
@@ -8891,6 +9328,7 @@
   }
  },
  {
+  "id": "Q437",
   "q": "A liquid contains 125 mg per 5 mL. A verified order is for 250 mg. What volume supplies that dose?",
   "opts": [
    "A. 5 mL",
@@ -8918,6 +9356,7 @@
   }
  },
  {
+  "id": "Q438",
   "q": "Which instruction best reduces liquid-medication measurement errors at home?",
   "opts": [
    "A. Alternate teaspoons and tablespoons freely",
@@ -8945,6 +9384,7 @@
   }
  },
  {
+  "id": "Q439",
   "q": "A new drug claim is based on a press release without a full publication. Which response best reflects evidence appraisal?",
   "opts": [
    "A. Ignore the comparator and endpoint",
@@ -8972,6 +9412,7 @@
   }
  },
  {
+  "id": "Q440",
   "q": "A patient cannot explain a new anticoagulant plan after counseling. Which next step best uses teach-back?",
   "opts": [
    "A. Ask the patient to describe how they will take it, then clarify gaps without blame",
@@ -8999,6 +9440,7 @@
   }
  },
  {
+  "id": "Q441",
   "q": "Two guidelines disagree. Which comparison is most useful before applying either recommendation?",
   "opts": [
    "A. Only the number of pages",
@@ -9026,6 +9468,7 @@
   }
  },
  {
+  "id": "Q442",
   "q": "A fictional oral drug has bioavailability 0.5. If the required systemic dose is 100 mg, what oral dose gives that exposure under linear kinetics?",
   "opts": [
    "A. 100 mg",
@@ -9053,6 +9496,7 @@
   }
  },
  {
+  "id": "Q443",
   "q": "A fictional drug has Vd 40 L and clearance 4 L/hour. What is its approximate elimination half-life under a one-compartment model?",
   "opts": [
    "A. 69.3 hours",
@@ -9080,6 +9524,7 @@
   }
  },
  {
+  "id": "Q444",
   "q": "A diagnostic test detects 90 of 100 patients who truly have a disease. What is its sensitivity in this sample?",
   "opts": [
    "A. 10%",
@@ -9107,6 +9552,7 @@
   }
  },
  {
+  "id": "Q445",
   "q": "Among 200 participants without disease, a test is negative in 180. What is specificity?",
   "opts": [
    "A. 20%",
@@ -9134,6 +9580,7 @@
   }
  },
  {
+  "id": "Q446",
   "q": "A treatment causes an adverse event in 8% of participants versus 3% with control over six months. What is the number needed to harm over six months?",
   "opts": [
    "A. 20",
@@ -9161,6 +9608,7 @@
   }
  },
  {
+  "id": "Q447",
   "q": "A fictional infusion order is 15 mL/hour for 8 hours. What total volume is delivered if it runs uninterrupted?",
   "opts": [
    "A. 150 mL",
@@ -9188,6 +9636,7 @@
   }
  },
  {
+  "id": "Q448",
   "q": "For a linear IV drug at steady state, the total daily dose is 600 mg and clearance is 3 L/hour. What is AUC over 24 hours?",
   "opts": [
    "A. 50 mg·hour/L",

@@ -372,15 +372,32 @@ let occImg = null, occDraw = false, occStart = null;
 let currentFcMode = 'study';
 
 // ── SR persistence ────────────────────────────────────────────────────────
+// Built-in cards are 'c'+index; a reader's own cards are 'u'+index among their
+// cards, so adding built-in cards never shifts anyone's custom-card schedule.
+// Until 2026-10-23 custom cards were 'c'+(206+j), counted after the 206 built-ins.
+const LEGACY_FLASH_COUNT = 206;
+function cardId(i) { return i < flashData.length ? 'c' + i : 'u' + (i - flashData.length); }
+function migrateCustomCardIds(state) {
+  let moved = false;
+  Object.keys(state).forEach(k => {
+    const m = /^c(\d+)$/.exec(k);
+    if (!m || Number(m[1]) < flashData.length) return;
+    const u = 'u' + (Number(m[1]) - LEGACY_FLASH_COUNT);
+    if (!state[u]) state[u] = state[k];
+    delete state[k]; moved = true;
+  });
+  return moved;
+}
 function loadSR() {
   try { srState = JSON.parse(localStorage.getItem(SR_KEY)) || {}; } catch(e) { srState = {}; }
   try { streakData = JSON.parse(localStorage.getItem(STREAK_KEY)) || {}; } catch(e) { streakData = {}; }
   try { customCards = JSON.parse(localStorage.getItem('bcps_custom_cards')) || []; } catch(e) { customCards = []; }
+  if (migrateCustomCardIds(srState)) { try { localStorage.setItem(SR_KEY, JSON.stringify(srState)); } catch(e) {} }
   // ── If logged in, pull from Supabase and override local (async) ──
   if (typeof sbLoadFlashProgress === 'function') {
     sbLoadFlashProgress().then(data => {
       if (data && data.srState && Object.keys(data.srState).length) {
-        srState = data.srState;
+        srState = data.srState; migrateCustomCardIds(srState);
         if (data.streakData) streakData = data.streakData;
         localStorage.setItem(SR_KEY, JSON.stringify(srState));
         localStorage.setItem(STREAK_KEY, JSON.stringify(streakData));
@@ -481,9 +498,9 @@ function switchFcMode(mode) {
 function updateSrStats() {
   allCards = [...flashData, ...customCards];
   const total = allCards.length;
-  const due = allCards.filter((_,i) => isDue('c'+i)).length;
+  const due = allCards.filter((_,i) => isDue(cardId(i))).length;
   const isNew = id => !srState[id];
-  const newCount = allCards.filter((_,i) => isNew('c'+i)).length;
+  const newCount = allCards.filter((_,i) => isNew(cardId(i))).length;
   // streak
   const today = new Date().toISOString().split('T')[0];
   let streak = 0;
@@ -518,7 +535,7 @@ function filterFlash() {
   const topic = document.getElementById('fcTopicFilter').value;
   const queue = document.getElementById('fcQueueFilter').value;
   const today = new Date().toISOString().split('T')[0];
-  let pool = allCards.map((c,i) => ({...c, _id:'c'+i}))
+  let pool = allCards.map((c,i) => ({...c, _id:cardId(i)}))
     .filter(c => topic === 'all' || c.topic === topic);
   if (queue === 'due') {
     const due = pool.filter(c => isDue(c._id));
